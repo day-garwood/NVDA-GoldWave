@@ -13,24 +13,35 @@ import scriptHandler
 
 class AppModule(appModuleHandler.AppModule):
 	
+	# A number of utility functions follows:
+	
+	def soundWindow(self):
+		obj = api.getNavigatorObject()
+		return 1 if obj.name != "Workspace" else 0 # For now, nav obj's name is used; may use other attributes later.
+	
 	def script_dropStartMarker(self, gesture):
 		gesture.send()
-		speech.speakMessage("Start marked")
+		# Find out whether we're in the main window or the sound window.
+		if self.soundWindow() == 1:
+			speech.speakMessage("Start marked")
 	script_dropStartMarker.__doc__="Drops the start marker."
 	
 	def script_dropFinishMarker(self, gesture):
 		gesture.send()
-		speech.speakMessage("Finish marked")
+		if self.soundWindow() == 1: # Are we?
+			speech.speakMessage("Finish marked")
 	script_dropFinishMarker.__doc__="Drops the finish marker."
 	
 	def script_playSelection(self, gesture):
 		gesture.send()
-		speech.speakMessage("Play selection")
+		if self.soundWindow() == 1:
+			speech.speakMessage("Play selection")
 	script_playSelection.__doc__="Plays the trakc between start and finish markers."
 	
 	def script_selectAll(self, gesture):
 		gesture.send()
-		speech.speakMessage("Select All")
+		if self.soundWindow() == 1:
+			speech.speakMessage("Select All")
 	script_selectAll.__doc__="Selects the entire track."
 	
 	__gestures={
