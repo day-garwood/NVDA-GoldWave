@@ -19,6 +19,8 @@ class AppModule(appModuleHandler.AppModule):
 		obj = api.getNavigatorObject()
 		return 1 if obj.name != "Workspace" else 0 # For now, nav obj's name is used; may use other attributes later.
 	
+	# Audio editing scripts:
+	
 	def script_dropStartMarker(self, gesture):
 		gesture.send()
 		# Find out whether we're in the main window or the sound window.
@@ -44,10 +46,37 @@ class AppModule(appModuleHandler.AppModule):
 			speech.speakMessage("Select All")
 	script_selectAll.__doc__="Selects the entire track."
 	
+	# Playback and recording:
+	
+	def script_play(self, gesture):
+		gesture.send()
+		if self.soundWindow() == 1:
+			speech.speakMessage("play")
+	script_play.__doc__="Plays the audio track."
+	
+	def script_pause(self, gesture):
+		gesture.send()
+		if self.soundWindow() == 1:
+			speech.speakMessage("pause")
+	script_pause.__doc__="Pauses the audio track."
+	
+	def script_stop(self, gesture):
+		gesture.send()
+		if self.soundWindow() == 1:
+			speech.speakMessage("stop")
+	script_stop.__doc__="stops the audio track."
+	
+		
 	__gestures={
 		"KB:[":"dropStartMarker",
 		"KB:]":"dropFinishMarker",
 		"KB:control+a":"selectAll",
-		"kB:control+[":"playSelection"
+		"kB:control+[":"playSelection",
+		"KB:f2":"play",
+		"KB:f3":"play",
+		"kb:f4":"play",
+		"kb:f7":"pause",
+		"kb:f8":"stop"
+		
 	}
 	
