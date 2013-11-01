@@ -66,6 +66,13 @@ class AppModule(appModuleHandler.AppModule):
 			speech.speakMessage("stop")
 	script_stop.__doc__="stops the audio track."
 	
+	def script_startRecord(self, gesture):
+		gesture.send()
+		if self.soundWindow() == 1:
+			speech.speakMessage("record")
+	script_startRecord.__doc__="Starts recording audio."
+	
+	
 		
 	__gestures={
 		"KB:[":"dropStartMarker",
@@ -76,7 +83,10 @@ class AppModule(appModuleHandler.AppModule):
 		"KB:f3":"play",
 		"kb:f4":"play",
 		"kb:f7":"pause",
-		"kb:f8":"stop"
+		"kb:control+f7":"pause",
+		"kb:f8":"stop",
+		"kb:control+f8":"stop",
+		"kb:control+f9":"startRecord"
 		
 	}
 	
