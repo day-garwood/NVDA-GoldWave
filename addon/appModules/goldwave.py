@@ -13,6 +13,19 @@ import scriptHandler
 
 class AppModule(appModuleHandler.AppModule):
 	
+	# A few variables (mostly to control speech):
+	commandAnnouncement = 1 # Announcement of commands is enabled by default, hence value of 1.
+	
+	# And the toggle method for this variable:
+	def script_toggleCommandAnnouncement(self, gesture):
+		if self.commandAnnouncement == 1:
+			self.commandAnnouncement = 0 # Command announcement off.
+			speech.speakMessage("command announcement off")
+		else:
+			self.commandAnnouncement = 1 # Command announcement on.
+			speech.speakMessage("command announcement on")
+	script_toggleCommandAnnouncement.__doc__="Toggles whether NVDA announces editing commands during audio recording or playback."
+	
 	# A number of utility functions follows:
 	
 	def soundWindow(self):
@@ -24,25 +37,25 @@ class AppModule(appModuleHandler.AppModule):
 	def script_dropStartMarker(self, gesture):
 		gesture.send()
 		# Find out whether we're in the main window or the sound window.
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("Start marked")
 	script_dropStartMarker.__doc__="Drops the start marker."
 	
 	def script_dropFinishMarker(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1: # Are we?
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("Finish marked")
 	script_dropFinishMarker.__doc__="Drops the finish marker."
 	
 	def script_playSelection(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("Play selection")
 	script_playSelection.__doc__="Plays the trakc between start and finish markers."
 	
 	def script_selectAll(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("Select All")
 	script_selectAll.__doc__="Selects the entire track."
 	
@@ -50,38 +63,38 @@ class AppModule(appModuleHandler.AppModule):
 	
 	def script_play(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("play")
 	script_play.__doc__="Plays the audio track."
 	
 	def script_rewind(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("rewind")
 	script_rewind.__doc__="Rewinds through an audio track."
 	
 	def script_forward(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("fast forward")
 	script_forward.__doc__="Fast forwards through an audio track."
 	
 	
 	def script_pause(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("pause")
 	script_pause.__doc__="Pauses the audio track."
 	
 	def script_stop(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("stop")
 	script_stop.__doc__="stops the audio track."
 	
 	def script_startRecord(self, gesture):
 		gesture.send()
-		if self.soundWindow() == 1:
+		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			speech.speakMessage("record")
 	script_startRecord.__doc__="Starts recording audio."
 	
@@ -101,7 +114,8 @@ class AppModule(appModuleHandler.AppModule):
 		"kb:control+f7":"pause",
 		"kb:f8":"stop",
 		"kb:control+f8":"stop",
-		"kb:control+f9":"startRecord"
+		"kb:control+f9":"startRecord",
+		"kb:nvda+shift+c":"toggleCommandAnnouncement"
 		
 	}
 	
