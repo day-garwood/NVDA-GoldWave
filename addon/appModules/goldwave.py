@@ -54,6 +54,19 @@ class AppModule(appModuleHandler.AppModule):
 			speech.speakMessage("play")
 	script_play.__doc__="Plays the audio track."
 	
+	def script_rewind(self, gesture):
+		gesture.send()
+		if self.soundWindow() == 1:
+			speech.speakMessage("rewind")
+	script_rewind.__doc__="Rewinds through an audio track."
+	
+	def script_forward(self, gesture):
+		gesture.send()
+		if self.soundWindow() == 1:
+			speech.speakMessage("fast forward")
+	script_forward.__doc__="Fast forwards through an audio track."
+	
+	
 	def script_pause(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1:
@@ -82,6 +95,8 @@ class AppModule(appModuleHandler.AppModule):
 		"KB:f2":"play",
 		"KB:f3":"play",
 		"kb:f4":"play",
+		"kb:f5":"rewind",
+		"kb:f6":"forward",
 		"kb:f7":"pause",
 		"kb:control+f7":"pause",
 		"kb:f8":"stop",
