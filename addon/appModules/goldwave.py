@@ -116,6 +116,19 @@ class AppModule(appModuleHandler.AppModule):
 		speech.speakMessage(curAudioPos) # Remove the tab character before beta.
 	script_announceAudioPosition.__doc__="Announces the current audio position in seconds."
 	
+	# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
+	
+	def getAudioSelection(self):
+		fg = api.getForegroundObject() # A convenient place to start.
+		fgChild = fg.children[1] # Underneath the fg.
+		audioSelection = fgChild.children[2].displayText # Audio selection information.
+		return audioSelection
+	
+	def script_announceAudioSelection(self, gesture):
+		audioSelection = self.getAudioSelection()
+		speech.speakMessage(audioSelection)
+	
+	
 	
 	__gestures={
 		"KB:[":"dropStartMarker",
@@ -133,7 +146,8 @@ class AppModule(appModuleHandler.AppModule):
 		"kb:control+f8":"stop",
 		"kb:control+f9":"startRecord",
 		"kb:nvda+shift+c":"toggleCommandAnnouncement",
-		"kb:nvda+shift+p":"announceAudioPosition"
+		"kb:nvda+shift+p":"announceAudioPosition",
+		"kb:control+nvda+3":"announceAudioSelection"
 		
 	}
 	
