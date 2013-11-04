@@ -10,6 +10,7 @@ import speech # No need for braille yet.
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible # Since we're dealing with IAccessible.
 import scriptHandler
+from NVDAObjects.window import Window # Presets controls.
 
 class AppModule(appModuleHandler.AppModule):
 	
@@ -41,6 +42,12 @@ class AppModule(appModuleHandler.AppModule):
 		audioPos = fgChild.children[3].name # Current cursor position.
 		return audioPos
 	
+	# Presets window: the various controls for presets are buttons, so let NVDA see them as such.
+	
+	def event_NVDAObject_init(self, obj):
+		if isinstance(obj, Window) and obj.windowClassName == "TBitton":
+			obj.role = 9 # Applies to presets control buttons.
+>>>>>>> presetWindowControls
 	
 	
 	# Audio editing scripts:
