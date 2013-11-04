@@ -7,8 +7,8 @@ import appModuleHandler
 import addonHandler
 import api
 import speech # No need for braille yet.
-from logHandler import log
 addonHandler.initTranslation()
+from NVDAObjects.IAccessible import IAccessible # Since we're dealing with IAccessible.
 import scriptHandler
 
 class AppModule(appModuleHandler.AppModule):
@@ -31,6 +31,17 @@ class AppModule(appModuleHandler.AppModule):
 	def soundWindow(self):
 		obj = api.getNavigatorObject()
 		return 1 if obj.name != "Workspace" else 0 # For now, nav obj's name is used; may use other attributes later.
+	
+	# Get audio positions.
+	
+	def getAudioPos(self):
+		# Above the status bar is the audio position and selection info bar. Fetch info from there via object navigation.
+		fg = api.getForegroundObject() # A convenient place to start.
+		fgChild = fg.children[1] # Underneath the fg.
+		audioPos = fgChild.children[3].name # Current cursor position.
+		return audioPos
+	
+	
 	
 	# Audio editing scripts:
 	
@@ -98,8 +109,14 @@ class AppModule(appModuleHandler.AppModule):
 			speech.speakMessage("record")
 	script_startRecord.__doc__="Starts recording audio."
 	
+	# Audio position scripts: markers, selection duration.
 	
-		
+	def script_announceAudioPosition(self, gesture):
+		curAudioPos = self.getAudioPos()
+		speech.speakMessage(curAudioPos) # Remove the tab character before beta.
+	script_announceAudioPosition.__doc__="Announces the current audio position in seconds."
+	
+	
 	__gestures={
 		"KB:[":"dropStartMarker",
 		"KB:]":"dropFinishMarker",
@@ -115,7 +132,8 @@ class AppModule(appModuleHandler.AppModule):
 		"kb:f8":"stop",
 		"kb:control+f8":"stop",
 		"kb:control+f9":"startRecord",
-		"kb:nvda+shift+c":"toggleCommandAnnouncement"
+		"kb:nvda+shift+c":"toggleCommandAnnouncement",
+		"kb:nvda+shift+p":"announceAudioPosition"
 		
 	}
 	
