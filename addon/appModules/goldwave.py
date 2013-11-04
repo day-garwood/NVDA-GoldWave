@@ -46,9 +46,7 @@ class AppModule(appModuleHandler.AppModule):
 	
 	def event_NVDAObject_init(self, obj):
 		if isinstance(obj, Window) and obj.windowClassName == "TBitton":
-			obj.role = 9 # Applies to presets control buttons.
->>>>>>> presetWindowControls
-	
+			obj.role = 9 # Applies to presets control buttons
 	
 	# Audio editing scripts:
 	
