@@ -1,13 +1,22 @@
 # App module for Goldwave #
 
 * Authors: Joseph Lee, NVDA contributors.
-* Version: 1.0-dev.
+* Development version: [1.0-dev][1]
 
 This app module enhances access and usage of Goldwave audio editor.
 
-## Features ##
+## Shortcuts ##
 
-* Get information on track selection, such as length, start and finish marker positions.
-* Get announcements on start and finish markers when they are set.
+* NVDA+Shift+P: Announces current track position.
+* Control+NvDA+3: announces a summary on audio selection information.
+* NvDA+Shift+C: Toggles speaking of commands during audio editing.
 
-For more information on Goldwave and keyboard commands for this program, please see Goldwave user guide.
+For more information about Goldwave and keyboard commands, refer to Goldwave Manual.
+
+## Changes for 1.0-dev ##
+
+* Initial version.
+
+[[!tag dev]]
+
+[1]: http://addons.nvda-project.org/files/get.php?file=gwv
