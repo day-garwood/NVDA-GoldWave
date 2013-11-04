@@ -127,6 +127,7 @@ class AppModule(appModuleHandler.AppModule):
 	def script_announceAudioSelection(self, gesture):
 		audioSelection = self.getAudioSelection()
 		speech.speakMessage(audioSelection)
+	script_announceAudioSelection.__doc__="Announces a summary on audio selection info such as selection duration."
 	
 	
 	
