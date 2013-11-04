@@ -117,8 +117,9 @@ class AppModule(appModuleHandler.AppModule):
 	# Audio position scripts: markers, selection duration.
 	
 	def script_announceAudioPosition(self, gesture):
-		curAudioPos = self.getAudioPos()
-		speech.speakMessage(curAudioPos) # Remove the tab character before beta.
+		if self.soundWindow() == 1: # Shouldn't say anything unless in audio editing view.
+			curAudioPos = self.getAudioPos()
+			speech.speakMessage(curAudioPos) # Remove the tab character before beta.
 	script_announceAudioPosition.__doc__="Announces the current audio position in seconds."
 	
 	# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
@@ -130,8 +131,9 @@ class AppModule(appModuleHandler.AppModule):
 		return audioSelection
 	
 	def script_announceAudioSelection(self, gesture):
-		audioSelection = self.getAudioSelection()
-		speech.speakMessage(audioSelection)
+		if self.soundWindow() == 1: # Again, just like audio position above.
+			audioSelection = self.getAudioSelection() # Parse this string to get individual info such as marker positions.
+			speech.speakMessage(audioSelection)
 	script_announceAudioSelection.__doc__="Announces a summary on audio selection info such as selection duration."
 	
 	
