@@ -79,7 +79,7 @@ class AppModule(appModuleHandler.AppModule):
 		return self.audioChannelValues[audioChannels]
 
 	def getTrackLength(self):
-		fg = api.getForegroundObject(
+		fg = api.getForegroundObject()
 		fgChild = fg.children[1]
 		# Audio selection information.
 		trackLength = fgChild.children[1].displayText
