@@ -172,16 +172,34 @@ class AppModule(appModuleHandler.AppModule):
 			speech.speakMessage(trackLength)
 	script_announceTrackLength.__doc__="Announces total length of the audio track."
 	
+	# Audio channels and zoom level.
+	
 	def script_announceAudioChannels(self, gesture):
 		if self.soundWindow() == 1: # Again, just like audio position above.
 			channel = "Selected channel: " + self.getAudioChannels()
 			speech.speakMessage(channel)
 	script_announceAudioChannels.__doc__="Announces the audio channel you are editing."
 	
+	def getZoomLevel(self):
+		fg = api.getForegroundObject() # A convenient place to start.
+		fgChild = fg.children[2] # Underneath the fg.
+		return "Zoom level: " + fgChild.children[1].displayText # Zoom level.
 	
+	def script_announceZoomLevel(self, gesture):
+		if self.soundWindow() == 1: # Again, just like audio position above.
+			zoomLevel = self.getZoomLevel()
+			speech.speakMessage(zoomLevel)
+	script_announceZoomLevel.__doc__="Announces audio zoom level."
+	
+	def script_changeZoomLevel(self, gesture):
+		if self.soundWindow() == 1: # Again, just like audio position above.
+			gesture.send()
+			zoomLevel = self.getZoomLevel()
+			speech.speakMessage(zoomLevel)
+	script_changeZoomLevel.__doc__="Changes zoom level and announces the new level."
+			
 	__gestures={
-		"KB:[":"dropStartMarker",
-		"KB:]":"dropFinishMarker",
+		"KB:[":"dropStartMarker", "KB:]":"dropFinishMarker",
 		"KB:control+a":"selectAll",
 		"kB:control+[":"playSelection",
 		"KB:f2":"play",
@@ -198,6 +216,7 @@ class AppModule(appModuleHandler.AppModule):
 		"kb:nvda+shift+p":"announceAudioPosition",
 		"kb:control+nvda+3":"announceAudioSelection",
 		"kb:control+nvda+2":"announceTrackLength",
-		"kb:control+nvda+1":"announceAudioChannels"
+		"kb:control+nvda+1":"announceAudioChannels",
+		"kb:nvda+shift+z":"announceZoomLevel", "kb:shift+uparrow":"changeZoomLevel", "kb:shift+downarrow":"changeZoomLevel"
 	}
 	
