@@ -136,7 +136,7 @@ class AppModule(appModuleHandler.AppModule):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
 			# Translators: Spoken when a track is rewinding in Goldwave.
-			speech.speakMessage("rewind")
+			speech.speakMessage(_("rewind"))
 	# Translators: Input help mode message for a Goldwave command.
 	script_rewind.__doc__=_("Rewinds through an audio track.")
 	
