@@ -1,4 +1,4 @@
-# App module for Goldwave #
+# Goldwave #
 
 * Authors: Joseph Lee, NVDA contributors.
 * Development version: [1.0-dev][1]

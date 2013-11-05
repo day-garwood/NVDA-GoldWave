@@ -17,13 +17,13 @@ addon_info = {
 	"addon-summary" : _("Goldwave"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon-description" : _("""An app module for enhancing access and usage of Goldwave audio editor."""),
+	"addon-description" : _("An add-on for enhancing access and usage of Goldwave audio editor."),
 	# version
 	"addon-version" : "1.0-dev",
 	# Author(s)
 	"addon-author" : u"Joseph Lee <joseph.lee22590@gmail.com> and NVDA contributors",
 	# URL for the add-on documentation support
-	"addon-url" : None
+	"addon-url" : 'http://addons.nvda-project.org',
 }
 
 
