@@ -42,6 +42,21 @@ class AppModule(appModuleHandler.AppModule):
 		audioPos = fgChild.children[3].name # Current cursor position.
 		return audioPos
 	
+	# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
+	
+	def getAudioSelection(self):
+		fg = api.getForegroundObject() # A convenient place to start.
+		fgChild = fg.children[1] # Underneath the fg.
+		audioSelection = fgChild.children[2].displayText # Audio selection information.
+		return audioSelection
+	
+	# Continuing from above, get marker positions and selection duration. This is a string parsing problem.
+	# Store the parsed strings into a list.
+	
+	def getAudioSelectionParsed(self):
+		return self.getAudioSelection().split(" ") # Deal with duration string later.
+	
+	
 	# Presets window: the various controls for presets are buttons, so let NVDA see them as such.
 	
 	def event_NVDAObject_init(self, obj):
@@ -52,16 +67,17 @@ class AppModule(appModuleHandler.AppModule):
 	
 	def script_dropStartMarker(self, gesture):
 		gesture.send()
-		# Find out whether we're in the main window or the sound window.
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("Start marked")
-	script_dropStartMarker.__doc__="Drops the start marker."
+			marker = "Start: " + self.getAudioSelectionParsed()[0]
+			speech.speakMessage(marker)
+	script_dropStartMarker.__doc__="Drops the start marker and announces start marker position."
 	
 	def script_dropFinishMarker(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("Finish marked")
-	script_dropFinishMarker.__doc__="Drops the finish marker."
+			marker = "Finish: " + self.getAudioSelectionParsed()[2]
+			speech.speakMessage(marker)
+	script_dropFinishMarker.__doc__="Drops the finish marker and announces finish marker position."
 	
 	def script_playSelection(self, gesture):
 		gesture.send()
@@ -122,19 +138,26 @@ class AppModule(appModuleHandler.AppModule):
 			speech.speakMessage(curAudioPos) # Remove the tab character before beta.
 	script_announceAudioPosition.__doc__="Announces the current audio position in seconds."
 	
-	# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
-	
-	def getAudioSelection(self):
-		fg = api.getForegroundObject() # A convenient place to start.
-		fgChild = fg.children[1] # Underneath the fg.
-		audioSelection = fgChild.children[2].displayText # Audio selection information.
-		return audioSelection
-	
 	def script_announceAudioSelection(self, gesture):
 		if self.soundWindow() == 1: # Again, just like audio position above.
 			audioSelection = self.getAudioSelection() # Parse this string to get individual info such as marker positions.
 			speech.speakMessage(audioSelection)
 	script_announceAudioSelection.__doc__="Announces a summary on audio selection info such as selection duration."
+	
+	
+	
+	def getTrackLength(self):
+		fg = api.getForegroundObject() # A convenient place to start.
+		fgChild = fg.children[1] # Underneath the fg.
+		trackLength = fgChild.children[1].displayText # Audio selection information.
+		return trackLength
+	
+	def script_announceTrackLength(self, gesture):
+		if self.soundWindow() == 1: # Again, just like audio position above.
+			trackLength = self.getTrackLength() # Obtain track length.
+			speech.speakMessage(trackLength)
+	script_announceTrackLength.__doc__="Announces total length of the audio track."
+	
 	
 	
 	
@@ -155,7 +178,8 @@ class AppModule(appModuleHandler.AppModule):
 		"kb:control+f9":"startRecord",
 		"kb:nvda+shift+c":"toggleCommandAnnouncement",
 		"kb:nvda+shift+p":"announceAudioPosition",
-		"kb:control+nvda+3":"announceAudioSelection"
+		"kb:control+nvda+3":"announceAudioSelection",
+		"kb:control+nvda+2":"announceTrackLength"
 		
 	}
 	
