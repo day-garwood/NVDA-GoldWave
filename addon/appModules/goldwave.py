@@ -56,6 +56,20 @@ class AppModule(appModuleHandler.AppModule):
 	def getAudioSelectionParsed(self):
 		return self.getAudioSelection().split(" ") # Deal with duration string later.
 	
+	# Get channel information. But first, a few constants (to help translators):
+	audioChannelValues={
+		"Mono":"mono",
+		"Stereo":"stereo",
+		"Left":"left",
+		"Right":"right"
+	}
+	# Based on the constants above and the return value below, get channel information.
+	
+	def getAudioChannels(self):
+		fg = api.getForegroundObject()
+		fgChild = fg.children[1] # Underneath the fg.
+		audioChannels = fgChild.children[0].displayText # Audio channels.
+		return self.audioChannelValues[audioChannels] # This is where dictionaries are convenient.
 	
 	# Presets window: the various controls for presets are buttons, so let NVDA see them as such.
 	
@@ -158,7 +172,11 @@ class AppModule(appModuleHandler.AppModule):
 			speech.speakMessage(trackLength)
 	script_announceTrackLength.__doc__="Announces total length of the audio track."
 	
-	
+	def script_announceAudioChannels(self, gesture):
+		if self.soundWindow() == 1: # Again, just like audio position above.
+			channel = "Selected channel: " + self.getAudioChannels()
+			speech.speakMessage(channel)
+	script_announceAudioChannels.__doc__="Announces the audio channel you are editing."
 	
 	
 	__gestures={
@@ -179,7 +197,7 @@ class AppModule(appModuleHandler.AppModule):
 		"kb:nvda+shift+c":"toggleCommandAnnouncement",
 		"kb:nvda+shift+p":"announceAudioPosition",
 		"kb:control+nvda+3":"announceAudioSelection",
-		"kb:control+nvda+2":"announceTrackLength"
-		
+		"kb:control+nvda+2":"announceTrackLength",
+		"kb:control+nvda+1":"announceAudioChannels"
 	}
 	
