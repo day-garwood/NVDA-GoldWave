@@ -215,6 +215,7 @@ class AppModule(appModuleHandler.AppModule):
 		"kb:control+nvda+3":"announceAudioSelection",
 		"kb:control+nvda+2":"announceTrackLength",
 		"kb:control+nvda+1":"announceAudioChannels",
-		"kb:nvda+shift+z":"announceZoomLevel", "kb:shift+uparrow":"changeZoomLevel", "kb:shift+downarrow":"changeZoomLevel"
+		"kb:nvda+shift+z":"announceZoomLevel",
+		"kb:shift+uparrow":"changeZoomLevel", "kb:shift+downarrow":"changeZoomLevel", "kb:shift+0":"changeZoomLevel", "kb:shift+1":"changeZoomLevel", "kb:shift+2":"changeZoomLevel", "kb:shift+3":"changeZoomLevel", "kb:shift+4":"changeZoomLevel", "kb:shift+5":"changeZoomLevel", "kb:shift+6":"changeZoomLevel"
 	}
 	
