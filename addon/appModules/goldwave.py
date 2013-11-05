@@ -7,6 +7,7 @@ import appModuleHandler
 import addonHandler
 import api
 import speech # No need for braille yet.
+from controlTypes import ROLE_BUTTON
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible # Since we're dealing with IAccessible.
 import scriptHandler
@@ -95,7 +96,7 @@ class AppModule(appModuleHandler.AppModule):
 		# Presets window: the various controls for presets are buttons, so let NVDA see them as such.
 		# Applies to presets control buttons
 		if isinstance(obj, Window) and obj.windowClassName == "TBitton":
-			obj.role = 9
+			obj.role = ROLE_BUTTON
 
 	# Audio editing scripts:
 
