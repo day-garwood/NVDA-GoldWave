@@ -21,11 +21,14 @@ class AppModule(appModuleHandler.AppModule):
 	def script_toggleCommandAnnouncement(self, gesture):
 		if self.commandAnnouncement == 1:
 			self.commandAnnouncement = 0 # Command announcement off.
-			speech.speakMessage("command announcement off")
+			# Translators: Spoken when command announcement messages are turned off in Goldwave.
+			speech.speakMessage(_("command announcement off"))
 		else:
 			self.commandAnnouncement = 1 # Command announcement on.
-			speech.speakMessage("command announcement on")
-	script_toggleCommandAnnouncement.__doc__="Toggles whether NVDA announces editing commands during audio recording or playback."
+			# Translators: Spoken when command announcement messages are turned on in Goldwave.
+			speech.speakMessage(_("command announcement on"))
+	# Translators: Input help mode message for command announcement command in Goldwave.
+	script_toggleCommandAnnouncement.__doc__=_("Toggles whether NVDA announces editing commands during audio recording or playback.")
 	
 	# A number of utility functions follows:
 	
@@ -58,11 +61,16 @@ class AppModule(appModuleHandler.AppModule):
 	
 	# Get channel information. But first, a few constants (to help translators):
 	audioChannelValues={
-		"":"Channel information unavailable",
-		"Mono":"mono",
-		"Stereo":"stereo",
-		"Left":"left",
-		"Right":"right"
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"":_("Channel information unavailable"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Mono":_("mono"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Stereo":_("stereo"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Left":_("left"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Right":_("right")
 	}
 	# Based on the constants above and the return value below, get channel information.
 	
@@ -83,80 +91,103 @@ class AppModule(appModuleHandler.AppModule):
 	def script_dropStartMarker(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			marker = "Start: " + self.getAudioSelectionParsed()[0]
+			# Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+			marker = _("Start: ") + self.getAudioSelectionParsed()[0]
 			speech.speakMessage(marker)
-	script_dropStartMarker.__doc__="Drops the start marker and announces start marker position."
+	# Translators: Input help mode message for a Goldwave command.
+	script_dropStartMarker.__doc__=_("Drops the start marker and announces start marker position.")
 	
 	def script_dropFinishMarker(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			marker = "Finish: " + self.getAudioSelectionParsed()[2]
+			# Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+			marker = _("Finish: ") + self.getAudioSelectionParsed()[2]
 			speech.speakMessage(marker)
-	script_dropFinishMarker.__doc__="Drops the finish marker and announces finish marker position."
+	# Translators: Input help mode message for a Goldwave command.
+	script_dropFinishMarker.__doc__=_("Drops the finish marker and announces finish marker position.")
 	
 	def script_playSelection(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("Play selection")
-	script_playSelection.__doc__="Plays the trakc between start and finish markers."
+			# Translators: Spoken when selected audio is playing.
+			speech.speakMessage(_("Play selection"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_playSelection.__doc__=_("Plays the trakc between start and finish markers.")
 	
 	def script_selectAll(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("Select All")
-	script_selectAll.__doc__="Selects the entire track."
+			# Translators: Spoken when all parts of the audio track is selected.
+			speech.speakMessage(_("Select All"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_selectAll.__doc__=_("Selects the entire track.")
 	
 	# Playback and recording:
 	
 	def script_play(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("play")
-	script_play.__doc__="Plays the audio track."
+			# Translators: Spoken when a track is playing in Goldwave.
+			speech.speakMessage(_("play"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_play.__doc__=_("Plays the audio track.")
 	
 	def script_rewind(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
+			# Translators: Spoken when a track is rewinding in Goldwave.
 			speech.speakMessage("rewind")
-	script_rewind.__doc__="Rewinds through an audio track."
+	# Translators: Input help mode message for a Goldwave command.
+	script_rewind.__doc__=_("Rewinds through an audio track.")
 	
 	def script_forward(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("fast forward")
-	script_forward.__doc__="Fast forwards through an audio track."
+			# Translators: Spoken when fast forwarding a track in Goldwave.
+			speech.speakMessage(_("fast forward"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_forward.__doc__=_("Fast forwards through an audio track.")
 	
 	def script_pause(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("pause")
-	script_pause.__doc__="Pauses the audio track."
+			# Translators: Spoken when pasuing a track in Goldwave.
+			speech.speakMessage(_("pause"))
+# Translators: Input help mode message for a Goldwave command.	
+	script_pause.__doc__=_("Pauses the audio track.")
 	
 	def script_stop(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("stop")
-	script_stop.__doc__="stops the audio track."
+			# Translators: Spoken when stopping a track in in Goldwave.
+			speech.speakMessage(_("stop"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_stop.__doc__=_("stops the audio track.")
 	
 	def script_startRecord(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
-			speech.speakMessage("record")
-	script_startRecord.__doc__="Starts recording audio."
+			# Translators: Spoken when starting recording in Goldwave.
+			speech.speakMessage(_("record"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_startRecord.__doc__=_("Starts recording audio.")
 	
 	# Audio position scripts: markers, selection duration.
 	
 	def script_announceAudioPosition(self, gesture):
 		if self.soundWindow() == 1: # Shouldn't say anything unless in audio editing view.
 			curAudioPos = self.getAudioPos()
-			speech.speakMessage(curAudioPos) # Remove the tab character before beta.
-	script_announceAudioPosition.__doc__="Announces the current audio position in seconds."
+			speech.speakMessage(curAudioPos) # Remove the tab character before release.
+	# Translators: Input help mode message for a Goldwave command.
+	script_announceAudioPosition.__doc__=_("Announces the current audio position in seconds.")
 	
 	def script_announceAudioSelection(self, gesture):
 		if self.soundWindow() == 1: # Again, just like audio position above.
 			audioSelection = self.getAudioSelection() # Parse this string to get individual info such as marker positions.
-			speech.speakMessage("Unable to obtain audio selection summary. Please close and reopen the audio track.") if audioSelection == "" else speech.speakMessage(audioSelection)
-	script_announceAudioSelection.__doc__="Announces a summary on audio selection info such as selection duration."
+			# Translators: Spoken when there is no audio selection summary available.
+			speech.speakMessage(_("Unable to obtain audio selection summary. Please close and reopen the audio track.")) if audioSelection == "" else speech.speakMessage(audioSelection)
+	# Translators: Input help mode message for a Goldwave command.
+	script_announceAudioSelection.__doc__=_("Announces a summary on audio selection info such as selection duration.")
 	
 	def getTrackLength(self):
 		fg = api.getForegroundObject() # A convenient place to start.
@@ -167,34 +198,41 @@ class AppModule(appModuleHandler.AppModule):
 	def script_announceTrackLength(self, gesture):
 		if self.soundWindow() == 1:
 			trackLength = self.getTrackLength() # Obtain track length.
-			speech.speakMessage("Track length is unavailable. Please close and reopen the audio track.") if trackLength == "" else speech.speakMessage(trackLength)
-	script_announceTrackLength.__doc__="Announces total length of the audio track."
+			# Translators: Spoken when there is no track length information.
+			speech.speakMessage(_("Track length is unavailable. Please close and reopen the audio track.")) if trackLength == "" else speech.speakMessage(trackLength)
+	# Translators: Input help mode message for a Goldwave command.
+	script_announceTrackLength.__doc__=_("Announces total length of the audio track.")
 	
 	# Audio channels and zoom level.
 	
 	def script_announceAudioChannels(self, gesture):
 		if self.soundWindow() == 1: # Again, just like audio position above.
-			channel = "Selected channel: " + self.getAudioChannels()
+			# Translators: Spoken to indicate the selected channel for the track (example output: "Selected channel: mono").
+			channel = _("Selected channel: ") + self.getAudioChannels()
 			speech.speakMessage(channel)
-	script_announceAudioChannels.__doc__="Announces the audio channel you are editing."
+	# Translators: Input help mode message for a Goldwave command.
+	script_announceAudioChannels.__doc__=_("Announces the audio channel you are editing.")
 	
 	def getZoomLevel(self):
 		fg = api.getForegroundObject() # A convenient place to start.
 		fgChild = fg.children[2] # Underneath the fg.
-		return "Zoom level: " + fgChild.children[1].displayText # Zoom level.
+		# Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+		return _("Zoom level: ") + fgChild.children[1].displayText # Zoom level.
 	
 	def script_announceZoomLevel(self, gesture):
 		if self.soundWindow() == 1: # Again, just like audio position above.
 			zoomLevel = self.getZoomLevel()
 			speech.speakMessage(zoomLevel)
-	script_announceZoomLevel.__doc__="Announces audio zoom level."
+	# Translators: Input help mode message for a Goldwave command.
+	script_announceZoomLevel.__doc__=_("Announces audio zoom level.")
 	
 	def script_changeZoomLevel(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1:
 			zoomLevel = self.getZoomLevel()
 			speech.speakMessage(zoomLevel)
-	script_changeZoomLevel.__doc__="Changes zoom level and announces the new level."
+	# Translators: Input help mode message for a Goldwave command.
+	script_changeZoomLevel.__doc__=_("Changes zoom level and announces the new level.")
 			
 	__gestures={
 		"KB:[":"dropStartMarker", "KB:]":"dropFinishMarker",
