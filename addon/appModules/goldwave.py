@@ -30,8 +30,8 @@ class AppModule(appModuleHandler.AppModule):
 	# A number of utility functions follows:
 	
 	def soundWindow(self):
-		obj = api.getNavigatorObject()
-		return 1 if obj.name != "Workspace" else 0 # For now, nav obj's name is used; may use other attributes later.
+		obj = api.getFocusObject()
+		return 1 if obj.windowClassName == "TWaveView" else 0 # For now, nav obj's name is used; may use other attributes later.
 	
 	# Get audio positions.
 	
@@ -45,7 +45,7 @@ class AppModule(appModuleHandler.AppModule):
 	# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
 	
 	def getAudioSelection(self):
-		fg = api.getForegroundObject() # A convenient place to start.
+		fg = api.getForegroundObject()
 		fgChild = fg.children[1] # Underneath the fg.
 		audioSelection = fgChild.children[2].displayText # Audio selection information.
 		return audioSelection
@@ -58,6 +58,7 @@ class AppModule(appModuleHandler.AppModule):
 	
 	# Get channel information. But first, a few constants (to help translators):
 	audioChannelValues={
+		"":"Channel information unavailable",
 		"Mono":"mono",
 		"Stereo":"stereo",
 		"Left":"left",
@@ -125,7 +126,6 @@ class AppModule(appModuleHandler.AppModule):
 			speech.speakMessage("fast forward")
 	script_forward.__doc__="Fast forwards through an audio track."
 	
-	
 	def script_pause(self, gesture):
 		gesture.send()
 		if self.soundWindow() == 1 and self.commandAnnouncement == 1:
@@ -155,10 +155,8 @@ class AppModule(appModuleHandler.AppModule):
 	def script_announceAudioSelection(self, gesture):
 		if self.soundWindow() == 1: # Again, just like audio position above.
 			audioSelection = self.getAudioSelection() # Parse this string to get individual info such as marker positions.
-			speech.speakMessage(audioSelection)
+			speech.speakMessage("Unable to obtain audio selection summary. Please close and reopen the audio track.") if audioSelection == "" else speech.speakMessage(audioSelection)
 	script_announceAudioSelection.__doc__="Announces a summary on audio selection info such as selection duration."
-	
-	
 	
 	def getTrackLength(self):
 		fg = api.getForegroundObject() # A convenient place to start.
@@ -167,9 +165,9 @@ class AppModule(appModuleHandler.AppModule):
 		return trackLength
 	
 	def script_announceTrackLength(self, gesture):
-		if self.soundWindow() == 1: # Again, just like audio position above.
+		if self.soundWindow() == 1:
 			trackLength = self.getTrackLength() # Obtain track length.
-			speech.speakMessage(trackLength)
+			speech.speakMessage("Track length is unavailable. Please close and reopen the audio track.") if trackLength == "" else speech.speakMessage(trackLength)
 	script_announceTrackLength.__doc__="Announces total length of the audio track."
 	
 	# Audio channels and zoom level.
@@ -192,8 +190,8 @@ class AppModule(appModuleHandler.AppModule):
 	script_announceZoomLevel.__doc__="Announces audio zoom level."
 	
 	def script_changeZoomLevel(self, gesture):
-		if self.soundWindow() == 1: # Again, just like audio position above.
-			gesture.send()
+		gesture.send()
+		if self.soundWindow() == 1:
 			zoomLevel = self.getZoomLevel()
 			speech.speakMessage(zoomLevel)
 	script_changeZoomLevel.__doc__="Changes zoom level and announces the new level."
