@@ -234,7 +234,9 @@ class AppModule(appModuleHandler.AppModule):
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceZoomLevel.__doc__=_("Announces audio zoom level.")
 
-	script_changeZoomLevel = script_announceZoomLevel
+	def script_changeZoomLevel(self, gesture):
+		gesture.send()
+		self.script_announceZoomLevel(gesture)
 	# Translators: Input help mode message for a Goldwave command.
 	script_changeZoomLevel.__doc__=_("Changes zoom level and announces the new level.")
 
