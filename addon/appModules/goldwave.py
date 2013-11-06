@@ -50,6 +50,8 @@ class AppModule(appModuleHandler.AppModule):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[1]
 		# Audio selection information.
+		# What if fgChild returns empty string? (core ticket 3623/2892) If so, redraw (expensive; don't use this a lot).
+		if fgChild.displayText == "": fgChild.redraw()
 		audioSelection = fgChild.children[2].displayText.replace('\t', '')
 		return audioSelection
 
@@ -76,13 +78,14 @@ class AppModule(appModuleHandler.AppModule):
 		# Based on the constants above and the return value below, get channel information.
 		fg = api.getForegroundObject()
 		fgChild = fg.children[1]
+		if fgChild.displayText == "": fgChild.redraw()
 		audioChannels = fgChild.children[0].displayText
 		return self.audioChannelValues[audioChannels]
 
 	def getTrackLength(self):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[1]
-		# Audio selection information.
+		if fgChild.displayText == "": fgChild.redraw()
 		trackLength = fgChild.children[1].displayText
 		return trackLength
 
