@@ -88,8 +88,10 @@ class SoundWindow(IAccessible):
 	def getZoomLevel(self):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[-2]
+		if fgChild.children[1].displayText == "": fgChild.redraw()
 		# Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-		return _("Zoom level: ") + fgChild.children[1].displayText
+		zoomLevel = ("Zoom level: ") + fgChild.children[1].displayText
+		return zoomLevel
 
 	# Audio editing scripts:
 
@@ -241,7 +243,7 @@ class SoundWindow(IAccessible):
 		"kb:control+nvda+3":"announceAudioSelection",
 		"kb:control+nvda+2":"announceTrackLength",
 		"kb:control+nvda+1":"announceAudioChannels",
-		"kb:nvda+shift+z":"announceZoomLevel",
+		"kb:control+nvda+4":"announceZoomLevel",
 		"kb:shift+uparrow":"changeZoomLevel", "kb:shift+downarrow":"changeZoomLevel", "kb:shift+0":"changeZoomLevel", "kb:shift+1":"changeZoomLevel", "kb:shift+2":"changeZoomLevel", "kb:shift+3":"changeZoomLevel", "kb:shift+4":"changeZoomLevel", "kb:shift+5":"changeZoomLevel", "kb:shift+6":"changeZoomLevel"
 	}
 
