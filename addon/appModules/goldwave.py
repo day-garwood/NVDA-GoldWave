@@ -11,9 +11,23 @@ from controlTypes import ROLE_BUTTON
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible # Since we're dealing with IAccessible.
 import scriptHandler
-from NVDAObjects.window import Window # Preset controls.
+from NVDAObjects.window import Window # Various buttons.
+import ui
 
-# A number of NVDA objects for GoldWavw:
+# A number of NVDA objects for GoldWave:
+
+class goldwavenumericedit(IAccessible):
+	# TNumEdit class. Credit: David P.
+
+	__gestures = {
+		"kb:downArrow": "updatevalue",
+		"kb:upArrow": "updatevalue",
+		"kb:pageUp": "updatevalue",
+		"kb:pageDown": "updatevalue"
+	}
+	def script_updatevalue(self, gesture):
+		gesture.send()
+		ui.message(self.windowText)
 
 class SoundWindow(IAccessible):
 	# The GoldWave's sound window. Here one can play, record and edit audio files.
@@ -89,8 +103,7 @@ class SoundWindow(IAccessible):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[-2]
 		if fgChild.children[1].displayText == "": fgChild.redraw()
-		# Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-		zoomLevel = ("Zoom level: ") + fgChild.children[1].displayText
+		zoomLevel = fgChild.children[1].displayText
 		return zoomLevel
 
 	# Audio editing scripts:
@@ -213,7 +226,8 @@ class SoundWindow(IAccessible):
 	script_announceAudioChannels.__doc__=_("Announces the audio channel you are editing.")
 
 	def script_announceZoomLevel(self, gesture):
-		zoomLevel = self.getZoomLevel()
+		# Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+		zoomLevel = _("Zoom level: ") + self.getZoomLevel()
 		speech.speakMessage(zoomLevel)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceZoomLevel.__doc__=_("Announces audio zoom level.")
@@ -258,7 +272,10 @@ class AppModule(appModuleHandler.AppModule):
 			obj.role = ROLE_BUTTON
 
 	# The overlay method for sound window.
-	
+
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		if obj.windowClassName == "TWaveView":
 			clsList.insert(0, SoundWindow)
+		if obj.windowClassName == 'TNumEdit':
+			clsList.insert(0, goldwavenumericedit)
+
