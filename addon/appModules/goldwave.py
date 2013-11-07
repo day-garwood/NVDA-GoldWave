@@ -250,12 +250,11 @@ class SoundWindow(IAccessible):
 
 class AppModule(appModuleHandler.AppModule):
 
-	# Presets window: Work with preset buttons.
+	# Presets and control windows: Work with buttons with custom window class names.
 
 	def event_NVDAObject_init(self, obj):
-		# Presets window: the various controls for presets are buttons, so let NVDA see them as such.
-		# Applies to presets control buttons
-		if isinstance(obj, Window) and obj.windowClassName == "TBitton":
+		# Presets and control windows: the various controls are buttons, so let NVDA see them as such.
+		if isinstance(obj, Window) and obj.windowClassName == "TBitton" or obj.windowClassName == "TImageButton":
 			obj.role = ROLE_BUTTON
 
 	# The overlay method for sound window.
