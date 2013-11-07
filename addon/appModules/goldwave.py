@@ -239,7 +239,7 @@ class SoundWindow(IAccessible):
 		"kb:control+f8":"stop",
 		"kb:control+f9":"startRecord",
 		"kb:nvda+shift+c":"toggleCommandAnnouncement",
-		"kb:nvda+shift+p":"announceAudioPosition",
+		"kb:control+shift+p":"announceAudioPosition",
 		"kb:control+nvda+3":"announceAudioSelection",
 		"kb:control+nvda+2":"announceTrackLength",
 		"kb:control+nvda+1":"announceAudioChannels",
