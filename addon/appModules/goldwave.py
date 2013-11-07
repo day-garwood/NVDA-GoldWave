@@ -36,15 +36,15 @@ class SoundWindow(IAccessible):
 	def getAudioPos(self):
 		# Above the status bar is the audio position and selection info bar. Fetch info from there via object navigation.
 		fg = api.getForegroundObject()
-		fgChild = fg.children[1]
+		fgChild = fg.children[-3]
 		# Current cursor position.
-		audioPos = fgChild.children[3].name.replace('\t', '')
-		return audioPos
+		audioPos = fgChild.children[3].displayText.replace('\t', '')
+		return "Track position not available" if audioPos == "" else audioPos
 
 	def getAudioSelection(self):
 		# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
 		fg = api.getForegroundObject()
-		fgChild = fg.children[1]
+		fgChild = fg.children[-3]
 		# Audio selection information.
 		# What if fgChild returns empty string? (core ticket 3623/2892) If so, redraw (expensive; don't use this a lot).
 		if fgChild.displayText == "": fgChild.redraw()
@@ -73,21 +73,21 @@ class SoundWindow(IAccessible):
 	def getAudioChannels(self):
 		# Based on the constants above and the return value below, get channel information.
 		fg = api.getForegroundObject()
-		fgChild = fg.children[1]
+		fgChild = fg.children[-3]
 		if fgChild.displayText == "": fgChild.redraw()
 		audioChannels = fgChild.children[0].displayText
 		return self.audioChannelValues[audioChannels]
 
 	def getTrackLength(self):
 		fg = api.getForegroundObject()
-		fgChild = fg.children[1]
+		fgChild = fg.children[-3]
 		if fgChild.displayText == "": fgChild.redraw()
 		trackLength = fgChild.children[1].displayText
 		return trackLength
 
 	def getZoomLevel(self):
 		fg = api.getForegroundObject()
-		fgChild = fg.children[2]
+		fgChild = fg.children[-2]
 		# Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 		return _("Zoom level: ") + fgChild.children[1].displayText
 
