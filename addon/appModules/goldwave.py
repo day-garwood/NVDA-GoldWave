@@ -11,9 +11,12 @@ from controlTypes import ROLE_BUTTON
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible # Since we're dealing with IAccessible.
 import scriptHandler
-from NVDAObjects.window import Window # Presets controls.
+from NVDAObjects.window import Window # Preset controls.
 
-class AppModule(appModuleHandler.AppModule):
+# A number of NVDA objects for GoldWavw:
+
+class SoundWindow(IAccessible):
+	# The GoldWave's sound window. Here one can play, record and edit audio files.
 
 	# Announcement of commands is enabled by default.
 	commandAnnouncement = True
@@ -21,20 +24,13 @@ class AppModule(appModuleHandler.AppModule):
 	def script_toggleCommandAnnouncement(self, gesture):
 		self.commandAnnouncement = not self.commandAnnouncement
 		if self.commandAnnouncement:
-			# Translators: Spoken when command announcement messages are turned off in Goldwave.
-			speech.speakMessage(_("command announcement off"))
-		else:
 			# Translators: Spoken when command announcement messages are turned on in Goldwave.
 			speech.speakMessage(_("command announcement on"))
+		else:
+			# Translators: Spoken when command announcement messages are turned off in Goldwave.
+			speech.speakMessage(_("command announcement off"))
 	# Translators: Input help mode message for command announcement command in Goldwave.
 	script_toggleCommandAnnouncement.__doc__=_("Toggles whether NVDA announces editing commands during audio recording or playback.")
-
-	# A number of utility functions follows:
-
-	def soundWindow(self):
-		obj = api.getFocusObject()
-		# For now, nav obj's name is used; may use other attributes later.
-		return obj.windowClassName == "TWaveView"
 
 	# Get audio positions.
 	def getAudioPos(self):
@@ -95,17 +91,11 @@ class AppModule(appModuleHandler.AppModule):
 		# Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 		return _("Zoom level: ") + fgChild.children[1].displayText
 
-	def event_NVDAObject_init(self, obj):
-		# Presets window: the various controls for presets are buttons, so let NVDA see them as such.
-		# Applies to presets control buttons
-		if isinstance(obj, Window) and obj.windowClassName == "TBitton":
-			obj.role = ROLE_BUTTON
-
 	# Audio editing scripts:
 
 	def script_dropStartMarker(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 			marker = _("Start: ") + self.getAudioSelectionParsed()[0]
 			speech.speakMessage(marker)
@@ -114,7 +104,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_dropFinishMarker(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 			marker = _("Finish: ") + self.getAudioSelectionParsed()[2]
 			speech.speakMessage(marker)
@@ -123,7 +113,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_playSelection(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: Spoken when selected audio is playing.
 			speech.speakMessage(_("Play selection"))
 	# Translators: Input help mode message for a Goldwave command.
@@ -131,7 +121,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_selectAll(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: Spoken when all parts of the audio track is selected.
 			speech.speakMessage(_("Select All"))
 	# Translators: Input help mode message for a Goldwave command.
@@ -141,7 +131,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_play(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: Spoken when a track is playing in Goldwave.
 			speech.speakMessage(_("play"))
 	# Translators: Input help mode message for a Goldwave command.
@@ -149,7 +139,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_rewind(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: Spoken when a track is rewinding in Goldwave.
 			speech.speakMessage(_("rewind"))
 	# Translators: Input help mode message for a Goldwave command.
@@ -157,7 +147,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_forward(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: Spoken when fast forwarding a track in Goldwave.
 			speech.speakMessage(_("fast forward"))
 	# Translators: Input help mode message for a Goldwave command.
@@ -165,7 +155,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_pause(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: Spoken when pausing a track in Goldwave.
 			speech.speakMessage(_("pause"))
 	# Translators: Input help mode message for a Goldwave command.
@@ -173,7 +163,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_stop(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: Spoken when stopping a track in in Goldwave.
 			speech.speakMessage(_("stop"))
 	# Translators: Input help mode message for a Goldwave command.
@@ -181,7 +171,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_startRecord(self, gesture):
 		gesture.send()
-		if self.soundWindow() and self.commandAnnouncement:
+		if self.commandAnnouncement:
 			# Translators: Spoken when starting recording in Goldwave.
 			speech.speakMessage(_("record"))
 	# Translators: Input help mode message for a Goldwave command.
@@ -191,46 +181,38 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_announceAudioPosition(self, gesture):
 		# Shouldn't say anything unless in audio editing view.
-		if self.soundWindow():
-			curAudioPos = self.getAudioPos()
-			speech.speakMessage(curAudioPos)
+		curAudioPos = self.getAudioPos()
+		speech.speakMessage(curAudioPos)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioPosition.__doc__=_("Announces the current audio position in seconds.")
 
 	def script_announceAudioSelection(self, gesture):
-		# Again, just like audio position above.
-		if self.soundWindow():
-			# Parse this string to get individual info such as marker positions.
-			audioSelection = self.getAudioSelection()
-			# Translators: Spoken when there is no audio selection summary available.
-			speech.speakMessage(_("Unable to obtain audio selection summary. Please close and reopen the audio track.")) if not audioSelection else speech.speakMessage(audioSelection)
+		# Parse this string to get individual info such as marker positions.
+		audioSelection = self.getAudioSelection()
+		# Translators: Spoken when there is no audio selection summary available.
+		speech.speakMessage(_("Unable to obtain audio selection summary. Please close and reopen the audio track.")) if not audioSelection else speech.speakMessage(audioSelection)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioSelection.__doc__=_("Announces a summary on audio selection info such as selection duration.")
 
 	def script_announceTrackLength(self, gesture):
-		if self.soundWindow():
-			trackLength = self.getTrackLength()
-			# Translators: Spoken when there is no track length information.
-			speech.speakMessage(_("Track length is unavailable. Please close and reopen the audio track.")) if trackLength == "" else speech.speakMessage(trackLength)
+		trackLength = self.getTrackLength()
+		# Translators: Spoken when there is no track length information.
+		speech.speakMessage(_("Track length is unavailable. Please close and reopen the audio track.")) if trackLength == "" else speech.speakMessage(trackLength)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceTrackLength.__doc__=_("Announces total length of the audio track.")
 
 	# Audio channels and zoom level.
 
 	def script_announceAudioChannels(self, gesture):
-		# Again, just like audio position above.
-		if self.soundWindow():
-			# Translators: Spoken to indicate the selected channel for the track (example output: "Selected channel: mono").
-			channel = _("Selected channel: ") + self.getAudioChannels()
-			speech.speakMessage(channel)
+		# Translators: Spoken to indicate the selected channel for the track (example output: "Selected channel: mono").
+		channel = _("Selected channel: ") + self.getAudioChannels()
+		speech.speakMessage(channel)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioChannels.__doc__=_("Announces the audio channel you are editing.")
 
 	def script_announceZoomLevel(self, gesture):
-		# Again, just like audio position above.
-		if self.soundWindow():
-			zoomLevel = self.getZoomLevel()
-			speech.speakMessage(zoomLevel)
+		zoomLevel = self.getZoomLevel()
+		speech.speakMessage(zoomLevel)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceZoomLevel.__doc__=_("Announces audio zoom level.")
 
@@ -263,3 +245,19 @@ class AppModule(appModuleHandler.AppModule):
 		"kb:shift+uparrow":"changeZoomLevel", "kb:shift+downarrow":"changeZoomLevel", "kb:shift+0":"changeZoomLevel", "kb:shift+1":"changeZoomLevel", "kb:shift+2":"changeZoomLevel", "kb:shift+3":"changeZoomLevel", "kb:shift+4":"changeZoomLevel", "kb:shift+5":"changeZoomLevel", "kb:shift+6":"changeZoomLevel"
 	}
 
+
+class AppModule(appModuleHandler.AppModule):
+
+	# Presets window: Work with preset buttons.
+
+	def event_NVDAObject_init(self, obj):
+		# Presets window: the various controls for presets are buttons, so let NVDA see them as such.
+		# Applies to presets control buttons
+		if isinstance(obj, Window) and obj.windowClassName == "TBitton":
+			obj.role = ROLE_BUTTON
+
+	# The overlay method for sound window.
+	
+	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
+		if obj.windowClassName == "TWaveView":
+			clsList.insert(0, SoundWindow)
