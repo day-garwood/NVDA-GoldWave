@@ -142,6 +142,21 @@ class SoundWindow(IAccessible):
 	# Translators: Input help mode message for a Goldwave command.
 	script_selectAll.__doc__=_("Selects the entire track.")
 
+	def script_dropCue(self, gesture):
+		gesture.send()
+		speech.speakMessage("Cue")
+	script_dropCue.__doc__="Drops a cue point at the current audio position."
+
+	def script_dropCueAtStartMarker(self, gesture):
+		gesture.send()
+		speech.speakMessage("Cue dropped at start marker")
+	script_dropCueAtStartMarker.__doc__="Drops a cue point at the current start marker position."
+
+	def script_dropCueAtFinishMarker(self, gesture):
+		gesture.send()
+		speech.speakMessage("Cue dropped at finish marker")
+	script_dropCueAtFinishMarker.__doc__="Drops a cue point at the current finish marker position."
+
 	# Playback and recording:
 
 	def script_play(self, gesture):
@@ -242,6 +257,7 @@ class SoundWindow(IAccessible):
 		"KB:[":"dropStartMarker", "KB:]":"dropFinishMarker",
 		"KB:control+a":"selectAll",
 		"kB:control+[":"playSelection",
+		"kb:control+q":"dropCue", "KB:q":"dropCueAtStartMarker", "KB:shift+q":"dropCueAtFinishMarker",
 		"KB:f2":"play",
 		"KB:f3":"play",
 		"kb:f4":"play",
