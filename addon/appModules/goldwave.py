@@ -273,7 +273,7 @@ class AppModule(appModuleHandler.AppModule):
 			if obj.windowClassName == "TBitton" or obj.windowClassName == "TImageButton":
 				obj.role = ROLE_BUTTON
 			# For windows which NVDA should recognize as dialogs.
-			elif "CueForm" in obj.windowClassName or obj.windowClassName == "TEffectWrapper":
+			elif "Form" in obj.windowClassName and obj.windowClassName != "TGWMainForm" or obj.windowClassName == "TEffectWrapper":
 				obj.role = ROLE_DIALOG
 
 	# The overlay method for sound window.
