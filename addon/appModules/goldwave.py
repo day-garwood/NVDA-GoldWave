@@ -7,7 +7,7 @@ import appModuleHandler
 import addonHandler
 import api
 import speech # No need for braille yet.
-from controlTypes import ROLE_BUTTON
+from controlTypes import ROLE_BUTTON, ROLE_DIALOG
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible # Since we're dealing with IAccessible.
 import scriptHandler
@@ -267,9 +267,14 @@ class AppModule(appModuleHandler.AppModule):
 	# Presets and control windows: Work with buttons with custom window class names.
 
 	def event_NVDAObject_init(self, obj):
-		# Presets and control windows: the various controls are buttons, so let NVDA see them as such.
-		if isinstance(obj, Window) and obj.windowClassName == "TBitton" or obj.windowClassName == "TImageButton":
-			obj.role = ROLE_BUTTON
+		# Provide standardized control roles for the following objects.
+		if isinstance(obj, Window):
+			# For working with buttons such as presets window and control window.
+			if obj.windowClassName == "TBitton" or obj.windowClassName == "TImageButton":
+				obj.role = ROLE_BUTTON
+			# For windows which NVDA should recognize as dialogs.
+			elif "CueForm" in obj.windowClassName or obj.windowClassName == "TEffectWrapper":
+				obj.role = ROLE_DIALOG
 
 	# The overlay method for sound window.
 
