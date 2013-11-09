@@ -14,12 +14,12 @@ addon_info = {
 	"addon-name" : "goldwave",
 	# Add-on summary, usually the user visible name of the addon.
 	# Translators: Summary for this add-on to be shown on installation and add-on information.
-	"addon-summary" : _("Goldwave"),
+	"addon-summary" : _("GoldWave"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon-description" : _("An add-on for enhancing access and usage of Goldwave audio editor."),
 	# version
-	"addon-version" : "1.0-dev",
+	"addon-version" : "1.0Beta1",
 	# Author(s)
 	"addon-author" : u"Joseph Lee <joseph.lee22590@gmail.com> and NVDA contributors",
 	# URL for the add-on documentation support

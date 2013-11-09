@@ -32,6 +32,8 @@ class goldwavenumericedit(IAccessible):
 class SoundWindow(IAccessible):
 	# The GoldWave's sound window. Here one can play, record and edit audio files.
 
+	scriptCategory = "GoldWave"
+
 	# Announcement of commands is enabled by default.
 	commandAnnouncement = True
 
