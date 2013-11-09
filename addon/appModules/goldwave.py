@@ -52,8 +52,9 @@ class SoundWindow(IAccessible):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[-3]
 		# Current cursor position.
+		if fgChild.displayText == "": fgChild.redraw()
 		audioPos = fgChild.children[3].displayText.replace('\t', '')
-		return "Track position not available" if audioPos == "" else audioPos
+		return "Track position not available" if audioPos == "" or " " in audioPos else audioPos
 
 	def getAudioSelection(self):
 		# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
@@ -102,7 +103,7 @@ class SoundWindow(IAccessible):
 	def getZoomLevel(self):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[-2]
-		if fgChild.children[1].displayText == "": fgChild.redraw()
+		if fgChild.displayText == "": fgChild.redraw()
 		zoomLevel = fgChild.children[1].displayText
 		return zoomLevel
 
@@ -112,7 +113,7 @@ class SoundWindow(IAccessible):
 		gesture.send()
 		if self.commandAnnouncement:
 			# Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-			marker = _("Start: ") + self.getAudioSelectionParsed()[0]
+			marker = _("Start: {startMarkerPos}").format(startMarkerPos = self.getAudioSelectionParsed()[0])
 			speech.speakMessage(marker)
 	# Translators: Input help mode message for a Goldwave command.
 	script_dropStartMarker.__doc__=_("Drops the start marker and announces start marker position.")
@@ -121,7 +122,7 @@ class SoundWindow(IAccessible):
 		gesture.send()
 		if self.commandAnnouncement:
 			# Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-			marker = _("Finish: ") + self.getAudioSelectionParsed()[2]
+			marker = _("Finish: {finishMarkerPos}").format(finishMarkerPos = self.getAudioSelectionParsed()[2])
 			speech.speakMessage(marker)
 	# Translators: Input help mode message for a Goldwave command.
 	script_dropFinishMarker.__doc__=_("Drops the finish marker and announces finish marker position.")
@@ -144,18 +145,24 @@ class SoundWindow(IAccessible):
 
 	def script_dropCue(self, gesture):
 		gesture.send()
-		speech.speakMessage("Cue")
-	script_dropCue.__doc__="Drops a cue point at the current audio position."
+		# Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
+		speech.speakMessage(_("Cue"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_dropCue.__doc__=_("Drops a cue point at the current audio position.")
 
 	def script_dropCueAtStartMarker(self, gesture):
 		gesture.send()
-		speech.speakMessage("Cue dropped at start marker")
-	script_dropCueAtStartMarker.__doc__="Drops a cue point at the current start marker position."
+		# Translators: Spoken when audio cue is dropped at the start marker position.
+		speech.speakMessage(_("Cue dropped at start marker"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_dropCueAtStartMarker.__doc__=_("Drops a cue point at the current start marker position.")
 
 	def script_dropCueAtFinishMarker(self, gesture):
 		gesture.send()
-		speech.speakMessage("Cue dropped at finish marker")
-	script_dropCueAtFinishMarker.__doc__="Drops a cue point at the current finish marker position."
+		# Translators: Spoken when an audio cue is dropped at the finish marker position.
+		speech.speakMessage(_("Cue dropped at finish marker"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_dropCueAtFinishMarker.__doc__=_("Drops a cue point at the current finish marker position.")
 
 	# Playback and recording:
 
@@ -235,15 +242,15 @@ class SoundWindow(IAccessible):
 
 	def script_announceAudioChannels(self, gesture):
 		# Translators: Spoken to indicate the selected channel for the track (example output: "Selected channel: mono").
-		channel = _("Selected channel: ") + self.getAudioChannels()
+		channel = _("Selected channel: {audioChannel}").format(audioChannel = self.getAudioChannels())
 		speech.speakMessage(channel)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioChannels.__doc__=_("Announces the audio channel you are editing.")
 
 	def script_announceZoomLevel(self, gesture):
 		# Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-		zoomLevel = _("Zoom level: ") + self.getZoomLevel()
-		speech.speakMessage(zoomLevel)
+		zoom = _("Zoom level: {zoomLevel}").format(zoomLevel = self.getZoomLevel())
+		speech.speakMessage(zoom)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceZoomLevel.__doc__=_("Announces audio zoom level.")
 
