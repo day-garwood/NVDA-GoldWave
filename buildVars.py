@@ -21,7 +21,7 @@ addon_info = {
 	# version
 	"addon-version" : "1.0Beta1",
 	# Author(s)
-	"addon-author" : u"Joseph Lee <joseph.lee22590@gmail.com> and NVDA contributors",
+	"addon-author" : u"Joseph Lee <joseph.lee22590@gmail.com>, David Parduhn <xkill85@gmx.net>, Mesar Hameed <mhameed@src.gnome.org>",
 	# URL for the add-on documentation support
 	"addon-url" : 'http://addons.nvda-project.org',
 }

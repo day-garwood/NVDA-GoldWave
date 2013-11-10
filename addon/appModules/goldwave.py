@@ -16,7 +16,7 @@ import ui
 
 # A number of NVDA objects for GoldWave:
 
-class goldwavenumericedit(IAccessible):
+class GoldwaveNumericEdit(IAccessible):
 	# TNumEdit class. Credit: David P.
 
 	__gestures = {
@@ -25,6 +25,7 @@ class goldwavenumericedit(IAccessible):
 		"kb:pageUp": "updatevalue",
 		"kb:pageDown": "updatevalue"
 	}
+
 	def script_updatevalue(self, gesture):
 		gesture.send()
 		ui.message(self.windowText)
@@ -54,9 +55,10 @@ class SoundWindow(IAccessible):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[-3]
 		# Current cursor position.
-		if fgChild.displayText == "": fgChild.redraw()
+		if not fgChild.displayText: fgChild.redraw()
 		audioPos = fgChild.children[3].displayText.replace('\t', '')
-		return "Track position not available" if audioPos == "" or " " in audioPos else audioPos
+		# Translators: Presented when audio track position information can not be located.
+		return _("Track position not available") if not audioPos or " " in audioPos else audioPos
 
 	def getAudioSelection(self):
 		# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
@@ -64,7 +66,7 @@ class SoundWindow(IAccessible):
 		fgChild = fg.children[-3]
 		# Audio selection information.
 		# What if fgChild returns empty string? (core ticket 3623/2892) If so, redraw (expensive; don't use this a lot).
-		if fgChild.displayText == "": fgChild.redraw()
+		if not fgChild.displayText: fgChild.redraw()
 		audioSelection = fgChild.children[2].displayText.replace('\t', '')
 		return audioSelection
 
@@ -91,21 +93,21 @@ class SoundWindow(IAccessible):
 		# Based on the constants above and the return value below, get channel information.
 		fg = api.getForegroundObject()
 		fgChild = fg.children[-3]
-		if fgChild.displayText == "": fgChild.redraw()
+		if not fgChild.displayText: fgChild.redraw()
 		audioChannels = fgChild.children[0].displayText
 		return self.audioChannelValues[audioChannels]
 
 	def getTrackLength(self):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[-3]
-		if fgChild.displayText == "": fgChild.redraw()
+		if not fgChild.displayText: fgChild.redraw()
 		trackLength = fgChild.children[1].displayText
 		return trackLength
 
 	def getZoomLevel(self):
 		fg = api.getForegroundObject()
 		fgChild = fg.children[-2]
-		if fgChild.displayText == "": fgChild.redraw()
+		if not fgChild.displayText: fgChild.redraw()
 		zoomLevel = fgChild.children[1].displayText
 		return zoomLevel
 
@@ -263,10 +265,13 @@ class SoundWindow(IAccessible):
 	script_changeZoomLevel.__doc__=_("Changes zoom level and announces the new level.")
 
 	__gestures={
-		"KB:[":"dropStartMarker", "KB:]":"dropFinishMarker",
+		"KB:[":"dropStartMarker",
+		"KB:]":"dropFinishMarker",
 		"KB:control+a":"selectAll",
 		"kB:control+[":"playSelection",
-		"kb:control+q":"dropCue", "KB:q":"dropCueAtStartMarker", "KB:shift+q":"dropCueAtFinishMarker",
+		"kb:control+q":"dropCue",
+		"KB:q":"dropCueAtStartMarker",
+		"KB:shift+q":"dropCueAtFinishMarker",
 		"KB:f2":"play",
 		"KB:f3":"play",
 		"kb:f4":"play",
@@ -283,7 +288,15 @@ class SoundWindow(IAccessible):
 		"kb:control+nvda+2":"announceTrackLength",
 		"kb:control+nvda+1":"announceAudioChannels",
 		"kb:control+nvda+4":"announceZoomLevel",
-		"kb:shift+uparrow":"changeZoomLevel", "kb:shift+downarrow":"changeZoomLevel", "kb:shift+0":"changeZoomLevel", "kb:shift+1":"changeZoomLevel", "kb:shift+2":"changeZoomLevel", "kb:shift+3":"changeZoomLevel", "kb:shift+4":"changeZoomLevel", "kb:shift+5":"changeZoomLevel", "kb:shift+6":"changeZoomLevel"
+		"kb:shift+uparrow":"changeZoomLevel",
+		"kb:shift+downarrow":"changeZoomLevel",
+		"kb:shift+0":"changeZoomLevel",
+		"kb:shift+1":"changeZoomLevel",
+		"kb:shift+2":"changeZoomLevel",
+		"kb:shift+3":"changeZoomLevel",
+		"kb:shift+4":"changeZoomLevel",
+		"kb:shift+5":"changeZoomLevel",
+		"kb:shift+6":"changeZoomLevel"
 	}
 
 
@@ -301,11 +314,11 @@ class AppModule(appModuleHandler.AppModule):
 			elif "Form" in obj.windowClassName and "MainForm" not in obj.windowClassName or obj.windowClassName == "TEffectWrapper":
 				obj.role = ROLE_DIALOG
 
-	# The overlay method for sound window.
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
+		# Custom nvda overlay objects for sound window and edit fields:
 		if obj.windowClassName == "TWaveView":
 			clsList.insert(0, SoundWindow)
 		if obj.windowClassName == 'TNumEdit':
-			clsList.insert(0, goldwavenumericedit)
+			clsList.insert(0, GoldwaveNumericEdit)
 
