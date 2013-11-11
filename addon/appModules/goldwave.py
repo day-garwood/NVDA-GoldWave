@@ -168,6 +168,22 @@ class SoundWindow(IAccessible):
 	# Translators: Input help mode message for a Goldwave command.
 	script_dropCueAtFinishMarker.__doc__=_("Drops a cue point at the current finish marker position.")
 
+	def script_moveStartMarkerToNextCuePos(self, gesture):
+		gesture.send()
+		speech.speakMessage("Start marker at next cue")
+
+	def script_moveStartMarkerToPrevCuePos(self, gesture):
+		gesture.send()
+		speech.speakMessage("Start marker at previous cue")
+
+	def script_moveFinishMarkerToNextCuePos(self, gesture):
+		gesture.send()
+		speech.speakMessage("Finish marker at next cue")
+
+	def script_moveFinishMarkerToPrevCuePos(self, gesture):
+		gesture.send()
+		speech.speakMessage("Finish marker at previous cue")
+
 	# Playback and recording:
 
 	def script_play(self, gesture):
@@ -272,6 +288,10 @@ class SoundWindow(IAccessible):
 		"kb:control+q":"dropCue",
 		"KB:q":"dropCueAtStartMarker",
 		"KB:shift+q":"dropCueAtFinishMarker",
+		"kb:control+j":"moveStartMarkerToNextCuePos",
+		"kb:control+shift+j":"moveStartMarkerToPrevCuePos",
+		"kb:alt+j":"moveFinishMarkerToNextCuePos",
+		"kb:alt+shift+j":"moveFinishMarkerToPrevCuePos",
 		"KB:f2":"play",
 		"KB:f3":"play",
 		"kb:f4":"play",
