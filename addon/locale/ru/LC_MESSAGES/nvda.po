@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'goldwave' '1.0Beta1'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-11-09 23:25-0800\n"
+"PO-Revision-Date: 2013-11-11 14:52+0400\n"
+"Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#. Translators: Spoken when command announcement messages are turned on in Goldwave.
+msgid "command announcement on"
+msgstr "объявление команд включено"
+
+#. Translators: Spoken when command announcement messages are turned off in Goldwave.
+msgid "command announcement off"
+msgstr "объявление команд отключено"
+
+#. Translators: Input help mode message for command announcement command in Goldwave.
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr ""
+"Переключает объявление команд редактирования NVDA во время записи или "
+"воспроизведения аудио."
+
+#. Translators: Presented when audio track position information can not be located.
+msgid "Track position not available"
+msgstr "Положение дорожки недоступно"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "Channel information unavailable"
+msgstr "Информация о канале недоступна"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "mono"
+msgstr "моно"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "stereo"
+msgstr "стерио"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "left"
+msgstr "левый"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "right"
+msgstr "правый"
+
+#. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+msgid "Start: {startMarkerPos}"
+msgstr "Начало: {startMarkerPos}"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Drops the start marker and announces start marker position."
+msgstr "Устанавливает начальный маркер и объявляет его положение."
+
+#. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+msgid "Finish: {finishMarkerPos}"
+msgstr "Конец: {finishMarkerPos}"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Drops the finish marker and announces finish marker position."
+msgstr "Устанавливает конечный маркер и объявляет его положение."
+
+#. Translators: Spoken when selected audio is playing.
+msgid "Play selection"
+msgstr "Воспроизвести выделенное"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Plays the trakc between start and finish markers."
+msgstr "Воспроизведение материала между начальным и конечным маркерами."
+
+#. Translators: Spoken when all parts of the audio track is selected.
+msgid "Select All"
+msgstr "Выделить Всё"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Selects the entire track."
+msgstr "Выделяет всю дорожку."
+
+#. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
+msgid "Cue"
+msgstr "Метка"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Drops a cue point at the current audio position."
+msgstr "Создаёт метку в текущей позиции аудио."
+
+#. Translators: Spoken when audio cue is dropped at the start marker position.
+msgid "Cue dropped at start marker"
+msgstr "Метка создана на начальном маркере"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Drops a cue point at the current start marker position."
+msgstr "Создаёт метку в текущей позиции начального маркера."
+
+#. Translators: Spoken when an audio cue is dropped at the finish marker position.
+msgid "Cue dropped at finish marker"
+msgstr "Метка создана на конечном маркере"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Drops a cue point at the current finish marker position."
+msgstr "Создаёт метку в текущей позиции конечного маркера."
+
+#. Translators: Spoken when a track is playing in Goldwave.
+msgid "play"
+msgstr "воспроизведение"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Plays the audio track."
+msgstr "Воспроизведение звуковой дорожки."
+
+#. Translators: Spoken when a track is rewinding in Goldwave.
+msgid "rewind"
+msgstr "перемотка назад"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Rewinds through an audio track."
+msgstr "Перемотка назад звуковой дорожки."
+
+#. Translators: Spoken when fast forwarding a track in Goldwave.
+msgid "fast forward"
+msgstr "быстрая перемотка вперёд"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Fast forwards through an audio track."
+msgstr "Быстрая перемотка вперёд звуковой дорожки."
+
+#. Translators: Spoken when pausing a track in Goldwave.
+msgid "pause"
+msgstr "пауза"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Pauses the audio track."
+msgstr "Ставит на паузу звуковую дорожку."
+
+#. Translators: Spoken when stopping a track in in Goldwave.
+msgid "stop"
+msgstr "стоп"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "stops the audio track."
+msgstr "останавливает звуковую дорожку."
+
+#. Translators: Spoken when starting recording in Goldwave.
+msgid "record"
+msgstr "запись"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Starts recording audio."
+msgstr "Начало записи аудио."
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces the current audio position in seconds."
+msgstr "Объявляет текущую позицию аудио в секундах."
+
+#. Translators: Spoken when there is no audio selection summary available.
+msgid ""
+"Unable to obtain audio selection summary. Please close and reopen the audio "
+"track."
+msgstr ""
+"Невозможно получить сводную информацию о выделеном звуке. Пожалуйста, "
+"закройте и переоткройте звуковую дорожку."
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces a summary on audio selection info such as selection duration."
+msgstr ""
+"сводное объявление выделеной звуковой информации, такой как длительность "
+"выделенного фрагмента."
+
+#. Translators: Spoken when there is no track length information.
+msgid "Track length is unavailable. Please close and reopen the audio track."
+msgstr ""
+"Длительность дорожки недоступна. Пожалуйста, закройте и переоткройте "
+"звуковую дорожку."
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces total length of the audio track."
+msgstr "Объявляет общую длину звуковой дорожки."
+
+#. Translators: Spoken to indicate the selected channel for the track (example output: "Selected channel: mono").
+msgid "Selected channel: {audioChannel}"
+msgstr "Выбраный канал: {audioChannel}"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces the audio channel you are editing."
+msgstr "Объявляет канал, который вы редактируете."
+
+#. Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+msgid "Zoom level: {zoomLevel}"
+msgstr "Уровень: {zoomLevel}"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces audio zoom level."
+msgstr "Объявляет уровень звука."
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Changes zoom level and announces the new level."
+msgstr "Изменяет значение уровня и объявляет новый уровень."
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on to be shown on installation and add-on information.
+msgid "GoldWave"
+msgstr "GoldWave"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+msgid "An add-on for enhancing access and usage of Goldwave audio editor."
+msgstr ""
+"Дополнение для расширения доступа и использования звукового редактора "
+"Goldwave."
