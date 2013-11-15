@@ -296,7 +296,8 @@ class SoundWindow(IAccessible):
 		"kb:shift+3":"changeZoomLevel",
 		"kb:shift+4":"changeZoomLevel",
 		"kb:shift+5":"changeZoomLevel",
-		"kb:shift+6":"changeZoomLevel"
+		"kb:shift+6":"changeZoomLevel",
+		"kb:shift+a":"changeZoomLevel"
 	}
 
 
