@@ -266,9 +266,13 @@ class SoundWindow(IAccessible):
 	script_announceAudioSelection.__doc__=_("Announces a summary on audio selection info such as selection duration.")
 
 	def script_announceTrackLength(self, gesture):
-		trackLength = self.getTrackLength()
-		# Translators: Spoken when there is no track length information.
-		speech.speakMessage(_("Track length is unavailable. Please close and reopen the audio track.")) if trackLength == "" else speech.speakMessage(trackLength)
+		trackLengthSTR, trackLengthMSG = self.getTrackLength(), ""
+		if not trackLengthSTR:
+			# Translators: Spoken when there is no track length information.
+			trackLengthMSG = _("Track length is unavailable. Please close and reopen the audio track.")
+		else:
+			trackLengthMSG = "Track length: {trackLength}".format(trackLength = trackLengthSTR)
+		speech.speakMessage(trackLengthMSG)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceTrackLength.__doc__=_("Announces total length of the audio track.")
 
