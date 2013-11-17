@@ -168,6 +168,20 @@ class SoundWindow(IAccessible):
 	# Translators: Input help mode message for a Goldwave command.
 	script_dropCueAtFinishMarker.__doc__=_("Drops a cue point at the current finish marker position.")
 
+	def script_deleteSelection(self, gesture):
+		gesture.send()
+		if self.commandAnnouncement:
+			# Translators: Spoken when audio selection is deleted.
+			speech.speakMessage(_("deleted"))
+	# Translators: Input help mode message for a Goldwave command.
+	script_deleteSelection.__doc__=_("Deletes the currently selected audio.")
+
+	def script_trimSelection(self, gesture):
+		# Cannot just assign function objects to another, so a workaround for this problem.
+		self.script_deleteSelection(gesture)
+	# Translators: Input help mode message for a Goldwave command.
+	script_trimSelection.__doc__=_("Trims the audio outside the selected audio.")
+
 	# Playback and recording:
 
 	def script_play(self, gesture):
@@ -272,6 +286,8 @@ class SoundWindow(IAccessible):
 		"kb:control+q":"dropCue",
 		"KB:q":"dropCueAtStartMarker",
 		"KB:shift+q":"dropCueAtFinishMarker",
+		"kb:delete":"deleteSelection",
+		"kb:control+t":"trimSelection",
 		"KB:f2":"play",
 		"KB:f3":"play",
 		"kb:f4":"play",
