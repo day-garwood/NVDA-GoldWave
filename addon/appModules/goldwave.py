@@ -302,7 +302,6 @@ class SoundWindow(IAccessible):
 		"kb:control+q":"dropCue",
 		"KB:q":"dropCueAtStartMarker",
 		"KB:shift+q":"dropCueAtFinishMarker",
-<<<<<<< HEAD
 		"kb:control+j":"moveStartMarkerToNextCuePos",
 		"kb:control+shift+j":"moveStartMarkerToPrevCuePos",
 		"kb:alt+j":"moveFinishMarkerToNextCuePos",
