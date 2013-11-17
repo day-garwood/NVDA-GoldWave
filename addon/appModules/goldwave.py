@@ -259,9 +259,14 @@ class SoundWindow(IAccessible):
 
 	def script_announceAudioSelection(self, gesture):
 		# Parse this string to get individual info such as marker positions.
-		audioSelection = self.getAudioSelection()
-		# Translators: Spoken when there is no audio selection summary available.
-		speech.speakMessage(_("Unable to obtain audio selection summary. Please close and reopen the audio track.")) if not audioSelection else speech.speakMessage(audioSelection)
+		audioSelectionParsed, audioSelection = self.getAudioSelectionParsed(), ""
+		if not audioSelectionParsed:
+			# Translators: Spoken when there is no audio selection summary available.
+			audioSelection = (_("Unable to obtain audio selection summary. Please close and reopen the audio track."))
+		else:
+			# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+			audioSelection = "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}".format(audioSelectionStart = audioSelectionParsed[0], audioSelectionEnd = audioSelectionParsed[2], audioSelectionLength = audioSelectionParsed[3])
+		speech.speakMessage(audioSelection)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioSelection.__doc__=_("Announces a summary on audio selection info such as selection duration.")
 
