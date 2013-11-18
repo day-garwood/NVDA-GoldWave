@@ -16,6 +16,13 @@ This app module enhances access and usage of Goldwave audio editor.
 
 For more information about Goldwave and keyboard commands, refer to Goldwave Manual.
 
+## Changes for 1.1-dev ##
+
+* Support for message announcements in braille.
+* Audio selection summary is presented in languages other than English.
+* More command announcements added including cue position movement and delete/trim operations.
+* New and updated translations.
+
 ## Changes for 1.0 ##
 
 * Initial version.
