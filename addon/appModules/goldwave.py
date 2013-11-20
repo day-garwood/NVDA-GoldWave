@@ -176,25 +176,29 @@ class SoundWindow(IAccessible):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Start marker at next cue"))
-	script_moveStartMarkerToNextCuePos.__doc__="Moves the start marker to the next cue position."
+	# Translators: Input help mode message for a Goldwave command.
+	script_moveStartMarkerToNextCuePos.__doc__=_("Moves the start marker to the next cue position.")
 
 	def script_moveStartMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 self.message(_("Start marker at previous cue"))
-	script_moveStartMarkerToPrevCuePos.__doc__="Moves the start marker to the previous cue position."
+	# Translators: Input help mode message for a Goldwave command.
+	script_moveStartMarkerToPrevCuePos.__doc__=_("Moves the start marker to the previous cue position.")
 
 	def script_moveFinishMarkerToNextCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the finish marker is moved to the next cue position.
 		self.message(_("Finish marker at next cue"))
-	script_moveFinishMarkerToNextCuePos.__doc__="Moves the finish marker to the next cue position."
+	# Translators: Input help mode message for a Goldwave command.
+	script_moveFinishMarkerToNextCuePos.__doc__=_("Moves the finish marker to the next cue position.")
 
 	def script_moveFinishMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Finish marker at previous cue"))
-	script_moveFinishMarkerToPrevCuePos.__doc__="Moves the finish marker to the previous cue position."
+	# Translators: Input help mode message for a Goldwave command.
+	script_moveFinishMarkerToPrevCuePos.__doc__=_("Moves the finish marker to the previous cue position.")
 
 	def script_deleteSelection(self, gesture):
 		gesture.send()
