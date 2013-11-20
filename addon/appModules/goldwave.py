@@ -53,8 +53,7 @@ class SoundWindow(IAccessible):
 		else:
 			# Translators: Presented when command announcement messages are turned off in Goldwave.
 			text = _("command announcement off")
-		braille.message(text)
-		speech.speakMessage(text)
+		ui.message(text)
 	# Translators: Input help mode message for command announcement command in Goldwave.
 	script_toggleCommandAnnouncement.__doc__=_("Toggles whether NVDA announces editing commands during audio recording or playback.")
 
