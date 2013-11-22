@@ -1,7 +1,8 @@
 # Goldwave #
 
 * Authors: Joseph Lee, NVDA contributors.
-* Version: [1.0][1]
+* Stable version: [1.0][1]
+* Development version: [1.1-dev][2]
 
 This app module enhances access and usage of Goldwave audio editor.
 
@@ -27,6 +28,6 @@ For more information about Goldwave and keyboard commands, refer to Goldwave Man
 
 * Initial version.
 
-[[!tag dev stable]]
-
 [1]: http://addons.nvda-project.org/files/get.php?file=gwv
+
+[2]: http://addons.nvda-project.org/files/get.php?file=gwv-dev
