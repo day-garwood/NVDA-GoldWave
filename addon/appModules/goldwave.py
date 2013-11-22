@@ -182,7 +182,7 @@ class SoundWindow(IAccessible):
 	def script_moveStartMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
-self.message(_("Start marker at previous cue"))
+		self.message(_("Start marker at previous cue"))
 	# Translators: Input help mode message for a Goldwave command.
 	script_moveStartMarkerToPrevCuePos.__doc__=_("Moves the start marker to the previous cue position.")
 
