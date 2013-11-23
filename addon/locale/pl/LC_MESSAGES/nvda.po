@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-11-11 10:31+0100\n"
+"PO-Revision-Date: 2013-11-20 16:33+0100\n"
 "Last-Translator: Grzegorz Zlotowicz <grzezlo@wp.pl>\n"
 "Language-Team: Polish <killer@tyflonet.com>\n"
 "Language: pl\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
 
-#. Translators: Spoken when command announcement messages are turned on in Goldwave.
+#. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
 msgstr "Oznajmianie komend włączone"
 
-#. Translators: Spoken when command announcement messages are turned off in Goldwave.
+#. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
 msgstr "Oznajmianie komend wyłączone"
 
@@ -71,7 +71,7 @@ msgstr "Koniec: {finishMarkerPos}"
 msgid "Drops the finish marker and announces finish marker position."
 msgstr "Ustawia znacznik końca i oznajmia jego pozycję."
 
-#. Translators: Spoken when selected audio is playing.
+#. Translators: Presented when selected audio is playing.
 msgid "Play selection"
 msgstr "Odtwórz zaznaczenie"
 
@@ -79,7 +79,7 @@ msgstr "Odtwórz zaznaczenie"
 msgid "Plays the trakc between start and finish markers."
 msgstr "Odtwarza dźwięk między znacznikami początku i końca."
 
-#. Translators: Spoken when all parts of the audio track is selected.
+#. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
 msgstr "Zaznacz wszystko"
 
@@ -95,7 +95,7 @@ msgstr "wskaźnik"
 msgid "Drops a cue point at the current audio position."
 msgstr "Ustawia punkt wskaźnika na aktualnej pozycji.\v"
 
-#. Translators: Spoken when audio cue is dropped at the start marker position.
+#. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
 msgstr "Wskaźnik umieszczony na pozycji znacznika początku."
 
@@ -103,7 +103,7 @@ msgstr "Wskaźnik umieszczony na pozycji znacznika początku."
 msgid "Drops a cue point at the current start marker position."
 msgstr "Ustawia wskaźnik na pozycji znacznika początku."
 
-#. Translators: Spoken when an audio cue is dropped at the finish marker position.
+#. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
 msgstr "Wskaźnik ustawiony na pozycji znacznika końca."
 
@@ -111,7 +111,51 @@ msgstr "Wskaźnik ustawiony na pozycji znacznika końca."
 msgid "Drops a cue point at the current finish marker position."
 msgstr "Ustawia wskaźnik na pozycji znacznika końca."
 
-#. Translators: Spoken when a track is playing in Goldwave.
+#. Translators: Presented when the start marker is moved to the next cue position.
+msgid "Start marker at next cue"
+msgstr "Znacznik rozpoczęcia na następnym wskaźniku"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Moves the start marker to the next cue position."
+msgstr "Przesuwa znacznik rozpoczęcia do następnego wskaźnika."
+
+#. Translators: Presented when the start marker is moved to the next cue position.
+msgid "Start marker at previous cue"
+msgstr "Znacznik rozpoczęcia na poprzednim wskaźniku"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Moves the start marker to the previous cue position."
+msgstr "Przesuwa znacznik rozpoczęcia do poprzedniego wskaźnika."
+
+#. Translators: Presented when the finish marker is moved to the next cue position.
+msgid "Finish marker at next cue"
+msgstr "Znacznik końca na następnym wskaźniku"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Moves the finish marker to the next cue position."
+msgstr "Przesuwa znacznik końca do następnego wskaźnika."
+
+#. Translators: Presented when the start marker is moved to the next cue position.
+msgid "Finish marker at previous cue"
+msgstr "Znacznik końca na poprzednim wskaźniku"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Moves the finish marker to the previous cue position."
+msgstr "Przesuwa znacznik końca do poprzedniego wskaźnika."
+
+#. Translators: Presented when audio selection is deleted.
+msgid "deleted"
+msgstr "Usunięte"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Deletes the currently selected audio."
+msgstr "Usuwa aktualnie zaznaczone audio."
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Trims the audio outside the selected audio."
+msgstr "Przycina audio poza zaznaczeniem."
+
+#. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
 msgstr "Odtwarzaj"
 
@@ -119,7 +163,7 @@ msgstr "Odtwarzaj"
 msgid "Plays the audio track."
 msgstr "Odtwarza ścieżkę audio."
 
-#. Translators: Spoken when a track is rewinding in Goldwave.
+#. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
 msgstr "Przewiń do tyłu"
 
@@ -127,7 +171,7 @@ msgstr "Przewiń do tyłu"
 msgid "Rewinds through an audio track."
 msgstr "Przewija ścieżkę do tyłu."
 
-#. Translators: Spoken when fast forwarding a track in Goldwave.
+#. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
 msgstr "Przewiń do przodu."
 
@@ -135,7 +179,7 @@ msgstr "Przewiń do przodu."
 msgid "Fast forwards through an audio track."
 msgstr "Przewija ścieżkę do przodu."
 
-#. Translators: Spoken when pausing a track in Goldwave.
+#. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
 msgstr "pauza"
 
@@ -143,7 +187,7 @@ msgstr "pauza"
 msgid "Pauses the audio track."
 msgstr "Wstrzymuje odtwarzanie ścieżki audio."
 
-#. Translators: Spoken when stopping a track in in Goldwave.
+#. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
 msgstr "stop"
 
@@ -151,7 +195,7 @@ msgstr "stop"
 msgid "stops the audio track."
 msgstr "Zatrzymuje odtwarzanie ścieżki audio."
 
-#. Translators: Spoken when starting recording in Goldwave.
+#. Translators: Presented when starting recording in Goldwave.
 msgid "record"
 msgstr "Nagraj"
 
@@ -163,7 +207,7 @@ msgstr "Rozpoczyna nagrywanie audio."
 msgid "Announces the current audio position in seconds."
 msgstr "Oznajmia aktualną pozycję w sekundach."
 
-#. Translators: Spoken when there is no audio selection summary available.
+#. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
@@ -175,7 +219,7 @@ msgstr ""
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr "Oznajmia informacje o zaznaczeniu, takie jak długość zaznaczenia."
 
-#. Translators: Spoken when there is no track length information.
+#. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
 "Nie można uzyskać informacji o długości ścieżki. Proszę zamknąć ścieżkę "
@@ -185,7 +229,7 @@ msgstr ""
 msgid "Announces total length of the audio track."
 msgstr "Oznajmia całkowitą długość ścieżki audio."
 
-#. Translators: Spoken to indicate the selected channel for the track (example output: "Selected channel: mono").
+#. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 msgid "Selected channel: {audioChannel}"
 msgstr "Wybrany kanał: {audioChannel}"
 
@@ -193,7 +237,7 @@ msgstr "Wybrany kanał: {audioChannel}"
 msgid "Announces the audio channel you are editing."
 msgstr "Oznajmia kanał, który jest edytowany."
 
-#. Translators: Spoken to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 msgid "Zoom level: {zoomLevel}"
 msgstr "Poziom powiększenia: {zoomLevel}"
 
