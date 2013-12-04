@@ -22,6 +22,7 @@ For more information about Goldwave and keyboard commands, refer to Goldwave Man
 * Support for message announcements in braille.
 * Audio selection summary is presented in languages other than English.
 * More command announcements added including cue position movement and delete/trim operations.
+* Fixed an issue in numeric edit fields such as various effects dialogs where nothing or wrong field name was announced.
 * New and updated translations.
 
 ## Changes for 1.0 ##
