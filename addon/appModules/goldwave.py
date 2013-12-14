@@ -378,6 +378,6 @@ class AppModule(appModuleHandler.AppModule):
 			clsList.insert(0, GoldwaveNumericEdit)
 			# Get the correct edit field name.
 			editFieldName = obj.parent.parent.name
-			if editFieldName != api.getForegroundObject().name: obj.name = editFieldName
+			if editFieldName != api.getForegroundObject().name: obj.name = editFieldName + "; " + obj.name
 
 
