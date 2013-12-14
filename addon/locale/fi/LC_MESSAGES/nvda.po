@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-11-20 16:52+0200\n"
+"PO-Revision-Date: 2013-11-30 09:44+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -29,8 +29,8 @@ msgid ""
 "Toggles whether NVDA announces editing commands during audio recording or "
 "playback."
 msgstr ""
-"Ottaa käyttöön tai poistaa käytöstä editointikomentojen puhumisen "
-"nauhoituksen tai toiston aikana."
+"Ottaa käyttöön tai poistaa käytöstä editointikomentojen puhumisen äänityksen "
+"tai toiston aikana."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -78,7 +78,7 @@ msgstr "Toista valinta"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Plays the trakc between start and finish markers."
-msgstr "Toistaa äänitiedostosta alku- ja loppumerkkien välisen kohdan."
+msgstr "Toistaa raidalta alku- ja loppumerkkien välisen kohdan."
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
@@ -154,7 +154,7 @@ msgstr "Poistaa valitun äänen."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Trims the audio outside the selected audio."
-msgstr "Poistaa valitun kohdan ulkopuolelle jäävän äänen."
+msgstr "Leikkaa pois valitun kohdan ulkopuolelle jäävän äänen."
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
@@ -186,7 +186,7 @@ msgstr "pysäytä"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Pauses the audio track."
-msgstr "Pysäyttää ääniraidan toiston tai nauhoituksen."
+msgstr "Pysäyttää ääniraidan toiston tai äänityksen."
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
@@ -194,15 +194,15 @@ msgstr "keskeytä"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "stops the audio track."
-msgstr "Keskeyttää ääniraidan toiston tai nauhoituksen."
+msgstr "Keskeyttää ääniraidan toiston tai äänityksen."
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
-msgstr "nauhoita"
+msgstr "äänitä"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Starts recording audio."
-msgstr "Aloittaa nauhoituksen."
+msgstr "Aloittaa äänityksen."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -260,4 +260,4 @@ msgstr "GoldWave"
 msgid "An add-on for enhancing access and usage of Goldwave audio editor."
 msgstr ""
 "Lisäosa Goldwave-äänieditorin saavutettavuuden ja käytettävyyden "
-"parantamiseksi."
+"parantamiseen."

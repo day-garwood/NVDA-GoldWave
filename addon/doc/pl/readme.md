@@ -25,6 +25,8 @@ podręczniku Goldwave.
   angielski.
 * Dodane oznajmianie większej liczby komend, uwzględniające takie polecenia
   jak przemieszczenia wskaźników, operacje usuwania i przycinania.
+* Poprawiono problem w polach edycji liczb, np. w różnych okienkach efektów,
+  gdzie oznajmiana była nieprawidłowa nazwa, albo brak nazwy kontrolki.
 * Nowe i zaktualizowane tłumaczenia.
 
 ## Zmiany dla wersji 1.0 ##

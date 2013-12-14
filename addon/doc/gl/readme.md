@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autores: Joseph Lee, colaboradores do NVDA.
-* Stable version: [1.0][1]
-* Development version: [1.1-dev][2]
+* Versión estable: [1.0][1]
+* Versión de desenvolvemento: [1.1-dev][2]
 
 Este módulo de aplicación mellora o acceso e o uso do editor de audio
 Goldwave.
@@ -19,13 +19,16 @@ Goldwave.
 Para obter máis información acerca do Goldwave e das ordes do teclado,
 consulta o Manual do GoldWave.
 
-## Changes for 1.1-dev ##
+## Ccambios para 1.1-dev ##
 
-* Support for message announcements in braille.
-* Audio selection summary is presented in languages other than English.
-* More command announcements added including cue position movement and
-  delete/trim operations.
-* New and updated translations.
+* Soporte para o anunciado de mesaxes en braille.
+* O resumo da selección de audio preséntase en máis linguas que no inglés.
+* Engádense máis ordes incluindo o anunciado do movemento da posición do
+  sinal e operacións de borrado/recorte.
+* Correxido un problema en campos de edición numéricos tales como en varios
+  diálogos de efectos onde non se anunciaba nada ou un nome de campo
+  equivocado.
+* Traduccións novas e actualizadas.
 
 ## Cambios para 1.0 ##
 

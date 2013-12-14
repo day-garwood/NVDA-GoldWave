@@ -1,8 +1,8 @@
 # Goldwave #
 
 * المطورون: Joseph Lee ومساهمون آخرون في NVDA
-* Stable version: [1.0][1]
-* Development version: [1.1-dev][2]
+* الإصدار النهائي: [1.0][1]
+* الإصدار التجريبي: [1.1-dev][2]
 
 هذه الوحدات البرمجية تعمل على تحسين استخدام برنامج محرر الصوت GoldWave
 
@@ -17,13 +17,15 @@
 
 للمزيد من المعلومات حول برنامج GoldWave وأوامره يرجى مراجعة دليل استخدامه.
 
-## Changes for 1.1-dev ##
+## تعديلات الإصدار 1.1 ##
 
-* Support for message announcements in braille.
-* Audio selection summary is presented in languages other than English.
-* More command announcements added including cue position movement and
-  delete/trim operations.
-* New and updated translations.
+* دعم ظهور الرسائل على الأسطر الإلكترونية
+* عرض الأجزاء الصوتية المحددة باللغات الأخرى غير الإنجليزية
+* الإعلان عن مزيد من الأوامر بما في ذلك: موضع حركة المؤثر الصوتي وعمليات
+  التزيين/والحذف
+* معالجة مشكلة مربعات التحرير الرقمية كما في العديد من محاورات المؤثرات التي
+  كان NVDA لا يعلن فيها عن شيء أو يقرأ أسماء الحقول بطريقة خاطئة.
+* ترجمة الإضافة للغات جديدة وتحديث اللغات الأخرى
 
 ## تعديلات الإصدار 1.0 ##
 
@@ -33,4 +35,4 @@
 
 [1]: http://addons.nvda-project.org/files/get.php?file=gwv
 
-[2]: http://addons.nvda-project.org/files/get.php?file=gwv-dev
+[2]: http://addons.nvda-project.org/files/get.php?file=gwv

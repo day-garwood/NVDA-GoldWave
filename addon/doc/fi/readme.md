@@ -27,6 +27,9 @@ näppäinkomennoista.
   englanniksi.
 * Lisää komentojen ilmoituksia, paikkamerkin sijainnin siirtäminen sekä
   poisto/leikkaus mukaan lukien.
+* Korjattu numeeristen muokkauskenttien ongelma (esim. useissa
+  äänitehostevalintaikkunoissa), joka aiheutti sen, että väärä kentän nimi
+  luettiin tai sitä ei luettu ollenkaan.
 * Uusia ja päivitettyjä käännöksiä.
 
 ## Muutokset versiossa 1.0 ##

@@ -1,8 +1,8 @@
 # गोल्डवेभ #
 
 * लेखकहरू: जोसेफ ली, नेत्रवाणी योगदान कर्ताहरू
-* Stable version: [1.0][1]
-* Development version: [1.1-dev][2]
+* स्थिर संस्करण: [१.०][1]
+* विकास संस्करण: [1.1-dev][2]
 
 यो उपकरणले गोल्डवेभ नामक ध्वनी सम्पादकको पहुँच र प्रयोगमा सहजता सिर्जना
 गर्ने छ । .
@@ -19,15 +19,16 @@
 गोल्डवेभ र कुञ्जीपाटी आदेश बारे थप जानकारि लिन   गोल्डवेभ सम्बन्धित
 कागजातहरू हेर्नु होला । 
 
-## Changes for 1.1-dev ##
+## विकास १.१ मा गरिएका परिवर्तनहरू ##
 
-* Support for message announcements in braille.
-* Audio selection summary is presented in languages other than English.
-* More command announcements added including cue position movement and
-  delete/trim operations.
-* New and updated translations.
+* ब्रेलमा सन्देसको घोषणालाई समर्थन गर्छ ।
+* श्रव्य चयन सारांस अङ्ग्रेजी भन्दा अरू भाषामा पनि प्रस्तुत हुन्छ ।
+* क्यु स्थान र कटाइ/मेटाइ स्थान सहित अन्य आदेस घोषणा थप गरियो ।  
+* Fixed an issue in numeric edit fields such as in various effects dialogs
+  where nothing or wrong field name was announced.
+* नया र अद्यावधिक अनुवादहरू
 
-## Changes for 1.0 ##
+## १.० मा गरिएका परिवर्तनहरू ##
 
 * शुरूको संस्करण
 

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-11-11 19:23+0530\n"
+"PO-Revision-Date: 2013-12-14 11:41+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: Tamil\n"
@@ -63,7 +63,7 @@ msgstr "துவக்கம்: {startMarkerPos}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops the start marker and announces start marker position."
-msgstr "துவக்கக் குறியை கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
+msgstr "துவக்கக் குறிப்பானைக் கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 msgid "Finish: {finishMarkerPos}"
@@ -71,7 +71,7 @@ msgstr "முடிவு: {finishMarkerPos}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops the finish marker and announces finish marker position."
-msgstr "முடிவுக் குறியை கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
+msgstr "முடிவுக் குறிப்பானைக் கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
@@ -79,7 +79,7 @@ msgstr "தெரிவை  இயக்குக"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Plays the trakc between start and finish markers."
-msgstr "துவக்கக் குறி, முடிவுக் குறிகளுக்கிடையேயான தடத்தை ஒலிக்கிறது."
+msgstr "துவக்க, முடிவுக் குறிப்பான்களுக்கிடையேயான தடத்தை ஒலிக்கிறது."
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
@@ -91,75 +91,71 @@ msgstr "முழு தடத்தையும் தெரிவு செய
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
-msgstr "நினைவூட்டுக் குறிப்பு"
+msgstr "நினைவூட்டி"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current audio position."
-msgstr "தற்போதைய ஒலி நிலையில் நினைவூட்டுக் குறிப்பைக் கீழ்விடுகிறது."
+msgstr "தற்போதைய ஒலி நிலையில் நினைவூட்டியைக்  கீழ்விடுகிறது."
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "துவக்கக் குறியில் நினைவூட்டுக் குறிப்பு கீழ்விடப்பட்டது"
+msgstr "துவக்கக் குறிப்பானில் நினைவூட்டிக் கீழ்விடப்பட்டது"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current start marker position."
-msgstr "தற்போதைய துவக்கக் குறியின் நிலையில், நினைவூட்டுக் குறிப்பை கீழ்விடுகிறது."
+msgstr "தற்போதைய துவக்கக் குறிப்பானின் நிலையில், நினைவூட்டியைக் கீழ்விடுகிறது."
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "முடிவுக் குறியில் நினைவூட்டுக் குறிப்பு கீழ்விடப்பட்டது"
+msgstr "முடிவுக் குறிப்பானில் நினைவூட்டிக் கீழ்விடப்பட்டது"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current finish marker position."
-msgstr "தற்போதைய முடிவுக் குறியின் நிலையில், நினைவூட்டுக் குறிப்பைக் கீழ்விடுகிறது."
+msgstr "தற்போதைய முடிவுக் குறிப்பானின் நிலையில், நினைவூட்டியைக் கீழ்விடுகிறது."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr ""
+msgstr "அடுத்த நினைவூட்டியில் துவக்கக் குறிப்பான்"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Moves the start marker to the next cue position."
-msgstr "துவக்கக் குறியை கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
+msgstr "அடுத்த நினைவூட்டிக்கு துவக்கக் குறிப்பானை நகர்த்துகிறது"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr ""
+msgstr "முந்தைய நினைவூட்டியில் துவக்கக் குறிப்பான்"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Moves the start marker to the previous cue position."
-msgstr "துவக்கக் குறியை கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
+msgstr "அடுத்த நினைவூட்டிக்கு துவக்கக் குறிப்பானை நகர்த்துகிறது"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr ""
+msgstr "அடுத்த நினைவூட்டியில் முடிவுக் குறிப்பான்"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Moves the finish marker to the next cue position."
-msgstr "முடிவுக் குறியை கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
+msgstr "அடுத்த நினைவூட்டிக்கு முடிவுக் குறிப்பானை நகர்த்துகிறது"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr ""
+msgstr "முந்தைய நினைவூட்டியில் முடிவுக் குறிப்பான்"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Moves the finish marker to the previous cue position."
-msgstr "முடிவுக் குறியை கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
+msgstr "முந்தைய நினைவூட்டிக்கு முடிவுக் குறிப்பானை நகர்த்துகிறது"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
-msgstr ""
+msgstr "அழிக்கப்பட்டது"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Deletes the currently selected audio."
-msgstr ""
+msgstr "தற்பொழுது தெரிவு செய்யப்பட்டிருக்கும் ஒலியை அழிக்கிறது"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Trims the audio outside the selected audio."
-msgstr ""
+msgstr "தெரிவு செய்யப்பட்டிருக்கும் ஒலிக்கு வெளியே இருக்கும் ஒலியை அகற்றுகிறது"
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
@@ -228,11 +224,11 @@ msgstr ""
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr "தடத்தின் நீளம் கிடைப்பிலில்லை"
+msgstr "தடத்தின் நீளம் கிடைப்பிலில்லை. ஒலித் தடத்தை மூடி, மீண்டும் திறக்கவும். "
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "தடத்தின் முழு நீளத்தையும் அறிவிக்கிறது"
+msgstr "ஒலித் தடத்தின் முழு நீளத்தையும் அறிவிக்கிறது"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 msgid "Selected channel: {audioChannel}"

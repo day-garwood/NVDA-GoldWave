@@ -8,10 +8,9 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-11-14 21:30-0800\n"
+"PO-Revision-Date: 2013-11-27 22:41-0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -113,51 +112,47 @@ msgstr "큐를 끝 마크 위치에 설정합니다."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr ""
+msgstr "시작 마크 다음 큐로 이동"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Moves the start marker to the next cue position."
-msgstr "시작 마크 설정 및 마크 위치를 알려줍니다."
+msgstr "시작 마크를 다음 큐 위치로 옮깁니다."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr ""
+msgstr "시작 마크 이전 큐로 이동"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Moves the start marker to the previous cue position."
-msgstr "시작 마크 설정 및 마크 위치를 알려줍니다."
+msgstr "시작 마크를 이전 큐 위치로 옮깁니다."
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr ""
+msgstr "끝 마크 다음 큐로 이동"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Moves the finish marker to the next cue position."
-msgstr "끝 마크 설정 및 마크 위치를 알려줍니다."
+msgstr "끝 마크 설정 및 마크 위치를 알려줍니다.를 다음 큐 위치로 옮깁니다."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr ""
+msgstr "끝 마크 이전 큐로 이동"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Moves the finish marker to the previous cue position."
-msgstr "끝 마크 설정 및 마크 위치를 알려줍니다."
+msgstr "끝 마크를 이전 큐 위치로 옮깁니다."
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
-msgstr ""
+msgstr "삭제됨"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Deletes the currently selected audio."
-msgstr ""
+msgstr "선택된 오디오를 삭제합니다."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Trims the audio outside the selected audio."
-msgstr ""
+msgstr "선택된 오디오 외 부분을 삭제합니다."
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"

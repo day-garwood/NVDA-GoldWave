@@ -24,6 +24,9 @@ manual do Goldwave.
 * O resumo da seleção de áudio é apresentado noutros idiomas além de Inglês.
 * Adicionados novos anúncios de comandos incluindo movimentos na posição da
   divisão e operações de apagamento/exclusão.
+* Corrigido um problema em campos numéricos de edição, como em vários
+  diálogos de efeitos, nos quais nada era anunciado ou então um nome de
+  campo errado.
 * Novas e atualizadas traduções.
 
 ## Mudanças na 1.0 ##

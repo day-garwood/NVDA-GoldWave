@@ -26,6 +26,8 @@ kılavuzuna bakın.
 * Ses seçimi özeti İngilizce dışındaki dillerde de sunuluyor.
 * İşaret noktaları, silme ve kırpma gibi işlemler için daha fazla komut
   bildirimi eklendi
+* Çeşitli efekt alanlarındaki değerlerin seslendirilmemesi ya da yanlış
+  seslendirilmesi gibi sayısal düzenleme alanlarındaki sorunlar giderildi 
 * Yeni ve güncel çeviriler.
 
 ## 1.0 için değişiklikler ##

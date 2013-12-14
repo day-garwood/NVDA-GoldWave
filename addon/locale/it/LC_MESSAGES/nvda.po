@@ -5,252 +5,256 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: goldwave 1.1-dev\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2013-11-16 14:18+0100\n"
-"PO-Revision-Date: 2013-11-25 17:58+0200\n"
-"Last-Translator: Kostadin Kolev <k_kolev1985@mail.bg>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: bg\n"
+"Project-Id-Version: 'goldwave' '1.0Beta1'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"POT-Creation-Date: 2013-11-09 23:25-0800\n"
+"PO-Revision-Date: 2013-11-18 12:37+0100\n"
+"Last-Translator: Simone Dal Maso <simone.dalmaso@juvox.it>\n"
+"Language-Team: It <simone.dalmaso@gmail.con>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
-msgstr "Съобщаването на командите е включено"
+msgstr "Lettura comandi attiva"
 
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
-msgstr "Съобщаването на командите е изключено"
+msgstr "Lettura comandi disattiva"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
 msgid ""
 "Toggles whether NVDA announces editing commands during audio recording or "
 "playback."
 msgstr ""
-"Превключва съобщаването на командите за редактиране от страна на NVDA по "
-"време на звукозапис или възпроизвеждане."
+"Stabilisce se NVDA debba leggere o meno i comandidi modifica durante la "
+"registrazione o la riproduzione di una traccia audio."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "Не е налична информация за текущата позиция в пистата"
+msgstr "Posizione traccia non disponibile."
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "Не е налична информация за канала"
+msgstr "Informazioni canale non disponibili."
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
-msgstr "Моно"
+msgstr "mono"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "stereo"
-msgstr "Стерео"
+msgstr "stereo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "left"
-msgstr "Ляв"
+msgstr "sinistro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "right"
-msgstr "Десен"
+msgstr "destro"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 msgid "Start: {startMarkerPos}"
-msgstr "Начало: {startMarkerPos}"
+msgstr "Inizio: {startMarkerPos}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops the start marker and announces start marker position."
-msgstr "Поставя маркера за начало и съобщава позицията му."
+msgstr "Inserisce il marker iniziale e ne legge la posizione."
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 msgid "Finish: {finishMarkerPos}"
-msgstr "Край: {finishMarkerPos}"
+msgstr "Fine: {startMarkerPos}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops the finish marker and announces finish marker position."
-msgstr "Поставя маркера за край и съобщава позицията му."
+msgstr "Inserisce il marker finale e ne legge la posizione."
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
-msgstr "Възпроизвеждане на избраното"
+msgstr "Riproduzione selezione"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Plays the trakc between start and finish markers."
-msgstr "Възпроизвежда избраното между маркерите за начало и край."
+msgstr "Riproduce la traccia dal marker iniziale a quello finale."
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
-msgstr "Избери всичко"
+msgstr "Seleziona tutto"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Selects the entire track."
-msgstr "Избира цялата писта."
+msgstr "Seleziona l'intera traccia."
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
-msgstr "Вмъкване на показалец"
+msgstr "CuePoint Inserito"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current audio position."
-msgstr "Поставя показалец на текущата аудио позиция."
+msgstr "Inserisce un cuePoint alla posizione attuale."
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "Показалецът бе вмъкнат на позицията на маркера за начало"
+msgstr "CuePoint messo al marker iniziale"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current start marker position."
-msgstr "Поставя показалец на текущата позиция на маркера за начало."
+msgstr "Inserisce un CuePoint alla posizione del marker iniziale corrente."
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "Показалецът бе поставен на позицията на маркера за край"
+msgstr "CuePoint messo al marker finale"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current finish marker position."
-msgstr "Поставя показалец на текущата позиция на маркера за край."
+msgstr "Inserisce un CuePoint alla posizione del marker finale corrente"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "Преместване на маркера за начало до следващия показалец"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
+#, fuzzy
 msgid "Moves the start marker to the next cue position."
-msgstr "Премества маркера за начало до следващия показалец."
+msgstr "Inserisce il marker iniziale e ne legge la posizione."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "Преместване на маркера за начало до предишния показалец"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
+#, fuzzy
 msgid "Moves the start marker to the previous cue position."
-msgstr "Премества маркера за начало до предишния показалец."
+msgstr "Inserisce il marker iniziale e ne legge la posizione."
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "Преместване на маркера за край до следващия показалец"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
+#, fuzzy
 msgid "Moves the finish marker to the next cue position."
-msgstr "Премества маркера за край до следващия показалец."
+msgstr "Inserisce il marker finale e ne legge la posizione."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "Преместване на маркера за край до предишния показалец"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
+#, fuzzy
 msgid "Moves the finish marker to the previous cue position."
-msgstr "Премества маркера за край до предишния показалец."
+msgstr "Inserisce il marker finale e ne legge la posizione."
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
-msgstr "Изтрито"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Deletes the currently selected audio."
-msgstr "Изтрива текущата аудио селекция."
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Trims the audio outside the selected audio."
-msgstr "Изрязва аудиото извън текущата селекция."
+msgstr ""
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
-msgstr "Възпроизвеждане"
+msgstr "Play"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Plays the audio track."
-msgstr "Възпроизвежда аудио пистата."
+msgstr "Riproduce la traccia audio."
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
-msgstr "Превъртане назад"
+msgstr "Indietro"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Rewinds through an audio track."
-msgstr "Превърта назад в аудио пистата."
+msgstr "Riavvolgimento di traccia audio"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
-msgstr "Превъртане напред"
+msgstr "Avanti veloce"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Fast forwards through an audio track."
-msgstr "Превърта напред в аудио пистата."
+msgstr "Avanza rapidamente in una traccia audio."
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
-msgstr "Пауза"
+msgstr "Pausa"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Pauses the audio track."
-msgstr "Поставя на пауза възпроизвеждането на аудио пистата."
+msgstr "Mette in pausa la traccia audio."
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
-msgstr "Спиране"
+msgstr "Stop"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "stops the audio track."
-msgstr "Спира възпроизвеждането на аудио пистата."
+msgstr "ferma la traccia audio."
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
-msgstr "Записване"
+msgstr "Registrazione"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Starts recording audio."
-msgstr "Започва звукозапис."
+msgstr "Avvia la registrazione audio."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
-msgstr "Съобщава в секунди текущата позиция в аудиопистата."
+msgstr "Legge la posizione audio corrente in secondi."
 
 #. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
 msgstr ""
-"Не бе възможно получаването на информация за текущата аудио селекция. Моля "
-"затворете и отворете повторно аудио пистата."
+"Impossibile ottenere riepilogo selezione audio. Si prega di chiudere e "
+"riaprire la traccia audio."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
-"Съобщава обобщена информация за аудио селекцията (например времетраенето й)."
+"Legge un riepilogo delle informazioni della selezione audio, come la durata"
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
-"Времетраенето на пистата не е налично. Моля затворете и отворете повторно "
-"аудио пистата."
+"Lunghezza traccia non disponibile. Si prega di chiudere e riaprire la "
+"traccia audio."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "Съобщава времетраенето на цялата аудио писта."
+msgstr "Legge la lunghezza totale della traccia audio."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 msgid "Selected channel: {audioChannel}"
-msgstr "Избран канал: {audioChannel}"
+msgstr "Canale selezionato: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
-msgstr "Съобщава редактирания от вас аудио канал."
+msgstr "Legge il canale audio che si sta modificando."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 msgid "Zoom level: {zoomLevel}"
-msgstr "Ниво на мащабиране: {zoomLevel}"
+msgstr "Livello zoom"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces audio zoom level."
-msgstr "Съобщава нивото на мащабиране на пистата."
+msgstr "Legge il livello di zoom audio"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Changes zoom level and announces the new level."
-msgstr "Променя нивото на мащабиране и съобщава новата му стойност."
+msgstr "Modifica il livello di zoom e annuncia il nuovo livello"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -261,5 +265,5 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of Goldwave audio editor."
 msgstr ""
-"Добавка, разширяваща достъпността и ползваемостта на звуковия редактор "
-"Goldwave."
+"Un componente aggiuntivo per migliorare l'accesso e l'utilizzo di Goldwave "
+"Audio Editor."

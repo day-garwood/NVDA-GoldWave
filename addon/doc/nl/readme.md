@@ -27,6 +27,8 @@ handleiding van Goldwave.
 * Audio selection summary wordt weergegeven in andere talen dan Engels.
 * Meer aankondigingen van commando's toegevoegd inclusief cue position
   movement en delete/trim operations.
+* Fixed an issue in numeric edit fields such as in various effects dialogs
+  where nothing or wrong field name was announced.
 * Nieuwe en bijgewerkte vertalingen.
 
 ## Veranderingen voor 1.0 ##

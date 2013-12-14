@@ -23,6 +23,8 @@
 * Audio selection summary is presented in languages other than English.
 * More command announcements added including cue position movement and
   delete/trim operations.
+* Fixed an issue in numeric edit fields such as in various effects dialogs
+  where nothing or wrong field name was announced.
 * New and updated translations.
 
 ## 1.0 ##
