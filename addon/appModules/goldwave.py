@@ -377,6 +377,8 @@ class AppModule(appModuleHandler.AppModule):
 		if obj.windowClassName == 'TNumEdit':
 			clsList.insert(0, GoldwaveNumericEdit)
 			# Get the correct edit field name.
-			if obj.parent.parent.role == ROLE_PANE: obj.name = obj.parent.parent.name + " " + obj.name
+			fieldNameObj = obj.parent.parent
+			if fieldNameObj.role == ROLE_PANE:
+				obj.name = fieldNameObj.name if obj.name == None else fieldNameObj.name + " " + obj.name
 
 
