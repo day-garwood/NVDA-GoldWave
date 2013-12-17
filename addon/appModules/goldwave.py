@@ -8,7 +8,7 @@ import addonHandler
 import api
 import speech
 import braille
-from controlTypes import ROLE_BUTTON, ROLE_DIALOG
+from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible # Since we're dealing with IAccessible.
 import scriptHandler
@@ -377,7 +377,6 @@ class AppModule(appModuleHandler.AppModule):
 		if obj.windowClassName == 'TNumEdit':
 			clsList.insert(0, GoldwaveNumericEdit)
 			# Get the correct edit field name.
-			editFieldName = obj.parent.parent.name
-			if editFieldName != api.getForegroundObject().name: obj.name = editFieldName + "; " + obj.name
+			if obj.parent.parent.role == ROLE_PANE: obj.name = obj.parent.parent.name + " " + obj.name
 
 
