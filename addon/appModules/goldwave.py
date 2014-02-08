@@ -10,7 +10,7 @@ import speech
 import braille
 from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING
 addonHandler.initTranslation()
-from NVDAObjects.IAccessible import IAccessible # Since we're dealing with IAccessible.
+from NVDAObjects.IAccessible import IAccessible
 import scriptHandler
 from NVDAObjects.window import Window # Various buttons.
 import ui
@@ -79,7 +79,7 @@ class SoundWindow(IAccessible):
 		return audioSelection
 
 	def getAudioSelectionParsed(self):
-		# Continuing from above, get marker positions and selection duration. This is a string parsing problem.
+		# Get marker positions and selection duration.
 		# Store the parsed strings into a list.
 		return self.getAudioSelection().split(" ")
 
@@ -271,10 +271,10 @@ class SoundWindow(IAccessible):
 		audioSelectionParsed, audioSelection = self.getAudioSelectionParsed(), ""
 		if not audioSelectionParsed:
 			# Translators: Presented when there is no audio selection summary available.
-			audioSelection = (_("Unable to obtain audio selection summary. Please close and reopen the audio track."))
+			audioSelection = _("Unable to obtain audio selection summary. Please close and reopen the audio track.")
 		else:
 			# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-			audioSelection = "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}".format(audioSelectionStart = audioSelectionParsed[0], audioSelectionEnd = audioSelectionParsed[2], audioSelectionLength = audioSelectionParsed[3])
+			audioSelection = _("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(audioSelectionStart = audioSelectionParsed[0], audioSelectionEnd = audioSelectionParsed[2], audioSelectionLength = audioSelectionParsed[3])
 		self.message(audioSelection)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioSelection.__doc__=_("Announces a summary on audio selection info such as selection duration.")
@@ -285,7 +285,7 @@ class SoundWindow(IAccessible):
 			# Translators: Presented when there is no track length information.
 			trackLengthMSG = _("Track length is unavailable. Please close and reopen the audio track.")
 		else:
-			trackLengthMSG = "Track length: {trackLength}".format(trackLength = trackLengthSTR)
+			trackLengthMSG = _("Track length: {trackLength}").format(trackLength = trackLengthSTR)
 		self.message(trackLengthMSG)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceTrackLength.__doc__=_("Announces total length of the audio track.")

@@ -17,7 +17,7 @@ addon_info = {
 	"addon-summary" : _("GoldWave"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon-description" : _("An add-on for enhancing access and usage of Goldwave audio editor."),
+	"addon-description" : _("An add-on for enhancing access and usage of the Goldwave audio editor."),
 	# version
 	"addon-version" : "1.2-dev",
 	# Author(s)
