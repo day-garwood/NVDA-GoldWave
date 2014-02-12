@@ -378,7 +378,7 @@ class AppModule(appModuleHandler.AppModule):
 			clsList.insert(0, GoldwaveNumericEdit)
 			# Get the correct edit field name.
 			fieldNameObj = obj.parent.parent
-			if fieldNameObj.role == ROLE_PANE:
-				obj.name = fieldNameObj.name if obj.name == None else fieldNameObj.name + " " + obj.name
+			if fieldNameObj.role == ROLE_PANE and fieldNameObj.name:
+				obj.name = fieldNameObj.name if not obj.name else fieldNameObj.name + " " + obj.name
 
 
