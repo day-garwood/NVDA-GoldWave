@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-11-20 17:59+0100\n"
+"PO-Revision-Date: 2014-02-10 18:15+0100\n"
 "Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
@@ -222,6 +225,10 @@ msgstr ""
 "No se puede obtener un resumen de la selección de audio. Por favor, cierra y "
 "vuelve a abrir la pista de audio."
 
+#. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
+msgstr "{audioSelectionStart} a {audioSelectionEnd} {audioSelectionLength}"
+
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
@@ -233,6 +240,9 @@ msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
 "La longitud de la canción no está disponible. Por favor, cierra y vuelve a "
 "abrir la pista de audio."
+
+msgid "Track length: {trackLength}"
+msgstr "Duración de la pista: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -265,7 +275,7 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of Goldwave audio editor."
+msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
-"Un complemento para mejorar el acceso y la utilización del editor de audio "
+"Un complemento para mejorar el acceso y la utilización del editor de audio  "
 "Goldwave."

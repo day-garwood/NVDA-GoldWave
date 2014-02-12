@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Auteurs : Joseph Lee, contributeurs de NVDA.
-* Version stable : [1.0][1]
-* Version de développement : [1.1-dev][2]
+* Version stable : [1.1][1]
+* Version de développement : [1.2-dev][2]
 
 Ce module complémentaire app améliore l'accès et l'utilisation de l'éditeur
 audio Goldwave.
@@ -21,7 +21,7 @@ audio Goldwave.
 Pour plus d'informations sur Goldwave et les commandes clavier,
 reportez-vous au manuel de Goldwave.
 
-## Changements pour la version 1.1-dev ##
+## Changements pour la version 1.1 ##
 
 * prise en charge pour les annonces de message en braille.
 * le résumé pour la Sélection audio est présentée dans des langues autres

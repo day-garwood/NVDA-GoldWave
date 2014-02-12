@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autorzy: Joseph Lee, współpracownicy NVDA.
-* Wersja stabilna: [1.0][1]
-* Wersja rozwojowa: [1.1-dev][2]
+* Wersja stabilna: [1.1][1]
+* Wersja rozwojowa: [1.2-dev][2]
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
@@ -18,7 +18,7 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 Więcej informacji o Goldwave i jego klawiszach skrótu, znajduje się w
 podręczniku Goldwave.
 
-## Zmiany dla wersji 1.1-dev ##
+## Zmiany dla wersji 1.1 ##
 
 * Obsługa powiadomień w brajlu.
 * Podsumowanie zaznaczenia audio jest prezentowane w językach innycch niż

@@ -34,7 +34,7 @@ msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "मार्ग सूचना उपलब्ध छैन ।"
+msgstr "धुन सूचना उपलब्ध छैन ।"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
@@ -46,7 +46,7 @@ msgstr "एकल"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "stereo"
-msgstr "द्विपक्षिय"
+msgstr "दोपाटे"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "left"
@@ -78,7 +78,7 @@ msgstr "चयनलाई बजाउ "
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Plays the trakc between start and finish markers."
-msgstr "सुरु र समाप्ती चिनो बिचको ट्रयाकलाई बजाउँछ ।"
+msgstr "सुरु र समाप्ती चिनो बिचको धुनलाई बजाउँछ ।"
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
@@ -86,7 +86,7 @@ msgstr "सम्पूर्ण चयन "
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Selects the entire track."
-msgstr "सम्पूर्ण ट्यारकलाई चयन गर्छ ।"
+msgstr "सम्पूर्ण धुनलाई चयन गर्छ ।"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
@@ -162,7 +162,7 @@ msgstr "बजाउ"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Plays the audio track."
-msgstr "श्रवण ट्याकलाई बजाउँछ ।"
+msgstr "श्रवण धुनलाई बजाउँछ ।"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
@@ -170,7 +170,7 @@ msgstr "पश्चगमन"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Rewinds through an audio track."
-msgstr "श्रवण ट्रयाक मार्फत पश्चगमन ।"
+msgstr "श्रवण धुन मार्फत पश्चगमन ।"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
@@ -178,7 +178,7 @@ msgstr "तिब्र अग्रगमन"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Fast forwards through an audio track."
-msgstr "श्रवण ट्रयाक मार्फत तिब्र अग्रगमन ।"
+msgstr "श्रवण धुन मार्फत तिब्र अग्रगमन ।"
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
@@ -186,7 +186,7 @@ msgstr "क्षणीक विश्राम"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Pauses the audio track."
-msgstr "श्रवण ट्रयाकले क्षणिक विश्राम लिन्छ ।"
+msgstr "श्रवण धुनले क्षणिक विश्राम लिन्छ ।"
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
@@ -194,7 +194,7 @@ msgstr "विश्राम"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "stops the audio track."
-msgstr "श्रवण ट्रयाकले विश्राम लिन्छ ।"
+msgstr "श्रवण धुनले विश्राम लिन्छ ।"
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
@@ -213,7 +213,11 @@ msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
 msgstr ""
-"चयनित श्रवण सारांस प्राप्त गर्न सकिएन ।. कृपया श्रवण ट्रयाकलाई बन्द गरेर फेरी खोल्नु होस् ।"
+"चयनित श्रवण सारांस प्राप्त गर्न सकिएन ।. कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
+
+#. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
@@ -221,7 +225,10 @@ msgstr "श्रवण चयन शारांस सम्बन्धी �
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr "ट्रयाकको लम्बाई उपलब्ध छैन । कृपया श्रवण ट्रयाकलाई बन्द गरेर फेरी खोल्नु होस् ।"
+msgstr "धुनको लम्बाई उपलब्ध छैन । कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
+
+msgid "Track length: {trackLength}"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -254,5 +261,6 @@ msgstr "गोल्डवेभ"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "गोल्डवेभ श्रवण सम्पादनमा समृद्ध पहुँच र प्रयोग पुर्‍याउने एउटा थप-साधन । "

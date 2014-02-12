@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autores: Joseph Lee, colaboradores do NVDA.
-* Versión estable: [1.0][1]
-* Versión de desenvolvemento: [1.1-dev][2]
+* Versión estable: [1.1][1]
+* Versión en desenvolvemento: [1.2-dev][2]
 
 Este módulo de aplicación mellora o acceso e o uso do editor de audio
 Goldwave.
@@ -19,7 +19,7 @@ Goldwave.
 Para obter máis información acerca do Goldwave e das ordes do teclado,
 consulta o Manual do GoldWave.
 
-## Ccambios para 1.1-dev ##
+## Cambios para 1.1 ##
 
 * Soporte para o anunciado de mesaxes en braille.
 * O resumo da selección de audio preséntase en máis linguas que no inglés.

@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Auteurs: Joseph Lee, NVDA contributors.
-* Stabiele versie: [1.0][1]
-* Ontwikkelversie: [1.1-dev][2]
+* Stabiele versie: [1.1][1]
+* Ontwikkelversie: [1.2-dev][2]
 
 Deze module verbetert de toegang tot en het gebruik van het
 geluidsbewerkingsprogramma Goldwave.
@@ -21,14 +21,15 @@ geluidsbewerkingsprogramma Goldwave.
 Voor meer informatie over Goldwave en de sneltoetsen verwijzen we naar de
 handleiding van Goldwave.
 
-## Veranderingen voor 1.1-dev ##
+## Veranderingen voor 1.1 ##
 
 * Ondersteuning voor berichtaankondigingen in braille.
 * Audio selection summary wordt weergegeven in andere talen dan Engels.
 * Meer aankondigingen van commando's toegevoegd inclusief cue position
   movement en delete/trim operations.
-* Fixed an issue in numeric edit fields such as in various effects dialogs
-  where nothing or wrong field name was announced.
+* Een probleem opgelost in numerieke invoervelden zoals in verschillende
+  dialoogvensters met effecten waarbij geen of verkeerde veldnamen werden
+  aangekondigd.
 * Nieuwe en bijgewerkte vertalingen.
 
 ## Veranderingen voor 1.0 ##

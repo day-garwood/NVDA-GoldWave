@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Yazarlar: Joseph Lee, NVDA katkıda bulunanlar.
-* Kararlı sürüm: [1.0][1]
-* Geliştirme sürümü: [1.1-dev][2]
+* Kararlı sürüm: [1.1][1]
+* Geliştirme sürümü: [1.2-dev][2]
 
 Bu uygulama modülü GoldWave ses editörünün erişilebilirliğini ve kullanımını
 geliştirir.
@@ -20,7 +20,7 @@ geliştirir.
 GoldWave ve klavye komutları hakkında daha fazla bilgi için, GoldWave
 kılavuzuna bakın.
 
-## 1.1-dev için Değişiklikler1.0 için değişiklikler ##
+## 1.1 için değişiklikler ##
 
 * Mesaj bildirimi için braille desteği.
 * Ses seçimi özeti İngilizce dışındaki dillerde de sunuluyor.

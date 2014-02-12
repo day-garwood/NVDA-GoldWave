@@ -1,8 +1,8 @@
 # GoldWave #
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
-* Stable version: [1.0][1]
-* Kehitysversio: [1.1-dev][2]
+* Vakaa versio: [1.1][1]
+* Kehitysversio: [1.2-dev][2]
 
 Tämä sovellusmoduuli parantaa GoldWave-äänieditorin saavutettavuutta ja
 käytettävyyttä.
@@ -20,7 +20,7 @@ käytettävyyttä.
 Katso GoldWaven käsikirjasta lisätietoja ohjelmasta sekä sen
 näppäinkomennoista.
 
-## Muutokset versiossa 1.1-dev ##
+## Muutokset versiossa 1.1 ##
 
 * Tuki ilmoitusten näyttämiselle pistenäytöllä.
 * Valitun äänen yhteenvetotiedot luetaan nyt muillakin kielillä kuin

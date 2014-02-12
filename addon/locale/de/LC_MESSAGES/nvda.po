@@ -11,6 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2013-11-22 17:26+0100\n"
 "Last-Translator: René Linke <rene.linke@hamburg.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -216,6 +217,10 @@ msgstr ""
 "Die Zusammenfassung zur Auswahl konnte nicht abgerufen werden. Bitte "
 "schließen Sie diese und öffnen Sie sie erneut."
 
+#. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
+msgstr ""
+
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
@@ -227,6 +232,9 @@ msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
 "Die Länge der Audiospur konnte nicht abgerufen werden. Bitte schließen Sie "
 "diese und öffnen Sie sie erneut."
+
+msgid "Track length: {trackLength}"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -259,5 +267,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "Eine Erweiterung zur Verbesserung der Zugänglichkeit von GoldWave."

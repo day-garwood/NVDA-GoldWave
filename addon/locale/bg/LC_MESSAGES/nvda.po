@@ -217,6 +217,10 @@ msgstr ""
 "Не бе възможно получаването на информация за текущата аудио селекция. Моля "
 "затворете и отворете повторно аудио пистата."
 
+#. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
+msgstr ""
+
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
@@ -227,6 +231,9 @@ msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
 "Времетраенето на пистата не е налично. Моля затворете и отворете повторно "
 "аудио пистата."
+
+msgid "Track length: {trackLength}"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -259,7 +266,8 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "Добавка, разширяваща достъпността и ползваемостта на звуковия редактор "
 "Goldwave."

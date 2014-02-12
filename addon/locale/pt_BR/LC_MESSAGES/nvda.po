@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-11-20 10:34-0300\n"
+"PO-Revision-Date: 2014-02-09 18:54-0300\n"
 "Last-Translator: Cleverson Casarin Uliana <clever92000@yahoo.com.br>\n"
 "Language-Team: Equipe de tradução do NVDA para Português do Brasil "
 "<clever92000@yahoo.com.br>\n"
@@ -219,6 +219,10 @@ msgstr ""
 "Não consegui obter um resumo da seleção de áudio. Por favor feche e reabra a "
 "faixa de áudio."
 
+#. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
+msgstr "{audioSelectionStart} até {audioSelectionEnd} {audioSelectionLength}"
+
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
@@ -229,6 +233,9 @@ msgstr ""
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
 "Comprimento da faixa indisponível. Por favor feche e reabra a faixa de áudio."
+
+msgid "Track length: {trackLength}"
+msgstr "Comprimento da faixa: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -261,7 +268,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of Goldwave audio editor."
+msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
-"Complemento que melhora o acesso e a usabilidade do editor de áudiio "
-"Goldwave."
+"Complemento que melhora o acesso e a usabilidade do editor de áudio Goldwave."

@@ -11,6 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2013-11-30 09:44+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -216,6 +217,10 @@ msgstr ""
 "Valinnan tietojen yhteenvetoa ei löydy. Sulje äänitiedosto ja avaa se sitten "
 "uudelleen."
 
+#. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
+msgstr ""
+
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr "Kertoo yhteenvedon valinnan tiedoista, kuten kestosta."
@@ -225,6 +230,9 @@ msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
 "Raidan pituutta ei ole saatavilla. Sulje äänitiedosto ja avaa se sitten "
 "uudelleen."
+
+msgid "Track length: {trackLength}"
+msgstr ""
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -257,7 +265,8 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "Lisäosa Goldwave-äänieditorin saavutettavuuden ja käytettävyyden "
 "parantamiseen."

@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autori: Joseph Lee, tím NVDA.
-* Stabilná verzia: [1.0][1]
-* Vývojová verzia: [1.1-dev][2]
+* Stabilná verzia: [1.1][1]
+* Vývojová verzia: [1.2-dev][2]
 
 Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru
 goldwave.
@@ -19,7 +19,7 @@ goldwave.
 pre viac informácii o klávesových skratkách programu Goldwave si prečítajte
 návod k programu Goldwave.
 
-## Zmeny pre verziu 1.1-dev ##
+## Zmeny pre verziu 1.1 ##
 
 * Podpora pre zobrazovanie správ na brailovských riadkoch.
 * Súhrn výberu je oznamovaný aj v iných jazykoch, nie len v angličtine.

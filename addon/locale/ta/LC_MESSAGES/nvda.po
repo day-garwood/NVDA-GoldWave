@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-12-14 11:41+0530\n"
+"PO-Revision-Date: 2014-02-09 11:10+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: Tamil\n"
@@ -216,6 +216,11 @@ msgid ""
 msgstr ""
 "ஒலித் தெரிவின் சிறுகுறிப்பைப் பெற இயலவில்லை. ஒலித்தடத்தை மூடிவிட்டு, மீண்டும் திறக்கவும்."
 
+#. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
+msgstr ""
+"{audioSelectionStart} முதல் {audioSelectionEnd} வரை {audioSelectionLength}"
+
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
@@ -225,6 +230,9 @@ msgstr ""
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "தடத்தின் நீளம் கிடைப்பிலில்லை. ஒலித் தடத்தை மூடி, மீண்டும் திறக்கவும். "
+
+msgid "Track length: {trackLength}"
+msgstr "தடத்தின் நீளம்: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -257,7 +265,7 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of Goldwave audio editor."
+msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
-"கோல்ட்வேவ் (Goldwave) ஒலித் தொகுப்பு மென்பொருளை  அணுகுவதிலும், பயன்படுத்துவதிலும் "
+"Goldwave ஒலித் தொகுப்பு மென்பொருளை  அணுகுவதிலும், பயன்படுத்துவதிலும் "
 "மேம்பாட்டையளிக்கும் கூட்டுறுப்பு."
