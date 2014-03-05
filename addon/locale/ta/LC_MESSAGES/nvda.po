@@ -91,59 +91,59 @@ msgstr "முழு தடத்தையும் தெரிவு செய
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
-msgstr "நினைவூட்டி"
+msgstr "குறியீடு"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current audio position."
-msgstr "தற்போதைய ஒலி நிலையில் நினைவூட்டியைக்  கீழ்விடுகிறது."
+msgstr "தற்போதைய ஒலி நிலையில் குறியீட்டைக்  கீழ்விடுகிறது."
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "துவக்கக் குறிப்பானில் நினைவூட்டிக் கீழ்விடப்பட்டது"
+msgstr "துவக்கக் குறிப்பானில் குறியீடு கீழ்விடப்பட்டது"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current start marker position."
-msgstr "தற்போதைய துவக்கக் குறிப்பானின் நிலையில், நினைவூட்டியைக் கீழ்விடுகிறது."
+msgstr "தற்போதைய துவக்கக் குறிப்பானின் நிலையில், குறியீட்டைக் கீழ்விடுகிறது."
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "முடிவுக் குறிப்பானில் நினைவூட்டிக் கீழ்விடப்பட்டது"
+msgstr "முடிவுக் குறிப்பானில் குறியீடு கீழ்விடப்பட்டது"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Drops a cue point at the current finish marker position."
-msgstr "தற்போதைய முடிவுக் குறிப்பானின் நிலையில், நினைவூட்டியைக் கீழ்விடுகிறது."
+msgstr "தற்போதைய முடிவுக் குறிப்பானின் நிலையில், குறியீட்டைக் கீழ்விடுகிறது."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "அடுத்த நினைவூட்டியில் துவக்கக் குறிப்பான்"
+msgstr "அடுத்த குறியீட்டில் துவக்கக் குறிப்பான்"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Moves the start marker to the next cue position."
-msgstr "அடுத்த நினைவூட்டிக்கு துவக்கக் குறிப்பானை நகர்த்துகிறது"
+msgstr "அடுத்த குறியீட்டிற்கு துவக்கக் குறிப்பானை நகர்த்துகிறது"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "முந்தைய நினைவூட்டியில் துவக்கக் குறிப்பான்"
+msgstr "முந்தைய குறியீட்டில் துவக்கக் குறிப்பான்"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Moves the start marker to the previous cue position."
-msgstr "அடுத்த நினைவூட்டிக்கு துவக்கக் குறிப்பானை நகர்த்துகிறது"
+msgstr "அடுத்த குறியீட்டிற்கு துவக்கக் குறிப்பானை நகர்த்துகிறது"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "அடுத்த நினைவூட்டியில் முடிவுக் குறிப்பான்"
+msgstr "அடுத்த குறியீட்டில் முடிவுக் குறிப்பான்"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Moves the finish marker to the next cue position."
-msgstr "அடுத்த நினைவூட்டிக்கு முடிவுக் குறிப்பானை நகர்த்துகிறது"
+msgstr "அடுத்த குறியீட்டிற்கு முடிவுக் குறிப்பானை நகர்த்துகிறது"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "முந்தைய நினைவூட்டியில் முடிவுக் குறிப்பான்"
+msgstr "முந்தைய குறியீட்டில் முடிவுக் குறிப்பான்"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Moves the finish marker to the previous cue position."
-msgstr "முந்தைய நினைவூட்டிக்கு முடிவுக் குறிப்பானை நகர்த்துகிறது"
+msgstr "முந்தைய குறியீட்டிற்கு முடிவுக் குறிப்பானை நகர்த்துகிறது"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-11-27 22:41-0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-03-04 20:18-0800\n"
+"Last-Translator: Joseph Lee <joseph.lee22590@gmail,com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
+"Language: ko\n"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
@@ -215,7 +215,7 @@ msgstr "오디오 정보를 확인할 수 없습니다. 트랙을 닫았다 다�
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
-msgstr ""
+msgstr "{audioSelectionStart} - {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
@@ -227,7 +227,7 @@ msgstr ""
 "트랙 재생 시간 정보를 확인할 수 없습니다. 트랙을 닫았다 다시 불러오십시오."
 
 msgid "Track length: {trackLength}"
-msgstr ""
+msgstr "재생 시간: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -260,6 +260,5 @@ msgstr "골드웨이브"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "골드웨이브 접근용 추가 기능."

@@ -17,6 +17,12 @@ This app module enhances access and usage of Goldwave audio editor.
 
 For more information about Goldwave and keyboard commands, refer to Goldwave Manual.
 
+## Changes for 1.2
+
+* Fixed an issue where NVDA had difficulty announcing some edit fields.
+* New and updated translations.
+* Please note that due to recent changes in NVDA, audio selection and other status commands may not work as expected in some systems.
+
 ## Changes for 1.1 ##
 
 * Support for message announcements in braille.
