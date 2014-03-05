@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Authors: Joseph Lee, NVDA contributors.
-* Stable version: [1.1][1]
-* Development version: [1.2-dev][2]
+* Stable version: [1.2][1]
+* Development version: [2.0-dev][2]
 
 This app module enhances access and usage of Goldwave audio editor.
 
