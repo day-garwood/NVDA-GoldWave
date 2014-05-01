@@ -367,12 +367,14 @@ class AppModule(appModuleHandler.AppModule):
 				obj.role = ROLE_BUTTON
 			# For windows which NVDA should recognize as dialogs.
 			elif "Form" in obj.windowClassName and "MainForm" not in obj.windowClassName or obj.windowClassName == "TEffectWrapper":
-				obj.role = ROLE_DIALOG
-
+				# In GoldWave 6, the sound window has the window class name of "tSoundForm" and should not be recognized as a dialog.
+				if obj.windowClassName != "TSoundForm":
+					obj.role = ROLE_DIALOG
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		# Custom nvda overlay objects for sound window and edit fields:
-		if obj.windowClassName == "TWaveView":
+		if obj.windowClassName in ["TWaveView", "TSoundForm"]:
+			# TWaveView = 5.x, TSoundForm = 6.x.
 			clsList.insert(0, SoundWindow)
 		if obj.windowClassName == 'TNumEdit':
 			clsList.insert(0, GoldwaveNumericEdit)
@@ -380,5 +382,4 @@ class AppModule(appModuleHandler.AppModule):
 			fieldNameObj = obj.parent.parent
 			if fieldNameObj.role == ROLE_PANE and fieldNameObj.name:
 				obj.name = fieldNameObj.name if not obj.name else fieldNameObj.name + " " + obj.name
-
 

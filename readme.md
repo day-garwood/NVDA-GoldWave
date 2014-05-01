@@ -17,6 +17,12 @@ This app module enhances access and usage of Goldwave audio editor.
 
 For more information about Goldwave and keyboard commands, refer to Goldwave Manual.
 
+Note: Version 2.0 requires 64-bit version of Windows 7 or later and NVDA 2014.1 or later.
+
+## Changes for 2.0-dev
+
+* Support for GoldWave 6, including 64-bit version of GoldWave.
+
 ## Changes for 1.2
 
 * Fixed an issue where NVDA had difficulty announcing some edit fields.
