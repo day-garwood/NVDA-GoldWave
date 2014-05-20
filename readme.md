@@ -17,11 +17,11 @@ This app module enhances access and usage of Goldwave audio editor.
 
 For more information about Goldwave and keyboard commands, refer to Goldwave Manual.
 
-Note: Version 2.0 requires 64-bit version of Windows 7 or later and NVDA 2014.1 or later.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or later is required to use add-on 2.0.
 
 ## Changes for 2.0-dev
 
-* Support for GoldWave 6, including 64-bit version of GoldWave.
+* Support for GoldWave 6, including 64-bit version of GoldWave (see note above).
 
 ## Changes for 1.2
 
