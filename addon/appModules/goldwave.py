@@ -370,16 +370,16 @@ class AppModule(appModuleHandler.AppModule):
 				# In GoldWave 6, the sound window has the window class name of "tSoundForm" and should not be recognized as a dialog.
 				if obj.windowClassName != "TSoundForm":
 					obj.role = ROLE_DIALOG
+		if obj.windowClassName == 'TNumEdit' and self.productVersion.startswith("5"):
+			# Get the correct edit field name in GoldWave 5.x.
+			fieldNameObj = obj.parent.parent
+			if fieldNameObj.role == ROLE_PANE and fieldNameObj.name:
+				obj.name = fieldNameObj.name if not obj.name else fieldNameObj.name + " " + obj.name
+
+
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		# Custom nvda overlay objects for sound window and edit fields:
 		if obj.windowClassName in ["TWaveView", "TSoundForm"]:
 			# TWaveView = 5.x, TSoundForm = 6.x.
 			clsList.insert(0, SoundWindow)
-		if obj.windowClassName == 'TNumEdit':
-			clsList.insert(0, GoldwaveNumericEdit)
-			# Get the correct edit field name.
-			fieldNameObj = obj.parent.parent
-			if fieldNameObj.role == ROLE_PANE and fieldNameObj.name:
-				obj.name = fieldNameObj.name if not obj.name else fieldNameObj.name + " " + obj.name
-
