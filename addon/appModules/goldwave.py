@@ -94,7 +94,23 @@ class SoundWindow(IAccessible):
 		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Left":_("left"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Right":_("right")
+		"Right":_("right"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Center":_("center"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"w frequenc":_("low frequency"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Back left":_("back left"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Back right":_("back right"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Side left":_("side left"),
+		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Side right":_("side right"),
+		# Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
+		"Multiple":_("Multiple channels selected"),
+		# Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
+		"All":_("All channels selected")
 	}
 
 	def getAudioChannels(self):
@@ -103,7 +119,7 @@ class SoundWindow(IAccessible):
 		fgChild = fg.children[-3]
 		if not fgChild.displayText: fgChild.redraw()
 		audioChannels = fgChild.children[0].displayText
-		return self.audioChannelValues[audioChannels]
+		return audioChannels
 
 	def getTrackLength(self):
 		fg = api.getForegroundObject()
@@ -293,8 +309,13 @@ class SoundWindow(IAccessible):
 	# Audio channels and zoom level.
 
 	def script_announceAudioChannels(self, gesture):
-		# Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-		channel = _("Selected channel: {audioChannel}").format(audioChannel = self.getAudioChannels())
+		channelSTR = self.getAudioChannels()
+		if channelSTR in ["Multiple", "All"]:
+			# Translators: Presented when all or multiple channels (in 3.1, 5.1 or 7.1 channels) are selected (GoldWave 6 and higher).
+			channel = self.audioChannelValues[channelSTR]
+		else:
+			# Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+			channel = _("Selected channel: {audioChannel}").format(audioChannel = self.audioChannelValues[channelSTR])
 		self.message(channel)
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioChannels.__doc__=_("Announces the audio channel you are editing.")
