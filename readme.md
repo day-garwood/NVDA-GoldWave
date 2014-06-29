@@ -22,6 +22,7 @@ Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or l
 ## Changes for 2.0-dev
 
 * Support for GoldWave 6, including 64-bit version of GoldWave (see note above).
+* NVDA now announces selected channel if you press channel selection commands such as Control+Shift+L for the left channel.
 
 ## Changes for 1.2
 

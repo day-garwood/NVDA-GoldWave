@@ -320,6 +320,12 @@ class SoundWindow(IAccessible):
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioChannels.__doc__=_("Announces the audio channel you are editing.")
 
+	def script_selectChannel(self, gesture):
+		gesture.send()
+		if (gesture.displayName == "ctrl+shift+a" and self.appModule.productVersion.startswith("5")) or (gesture.displayName == "ctrl+shift+b" and self.appModule.productVersion.startswith("6")): return
+		else: self.script_announceAudioChannels(gesture)
+	script_selectChannel.__doc__=_("Announces the selected audio channel")
+
 	def script_announceZoomLevel(self, gesture):
 		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 		zoom = _("Zoom level: {zoomLevel}").format(zoomLevel = self.getZoomLevel())
@@ -372,7 +378,11 @@ class SoundWindow(IAccessible):
 		"kb:shift+4":"changeZoomLevel",
 		"kb:shift+5":"changeZoomLevel",
 		"kb:shift+6":"changeZoomLevel",
-		"kb:shift+a":"changeZoomLevel"
+		"kb:shift+a":"changeZoomLevel",
+		"kb:control+shift+l":"selectChannel",
+		"kb:control+shift+r":"selectChannel",
+		"kb:control+shift+a":"selectChannel",
+		"kb:control+shift+b":"selectChannel"
 	}
 
 
