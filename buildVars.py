@@ -24,6 +24,8 @@ addon_info = {
 	"addon-author" : u"Joseph Lee <joseph.lee22590@gmail.com>, David Parduhn <xkill85@gmx.net>, Mesar Hameed <mhameed@src.gnome.org>",
 	# URL for the add-on documentation support
 	"addon-url" : 'http://addons.nvda-project.org',
+	# File name for the add-on help file.
+	"addon-docFileName" : "readme.html"
 }
 
 
