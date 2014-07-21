@@ -12,8 +12,7 @@ from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible
 import scriptHandler
-from NVDAObjects.window import Window, DisplayModelEditableText # Various buttons and numeric edit fields.
-from NVDAObjects.window import edit
+from NVDAObjects.window import Window, DisplayModelEditableText, edit # Various buttons and numeric edit fields.
 import ui
 
 # A number of NVDA objects for GoldWave:
