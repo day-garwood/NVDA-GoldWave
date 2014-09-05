@@ -12,24 +12,10 @@ from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible
 import scriptHandler
-from NVDAObjects.window import Window # Various buttons.
+from NVDAObjects.window import Window, DisplayModelEditableText, edit # Various buttons and numeric edit fields.
 import ui
 
 # A number of NVDA objects for GoldWave:
-
-class GoldwaveNumericEdit(IAccessible):
-	# TNumEdit class. Credit: David P.
-
-	__gestures = {
-		"kb:downArrow": "updatevalue",
-		"kb:upArrow": "updatevalue",
-		"kb:pageUp": "updatevalue",
-		"kb:pageDown": "updatevalue"
-	}
-
-	def script_updatevalue(self, gesture):
-		gesture.send()
-		ui.message(self.windowText)
 
 class SoundWindow(IAccessible):
 	# The GoldWave's sound window. Here one can play, record and edit audio files.
@@ -414,3 +400,10 @@ class AppModule(appModuleHandler.AppModule):
 		if obj.windowClassName in ["TWaveView", "TSoundForm"]:
 			# TWaveView = 5.x, TSoundForm = 6.x.
 			clsList.insert(0, SoundWindow)
+		elif obj.windowClassName in ["TNumEdit", "TTimeEdit"]:
+			try:
+				clsList.remove(DisplayModelEditableText)
+				clsList.insert(0, edit.Edit)
+			except ValueError:
+				pass
+
