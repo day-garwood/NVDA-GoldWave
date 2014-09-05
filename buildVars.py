@@ -11,21 +11,21 @@ addon_info = {
 	# for previously unpublished addons, please follow the community guidelines at:
 	# https://bitbucket.org/nvdaaddonteam/todo/raw/master/guideLines.txt
 	# add-on Name, internal for nvda
-	"addon-name" : "goldwave",
+	"addon_name" : "goldwave",
 	# Add-on summary, usually the user visible name of the addon.
 	# Translators: Summary for this add-on to be shown on installation and add-on information.
-	"addon-summary" : _("GoldWave"),
+	"addon_summary" : _("GoldWave"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon-description" : _("An add-on for enhancing access and usage of the Goldwave audio editor."),
+	"addon_description" : _("An add-on for enhancing access and usage of the Goldwave audio editor."),
 	# version
-	"addon-version" : "2.0-dev",
+	"addon_version" : "2.0-dev",
 	# Author(s)
-	"addon-author" : u"Joseph Lee <joseph.lee22590@gmail.com>, David Parduhn <xkill85@gmx.net>, Mesar Hameed <mhameed@src.gnome.org>",
+	"addon_author" : u"Joseph Lee <joseph.lee22590@gmail.com>, David Parduhn <xkill85@gmx.net>, Mesar Hameed <mhameed@src.gnome.org>",
 	# URL for the add-on documentation support
-	"addon-url" : 'http://addons.nvda-project.org',
+	"addon_url" : 'http://addons.nvda-project.org',
 	# File name for the add-on help file.
-	"addon-docFileName" : "readme.html"
+	"addon_docFileName" : "readme.html"
 }
 
 
@@ -36,7 +36,7 @@ import os.path
 pythonSources = [os.path.join("addon", "appModules", "*.py"),]
 
 # Files that contain strings for translation. Usually your python sources
-i18nSources = pythonSources + ["buildVars.py", "docHandler.py"]
+i18nSources = pythonSources + ["buildVars.py"]
 
 # Files that will be ignored when building the nvda-addon file
 # Paths are relative to the addon directory, not to the root directory of your addon sources.
