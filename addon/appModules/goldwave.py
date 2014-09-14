@@ -1,6 +1,6 @@
-# Goldwave App Module
+# GoldWave App Module
 # An add-on for NVDA
-# Copyright 2013 Joseph Lee and contributors, released under gPL.
+# Copyright 2013-2014 Joseph Lee and contributors, released under gPL.
 # Functionality is based on JFW scripts for Goldwave by Jim Grimsby, Jr.
 
 import appModuleHandler
@@ -18,7 +18,8 @@ import ui
 # A number of NVDA objects for GoldWave:
 
 class SoundWindow(IAccessible):
-	# The GoldWave's sound window. Here one can play, record and edit audio files.
+	"""The GoldWave's sound window. Here one can play, record and edit audio files.
+	"""
 
 	scriptCategory = "GoldWave"
 
@@ -128,92 +129,66 @@ class SoundWindow(IAccessible):
 		# Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 		marker = _("Start: {startMarkerPos}").format(startMarkerPos = self.getAudioSelectionParsed()[0])
 		self.message(marker)
-	# Translators: Input help mode message for a Goldwave command.
-	script_dropStartMarker.__doc__=_("Drops the start marker and announces start marker position.")
 
 	def script_dropFinishMarker(self, gesture):
 		gesture.send()
 		# Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 		marker = _("Finish: {finishMarkerPos}").format(finishMarkerPos = self.getAudioSelectionParsed()[2])
 		self.message(marker)
-	# Translators: Input help mode message for a Goldwave command.
-	script_dropFinishMarker.__doc__=_("Drops the finish marker and announces finish marker position.")
 
 	def script_playSelection(self, gesture):
 		gesture.send()
 		# Translators: Presented when selected audio is playing.
 		self.message(_("Play selection"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_playSelection.__doc__=_("Plays the trakc between start and finish markers.")
 
 	def script_selectAll(self, gesture):
 		gesture.send()
 		# Translators: Presented when all parts of the audio track is selected.
 		self.message(_("Select All"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_selectAll.__doc__=_("Selects the entire track.")
 
 	def script_dropCue(self, gesture):
 		gesture.send()
 		# Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 		self.message(_("Cue"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_dropCue.__doc__=_("Drops a cue point at the current audio position.")
 
 	def script_dropCueAtStartMarker(self, gesture):
 		gesture.send()
 		# Translators: Presented when audio cue is dropped at the start marker position.
 		self.message(_("Cue dropped at start marker"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_dropCueAtStartMarker.__doc__=_("Drops a cue point at the current start marker position.")
 
 	def script_dropCueAtFinishMarker(self, gesture):
 		gesture.send()
 		# Translators: Presented when an audio cue is dropped at the finish marker position.
 		self.message(_("Cue dropped at finish marker"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_dropCueAtFinishMarker.__doc__=_("Drops a cue point at the current finish marker position.")
 
 	def script_moveStartMarkerToNextCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Start marker at next cue"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_moveStartMarkerToNextCuePos.__doc__=_("Moves the start marker to the next cue position.")
 
 	def script_moveStartMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Start marker at previous cue"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_moveStartMarkerToPrevCuePos.__doc__=_("Moves the start marker to the previous cue position.")
 
 	def script_moveFinishMarkerToNextCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the finish marker is moved to the next cue position.
 		self.message(_("Finish marker at next cue"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_moveFinishMarkerToNextCuePos.__doc__=_("Moves the finish marker to the next cue position.")
 
 	def script_moveFinishMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Finish marker at previous cue"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_moveFinishMarkerToPrevCuePos.__doc__=_("Moves the finish marker to the previous cue position.")
 
 	def script_deleteSelection(self, gesture):
 		gesture.send()
 		# Translators: Presented when audio selection is deleted.
 		self.message(_("deleted"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_deleteSelection.__doc__=_("Deletes the currently selected audio.")
 
 	def script_trimSelection(self, gesture):
 		# Cannot just assign function objects to another, so a workaround for this problem.
 		self.script_deleteSelection(gesture)
-	# Translators: Input help mode message for a Goldwave command.
-	script_trimSelection.__doc__=_("Trims the audio outside the selected audio.")
 
 	# Playback and recording:
 
@@ -221,43 +196,31 @@ class SoundWindow(IAccessible):
 		gesture.send()
 		# Translators: Presented when a track is playing in Goldwave.
 		self.message(_("play"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_play.__doc__=_("Plays the audio track.")
 
 	def script_rewind(self, gesture):
 		gesture.send()
 		# Translators: Presented when a track is rewinding in Goldwave.
 		self.message(_("rewind"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_rewind.__doc__=_("Rewinds through an audio track.")
 
 	def script_forward(self, gesture):
 		gesture.send()
 		# Translators: Presented when fast forwarding a track in Goldwave.
 		self.message(_("fast forward"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_forward.__doc__=_("Fast forwards through an audio track.")
 
 	def script_pause(self, gesture):
 		gesture.send()
 		# Translators: Presented when pausing a track in Goldwave.
 		self.message(_("pause"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_pause.__doc__=_("Pauses the audio track.")
 
 	def script_stop(self, gesture):
 		gesture.send()
 		# Translators: Presented when stopping a track in in Goldwave.
 		self.message(_("stop"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_stop.__doc__=_("stops the audio track.")
 
 	def script_startRecord(self, gesture):
 		gesture.send()
 		# Translators: Presented when starting recording in Goldwave.
 		self.message(_("record"))
-	# Translators: Input help mode message for a Goldwave command.
-	script_startRecord.__doc__=_("Starts recording audio.")
 
 	# Audio position scripts: markers, selection duration.
 
@@ -310,7 +273,6 @@ class SoundWindow(IAccessible):
 		gesture.send()
 		if (gesture.displayName == "ctrl+shift+a" and self.appModule.productVersion.startswith("5")) or (gesture.displayName == "ctrl+shift+b" and self.appModule.productVersion.startswith("6")): return
 		else: self.script_announceAudioChannels(gesture)
-	script_selectChannel.__doc__=_("Announces the selected audio channel")
 
 	def script_announceZoomLevel(self, gesture):
 		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
@@ -322,8 +284,6 @@ class SoundWindow(IAccessible):
 	def script_changeZoomLevel(self, gesture):
 		gesture.send()
 		self.script_announceZoomLevel(gesture)
-	# Translators: Input help mode message for a Goldwave command.
-	script_changeZoomLevel.__doc__=_("Changes zoom level and announces the new level.")
 
 	__gestures={
 		"KB:[":"dropStartMarker",
