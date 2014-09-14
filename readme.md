@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Authors: Joseph Lee, NVDA contributors.
-* Stable version: [1.2][1]
-* Development version: [2.0-dev][2]
+* Download [stable version][1]
+* Download [development version][2]
 
 This app module enhances access and usage of Goldwave audio editor.
 
@@ -19,7 +19,7 @@ For more information about Goldwave and keyboard commands, refer to Goldwave Man
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or later is required to use add-on 2.0.
 
-## Changes for 2.0-dev
+## Changes for 2.0
 
 * Support for GoldWave 6, including 64-bit version of GoldWave (see note above).
 * NVDA now announces selected channel if you press channel selection commands such as Control+Shift+L for the left channel.
