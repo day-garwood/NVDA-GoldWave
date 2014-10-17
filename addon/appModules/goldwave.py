@@ -28,21 +28,8 @@ class SoundWindow(IAccessible):
 
 	def message(self, text):
 		braille.handler.message(text)
-		if self.commandAnnouncement:
+		if self.appModule.commandAnnouncement:
 			speech.speakMessage(text)
-
-	def script_toggleCommandAnnouncement(self, gesture):
-		self.commandAnnouncement = not self.commandAnnouncement
-		# Handle the announcement of this script separately, since we need to speak even when false.
-		if self.commandAnnouncement:
-			# Translators: Presented when command announcement messages are turned on in Goldwave.
-			text = _("command announcement on")
-		else:
-			# Translators: Presented when command announcement messages are turned off in Goldwave.
-			text = _("command announcement off")
-		ui.message(text)
-	# Translators: Input help mode message for command announcement command in Goldwave.
-	script_toggleCommandAnnouncement.__doc__=_("Toggles whether NVDA announces editing commands during audio recording or playback.")
 
 	# Get audio positions.
 	def getAudioPos(self):
@@ -309,7 +296,6 @@ class SoundWindow(IAccessible):
 		"kb:f8":"stop",
 		"kb:control+f8":"stop",
 		"kb:control+f9":"startRecord",
-		"kb:nvda+shift+c":"toggleCommandAnnouncement",
 		"kb:control+shift+p":"announceAudioPosition",
 		"kb:control+nvda+3":"announceAudioSelection",
 		"kb:control+nvda+2":"announceTrackLength",
@@ -333,6 +319,27 @@ class SoundWindow(IAccessible):
 
 
 class AppModule(appModuleHandler.AppModule):
+
+	# Announcement of commands is enabled by default.
+	commandAnnouncement = True
+
+	def script_toggleCommandAnnouncement(self, gesture):
+		focus = api.getFocusObject()
+		if focus.windowClassName not in ["TWaveView", "TSoundForm"]:
+			# Translators: Presented when command announcement toggle is unavailable.
+			text = _("You need to be in sound window to toggle command announcement")
+		else:
+			self.commandAnnouncement = not self.commandAnnouncement
+			# Handle the announcement of this script separately, since we need to speak even when false.
+			if self.commandAnnouncement:
+				# Translators: Presented when command announcement messages are turned on in Goldwave.
+				text = _("command announcement on")
+			else:
+				# Translators: Presented when command announcement messages are turned off in Goldwave.
+				text = _("command announcement off")
+		ui.message(text)
+	# Translators: Input help mode message for command announcement command in Goldwave.
+	script_toggleCommandAnnouncement.__doc__=_("Toggles whether NVDA announces editing commands during audio recording or playback.")
 
 	# Presets and control windows: Work with buttons with custom window class names.
 
@@ -367,3 +374,6 @@ class AppModule(appModuleHandler.AppModule):
 			except ValueError:
 				pass
 
+	__gestures={
+		"kb:nvda+shift+c":"toggleCommandAnnouncement",
+	}

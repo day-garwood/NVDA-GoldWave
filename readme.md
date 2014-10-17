@@ -25,6 +25,7 @@ Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or l
 * Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and later).
 * NVDA now announces selected channel if you press channel selection commands such as Control+Shift+L for the left channel.
 * Various issues with numeric edit fields such as censor field and time selector in mix dialog has been fixed, including selecting text, updating values and so on.
+* Command announcement setting will be remembered when switching to other programs.
 
 ## Changes for 1.2
 
