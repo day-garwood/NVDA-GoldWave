@@ -18,20 +18,6 @@ msgstr ""
 "X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "Komut bildirimi açık"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "komut bildirimi kapalı"
-
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr "Kayıt veya çalma sırasında komutların bildirimini açıp kapatır."
-
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
 msgstr "Parça konumu mevcut değil"
@@ -56,153 +42,115 @@ msgstr "sol"
 msgid "right"
 msgstr "sağ"
 
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "center"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "low frequency"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back left"
+msgstr "sol"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back right"
+msgstr "sağ"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side left"
+msgstr "sol"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side right"
+msgstr "sağ"
+
+#. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
+msgid "Multiple channels selected"
+msgstr ""
+
+#. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
+msgid "All channels selected"
+msgstr ""
+
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Başlangıç: {startMarkerPos}"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the start marker and announces start marker position."
-msgstr "Başlangıç imi koyar ve imin konumunu söyler"
-
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Bitiş: {finishMarkerPos}"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the finish marker and announces finish marker position."
-msgstr "Bitiş imi koyar ve imin konumunu söyler"
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
 msgstr "Seçimi çal"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the trakc between start and finish markers."
-msgstr "Başlangıç ve bitiş imi arasındaki kısmı çalar"
-
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
 msgstr "tümünü seç"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Selects the entire track."
-msgstr "parçanın tümünü seçer"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
 msgstr "işaret"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current audio position."
-msgstr "mevcut konuma işaret koyar"
-
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
 msgstr "başlangıç iminin konumuna işaret kondu"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current start marker position."
-msgstr "başlangıç iminin konumuna işaret koyar"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
 msgstr "bitiş iminin konumuna işaret kondu"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current finish marker position."
-msgstr "Bitiş iminin konumuna işaret koyar"
-
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
 msgstr "başlangıç imi sonraki işarete taşındı"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the next cue position."
-msgstr "Başlangıç imini sonraki işarete taşır"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
 msgstr "başlangıç imi önceki işarete taşındı"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the previous cue position."
-msgstr "Başlangıç imini önceki işarete taşır"
-
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
 msgstr "bitiş imi sonraki işarete taşındı"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the next cue position."
-msgstr "Bitiş imini sonraki işarete taşır"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
 msgstr "bitiş imi önceki işarete taşındı"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the previous cue position."
-msgstr "Bitiş imini önceki işarete taşır"
-
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
 msgstr "Silindi"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Deletes the currently selected audio."
-msgstr "Seçilmiş sesi siler."
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Trims the audio outside the selected audio."
-msgstr "Seçilen sesin dışında kalan kısmı kırpar."
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
 msgstr "çal"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the audio track."
-msgstr "parçayı çalar"
-
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
 msgstr "geri al"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Rewinds through an audio track."
-msgstr "parçayı geri alır"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
 msgstr "ileri al"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Fast forwards through an audio track."
-msgstr "parçayı ileri alır"
-
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
 msgstr "duraklat"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Pauses the audio track."
-msgstr "parçayı duraklatır"
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
 msgstr "durdur"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "stops the audio track."
-msgstr "parçayı durdurur"
-
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
 msgstr "kaydet"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Starts recording audio."
-msgstr "kaydı başlatır"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -215,6 +163,7 @@ msgid ""
 msgstr "parça seçim bilgisi alınamadı. Lütfen parçayı kapatıp yeniden açın."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "{audioSelectionStart} den {audioSelectionEnd} e kadar {audioSelectionLength}"
@@ -227,6 +176,7 @@ msgstr "Parça seçimiyle ilgili, seçimin süresi vb, özet bilgi verir"
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "parça uzunluk bilgisi alınamadı. lütfen parçayı kapatıp yeniden açın"
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Parça süresi: {trackLength}"
 
@@ -235,6 +185,7 @@ msgid "Announces total length of the audio track."
 msgstr "Parçanın toplam uzunluğunu söyler"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Seçilen kanal: {audioChannel}"
 
@@ -243,6 +194,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "Düzenlediğiniz kanalı söyler"
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Yakınlaştırma seviyesi: {zoomLevel}"
 
@@ -250,9 +202,23 @@ msgstr "Yakınlaştırma seviyesi: {zoomLevel}"
 msgid "Announces audio zoom level."
 msgstr "Yakınlaştırma düzeyini söyler"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Changes zoom level and announces the new level."
-msgstr "yakınlaştırma düzeyini değiştirir ve sÖyler"
+#. Translators: Presented when command announcement toggle is unavailable.
+msgid "You need to be in sound window to toggle command announcement"
+msgstr ""
+
+#. Translators: Presented when command announcement messages are turned on in Goldwave.
+msgid "command announcement on"
+msgstr "Komut bildirimi açık"
+
+#. Translators: Presented when command announcement messages are turned off in Goldwave.
+msgid "command announcement off"
+msgstr "komut bildirimi kapalı"
+
+#. Translators: Input help mode message for command announcement command in Goldwave.
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr "Kayıt veya çalma sırasında komutların bildirimini açıp kapatır."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -265,3 +231,63 @@ msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "GoldWave ses editörünün kullanımı ve erişilebilirliğinin artırılması için "
 "bir eklenti."
+
+#~ msgid "Drops the start marker and announces start marker position."
+#~ msgstr "Başlangıç imi koyar ve imin konumunu söyler"
+
+#~ msgid "Drops the finish marker and announces finish marker position."
+#~ msgstr "Bitiş imi koyar ve imin konumunu söyler"
+
+#~ msgid "Plays the trakc between start and finish markers."
+#~ msgstr "Başlangıç ve bitiş imi arasındaki kısmı çalar"
+
+#~ msgid "Selects the entire track."
+#~ msgstr "parçanın tümünü seçer"
+
+#~ msgid "Drops a cue point at the current audio position."
+#~ msgstr "mevcut konuma işaret koyar"
+
+#~ msgid "Drops a cue point at the current start marker position."
+#~ msgstr "başlangıç iminin konumuna işaret koyar"
+
+#~ msgid "Drops a cue point at the current finish marker position."
+#~ msgstr "Bitiş iminin konumuna işaret koyar"
+
+#~ msgid "Moves the start marker to the next cue position."
+#~ msgstr "Başlangıç imini sonraki işarete taşır"
+
+#~ msgid "Moves the start marker to the previous cue position."
+#~ msgstr "Başlangıç imini önceki işarete taşır"
+
+#~ msgid "Moves the finish marker to the next cue position."
+#~ msgstr "Bitiş imini sonraki işarete taşır"
+
+#~ msgid "Moves the finish marker to the previous cue position."
+#~ msgstr "Bitiş imini önceki işarete taşır"
+
+#~ msgid "Deletes the currently selected audio."
+#~ msgstr "Seçilmiş sesi siler."
+
+#~ msgid "Trims the audio outside the selected audio."
+#~ msgstr "Seçilen sesin dışında kalan kısmı kırpar."
+
+#~ msgid "Plays the audio track."
+#~ msgstr "parçayı çalar"
+
+#~ msgid "Rewinds through an audio track."
+#~ msgstr "parçayı geri alır"
+
+#~ msgid "Fast forwards through an audio track."
+#~ msgstr "parçayı ileri alır"
+
+#~ msgid "Pauses the audio track."
+#~ msgstr "parçayı duraklatır"
+
+#~ msgid "stops the audio track."
+#~ msgstr "parçayı durdurur"
+
+#~ msgid "Starts recording audio."
+#~ msgstr "kaydı başlatır"
+
+#~ msgid "Changes zoom level and announces the new level."
+#~ msgstr "yakınlaştırma düzeyini değiştirir ve sÖyler"

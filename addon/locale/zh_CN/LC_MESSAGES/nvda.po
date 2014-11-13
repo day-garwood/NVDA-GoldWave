@@ -5,41 +5,41 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'goldwave' '1.0Beta1'\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-02-16 20:19+0100\n"
-"Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
+"Project-Id-Version: goldwave 1.2-dev\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2014-02-08 16:54+0100\n"
+"PO-Revision-Date: 2014-03-17 16:34+0800\n"
+"Last-Translator: 雪岭冰龙 <vgjh2005@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "Pozícia v súbore nie je dostupná"
+msgstr "轨道位置不可用"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "Informácia o kanaly nie je dostupná"
+msgstr "通道信息部可用"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
-msgstr "Mono"
+msgstr "单声道"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "stereo"
-msgstr "Stereo"
+msgstr "立体声"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "left"
-msgstr "Ľavý"
+msgstr "左"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "right"
-msgstr "Pravý"
+msgstr "右"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
@@ -52,22 +52,22 @@ msgstr ""
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #, fuzzy
 msgid "back left"
-msgstr "Ľavý"
+msgstr "左"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #, fuzzy
 msgid "back right"
-msgstr "Pravý"
+msgstr "右"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #, fuzzy
 msgid "side left"
-msgstr "Ľavý"
+msgstr "左"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #, fuzzy
 msgid "side right"
-msgstr "Pravý"
+msgstr "右"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
@@ -80,126 +80,126 @@ msgstr ""
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
-msgstr "Začiatok: {startMarkerPos}"
+msgstr "开始标记：{startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
-msgstr "Koniec: {finishMarkerPos}"
+msgstr "结束标记: {finishMarkerPos}"
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
-msgstr "Prehrať výber"
+msgstr "播放选区"
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
-msgstr "Vybrať všetko"
+msgstr "选择所有"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
-msgstr "Rozdeľovač"
+msgstr "Cue"
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "Rozdelenie vložené na pozíciu začiatočnej značky."
+msgstr "Cue 点以拖拽到开始标记处"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "Rozdelenie vložené na pozíciu konečnej značky."
+msgstr "Cue 点已拖拽到结束标记处"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "Začiatočná pozícia na nasledujúce rozdelenie"
+msgstr "开始标记在下一个 Cue 点处"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "Začiatočná značka na predchádzajúce rozdelenie"
+msgstr "开始标记在上一个 Cue 点处"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "Konečná značka na nasledujúce rozdelenie."
+msgstr "结束标记在下一个 Cue 点处"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "Konečná značka na predchádzajúce rozdelenie"
+msgstr "结束标记在上一个 Cue 点处"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
-msgstr "Odstránené"
+msgstr "已删除"
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
-msgstr "Prehrať"
+msgstr "播放"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
-msgstr "Dozadu"
+msgstr "快退"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
-msgstr "Dopredu"
+msgstr "快进"
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
-msgstr "Pauza"
+msgstr "暂停"
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
-msgstr "Zastaviť"
+msgstr "停止"
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
-msgstr "Nahrávať"
+msgstr "录音"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
-msgstr "Oznámy aktuálnu pozíciu v sekundách."
+msgstr "以秒未单位朗读当前音频位置"
 
 #. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
-msgstr ""
-"Nie je možné zistiť aktuálny výber. Zatvorte a znovu otvorte audio stopu."
+msgstr "无法获取音频的选择状态，请关闭轨道后重新打开音频轨道。"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
-msgstr "{audioSelectionStart} do {audioSelectionEnd} {audioSelectionLength}"
+msgstr ""
+"从{audioSelectionStart}到{audioSelectionEnd}，长度为{audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
-msgstr "Oznámy súhrn výberu, ktorý obsahuje napríklad dĺžku vybratého úseku."
+msgstr "朗读音频的选择状态，例如选择的长度。"
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr "Nie je možné zistiť dĺžku audio stopy. Zatvorte a znovu otvorte súbor."
+msgstr "轨道长度信息不可用，请关闭后重新打开音频轨道。"
 
 #, python-brace-format
 msgid "Track length: {trackLength}"
-msgstr "Dĺžka stopy: {trackLength}"
+msgstr "轨道长度：{trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "Oznámy celkovú dĺžku audio stopy."
+msgstr "朗读音频轨道的总长度。"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
 msgid "Selected channel: {audioChannel}"
-msgstr "vybratý kanál: {audioChannel}"
+msgstr "选择的音频通道：{audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
-msgstr "Oznámy kanál, ktorý práve upravujete."
+msgstr "朗读您正在编辑的音频通道。"
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 #, python-brace-format
 msgid "Zoom level: {zoomLevel}"
-msgstr "Úroveň priblíženia: {zoomLevel}"
+msgstr "放大等级：{zoomLevel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces audio zoom level."
-msgstr "Oznámy úroveň priblíženia."
+msgstr "朗读音频的放大等级。"
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
@@ -207,85 +207,86 @@ msgstr ""
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
-msgstr "Oznamovať príkazy"
+msgstr "命令提示开"
 
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
-msgstr "Neoznamovať príkazy"
+msgstr "命令提示关"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
 msgid ""
 "Toggles whether NVDA announces editing commands during audio recording or "
 "playback."
-msgstr ""
-"Zapína alebo vypína oznamovanie príkazov počas nahrávania alebo prehrávania."
+msgstr "切换是否允许 NVDA 在录音或者音频回放时朗读编辑命令提示。"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "GoldWave"
-msgstr "GoldWave"
+msgstr ""
+"GoldWave\n"
+"翻译者：雪岭冰龙"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
-msgstr "Doplnok na zlepšenie prístupnosti zvukového editoru Goldwave."
+msgstr "一个提高音频编辑器 Goldwave 的可访问性和提供小贴士的插件。"
 
 #~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "Vloží začiatočnú značku a oznámy jej pozíciu."
+#~ msgstr "拖拽开始标记并且朗读其位置。，"
 
 #~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "Vloží konečnú značku a oznámi jej pozíciu."
+#~ msgstr "拖拽结束标记并且朗读其位置。，"
 
 #~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "Prehrá označený úsek."
+#~ msgstr "播放在开始标记和结束标记之间的轨道。"
 
 #~ msgid "Selects the entire track."
-#~ msgstr "Vyberie celú stopu."
+#~ msgstr "选择整个轨道"
 
 #~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "Vloží rozdelenie na aktuálne miesto."
+#~ msgstr "拖拽 CUE 点到当前位置"
 
 #~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "Vloží rozdelenie na pozíciu začiatočnej značky."
+#~ msgstr "拖拽 CUE 点到当前的开始标记位置"
 
 #~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "Vloží rozdelenie na pozíciu konečnej značky."
+#~ msgstr "拖拽 CUE 点到当前的结束标记位置"
 
 #~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "presunie začiatočnú značku na nasledujúci rozdeľovač."
+#~ msgstr "移动开始标记到下一个 Cue 点所在的位置"
 
 #~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "Presunie začiatočnú značku na predchádzajúci rozdeľovač."
+#~ msgstr "移动开始标记到上一个 Cue 点所在的位置"
 
 #~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "Presunie konečnú značku na nasledujúco rozdeľovať."
+#~ msgstr "移动结束标记到下一个 Cue 点所在的位置"
 
 #~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "Presunie konečnú značku na predchádzajúci rozdeľovač."
+#~ msgstr "移动结束标记到上一个 Cue 点所在的位置"
 
 #~ msgid "Deletes the currently selected audio."
-#~ msgstr "Odstráni vybratú časť."
+#~ msgstr "删除当前选中的音频。"
 
 #~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "odstráni všetko, čo nie je označné."
+#~ msgstr "修剪选区外的音频"
 
 #~ msgid "Plays the audio track."
-#~ msgstr "Prehrá audio stopu."
+#~ msgstr "播放音频轨道"
 
 #~ msgid "Rewinds through an audio track."
-#~ msgstr "Pretáča dozadu v audio stope"
+#~ msgstr "沿当前音频轨道快退。"
 
 #~ msgid "Fast forwards through an audio track."
-#~ msgstr "Pretáča dopredu v audio stope."
+#~ msgstr "沿当前音频轨道快进。"
 
 #~ msgid "Pauses the audio track."
-#~ msgstr "Pozastaví prehrávanie."
+#~ msgstr "暂停音频轨道。"
 
 #~ msgid "stops the audio track."
-#~ msgstr "Zastaví prehrávanie."
+#~ msgstr "停止音频轨道。"
 
 #~ msgid "Starts recording audio."
-#~ msgstr "Spustí nahrávanie."
+#~ msgstr "开始录制音频。"
 
 #~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "Zmení úroveň priblíženia a oznámy novú hodnotu."
+#~ msgstr "更改放大等级并朗读新的级别。"

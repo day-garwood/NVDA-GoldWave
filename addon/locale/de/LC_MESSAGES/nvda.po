@@ -11,26 +11,11 @@ msgstr ""
 "PO-Revision-Date: 2014-02-16 00:39+0100\n"
 "Last-Translator: René Linke <rene.linke@hamburg.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.4\n"
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "Befehle ansagen an"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "Befehle ansagen aus"
-
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"Legt fest, ob NVDA während der Aufnahme oder der Wiedergabe Befehle ansagen "
-"soll."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -56,153 +41,115 @@ msgstr "links"
 msgid "right"
 msgstr "rechts"
 
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "center"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "low frequency"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back left"
+msgstr "links"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back right"
+msgstr "rechts"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side left"
+msgstr "links"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side right"
+msgstr "rechts"
+
+#. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
+msgid "Multiple channels selected"
+msgstr ""
+
+#. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
+msgid "All channels selected"
+msgstr ""
+
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Start: {startMarkerPos}"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the start marker and announces start marker position."
-msgstr "Setzt eine Startmarke und gibt deren Position aus."
-
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Ende: {finishMarkerPos}"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the finish marker and announces finish marker position."
-msgstr "Setzt eine Endmarke und gibt deren Position aus."
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
 msgstr "Auswahl abspielen"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the trakc between start and finish markers."
-msgstr "Gibt die Audiospur zwischen Start- und Endmarken wieder."
-
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
 msgstr "Alles auswählen"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Selects the entire track."
-msgstr "Wählt die gesamte Audiospur aus."
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
 msgstr "Signal"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current audio position."
-msgstr "Setzt ein Signalpunkt an der aktuellen Audioposition."
-
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
 msgstr "Signal auf Startposition gesetzt."
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current start marker position."
-msgstr "Setzt ein Signalpunkt auf der Position der Startmarke."
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
 msgstr "Signal auf Endmarke gesetzt."
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current finish marker position."
-msgstr "Setzt ein Signalpunkt auf der Position der Endmarke"
-
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
 msgstr "Startet die Markierung auf die nächste Position."
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the next cue position."
-msgstr "Setzt die Startmarke und gibt deren Position aus."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
 msgstr "Startet die Markierung auf die vorherige Position."
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the previous cue position."
-msgstr "Setzt die Startmarke und gibt deren Position aus."
-
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
 msgstr "Beendet die Markierung auf die nächste Position."
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the next cue position."
-msgstr "Setzt die Endmarke und gibt deren Position aus."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
 msgstr "Beendet die Markierung auf die vorherige Position."
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the previous cue position."
-msgstr "Setzt die Endmarke und gibt deren Position aus."
-
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
 msgstr "Gelöscht"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Deletes the currently selected audio."
-msgstr "Löscht die aktuell ausgewählte Audiospur."
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Trims the audio outside the selected audio."
-msgstr "Entfernt alles außerhalb der ausgewählten Audiospur."
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
 msgstr "Wiedergeben"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the audio track."
-msgstr "Gibt die Audiospur wieder."
-
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
 msgstr "Rücklauf"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Rewinds through an audio track."
-msgstr "Spielt die Audiospur rückwärts ab."
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
 msgstr "Vorlauf"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Fast forwards through an audio track."
-msgstr "Spielt die Audiospur vorwärts ab."
-
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
 msgstr "Anhalten"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Pauses the audio track."
-msgstr "Hält die Audiospur an."
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
 msgstr "Stoppen"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "stops the audio track."
-msgstr "Stoppt die Audiospur."
-
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
 msgstr "Aufnahme"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Starts recording audio."
-msgstr "Startet die Aufnahme einer Audiospur."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -217,6 +164,7 @@ msgstr ""
 "schließen Sie diese und öffnen Sie sie erneut."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} bis {audioSelectionEnd} {audioSelectionLength}"
 
@@ -232,6 +180,7 @@ msgstr ""
 "Die Länge der Audiospur konnte nicht abgerufen werden. Bitte schließen Sie "
 "diese und öffnen Sie sie erneut."
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Track-Länge: {trackLength}"
 
@@ -240,6 +189,7 @@ msgid "Announces total length of the audio track."
 msgstr "Gibt die Gesamtlänge der Audiospur aus."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Ausgewählter Kanal: {audioChannel}"
 
@@ -248,6 +198,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "Gibt die Kanäle an, die Sie momentan bearbeiten."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Zoom-Stufe: {zoomLevel}"
 
@@ -255,9 +206,25 @@ msgstr "Zoom-Stufe: {zoomLevel}"
 msgid "Announces audio zoom level."
 msgstr "Gibt die Zoom-Stufe der Audiospur aus."
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Changes zoom level and announces the new level."
-msgstr "Ändert die Zoom-Stufe und gibt diesen anschließend aus."
+#. Translators: Presented when command announcement toggle is unavailable.
+msgid "You need to be in sound window to toggle command announcement"
+msgstr ""
+
+#. Translators: Presented when command announcement messages are turned on in Goldwave.
+msgid "command announcement on"
+msgstr "Befehle ansagen an"
+
+#. Translators: Presented when command announcement messages are turned off in Goldwave.
+msgid "command announcement off"
+msgstr "Befehle ansagen aus"
+
+#. Translators: Input help mode message for command announcement command in Goldwave.
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr ""
+"Legt fest, ob NVDA während der Aufnahme oder der Wiedergabe Befehle ansagen "
+"soll."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -268,3 +235,63 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "Eine Erweiterung zur Verbesserung der Zugänglichkeit von GoldWave."
+
+#~ msgid "Drops the start marker and announces start marker position."
+#~ msgstr "Setzt eine Startmarke und gibt deren Position aus."
+
+#~ msgid "Drops the finish marker and announces finish marker position."
+#~ msgstr "Setzt eine Endmarke und gibt deren Position aus."
+
+#~ msgid "Plays the trakc between start and finish markers."
+#~ msgstr "Gibt die Audiospur zwischen Start- und Endmarken wieder."
+
+#~ msgid "Selects the entire track."
+#~ msgstr "Wählt die gesamte Audiospur aus."
+
+#~ msgid "Drops a cue point at the current audio position."
+#~ msgstr "Setzt ein Signalpunkt an der aktuellen Audioposition."
+
+#~ msgid "Drops a cue point at the current start marker position."
+#~ msgstr "Setzt ein Signalpunkt auf der Position der Startmarke."
+
+#~ msgid "Drops a cue point at the current finish marker position."
+#~ msgstr "Setzt ein Signalpunkt auf der Position der Endmarke"
+
+#~ msgid "Moves the start marker to the next cue position."
+#~ msgstr "Setzt die Startmarke und gibt deren Position aus."
+
+#~ msgid "Moves the start marker to the previous cue position."
+#~ msgstr "Setzt die Startmarke und gibt deren Position aus."
+
+#~ msgid "Moves the finish marker to the next cue position."
+#~ msgstr "Setzt die Endmarke und gibt deren Position aus."
+
+#~ msgid "Moves the finish marker to the previous cue position."
+#~ msgstr "Setzt die Endmarke und gibt deren Position aus."
+
+#~ msgid "Deletes the currently selected audio."
+#~ msgstr "Löscht die aktuell ausgewählte Audiospur."
+
+#~ msgid "Trims the audio outside the selected audio."
+#~ msgstr "Entfernt alles außerhalb der ausgewählten Audiospur."
+
+#~ msgid "Plays the audio track."
+#~ msgstr "Gibt die Audiospur wieder."
+
+#~ msgid "Rewinds through an audio track."
+#~ msgstr "Spielt die Audiospur rückwärts ab."
+
+#~ msgid "Fast forwards through an audio track."
+#~ msgstr "Spielt die Audiospur vorwärts ab."
+
+#~ msgid "Pauses the audio track."
+#~ msgstr "Hält die Audiospur an."
+
+#~ msgid "stops the audio track."
+#~ msgstr "Stoppt die Audiospur."
+
+#~ msgid "Starts recording audio."
+#~ msgstr "Startet die Aufnahme einer Audiospur."
+
+#~ msgid "Changes zoom level and announces the new level."
+#~ msgstr "Ändert die Zoom-Stufe und gibt diesen anschließend aus."

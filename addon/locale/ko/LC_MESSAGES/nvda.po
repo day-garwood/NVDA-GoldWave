@@ -11,25 +11,11 @@ msgstr ""
 "PO-Revision-Date: 2014-03-04 20:18-0800\n"
 "Last-Translator: Joseph Lee <joseph.lee22590@gmail,com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.4\n"
-"Language: ko\n"
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "명령 메시지 출력"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "명령 메시지 중지"
-
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr "오디오 편집중 NVDA가 편집 명령 메시지를 출력할것인지를 설정합니다"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -55,153 +41,115 @@ msgstr "왼쪽 체널"
 msgid "right"
 msgstr "오른쪽 체널"
 
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "center"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "low frequency"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back left"
+msgstr "왼쪽 체널"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back right"
+msgstr "오른쪽 체널"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side left"
+msgstr "왼쪽 체널"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side right"
+msgstr "오른쪽 체널"
+
+#. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
+msgid "Multiple channels selected"
+msgstr ""
+
+#. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
+msgid "All channels selected"
+msgstr ""
+
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "시작 마크: {startMarkerPos}"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the start marker and announces start marker position."
-msgstr "시작 마크 설정 및 마크 위치를 알려줍니다."
-
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "끝 마크: {finishMarkerPos}"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the finish marker and announces finish marker position."
-msgstr "끝 마크 설정 및 마크 위치를 알려줍니다."
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
 msgstr "선택된 오디오 재생"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the trakc between start and finish markers."
-msgstr "시작 마크에서 끝 마크까지의 위치의 오디오를 재생합니다."
-
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
 msgstr "오디오 모두 선택"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Selects the entire track."
-msgstr "트랙 전체를 선택합니다."
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
 msgstr "큐"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current audio position."
-msgstr "현 오디오 위치에 큐 포인트를 지정합니다."
-
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
 msgstr "시작 마크에 큐 설정"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current start marker position."
-msgstr "큐를 시작 마크 위치에 설정합니다."
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
 msgstr "끝 마크에 큐 설정"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current finish marker position."
-msgstr "큐를 끝 마크 위치에 설정합니다."
-
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
 msgstr "시작 마크 다음 큐로 이동"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the next cue position."
-msgstr "시작 마크를 다음 큐 위치로 옮깁니다."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
 msgstr "시작 마크 이전 큐로 이동"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the previous cue position."
-msgstr "시작 마크를 이전 큐 위치로 옮깁니다."
-
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
 msgstr "끝 마크 다음 큐로 이동"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the next cue position."
-msgstr "끝 마크 설정 및 마크 위치를 알려줍니다.를 다음 큐 위치로 옮깁니다."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
 msgstr "끝 마크 이전 큐로 이동"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the previous cue position."
-msgstr "끝 마크를 이전 큐 위치로 옮깁니다."
-
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
 msgstr "삭제됨"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Deletes the currently selected audio."
-msgstr "선택된 오디오를 삭제합니다."
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Trims the audio outside the selected audio."
-msgstr "선택된 오디오 외 부분을 삭제합니다."
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
 msgstr "재생"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the audio track."
-msgstr "오디오를 재생합니다."
-
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
 msgstr "되감기"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Rewinds through an audio track."
-msgstr "오디오를 되감기합니다."
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
 msgstr "빨리감기"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Fast forwards through an audio track."
-msgstr "오디오를 빨리감습니다."
-
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
 msgstr "일시 중지"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Pauses the audio track."
-msgstr "오디오를 일시 중지합니다."
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
 msgstr "정지"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "stops the audio track."
-msgstr "오디오 재생을 정지합니다."
-
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
 msgstr "녹음"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Starts recording audio."
-msgstr "오디오를 녹음합니다."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -214,6 +162,7 @@ msgid ""
 msgstr "오디오 정보를 확인할 수 없습니다. 트랙을 닫았다 다시 불러오십시오."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} - {audioSelectionEnd} {audioSelectionLength}"
 
@@ -226,6 +175,7 @@ msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
 "트랙 재생 시간 정보를 확인할 수 없습니다. 트랙을 닫았다 다시 불러오십시오."
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "재생 시간: {trackLength}"
 
@@ -234,6 +184,7 @@ msgid "Announces total length of the audio track."
 msgstr "트랙의 재생 시간을 알려줍니다."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "선택된 체널: {audioChannel}"
 
@@ -242,6 +193,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "편집중인 오디오 체널을 알려줍니다."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "줌: {zoomLevel}"
 
@@ -249,9 +201,23 @@ msgstr "줌: {zoomLevel}"
 msgid "Announces audio zoom level."
 msgstr "오디오 줌 레벨을 알려줍니다."
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Changes zoom level and announces the new level."
-msgstr "오디오 줌 레벨을 변경하고 새 설정값을 알려줍니다."
+#. Translators: Presented when command announcement toggle is unavailable.
+msgid "You need to be in sound window to toggle command announcement"
+msgstr ""
+
+#. Translators: Presented when command announcement messages are turned on in Goldwave.
+msgid "command announcement on"
+msgstr "명령 메시지 출력"
+
+#. Translators: Presented when command announcement messages are turned off in Goldwave.
+msgid "command announcement off"
+msgstr "명령 메시지 중지"
+
+#. Translators: Input help mode message for command announcement command in Goldwave.
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr "오디오 편집중 NVDA가 편집 명령 메시지를 출력할것인지를 설정합니다"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -262,3 +228,63 @@ msgstr "골드웨이브"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "골드웨이브 접근용 추가 기능."
+
+#~ msgid "Drops the start marker and announces start marker position."
+#~ msgstr "시작 마크 설정 및 마크 위치를 알려줍니다."
+
+#~ msgid "Drops the finish marker and announces finish marker position."
+#~ msgstr "끝 마크 설정 및 마크 위치를 알려줍니다."
+
+#~ msgid "Plays the trakc between start and finish markers."
+#~ msgstr "시작 마크에서 끝 마크까지의 위치의 오디오를 재생합니다."
+
+#~ msgid "Selects the entire track."
+#~ msgstr "트랙 전체를 선택합니다."
+
+#~ msgid "Drops a cue point at the current audio position."
+#~ msgstr "현 오디오 위치에 큐 포인트를 지정합니다."
+
+#~ msgid "Drops a cue point at the current start marker position."
+#~ msgstr "큐를 시작 마크 위치에 설정합니다."
+
+#~ msgid "Drops a cue point at the current finish marker position."
+#~ msgstr "큐를 끝 마크 위치에 설정합니다."
+
+#~ msgid "Moves the start marker to the next cue position."
+#~ msgstr "시작 마크를 다음 큐 위치로 옮깁니다."
+
+#~ msgid "Moves the start marker to the previous cue position."
+#~ msgstr "시작 마크를 이전 큐 위치로 옮깁니다."
+
+#~ msgid "Moves the finish marker to the next cue position."
+#~ msgstr "끝 마크 설정 및 마크 위치를 알려줍니다.를 다음 큐 위치로 옮깁니다."
+
+#~ msgid "Moves the finish marker to the previous cue position."
+#~ msgstr "끝 마크를 이전 큐 위치로 옮깁니다."
+
+#~ msgid "Deletes the currently selected audio."
+#~ msgstr "선택된 오디오를 삭제합니다."
+
+#~ msgid "Trims the audio outside the selected audio."
+#~ msgstr "선택된 오디오 외 부분을 삭제합니다."
+
+#~ msgid "Plays the audio track."
+#~ msgstr "오디오를 재생합니다."
+
+#~ msgid "Rewinds through an audio track."
+#~ msgstr "오디오를 되감기합니다."
+
+#~ msgid "Fast forwards through an audio track."
+#~ msgstr "오디오를 빨리감습니다."
+
+#~ msgid "Pauses the audio track."
+#~ msgstr "오디오를 일시 중지합니다."
+
+#~ msgid "stops the audio track."
+#~ msgstr "오디오 재생을 정지합니다."
+
+#~ msgid "Starts recording audio."
+#~ msgstr "오디오를 녹음합니다."
+
+#~ msgid "Changes zoom level and announces the new level."
+#~ msgstr "오디오 줌 레벨을 변경하고 새 설정값을 알려줍니다."

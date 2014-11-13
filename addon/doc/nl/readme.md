@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Auteurs: Joseph Lee, NVDA contributors.
-* Stabiele versie: [1.1][1]
-* Ontwikkelversie: [1.2-dev][2]
+* Download [stable version][1]
+* Download [development version][2]
 
 Deze module verbetert de toegang tot en het gebruik van het
 geluidsbewerkingsprogramma Goldwave.
@@ -21,15 +21,40 @@ geluidsbewerkingsprogramma Goldwave.
 Voor meer informatie over Goldwave en de sneltoetsen verwijzen we naar de
 handleiding van Goldwave.
 
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
+or later is required to use add-on 2.0.
+
+## Changes for 2.0
+
+* Support for GoldWave 6, including 64-bit version of GoldWave (see note
+  above).
+* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
+  later).
+* NVDA now announces selected channel if you press channel selection
+  commands such as Control+Shift+L for the left channel.
+* Various issues with numeric edit fields such as censor field and time
+  selector in mix dialog has been fixed, including selecting text, updating
+  values and so on.
+* Command announcement setting will be remembered when switching to other
+  programs.
+
+## Veranderingen voor 1.2
+
+* Een probleem opgelost waarbij NVDA moeilijkheden had om sommige
+  invoervelden aan te kondigen.
+* Nieuwe en bijgewerkte vertalingen.
+* Merk op dat tengevolge recente veranderingen in NVDA, in sommige systemen
+  audioselectie en andere statuscommando's misschien niet werken zoals
+  verwacht.
+
 ## Veranderingen voor 1.1 ##
 
 * Ondersteuning voor berichtaankondigingen in braille.
 * Audio selection summary wordt weergegeven in andere talen dan Engels.
 * Meer aankondigingen van commando's toegevoegd inclusief cue position
   movement en delete/trim operations.
-* Een probleem opgelost in numerieke invoervelden zoals in verschillende
-  dialoogvensters met effecten waarbij geen of verkeerde veldnamen werden
-  aangekondigd.
+* Fixed an issue in numeric edit fields such as various effects dialogs
+  where nothing or wrong field name was announced.
 * Nieuwe en bijgewerkte vertalingen.
 
 ## Veranderingen voor 1.0 ##

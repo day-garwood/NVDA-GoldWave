@@ -1,8 +1,8 @@
 # GoldWave #
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
-* Vakaa versio: [1.1][1]
-* Kehitysversio: [1.2-dev][2]
+* Lataa [vakaa versio][1]
+* Lataa [kehitysversio][2]
 
 Tämä sovellusmoduuli parantaa GoldWave-äänieditorin saavutettavuutta ja
 käytettävyyttä.
@@ -20,6 +20,31 @@ käytettävyyttä.
 Katso GoldWaven käsikirjasta lisätietoja ohjelmasta sekä sen
 näppäinkomennoista.
 
+Huomaa, että GoldWave 6 tarvitsee Windows 7:n 64-bittisen version tai
+uudemman. Lisäosan 2.0-version käyttämiseen tarvitaan NVDA 2014.1 tai
+uudempi.
+
+## Muutokset versiossa 2.0
+
+* Tuki GoldWave 6:lle, 64-bittinen versio mukaan lukien (katso huomautus
+  edeltä).
+* Ohje on käytettävissä Lisäosien hallinnasta (NVDA 2014.3 ja uudemmat).
+* NVDA ilmoittaa nyt valitun kanavan painaessasi kanavanvalitsemiskomentoa,
+  kuten Control+Shift+L, joka valitsee vasemman.
+* Erilaisia numeeristen muokkauskenttien, kuten Censor-äänitehosteen ja
+  Mix-valintaikkunan ajanvalitsimen, ongelmia on korjattu, mukaan lukien
+  tekstin valitseminen, arvojen päivittäminen jne.
+* Komentojenpuhumisasetus säilyy muihin ohjelmiin siirryttäessä.
+
+## Muutokset versiossa 1.2
+
+* Korjattu ongelma, jossa NVDA:lla oli vaikeuksia joidenkin muokkauskenttien
+  lukemisessa.
+* Uusia ja päivitettyjä käännöksiä.
+* Huomaa, että äänen valintaan käytettävät sekä muut tilakomennot eivät ehkä
+  toimi odotetusti joissakin järjestelmissä NVDA:han äskettäin tehtyjen
+  muutosten vuoksi.
+
 ## Muutokset versiossa 1.1 ##
 
 * Tuki ilmoitusten näyttämiselle pistenäytöllä.
@@ -27,7 +52,7 @@ näppäinkomennoista.
   englanniksi.
 * Lisää komentojen ilmoituksia, paikkamerkin sijainnin siirtäminen sekä
   poisto/leikkaus mukaan lukien.
-* Korjattu numeeristen muokkauskenttien ongelma (esim. useissa
+* Korjattu numeeristen muokkauskenttien ongelma (esim. eri
   äänitehostevalintaikkunoissa), joka aiheutti sen, että väärä kentän nimi
   luettiin tai sitä ei luettu ollenkaan.
 * Uusia ja päivitettyjä käännöksiä.

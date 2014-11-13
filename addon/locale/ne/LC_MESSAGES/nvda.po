@@ -8,29 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2013-11-22 14:30+0545\n"
+"PO-Revision-Date: 2014-03-23 05:56+0545\n"
 "Last-Translator: Him Prasad Gautam <drishtibachak@gmail.com>\n"
 "Language-Team: Nepali <drishtibachak@gmail.com>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "घोषणा आदेस चालु।"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "घोषणा आदेस बन्द ।"
-
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"श्रव्य अभिलेखन वा पृष्ठवादन हुँदा नेत्रवानीले गर्ने सम्पादन आदेश  घोषणा साटो फेरो हुन्छ ।"
+"X-Generator: Poedit 1.6.1\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -56,153 +41,115 @@ msgstr "वायाँ"
 msgid "right"
 msgstr "दायाँ"
 
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "center"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "low frequency"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back left"
+msgstr "वायाँ"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back right"
+msgstr "दायाँ"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side left"
+msgstr "वायाँ"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side right"
+msgstr "दायाँ"
+
+#. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
+msgid "Multiple channels selected"
+msgstr ""
+
+#. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
+msgid "All channels selected"
+msgstr ""
+
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "थालनी: {startMarkerPos}"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the start marker and announces start marker position."
-msgstr "सुरु चिनो छोड्छ र सुरुवात चिनो स्थानको जानकारी दिन्छ ।"
-
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "समाप्त : {finishMarkerPos}"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the finish marker and announces finish marker position."
-msgstr "समाप्ति चिनो छोड्छ र समाप्ति चिनो स्थानको जानकारी दिन्छ ।."
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
 msgstr "चयनलाई बजाउ "
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the trakc between start and finish markers."
-msgstr "सुरु र समाप्ती चिनो बिचको धुनलाई बजाउँछ ।"
-
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
 msgstr "सम्पूर्ण चयन "
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Selects the entire track."
-msgstr "सम्पूर्ण धुनलाई चयन गर्छ ।"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
 msgstr "क्यु"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current audio position."
-msgstr "बर्तमान श्रवण स्थानमा क्यु विन्दु राख्छ ।"
-
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "Cue dropped at start marker"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current start marker position."
-msgstr "Drops a cue point at the current start marker position."
+msgstr "सुरुवात चिनोमा Cue राख्नेछ"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "Cue dropped at finish marker"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current finish marker position."
-msgstr "Drops a cue point at the current finish marker position."
+msgstr "समाप्ति चिनोमा Cue राख्नेछ"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
 msgstr "अघिल्लो क्यु मा सुरु चिनो"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the next cue position."
-msgstr "सुरु चिनोलाई अघिल्लो क्युको स्थानमा सार्ने छ ।"
-
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
 msgstr "पछिल्लो  क्यु मा सुरु चिनो"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the previous cue position."
-msgstr "सुरु चिनोलाई पछिल्लो क्युको स्थानमा सार्ने छ ।"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
 msgstr "अघिल्लो  क्यु मा समाप्ति चिनो"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the next cue position."
-msgstr "समाप्ति चिनोलाई अघिल्लो क्युको स्थानमा सार्ने छ ।"
-
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
 msgstr "पछिल्लो  क्यु मा समाप्ति चिनो"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the previous cue position."
-msgstr "समाप्ति चिनोलाई पछिल्लो क्युको स्थानमा सार्ने छ ।"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
 msgstr "मेटिएको "
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Deletes the currently selected audio."
-msgstr "हाल चयन गरिएको श्रव्यलाई मेट्ने छ ।"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Trims the audio outside the selected audio."
-msgstr "चयन न गरिएको श्रव्यलाई काँटछाँट गर्ने छ ।"
-
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
 msgstr "बजाउ"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the audio track."
-msgstr "श्रवण धुनलाई बजाउँछ ।"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
 msgstr "पश्चगमन"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Rewinds through an audio track."
-msgstr "श्रवण धुन मार्फत पश्चगमन ।"
-
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
 msgstr "तिब्र अग्रगमन"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Fast forwards through an audio track."
-msgstr "श्रवण धुन मार्फत तिब्र अग्रगमन ।"
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
 msgstr "क्षणीक विश्राम"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Pauses the audio track."
-msgstr "श्रवण धुनले क्षणिक विश्राम लिन्छ ।"
-
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
 msgstr "विश्राम"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "stops the audio track."
-msgstr "श्रवण धुनले विश्राम लिन्छ ।"
-
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
 msgstr "अभिलेखन"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Starts recording audio."
-msgstr "श्रवण अभिलेखन सुरु गर्छ ।"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -216,8 +163,9 @@ msgstr ""
 "चयनित श्रवण सारांस प्राप्त गर्न सकिएन ।. कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
-msgstr ""
+msgstr "{audioSelectionStart} देखि {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
@@ -227,14 +175,16 @@ msgstr "श्रवण चयन शारांस सम्बन्धी �
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "धुनको लम्बाई उपलब्ध छैन । कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
-msgstr ""
+msgstr "ट्याक लम्बाई : {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
 msgstr "श्रवण ट्याकको सम्पूर्ण लम्बाइ बताउँछ ।"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "चयनित मार्ग : {audioChannel}"
 
@@ -243,6 +193,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "तपाइले सम्पादन गर्दै गरेको श्रवण मार्ग बताउने छ ।."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "अभिवर्धन स्तर : {zoomLevel}"
 
@@ -250,9 +201,24 @@ msgstr "अभिवर्धन स्तर : {zoomLevel}"
 msgid "Announces audio zoom level."
 msgstr "श्रवण अभिवर्धन स्तर बताउने छ ।"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Changes zoom level and announces the new level."
-msgstr "अभिवर्धन स्तरलाई बदलेर नया स्तर बताउने छ ।"
+#. Translators: Presented when command announcement toggle is unavailable.
+msgid "You need to be in sound window to toggle command announcement"
+msgstr ""
+
+#. Translators: Presented when command announcement messages are turned on in Goldwave.
+msgid "command announcement on"
+msgstr "घोषणा आदेस चालु।"
+
+#. Translators: Presented when command announcement messages are turned off in Goldwave.
+msgid "command announcement off"
+msgstr "घोषणा आदेस बन्द ।"
+
+#. Translators: Input help mode message for command announcement command in Goldwave.
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr ""
+"श्रव्य अभिलेखन वा पृष्ठवादन हुँदा नेत्रवानीले गर्ने सम्पादन आदेश  घोषणा साटो फेरो हुन्छ ।"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -261,6 +227,65 @@ msgstr "गोल्डवेभ"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
-msgstr "गोल्डवेभ श्रवण सम्पादनमा समृद्ध पहुँच र प्रयोग पुर्‍याउने एउटा थप-साधन । "
+msgstr "गोल्टवेभ नामक ध्वनी सम्पादकको पहुँच र प्रयोगमा सरलता ल्याउने उपकर्मी ।"
+
+#~ msgid "Drops the start marker and announces start marker position."
+#~ msgstr "सुरु चिनो छोड्छ र सुरुवात चिनो स्थानको जानकारी दिन्छ ।"
+
+#~ msgid "Drops the finish marker and announces finish marker position."
+#~ msgstr "समाप्ति चिनो छोड्छ र समाप्ति चिनो स्थानको जानकारी दिन्छ ।."
+
+#~ msgid "Plays the trakc between start and finish markers."
+#~ msgstr "सुरु र समाप्ती चिनो बिचको धुनलाई बजाउँछ ।"
+
+#~ msgid "Selects the entire track."
+#~ msgstr "सम्पूर्ण धुनलाई चयन गर्छ ।"
+
+#~ msgid "Drops a cue point at the current audio position."
+#~ msgstr "बर्तमान श्रवण स्थानमा क्यु विन्दु राख्छ ।"
+
+#~ msgid "Drops a cue point at the current start marker position."
+#~ msgstr "चालु सुरुवात चिनोमा Cue विन्दु राख्ने छ"
+
+#~ msgid "Drops a cue point at the current finish marker position."
+#~ msgstr "चालु समाप्ति चिनोमा Cue विन्दु राख्ने छ"
+
+#~ msgid "Moves the start marker to the next cue position."
+#~ msgstr "सुरु चिनोलाई अघिल्लो क्युको स्थानमा सार्ने छ ।"
+
+#~ msgid "Moves the start marker to the previous cue position."
+#~ msgstr "सुरु चिनोलाई पछिल्लो क्युको स्थानमा सार्ने छ ।"
+
+#~ msgid "Moves the finish marker to the next cue position."
+#~ msgstr "समाप्ति चिनोलाई अघिल्लो क्युको स्थानमा सार्ने छ ।"
+
+#~ msgid "Moves the finish marker to the previous cue position."
+#~ msgstr "समाप्ति चिनोलाई पछिल्लो क्युको स्थानमा सार्ने छ ।"
+
+#~ msgid "Deletes the currently selected audio."
+#~ msgstr "हाल चयन गरिएको श्रव्यलाई मेट्ने छ ।"
+
+#~ msgid "Trims the audio outside the selected audio."
+#~ msgstr "चयन न गरिएको श्रव्यलाई काँटछाँट गर्ने छ ।"
+
+#~ msgid "Plays the audio track."
+#~ msgstr "श्रवण धुनलाई बजाउँछ ।"
+
+#~ msgid "Rewinds through an audio track."
+#~ msgstr "श्रवण धुन मार्फत पश्चगमन ।"
+
+#~ msgid "Fast forwards through an audio track."
+#~ msgstr "श्रवण धुन मार्फत तिब्र अग्रगमन ।"
+
+#~ msgid "Pauses the audio track."
+#~ msgstr "श्रवण धुनले क्षणिक विश्राम लिन्छ ।"
+
+#~ msgid "stops the audio track."
+#~ msgstr "श्रवण धुनले विश्राम लिन्छ ।"
+
+#~ msgid "Starts recording audio."
+#~ msgstr "श्रवण अभिलेखन सुरु गर्छ ।"
+
+#~ msgid "Changes zoom level and announces the new level."
+#~ msgstr "अभिवर्धन स्तरलाई बदलेर नया स्तर बताउने छ ।"

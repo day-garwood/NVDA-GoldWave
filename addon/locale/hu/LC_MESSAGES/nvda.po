@@ -11,27 +11,11 @@ msgstr ""
 "PO-Revision-Date: 2014-02-28 12:41+0100\n"
 "Last-Translator: Ócsvári Áron <oaron1@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.4\n"
-"Language: hu\n"
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "Billentyűparancs bejelentés bekapcsolva"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "Billentyűparancs bejelentés kikapcsolva"
-
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"Egy hangfájl felvétele közben váltogathat a szerkesztési parancsok "
-"bemondása, és a visszajátszás között."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -57,153 +41,115 @@ msgstr "bal"
 msgid "right"
 msgstr "jobb"
 
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "center"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+msgid "low frequency"
+msgstr ""
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back left"
+msgstr "bal"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "back right"
+msgstr "jobb"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side left"
+msgstr "bal"
+
+#. Translators: One of the channel values when editing audio track in Goldwave.
+#, fuzzy
+msgid "side right"
+msgstr "jobb"
+
+#. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
+msgid "Multiple channels selected"
+msgstr ""
+
+#. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
+msgid "All channels selected"
+msgstr ""
+
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Kezdés: {startMarkerPos}"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the start marker and announces start marker position."
-msgstr "Elhelyezi a kezdőpontot, és bemondja annak pozícióját."
-
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Vége: {finishMarkerPos}"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops the finish marker and announces finish marker position."
-msgstr "Elhelyezi a végpontot, és bemondja annak pozícióját."
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
 msgstr "A kijelölt lejátszása"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the trakc between start and finish markers."
-msgstr "Lejátsza a kezdő és a végpont között lévő sávot."
-
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
 msgstr "Mindet kijelöli"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Selects the entire track."
-msgstr "Kijelöli a teljes sávot."
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
 msgstr "Helyjelző"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current audio position."
-msgstr "Elhelyez egy helyjelzőt az aktuális pozícióhoz."
-
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
 msgstr "Helyjelző elhelyezve a kezdőponthoz"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current start marker position."
-msgstr "Elhelyez egy helyjelző pontot az aktuális kezdőpont pozíciójához."
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
 msgstr "Helyjelző elhelyezve a végponthoz"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Drops a cue point at the current finish marker position."
-msgstr "Elhelyez egy helyjelző pontot az aktuális végpont pozíciójához."
-
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
 msgstr "Kezdőpont a következő helyjelzőhöz"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the next cue position."
-msgstr "Áthelyezi a kezdőpontot a következő helyjelző pozíciójához."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
 msgstr "Kezdőpont az előző helyjelzőhöz"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the start marker to the previous cue position."
-msgstr "Áthelyezi a kezdőpontot az előző helyjelző pozíciójához."
-
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
 msgstr "Végpont a következő helyjelzőhöz"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the next cue position."
-msgstr "Áthelyezi a végpontot a következő helyjelző pozíciójához."
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
 msgstr "Végpont az előző helyjelzőhöz"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Moves the finish marker to the previous cue position."
-msgstr "Áthelyezi a kezdőpontot az előző helyjelző pozíciójához."
-
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
 msgstr "Törölve"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Deletes the currently selected audio."
-msgstr "Törli az aktuálisan kijelölt hangot."
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Trims the audio outside the selected audio."
-msgstr "Trimmeli a hangot a kijelölésen kívül"
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
 msgstr "Lejátszás"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Plays the audio track."
-msgstr "Az audio sáv lejátszása"
-
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
 msgstr "visszatekerés"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Rewinds through an audio track."
-msgstr "Visszateker a hangsávban."
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
 msgstr "Gyors előretekerés"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Fast forwards through an audio track."
-msgstr "Gyors előretekerés egy hangsávban."
-
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
 msgstr "Szünet"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Pauses the audio track."
-msgstr "Szünetelteti a hangsáv lejátszását."
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
 msgstr "leállít"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "stops the audio track."
-msgstr "Leállítja a hangsáv lejátszását."
-
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
 msgstr "Felvétel"
-
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Starts recording audio."
-msgstr "Elindítja a hangfelvételt."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -218,6 +164,7 @@ msgstr ""
 "újra a hangsávot."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "{audioSelectionStart} - {audioSelectionEnd} között, {audioSelectionLength}"
@@ -230,6 +177,7 @@ msgstr "Összegzi a kijelölt hang tulajdonságait, úgy mint kijelölés ideje.
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "A sáv hossza nem elérhető. Zárja be, majd nyissa meg újra a hangfájlt."
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "A sáv hossza: {trackLength}"
 
@@ -238,6 +186,7 @@ msgid "Announces total length of the audio track."
 msgstr "Bemondja a hangsáv teljes hosszát."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Kijelölt csatorna: {audioChannel}"
 
@@ -246,6 +195,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "Bemondja az éppen szerkesztés alatt lévő hangcsatornát."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Nagyítási szint: {zoomLevel}"
 
@@ -253,9 +203,25 @@ msgstr "Nagyítási szint: {zoomLevel}"
 msgid "Announces audio zoom level."
 msgstr "Bemondja a hang nagyítási szintjét."
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Changes zoom level and announces the new level."
-msgstr "Megváltoztatja a nagyítási szintet, és bejelenti az új értéket."
+#. Translators: Presented when command announcement toggle is unavailable.
+msgid "You need to be in sound window to toggle command announcement"
+msgstr ""
+
+#. Translators: Presented when command announcement messages are turned on in Goldwave.
+msgid "command announcement on"
+msgstr "Billentyűparancs bejelentés bekapcsolva"
+
+#. Translators: Presented when command announcement messages are turned off in Goldwave.
+msgid "command announcement off"
+msgstr "Billentyűparancs bejelentés kikapcsolva"
+
+#. Translators: Input help mode message for command announcement command in Goldwave.
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr ""
+"Egy hangfájl felvétele közben váltogathat a szerkesztési parancsok "
+"bemondása, és a visszajátszás között."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -267,3 +233,63 @@ msgstr "GoldWave"
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "A kiegészítő elősegíti a Goldwave hangszerkesztő akadálymentes használatát."
+
+#~ msgid "Drops the start marker and announces start marker position."
+#~ msgstr "Elhelyezi a kezdőpontot, és bemondja annak pozícióját."
+
+#~ msgid "Drops the finish marker and announces finish marker position."
+#~ msgstr "Elhelyezi a végpontot, és bemondja annak pozícióját."
+
+#~ msgid "Plays the trakc between start and finish markers."
+#~ msgstr "Lejátsza a kezdő és a végpont között lévő sávot."
+
+#~ msgid "Selects the entire track."
+#~ msgstr "Kijelöli a teljes sávot."
+
+#~ msgid "Drops a cue point at the current audio position."
+#~ msgstr "Elhelyez egy helyjelzőt az aktuális pozícióhoz."
+
+#~ msgid "Drops a cue point at the current start marker position."
+#~ msgstr "Elhelyez egy helyjelző pontot az aktuális kezdőpont pozíciójához."
+
+#~ msgid "Drops a cue point at the current finish marker position."
+#~ msgstr "Elhelyez egy helyjelző pontot az aktuális végpont pozíciójához."
+
+#~ msgid "Moves the start marker to the next cue position."
+#~ msgstr "Áthelyezi a kezdőpontot a következő helyjelző pozíciójához."
+
+#~ msgid "Moves the start marker to the previous cue position."
+#~ msgstr "Áthelyezi a kezdőpontot az előző helyjelző pozíciójához."
+
+#~ msgid "Moves the finish marker to the next cue position."
+#~ msgstr "Áthelyezi a végpontot a következő helyjelző pozíciójához."
+
+#~ msgid "Moves the finish marker to the previous cue position."
+#~ msgstr "Áthelyezi a kezdőpontot az előző helyjelző pozíciójához."
+
+#~ msgid "Deletes the currently selected audio."
+#~ msgstr "Törli az aktuálisan kijelölt hangot."
+
+#~ msgid "Trims the audio outside the selected audio."
+#~ msgstr "Trimmeli a hangot a kijelölésen kívül"
+
+#~ msgid "Plays the audio track."
+#~ msgstr "Az audio sáv lejátszása"
+
+#~ msgid "Rewinds through an audio track."
+#~ msgstr "Visszateker a hangsávban."
+
+#~ msgid "Fast forwards through an audio track."
+#~ msgstr "Gyors előretekerés egy hangsávban."
+
+#~ msgid "Pauses the audio track."
+#~ msgstr "Szünetelteti a hangsáv lejátszását."
+
+#~ msgid "stops the audio track."
+#~ msgstr "Leállítja a hangsáv lejátszását."
+
+#~ msgid "Starts recording audio."
+#~ msgstr "Elindítja a hangfelvételt."
+
+#~ msgid "Changes zoom level and announces the new level."
+#~ msgstr "Megváltoztatja a nagyítási szintet, és bejelenti az új értéket."
