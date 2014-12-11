@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autores: Joseph Lee, colaboradores do NVDA.
-* Download [stable version][1]
-* Download [development version][2]
+* Descarga [versión estable][1]
+* Descarga [versión de desenvolvemento][2]
 
 Este módulo de aplicación mellora o acceso e o uso do editor de audio
 Goldwave.
@@ -19,22 +19,23 @@ Goldwave.
 Para obter máis información acerca do Goldwave e das ordes do teclado,
 consulta o Manual do GoldWave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Nota: GoldWave 6 require da versión de 64 bits de Windows 7 ou
+posterior. Requírese do NVDA 2014.1 ou posterior para utilizar o complemento
+2.0.
 
-## Changes for 2.0
+## Cambios para 2.0
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* Soporte para GoldWave 6, incluíndo versión de 64 bits do GoldWave (mira a
+  nota arriba).
+* A axuda do complemento agora pode acesarse dende o Administrador de
+  Complementos (NVDA 2014.3 e superiores).
+* NVDA agora anuncia canle seleccionado se premes ordes de selección de
+  canle, como Control+Shift+L para a canle esquerdo.
+* Correxíronse varios problemas con campos de edición numéricos, como o
+  campo de censor e o selector de tempo no diálogo de mezcla, incluíndo a
+  selección de texto , actualización de valores e así por diante.
+* A opción da orden de anunciado lembrarase cando se cambie a outros
+  programas .
 
 ## Cambios para 1.2
 
@@ -51,8 +52,8 @@ or later is required to use add-on 2.0.
 * O resumo da selección de audio preséntase en máis linguas que no inglés.
 * Engádense máis ordes incluindo o anunciado do movemento da posición do
   sinal e operacións de borrado/recorte.
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+* Correxido un problema en campos de edición numéricos, como varios diálogos
+  de efectos nos que non se anunciaba nada ou o nome dos campos incorrectos.
 * Traduccións novas e actualizadas.
 
 ## Cambios para 1.0 ##
