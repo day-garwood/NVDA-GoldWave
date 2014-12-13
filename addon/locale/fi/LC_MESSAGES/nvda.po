@@ -5,17 +5,17 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'goldwave' '1.0Beta1'\n"
+"Project-Id-Version: GoldWave\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-03-26 12:17+0200\n"
+"PO-Revision-Date: 2014-11-14 06:55+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.6.10\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: Presented when audio track position information can not be located.
@@ -44,39 +44,35 @@ msgstr "oikea"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr ""
+msgstr "keski"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr ""
+msgstr "matala taajuus"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "back left"
-msgstr "vasen"
+msgstr "takavasen"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "back right"
-msgstr "oikea"
+msgstr "takaoikea"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "side left"
-msgstr "vasen"
+msgstr "sivuvasen"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "side right"
-msgstr "oikea"
+msgstr "sivuoikea"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr ""
+msgstr "Useita kanavia valittu"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr ""
+msgstr "Kaikki kanavat valittu"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
@@ -98,7 +94,7 @@ msgstr "Valitse kaikki"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
-msgstr "Merkki"
+msgstr "Paikkamerkki"
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
@@ -209,7 +205,7 @@ msgstr "Ilmoittaa äänen zoomauksen tason."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
+msgstr "Sinun täytyy olla ääni-ikkunassa muuttaaksesi komentojen puhumista"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
@@ -224,7 +220,7 @@ msgid ""
 "Toggles whether NVDA announces editing commands during audio recording or "
 "playback."
 msgstr ""
-"Ottaa käyttöön tai poistaa käytöstä editointikomentojen puhumisen "
+"Ottaa käyttöön tai poistaa käytöstä muokkauskomentojen puhumisen "
 "nauhoituksen tai toiston aikana."
 
 #. Add-on summary, usually the user visible name of the addon.
@@ -236,7 +232,7 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
-"Lisäosa Goldwave-äänieditorin saavutettavuuden ja käytettävyyden "
+"Lisäosa Goldwave-äänimuokkaimen saavutettavuuden ja käytettävyyden "
 "parantamiseen."
 
 #~ msgid "Drops the start marker and announces start marker position."

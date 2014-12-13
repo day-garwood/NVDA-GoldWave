@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autores: Joseph Lee, colaboradores de NVDA.
-* Download [stable version][1]
-* Download [development version][2]
+* Descargar [Versión estable][1]
+* Descargar [versión de desarrollo][2]
 
 Este módulo de aplicación mejora el acceso y el uso del editor  de audio
 Goldwave.
@@ -21,22 +21,23 @@ Goldwave.
 Para obtener más información acerca de Goldwave y de las órdenes de teclado,
 remítete al manual de Goldwave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Nota: GoldWave 6 requiere la versión de 64 bits de Windows 7 o posterior. Se
+requiere NVDA 2014.1 o posterior para utilizar el complemento 2.0.
 
-## Changes for 2.0
+## Cambios para  2.0
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* Soporte para GoldWave 6, incluyendo la versión de 64 bits de GoldWave
+  (mira la nota arriba).
+* Ahora se puede acceder a la ayuda del complemento desde el Administrador
+  de complementos (NVDA 2014.3 y posterior).
+* NVDA ahora anuncia canal seleccionado si pulsas órdenes de selección de
+  canal, tales como Control + Shift + L para el canal izquierdo .
+* Se han solucionado varios problemas con campos de edición numéricos como
+  el campo censor y el selector de tiempo en el diálogo de mezcla,
+  incluyendo la selección de texto , los valores de la actualización y así
+  sucesivamente .
+* La opción de la orden de anunciado se recordará al cambiar a otros
+  programas.
 
 ## Cambios para 1.2
 
@@ -54,8 +55,9 @@ or later is required to use add-on 2.0.
   inglés.
 * Añadido más anunciado de órdenes incluyendo posición del movimiento del
   indicador y operaciones de borrado/recorte.
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+* Solucionado un problema en los campos de edición numéricos tales como
+  diversos cuadros de diálogo de efectos , donde no se anunciaba nada o
+  nombres de campo equivocados.
 * Traducciones nuevas y actualizadas.
 
 ## Cambios para 1.0 ##
