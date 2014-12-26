@@ -4,7 +4,7 @@
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
 
-Tämä sovellusmoduuli parantaa GoldWave-äänieditorin saavutettavuutta ja
+Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.
 
 ## Pikanäppäimet ##
@@ -13,8 +13,8 @@ käytettävyyttä.
 * Control+NVDA+3: Kertoo valinnan yhteenvedon.
 * Control+NVDA+2: Ilmoittaa äänitiedoston kokonaispituuden.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
-* NVDA+Shift+C: Ottaa käyttöön tai poistaa käytöstä komentojen puhumisen
-  äänieditoinnin aikana.
+* NVDA+Shift+C: Ottaa käyttöön tai poistaa käytöstä äänenmuokkauskomentojen
+  puhumisen.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
 Katso GoldWaven käsikirjasta lisätietoja ohjelmasta sekä sen

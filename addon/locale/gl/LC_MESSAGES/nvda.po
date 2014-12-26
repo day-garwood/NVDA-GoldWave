@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-02-10 18:21+0100\n"
+"PO-Revision-Date: 2014-11-16 18:28+0100\n"
 "Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: NVDA add-ons translation team <LL@li.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.3\n"
+"X-Generator: Poedit 1.6.10\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -45,39 +45,35 @@ msgstr "dereito"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr ""
+msgstr "central"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr ""
+msgstr "Baixa frecuencia"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "back left"
-msgstr "esquerdo"
+msgstr "Esquerdo traseiro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "back right"
-msgstr "dereito"
+msgstr "dereito traseiro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "side left"
-msgstr "esquerdo"
+msgstr "Lado esquerdo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "side right"
-msgstr "dereito"
+msgstr "Lado dereito"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr ""
+msgstr "Seleccionados varios canles"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr ""
+msgstr "Seleccionados todos os canles"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
@@ -210,7 +206,7 @@ msgstr "Anuncia o nível do zoom de audio."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
+msgstr "Necesitas estar na ventá de son para conmutar a orde de anunciado"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"

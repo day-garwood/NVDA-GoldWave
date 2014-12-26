@@ -1,8 +1,8 @@
 # Goldwave #
 
 * المطورون: Joseph Lee ومساهمون آخرون في NVDA
-* Download [stable version][1]
-* Download [development version][2]
+* تحميل [الإصدار النهائي][1][1]
+* تحميل [الإصدار التجريبي][2]
 
 هذه الوحدات البرمجية تعمل على تحسين استخدام برنامج محرر الصوت GoldWave
 
@@ -17,22 +17,18 @@
 
 للمزيد من المعلومات حول برنامج GoldWave وأوامره يرجى مراجعة دليل استخدامه.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+ملحوظة: يتطلب goldwave 6 ويندوز 7 أو ما بعده من طراز 64 بايت. مطلوب تثبيت
+nvda 2014.1 لتثبيت الإصدار 2.0 من الإضافة.
 
-## Changes for 2.0
+## مستجدات الإصدار 2.0
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* دعم gold wave 6 ويشمل ذلك الإصدار 64 من goldwave (انظر الملحوظة أعلاه).
+* يمكن الوصول لملف المساعدة الخاص بالإضافة من مدير الإضافات البرمجية.
+* سيعلن NVDA الآن عن السماعة المختارة إذا قمت بالضغط على أي من اختصارات
+  اختيار السماعات كالضغط على Control+Shift+L لاختيار السماعة اليسرى.
+* معالجة العديد من الأخطاء بالحقول الرقمية كما في حقل المراقبة وحقل اختيار
+  الوقت بمحاورة المزج, ويشمل ذلك تحديد النص وتحديث القيم وهكذا.
+* تذكر إعداد الإعلان عن الأمر عند الانتقال للبرامج الأخرى.
 
 ## مستجدات الإصدار 1.2
 
@@ -48,8 +44,9 @@ or later is required to use add-on 2.0.
 * عرض الأجزاء الصوتية المحددة باللغات الأخرى غير الإنجليزية
 * الإعلان عن مزيد من الأوامر بما في ذلك: موضع حركة الإشارة وعمليات
   التزيين/والحذف
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+* معالجة مشكلة مربعات التحرير الرقمية كتلك الموجودة في العديد من محاورات
+  المؤثرات التي كان NVDA لا يعلن فيها عن شيء أو يقرأ أسماء الحقول بطريقة
+  خاطئة.
 * ترجمة الإضافة للغات جديدة وتحديث اللغات الأخرى
 
 ## تعديلات الإصدار 1.0 ##

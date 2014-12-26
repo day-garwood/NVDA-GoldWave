@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-02-09 11:10+0530\n"
+"PO-Revision-Date: 2014-11-15 19:09+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: Tamil\n"
@@ -23,7 +23,7 @@ msgstr "ஒலித்தட நிலை கிடைப்பிலில்�
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "ஒலித்தட தகவல் கிடைப்பிலில்லை"
+msgstr "வழித்தடத் தகவல் கிடைப்பிலில்லை"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
@@ -43,47 +43,41 @@ msgstr "வலது"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr ""
+msgstr "மையம்"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr ""
+msgstr "குறைந்த அலைவரிசை"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "back left"
-msgstr "இடது"
+msgstr "பின் இடது"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "back right"
-msgstr "வலது"
+msgstr "பின் வலது"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "side left"
-msgstr "இடது"
+msgstr "பக்கவாட்டு இடது"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "side right"
-msgstr "வலது"
+msgstr "பக்கவாட்டு வலது"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr ""
+msgstr "பல்வழித்தடம் தெரிவு செய்யப்பட்டுள்ளது"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr ""
+msgstr "எல்லா வழித்தடங்களும் தெரிவு செய்யப்பட்டுள்ளது"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "துவக்கம்: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "முடிவு: {finishMarkerPos}"
 
@@ -163,7 +157,6 @@ msgstr ""
 "ஒலித் தெரிவின் சிறுகுறிப்பைப் பெற இயலவில்லை. ஒலித்தடத்தை மூடிவிட்டு, மீண்டும் திறக்கவும்."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "{audioSelectionStart} முதல் {audioSelectionEnd} வரை {audioSelectionLength}"
@@ -178,7 +171,6 @@ msgstr ""
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "தடத்தின் நீளம் கிடைப்பிலில்லை. ஒலித் தடத்தை மூடி, மீண்டும் திறக்கவும். "
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "தடத்தின் நீளம்: {trackLength}"
 
@@ -187,16 +179,14 @@ msgid "Announces total length of the audio track."
 msgstr "ஒலித் தடத்தின் முழு நீளத்தையும் அறிவிக்கிறது"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
-msgstr "தெரிவு செய்யப்பட்ட ஒலி வழித்தடம்: {audioChannel}"
+msgstr "தெரிவு செய்யப்பட்ட வழித்தடம்: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
-msgstr "தாங்கள் தொகுக்கும் ஒலி வழித்தடத்தை அறிவிக்கிறது."
+msgstr "தாங்கள் தொகுக்கும் வழித்தடத்தை அறிவிக்கிறது."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "ஒலியளவின் நிலை: {zoomLevel}"
 
@@ -206,7 +196,7 @@ msgstr "ஒலியளவின் நிலையை அறிவிக்க�
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
+msgstr "கட்டளை அறிவிப்பை மாற்றியமைக்க தாங்கள் ஒலிச் சாளரத்தில் இருக்க வேண்டும்"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"

@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autori: Joseph Lee, tím NVDA.
-* Download [stable version][1]
-* Download [development version][2]
+* Stiahnuť [stabilnú verziu][1]
+* Stiahnuť [vývojovú verziu][2]
 
 Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru
 goldwave.
@@ -19,22 +19,21 @@ goldwave.
 pre viac informácii o klávesových skratkách programu Goldwave si prečítajte
 návod k programu Goldwave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Pozor! Goldwave vo verzii 6 vyžaduje 64-bitovú verziu Windows 7 alebo
+novší. Ak chcete používať doplnok pre goldwave od verzie 2.0, musíte mať
+NVDA od verzie 2014.1
 
-## Changes for 2.0
+## Zmeny vo verzii 2.0
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* Podpora pre Goldwave 6 vrátane 64-bitovej verzie (pozrite poznámku vyššie)
+* Pomocník doplnku si môžete pozrieť priamo zo správcu doplnkov (od verzie
+  2014.3)
+* NVDA odteraz oznamuje vybratý kanál, ak na výber použijete skratky,a ko
+  napr ctrl+shift+l.
+* Vyriešené problémy s editačnými poliami v dialógu mix, takže správne
+  funguje výber textu a úprava údajov.
+* Oznamovanie funkcií si NVDA zapamätá aj po prechode do okna inej
+  aplikácie.
 
 ## Zmeny pre verziu 1.2
 
@@ -50,8 +49,8 @@ or later is required to use add-on 2.0.
 * Súhrn výberu je oznamovaný aj v iných jazykoch, nie len v angličtine.
 * Pridané oznamovanie odstránenia za označeným úsekom a oznamovanie
   vkladania rozdeľovačov.
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+* opravený problém, keď boli nesprávne oznamované popisy editačných polí v
+  dialógoch s efektami.
 * Nové a aktualizované preklady.
 
 ## Zmeny pre verziu 1.0 ##
