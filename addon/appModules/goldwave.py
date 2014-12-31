@@ -8,7 +8,7 @@ import addonHandler
 import api
 import speech
 import braille
-from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING
+from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING, ROLE_STATUSBAR
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible
 import scriptHandler
@@ -33,9 +33,8 @@ class SoundWindow(IAccessible):
 
 	# Get audio positions.
 	def getAudioPos(self):
-		# Above the status bar is the audio position and selection info bar. Fetch info from there via object navigation.
-		fg = api.getForegroundObject()
-		fgChild = fg.children[-3]
+		# Above the status bar is the audio position and selection info bar. See if this control can be fetched.
+		fgChild = self.appModule._get_statusBars(0)
 		# Current cursor position.
 		if not fgChild.displayText: fgChild.redraw()
 		audioPos = fgChild.children[3].displayText.replace('\t', '')
@@ -44,8 +43,7 @@ class SoundWindow(IAccessible):
 
 	def getAudioSelection(self):
 		# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
-		fg = api.getForegroundObject()
-		fgChild = fg.children[-3]
+		fgChild = self.appModule._get_statusBars(0)
 		# Audio selection information.
 		# What if fgChild returns empty string? (core ticket 3623/2892) If so, redraw (expensive; don't use this a lot).
 		if not fgChild.displayText: fgChild.redraw()
@@ -89,22 +87,19 @@ class SoundWindow(IAccessible):
 
 	def getAudioChannels(self):
 		# Based on the constants above and the return value below, get channel information.
-		fg = api.getForegroundObject()
-		fgChild = fg.children[-3]
+		fgChild = self.appModule._get_statusBars(0)
 		if not fgChild.displayText: fgChild.redraw()
 		audioChannels = fgChild.children[0].displayText
 		return audioChannels
 
 	def getTrackLength(self):
-		fg = api.getForegroundObject()
-		fgChild = fg.children[-3]
+		fgChild = self.appModule._get_statusBars(0)
 		if not fgChild.displayText: fgChild.redraw()
 		trackLength = fgChild.children[1].displayText
 		return trackLength
 
 	def getZoomLevel(self):
-		fg = api.getForegroundObject()
-		fgChild = fg.children[-2]
+		fgChild = self.appModule._get_statusBars(1)
 		if not fgChild.displayText: fgChild.redraw()
 		zoomLevel = fgChild.children[1].displayText
 		return zoomLevel
@@ -360,19 +355,26 @@ class AppModule(appModuleHandler.AppModule):
 			if fieldNameObj.role == ROLE_PANE and fieldNameObj.name:
 				obj.name = fieldNameObj.name if not obj.name else fieldNameObj.name + " " + obj.name
 
-
-
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
-		# Custom nvda overlay objects for sound window and edit fields:
-		if obj.windowClassName in ["TWaveView", "TSoundForm"]:
+		# Custom NVDA overlay objects for sound window and edit fields:
+		if obj.windowClassName in ("TWaveView", "TSoundForm"):
 			# TWaveView = 5.x, TSoundForm = 6.x.
 			clsList.insert(0, SoundWindow)
-		elif obj.windowClassName in ["TNumEdit", "TTimeEdit"]:
+		elif obj.windowClassName in ("TNumEdit", "TTimeEdit"):
 			try:
 				clsList.remove(DisplayModelEditableText)
 				clsList.insert(0, edit.Edit)
 			except ValueError:
 				pass
+
+	# Cache the needed status bar objects.
+	statusBarCache = []
+
+	def _get_statusBars(self, statBarIndex):
+		if not len(self.statusBarCache):
+			for child in api.getForegroundObject().children:
+				if child.role == ROLE_STATUSBAR: self.statusBarCache.append(child)
+		return self.statusBarCache[statBarIndex]
 
 	__gestures={
 		"kb:nvda+shift+c":"toggleCommandAnnouncement",
