@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Készítők: Joseph Lee, NVDA közreműködők
-* Download [stable version][1]
-* Download [development version][2]
+* [Stabil verzió][1]
+* [Fejlesztői verzió][2]
 
 Ez a kiegészítő javítja a Goldvawe hangszerkesztő hozzáférhetőségét, és
 használatát.
@@ -22,7 +22,7 @@ Goldwave súgójában talál.
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
 or later is required to use add-on 2.0.
 
-## Changes for 2.0
+## A 2.0 verzió változásai
 
 * Support for GoldWave 6, including 64-bit version of GoldWave (see note
   above).
@@ -51,8 +51,8 @@ or later is required to use add-on 2.0.
 * A kijelölt hang tulajdonságai már nem csak angol nyelven elérhetők.
 * Több parancs bemondása hozzáadva, köztük a hellyelző mozgása, törlés/trim
   műveletek.
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+* Hiba javítás a numerikus szerkesztőmezőkben, olykor hibás mező megnevezés
+  került bemondásra.
 * Új, és frissített fordítások.
 
 ## Az 1.0 verzió változásai ##

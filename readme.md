@@ -33,7 +33,7 @@ Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or l
 * New and updated translations.
 * Please note that due to recent changes in NVDA, audio selection and other status commands may not work as expected in some systems.
 
-## Changes for 1.1 ##
+## Changes for 1.1
 
 * Support for message announcements in braille.
 * Audio selection summary is presented in languages other than English.
@@ -41,7 +41,7 @@ Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or l
 * Fixed an issue in numeric edit fields such as various effects dialogs where nothing or wrong field name was announced.
 * New and updated translations.
 
-## Changes for 1.0 ##
+## Changes for 1.0
 
 * Initial version.
 
