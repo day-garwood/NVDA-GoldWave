@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-12-14 15:06-0800\n"
+"PO-Revision-Date: 2014-12-15 23:30-0800\n"
 "Last-Translator: Joseph Lee <joseph.lee22590@gmail,com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -43,11 +43,11 @@ msgstr "오른쪽 체널"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr ""
+msgstr "center"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr ""
+msgstr "low frequency"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back left"
@@ -67,11 +67,11 @@ msgstr "오른쪽 체널"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr ""
+msgstr "다중 체널 선택됨"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr ""
+msgstr "모든 체널 선택됨"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 msgid "Start: {startMarkerPos}"
@@ -193,7 +193,7 @@ msgstr "오디오 줌 레벨을 알려줍니다."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
+msgstr "명령 알림 토글은 트랙을 연 후 토글 가능합니다."
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
