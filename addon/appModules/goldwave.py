@@ -14,6 +14,10 @@ from NVDAObjects.IAccessible import IAccessible
 import scriptHandler
 from NVDAObjects.window import Window, DisplayModelEditableText, edit # Various buttons and numeric edit fields.
 import ui
+import tones
+
+# Detect multiple instances of GoldWave.
+multiInstance = 0
 
 # A number of NVDA objects for GoldWave:
 
@@ -31,29 +35,59 @@ class SoundWindow(IAccessible):
 		if self.appModule.commandAnnouncement:
 			speech.speakMessage(text)
 
+	# A master function to obtain needed info from status bars.
+	def getStatusInfo(self, statBarIndex, childIndex):
+		fgChild = self.appModule._get_statusBars(statBarIndex)
+		if not fgChild.displayText:
+			ui.message("Redrawing text")
+			fgChild.redraw()
+		#fgChild = self.appModule._get_statusBars(statBarIndex, refill=True)
+		try:
+			info = fgChild.children[childIndex].displayText
+		except IndexError:
+			return ""
+		return info
+
 	# Get audio positions.
 	def getAudioPos(self):
 		# Above the status bar is the audio position and selection info bar. See if this control can be fetched.
-		fgChild = self.appModule._get_statusBars(0)
+		global multiInstance
+		# Have to definitely call the info getter twice.
+		audioPos = self.getStatusInfo(0, 3)
+		if multiInstance > 1: audioPos = self.getStatusInfo(0, 3)
+		"""fgChild = self.appModule._get_statusBars(0)
 		# Current cursor position.
-		if not fgChild.displayText: fgChild.redraw()
-		audioPos = fgChild.children[3].displayText.replace('\t', '')
+		if not fgChild.displayText:
+			fgChild.redraw()
+		audioPos = fgChild.children[3].displayText.replace('\t', '')"""
 		# Translators: Presented when audio track position information can not be located.
 		return _("Track position not available") if not audioPos or " " in audioPos else audioPos
 
 	def getAudioSelection(self):
-		# A method to get audio selection. Unlike audio position getter, this one requires display text, as info is not obj.name.
-		fgChild = self.appModule._get_statusBars(0)
-		# Audio selection information.
-		# What if fgChild returns empty string? (core ticket 3623/2892) If so, redraw (expensive; don't use this a lot).
-		if not fgChild.displayText: fgChild.redraw()
-		audioSelection = fgChild.children[2].displayText.replace('\t', '')
+		# Call the info getter twice to obtain audio selection (relies on display text0.
+		global multiInstance
+		audioSelection = self.getStatusInfo(0, 2)
+		if multiInstance > 1: audioSelection = self.getStatusInfo(0, 2)
+		"""try:
+			if not fgChild.displayText: fgChild.redraw()
+		except AttributeError:
+			fgChild = self.appModule._get_statusBars(0, refill=True)
+		tones.beep(415, 1000)
+		try:
+			audioSelection = fgChild.children[2].displayText
+		except IndexError:
+			pass
+		print len(audioSelection)"""
 		return audioSelection
 
 	def getAudioSelectionParsed(self):
 		# Get marker positions and selection duration.
 		# Store the parsed strings into a list.
-		return self.getAudioSelection().split(" ")
+		parsed = self.getAudioSelection()
+		if not len(parsed):
+			parsed = self.getAudioSelection()
+		return parsed.split()
+
 
 	# Get channel information. But first, a few constants (to help translators):
 	audioChannelValues={
@@ -87,21 +121,38 @@ class SoundWindow(IAccessible):
 
 	def getAudioChannels(self):
 		# Based on the constants above and the return value below, get channel information.
-		fgChild = self.appModule._get_statusBars(0)
-		if not fgChild.displayText: fgChild.redraw()
-		audioChannels = fgChild.children[0].displayText
+		audioChannels = self.getStatusInfo(0, 0)
+		if audioChannels not in self.audioChannelValues.keys():
+			audioChannels = self.getStatusInfo(0, 0)
+		"""try:
+			if not fgChild.displayText: fgChild.redraw()
+		except AttributeError:
+			fgChild = self.appModule._get_statusBars(0, refill=True)
+		try:
+			audioChannels = fgChild.children[0].displayText
+		except IndexError:
+			return """""
 		return audioChannels
 
 	def getTrackLength(self):
 		fgChild = self.appModule._get_statusBars(0)
-		if not fgChild.displayText: fgChild.redraw()
+		try:
+			if not fgChild.displayText: fgChild.redraw()
+		except AttributeError:
+			fgChild = self.appModule._get_statusBars(0)
 		trackLength = fgChild.children[1].displayText
 		return trackLength
 
 	def getZoomLevel(self):
-		fgChild = self.appModule._get_statusBars(1)
-		if not fgChild.displayText: fgChild.redraw()
-		zoomLevel = fgChild.children[1].displayText
+		try:
+			zoomLevel = self.getStatusInfo(1, 1)
+		except IndexError:
+			zoomLevel = self.getStatusInfo(1, 1)
+		"""try:
+			if not fgChild.displayText: fgChild.redraw()
+		except AttributeError:
+			fgChild = self.appModule._get_statusBars(1, refill=True)
+		zoomLevel = fgChild.children[1].displayText"""
 		return zoomLevel
 
 	# Audio editing scripts:
@@ -315,6 +366,11 @@ class SoundWindow(IAccessible):
 
 class AppModule(appModuleHandler.AppModule):
 
+	def __init__(self, *args, **kwargs):
+		super(AppModule, self).__init__(*args, **kwargs)
+		global multiInstance
+		multiInstance+=1
+
 	# Announcement of commands is enabled by default.
 	commandAnnouncement = True
 
@@ -370,10 +426,17 @@ class AppModule(appModuleHandler.AppModule):
 	# Cache the needed status bar objects.
 	statusBarCache = []
 
-	def _get_statusBars(self, statBarIndex):
-		if not len(self.statusBarCache):
+	def _get_statusBars(self, statBarIndex, refill=False):
+		global multiInstance
+		# In case multiple instances of GoldWave are running, flush the status bar cache.
+		if refill or multiInstance > 1:
+			for item in self.statusBarCache:
+				self.statusBarCache.remove(item)
+		if not len(self.statusBarCache) or refill:
 			for child in api.getForegroundObject().children:
-				if child.role == ROLE_STATUSBAR: self.statusBarCache.append(child)
+				if child.role == ROLE_STATUSBAR:
+					if not child.displayText: child.redraw()
+					self.statusBarCache.append(child)
 		return self.statusBarCache[statBarIndex]
 
 	__gestures={
