@@ -67,6 +67,8 @@ class SoundWindow(IAccessible):
 		# Call the info getter twice to obtain audio selection (relies on display text0.
 		global multiInstance
 		audioSelection = self.getStatusInfo(0, 2)
+		#tones.beep(415, 100)
+		#ui.message(audioSelection.split()[0])
 		if multiInstance > 1: audioSelection = self.getStatusInfo(0, 2)
 		"""try:
 			if not fgChild.displayText: fgChild.redraw()
@@ -84,8 +86,6 @@ class SoundWindow(IAccessible):
 		# Get marker positions and selection duration.
 		# Store the parsed strings into a list.
 		parsed = self.getAudioSelection()
-		if not len(parsed):
-			parsed = self.getAudioSelection()
 		return parsed.split()
 
 
@@ -424,19 +424,19 @@ class AppModule(appModuleHandler.AppModule):
 				pass
 
 	# Cache the needed status bar objects.
-	statusBarCache = []
+	statusBarCache = {}
 
 	def _get_statusBars(self, statBarIndex, refill=False):
 		global multiInstance
 		# In case multiple instances of GoldWave are running, flush the status bar cache.
-		if refill or multiInstance > 1:
-			for item in self.statusBarCache:
-				self.statusBarCache.remove(item)
-		if not len(self.statusBarCache) or refill:
+		index = 0
+		if refill or multiInstance > 1 or not len(self.statusBarCache):
 			for child in api.getForegroundObject().children:
 				if child.role == ROLE_STATUSBAR:
 					if not child.displayText: child.redraw()
-					self.statusBarCache.append(child)
+					self.statusBarCache[index] = child
+					index+=1
+		#ui.message(self.statusBarCache[0].displayText)
 		return self.statusBarCache[statBarIndex]
 
 	__gestures={
