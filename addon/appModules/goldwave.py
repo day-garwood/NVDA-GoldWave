@@ -39,7 +39,6 @@ class SoundWindow(IAccessible):
 	def getStatusInfo(self, statBarIndex, childIndex):
 		fgChild = self.appModule._get_statusBars(statBarIndex)
 		if not fgChild.displayText:
-			ui.message("Redrawing text")
 			fgChild.redraw()
 		#fgChild = self.appModule._get_statusBars(statBarIndex, refill=True)
 		try:
