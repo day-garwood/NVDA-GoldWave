@@ -48,12 +48,14 @@ class SoundWindow(IAccessible):
 		return info
 
 	# Get audio positions.
-	def getAudioPos(self):
+	def getAudioPos(self, raw=False):
 		# Above the status bar is the audio position and selection info bar. See if this control can be fetched.
 		global multiInstance
 		# Have to definitely call the info getter twice.
 		audioPos = self.getStatusInfo(0, 3)
 		if multiInstance > 1: audioPos = self.getStatusInfo(0, 3)
+		# Raw means return just the raw text, used in remaining time and other position scripts.
+		if raw: return audioPos
 		"""fgChild = self.appModule._get_statusBars(0)
 		# Current cursor position.
 		if not fgChild.displayText:
@@ -141,6 +143,42 @@ class SoundWindow(IAccessible):
 			fgChild = self.appModule._get_statusBars(0)
 		trackLength = fgChild.children[1].displayText
 		return trackLength
+
+	# Convert time to seconds: Convert hh:mm:ss to seconds.
+	# Needed in various functions.
+	def convertTime2Sec(self, *times):
+		timeList = []
+		for time in times:
+			if len(time) == 1:
+				timeList.append(float(time[0]))
+			elif len(time) == 2:
+				min = float(time[0])*60.0
+				timeList.append(min+float(time[1]))
+			else:
+				hour, min = float(time[0])*3600.0, float(time[1])*60.0
+				timeList.append(hour+min+float(time[2]))
+		return timeList
+
+	def getRemainingTime(self, audioPos):
+		trackLengthParsed = self.getTrackLength().split(":")
+		audioPosParsed = audioPos.split(":")
+		# An obvious solution is to use recursive subtraction.
+		# That is, subtract the last elements, and if audio pos is greater than track length for that particular cell, move to the left.
+		# However, a simpler solution is to convert the time value to seconds, subtract then format it back to hh:mm:ss format.
+		timesec = self.convertTime2Sec(audioPosParsed, trackLengthParsed)
+		remainingTimeSec = timesec[1]-timesec[0]
+		# Now convert the seconds back to hh:mm:ss format.
+		if remainingTimeSec < 60.0:
+			return str(remainingTimeSec)
+		elif 60.0 <= remainingTimeSec < 3600.0:
+			min, sec = divmod(remainingTimeSec, 60.0)
+			mm, ss = str(int(min)), str(sec)
+			return ":".join([mm, ss])
+		else:
+			hour, min = divmod(remainingTimeSec, 3600.0)
+			min, sec = divmod(min, 60.0)
+			hh, mm, ss = str(int(hour)), str(int(min)), str(sec)
+			return ":".join([hh, mm, ss])
 
 	def getZoomLevel(self):
 		try:
@@ -287,6 +325,16 @@ class SoundWindow(IAccessible):
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceTrackLength.__doc__=_("Announces total length of the audio track.")
 
+	def script_announceRemainingTime(self, gesture):
+		audioPos = self.getAudioPos(raw=True)
+		if not audioPos or " " in audioPos or not self.getTrackLength():
+			ui.message("Cannot tell you remaining time for the current track")
+		elif float(audioPos) == 0.0:
+			ui.message(self.getTrackLength())
+		else:
+			ui.message(self.getRemainingTime(audioPos))
+	script_announceRemainingTime.__doc__="Announces remaining time for the currently editing track"
+
 	# Audio channels and zoom level.
 
 	def script_announceAudioChannels(self, gesture):
@@ -342,6 +390,7 @@ class SoundWindow(IAccessible):
 		"kb:control+f8":"stop",
 		"kb:control+f9":"startRecord",
 		"kb:control+shift+p":"announceAudioPosition",
+		"kb:NVDA+shift+r":"announceRemainingTime",
 		"kb:control+nvda+3":"announceAudioSelection",
 		"kb:control+nvda+2":"announceTrackLength",
 		"kb:control+nvda+1":"announceAudioChannels",
