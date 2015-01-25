@@ -329,11 +329,13 @@ class SoundWindow(IAccessible):
 		audioPos = self.getAudioPos(raw=True)
 		if not audioPos or " " in audioPos or not self.getTrackLength():
 			ui.message("Cannot tell you remaining time for the current track")
-		elif float(audioPos) == 0.0:
-			ui.message(self.getTrackLength())
 		else:
-			ui.message(self.getRemainingTime(audioPos))
-	script_announceRemainingTime.__doc__="Announces remaining time for the currently editing track"
+			if ":" in audioPos:
+				ui.message(self.getRemainingTime(audioPos))
+			elif float(audioPos) == 0.0:
+				ui.message(self.getTrackLength())
+			else:
+				ui.message(self.getRemainingTime(audioPos))
 
 	# Audio channels and zoom level.
 
