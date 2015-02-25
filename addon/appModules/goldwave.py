@@ -172,12 +172,12 @@ class SoundWindow(IAccessible):
 			return str(remainingTimeSec)
 		elif 60.0 <= remainingTimeSec < 3600.0:
 			min, sec = divmod(remainingTimeSec, 60.0)
-			mm, ss = str(int(min)), str(sec)
+			mm, ss = str(int(min)).zfill(2), str(sec).zfill(2)
 			return ":".join([mm, ss])
 		else:
 			hour, min = divmod(remainingTimeSec, 3600.0)
 			min, sec = divmod(min, 60.0)
-			hh, mm, ss = str(int(hour)), str(int(min)), str(sec)
+			hh, mm, ss = str(int(hour)), str(int(min)).zfill(2), str(sec).zfill(2)
 			return ":".join([hh, mm, ss])
 
 	def getZoomLevel(self):
