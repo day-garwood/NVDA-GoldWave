@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autorzy: Joseph Lee, współpracownicy NVDA.
-* Download [stable version][1]
-* Download [development version][2]
+* Pobierz [wersja stabilna][1]
+* Pobierz [wersja rozwojowa][2]
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
@@ -18,22 +18,21 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 Więcej informacji o Goldwave i jego klawiszach skrótu, znajduje się w
 podręczniku Goldwave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. NVDA
+2014.1 lub nowsze jest wymagane do używania dodatku 2.0.
 
-## Changes for 2.0
+## Zmiany dla wersji 2.0
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* Wsparcie dla GoldWave 6, włączając w to 64-bitową wersję GoldWave (zobacz
+  powyższą uwagę).
+* Pomoc dodatku dostępna w managerze dodatków (NVDA 2014.3 and later).
+* NVDA oznajmia wybrany kanał po wciśnięciu polecenia zmiany zaznaczonego
+  kanału np. Control+Shift+L dla zaznaczenia lewego kanału.
+* Rozwiązano różne problemy z edycją pól numerycznych, np. pole cenzora i
+  wybór czasu w oknie miksowania, w tym zaznaczanie tekstu, aktualizowanie
+  wartości itd.
+* Przełącznik oznajmiania komend jest pamiętany po przejściu do innych
+  programów.
 
 ## Zmiany dla wersji 1.2
 
@@ -51,8 +50,8 @@ or later is required to use add-on 2.0.
   angielski.
 * Dodane oznajmianie większej liczby komend, uwzględniające takie polecenia
   jak przemieszczenia wskaźników, operacje usuwania i przycinania.
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+* Poprawiono problem w polach edycji liczb, np. w różnych okienkach efektów,
+  gdzie oznajmiana była nieprawidłowa nazwa, albo brak nazwy kontrolki.
 * Nowe i zaktualizowane tłumaczenia.
 
 ## Zmiany dla wersji 1.0 ##
