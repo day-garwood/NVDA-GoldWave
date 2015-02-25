@@ -421,6 +421,19 @@ class AppModule(appModuleHandler.AppModule):
 		global multiInstance
 		multiInstance+=1
 
+	# Attempt to use value change event to announce recording status.
+	valueText = ""
+
+	def event_valueChange(self, obj, nextHandler):
+		# Announce various status only from main sound view.
+		if obj.windowClassName == "TEdit":
+			if api.getFocusObject().windowClassName in ("TWaveView", "TSoundForm"):
+				value = obj.value.split()[0]
+				if value != self.valueText:
+					self.valueText = value
+					ui.message(value)
+		nextHandler()
+
 	# Announcement of commands is enabled by default.
 	commandAnnouncement = True
 
