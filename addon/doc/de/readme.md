@@ -1,8 +1,8 @@
 # Goldwave #
 
 * Autoren: Joseph Lee, NVDA-Entwicklergemeinde
-* Download [stable version][1]
-* Download [development version][2]
+* [stabile Version][1] herunterladen
+* [Testversion][2] herunterladen
 
 Dieses Anwendungsmodul verbessrt die Zugänglichkeit des Audio-Editors
 Goldwave
@@ -23,12 +23,12 @@ im Benutzerhandbuch von Goldwave
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
 or later is required to use add-on 2.0.
 
-## Changes for 2.0
+## Änderungen in 2.0
 
 * Support for GoldWave 6, including 64-bit version of GoldWave (see note
   above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
+* Die Hilfe zur Erweiterung ist nun über den Erweiterungs-Manager
+  verfügbar. (Ab NVDA 2014.3 und neuer.)
 * NVDA now announces selected channel if you press channel selection
   commands such as Control+Shift+L for the left channel.
 * Various issues with numeric edit fields such as censor field and time
@@ -37,14 +37,14 @@ or later is required to use add-on 2.0.
 * Command announcement setting will be remembered when switching to other
   programs.
 
-## Changes for 1.2
+## Änderungen in 1.2
 
 * Fixed an issue where NVDA had difficulty announcing some edit fields.
 * Neue und aktualisierte Übersetzungen.
 * Please note that due to recent changes in NVDA, audio selection and other
   status commands may not work as expected in some systems.
 
-## Changes for 1.1 ##
+## Änderungen in 1.1 ##
 
 * Nachrichten werden nun in Braille ausgegeben.
 * Audio selection summary is presented in languages other than English.
