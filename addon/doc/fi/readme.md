@@ -10,8 +10,8 @@ käytettävyyttä.
 ## Pikanäppäimet ##
 
 * Control+Shift+P: Ilmoittaa nykyisen kohdan ääniraidalla.
-* Control+NVDA+3: Kertoo valinnan yhteenvedon.
-* Control+NVDA+2: Ilmoittaa äänitiedoston kokonaispituuden.
+* Control+NVDA+3: Kertoo ääniraidan valitun kohdan yhteenvedon.
+* Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
 * NVDA+Shift+C: Ottaa käyttöön tai poistaa käytöstä äänenmuokkauskomentojen
   puhumisen.
@@ -48,8 +48,8 @@ uudempi.
 ## Muutokset versiossa 1.1 ##
 
 * Tuki ilmoitusten näyttämiselle pistenäytöllä.
-* Valitun äänen yhteenvetotiedot luetaan nyt muillakin kielillä kuin
-  englanniksi.
+* Ääniraidan valitun kohdan yhteenvetotiedot luetaan nyt muillakin kielillä
+  kuin englanniksi.
 * Lisää komentojen ilmoituksia, paikkamerkin sijainnin siirtäminen sekä
   poisto/leikkaus mukaan lukien.
 * Korjattu numeeristen muokkauskenttien ongelma (esim. eri

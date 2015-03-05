@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: GoldWave\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-11-14 06:55+0200\n"
+"PO-Revision-Date: 2015-03-05 09:26+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.6.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: Presented when audio track position information can not be located.
@@ -44,7 +44,7 @@ msgstr "oikea"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr "keski"
+msgstr "keskikohta"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
@@ -77,12 +77,12 @@ msgstr "Kaikki kanavat valittu"
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
-msgstr "Alku: {startMarkerPos}"
+msgstr "Aloitus: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
-msgstr "Loppu: {finishMarkerPos}"
+msgstr "Lopetus: {finishMarkerPos}"
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
@@ -98,27 +98,27 @@ msgstr "Paikkamerkki"
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "Paikkamerkki lisätty alkumerkin kohdalle"
+msgstr "Paikkamerkki asetettu aloitusmerkin kohdalle"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "Paikkamerkki lisätty loppumerkin kohdalle"
+msgstr "Paikkamerkki asetettu lopetusmerkin kohdalle"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "Alkumerkki seuraavan paikkamerkin kohdalla"
+msgstr "Aloitusmerkki seuraavan paikkamerkin kohdalla"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "Alkumerkki edellisen paikkamerkin kohdalla"
+msgstr "Aloitusmerkki edellisen paikkamerkin kohdalla"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "Loppumerkki seuraavan paikkamerkin kohdalla"
+msgstr "Lopetusmerkki seuraavan paikkamerkin kohdalla"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "Loppumerkki edellisen paikkamerkin kohdalla"
+msgstr "Lopetusmerkki edellisen paikkamerkin kohdalla"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
@@ -157,33 +157,34 @@ msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
 msgstr ""
-"Valinnan tietojen yhteenvetoa ei löydy. Sulje äänitiedosto ja avaa se sitten "
-"uudelleen."
+"Valitun kohdan tietojen yhteenvetoa ei löydy. Sulje äänitiedosto ja avaa se "
+"sitten uudelleen."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
-"väliltä {audioSelectionStart} ja {audioSelectionEnd}, pituus "
+"väliltä {audioSelectionStart} ja {audioSelectionEnd}, kesto "
 "{audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
-msgstr "Kertoo yhteenvedon valinnan tiedoista, kuten kestosta."
+msgstr ""
+"Kertoo yhteenvedon ääniraidan valitun kohdan tiedoista, kuten kestosta."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
-"Raidan pituutta ei ole saatavilla. Sulje äänitiedosto ja avaa se sitten "
+"Raidan kestoa ei ole saatavilla. Sulje äänitiedosto ja avaa se sitten "
 "uudelleen."
 
 #, python-brace-format
 msgid "Track length: {trackLength}"
-msgstr "Raidan pituus: {trackLength}"
+msgstr "Raidan kesto: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "Ilmoittaa ääniraidan kokonaispituuden."
+msgstr "Ilmoittaa ääniraidan kokonaiskeston."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
