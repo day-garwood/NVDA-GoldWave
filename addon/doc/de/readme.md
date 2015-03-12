@@ -20,8 +20,9 @@ Goldwave
 Weitere Informationen über Goldwave und seine Tastenkombinationen finden Sie
 im Benutzerhandbuch von Goldwave
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Bitte beachten Sie: GoldWave 6 benötigt die 64-bit-Version von Windows 7
+oder neuer. NVDA 2014.1 oder neuer ist erforderlich, um Version 2 dieser
+Erweiterung einzusetzen.
 
 ## Änderungen in 2.0
 
