@@ -1,6 +1,6 @@
 # GoldWave App Module
 # An add-on for NVDA
-# Copyright 2013-2014 Joseph Lee and contributors, released under gPL.
+# Copyright 2013-2015 Joseph Lee and contributors, released under gPL.
 # Functionality is based on JFW scripts for Goldwave by Jim Grimsby, Jr.
 
 import appModuleHandler
@@ -65,22 +65,18 @@ class SoundWindow(IAccessible):
 		return _("Track position not available") if not audioPos or " " in audioPos else audioPos
 
 	def getAudioSelection(self):
-		# Call the info getter twice to obtain audio selection (relies on display text0.
+		# Call the info getter twice to obtain audio selection (relies on display text).
 		global multiInstance
 		audioSelection = self.getStatusInfo(0, 2)
-		#tones.beep(415, 100)
-		#ui.message(audioSelection.split()[0])
 		if multiInstance > 1: audioSelection = self.getStatusInfo(0, 2)
 		"""try:
 			if not fgChild.displayText: fgChild.redraw()
 		except AttributeError:
 			fgChild = self.appModule._get_statusBars(0, refill=True)
-		tones.beep(415, 1000)
 		try:
 			audioSelection = fgChild.children[2].displayText
 		except IndexError:
 			pass
-		print len(audioSelection)"""
 		return audioSelection
 
 	def getAudioSelectionParsed(self):
@@ -328,7 +324,8 @@ class SoundWindow(IAccessible):
 	def script_announceRemainingTime(self, gesture):
 		audioPos = self.getAudioPos(raw=True)
 		if not audioPos or " " in audioPos or not self.getTrackLength():
-			ui.message("Cannot tell you remaining time for the current track")
+			# Translators: An error message presented when remaining time cannot be anounced.
+			ui.message(_("Cannot tell you remaining time for the current track"))
 		else:
 			if ":" in audioPos:
 				ui.message(self.getRemainingTime(audioPos))
@@ -426,7 +423,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def script_toggleCommandAnnouncement(self, gesture):
 		focus = api.getFocusObject()
-		if focus.windowClassName not in ["TWaveView", "TSoundForm"]:
+		if focus.windowClassName not in ("TWaveView", "TSoundForm"):
 			# Translators: Presented when command announcement toggle is unavailable.
 			text = _("You need to be in sound window to toggle command announcement")
 		else:
@@ -486,7 +483,6 @@ class AppModule(appModuleHandler.AppModule):
 					if not child.displayText: child.redraw()
 					self.statusBarCache[index] = child
 					index+=1
-		#ui.message(self.statusBarCache[0].displayText)
 		return self.statusBarCache[statBarIndex]
 
 	__gestures={
