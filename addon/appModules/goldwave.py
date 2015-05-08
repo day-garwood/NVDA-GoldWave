@@ -76,7 +76,7 @@ class SoundWindow(IAccessible):
 		try:
 			audioSelection = fgChild.children[2].displayText
 		except IndexError:
-			pass
+			pass"""
 		return audioSelection
 
 	def getAudioSelectionParsed(self):
@@ -128,7 +128,7 @@ class SoundWindow(IAccessible):
 		try:
 			audioChannels = fgChild.children[0].displayText
 		except IndexError:
-			return """""
+			return"""
 		return audioChannels
 
 	def getTrackLength(self):
