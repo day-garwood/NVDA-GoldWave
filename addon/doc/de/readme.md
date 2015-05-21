@@ -26,8 +26,8 @@ Erweiterung einzusetzen.
 
 ## Änderungen in 2.0
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
+* Unterstützung für Goldwave 6, einschließlich 64-Bit-Version von Goldwave
+  (siehe Anmerkung oben).
 * Die Hilfe zur Erweiterung ist nun über den Erweiterungs-Manager
   verfügbar. (Ab NVDA 2014.3 und neuer.)
 * NVDA now announces selected channel if you press channel selection
@@ -42,13 +42,15 @@ Erweiterung einzusetzen.
 
 * Fixed an issue where NVDA had difficulty announcing some edit fields.
 * Neue und aktualisierte Übersetzungen.
-* Please note that due to recent changes in NVDA, audio selection and other
-  status commands may not work as expected in some systems.
+* Bitte beachten Sie, dass aufgrund der jüngsten Änderungen in NVDA in
+  einigen Systemen die Audio-Auswahl und andere Statusbefehle möglicherweise
+  nicht wie erwartet funktionieren.n.
 
 ## Änderungen in 1.1 ##
 
 * Nachrichten werden nun in Braille ausgegeben.
-* Audio selection summary is presented in languages other than English.
+* Die Zusammenfassung der Audio-Auswahl wird in anderen Sprachen als
+  Englisch präsentiert.
 * More command announcements added including cue position movement and
   delete/trim operations.
 * Fixed an issue in numeric edit fields such as various effects dialogs
