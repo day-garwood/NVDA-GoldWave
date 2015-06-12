@@ -19,22 +19,24 @@ használatát.
 Bővebb információt a programról és a hozzátartozó billentyűparancsokról a
 Goldwave súgójában talál.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Megjegyzés: A GoldWave 6 futtatásához 64-bites Windows 7 vagy újabb verzió
+szükséges. A kiegészítő 2.0 verziójának használatához NVDA 2014.1 vagy újabb
+kiadás szükséges.
 
 ## A 2.0 verzió változásai
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* A GoldWave 6 támogatása, beleértve a 64-bites változatot is. (Lásd a fenti
+  megjegyzést!).).
+* A kiegészítő súgója már elérhető az NVDA Bővítménykezelő
+  párbeszédpanelén. NVDA 2014.3 és újabb verziói esetén.
+* Az NVDA már bejelenti a kiválasztott csatornát csatornák kijelölésére
+  szolgáló parancsok használatakor (Control+Shift+L a bal oldali csatorna
+  kijelöléséhez).
+* Különböző számokkal dolgozó szerkesztőmezőkkel (szűrőmező, vagy
+  időválasztó a mix párbeszédpanelen) kapcsolatos hiba javítva, beleértve
+  szöveg kijelölése, érték módosítása, stb.
+* A parancsok bejelentésére vonatkozó beállítás más programokra váltás
+  esetén is megmarad.
 
 ## Az 1.2 verzió változásai
 
