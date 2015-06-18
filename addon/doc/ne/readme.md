@@ -10,6 +10,7 @@
 ## द्रुतमार्ग ##
 
 * Control+Shift+P: हालको ट्याकको स्थान बताउने छ ।
+* NVDA+Shift+R: Announces remaining time for the currently editing track.
 * Control+नेत्रवाणी+3: ध्वनि चयनको शारांश बताउने छ ।
 * Control+नेत्रवाणी+2: ध्वनी फाइलको कूल लम्वाई बताउने छ ।
 * Control+नेत्रवाणी+1: तपाइले सम्पादन गर्दै गरेको च्यानेल बताउने छ ।
@@ -22,7 +23,14 @@
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
 or later is required to use add-on 2.0.
 
-## Changes for 2.0
+## ३.० मा गरिएका परिवर्तनहरू
+
+* Added a command to announce remaining time for the current track
+  (NvDA+Shift+R).
+* Slight improvements when announcing status information such as channel
+  information.
+
+## २.० संस्करणमा गरिएका परिवर्तनहरू
 
 * Support for GoldWave 6, including 64-bit version of GoldWave (see note
   above).
@@ -44,7 +52,7 @@ or later is required to use add-on 2.0.
 * कृपया ख्याल राखौं कि हालै नेत्रवाणीमा गरिएको परिवर्तनका कारण केही
   पर्णालीमा श्रव्य चयन र अरू आदेशहरूले सोचे जस्तो काम नगर्न सक्छन् ।
 
-## १.1 मा गरिएका परिवर्तनहरू ##
+## १.1 मा गरिएका परिवर्तनहरू
 
 * ब्रेलमा सन्देसको घोषणालाई समर्थन गर्छ ।
 * श्रव्य चयन सारांस अङ्ग्रेजी भन्दा अरू भाषामा पनि प्रस्तुत हुन्छ ।
@@ -53,7 +61,7 @@ or later is required to use add-on 2.0.
   where nothing or wrong field name was announced.
 * नया र अद्यावधिक अनुवादहरू
 
-## १.० मा गरिएका परिवर्तनहरू ##
+## १.० मा गरिएका परिवर्तनहरू
 
 * शुरूको संस्करण
 

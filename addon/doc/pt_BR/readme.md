@@ -9,6 +9,7 @@ Este módulo melhora o acesso e o uso do editor de áudio Goldwave.
 ## Atalhos: ##
 
 * Control+Shift+P: Anuncia a posição na faixa atual.
+* NVDA+Shift+R: Anuncia o tempo restante da faixa atualmente em edição.
 * Control+NVDA+3: Anuncia um resumo com informações da seleção de áudio.
 * Control+NVDA+2: Anuncia o comprimento total do arquivo de áudio.
 * Control+NVDA+1: Anuncia o canal que se está editando.
@@ -20,6 +21,13 @@ manual do Goldwave.
 
 Nota: O GoldWave 6 exige a versão 64-bit do Windows 7 ou posterior. Exige-se
 o NVDA 2014.1 ou posterior para usar o complemento 2.0.
+
+## Mudanças na 3.0
+
+* Adicionado comando para anunciar o tempo restante da faixa atual
+  (NVDA+Shift+R).
+* Ligeira melhoria ao anunciar informações de status, tais como informações
+  de canal.
 
 ## Mudanças na 2.0
 
@@ -44,7 +52,7 @@ o NVDA 2014.1 ou posterior para usar o complemento 2.0.
   áudioi e outros comandos de status podem não funcionar como esperado em
   alguns sistemas.
 
-## Mudanças na 1.1 ##
+## Mudanças na 1.1
 
 * Suporte a anúncios de mensagens em braile.
 * O resumo da seleção de áudio é apresentado noutros idiomas além de Inglês.
@@ -55,7 +63,7 @@ o NVDA 2014.1 ou posterior para usar o complemento 2.0.
   campo errado.
 * Novas e atualizadas traduções.
 
-## Mudanças na 1.0 ##
+## Mudanças na 1.0
 
 * Versão inicial.
 

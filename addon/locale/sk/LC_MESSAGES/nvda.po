@@ -11,6 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2014-12-10 13:41+0100\n"
 "Last-Translator: Ondrej Rosík <ondrej.rosik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -73,10 +74,12 @@ msgid "All channels selected"
 msgstr "všetky kanály vybraté"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Začiatok: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Koniec: {finishMarkerPos}"
 
@@ -156,6 +159,7 @@ msgstr ""
 "Nie je možné zistiť aktuálny výber. Zatvorte a znovu otvorte audio stopu."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} do {audioSelectionEnd} {audioSelectionLength}"
 
@@ -167,6 +171,7 @@ msgstr "Oznámy súhrn výberu, ktorý obsahuje napríklad dĺžku vybratého ú
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "Nie je možné zistiť dĺžku audio stopy. Zatvorte a znovu otvorte súbor."
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Dĺžka stopy: {trackLength}"
 
@@ -174,7 +179,12 @@ msgstr "Dĺžka stopy: {trackLength}"
 msgid "Announces total length of the audio track."
 msgstr "Oznámy celkovú dĺžku audio stopy."
 
+#. Translators: An error message presented when remaining time cannot be anounced.
+msgid "Cannot tell you remaining time for the current track"
+msgstr ""
+
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "vybratý kanál: {audioChannel}"
 
@@ -183,6 +193,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "Oznámy kanál, ktorý práve upravujete."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Úroveň priblíženia: {zoomLevel}"
 

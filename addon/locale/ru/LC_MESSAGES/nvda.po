@@ -74,10 +74,12 @@ msgid "All channels selected"
 msgstr "Выделены все каналы"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Начало: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Конец: {finishMarkerPos}"
 
@@ -158,6 +160,7 @@ msgstr ""
 "закройте и переоткройте звуковую дорожку."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "от {audioSelectionStart} до {audioSelectionEnd} {audioSelectionLength}"
 
@@ -173,6 +176,7 @@ msgstr ""
 "Длительность дорожки недоступна. Пожалуйста, закройте и переоткройте "
 "звуковую дорожку."
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Длина дорожки: {trackLength}"
 
@@ -180,7 +184,12 @@ msgstr "Длина дорожки: {trackLength}"
 msgid "Announces total length of the audio track."
 msgstr "Объявляет общую длину звуковой дорожки."
 
+#. Translators: An error message presented when remaining time cannot be anounced.
+msgid "Cannot tell you remaining time for the current track"
+msgstr ""
+
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Выбраный канал: {audioChannel}"
 
@@ -189,6 +198,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "Объявляет канал, который вы редактируете."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Уровень: {zoomLevel}"
 

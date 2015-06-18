@@ -10,6 +10,7 @@ geliştirir.
 ## Kısayollar ##
 
 * Control+Shift+P: Geçerli parçadaki pozisyonu söyler.
+* NVDA+Shift+R: Announces remaining time for the currently editing track.
 * Control+NvDA+3: ses seçimiyle ilgili özet bilgi verir.
 * Control+NVDA+2: Ses dosyasının toplam uzunluğunu söyler.
 * Control+NVDA+1: Düzenlediğiniz kanalı söyler.
@@ -22,6 +23,13 @@ kılavuzuna bakın.
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
 or later is required to use add-on 2.0.
+
+## Changes for 3.0
+
+* Added a command to announce remaining time for the current track
+  (NvDA+Shift+R).
+* Slight improvements when announcing status information such as channel
+  information.
 
 ## Changes for 2.0
 
@@ -44,7 +52,7 @@ or later is required to use add-on 2.0.
 * Please note that due to recent changes in NVDA, audio selection and other
   status commands may not work as expected in some systems.
 
-## 1.1 için değişiklikler ##
+## 1.1 için değişiklikler
 
 * Mesaj bildirimi için braille desteği.
 * Ses seçimi özeti İngilizce dışındaki dillerde de sunuluyor.
@@ -54,7 +62,7 @@ or later is required to use add-on 2.0.
   where nothing or wrong field name was announced.
 * Yeni ve güncel çeviriler.
 
-## 1.0 için değişiklikler ##
+## 1.0 için değişiklikler
 
 * İlk sürüm.
 

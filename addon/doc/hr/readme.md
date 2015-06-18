@@ -9,6 +9,7 @@ Ova skripta unapređuje pristup i korištenje Goldwave uređivača zvuka.
 ## prečaci ##
 
 * Control+Shift+P: izvještava trenutnu poziciju u zapisu.
+* NVDA+Shift+R: Announces remaining time for the currently editing track.
 * Control+NvDA+3: izgovara sadržaj audio označavanja.
 * Control+NVDA+2: Izgovara cjelokupnu dužinu zvučne datoteke.
 * Control+NVDA+1: Izgovara kanal kojeg uređujete.
@@ -21,6 +22,13 @@ goldwave uputstvo.
 
 Upozorenje: goldwave 6 zahtjeva 64 bitnu inačicu windowsa 7 ili
 novijeg. NVDA 2014.1 or later is required to use add-on 2.0.
+
+## Changes for 3.0
+
+* Added a command to announce remaining time for the current track
+  (NvDA+Shift+R).
+* Slight improvements when announcing status information such as channel
+  information.
 
 ## Izmjene u inačici 2.0
 
@@ -45,7 +53,7 @@ novijeg. NVDA 2014.1 or later is required to use add-on 2.0.
   zvuka i ostali prečaci neće možda raditi onako kako se to očekuje na nekim
   sustavima.
 
-## Promjene u inačici 1.1 ##
+## Promjene u inačici 1.1
 
 * Podrška prikaz poruka na brajičnom pismu.
 * Sadržaj označenog zvuka je prezentiran i na drugim jezicima osim
@@ -57,7 +65,7 @@ novijeg. NVDA 2014.1 or later is required to use add-on 2.0.
   nema.
 * novi i osvježeni prijevodi.
 
-## promjene u inačici 1.0 ##
+## promjene u inačici 1.0
 
 * Prva inačica.
 

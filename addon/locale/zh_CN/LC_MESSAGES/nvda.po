@@ -183,6 +183,10 @@ msgstr "轨道长度：{trackLength}"
 msgid "Announces total length of the audio track."
 msgstr "朗读音频轨道的总长度。"
 
+#. Translators: An error message presented when remaining time cannot be anounced.
+msgid "Cannot tell you remaining time for the current track"
+msgstr ""
+
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
 msgid "Selected channel: {audioChannel}"

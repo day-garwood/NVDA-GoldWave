@@ -10,6 +10,8 @@ audio Goldwave.
 ## Raccourcis ##
 
 * Contrôle+Maj+P : Annonce la position actuelle de la piste.
+* NVDA+Maj+R: Annonce le temps restant de la piste que vous êtes
+  actuellement en train de modifier.
 * Contrôle+NVDA+3 : annonce un résumé des informations de sélection audio.
 * Contrôle+NVDA+2 : Annonce la longueur totale du fichier audio.
 * Contrôle+NVDA+1 : Annonce le canal que vous êtes en train de modifier.
@@ -23,6 +25,13 @@ reportez-vous au manuel de Goldwave.
 Note : GoldWave 6 requiert la version 64 bits de Windows 7 ou version
 ultérieure. NVDA 2014.1 ou version ultérieure est requis pour utiliser le
 module complémentaire 2.0.
+
+## Changements pour la version 3.0
+
+* Ajout d'une commande pour annoncer le temps restant pour la piste actuelle
+  (NVDA+Maj+R).
+* Légère amélioration en annonçant des informations du statut  telles que
+  les informations du canal.
 
 ## Changements pour la version 2.0
 
@@ -49,7 +58,7 @@ module complémentaire 2.0.
   audio et le statut d'autres commandes peuvent ne pas fonctionner comme
   prévu sur certains systèmes.
 
-## Changements pour la version 1.1 ##
+## Changements pour la version 1.1
 
 * prise en charge des annonces de message en braille.
 * le résumé de la Sélection audio est présentée dans des langues autres que
@@ -61,7 +70,7 @@ module complémentaire 2.0.
   zone était annoncé.
 * Traductions nouvelles et mises à jour.
 
-## Changements pour la version 1.0 ##
+## Changements pour la version 1.0
 
 * Première version.
 

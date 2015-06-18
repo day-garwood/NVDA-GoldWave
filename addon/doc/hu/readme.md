@@ -10,6 +10,7 @@ használatát.
 ## Gyorsbillentyűk ##
 
 * Control+Shift+P: Az aktuális sávpozíció bemondása.
+* NVDA+Shift+R: Announces remaining time for the currently editing track.
 * Control+NvDA+3: A kijelölt hang tulajdonságainak bemondása.
 * Control+NVDA+2: A hangfájl teljes hosszának bemondása.
 * Control+NVDA+1: A szerkesztés alatt álló csatorna bemondása.
@@ -22,6 +23,13 @@ Goldwave súgójában talál.
 Megjegyzés: A GoldWave 6 futtatásához 64-bites Windows 7 vagy újabb verzió
 szükséges. A kiegészítő 2.0 verziójának használatához NVDA 2014.1 vagy újabb
 kiadás szükséges.
+
+## Changes for 3.0
+
+* Added a command to announce remaining time for the current track
+  (NvDA+Shift+R).
+* Slight improvements when announcing status information such as channel
+  information.
 
 ## A 2.0 verzió változásai
 
@@ -47,7 +55,7 @@ kiadás szükséges.
   kijelölés és egyéb státusz billentyűparancsok nem minden rendszeren
   működnek megfelelően.
 
-## Az 1.1 verzió változásai ##
+## Az 1.1 verzió változásai
 
 * Támogatott az üzenetek Braille megjelenítése
 * A kijelölt hang tulajdonságai már nem csak angol nyelven elérhetők.
@@ -57,7 +65,7 @@ kiadás szükséges.
   került bemondásra.
 * Új, és frissített fordítások.
 
-## Az 1.0 verzió változásai ##
+## Az 1.0 verzió változásai
 
 * Kezdeti verzió.
 
