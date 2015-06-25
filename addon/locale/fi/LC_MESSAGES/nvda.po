@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: GoldWave\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-04-18 14:14+0200\n"
+"PO-Revision-Date: 2015-06-19 07:10+0200\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.6.11\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: Presented when audio track position information can not be located.
@@ -188,7 +188,7 @@ msgstr "Ilmoittaa ääniraidan kokonaiskeston."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "Nykyisen raidan jäljellä olevaa aikaa ei voi ilmoittaa"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format

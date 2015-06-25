@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 2.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-05 07:00+1000\n"
-"PO-Revision-Date: 2015-01-10 14:44+0100\n"
+"PO-Revision-Date: 2015-06-20 16:31+0100\n"
 "Last-Translator: zvonimir stanecic <zvonimirek222@yandex.com>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
@@ -182,7 +182,7 @@ msgstr "Izvještava o ukupnoj dužini pjesme."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "Nemogu vam reći preostalo vrijeme za trenutan zapis"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-11-15 19:09+0530\n"
+"PO-Revision-Date: 2015-06-19 19:49+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: Tamil\n"
@@ -74,12 +74,10 @@ msgid "All channels selected"
 msgstr "எல்லா வழித்தடங்களும் தெரிவு செய்யப்பட்டுள்ளது"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "துவக்கம்: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "முடிவு: {finishMarkerPos}"
 
@@ -159,7 +157,6 @@ msgstr ""
 "ஒலித் தெரிவின் சிறுகுறிப்பைப் பெற இயலவில்லை. ஒலித்தடத்தை மூடிவிட்டு, மீண்டும் திறக்கவும்."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "{audioSelectionStart} முதல் {audioSelectionEnd} வரை {audioSelectionLength}"
@@ -174,7 +171,6 @@ msgstr ""
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "தடத்தின் நீளம் கிடைப்பிலில்லை. ஒலித் தடத்தை மூடி, மீண்டும் திறக்கவும். "
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "தடத்தின் நீளம்: {trackLength}"
 
@@ -184,10 +180,9 @@ msgstr "ஒலித் தடத்தின் முழு நீளத்த
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "தற்போதைய ஒலித்தடத்திற்கான எஞ்சியுள்ள நேரத்தை அறிவிக்க இயலாது"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "தெரிவு செய்யப்பட்ட வழித்தடம்: {audioChannel}"
 
@@ -196,7 +191,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "தாங்கள் தொகுக்கும் வழித்தடத்தை அறிவிக்கிறது."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "ஒலியளவின் நிலை: {zoomLevel}"
 

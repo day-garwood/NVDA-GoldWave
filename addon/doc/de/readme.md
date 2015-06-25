@@ -10,7 +10,8 @@ Goldwave
 ## Tastenkürzel ##
 
 * strg+Umschalt+P: gibt die aktuelle Audio-Position an.
-* NVDA+Shift+R: Announces remaining time for the currently editing track.
+* NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
+  aus.
 * strg+NvDA+3: gibt eine Zusammenfassung zur Audio-Auswahl an
 * strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an
 * strg+NVDA+1: Gibt die Audiokanäle an, die Sie momentan bearbeiten
@@ -25,12 +26,12 @@ Bitte beachten Sie: GoldWave 6 benötigt die 64-bit-Version von Windows 7
 oder neuer. NVDA 2014.1 oder neuer ist erforderlich, um Version 2 dieser
 Erweiterung einzusetzen.
 
-## Changes for 3.0
+## Änderungen bis 3.0
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
-* Slight improvements when announcing status information such as channel
-  information.
+* Befehl zur Ausgabe der Restzeit des aktuellen Titels hinzugefügt ( NVDA +
+  Umschalt + R).
+* Leichte Verbesserungen bei der Ansage von Statusinformationen wie
+  Senderinformationen.
 
 ## Änderungen in 2.0
 

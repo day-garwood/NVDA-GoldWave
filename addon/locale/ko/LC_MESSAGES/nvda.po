@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-12-15 23:30-0800\n"
+"PO-Revision-Date: 2015-06-25 10:13-0800\n"
 "Last-Translator: Joseph Lee <joseph.lee22590@gmail,com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -74,12 +74,10 @@ msgid "All channels selected"
 msgstr "모든 체널 선택됨"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "시작 마크: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "끝 마크: {finishMarkerPos}"
 
@@ -158,7 +156,6 @@ msgid ""
 msgstr "오디오 정보를 확인할 수 없습니다. 트랙을 닫았다 다시 불러오십시오."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} - {audioSelectionEnd} {audioSelectionLength}"
 
@@ -171,7 +168,6 @@ msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
 "트랙 재생 시간 정보를 확인할 수 없습니다. 트랙을 닫았다 다시 불러오십시오."
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "재생 시간: {trackLength}"
 
@@ -181,10 +177,9 @@ msgstr "트랙의 재생 시간을 알려줍니다."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "트랙 남은 시간 정보 없음"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "선택된 체널: {audioChannel}"
 
@@ -193,7 +188,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "편집중인 오디오 체널을 알려줍니다."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "줌: {zoomLevel}"
 
