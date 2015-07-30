@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-01-08 11:23+0100\n"
+"PO-Revision-Date: 2015-07-27 11:20+0100\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: It <simone.dalmaso@gmail.con>\n"
 "Language: it\n"
@@ -185,7 +185,7 @@ msgstr "Legge la lunghezza totale della traccia audio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "Impossibile stabilire il tempo restante per la traccia corrente"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
