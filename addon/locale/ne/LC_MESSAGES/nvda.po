@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-03-23 05:56+0545\n"
-"Last-Translator: Him Prasad Gautam <drishtibachak@gmail.com>\n"
+"PO-Revision-Date: 2015-07-04 07:42+0545\n"
+"Last-Translator: drishtibachak@gmail.com\n"
 "Language-Team: Nepali <drishtibachak@gmail.com>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.1\n"
+"X-Generator: Poedit 1.7.6\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -43,39 +43,35 @@ msgstr "दायाँ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr ""
+msgstr "केन्द्र"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr ""
+msgstr "न्युन आवृति"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "back left"
-msgstr "वायाँ"
+msgstr "वायाँ पृष्ठ "
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "back right"
-msgstr "दायाँ"
+msgstr "दायाँ पृष्ठ "
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "side left"
-msgstr "वायाँ"
+msgstr "वायाँ किनारा "
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
-#, fuzzy
 msgid "side right"
-msgstr "दायाँ"
+msgstr "दायाँ किनारा "
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr ""
+msgstr "बहु च्यानललाइ चयन गरियो"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr ""
+msgstr "सबै च्यानेलहरु चयनित"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
@@ -156,11 +152,8 @@ msgid "Announces the current audio position in seconds."
 msgstr "चालू श्रवण स्थानलाई सेकेण्डमा बताउछ ।"
 
 #. Translators: Presented when there is no audio selection summary available.
-msgid ""
-"Unable to obtain audio selection summary. Please close and reopen the audio "
-"track."
-msgstr ""
-"चयनित श्रवण सारांस प्राप्त गर्न सकिएन ।. कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
+msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
+msgstr "चयनित श्रवण सारांस प्राप्त गर्न सकिएन ।. कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
@@ -185,7 +178,7 @@ msgstr "श्रवण ट्याकको सम्पूर्ण लम्
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "चालू धुनको बाकि समय बताउन सकिदेन ।"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
@@ -207,7 +200,7 @@ msgstr "श्रवण अभिवर्धन स्तर बताउने
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
+msgstr "आदेशको साटोफेरो बताउनका लागि तपाइ आवाज सन्झ्यालमा हुनु पर्छ ।"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
@@ -218,11 +211,8 @@ msgid "command announcement off"
 msgstr "घोषणा आदेस बन्द ।"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"श्रव्य अभिलेखन वा पृष्ठवादन हुँदा नेत्रवानीले गर्ने सम्पादन आदेश  घोषणा साटो फेरो हुन्छ ।"
+msgid "Toggles whether NVDA announces editing commands during audio recording or playback."
+msgstr "श्रव्य अभिलेखन वा पृष्ठवादन हुँदा नेत्रवानीले गर्ने सम्पादन आदेश  घोषणा साटो फेरो हुन्छ ।"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
