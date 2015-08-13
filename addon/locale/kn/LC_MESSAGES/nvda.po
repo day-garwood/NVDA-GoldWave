@@ -5,304 +5,224 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 'goldwave 1.1-dev'\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
-"POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-08-11 09:46+0100\n"
-"Last-Translator: Bachir BENANOU <ben_bach@yahoo.fr>\n"
-"Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
-"Language: fr\n"
+"Project-Id-Version: goldwave 3.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2015-06-19 07:00+1000\n"
+"PO-Revision-Date: 2015-08-10 14:33+0530\n"
+"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.6\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"Last-Translator: siddalingeshwar ingalagi <ingalagisiddu@gmail.com>\n"
+"Language-Team: kannada <ingalagisiddu@gmail.com>\n"
+"X-Generator: Poedit 1.7.1\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "Position de la piste non disponible"
+msgstr "ಹಾಡಿನ ಪಟ್ಟಿ ಸ್ಥಿತಿ ದೊರಕಿಲ್ಲ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "Information du canal indisponible"
+msgstr "ವಾಹಿನಿಯ ಮಾಹಿತಿ ದೊರಕಿಲ್ಲ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
-msgstr "mono"
+msgstr "ಮೊನೊ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "stereo"
-msgstr "stéréo"
+msgstr "ಸ್ಟೀರಿಯೋ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "left"
-msgstr "gauche"
+msgstr "ಎಡಗಡೆ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "right"
-msgstr "droit"
+msgstr "ಬಲಗಡೆ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr "centre"
+msgstr "ನಡು"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr "basse fréquence"
+msgstr "ಕಡಿಮೆ ಕಂಪನ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back left"
-msgstr "arrière gauche"
+msgstr "ಹಿಂದೆಯ ಎಡಕ್ಕೆ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back right"
-msgstr "arrière droit"
+msgstr "ಹಿಂದೆಯ ಬಲಕ್ಕೆ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side left"
-msgstr "côté gauche"
+msgstr "ಬದಿಯ ಎಡಕ್ಕೆ"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side right"
-msgstr "côté droit"
+msgstr "ಬದಿಯ ಬಲಕ್ಕೆ"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr "Plusieurs canaux sélectionnés"
+msgstr "ಹಲವು ವಾಹಿನಿಗಳು ಆಯ್ಕೆಗೊಂಡವು"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr "Tous les canaux sélectionnés"
+msgstr "ಎಲ್ಲಾ ವಾಹಿನಿಗಳು ಆಯ್ಕೆಗೊಂಡವು"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
-msgstr "Début : {startMarkerPos}"
+msgstr "ಆರಂಭ: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
-msgstr "Fin : {finishMarkerPos}"
+msgstr "ಮುಗಿದ: {finishMarkerPos}"
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
-msgstr "Jouer la sélection"
+msgstr "ಆಡುವಿಕೆಯ ಆಯ್ಕೆ"
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
-msgstr "Sélectionner Tout"
+msgstr "ಎಲ್ಲವನ್ನು ಆರಿಸು"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
-msgstr "Point de repère"
+msgstr "ಸರದಿಯಂತೆ"
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "Point de repère posé au marqueur de début"
+msgstr "ಆರಂಭಿಕ ಗುರುತಲ್ಲಿ ಸರದಿಯನ್ನು ಬಿಡಲಾಗಿದೆ"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "Point de repère posé au marqueur de fin"
+msgstr "ಮುಕ್ತಾಯದ ಗುರುತಲ್ಲಿ ಸರದಿಯನ್ನು ಬಿಡಲಾಗಿದೆ"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "Marqueur de début au point de repère suivant"
+msgstr "ಮುಂದಿನ ಸರದಿಯಲ್ಲಿ ಆರಂಭಿಕ ಗುರುತು"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "Marqueur de début au point de repère précédent"
+msgstr "ಹಿಂದಿನ ಸರದಿಯಲ್ಲಿ ಆರಂಭಿಕ ಗುರುತು"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "Marqueur de fin au point de repère suivant"
+msgstr "ಮುಂದಿನ ಸರದಿಯಲ್ಲಿ ಮುಕ್ತಾಯದ ಗುರುತು"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "Marqueur de fin au point de repère précédent"
+msgstr "ಹಿಂದಿನ ಸರದಿಯಲ್ಲಿ ಮುಕ್ತಾಯದ ಗುರುತು"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
-msgstr "supprimé"
+msgstr "ಅಳಿಸಲಾಗಿದೆ"
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
-msgstr "lire"
+msgstr "ಆಡಿಸು"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
-msgstr "reculer"
+msgstr "ಹಿಂದುವರಿಸು"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
-msgstr "avancer"
+msgstr "ಬೇಗನೆ ಮುಂದುವರಿಸು"
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
-msgstr "pause"
+msgstr "ನಿಲುಗಡೆಗೊಳಿಸು"
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
-msgstr "arrêter"
+msgstr "ನಿಲ್ಲಿಸು"
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
-msgstr "enregistrer"
+msgstr "ದಾಖಲಿಸು"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
-msgstr "Annonce la position audio actuelle en secondes."
+msgstr "ಪ್ರಸ್ತುತದ ಧ್ವನಿ ಸ್ಥಿತಿಯನ್ನು ಸೆಕೆಂಡ್ಸ್ನಲ್ಲಿ ಹೇಳುತ್ತದೆ."
 
 #. Translators: Presented when there is no audio selection summary available.
-msgid ""
-"Unable to obtain audio selection summary. Please close and reopen the audio "
-"track."
+msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
 msgstr ""
-"Impossible d'obtenir le résumé de la sélection audio. Veuillez fermer et "
-"rouvrir la piste audio."
+"ಧ್ವನಿಯ ಆಯ್ಕೆಯ ಸಾರಾಂಶವನ್ನು ಪಡೆದುಕೊಳ್ಳಲು ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಹಾಡನ್ನು ಮುಚ್ಚಿರಿ ಮತ್ತು ಮತ್ತೊಮ್ಮೆ ತೆರೆಯಿರಿ,"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
-msgstr "{audioSelectionStart} à {audioSelectionEnd} {audioSelectionLength}"
+msgstr "{audioSelectionStart} ಇಂದ {audioSelectionEnd} ವರೆಗೆ {audioSelectionLength} ಇದೆ"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
-msgstr ""
-"Annonce un résumé des infos de sélection audio telles que la durée de la "
-"sélection."
+msgstr "ಧ್ವನಿ ಆಯ್ಕೆಮಾಡಿದ ಬಳಿಕ ಅವಧಿ, ಆಯ್ಕೆಯಂತಹ ಮಾಹಿತಿಯ ಸಾರಾಂಶವನ್ನು ಹೇಳುತ್ತದೆ"
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr ""
-"La longueur de la piste n'est pas disponible. Veuillez fermer et rouvrir la "
-"piste audio."
+msgstr "ಹಾಡಿನ ವಿಸ್ತಾರ ದೊರಕಿಲ್ಲ . ದಯವಿಟ್ಟು ಕಡತವನ್ನು ಮುಚ್ಚಿರಿ ಮತ್ತು ಮತ್ತೊಮ್ಮೆ ತೆರೆಯಿರಿ."
 
 #, python-brace-format
 msgid "Track length: {trackLength}"
-msgstr "Longueur de la piste : {trackLength}"
+msgstr "ಹಾಡಿನ ಉದ್ದ: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "Annonce la longueur totale de la piste audio."
+msgstr "ಹಾಡಿನ ಒಟ್ಟಾರೆ ಉದ್ದವನ್ನು ಹೇಳುತ್ತದೆ"
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr "Impossible de vous annoncer le temps restant pour la piste actuelle"
+msgstr "ಪ್ರಸ್ತುತದ ಹಾಡಿನ ಬಾಕಿ ಕಾಲಾವಧಿಯನ್ನು ನಿಮಗೆ ಹೇಳಲು ಆಗುವುದಿಲ್ಲ"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
 msgid "Selected channel: {audioChannel}"
-msgstr "Canal sélectionné : {audioChannel}"
+msgstr "ಆಯ್ಕೆಗೊಂಡ ವಾಹಿನಿ : {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
-msgstr "Annonce le canal audio en cours d'édition."
+msgstr "ನೀವು ಸಂಪಾದಿಸುತ್ತಿರುವ ಧ್ವನಿ ವಾಹಿನಿಯನ್ನು ಹೇಳುತ್ತದೆ."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 #, python-brace-format
 msgid "Zoom level: {zoomLevel}"
-msgstr "Niveau de zoom : {zoomLevel}"
+msgstr "ಹಿಗ್ಗಿಸುವಿಕೆಯ ಮಟ್ಟ: : {zoomLevel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces audio zoom level."
-msgstr "Annonce le niveau de zoom audio."
+msgstr "ಧ್ವನಿಯ ಹಿಗ್ಗಿಸಿದ ಮಟ್ಟವನ್ನು ಹೇಳುತ್ತದೆ"
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
-"Vous devez être dans la fenêtre son pour basculer l'annonce de la commande"
+msgstr "ಆಜ್ಞೆಗಳನ್ನು ಹೇಳುವುದನ್ನು ಬದಲಿಸಲು ಶಬ್ದ ಕಿಟಕಿಯಲ್ಲಿ ಇರುವುದು ಅವಶ್ಯಕ"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
-msgstr "annonce de commande activée"
+msgstr "ಆಜ್ಞೆಗಳನ್ನು ಹೇಳು"
 
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
-msgstr "annonce de commande désactivée"
+msgstr "ಆಜ್ಞೆಗಳನ್ನು ಹೇಳಬೇಡ"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"Active ou désactive l'annonce des commandes d'édition durant la lecture ou "
-"l'enregistrement audio."
+msgid "Toggles whether NVDA announces editing commands during audio recording or playback."
+msgstr "ಧ್ವನಿಯನ್ನು ದಾಖಲಿಸುವಾಗ  ಅಥವಾ ಹಾಡುವಾಗ ಸಂಪಾದನೆಯ ಆದೇಶಗಳನ್ನು nvda ಹೇಳುತ್ತದೆ"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "GoldWave"
-msgstr "GoldWave"
+msgstr "ಗೋಲ್ಡ್ ವೇವ್"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
-"Un module complémentaire pour améliorer l'accès et l'utilisation de "
-"l'éditeur audio Goldwave."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "Pose le marqueur de début et annonce sa position."
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "Pose le marqueur de fin et annonce sa position."
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr ""
-#~ "Lecture de la piste entre le marqueur de début et le marqueur de fin."
-
-#~ msgid "Selects the entire track."
-#~ msgstr "Sélectionnez toute la piste"
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "Pose un point de repère à la position audio actuelle."
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr ""
-#~ "Pose un point de repère à la position actuelle du marqueur de début."
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "Pose un point de repère à la position actuelle du marqueur de fin."
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr ""
-#~ "Déplace le marqueur de début à la position du point de repère suivant."
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr ""
-#~ "Déplace le marqueur de début à la position du point de repère précédent."
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr ""
-#~ "Déplace le marqueur de fin à la position du point de repère suivant."
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr ""
-#~ "Déplace le marqueur de fin à la position du point de repère précédent."
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "Supprime l'audio actuellement sélectionné."
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "Coupe l'audio en dehors de l'audio sélectionné."
-
-#~ msgid "Plays the audio track."
-#~ msgstr "Lecture de la piste audio."
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "Reculer dans une piste audio."
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "Avance rapide dans une piste audio."
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "Pause dans la piste audio."
-
-#~ msgid "stops the audio track."
-#~ msgstr "arrêter la piste audio."
-
-#~ msgid "Starts recording audio."
-#~ msgstr "Démarrer l'enregistrement audio."
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "Change le niveau de zoom et annonce le nouveau niveau."
+"ಇದು ಒಂದು ಹೆಚ್ಚುವರಿ ತಂತ್ರಾಂಶವಾಗಿದ್ದು ಧ್ವನಿ ಕಡತಗಳನ್ನು ಸಂಪಾದಿಸುವ / ತಿದ್ದುಪಡಿಗೊಳಿಸುವ ಸವಲತ್ತುಗಳನ್ನು "
+"ಹೊಂದಿದೆ."
