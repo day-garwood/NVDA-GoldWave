@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: goldwave 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-11-14 07:00+1000\n"
-"PO-Revision-Date: 2014-11-16 19:43+0100\n"
-"Last-Translator: nikola jovic <wwenikola123@gmail.com>\n"
+"PO-Revision-Date: 2015-10-08 13:56+0200\n"
+"Last-Translator: Janko Valenćik <jankoval@gmail.com>\n"
 "Language-Team: serbian <wwenikola123@gmail.com>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "pozicija zapisa nije dostupna"
+msgstr "Pozicija zapisa nije dostupna"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "informacije o kanalu nisu dostupne"
+msgstr "Informacije o kanalu nisu dostupne"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
@@ -51,180 +51,189 @@ msgstr "niska frekvencija"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back left"
-msgstr "zadњи леви"
+msgstr "zadnji levi"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back right"
-msgstr "задњи десни"
+msgstr "zadnji desni"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side left"
-msgstr "страно леви"
+msgstr "bočni levi"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side right"
-msgstr "страно десни"
+msgstr "bočni desni"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr "више канала изабрано"
+msgstr "Više kanala izabrano"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr "сви канали изабрани"
+msgstr "Svi kanali izabrani"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
-msgstr "почетак: {startMarkerPos}"
+msgstr "Početak: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
-msgstr "крај: {finishMarkerPos}"
+msgstr "Kraj: {finishMarkerPos}"
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
-msgstr "пусти одабир"
+msgstr "Pusti odabir"
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
-msgstr "изабери све"
+msgstr "Izaberi sve"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
-msgstr "цуе"
+msgstr "Oznaka za reprodukciju"
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "цуе ван почетног маркера"
+msgstr "Oznaka za reprodukciju spuštena na početni marker"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "цуе ван завршног маркера"
+msgstr "Oznaka za reprodukciju spuštena na završni marker"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "почетни маркер на следећем цуе"
+msgstr "Početni marker na sledeću oznaku za reprodukciju"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "претходни цуе на почетном екрану"
+msgstr "Početni marker na prethodnu oznaku za reprodukciju"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "крајњи маркер на следећем цуе"
+msgstr "Krajnji marker na sledeću oznaku za reprodukciju"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "крајњи маркер на претходном цуе"
+msgstr "Krajnji marker na prethodnu oznaku za reprodukciju"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
-msgstr "избриши"
+msgstr "obrisano"
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
-msgstr "пусти"
+msgstr "pusti"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
-msgstr "премотај"
+msgstr "premotaj unazad"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
-msgstr "премотај унапред"
+msgstr "premotaj unapred"
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
-msgstr "пауза"
+msgstr "pauza"
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
-msgstr "стоп"
+msgstr "stop"
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
-msgstr "снимај"
+msgstr "snimaj"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
-msgstr "изговара тренутну аудио позицију у секундама"
+msgstr "Izgovara trenutnu audio poziciju u sekundama."
 
 #. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
-msgstr "немогуће пронаћи предлоге за снимак поново пустите снимак"
+msgstr ""
+"Nemoguće pronaći pregled za audio selekciju. Molimo zatvorite i ponovo "
+"otvorite audio zapis."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
-msgstr "{audioSelectionStart} до {audioSelectionEnd} {audioSelectionLength}"
+msgstr "{audioSelectionStart} do {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
-msgstr "изговара предлоге за аудио снимак као што су трајање итд..."
+msgstr ""
+"Izgovara pregled za informacije o audio selekciji poput dužine trajanja "
+"selekcije."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr "трајање снимка недоступно поново отворите снимак"
+msgstr ""
+"Trajanje zapisa je nedostupno. Molimo zatvorite i ponovo otvorite audio "
+"zapis."
 
 #, python-brace-format
 msgid "Track length: {trackLength}"
-msgstr "трајање снимка је : {trackLength}"
+msgstr "Trajanje snimka: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "изговара трајање снимка"
+msgstr "Izgovara ukupno trajanje audio zapisa."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "Ne mogu da dam preostalo vreme za trenutni zapis"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
 msgid "Selected channel: {audioChannel}"
-msgstr "изабран канал : {audioChannel}"
+msgstr "Izabran kanal: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
-msgstr "изговара аудио канал који уређујете"
+msgstr "Izgovara audio kanal koji obrađujete."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 #, python-brace-format
 msgid "Zoom level: {zoomLevel}"
-msgstr "ниво зума : {zoomLevel}"
+msgstr "Nivo zuma: {zoomLevel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces audio zoom level."
-msgstr "изговара ниво аудио зумирања"
+msgstr "Izgovara nivo audio zumiranja."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr "морате да будете у звучном нивоу да би сте променили стање команде"
+msgstr "Morate biti u prozoru zvuka da biste mogli da menjate izgovor komandi"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
-msgstr "изговарање команди укључено"
+msgstr "uključeno izgovaranje komandi"
 
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
-msgstr "изговарање команди искључено"
+msgstr "isključeno izgovaranje komandi"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
 msgid ""
 "Toggles whether NVDA announces editing commands during audio recording or "
 "playback."
 msgstr ""
-"контролише да ли нвда изговара или не команде за уређивање у току снимка"
+"Uključuje i isključuje izgovor komandi u NVDA tokom snimanja ili "
+"reprodukcije audio zapisa."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
 msgid "GoldWave"
-msgstr "голдваве"
+msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
-msgstr "додатак који побољшава приступачност голдваве програма"
+msgstr ""
+"Dodatak koji poboljšava pristupačnost i upotrebljivost Goldwave programa za "
+"obradu zvuka."
