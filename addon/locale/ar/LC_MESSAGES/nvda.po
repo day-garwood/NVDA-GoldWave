@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2014-12-18 23:09+0200\n"
+"PO-Revision-Date: 2015-12-04 16:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -74,12 +74,10 @@ msgid "All channels selected"
 msgstr "تم تحديد كل السماعات"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "بداية التظليل: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "نهاية التظليل: {finishMarkerPos}"
 
@@ -160,7 +158,6 @@ msgstr ""
 "فتحه."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "من {audioSelectionStart} إلى {audioSelectionEnd} {audioSelectionLength}"
@@ -173,7 +170,6 @@ msgstr "يعلن عن ملخص للجزء المظلل من الملف الصو�
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "طول المسار غير معروف. يرجى إغلاق المسار وإعادة فتحه."
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "طول المسار: {trackLength}"
 
@@ -183,10 +179,9 @@ msgstr "يعلن عن الطول الأجمالي للمسار الصوتي"
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "لا يمكن إخبارك بالوقت المتبقي للتراك الحالي"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "القناة المحددة: {audioChannel}"
 
@@ -195,7 +190,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "يعلن عن القناة الصوتية التي تقوم بتحريرها."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "مستوى الزوم: {zoomLevel}"
 
