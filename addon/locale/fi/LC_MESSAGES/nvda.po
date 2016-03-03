@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: GoldWave\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-06-19 07:10+0200\n"
+"PO-Revision-Date: 2016-02-26 02:07-0800\n"
 "Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 1.5.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Translators: Presented when audio track position information can not be located.
@@ -75,12 +75,10 @@ msgid "All channels selected"
 msgstr "Kaikki kanavat valittuna"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Aloitus: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Lopetus: {finishMarkerPos}"
 
@@ -161,7 +159,6 @@ msgstr ""
 "sitten uudelleen."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "väliltä {audioSelectionStart} ja {audioSelectionEnd}, kesto "
@@ -178,7 +175,6 @@ msgstr ""
 "Raidan kestoa ei ole saatavilla. Sulje äänitiedosto ja avaa se sitten "
 "uudelleen."
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Raidan kesto: {trackLength}"
 
@@ -191,7 +187,6 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "Nykyisen raidan jäljellä olevaa aikaa ei voi ilmoittaa"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Valittu kanava: {audioChannel}"
 
@@ -200,7 +195,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "Ilmoittaa muokattavan kanavan."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Zoomauksen taso: {zoomLevel}"
 
@@ -239,63 +233,3 @@ msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "Lisäosa Goldwave-äänimuokkaimen saavutettavuuden ja käytettävyyden "
 "parantamiseen."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "Asettaa alkumerkin ja kertoo sen sijainnin."
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "Asettaa loppumerkin ja kertoo sen sijainnin."
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "Toistaa raidalta alku- ja loppumerkkien välisen kohdan."
-
-#~ msgid "Selects the entire track."
-#~ msgstr "Valitsee koko ääniraidan."
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "Lisää paikkamerkin ääniraidan nykyiseen sijaintiin."
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "Lisää paikkamerkin nykyisen alkumerkin kohdalle."
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "Lisää paikkamerkin nykyisen loppumerkin kohdalle."
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "Siirtää alkumerkin seuraavan paikkamerkin kohdalle."
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "Siirtää alkumerkin edellisen paikkamerkin kohdalle."
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "Siirtää loppumerkin seuraavan paikkamerkin kohdalle."
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "Siirtää loppumerkin edellisen paikkamerkin kohdalle."
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "Poistaa valitun äänen."
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "Leikkaa pois valitun kohdan ulkopuolelle jäävän äänen."
-
-#~ msgid "Plays the audio track."
-#~ msgstr "Toistaa ääniraidan."
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "Kelaa ääniraitaa taaksepäin."
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "Kelaa ääniraitaa eteenpäin."
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "Pysäyttää ääniraidan toiston tai nauhoituksen."
-
-#~ msgid "stops the audio track."
-#~ msgstr "Keskeyttää ääniraidan toiston tai nauhoituksen."
-
-#~ msgid "Starts recording audio."
-#~ msgstr "Aloittaa nauhoituksen."
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "Muuttaa zoomauksen tasoa ja ilmoittaa sen."

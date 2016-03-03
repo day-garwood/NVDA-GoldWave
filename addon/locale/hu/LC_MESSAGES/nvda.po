@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-07-12 01:05+0100\n"
+"PO-Revision-Date: 2016-02-26 02:00-0800\n"
 "Last-Translator: Ócsvári Áron <oaron1@gmail.com>\n"
 "Language-Team: HU <LL@li.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -74,12 +74,10 @@ msgid "All channels selected"
 msgstr "Minden csatorna kiválasztva"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Kezdés: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Vége: {finishMarkerPos}"
 
@@ -160,7 +158,6 @@ msgstr ""
 "újra a hangsávot."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "{audioSelectionStart} - {audioSelectionEnd} között, {audioSelectionLength}"
@@ -173,7 +170,6 @@ msgstr "Összegzi a kijelölt hang tulajdonságait, úgy mint kijelölés ideje.
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "A sáv hossza nem elérhető. Zárja be, majd nyissa meg újra a hangfájlt."
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "A sáv hossza: {trackLength}"
 
@@ -186,7 +182,6 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "Nem lekérdezhető a sávból hátralévő idő."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Kijelölt csatorna: {audioChannel}"
 
@@ -195,7 +190,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "Bemondja az éppen szerkesztés alatt lévő hangcsatornát."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Nagyítási szint: {zoomLevel}"
 
@@ -233,63 +227,3 @@ msgstr "GoldWave"
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "A kiegészítő elősegíti a Goldwave hangszerkesztő akadálymentes használatát."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "Elhelyezi a kezdőpontot, és bemondja annak pozícióját."
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "Elhelyezi a végpontot, és bemondja annak pozícióját."
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "Lejátsza a kezdő és a végpont között lévő sávot."
-
-#~ msgid "Selects the entire track."
-#~ msgstr "Kijelöli a teljes sávot."
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "Elhelyez egy helyjelzőt az aktuális pozícióhoz."
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "Elhelyez egy helyjelző pontot az aktuális kezdőpont pozíciójához."
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "Elhelyez egy helyjelző pontot az aktuális végpont pozíciójához."
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "Áthelyezi a kezdőpontot a következő helyjelző pozíciójához."
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "Áthelyezi a kezdőpontot az előző helyjelző pozíciójához."
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "Áthelyezi a végpontot a következő helyjelző pozíciójához."
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "Áthelyezi a kezdőpontot az előző helyjelző pozíciójához."
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "Törli az aktuálisan kijelölt hangot."
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "Trimmeli a hangot a kijelölésen kívül"
-
-#~ msgid "Plays the audio track."
-#~ msgstr "Az audio sáv lejátszása"
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "Visszateker a hangsávban."
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "Gyors előretekerés egy hangsávban."
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "Szünetelteti a hangsáv lejátszását."
-
-#~ msgid "stops the audio track."
-#~ msgstr "Leállítja a hangsáv lejátszását."
-
-#~ msgid "Starts recording audio."
-#~ msgstr "Elindítja a hangfelvételt."
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "Megváltoztatja a nagyítási szintet, és bejelenti az új értéket."

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-07-04 07:42+0545\n"
+"PO-Revision-Date: 2016-02-26 02:17-0800\n"
 "Last-Translator: drishtibachak@gmail.com\n"
 "Language-Team: Nepali <drishtibachak@gmail.com>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -74,12 +74,10 @@ msgid "All channels selected"
 msgstr "सबै च्यानेलहरु चयनित"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "थालनी: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "समाप्त : {finishMarkerPos}"
 
@@ -152,11 +150,13 @@ msgid "Announces the current audio position in seconds."
 msgstr "चालू श्रवण स्थानलाई सेकेण्डमा बताउछ ।"
 
 #. Translators: Presented when there is no audio selection summary available.
-msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
-msgstr "चयनित श्रवण सारांस प्राप्त गर्न सकिएन ।. कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
+msgid ""
+"Unable to obtain audio selection summary. Please close and reopen the audio "
+"track."
+msgstr ""
+"चयनित श्रवण सारांस प्राप्त गर्न सकिएन ।. कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} देखि {audioSelectionEnd} {audioSelectionLength}"
 
@@ -168,7 +168,6 @@ msgstr "श्रवण चयन शारांस सम्बन्धी �
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "धुनको लम्बाई उपलब्ध छैन । कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "ट्याक लम्बाई : {trackLength}"
 
@@ -181,7 +180,6 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "चालू धुनको बाकि समय बताउन सकिदेन ।"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "चयनित मार्ग : {audioChannel}"
 
@@ -190,7 +188,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "तपाइले सम्पादन गर्दै गरेको श्रवण मार्ग बताउने छ ।."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "अभिवर्धन स्तर : {zoomLevel}"
 
@@ -211,8 +208,11 @@ msgid "command announcement off"
 msgstr "घोषणा आदेस बन्द ।"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
-msgid "Toggles whether NVDA announces editing commands during audio recording or playback."
-msgstr "श्रव्य अभिलेखन वा पृष्ठवादन हुँदा नेत्रवानीले गर्ने सम्पादन आदेश  घोषणा साटो फेरो हुन्छ ।"
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr ""
+"श्रव्य अभिलेखन वा पृष्ठवादन हुँदा नेत्रवानीले गर्ने सम्पादन आदेश  घोषणा साटो फेरो हुन्छ ।"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -223,63 +223,3 @@ msgstr "गोल्डवेभ"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "गोल्टवेभ नामक ध्वनी सम्पादकको पहुँच र प्रयोगमा सरलता ल्याउने उपकर्मी ।"
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "सुरु चिनो छोड्छ र सुरुवात चिनो स्थानको जानकारी दिन्छ ।"
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "समाप्ति चिनो छोड्छ र समाप्ति चिनो स्थानको जानकारी दिन्छ ।."
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "सुरु र समाप्ती चिनो बिचको धुनलाई बजाउँछ ।"
-
-#~ msgid "Selects the entire track."
-#~ msgstr "सम्पूर्ण धुनलाई चयन गर्छ ।"
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "बर्तमान श्रवण स्थानमा क्यु विन्दु राख्छ ।"
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "चालु सुरुवात चिनोमा Cue विन्दु राख्ने छ"
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "चालु समाप्ति चिनोमा Cue विन्दु राख्ने छ"
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "सुरु चिनोलाई अघिल्लो क्युको स्थानमा सार्ने छ ।"
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "सुरु चिनोलाई पछिल्लो क्युको स्थानमा सार्ने छ ।"
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "समाप्ति चिनोलाई अघिल्लो क्युको स्थानमा सार्ने छ ।"
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "समाप्ति चिनोलाई पछिल्लो क्युको स्थानमा सार्ने छ ।"
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "हाल चयन गरिएको श्रव्यलाई मेट्ने छ ।"
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "चयन न गरिएको श्रव्यलाई काँटछाँट गर्ने छ ।"
-
-#~ msgid "Plays the audio track."
-#~ msgstr "श्रवण धुनलाई बजाउँछ ।"
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "श्रवण धुन मार्फत पश्चगमन ।"
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "श्रवण धुन मार्फत तिब्र अग्रगमन ।"
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "श्रवण धुनले क्षणिक विश्राम लिन्छ ।"
-
-#~ msgid "stops the audio track."
-#~ msgstr "श्रवण धुनले विश्राम लिन्छ ।"
-
-#~ msgid "Starts recording audio."
-#~ msgstr "श्रवण अभिलेखन सुरु गर्छ ।"
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "अभिवर्धन स्तरलाई बदलेर नया स्तर बताउने छ ।"

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: goldwave 1.2-dev\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-02-08 16:54+0100\n"
-"PO-Revision-Date: 2014-03-17 16:34+0800\n"
+"PO-Revision-Date: 2016-02-26 02:39-0800\n"
 "Last-Translator: 雪岭冰龙 <vgjh2005@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -78,12 +78,10 @@ msgid "All channels selected"
 msgstr ""
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "开始标记：{startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "结束标记: {finishMarkerPos}"
 
@@ -162,7 +160,6 @@ msgid ""
 msgstr "无法获取音频的选择状态，请关闭轨道后重新打开音频轨道。"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "从{audioSelectionStart}到{audioSelectionEnd}，长度为{audioSelectionLength}"
@@ -175,7 +172,6 @@ msgstr "朗读音频的选择状态，例如选择的长度。"
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "轨道长度信息不可用，请关闭后重新打开音频轨道。"
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "轨道长度：{trackLength}"
 
@@ -188,7 +184,6 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr ""
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "选择的音频通道：{audioChannel}"
 
@@ -197,7 +192,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "朗读您正在编辑的音频通道。"
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "放大等级：{zoomLevel}"
 
@@ -234,63 +228,3 @@ msgstr ""
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "一个提高音频编辑器 Goldwave 的可访问性和提供小贴士的插件。"
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "拖拽开始标记并且朗读其位置。，"
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "拖拽结束标记并且朗读其位置。，"
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "播放在开始标记和结束标记之间的轨道。"
-
-#~ msgid "Selects the entire track."
-#~ msgstr "选择整个轨道"
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "拖拽 CUE 点到当前位置"
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "拖拽 CUE 点到当前的开始标记位置"
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "拖拽 CUE 点到当前的结束标记位置"
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "移动开始标记到下一个 Cue 点所在的位置"
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "移动开始标记到上一个 Cue 点所在的位置"
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "移动结束标记到下一个 Cue 点所在的位置"
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "移动结束标记到上一个 Cue 点所在的位置"
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "删除当前选中的音频。"
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "修剪选区外的音频"
-
-#~ msgid "Plays the audio track."
-#~ msgstr "播放音频轨道"
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "沿当前音频轨道快退。"
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "沿当前音频轨道快进。"
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "暂停音频轨道。"
-
-#~ msgid "stops the audio track."
-#~ msgstr "停止音频轨道。"
-
-#~ msgid "Starts recording audio."
-#~ msgstr "开始录制音频。"
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "更改放大等级并朗读新的级别。"

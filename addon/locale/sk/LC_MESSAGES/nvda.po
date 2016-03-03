@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2016-01-28 16:12+0100\n"
+"PO-Revision-Date: 2016-02-26 02:48-0800\n"
 "Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.5\n"
 "Language: sk\n"
 
 #. Translators: Presented when audio track position information can not be located.
@@ -225,63 +225,3 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "Doplnok na zlepšenie prístupnosti zvukového editoru Goldwave."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "Vloží začiatočnú značku a oznámy jej pozíciu."
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "Vloží konečnú značku a oznámi jej pozíciu."
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "Prehrá označený úsek."
-
-#~ msgid "Selects the entire track."
-#~ msgstr "Vyberie celú stopu."
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "Vloží rozdelenie na aktuálne miesto."
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "Vloží rozdelenie na pozíciu začiatočnej značky."
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "Vloží rozdelenie na pozíciu konečnej značky."
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "presunie začiatočnú značku na nasledujúci rozdeľovač."
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "Presunie začiatočnú značku na predchádzajúci rozdeľovač."
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "Presunie konečnú značku na nasledujúco rozdeľovať."
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "Presunie konečnú značku na predchádzajúci rozdeľovač."
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "Odstráni vybratú časť."
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "odstráni všetko, čo nie je označné."
-
-#~ msgid "Plays the audio track."
-#~ msgstr "Prehrá audio stopu."
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "Pretáča dozadu v audio stope"
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "Pretáča dopredu v audio stope."
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "Pozastaví prehrávanie."
-
-#~ msgid "stops the audio track."
-#~ msgstr "Zastaví prehrávanie."
-
-#~ msgid "Starts recording audio."
-#~ msgstr "Spustí nahrávanie."
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "Zmení úroveň priblíženia a oznámy novú hodnotu."

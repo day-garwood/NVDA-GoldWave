@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-12-04 16:17+0200\n"
+"PO-Revision-Date: 2016-02-25 23:00-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -226,63 +226,3 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "إضافة تمكن المستخدم من سهولة التعامل مع تطبيق تحرير الأصوات Goldwave."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "وضع علامة لبداية التظليل والإعلان عن موقعها"
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "وضع علامة لنهاية التظليل والإعلان عن موقعها"
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "تشغيل المسار الصوتي من بداية التظليل حتى نهايته"
-
-#~ msgid "Selects the entire track."
-#~ msgstr "تظليل كامل المسار الصوتي."
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "وضع إشارة في الموقع الحالي من الملف الصوتي."
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "وضع إشارة مكان علامة بداية التظليل الحالية"
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "وضع إشارة مكان علامة نهاية التظليل الحالية"
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "تحريك علامة بداية التظليل إلى مكان الإشارة التالية"
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "تحريك علامة بداية التظليل إلى مكان الإشارة التالية"
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "تحريك علامة نهاية التظليل إلى مكان الإشارة التالية"
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "تحريك علامة نهاية التظليل إلى مكان الإشارة السابقة"
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "حذف الجزء المظلل من الملف الصوتي"
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "قص بقية الملف الصوتي خارج الجزء المظلل"
-
-#~ msgid "Plays the audio track."
-#~ msgstr "تشغيل المسار."
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "ترجيع المسار."
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "تقديم المسار."
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "يوقف المسار توقف مؤقت."
-
-#~ msgid "stops the audio track."
-#~ msgstr "توقف المسار."
-
-#~ msgid "Starts recording audio."
-#~ msgstr "يبدأ في التسجيل."
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "يقوم بتغيير مستوى الزوم ويعلن عن المستوى الجديد."

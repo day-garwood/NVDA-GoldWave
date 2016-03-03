@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-06-19 00:14+0400\n"
+"PO-Revision-Date: 2016-02-26 02:27-0800\n"
 "Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -231,63 +231,3 @@ msgstr "GoldWave"
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "Дополнение для расширения доступа при использовании аудио редактора GoldWave."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "Устанавливает начальный маркер и объявляет его положение."
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "Устанавливает конечный маркер и объявляет его положение."
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "Воспроизведение материала между начальным и конечным маркерами."
-
-#~ msgid "Selects the entire track."
-#~ msgstr "Выделяет всю дорожку."
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "Создаёт метку в текущей позиции аудио."
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "Создаёт метку в текущей позиции начального маркера."
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "Создаёт метку в текущей позиции конечного маркера."
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "Перемещает начальный маркер к следующей помеченной позиции."
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "Перемещает начальный маркер к предыдущей помеченной позиции."
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "Перемещает конечный маркер к следующей помеченной позиции."
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "Перемещает конечный маркер к предыдущей помеченной позиции."
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "Удаляет выделенный в данный момент звук."
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "Обрезать аудио вне выделения."
-
-#~ msgid "Plays the audio track."
-#~ msgstr "Воспроизведение звуковой дорожки."
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "Перемотка назад звуковой дорожки."
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "Быстрая перемотка вперёд звуковой дорожки."
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "Ставит на паузу звуковую дорожку."
-
-#~ msgid "stops the audio track."
-#~ msgstr "останавливает звуковую дорожку."
-
-#~ msgid "Starts recording audio."
-#~ msgstr "Начало записи аудио."
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "Изменяет значение уровня и объявляет новый уровень."

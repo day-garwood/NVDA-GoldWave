@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-06-20 00:30+0100\n"
+"PO-Revision-Date: 2016-02-25 23:30-0800\n"
 "Last-Translator: Bernd Dorer <bdorer@mailbox.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
+"X-Generator: Poedit 1.5.5\n"
 "Language-Team: \n"
 
 #. Translators: Presented when audio track position information can not be located.
@@ -74,12 +74,10 @@ msgid "All channels selected"
 msgstr "alle Kanäle ausgewählt"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Start: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Ende: {finishMarkerPos}"
 
@@ -160,7 +158,6 @@ msgstr ""
 "schließen Sie diese und öffnen Sie sie erneut."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} bis {audioSelectionEnd} {audioSelectionLength}"
 
@@ -176,7 +173,6 @@ msgstr ""
 "Die Länge der Audiospur konnte nicht abgerufen werden. Bitte schließen Sie "
 "diese und öffnen Sie sie erneut."
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Track-Länge: {trackLength}"
 
@@ -189,7 +185,6 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "Kann die Restzeit des aktuellen Titels nicht ausgeben."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Ausgewählter Kanal: {audioChannel}"
 
@@ -198,7 +193,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "Gibt die Kanäle an, die Sie momentan bearbeiten."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Zoom-Stufe: {zoomLevel}"
 
@@ -237,63 +231,3 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "Eine Erweiterung zur Verbesserung der Zugänglichkeit von GoldWave."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "Setzt eine Startmarke und gibt deren Position aus."
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "Setzt eine Endmarke und gibt deren Position aus."
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "Gibt die Audiospur zwischen Start- und Endmarken wieder."
-
-#~ msgid "Selects the entire track."
-#~ msgstr "Wählt die gesamte Audiospur aus."
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "Setzt ein Signalpunkt an der aktuellen Audioposition."
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "Setzt ein Signalpunkt auf der Position der Startmarke."
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "Setzt ein Signalpunkt auf der Position der Endmarke"
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "Setzt die Startmarke und gibt deren Position aus."
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "Setzt die Startmarke und gibt deren Position aus."
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "Setzt die Endmarke und gibt deren Position aus."
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "Setzt die Endmarke und gibt deren Position aus."
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "Löscht die aktuell ausgewählte Audiospur."
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "Entfernt alles außerhalb der ausgewählten Audiospur."
-
-#~ msgid "Plays the audio track."
-#~ msgstr "Gibt die Audiospur wieder."
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "Spielt die Audiospur rückwärts ab."
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "Spielt die Audiospur vorwärts ab."
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "Hält die Audiospur an."
-
-#~ msgid "stops the audio track."
-#~ msgstr "Stoppt die Audiospur."
-
-#~ msgid "Starts recording audio."
-#~ msgstr "Startet die Aufnahme einer Audiospur."
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "Ändert die Zoom-Stufe und gibt diesen anschließend aus."

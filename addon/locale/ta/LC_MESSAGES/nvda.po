@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-06-19 19:49+0530\n"
+"PO-Revision-Date: 2016-02-26 02:46-0800\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: Tamil\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.5.5\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -229,63 +229,3 @@ msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "Goldwave ஒலித் தொகுப்பு மென்பொருளை  அணுகுவதிலும், பயன்படுத்துவதிலும் "
 "மேம்பாட்டையளிக்கும் கூட்டுறுப்பு."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "துவக்கக் குறிப்பானைக் கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "முடிவுக் குறிப்பானைக் கீழ்விட்டு, அதன் நிலையை அறிவிக்கிறது."
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "துவக்க, முடிவுக் குறிப்பான்களுக்கிடையேயான தடத்தை ஒலிக்கிறது."
-
-#~ msgid "Selects the entire track."
-#~ msgstr "முழு தடத்தையும் தெரிவு செய்கிறது."
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "தற்போதைய ஒலி நிலையில் குறியீட்டைக்  கீழ்விடுகிறது."
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "தற்போதைய துவக்கக் குறிப்பானின் நிலையில், குறியீட்டைக் கீழ்விடுகிறது."
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "தற்போதைய முடிவுக் குறிப்பானின் நிலையில், குறியீட்டைக் கீழ்விடுகிறது."
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "அடுத்த குறியீட்டிற்கு துவக்கக் குறிப்பானை நகர்த்துகிறது"
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "அடுத்த குறியீட்டிற்கு துவக்கக் குறிப்பானை நகர்த்துகிறது"
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "அடுத்த குறியீட்டிற்கு முடிவுக் குறிப்பானை நகர்த்துகிறது"
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "முந்தைய குறியீட்டிற்கு முடிவுக் குறிப்பானை நகர்த்துகிறது"
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "தற்பொழுது தெரிவு செய்யப்பட்டிருக்கும் ஒலியை அழிக்கிறது"
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "தெரிவு செய்யப்பட்டிருக்கும் ஒலிக்கு வெளியே இருக்கும் ஒலியை அகற்றுகிறது"
-
-#~ msgid "Plays the audio track."
-#~ msgstr "ஒலித் தடத்தை இயக்குகிறது"
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "ஒரு ஒலித்தடத்தினூடே பின்னகர்கிறது. "
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "ஒரு ஒலித்தடத்தினூடே முன்னகர்கிறது. "
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "ஒலித்தடத்தை இடைநிறுத்துகிறது."
-
-#~ msgid "stops the audio track."
-#~ msgstr "ஒலித்தடத்தை நிறுத்துகிறது."
-
-#~ msgid "Starts recording audio."
-#~ msgstr "ஒலியை பதிவு செய்ய துவங்குகிறது."
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "ஒலியளவை மாற்றி, புதிய அளவின் நிலையை அறிவிக்கிறது."

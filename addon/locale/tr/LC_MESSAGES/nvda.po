@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2015-08-23 21:37+0300\n"
+"PO-Revision-Date: 2016-02-26 02:44-0800\n"
 "Last-Translator: Çağrı Doğan <cagrid@hotmail.com>\n"
 "Language-Team: turkish <cagrid@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: Presented when audio track position information can not be located.
@@ -75,12 +75,10 @@ msgid "All channels selected"
 msgstr "Tüm kanallar seçildi"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Başlangıç: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Bitiş: {finishMarkerPos}"
 
@@ -159,7 +157,6 @@ msgid ""
 msgstr "parça seçim bilgisi alınamadı. Lütfen parçayı kapatıp yeniden açın."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "{audioSelectionStart} den {audioSelectionEnd} e kadar {audioSelectionLength}"
@@ -172,7 +169,6 @@ msgstr "Parça seçimiyle ilgili, seçimin süresi vb, özet bilgi verir"
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "parça uzunluk bilgisi alınamadı. lütfen parçayı kapatıp yeniden açın"
 
-#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Parça süresi: {trackLength}"
 
@@ -185,7 +181,6 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "Mevcut parça için kalan süre bilgisi verilemiyor"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Seçilen kanal: {audioChannel}"
 
@@ -194,7 +189,6 @@ msgid "Announces the audio channel you are editing."
 msgstr "Düzenlediğiniz kanalı söyler"
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Yakınlaştırma seviyesi: {zoomLevel}"
 
@@ -232,63 +226,3 @@ msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
 "GoldWave ses editörünün kullanımı ve erişilebilirliğinin artırılması için "
 "bir eklenti."
-
-#~ msgid "Drops the start marker and announces start marker position."
-#~ msgstr "Başlangıç imi koyar ve imin konumunu söyler"
-
-#~ msgid "Drops the finish marker and announces finish marker position."
-#~ msgstr "Bitiş imi koyar ve imin konumunu söyler"
-
-#~ msgid "Plays the trakc between start and finish markers."
-#~ msgstr "Başlangıç ve bitiş imi arasındaki kısmı çalar"
-
-#~ msgid "Selects the entire track."
-#~ msgstr "parçanın tümünü seçer"
-
-#~ msgid "Drops a cue point at the current audio position."
-#~ msgstr "mevcut konuma işaret koyar"
-
-#~ msgid "Drops a cue point at the current start marker position."
-#~ msgstr "başlangıç iminin konumuna işaret koyar"
-
-#~ msgid "Drops a cue point at the current finish marker position."
-#~ msgstr "Bitiş iminin konumuna işaret koyar"
-
-#~ msgid "Moves the start marker to the next cue position."
-#~ msgstr "Başlangıç imini sonraki işarete taşır"
-
-#~ msgid "Moves the start marker to the previous cue position."
-#~ msgstr "Başlangıç imini önceki işarete taşır"
-
-#~ msgid "Moves the finish marker to the next cue position."
-#~ msgstr "Bitiş imini sonraki işarete taşır"
-
-#~ msgid "Moves the finish marker to the previous cue position."
-#~ msgstr "Bitiş imini önceki işarete taşır"
-
-#~ msgid "Deletes the currently selected audio."
-#~ msgstr "Seçilmiş sesi siler."
-
-#~ msgid "Trims the audio outside the selected audio."
-#~ msgstr "Seçilen sesin dışında kalan kısmı kırpar."
-
-#~ msgid "Plays the audio track."
-#~ msgstr "parçayı çalar"
-
-#~ msgid "Rewinds through an audio track."
-#~ msgstr "parçayı geri alır"
-
-#~ msgid "Fast forwards through an audio track."
-#~ msgstr "parçayı ileri alır"
-
-#~ msgid "Pauses the audio track."
-#~ msgstr "parçayı duraklatır"
-
-#~ msgid "stops the audio track."
-#~ msgstr "parçayı durdurur"
-
-#~ msgid "Starts recording audio."
-#~ msgstr "kaydı başlatır"
-
-#~ msgid "Changes zoom level and announces the new level."
-#~ msgstr "yakınlaştırma düzeyini değiştirir ve sÖyler"
