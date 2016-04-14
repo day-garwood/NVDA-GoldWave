@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2016-02-26 02:27-0800\n"
-"Last-Translator: Ruslan Kolodyazhni <eye0@rambler.ru>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-04-14 23:13+0500\n"
+"Last-Translator: Denis Shishkin <outsidepro@rambler.ru>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.8.7\n"
+"Language-Team: \n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -31,7 +31,7 @@ msgstr "моно"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "stereo"
-msgstr "стерио"
+msgstr "стерео"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "left"
@@ -155,7 +155,7 @@ msgid ""
 "track."
 msgstr ""
 "Невозможно получить сводную информацию о выделеном звуке. Пожалуйста, "
-"закройте и переоткройте звуковую дорожку."
+"закройте и заново откройте звуковую дорожку."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
@@ -170,7 +170,7 @@ msgstr ""
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
-"Длительность дорожки недоступна. Пожалуйста, закройте и переоткройте "
+"Длительность дорожки недоступна. Пожалуйста, закройте и заново откройте "
 "звуковую дорожку."
 
 msgid "Track length: {trackLength}"
@@ -182,11 +182,11 @@ msgstr "Объявляет общую длину звуковой дорожки
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr "Не могу сказать вам оставшееся время текущей дорожки"
+msgstr "Невозможно сообщить оставшееся время текущей дорожки"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 msgid "Selected channel: {audioChannel}"
-msgstr "Выбраный канал: {audioChannel}"
+msgstr "Выбран канал: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
@@ -194,11 +194,11 @@ msgstr "Объявляет канал, который вы редактируе�
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 msgid "Zoom level: {zoomLevel}"
-msgstr "Уровень: {zoomLevel}"
+msgstr "Уровень зума: {zoomLevel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces audio zoom level."
-msgstr "Объявляет уровень звука."
+msgstr "Объявляет уровень зума."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
