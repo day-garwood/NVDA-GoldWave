@@ -24,6 +24,13 @@ Pozor! Goldwave vo verzii 6 vyžaduje 64-bitovú verziu Windows 7 alebo
 novší. Ak chcete používať doplnok pre goldwave od verzie 2.0, musíte mať
 NVDA od verzie 2014.1
 
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at
+  https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name
+  and other status information.
+
 ## Changes for 3.0
 
 * Added a command to announce remaining time for the current track

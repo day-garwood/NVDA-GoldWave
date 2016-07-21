@@ -26,6 +26,13 @@
 позднюю. Для использования дополнения версии 2.0 требуется NVDA 2014.1 или
 выше.
 
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at
+  https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name
+  and other status information.
+
 ## Изменения для версии 3.0
 
 * Добавлена команда объявления оставшегося времени для текущего трека

@@ -25,6 +25,13 @@ Huomaa, että GoldWave 6 tarvitsee Windows 7:n 64-bittisen version tai
 uudemman. Lisäosan 2.0-version käyttämiseen tarvitaan NVDA 2014.1 tai
 uudempi.
 
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at
+  https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name
+  and other status information.
+
 ## Muutokset versiossa 3.0
 
 * Lisätty komento nykyisen raidan jäljellä olevan ajan ilmoittamiseen

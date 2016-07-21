@@ -21,6 +21,13 @@
 ملحوظة: يتطلب goldwave 6 ويندوز 7 أو ما بعده من طراز 64 بايت. مطلوب تثبيت
 nvda 2014.1 لتثبيت الإصدار 2.0 من الإضافة.
 
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at
+  https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name
+  and other status information.
+
 ## مستجدات الإصدار 3.0
 
 * إضافة أمر للإعلان عن الوقت المتبقي من المسار أو التراك الحالي

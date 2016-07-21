@@ -26,6 +26,13 @@ Bitte beachten Sie: GoldWave 6 benötigt die 64-bit-Version von Windows 7
 oder neuer. NVDA 2014.1 oder neuer ist erforderlich, um Version 2 dieser
 Erweiterung einzusetzen.
 
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at
+  https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name
+  and other status information.
+
 ## Änderungen bis 3.0
 
 * Befehl zur Ausgabe der Restzeit des aktuellen Titels hinzugefügt ( NVDA +
@@ -39,17 +46,15 @@ Erweiterung einzusetzen.
   (siehe Anmerkung oben).
 * Die Hilfe zur Erweiterung ist nun über den Erweiterungs-Manager
   verfügbar. (Ab NVDA 2014.3 und neuer.)
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* beim Auswählen eines Kanals mit Befehlen wie strg+Umschalt+L wird der
+  gewählte Kanal angezeigt
+* Verbesserungen bei numerischen Eingabefeldern 
+* Die Einstellungen zur Ansage von Befehlen werden gespeichert, wenn sich
+  der Fokus außerhalb von Goldwave befindet.
 
 ## Änderungen in 1.2
 
-* Fixed an issue where NVDA had difficulty announcing some edit fields.
+* Fehler mit einigen Eingabefeldern behoben.
 * Neue und aktualisierte Übersetzungen.
 * Bitte beachten Sie, dass aufgrund der jüngsten Änderungen in NVDA in
   einigen Systemen die Audio-Auswahl und andere Statusbefehle möglicherweise
@@ -60,10 +65,10 @@ Erweiterung einzusetzen.
 * Nachrichten werden nun in Braille ausgegeben.
 * Die Zusammenfassung der Audio-Auswahl wird in anderen Sprachen als
   Englisch präsentiert.
-* More command announcements added including cue position movement and
-  delete/trim operations.
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+* Mehr Befehlsansagen hinzugefügt (wie z.B. Mischen/Trimmen oder das
+  Verschieben von Cue-Positionen)
+* Fehler mit Eingabefeldern in Effektdialogen behoben, in denen die
+  Eingabefelder nicht oder falsch benannt wurden.
 * Neue und aktualisierte Übersetzungen.
 
 ## Änderungen in 1.0

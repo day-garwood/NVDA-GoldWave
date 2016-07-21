@@ -24,6 +24,13 @@ Megjegyzés: A GoldWave 6 futtatásához 64-bites Windows 7 vagy újabb verzió
 szükséges. A kiegészítő 2.0 verziójának használatához NVDA 2014.1 vagy újabb
 kiadás szükséges.
 
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at
+  https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name
+  and other status information.
+
 ## A 3.0 verzió változásai
 
 * Billentyűparancs került hozzáadásra az aktuális sáv hátralévő idejének

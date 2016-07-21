@@ -23,6 +23,13 @@ goldwave uputstvo.
 Upozorenje: goldwave 6 zahtjeva 64 bitnu inačicu windowsa 7 ili
 novijeg. NVDA 2014.1 or later is required to use add-on 2.0.
 
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at
+  https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name
+  and other status information.
+
 ## Changes for 3.0
 
 * Added a command to announce remaining time for the current track
