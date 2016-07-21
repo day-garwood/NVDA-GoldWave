@@ -20,6 +20,11 @@ For more information about Goldwave and keyboard commands, refer to Goldwave Man
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or later is required to use add-on 2.0.
 
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name and other status information.
+
 ## Changes for 3.0
 
 * Added a command to announce remaining time for the current track (NvDA+Shift+R).

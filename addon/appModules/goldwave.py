@@ -1,6 +1,6 @@
 # GoldWave App Module
 # An add-on for NVDA
-# Copyright 2013-2015 Joseph Lee and contributors, released under gPL.
+# Copyright 2013-2016 Joseph Lee and contributors, released under gPL.
 # Functionality is based on JFW scripts for Goldwave by Jim Grimsby, Jr.
 
 import appModuleHandler
