@@ -26,12 +26,12 @@ Note : GoldWave 6 requiert la version 64 bits de Windows 7 ou version
 ultérieure. NVDA 2014.1 ou version ultérieure est requis pour utiliser le
 module complémentaire 2.0.
 
-## Changes for 4.0
+## Changements pour la version 4.0
 
-* Add-on repository has moved to GitHub (now located at
-  https://github.com/josephsl/goldwave).
-* Performance improvements when looking up information such as channel name
-  and other status information.
+* Le référentiel du module complémentaire a été déplacé à GitHub (maintenant
+  est localisé à https://github.com/josephsl/goldwave).
+* Amélioration des performances lorsque vous cherchez des informations comme
+  le nom du canal et d'autres informations du statut.
 
 ## Changements pour la version 3.0
 
