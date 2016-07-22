@@ -1,6 +1,6 @@
 # GoldWave App Module
 # An add-on for NVDA
-# Copyright 2013-2015 Joseph Lee and contributors, released under gPL.
+# Copyright 2013-2016 Joseph Lee and contributors, released under gPL.
 # Functionality is based on JFW scripts for Goldwave by Jim Grimsby, Jr.
 
 import appModuleHandler
@@ -42,7 +42,7 @@ class SoundWindow(IAccessible):
 			fgChild.redraw()
 		#fgChild = self.appModule._get_statusBars(statBarIndex, refill=True)
 		try:
-			info = fgChild.children[childIndex].displayText
+			info = fgChild.getChild(childIndex).displayText
 		except IndexError:
 			return ""
 		return info
@@ -60,7 +60,7 @@ class SoundWindow(IAccessible):
 		# Current cursor position.
 		if not fgChild.displayText:
 			fgChild.redraw()
-		audioPos = fgChild.children[3].displayText.replace('\t', '')"""
+		audioPos = fgChild.getChild(3).displayText.replace('\t', '')"""
 		# Translators: Presented when audio track position information can not be located.
 		return _("Track position not available") if not audioPos or " " in audioPos else audioPos
 
@@ -74,7 +74,7 @@ class SoundWindow(IAccessible):
 		except AttributeError:
 			fgChild = self.appModule._get_statusBars(0, refill=True)
 		try:
-			audioSelection = fgChild.children[2].displayText
+			audioSelection = fgChild.getChild(2).displayText
 		except IndexError:
 			pass"""
 		return audioSelection
@@ -126,7 +126,7 @@ class SoundWindow(IAccessible):
 		except AttributeError:
 			fgChild = self.appModule._get_statusBars(0, refill=True)
 		try:
-			audioChannels = fgChild.children[0].displayText
+			audioChannels = fgChild.firstChild.displayText
 		except IndexError:
 			return"""
 		return audioChannels
@@ -137,7 +137,7 @@ class SoundWindow(IAccessible):
 			if not fgChild.displayText: fgChild.redraw()
 		except AttributeError:
 			fgChild = self.appModule._get_statusBars(0)
-		trackLength = fgChild.children[1].displayText
+		trackLength = fgChild.getChild(1).displayText
 		return trackLength
 
 	# Convert time to seconds: Convert hh:mm:ss to seconds.
@@ -185,7 +185,7 @@ class SoundWindow(IAccessible):
 			if not fgChild.displayText: fgChild.redraw()
 		except AttributeError:
 			fgChild = self.appModule._get_statusBars(1, refill=True)
-		zoomLevel = fgChild.children[1].displayText"""
+		zoomLevel = fgChild.getChild(1).displayText"""
 		return zoomLevel
 
 	# Audio editing scripts:
