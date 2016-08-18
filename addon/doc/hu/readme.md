@@ -24,10 +24,10 @@ Megjegyzés: A GoldWave 6 futtatásához 64-bites Windows 7 vagy újabb verzió
 szükséges. A kiegészítő 2.0 verziójának használatához NVDA 2014.1 vagy újabb
 kiadás szükséges.
 
-## Changes for 4.0
+## A 4.0 verzió változásai
 
-* Add-on repository has moved to GitHub (now located at
-  https://github.com/josephsl/goldwave).
+* A bővítmény tárolóját áthelyezték a GitHubra (jelenleg a
+  https://github.com/josephsl/goldwave webhelyen található).
 * Performance improvements when looking up information such as channel name
   and other status information.
 
@@ -68,7 +68,7 @@ kiadás szükséges.
 * A kijelölt hang tulajdonságai már nem csak angol nyelven elérhetők.
 * Több parancs bemondása hozzáadva, köztük a hellyelző mozgása, törlés/trim
   műveletek.
-* Hiba javítás a numerikus szerkesztőmezőkben, olykor hibás mező megnevezés
+* Hibajavítás a numerikus szerkesztőmezőkben, olykor hibás mező megnevezés
   került bemondásra.
 * Új, és frissített fordítások.
 
