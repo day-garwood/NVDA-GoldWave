@@ -8,12 +8,12 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
 ## Skróty ##
 
+* NvDA+Shift+C: przełącza wypowiadanie komend podczas edycji audio.
 * Control+Shift+P: odczytuje aktualną pozycję ścieżki.
 * NVDA+Shift+R: Announces remaining time for the currently editing track.
-* Control+NvDA+3: czyta informacje o aktualnym zaznaczeniu audio.
-* Control+NVDA+2: wypowiada całkowitą długość pliku dźwiękowego.
 * Control+NVDA+1: wypowiada aktualnie edytowany kanał.
-* NvDA+Shift+C: przełącza wypowiadanie komend podczas edycji audio.
+* Control+NVDA+2: wypowiada całkowitą długość pliku dźwiękowego.
+* Control+NvDA+3: czyta informacje o aktualnym zaznaczeniu audio.
 * Control+NVDA+4: wypowiada aktualny poziom powiększenia.
 
 Więcej informacji o Goldwave i jego klawiszach skrótu, znajduje się w
@@ -21,6 +21,10 @@ podręczniku Goldwave.
 
 Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. NVDA
 2014.1 lub nowsze jest wymagane do używania dodatku 2.0.
+
+## Version 16.12
+
+* Version scheme is now year.month instead of major.minor.
 
 ## Changes for 4.0
 

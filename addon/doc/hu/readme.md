@@ -9,12 +9,12 @@ használatát.
 
 ## Gyorsbillentyűk ##
 
+* NvDA+Shift+C: Hangszerkesztés közben átvált a parancsok bemondására.
 * Control+Shift+P: Az aktuális sávpozíció bemondása.
 * NVDA+Shift+R: Bemondja a szerkesztés alatt lévő sávból hátra lévő időt.
-* Control+NvDA+3: A kijelölt hang tulajdonságainak bemondása.
-* Control+NVDA+2: A hangfájl teljes hosszának bemondása.
 * Control+NVDA+1: A szerkesztés alatt álló csatorna bemondása.
-* NvDA+Shift+C: Hangszerkesztés közben átvált a parancsok bemondására.
+* Control+NVDA+2: A hangfájl teljes hosszának bemondása.
+* Control+NvDA+3: A kijelölt hang tulajdonságainak bemondása.
 * Control+NVDA+4: A nagyítási szint bemondása.
 
 Bővebb információt a programról és a hozzátartozó billentyűparancsokról a
@@ -23,6 +23,10 @@ Goldwave súgójában talál.
 Megjegyzés: A GoldWave 6 futtatásához 64-bites Windows 7 vagy újabb verzió
 szükséges. A kiegészítő 2.0 verziójának használatához NVDA 2014.1 vagy újabb
 kiadás szükséges.
+
+## Version 16.12
+
+* Version scheme is now year.month instead of major.minor.
 
 ## A 4.0 verzió változásai
 

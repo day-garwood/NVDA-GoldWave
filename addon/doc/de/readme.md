@@ -9,14 +9,14 @@ Goldwave
 
 ## Tastenkürzel ##
 
+* NvDA+Umschalt+C: Schaltet die ansage von Befehlen während der
+  Audiobearbeitung ein oder aus.
 * strg+Umschalt+P: gibt die aktuelle Audio-Position an.
 * NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
   aus.
-* strg+NvDA+3: gibt eine Zusammenfassung zur Audio-Auswahl an
-* strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an
 * strg+NVDA+1: Gibt die Audiokanäle an, die Sie momentan bearbeiten
-* NvDA+Umschalt+C: Schaltet die ansage von Befehlen während der
-  Audiobearbeitung ein oder aus.
+* strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an
+* strg+NvDA+3: gibt eine Zusammenfassung zur Audio-Auswahl an
 * strg+NVDA+4: Gibt die aktuelle Zoom-Stufe an.
 
 Weitere Informationen über Goldwave und seine Tastenkombinationen finden Sie
@@ -26,12 +26,15 @@ Bitte beachten Sie: GoldWave 6 benötigt die 64-bit-Version von Windows 7
 oder neuer. NVDA 2014.1 oder neuer ist erforderlich, um Version 2 dieser
 Erweiterung einzusetzen.
 
-## Changes for 4.0
+## Version 16.12
 
-* Add-on repository has moved to GitHub (now located at
-  https://github.com/josephsl/goldwave).
-* Performance improvements when looking up information such as channel name
-  and other status information.
+* Das Versionsschema lautet nun Jahr.Monat.
+
+## Änderungen bis 4.0
+
+* Das Repository der Erweiterung ist nach GitHub umgezogen
+  (https://github.com/josephsl/goldwave).
+* Leichte Verbesserungen bei der Ansage von Statusinformationen zu Kanälen.
 
 ## Änderungen bis 3.0
 

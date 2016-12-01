@@ -9,13 +9,13 @@ käytettävyyttä.
 
 ## Pikanäppäimet ##
 
-* Control+Shift+P: Ilmoittaa nykyisen kohdan ääniraidalla.
-* NVDA+Shift+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
-* Control+NVDA+3: Kertoo ääniraidan valitun kohdan yhteenvedon.
-* Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
-* Control+NVDA+1: Ilmoittaa muokattavan kanavan.
 * NVDA+Shift+C: Ottaa käyttöön tai poistaa käytöstä äänenmuokkauskomentojen
   puhumisen.
+* Control+Shift+P: Ilmoittaa nykyisen kohdan ääniraidalla.
+* NVDA+Shift+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
+* Control+NVDA+1: Ilmoittaa muokattavan kanavan.
+* Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
+* Control+NVDA+3: Kertoo ääniraidan valitun kohdan yhteenvedon.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
 Katso GoldWaven käsikirjasta lisätietoja ohjelmasta sekä sen
@@ -24,6 +24,10 @@ näppäinkomennoista.
 Huomaa, että GoldWave 6 tarvitsee Windows 7:n 64-bittisen version tai
 uudemman. Lisäosan 2.0-version käyttämiseen tarvitaan NVDA 2014.1 tai
 uudempi.
+
+## Versio 16.12
+
+* Versionumero on nyt muotoa vuosi.kuukausi aiemman suuri.pieni sijaan.
 
 ## Muutokset versiossa 4.0
 

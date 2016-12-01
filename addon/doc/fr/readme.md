@@ -9,14 +9,14 @@ audio Goldwave.
 
 ## Raccourcis ##
 
+* NVDA+Maj+C : Bascule la verbalisation des commandes lors de l'édition
+  audio.
 * Contrôle+Maj+P : Annonce la position actuelle de la piste.
 * NVDA+Maj+R: Annonce le temps restant de la piste que vous êtes
   actuellement en train de modifier.
-* Contrôle+NVDA+3 : annonce un résumé des informations de sélection audio.
-* Contrôle+NVDA+2 : Annonce la longueur totale du fichier audio.
 * Contrôle+NVDA+1 : Annonce le canal que vous êtes en train de modifier.
-* NVDA+Maj+C : Bascule la verbalisation des commandes lors de l'édition
-  audio.
+* Contrôle+NVDA+2 : Annonce la longueur totale du fichier audio.
+* Contrôle+NVDA+3 : annonce un résumé des informations de sélection audio.
 * Contrôle+NVDA+4 : Annonce le niveau de zoom.
 
 Pour plus d'informations sur Goldwave et les commandes clavier,
@@ -25,6 +25,10 @@ reportez-vous au manuel de Goldwave.
 Note : GoldWave 6 requiert la version 64 bits de Windows 7 ou version
 ultérieure. NVDA 2014.1 ou version ultérieure est requis pour utiliser le
 module complémentaire 2.0.
+
+## Version 16.12
+
+* Version scheme is now year.month instead of major.minor.
 
 ## Changements pour la version 4.0
 

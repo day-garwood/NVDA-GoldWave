@@ -9,13 +9,13 @@ Goldwave.
 
 ## Atallos de teclado ##
 
+* NVDA+Shift+C: Cambia a fala das ordes durante a edición do audio.
 * Control+Shift+P: Anuncia a posición da pista actual.
 * NVDA+Shift+R: Anuncia o tempo restante para a pista actualmente en
   edición.
-* Control+NVDA+3: anuncia un resumo da información da selección do audio.
-* Control+NVDA+2: Anuncia a lonxitude total do ficheiro de audio.
 * Control+NVDA+1: Anuncia a canle que estás a editar.
-* NVDA+Shift+C: Cambia a fala das ordes durante a edición do audio.
+* Control+NVDA+2: Anuncia a lonxitude total do ficheiro de audio.
+* Control+NVDA+3: anuncia un resumo da información da selección do audio.
 * Control+NVDA+4: Anuncia o nivel do zoom.
 
 Para obter máis información acerca do Goldwave e das ordes do teclado,
@@ -24,6 +24,10 @@ consulta o Manual do GoldWave.
 Nota: GoldWave 6 require da versión de 64 bits de Windows 7 ou
 posterior. Requírese do NVDA 2014.1 ou posterior para utilizar o complemento
 2.0.
+
+## Versión 16.12
+
+* O esquema da versión agora é ano.mes en lugar de maior.menor.
 
 ## Cambios para 4.0
 

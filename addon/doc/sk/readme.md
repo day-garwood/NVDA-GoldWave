@@ -9,12 +9,12 @@ goldwave.
 
 ## Klávesové skratky ##
 
+* NVDA+Shift+C: prepína oznamovanie príkazov NVDA počas strihania.
 * ctrl+Shift+P: Oznámy pozíciu v aktuálnej stope.
 * NVDA+Shift+R: Announces remaining time for the currently editing track.
-* Control+NVDA+3: Oznámy informácie o aktuálnom výbere.
-* Control+NVDA+2: Oznámy celkovú dĺžku audio súboru.
 * Control+NVDA+1: oznámy kanál, ktorý upravujete.
-* NVDA+Shift+C: prepína oznamovanie príkazov NVDA počas strihania.
+* Control+NVDA+2: Oznámy celkovú dĺžku audio súboru.
+* Control+NVDA+3: Oznámy informácie o aktuálnom výbere.
 * Control+NVDA+4: oznamuje úroveň priblíženia.
 
 pre viac informácii o klávesových skratkách programu Goldwave si prečítajte
@@ -23,6 +23,10 @@ návod k programu Goldwave.
 Pozor! Goldwave vo verzii 6 vyžaduje 64-bitovú verziu Windows 7 alebo
 novší. Ak chcete používať doplnok pre goldwave od verzie 2.0, musíte mať
 NVDA od verzie 2014.1
+
+## Version 16.12
+
+* Version scheme is now year.month instead of major.minor.
 
 ## Changes for 4.0
 

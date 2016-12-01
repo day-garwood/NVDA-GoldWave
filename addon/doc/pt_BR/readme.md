@@ -8,12 +8,12 @@ Este módulo melhora o acesso e o uso do editor de áudio Goldwave.
 
 ## Atalhos: ##
 
+* NVDA+Shift+C: Alterna a fala de comandos durante a edição de áudio.
 * Control+Shift+P: Anuncia a posição na faixa atual.
 * NVDA+Shift+R: Anuncia o tempo restante da faixa atualmente em edição.
-* Control+NVDA+3: Anuncia um resumo com informações da seleção de áudio.
-* Control+NVDA+2: Anuncia o comprimento total do arquivo de áudio.
 * Control+NVDA+1: Anuncia o canal que se está editando.
-* NVDA+Shift+C: Alterna a fala de comandos durante a edição de áudio.
+* Control+NVDA+2: Anuncia o comprimento total do arquivo de áudio.
+* Control+NVDA+3: Anuncia um resumo com informações da seleção de áudio.
 * Control+NVDA+4: Anuncia o nível de zum.
 
 Para mais informações acerca do Goldwave e comandos de teclado, consulte o
@@ -21,6 +21,10 @@ manual do Goldwave.
 
 Nota: O GoldWave 6 exige a versão 64-bit do Windows 7 ou posterior. Exige-se
 o NVDA 2014.1 ou posterior para usar o complemento 2.0.
+
+## Version 16.12
+
+* Version scheme is now year.month instead of major.minor.
 
 ## Changes for 4.0
 

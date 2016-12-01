@@ -9,13 +9,13 @@ geliştirir.
 
 ## Kısayollar ##
 
-* Control+Shift+P: Geçerli parçadaki pozisyonu söyler.
-* NVDA+Shift+R: Announces remaining time for the currently editing track.
-* Control+NvDA+3: ses seçimiyle ilgili özet bilgi verir.
-* Control+NVDA+2: Ses dosyasının toplam uzunluğunu söyler.
-* Control+NVDA+1: Düzenlediğiniz kanalı söyler.
 * NvDA+Shift+C: Düzenlerken komutların seslendirilmesiyle ilgili ayarı açıp
   kapatır.
+* Control+Shift+P: Geçerli parçadaki pozisyonu söyler.
+* NVDA+Shift+R: Announces remaining time for the currently editing track.
+* Control+NVDA+1: Düzenlediğiniz kanalı söyler.
+* Control+NVDA+2: Ses dosyasının toplam uzunluğunu söyler.
+* Control+NvDA+3: ses seçimiyle ilgili özet bilgi verir.
 * Control+NVDA+4: Yakınlaştırma düzeyini söyler.
 
 GoldWave ve klavye komutları hakkında daha fazla bilgi için, GoldWave
@@ -23,6 +23,10 @@ kılavuzuna bakın.
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
 or later is required to use add-on 2.0.
+
+## Version 16.12
+
+* Version scheme is now year.month instead of major.minor.
 
 ## Changes for 4.0
 

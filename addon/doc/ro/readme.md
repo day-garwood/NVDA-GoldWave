@@ -8,13 +8,13 @@ Acest AppModule face mai ușoară utilizarea audio editor-ului Goldwave.
 
 ## Scurtături ##
 
+* NVDA+Shift+C: Comută vorbirea comenzilor în timpul editării audio.
 * Control+Shift+P: Anunță poziția curentă a melodiei.
 * NVDA+Shift+R: Anunță timpul rămas pentru melodia care este în curs de
   editare.
-* Control+NVDA+3: Anunță informații referitor la selecțiunea audio.
-* Control+NVDA+2: Anunță durata totală a fișierului audio.
 * Control+NVDA+1: Anunță canalul în care editezi.
-* NVDA+Shift+C: Comută vorbirea comenzilor în timpul editării audio.
+* Control+NVDA+2: Anunță durata totală a fișierului audio.
+* Control+NVDA+3: Anunță informații referitor la selecțiunea audio.
 * Control+NVDA+4: Anunță nivelul zoom.
 
 Pentru mai multe informații despre Goldwave și comenzile de tastatură,
@@ -22,6 +22,10 @@ vizitează manualul Goldwave.
 
 Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
 și cu NVDA 2014.1 sau mai nou.
+
+## Versiunea 16.12
+
+* Schema versiunii este acum an.lună în loc de major.minor.
 
 ## Modificări aduse în versiunea 4.0
 

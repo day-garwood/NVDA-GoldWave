@@ -9,12 +9,12 @@
 
 ## द्रुतमार्ग ##
 
+* नेत्रवाणी+Shift+C: ध्वनी सम्पादन गर्दा आदेश वाचनको  साटोफेरो गर्छ ।
 * Control+Shift+P: हालको ट्याकको स्थान बताउने छ ।
 * NVDA+Shift+R: Announces remaining time for the currently editing track.
-* Control+नेत्रवाणी+3: ध्वनि चयनको शारांश बताउने छ ।
-* Control+नेत्रवाणी+2: ध्वनी फाइलको कूल लम्वाई बताउने छ ।
 * Control+नेत्रवाणी+1: तपाइले सम्पादन गर्दै गरेको च्यानेल बताउने छ ।
-* नेत्रवाणी+Shift+C: ध्वनी सम्पादन गर्दा आदेश वाचनको  साटोफेरो गर्छ ।
+* Control+नेत्रवाणी+2: ध्वनी फाइलको कूल लम्वाई बताउने छ ।
+* Control+नेत्रवाणी+3: ध्वनि चयनको शारांश बताउने छ ।
 * Control+नेत्रवाणी+4: अभिवर्धनको स्तर बताउने छ ।
 
 गोल्डवेभ र कुञ्जीपाटी आदेश बारे थप जानकारि लिन   गोल्डवेभ सम्बन्धित
@@ -22,6 +22,10 @@
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
 or later is required to use add-on 2.0.
+
+## Version 16.12
+
+* Version scheme is now year.month instead of major.minor.
 
 ## Changes for 4.0
 
