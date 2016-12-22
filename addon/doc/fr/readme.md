@@ -28,7 +28,7 @@ module complémentaire 2.0.
 
 ## Version 16.12
 
-* Version scheme is now year.month instead of major.minor.
+* La version système est maintenant year.month au lieu de major.minor.
 
 ## Changements pour la version 4.0
 
