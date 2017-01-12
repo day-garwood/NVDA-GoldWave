@@ -11,10 +11,8 @@ import braille
 from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING, ROLE_STATUSBAR
 addonHandler.initTranslation()
 from NVDAObjects.IAccessible import IAccessible
-import scriptHandler
 from NVDAObjects.window import Window, DisplayModelEditableText, edit # Various buttons and numeric edit fields.
 import ui
-import tones
 
 # Detect multiple instances of GoldWave.
 multiInstance = 0
@@ -40,7 +38,6 @@ class SoundWindow(IAccessible):
 		fgChild = self.appModule._get_statusBars(statBarIndex)
 		if not fgChild.displayText:
 			fgChild.redraw()
-		#fgChild = self.appModule._get_statusBars(statBarIndex, refill=True)
 		try:
 			info = fgChild.getChild(childIndex).displayText
 		except IndexError:
@@ -56,11 +53,6 @@ class SoundWindow(IAccessible):
 		if multiInstance > 1: audioPos = self.getStatusInfo(0, 3)
 		# Raw means return just the raw text, used in remaining time and other position scripts.
 		if raw: return audioPos
-		"""fgChild = self.appModule._get_statusBars(0)
-		# Current cursor position.
-		if not fgChild.displayText:
-			fgChild.redraw()
-		audioPos = fgChild.getChild(3).displayText.replace('\t', '')"""
 		# Translators: Presented when audio track position information can not be located.
 		return _("Track position not available") if not audioPos or " " in audioPos else audioPos
 
@@ -69,14 +61,6 @@ class SoundWindow(IAccessible):
 		global multiInstance
 		audioSelection = self.getStatusInfo(0, 2)
 		if multiInstance > 1: audioSelection = self.getStatusInfo(0, 2)
-		"""try:
-			if not fgChild.displayText: fgChild.redraw()
-		except AttributeError:
-			fgChild = self.appModule._get_statusBars(0, refill=True)
-		try:
-			audioSelection = fgChild.getChild(2).displayText
-		except IndexError:
-			pass"""
 		return audioSelection
 
 	def getAudioSelectionParsed(self):
@@ -84,7 +68,6 @@ class SoundWindow(IAccessible):
 		# Store the parsed strings into a list.
 		parsed = self.getAudioSelection()
 		return parsed.split()
-
 
 	# Get channel information. But first, a few constants (to help translators):
 	audioChannelValues={
@@ -121,14 +104,6 @@ class SoundWindow(IAccessible):
 		audioChannels = self.getStatusInfo(0, 0)
 		if audioChannels not in self.audioChannelValues.keys():
 			audioChannels = self.getStatusInfo(0, 0)
-		"""try:
-			if not fgChild.displayText: fgChild.redraw()
-		except AttributeError:
-			fgChild = self.appModule._get_statusBars(0, refill=True)
-		try:
-			audioChannels = fgChild.firstChild.displayText
-		except IndexError:
-			return"""
 		return audioChannels
 
 	def getTrackLength(self):
@@ -181,11 +156,6 @@ class SoundWindow(IAccessible):
 			zoomLevel = self.getStatusInfo(1, 1)
 		except IndexError:
 			zoomLevel = self.getStatusInfo(1, 1)
-		"""try:
-			if not fgChild.displayText: fgChild.redraw()
-		except AttributeError:
-			fgChild = self.appModule._get_statusBars(1, refill=True)
-		zoomLevel = fgChild.getChild(1).displayText"""
 		return zoomLevel
 
 	# Audio editing scripts:
