@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 16.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-02-03 07:05+1000\n"
-"PO-Revision-Date: 2017-02-28 14:11+0700\n"
+"PO-Revision-Date: 2017-03-08 10:50+0700\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -71,7 +71,7 @@ msgstr "Đã chọn nhiều kênh"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr "Đãchọn tất cả kênh"
+msgstr "Đã chọn tất cả kênh"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
@@ -205,22 +205,22 @@ msgstr "Thông báo cấp độ phóng to của Audio."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr "Bạn cần phải trong cửa sổ âm thanh để bật/tắt thông báo phím lệnh"
+msgstr "Bạn cần phải ở trong cửa sổ âm thanh để bật/tắt thông báo phím lệnh"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
-msgstr "Bật thông báo phím lệnh"
+msgstr "Bật đọc phím lệnh"
 
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
-msgstr "Tắt thông báo phím lệnh"
+msgstr "Tắt đọc phím lệnh"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
 msgid ""
 "Toggles whether NVDA announces editing commands during audio recording or "
 "playback."
 msgstr ""
-"Bật tắt thông báo của NVDA  về các phím lệnh liên quan đến chỉnh sửa trong "
+"Bật tắt thông báo của NVDA  về các phím lệnh liên quan đến biên tập trong "
 "khi phát hay thu âm."
 
 #. Add-on summary, usually the user visible name of the addon.
@@ -232,5 +232,5 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr ""
-"Một add-on nhằm tăng tính tiếp cận và sử dụng trình biên tập a6mthanh "
+"Một add-on nhằm tăng tính tiếp cận và sử dụng trình biên tập âm thanh "
 "Goldwave."
