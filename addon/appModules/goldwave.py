@@ -5,9 +5,11 @@
 
 import appModuleHandler
 import api
+import globalVars
 from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING, ROLE_STATUSBAR
 from NVDAObjects.IAccessible import IAccessible
 from NVDAObjects.window import Window, DisplayModelEditableText, edit # Various buttons and numeric edit fields.
+from logHandler import log
 import ui
 import addonHandler
 addonHandler.initTranslation()
@@ -33,13 +35,21 @@ class SoundWindow(IAccessible):
 			speech.speakMessage(text)
 
 	# A master function to obtain needed info from status bars.
+	# #17.05: because this is prone to failure, insert debug messages if asked.
 	def getStatusInfo(self, statBarIndex, childIndex):
+		if globalVars.appArgs.debugLogging:
+			log.debug("Status bar object fetcher")
+			log.debug("Status %s, child index %s"%(statBarIndex, childIndex))
 		fgChild = self.appModule._get_statusBars(statBarIndex)
+		if globalVars.appArgs.debugLogging:
+			log.debug("Status bar found" if fgChild.role == ROLE_STATUSBAR else "Status bar not found")
 		if not fgChild.displayText:
 			fgChild.redraw()
 		try:
 			info = fgChild.getChild(childIndex).displayText
 		except IndexError:
+			if globalVars.appArgs.debugLogging:
+				log.debug("Object cannot be located")
 			return ""
 		return info
 
