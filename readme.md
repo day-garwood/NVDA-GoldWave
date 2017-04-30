@@ -20,6 +20,11 @@ For more information about Goldwave and keyboard commands, refer to Goldwave Man
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or later is required to use add-on 2.0.
 
+## Version 17.05
+
+* Added ability to provide debug information when NVDA is running with debug logging enabled (NVDA 2017.1 or later).
+* Updated translations.
+
 ## Version 16.12
 
 * Version scheme is now year.month instead of major.minor.
