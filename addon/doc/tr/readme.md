@@ -79,6 +79,6 @@ or later is required to use add-on 2.0.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=gwv
+[1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
-[2]: http://addons.nvda-project.org/files/get.php?file=gwv-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev

@@ -81,6 +81,6 @@ Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=gwv
+[1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
-[2]: http://addons.nvda-project.org/files/get.php?file=gwv-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
