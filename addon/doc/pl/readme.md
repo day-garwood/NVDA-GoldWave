@@ -26,14 +26,14 @@ Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. NVDA
 
 * Version scheme is now year.month instead of major.minor.
 
-## Changes for 4.0
+## Zmiany dla wersji 4.0
 
 * Add-on repository has moved to GitHub (now located at
   https://github.com/josephsl/goldwave).
 * Performance improvements when looking up information such as channel name
   and other status information.
 
-## Changes for 3.0
+## Zmiany dla wersji 3.0
 
 * Added a command to announce remaining time for the current track
   (NvDA+Shift+R).
@@ -79,6 +79,6 @@ Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. NVDA
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=gwv
+[1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
-[2]: http://addons.nvda-project.org/files/get.php?file=gwv-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev

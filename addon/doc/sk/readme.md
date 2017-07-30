@@ -78,6 +78,6 @@ NVDA od verzie 2014.1
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=gwv
+[1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
-[2]: http://addons.nvda-project.org/files/get.php?file=gwv-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
