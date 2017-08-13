@@ -10,7 +10,7 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
 * NvDA+Shift+C: przełącza wypowiadanie komend podczas edycji audio.
 * Control+Shift+P: odczytuje aktualną pozycję ścieżki.
-* NVDA+Shift+R: Announces remaining time for the currently editing track.
+* NVDA+Shift+R: Oznajmia pozostały czas dla aktualnie edytowanego utworu.
 * Control+NVDA+1: wypowiada aktualnie edytowany kanał.
 * Control+NVDA+2: wypowiada całkowitą długość pliku dźwiękowego.
 * Control+NvDA+3: czyta informacje o aktualnym zaznaczeniu audio.
@@ -22,23 +22,23 @@ podręczniku Goldwave.
 Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. NVDA
 2014.1 lub nowsze jest wymagane do używania dodatku 2.0.
 
-## Version 16.12
+## Wersja 16.12
 
-* Version scheme is now year.month instead of major.minor.
+* Schemat wersjonowania został zmienioni i teraz on brzmi rok.miesiąc
+  zamiast duży.mniejszy.
 
 ## Zmiany dla wersji 4.0
 
-* Add-on repository has moved to GitHub (now located at
-  https://github.com/josephsl/goldwave).
-* Performance improvements when looking up information such as channel name
-  and other status information.
+* Repozytorium tego dodatku został przeniesiony na Github (teraz znajdujący
+  się pod adresem https://github.com/josephsl/goldwave).
+* Ulepszona wydajność przy pobieraniu informacji takich jak nazwa kanału i
+  inne informacje statusu.
 
 ## Zmiany dla wersji 3.0
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
-* Slight improvements when announcing status information such as channel
-  information.
+* Dodana komenda wypowiadania trwania aktualnego utworu (NvDA+Shift+R).
+* Trochę większe ulepszenia czytania informacji stanu takich jak informacji
+  o kanale.
 
 ## Zmiany dla wersji 2.0
 
