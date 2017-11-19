@@ -19,11 +19,11 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 	"addon_description" : _("An add-on for enhancing access and usage of the Goldwave audio editor."),
 	# version
-	"addon_version" : "17.05",
+	"addon_version" : "17.11",
 	# Author(s)
 	"addon_author" : u"Joseph Lee <joseph.lee22590@gmail.com>, David Parduhn <xkill85@gmx.net>, Mesar Hameed <mhameed@src.gnome.org>",
 	# URL for the add-on documentation support
-	"addon_url" : 'http://addons.nvda-project.org',
+	"addon_url" : 'https://addons.nvda-project.org',
 	# File name for the add-on help file.
 	"addon_docFileName" : "readme.html"
 }
