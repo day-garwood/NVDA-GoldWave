@@ -38,18 +38,18 @@ class SoundWindow(IAccessible):
 	# #17.05: because this is prone to failure, insert debug messages if asked.
 	def getStatusInfo(self, statBarIndex, childIndex):
 		if globalVars.appArgs.debugLogging:
-			log.debug("Status bar object fetcher")
-			log.debug("Status %s, child index %s"%(statBarIndex, childIndex))
+			log.debug("GWV: Status bar object fetcher")
+			log.debug("GWV: Status %s, child index %s"%(statBarIndex, childIndex))
 		fgChild = self.appModule._get_statusBars(statBarIndex)
 		if globalVars.appArgs.debugLogging:
-			log.debug("Status bar found" if fgChild.role == ROLE_STATUSBAR else "Status bar not found")
+			log.debug("GWV: Status bar found" if fgChild.role == ROLE_STATUSBAR else "Status bar not found")
 		if not fgChild.displayText:
 			fgChild.redraw()
 		try:
 			info = fgChild.getChild(childIndex).displayText
 		except IndexError:
 			if globalVars.appArgs.debugLogging:
-				log.debug("Object cannot be located")
+				log.debug("GWV: Object cannot be located")
 			return ""
 		return info
 
@@ -388,26 +388,6 @@ class AppModule(appModuleHandler.AppModule):
 		global multiInstance
 		multiInstance+=1
 
-	# Announcement of commands is enabled by default.
-	commandAnnouncement = True
-
-	def script_toggleCommandAnnouncement(self, gesture):
-		focus = api.getFocusObject()
-		if focus.windowClassName not in ("TWaveView", "TSoundForm"):
-			# Translators: Presented when command announcement toggle is unavailable.
-			ui.message(_("You need to be in sound window to toggle command announcement"))
-		else:
-			self.commandAnnouncement = not self.commandAnnouncement
-			# Handle the announcement of this script separately, since we need to speak even when false.
-			if self.commandAnnouncement:
-				# Translators: Presented when command announcement messages are turned on in Goldwave.
-				ui.message(_("command announcement on"))
-			else:
-				# Translators: Presented when command announcement messages are turned off in Goldwave.
-				ui.message(_("command announcement off"))
-	# Translators: Input help mode message for command announcement command in Goldwave.
-	script_toggleCommandAnnouncement.__doc__=_("Toggles whether NVDA announces editing commands during audio recording or playback.")
-
 	# Presets and control windows: Work with buttons with custom window class names.
 
 	def event_NVDAObject_init(self, obj):
@@ -453,6 +433,26 @@ class AppModule(appModuleHandler.AppModule):
 					self.statusBarCache[index] = child
 					index+=1
 		return self.statusBarCache[statBarIndex]
+
+	# Announcement of commands is enabled by default.
+	commandAnnouncement = True
+
+	def script_toggleCommandAnnouncement(self, gesture):
+		focus = api.getFocusObject()
+		if focus.windowClassName not in ("TWaveView", "TSoundForm"):
+			# Translators: Presented when command announcement toggle is unavailable.
+			ui.message(_("You need to be in sound window to toggle command announcement"))
+		else:
+			self.commandAnnouncement = not self.commandAnnouncement
+			# Handle the announcement of this script separately, since we need to speak even when false.
+			if self.commandAnnouncement:
+				# Translators: Presented when command announcement messages are turned on in Goldwave.
+				ui.message(_("command announcement on"))
+			else:
+				# Translators: Presented when command announcement messages are turned off in Goldwave.
+				ui.message(_("command announcement off"))
+	# Translators: Input help mode message for command announcement command in Goldwave.
+	script_toggleCommandAnnouncement.__doc__=_("Toggles whether NVDA announces editing commands during audio recording or playback.")
 
 	__gestures={
 		"kb:nvda+shift+c":"toggleCommandAnnouncement",
