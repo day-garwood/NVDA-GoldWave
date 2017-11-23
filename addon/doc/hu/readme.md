@@ -24,6 +24,12 @@ Megjegyzés: A GoldWave 6 futtatásához 64-bites Windows 7 vagy újabb verzió
 szükséges. A kiegészítő 2.0 verziójának használatához NVDA 2014.1 vagy újabb
 kiadás szükséges.
 
+## Version 17.05
+
+* Added ability to provide debug information when NVDA is running with debug
+  logging enabled (NVDA 2017.1 or later).
+* Updated translations.
+
 ## Version 16.12
 
 * Version scheme is now year.month instead of major.minor.

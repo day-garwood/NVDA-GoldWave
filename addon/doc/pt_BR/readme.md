@@ -22,6 +22,12 @@ manual do Goldwave.
 Nota: O GoldWave 6 exige a versão 64-bit do Windows 7 ou posterior. Exige-se
 o NVDA 2014.1 ou posterior para usar o complemento 2.0.
 
+## Version 17.05
+
+* Added ability to provide debug information when NVDA is running with debug
+  logging enabled (NVDA 2017.1 or later).
+* Updated translations.
+
 ## Versão 16.12
 
 * O esquema de versão agora é ano.mês ao invés de maior.menor.

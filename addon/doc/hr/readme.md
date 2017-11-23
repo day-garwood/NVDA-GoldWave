@@ -23,6 +23,12 @@ goldwave uputstvo.
 Upozorenje: goldwave 6 zahtjeva 64 bitnu inačicu windowsa 7 ili
 novijeg. NVDA 2014.1 or later is required to use add-on 2.0.
 
+## Version 17.05
+
+* Added ability to provide debug information when NVDA is running with debug
+  logging enabled (NVDA 2017.1 or later).
+* Updated translations.
+
 ## Version 16.12
 
 * Version scheme is now year.month instead of major.minor.

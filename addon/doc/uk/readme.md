@@ -23,6 +23,12 @@ Goldwave.
 Примітка: GoldWave 6 вимагає 64-бітну версію Windows 7 або новішу. Для
 використання додатка версії 2.0 необхідна NVDA 2014.1 або новіша версія.
 
+## Version 17.05
+
+* Added ability to provide debug information when NVDA is running with debug
+  logging enabled (NVDA 2017.1 or later).
+* Updated translations.
+
 ## Version 16.12
 
 * Version scheme is now year.month instead of major.minor.

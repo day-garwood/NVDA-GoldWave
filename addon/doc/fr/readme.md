@@ -26,6 +26,13 @@ Note : GoldWave 6 requiert la version 64 bits de Windows 7 ou version
 ultérieure. NVDA 2014.1 ou version ultérieure est requis pour utiliser le
 module complémentaire 2.0.
 
+## Version 17.05
+
+* Ajout de la possibilité de fournir des informations de débogage lorsque
+  NVDA est en cours d'exécution avec le journal activé en mode débogage
+  (NVDA 2017.1 ou version ultérieure).
+* Traductions mises à jour.
+
 ## Version 16.12
 
 * La version système est maintenant year.month au lieu de major.minor.

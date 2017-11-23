@@ -23,6 +23,12 @@ vizitează manualul Goldwave.
 Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
 și cu NVDA 2014.1 sau mai nou.
 
+## Version 17.05
+
+* Added ability to provide debug information when NVDA is running with debug
+  logging enabled (NVDA 2017.1 or later).
+* Updated translations.
+
 ## Versiunea 16.12
 
 * Schema versiunii este acum an.lună în loc de major.minor.
