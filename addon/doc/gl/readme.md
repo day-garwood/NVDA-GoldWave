@@ -25,11 +25,12 @@ Nota: GoldWave 6 require da versión de 64 bits de Windows 7 ou
 posterior. Requírese do NVDA 2014.1 ou posterior para utilizar o complemento
 2.0.
 
-## Version 17.05
+## Versión 17.05
 
-* Added ability to provide debug information when NVDA is running with debug
-  logging enabled (NVDA 2017.1 or later).
-* Updated translations.
+* Engadida a capacidade de proporcionar información de depuración cando o
+  NVDA está en execución co rexistro de depuración habilitado (NVDA 2017.1
+  ou posterior).
+* Traduccións actualizadas.
 
 ## Versión 16.12
 

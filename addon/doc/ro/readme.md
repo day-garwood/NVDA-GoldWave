@@ -23,11 +23,11 @@ vizitează manualul Goldwave.
 Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
 și cu NVDA 2014.1 sau mai nou.
 
-## Version 17.05
+## Versiunea 17.05
 
-* Added ability to provide debug information when NVDA is running with debug
-  logging enabled (NVDA 2017.1 or later).
-* Updated translations.
+* S-a adăugat abilitatea de furnizare a informațiilor diagnosticării atunci
+  când NVDA rulează cu diagnosticarea activată.
+* Traduceri actualizate.
 
 ## Versiunea 16.12
 
@@ -42,8 +42,8 @@ Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
 
 ## Modificări aduse în versiunea 3.0
 
-* A fost adăugată  o comandă pentru a anunța timpul rămas pentru melodia
-  curentă (NVDA+Shift+R).
+* S-a adăugat o comandă pentru a anunța timpul rămas pentru melodia curentă
+  (NVDA+Shift+R).
 * Ceva îmbunătățiri referitor la primirea informațiilor de stare cum ar fi
   informații despre canal.
 
@@ -63,8 +63,8 @@ Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
 
 ## Modificări aduse în versiunea 1.2
 
-* A fost fixată o problemă unde NVDA avea dificultăți anunțând câteva
-  câmpuri de editare.
+* S-a rezolvat o problemă datorită căreia  NVDA avea dificultăți anunțând
+  câteva câmpuri de editare.
 * Traduceri noi și actualizate.
 * Te rugăm să reții! Din cauza schimbărilor recente în NVDA, selecția audio
   și alte comenzi de status pot să nu funcționeze cum ar trebui la unele
@@ -76,7 +76,7 @@ Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
 * Rezumatul selecției audio este prezentat în mai multe limbi decât Engleza.
 * Mai multe comenzi de anunțare au fost adăugate incusiv mișcarea poziției
   și ștergerea sau tăierea operațiunilor.
-* A fost rezolvată o problemă în câmpurile de editare numerice cum ar fi
+* S-a rezolvat o problemă în câmpurile de editare numerice cum ar fi
   dialoguri diverse de efecte unde nu se vorbea nimic sau se pronunța numele
   incorect a câmpului de editare.
 * Traduceri noi și actualizate.
