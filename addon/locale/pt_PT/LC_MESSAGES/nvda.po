@@ -8,16 +8,15 @@ msgstr ""
 "Project-Id-Version: goldwave 16.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-02-03 07:05+1000\n"
-"PO-Revision-Date: 2017-11-10 11:51-0000\n"
-"Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
+"PO-Revision-Date: 2017-12-05 18:54+0000\n"
+"Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; rui.fontes@tiflotecnia.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Portuguese\n"
-"X-Poedit-Country: PORTUGAL\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 2.0.1\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -160,7 +159,7 @@ msgstr "Não é possível obter o resumo da seleção de áudio. Por favor, fech
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
-msgstr "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
+msgstr "{audioSelectionStart} para {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
@@ -225,4 +224,3 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "Um extra para melhorar o acesso e o uso do editor de áudio Goldwave."
-
