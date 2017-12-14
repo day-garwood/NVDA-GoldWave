@@ -11,7 +11,7 @@ Ova skripta unapređuje pristup i korištenje Goldwave uređivača zvuka.
 * NvDA+Shift+C: uključuje /isključuje izgovor komandi prilikom uređivanja
   zvuka.
 * Control+Shift+P: izvještava trenutnu poziciju u zapisu.
-* NVDA+Shift+R: Announces remaining time for the currently editing track.
+* NVDA+Shift+R: Izgovara preostalo vrijeme zapisa koji se trenutno uređuje.
 * Control+NVDA+1: Izgovara kanal kojeg uređujete.
 * Control+NVDA+2: Izgovara cjelokupnu dužinu zvučne datoteke.
 * Control+NvDA+3: izgovara sadržaj audio označavanja.
@@ -23,29 +23,29 @@ goldwave uputstvo.
 Upozorenje: goldwave 6 zahtjeva 64 bitnu inačicu windowsa 7 ili
 novijeg. NVDA 2014.1 or later is required to use add-on 2.0.
 
-## Version 17.05
+## Inačica 17.05
 
-* Added ability to provide debug information when NVDA is running with debug
-  logging enabled (NVDA 2017.1 or later).
+* Dodana mogućnost slanja informacija o greškama kad je NVDA pokrenut i
+  omogućen otkrivač grešaka (NVDA inačica 2017.1 ili novija).
 * Updated translations.
 
-## Version 16.12
+## Inačica 16.12
 
-* Version scheme is now year.month instead of major.minor.
+* Shema inačice je sada godina.mjesec umjesto glavna.minimalna.
 
 ## Changes for 4.0
 
-* Add-on repository has moved to GitHub (now located at
+* Repozitorij dodatka je premješten na GitHub (sada je dostupan na
   https://github.com/josephsl/goldwave).
-* Performance improvements when looking up information such as channel name
-  and other status information.
+* Poboljšanja pri pregledavanju informacija kao što su ime kanala i druge
+  statusne informacije.
 
 ## Changes for 3.0
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
-* Slight improvements when announcing status information such as channel
-  information.
+* Dodana naredba za izgovaranje preostalog vremena trenutnog zapisa
+  (NVDA+Shift+R).
+* Manja poboljšanja pri izgovoru statusnih informacija kao što je
+  informacija o kanalu.
 
 ## Izmjene u inačici 2.0
 
