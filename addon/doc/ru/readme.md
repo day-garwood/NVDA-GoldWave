@@ -26,11 +26,11 @@
 позднюю. Для использования дополнения версии 2.0 требуется NVDA 2014.1 или
 выше.
 
-## Version 17.05
+## Версия 17.05
 
 * Added ability to provide debug information when NVDA is running with debug
   logging enabled (NVDA 2017.1 or later).
-* Updated translations.
+* Обновлены переводы.
 
 ## Версия 16.12
 

@@ -9,7 +9,7 @@ Goldwave
 
 ## Tastenkürzel ##
 
-* NvDA+Umschalt+C: Schaltet die ansage von Befehlen während der
+* NVDA+Umschalt+C: Schaltet die ansage von Befehlen während der
   Audiobearbeitung ein oder aus.
 * strg+Umschalt+P: gibt die aktuelle Audio-Position an.
 * NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
@@ -23,7 +23,7 @@ Weitere Informationen über Goldwave und seine Tastenkombinationen finden Sie
 im Benutzerhandbuch von Goldwave
 
 Bitte beachten Sie: GoldWave 6 benötigt die 64-bit-Version von Windows 7
-oder neuer. NVDA 2014.1 oder neuer ist erforderlich, um Version 2 dieser
+oder neuer. NVDA 2014.1 oder höher ist erforderlich, um Version 2 dieser
 Erweiterung einzusetzen.
 
 ## Version 17.05
@@ -36,13 +36,13 @@ Erweiterung einzusetzen.
 
 * Das Versionsschema lautet nun Jahr.Monat.
 
-## Änderungen bis 4.0
+## Änderungen in 4.0
 
 * Das Repository der Erweiterung ist nach GitHub umgezogen
-  (https://github.com/josephsl/goldwave).
+  [https://github.com/josephsl/goldwave](https://github.com/josephsl/goldwave).
 * Leichte Verbesserungen bei der Ansage von Statusinformationen zu Kanälen.
 
-## Änderungen bis 3.0
+## Änderungen in 3.0
 
 * Befehl zur Ausgabe der Restzeit des aktuellen Titels hinzugefügt ( NVDA +
   Umschalt + R).
