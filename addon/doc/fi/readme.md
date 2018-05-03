@@ -9,10 +9,10 @@ käytettävyyttä.
 
 ## Pikanäppäimet ##
 
-* NVDA+Shift+C: Ottaa käyttöön tai poistaa käytöstä äänenmuokkauskomentojen
+* NVDA+Vaihto+C: Ottaa käyttöön tai poistaa käytöstä äänenmuokkauskomentojen
   puhumisen.
-* Control+Shift+P: Ilmoittaa nykyisen kohdan ääniraidalla.
-* NVDA+Shift+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
+* Control+Vaihto+P: Ilmoittaa nykyisen kohdan ääniraidalla.
+* NVDA+Vaihto+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
 * Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
 * Control+NVDA+3: Kertoo ääniraidan valitun kohdan yhteenvedon.
