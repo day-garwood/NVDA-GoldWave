@@ -16,57 +16,58 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 * Control+NvDA+3: czyta informacje o aktualnym zaznaczeniu audio.
 * Control+NVDA+4: wypowiada aktualny poziom powiększenia.
 
-Więcej informacji o Goldwave i jego klawiszach skrótu, znajduje się w
+Więcej informacji o Goldwave i jego klawiszach skrótów, znajduje się w
 podręczniku Goldwave.
 
 Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. NVDA
 2014.1 lub nowsze jest wymagane do używania dodatku 2.0.
 
-## Version 17.05
+## Wersja 17.05
 
-* Added ability to provide debug information when NVDA is running with debug
-  logging enabled (NVDA 2017.1 or later).
-* Updated translations.
+* Dodano możliwość dostarczania informacji o debugowaniu po uruchomieniu
+  NVDA w trybie debugowania (NVDA w wersji 2017.1 lub nowszej).
+* Aktualizacja tłumaczeń
 
 ## Wersja 16.12
 
-* Schemat wersjonowania został zmienioni i teraz on brzmi rok.miesiąc
+* Schemat wersjonowania został zmieniony i teraz brzmi on rok.miesiąc
   zamiast duży.mniejszy.
 
 ## Zmiany dla wersji 4.0
 
-* Repozytorium tego dodatku został przeniesiony na Github (teraz znajdujący
+* Repozytorium tego dodatku zostało przeniesione na Github (teraz znajdujący
   się pod adresem https://github.com/josephsl/goldwave).
 * Ulepszona wydajność przy pobieraniu informacji takich jak nazwa kanału i
   inne informacje statusu.
 
 ## Zmiany dla wersji 3.0
 
-* Dodana komenda wypowiadania trwania aktualnego utworu (NvDA+Shift+R).
+* Dodano komendę wypowiadania czasu trwania aktualnego utworu
+  (NvDA+Shift+R).
 * Trochę większe ulepszenia czytania informacji stanu takich jak informacji
   o kanale.
 
 ## Zmiany dla wersji 2.0
 
-* Wsparcie dla GoldWave 6, włączając w to 64-bitową wersję GoldWave (zobacz
+* Wsparcie dla GoldWave 6, włącznie z 64-bitową wersją GoldWave (zobacz
   powyższą uwagę).
-* Pomoc dodatku dostępna w managerze dodatków (NVDA 2014.3 and later).
+* Pomoc dodatku dostępna w managerze dodatków (NVDA 2014.3 i nowsze).
 * NVDA oznajmia wybrany kanał po wciśnięciu polecenia zmiany zaznaczonego
   kanału np. Control+Shift+L dla zaznaczenia lewego kanału.
 * Rozwiązano różne problemy z edycją pól numerycznych, np. pole cenzora i
   wybór czasu w oknie miksowania, w tym zaznaczanie tekstu, aktualizowanie
   wartości itd.
-* Przełącznik oznajmiania komend jest pamiętany po przejściu do innych
+* Przełącznik oznajmiania komend jest zapamiętywany po przejściu do innych
   programów.
 
 ## Zmiany dla wersji 1.2
 
-* Poprawiono problem, że NVDA miał trudności z odczytywaniem niektórych pól
+* Poprawiono problem dotyczący odczytywania przez NVDA niektórych pól
   edycji.
 * Nowe i zaktualizowane tłumaczenia.
 * Proszę zwrócić uwagę, że w związku z ostatnimi zmianami w NVDA,
   zaznaczanie audio i inne polecenia statusu mogą nie działać na niektórych
-  systemach, tak jak to byłoby oczekiwane.
+  systemach zgodnie z oczekiwaniami.
 
 ## Zmiany dla wersji 1.1
 
