@@ -21,6 +21,11 @@
 ملحوظة: يتطلب goldwave 6 ويندوز 7 أو ما بعده من طراز 64 بايت. مطلوب تثبيت
 nvda 2014.1 لتثبيت الإصدار 2.0 من الإضافة.
 
+## Version 18.07
+
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a track.
+
 ## Version 17.05
 
 * Added ability to provide debug information when NVDA is running with debug

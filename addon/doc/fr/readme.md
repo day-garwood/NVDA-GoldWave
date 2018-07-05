@@ -26,6 +26,11 @@ Note : GoldWave 6 requiert la version 64 bits de Windows 7 ou version
 ultérieure. NVDA 2014.1 ou version ultérieure est requis pour utiliser le
 module complémentaire 2.0.
 
+## Version 18.07
+
+* Correction d'un problème où les zéros en tête ne s'affichaient pas lorsque
+  vous essayiez d'obtenir le temps restant pour une piste.
+
 ## Version 17.05
 
 * Ajout de la possibilité de fournir des informations de débogage lorsque

@@ -23,6 +23,11 @@ vizitează manualul Goldwave.
 Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
 și cu NVDA 2014.1 sau mai nou.
 
+## Version 18.07
+
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a track.
+
 ## Versiunea 17.05
 
 * S-a adăugat abilitatea de furnizare a informațiilor diagnosticării atunci
