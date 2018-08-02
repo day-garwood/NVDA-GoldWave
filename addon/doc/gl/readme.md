@@ -25,10 +25,10 @@ Nota: GoldWave 6 require da versión de 64 bits de Windows 7 ou
 posterior. Requírese do NVDA 2014.1 ou posterior para utilizar o complemento
 2.0.
 
-## Version 18.07
+## Versión 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a track.
+* Arranxado un erro polo que os ceros á esquerda non se amosaban ó obter o
+  tempo restante para unha pista.
 
 ## Versión 17.05
 
