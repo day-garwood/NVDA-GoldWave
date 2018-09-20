@@ -24,6 +24,11 @@ Megjegyzés: A GoldWave 6 futtatásához 64-bites Windows 7 vagy újabb verzió
 szükséges. A kiegészítő 2.0 verziójának használatához NVDA 2014.1 vagy újabb
 kiadás szükséges.
 
+## Version 18.07
+
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a track.
+
 ## Version 17.05
 
 * Added ability to provide debug information when NVDA is running with debug

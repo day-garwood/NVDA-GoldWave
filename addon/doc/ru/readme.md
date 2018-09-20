@@ -26,6 +26,11 @@
 позднюю. Для использования дополнения версии 2.0 требуется NVDA 2014.1 или
 выше.
 
+## Version 18.07
+
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a track.
+
 ## Версия 17.05
 
 * Added ability to provide debug information when NVDA is running with debug

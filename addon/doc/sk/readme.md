@@ -24,6 +24,11 @@ Pozor! Goldwave vo verzii 6 vyžaduje 64-bitovú verziu Windows 7 alebo
 novší. Ak chcete používať doplnok pre goldwave od verzie 2.0, musíte mať
 NVDA od verzie 2014.1
 
+## Version 18.07
+
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a track.
+
 ## Version 17.05
 
 * Added ability to provide debug information when NVDA is running with debug

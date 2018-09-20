@@ -26,6 +26,12 @@ Bitte beachten Sie: GoldWave 6 benötigt die 64-bit-Version von Windows 7
 oder neuer. NVDA 2014.1 oder höher ist erforderlich, um Version 2 dieser
 Erweiterung einzusetzen.
 
+## Version 18.07
+
+* Es wurde ein Problem behoben, bei dem führende Nullen nicht angezeigt
+  wurden, wenn versucht wurde, die verbleibende Zeit für einen Track zu
+  erhalten.
+
 ## Version 17.05
 
 * Möglichkeit der Anzeige von Debug-Informationen wurde hinzugefügt, wenn

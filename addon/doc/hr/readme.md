@@ -23,6 +23,11 @@ goldwave uputstvo.
 Upozorenje: goldwave 6 zahtjeva 64 bitnu inačicu windowsa 7 ili
 novijeg. NVDA 2014.1 or later is required to use add-on 2.0.
 
+## Version 18.07
+
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a track.
+
 ## Inačica 17.05
 
 * Dodana mogućnost slanja informacija o greškama kad je NVDA pokrenut i

@@ -25,6 +25,11 @@ brugervejledningen til Goldwave.
 Bemærk: GoldWave 6 kræver 64-bit version af Windows 7 eller senere. NVDA
 2014.1 eller nyere kræves for at anvende tilføjelse 2.0.
 
+## Version 18.07
+
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a track.
+
 ## Version 17.05
 
 * Tilføjet mulighed for at give fejlfindingsoplysninger, når NVDA kører med

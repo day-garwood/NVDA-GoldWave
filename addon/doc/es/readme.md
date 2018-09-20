@@ -26,6 +26,11 @@ remítete al manual de Goldwave.
 Nota: GoldWave 6 requiere la versión de 64 bits de Windows 7 o posterior. Se
 requiere NVDA 2014.1 o posterior para utilizar el complemento 2.0.
 
+## Versión 18.07
+
+* Solucionado un error por el que los ceros a la izquierda no se mostraban
+  al obtener el tiempo restante para una pista.
+
 ## Versión 17.05
 
 * Añadida la capacidad de proporcionar información de depuración cuando NVDA

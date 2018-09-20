@@ -1,4 +1,4 @@
-# GoldWave #
+# Goldwave #
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
@@ -11,7 +11,7 @@ käytettävyyttä.
 
 * NVDA+Vaihto+C: Ottaa käyttöön tai poistaa käytöstä äänenmuokkauskomentojen
   puhumisen.
-* Control+Vaihto+P: Ilmoittaa nykyisen kohdan ääniraidalla.
+* Control+Vaihto+P: Ilmoittaa nykyisen kohdan raidalla.
 * NVDA+Vaihto+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
 * Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
@@ -24,6 +24,11 @@ näppäinkomennoista.
 Huomaa, että GoldWave 6 tarvitsee Windows 7:n 64-bittisen version tai
 uudemman. Lisäosan 2.0-version käyttämiseen tarvitaan NVDA 2014.1 tai
 uudempi.
+
+## Versio 18.07
+
+* Korjattu ongelma, jossa etunollia ei näytetty yritettäessä hakea raidan
+  jäljellä olevaa aikaa.
 
 ## Versio 17.05
 
