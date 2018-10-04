@@ -77,7 +77,7 @@ o NVDA 2014.1 ou posterior para usar o complemento 2.0.
 
 ## Mudanças na 1.1
 
-* Suporte a anúncios de mensagens em braile.
+* Suporte a anúncios de mensagens em braille.
 * O resumo da seleção de áudio é apresentado noutros idiomas além de Inglês.
 * Adicionados novos anúncios de comandos incluindo movimentos na posição da
   divisão e operações de apagamento/exclusão.
