@@ -175,14 +175,20 @@ class SoundWindow(IAccessible):
 	# Audio editing scripts:
 
 	def script_dropStartMarker(self, gesture):
-		gesture.send()
-		# Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-		self.message(_("Start: {startMarkerPos}").format(startMarkerPos = self.getAudioSelectionParsed()[0]))
+		try:
+			gesture.send()
+			# Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+			self.message(_("Start: {startMarkerPos}").format(startMarkerPos = self.getAudioSelectionParsed()[0]))
+		except:
+			pass
 
 	def script_dropFinishMarker(self, gesture):
-		gesture.send()
-		# Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-		self.message(_("Finish: {finishMarkerPos}").format(finishMarkerPos = self.getAudioSelectionParsed()[2]))
+		try:
+			gesture.send()
+			# Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+			self.message(_("Finish: {finishMarkerPos}").format(finishMarkerPos = self.getAudioSelectionParsed()[2]))
+		except:
+			pass
 
 	def script_playSelection(self, gesture):
 		gesture.send()
@@ -279,14 +285,17 @@ class SoundWindow(IAccessible):
 	script_announceAudioPosition.__doc__=_("Announces the current audio position in seconds.")
 
 	def script_announceAudioSelection(self, gesture):
-		# Parse this string to get individual info such as marker positions.
-		audioSelectionParsed = self.getAudioSelectionParsed()
-		if not audioSelectionParsed:
-			# Translators: Presented when there is no audio selection summary available.
-			self.message(_("Unable to obtain audio selection summary. Please close and reopen the audio track."))
-		else:
-			# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-			self.message(_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(audioSelectionStart = audioSelectionParsed[0], audioSelectionEnd = audioSelectionParsed[2], audioSelectionLength = audioSelectionParsed[3]))
+		try:
+			# Parse this string to get individual info such as marker positions.
+			audioSelectionParsed = self.getAudioSelectionParsed()
+			if not audioSelectionParsed:
+				# Translators: Presented when there is no audio selection summary available.
+				self.message(_("Unable to obtain audio selection summary. Please close and reopen the audio track."))
+			else:
+				# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+				self.message(_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(audioSelectionStart = audioSelectionParsed[0], audioSelectionEnd = audioSelectionParsed[2], audioSelectionLength = audioSelectionParsed[3]))
+		except:
+			pass
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceAudioSelection.__doc__=_("Announces a summary on audio selection info such as selection duration.")
 
