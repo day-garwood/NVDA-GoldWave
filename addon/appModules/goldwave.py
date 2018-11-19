@@ -70,12 +70,17 @@ class SoundWindow(IAccessible):
 		global multiInstance
 		audioSelection = self.getStatusInfo(0, 2)
 		if multiInstance > 1: audioSelection = self.getStatusInfo(0, 2)
+		if globalVars.appArgs.debugLogging:
+			log.debug("GWV: status bar length: %s"%len(audioSelection))
 		return audioSelection
 
 	def getAudioSelectionParsed(self):
 		# Get marker positions and selection duration.
 		# Return the list of substrings to be handled by individual scripts.
-		return self.getAudioSelection().split()
+		audioSelectionParsed = self.getAudioSelection().split()
+		if globalVars.appArgs.debugLogging:
+			log.debug("GWV: parsed status bar length: %s"%len(audioSelectionParsed))
+		return audioSelectionParsed
 
 	# Get channel information. But first, a few constants (to help translators):
 	audioChannelValues={
