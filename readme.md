@@ -20,6 +20,11 @@ For more information about Goldwave and keyboard commands, refer to Goldwave Man
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or later is required to use add-on 2.0.
 
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when performing certain GoldWave commands with command announcement set to off (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
+
 ## Version 18.07
 
 * Fixed an issue where leading zeroes would not be displayed when trying to obtain remaining time for a trakc.
