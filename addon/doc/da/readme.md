@@ -27,8 +27,8 @@ Bemærk: GoldWave 6 kræver 64-bit version af Windows 7 eller senere. NVDA
 
 ## Version 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a track.
+* Løst et problem, hvor ledende nul ikke ville blive vist, når man forsøgte
+  at opnå resterende tid for et spor.
 
 ## Version 17.05
 
