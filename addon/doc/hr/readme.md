@@ -3,6 +3,7 @@
 * Autori: Joseph Lee, NVDA doprinositelji.
 * Preuzmite [stabilnu inačicu][1]
 * Preuzmite [razvojnu inačicu][2]
+* NVDA compatibility: 2017.3 to 2019.1
 
 Ova skripta unapređuje pristup i korištenje Goldwave uređivača zvuka.
 

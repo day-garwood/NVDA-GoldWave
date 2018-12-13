@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2016-11-21 20:41+0100\n"
-"Last-Translator: Patryk <patric3031@wp.pl>\n"
+"PO-Revision-Date: 2018-12-11 09:13+0100\n"
+"Last-Translator: Piotr Rakowski <piter.9521@wp.pl>\n"
 "Language-Team: Polish <killer@tyflonet.com>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 2.2\n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -75,7 +75,7 @@ msgstr "Zaznaczone wszystkie kanały"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 msgid "Start: {startMarkerPos}"
-msgstr "Start: {startMarkerPos}"
+msgstr "Początek: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 msgid "Finish: {finishMarkerPos}"
@@ -151,7 +151,7 @@ msgstr "Oznajmia aktualną pozycję w sekundach."
 
 #. Translators: Presented when there is no audio selection summary available.
 msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
-msgstr "Nie mogę uzyskać informacji o zaznaczeniu. Zamknij i otwórz ponownie plik audio."
+msgstr "Nie można uzyskać informacji o zaznaczeniu. Zamknij i otwórz ponownie plik audio."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
@@ -174,7 +174,7 @@ msgstr "Oznajmia całkowitą długość ścieżki audio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr "Nie mogę uzyskać informacji o pozostałym czasie"
+msgstr "Nie można uzyskać informacji o pozostałym czasie"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 msgid "Selected channel: {audioChannel}"
@@ -217,4 +217,3 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
 msgstr "Dodatek zwiększający dostępność i użyteczność edytora dźwięku Goldwave."
-

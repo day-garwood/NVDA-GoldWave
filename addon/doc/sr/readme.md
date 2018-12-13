@@ -3,6 +3,7 @@
 * Autori: Joseph Lee, NVDA saradnici.
 * Preuzmi[stabilnu verziju][1]
 * Preuzmi[razvojnu verziju][2]
+* NVDA compatibility: 2017.3 to 2019.1
 
 Ovaj dodatak za aplikacije poboljšava korišćenje programa za uređivanje
 zvuka Gold wave
