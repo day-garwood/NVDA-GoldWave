@@ -6,7 +6,8 @@
 * NVDA-kompatibilitet: 2017.3 til 2019.1
 
 Dette app-modul forbedrer adgangen til og brugen af lydredigeringsprogrammet
-Goldwave.
+Goldwave. Bemærk: GoldWave-programmet har ikke en dansk sprogpakke
+tilgængelig. Derfor er tilføjelsen på nuværende tidspunkt ikke oversat.
 
 ## Genveje ##
 
