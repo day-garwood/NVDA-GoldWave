@@ -5,8 +5,8 @@
 * Télécharger [version de développement][2]
 * Compatibilité NVDA: 2017.3 à 2019.1
 
-Ce module complémentaire améliore l'accès et l'utilisation de l'éditeur
-audio Goldwave.
+Cette extension améliore l'accès et l'utilisation de l'éditeur audio
+Goldwave.
 
 ## Raccourcis ##
 
@@ -45,8 +45,8 @@ module complémentaire 2.0.
 
 ## Changements pour la version 4.0
 
-* Le référentiel du module complémentaire a été déplacé à GitHub (maintenant
-  est localisé à https://github.com/josephsl/goldwave).
+* Le référentiel de l'extension a été déplacé à GitHub (maintenant localisé
+  à https://github.com/josephsl/goldwave).
 * Amélioration des performances lorsque vous cherchez des informations comme
   le nom du canal et d'autres informations du statut.
 
@@ -54,24 +54,23 @@ module complémentaire 2.0.
 
 * Ajout d'une commande pour annoncer le temps restant pour la piste actuelle
   (NVDA+Maj+R).
-* Légère amélioration en annonçant des informations du statut  telles que
+* Légère amélioration dans l'annonce d'informations de statut  telles que
   les informations du canal.
 
 ## Changements pour la version 2.0
 
 * Support pour GoldWave 6, y compris la version 64-bit de GoldWave (voir la
   note ci-dessus).
-* L'aide du module complémentaire est désormais accessible à partir du
-  Gestionnaire de modules complémentaires (NVDA 2014.3 et versions
-  ultérieur).
+* L'aide de l'extension est désormais accessible à partir du Gestionnaire
+  d'extensions (NVDA 2014.3 et versions ultérieur).
 * NVDA annonce maintenant le canal sélectionné si vous appuyez sur les
   commandes de sélection de canaux tels que Ctrl+Maj+L pour le canal gauche.
 * Divers problèmes avec les zones d'édition numérique comme le détecteur de
   zone et le sélecteur de temps dans la boîte de dialogue du mélangeur a été
   corrigé, y compris la sélection de texte, mise à jour des valeurs et ainsi
   de suite.
-* Le paramètre pour la commande des annonces il se souviendra lors du
-  basculement à d'autres programmes.
+* Le paramètre d'annonce de commande sera mémorisé lors du basculement vers
+  d'autres programmes.
 
 ## Changements pour la version 1.2
 
