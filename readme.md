@@ -3,6 +3,7 @@
 * Authors: Joseph Lee, NVDA contributors.
 * Download [stable version][1]
 * Download [development version][2]
+* NVDA compatibility: 2017.3 to 2019.1
 
 This app module enhances access and usage of Goldwave audio editor.
 
