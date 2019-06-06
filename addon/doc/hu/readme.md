@@ -3,7 +3,7 @@
 * Készítők: Joseph Lee, NVDA közreműködők
 * [Stabil verzió][1]
 * [Fejlesztői verzió][2]
-* NVDA compatibility: 2017.3 to 2019.1
+* NVDA compatibility: 2017.3 to 2019.2
 
 Ez a kiegészítő javítja a Goldvawe hangszerkesztő hozzáférhetőségét, és
 használatát.

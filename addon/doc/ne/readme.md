@@ -3,7 +3,7 @@
 * लेखकहरू: जोसेफ ली, नेत्रवाणी योगदान कर्ताहरू
 * Download [stable version][1]
 * Download [development version][2]
-* NVDA compatibility: 2017.3 to 2019.1
+* NVDA compatibility: 2017.3 to 2019.2
 
 यो उपकरणले गोल्डवेभ नामक ध्वनी सम्पादकको पहुँच र प्रयोगमा सहजता सिर्जना
 गर्ने छ । .

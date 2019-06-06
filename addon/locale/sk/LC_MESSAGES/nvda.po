@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2016-02-26 02:48-0800\n"
+"PO-Revision-Date: 2019-06-06 15:41+0200\n"
 "Last-Translator: Noelia Ruiz Martínez <nrm1977@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 2.2.3\n"
 "Language: sk\n"
+"Language-Team: \n"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -23,7 +23,7 @@ msgstr "Pozícia v súbore nie je dostupná"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "Informácia o kanaly nie je dostupná"
+msgstr "Informácia o kanály nie je dostupná"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
@@ -177,7 +177,7 @@ msgstr "Oznámy celkovú dĺžku audio stopy."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr ""
+msgstr "Nie je možné zistiť zostávajúci čas pre aktuálnu skladbu"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 msgid "Selected channel: {audioChannel}"
