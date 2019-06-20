@@ -3,7 +3,7 @@
 * Autorzy: Joseph Lee, współpracownicy NVDA.
 * Pobierz [wersja stabilna][1]
 * Pobierz [wersja rozwojowa][2]
-* NVDA compatibility: 2017.3 to 2019.2
+* Zgodność z wersjami NVDA: 2017.3 do 2019.2
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
@@ -23,10 +23,10 @@ podręczniku Goldwave.
 Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. NVDA
 2014.1 lub nowsze jest wymagane do używania dodatku 2.0.
 
-## Version 18.07
+## Wersja 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a track.
+* Naprawiony błąd w którym wiodące zera nie były wyświetlane gdy próbowało
+  się dostarczyć pozostały czas dla utworu aktualnego.
 
 ## Wersja 17.05
 
