@@ -247,6 +247,7 @@ class SoundWindow(IAccessible):
 
 	# Playback and recording:
 
+	@scriptHandler.script(gestures=["KB:f2", "KB:f3", "kb:f4"])
 	def script_play(self, gesture):
 		gesture.send()
 		# Translators: Presented when a track is playing in Goldwave.
@@ -262,11 +263,13 @@ class SoundWindow(IAccessible):
 		# Translators: Presented when fast forwarding a track in Goldwave.
 		self.message(_("fast forward"))
 
+	@scriptHandler.script(gestures=["kb:f7", "kb:control+f7"])
 	def script_pause(self, gesture):
 		gesture.send()
 		# Translators: Presented when pausing a track in Goldwave.
 		self.message(_("pause"))
 
+	@scriptHandler.script(gestures=["kb:f8", "kb:control+f8"])
 	def script_stop(self, gesture):
 		gesture.send()
 		# Translators: Presented when stopping a track in in Goldwave.
