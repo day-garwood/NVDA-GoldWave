@@ -1,11 +1,11 @@
-# Goldwave #
+# GoldWave #
 
 * Authors: Joseph Lee, NVDA contributors.
 * Download [stable version][1]
 * Download [development version][2]
-* NVDA compatibility: 2017.3 to 2019.1
+* NVDA compatibility: 2019.1 to 2019.2
 
-This app module enhances access and usage of Goldwave audio editor.
+This app module enhances access and usage of GoldWave audio editor.
 
 ## Shortcuts ##
 
@@ -17,9 +17,18 @@ This app module enhances access and usage of Goldwave audio editor.
 * Control+NvDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Announces the zoom level.
 
-For more information about Goldwave and keyboard commands, refer to Goldwave Manual.
+For more information about GoldWave and keyboard commands, refer to GoldWave Manual.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or later is required to use add-on 2.0.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-on, NVDA 2019.1 or later is required.
+
+## Version 19.08
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+
+## Version 18.11
+
+* NVDA will no longer play error tones or do nothing when performing various audio editing operations.
+* Certain dialogs (notably GoldWave's About dialog) is recognized as a proper dilaog.
 
 ## Version 18.12
 
