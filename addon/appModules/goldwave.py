@@ -115,7 +115,7 @@ class SoundWindow(IAccessible):
 	def getAudioChannels(self):
 		# Based on the constants above and the return value below, get channel information.
 		audioChannels = self.getStatusInfo(0, 0)
-		if audioChannels not in self.audioChannelValues.keys():
+		if audioChannels not in self.audioChannelValues:
 			audioChannels = self.getStatusInfo(0, 0)
 		return audioChannels
 
