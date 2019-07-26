@@ -6,6 +6,7 @@
 import appModuleHandler
 import api
 import globalVars
+import scriptHandler
 from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING, ROLE_STATUSBAR
 from NVDAObjects.IAccessible import IAccessible
 from NVDAObjects.window import Window, DisplayModelEditableText, edit # Various buttons and numeric edit fields.
@@ -346,6 +347,10 @@ class SoundWindow(IAccessible):
 	# Translators: Input help mode message for a Goldwave command.
 	script_announceZoomLevel.__doc__=_("Announces audio zoom level.")
 
+	# Change and announce zoom levels.
+	# All of them involve pressing the shift key, so just use a creative list comprehension.
+	@scriptHandler.script(gestures=["kb:shift+%s"%(command) for command in
+		["upArrow", "downArrow", "0", "1", "2", "3", "4", "5", "6", "a"]])
 	def script_changeZoomLevel(self, gesture):
 		gesture.send()
 		self.script_announceZoomLevel(gesture)
