@@ -1,4 +1,4 @@
-# Goldwave #
+# Goldwave (tilføjelse ikke oversat) #
 
 * Forfattere: Joseph Lee, NVDA bidragydere.
 * Download [stabil version][1]
