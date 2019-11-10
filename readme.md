@@ -26,11 +26,6 @@ Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-
 * Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
 * Added help message for sound window (accessible if Control Usage Assistant add-on is installed).
 
-## Version 18.11
-
-* NVDA will no longer play error tones or do nothing when performing various audio editing operations.
-* Certain dialogs (notably GoldWave's About dialog) is recognized as a proper dilaog.
-
 ## Version 18.12
 
 * NVDA will no longer appear to do nothing or play error tones when performing certain GoldWave commands with command announcement set to off (this may result in odd behaviors in some cases).
