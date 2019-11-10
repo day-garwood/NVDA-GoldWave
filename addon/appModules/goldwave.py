@@ -26,6 +26,10 @@ class SoundWindow(IAccessible):
 
 	scriptCategory = "GoldWave"
 
+	def _get_helpText(self):
+		# Translators: general help message for GoldWave sound window.
+		return _("This is GoldWave's sound window. You can use GoldWave commands to listen to and edit sound files. See GoldWave help for details.")
+
 	# Announcement of commands is enabled by default.
 	commandAnnouncement = True
 
