@@ -21,9 +21,10 @@ For more information about GoldWave and keyboard commands, refer to GoldWave Man
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-on, NVDA 2019.1 or later is required.
 
-## Version 19.08
+## Version 19.11
 
 * Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant add-on is installed).
 
 ## Version 18.11
 
