@@ -17,9 +17,9 @@ addon_info = {
 	"addon_summary" : _("GoldWave"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-	"addon_description" : _("An add-on for enhancing access and usage of the Goldwave audio editor."),
+	"addon_description" : _("An add-on for enhancing access and usage of the GoldWave audio editor."),
 	# version
-	"addon_version" : "19.08",
+	"addon_version" : "19.11",
 	# Author(s)
 	"addon_author" : u"Joseph Lee <joseph.lee22590@gmail.com>, David Parduhn <xkill85@gmx.net>, Mesar Hameed <mhameed@src.gnome.org>",
 	# URL for the add-on documentation support
