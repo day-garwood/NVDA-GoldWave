@@ -10,14 +10,19 @@ msgstr ""
 "POT-Creation-Date: 2015-10-23 07:00+1000\n"
 "PO-Revision-Date: 2017-11-15 13:02+0200\n"
 "Last-Translator: shmuel_naaman@yahoo.com\n"
-"Language-Team: Shmuel Retbi , Shmuel NaamanLanguage: he\n"
+"Language-Team: \n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.4\n"
-"Language-Team: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: he\n"
+
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -76,10 +81,12 @@ msgid "All channels selected"
 msgstr "כל הערוצים נבחרו"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "התחלה: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "סיום:  {finishMarkerPos}"
 
@@ -159,6 +166,7 @@ msgstr ""
 "לא ניתן להשיג מידע אודות קטע השמע שנבחר. נא לסגור את הרצועה ולפתוח אותה מחדש."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} עד {audioSelectionEnd} {audioSelectionLength}"
 
@@ -170,6 +178,7 @@ msgstr "הקראת מידע אודות הקטע שנבחר, כגון אורך ה
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "לא ניתן לזהות את אורך הרצועה. נא לסגור אותה ולפתוח אותה מחדש."
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "אורך הרצועה: {trackLength}"
 
@@ -182,6 +191,7 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "לא ניתן לזהות את הזמן הנותר בהשמעת הרצועה הנוכחית"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "נבחר ערוץ : {audioChannel}"
 
@@ -190,6 +200,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "הקראת זיהוי הערוץ שבעריכה."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "שיעור ההגדלה: {zoomLevel}"
 
@@ -222,5 +233,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "תוסף מיועד לשפר את הנגישות ואת השימוש בתוכנת עריכת האודיו GoldWave."

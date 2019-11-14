@@ -17,6 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.5\n"
 
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
+
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
 msgstr "Pozicija zapisa nije dostupna"
@@ -233,7 +239,8 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Dodatak koji poboljšava pristupačnost i upotrebljivost Goldwave programa za "
 "obradu zvuka."

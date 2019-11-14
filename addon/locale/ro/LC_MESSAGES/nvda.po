@@ -10,12 +10,18 @@ msgstr ""
 "POT-Creation-Date: 2016-02-12 07:00+1000\n"
 "PO-Revision-Date: 2017-03-05 17:45+0200\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
+"Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.9\n"
-"Language-Team: \n"
+
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -230,6 +236,7 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Un supliment pentru a îmbunătăți și ușura utilizarea programului GoldWave."

@@ -17,6 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
 
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
+
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
 msgstr "Posizione traccia non disponibile."
@@ -74,10 +80,12 @@ msgid "All channels selected"
 msgstr "Tutti i canali selezionati"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Inizio: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Fine: {finishMarkerPos}"
 
@@ -158,6 +166,7 @@ msgstr ""
 "riaprire la traccia audio."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} a {audioSelectionEnd} {audioSelectionLength}"
 
@@ -172,6 +181,7 @@ msgstr ""
 "Lunghezza traccia non disponibile. Si prega di chiudere e riaprire la "
 "traccia audio."
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Lunghezza traccia: {trackLength}"
 
@@ -184,6 +194,7 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "Impossibile stabilire il tempo restante per la traccia corrente"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Canale selezionato: {audioChannel}"
 
@@ -192,6 +203,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "Legge il canale audio che si sta modificando."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Livello zoom: {zoomLevel}"
 
@@ -227,7 +239,8 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Un componente aggiuntivo per migliorare l'accesso e l'utilizzo di Goldwave "
 "Audio Editor."

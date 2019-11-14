@@ -17,6 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2\n"
 
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
+
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
 msgstr "Informacja o pozycji ścieżki niedostępna."
@@ -74,10 +80,12 @@ msgid "All channels selected"
 msgstr "Zaznaczone wszystkie kanały"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Początek: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Koniec: {finishMarkerPos}"
 
@@ -150,10 +158,15 @@ msgid "Announces the current audio position in seconds."
 msgstr "Oznajmia aktualną pozycję w sekundach."
 
 #. Translators: Presented when there is no audio selection summary available.
-msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
-msgstr "Nie można uzyskać informacji o zaznaczeniu. Zamknij i otwórz ponownie plik audio."
+msgid ""
+"Unable to obtain audio selection summary. Please close and reopen the audio "
+"track."
+msgstr ""
+"Nie można uzyskać informacji o zaznaczeniu. Zamknij i otwórz ponownie plik "
+"audio."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} do {audioSelectionEnd} {audioSelectionLength}"
 
@@ -163,8 +176,11 @@ msgstr "Oznajmia informacje o zaznaczeniu, takie jak jego długość."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr "Nie można uzyskać informacji o długości audio. Proszę zamknąć plik, i otworzyć ponownie."
+msgstr ""
+"Nie można uzyskać informacji o długości audio. Proszę zamknąć plik, i "
+"otworzyć ponownie."
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Długość ścieżki: {trackLength}"
 
@@ -177,6 +193,7 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "Nie można uzyskać informacji o pozostałym czasie"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Wybrany kanał: {audioChannel}"
 
@@ -185,6 +202,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "Oznajmia kanał, który jest edytowany."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Poziom powiększenia: {zoomLevel}"
 
@@ -205,7 +223,9 @@ msgid "command announcement off"
 msgstr "Oznajmianie komend nie"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
-msgid "Toggles whether NVDA announces editing commands during audio recording or playback."
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
 msgstr "Przełącza oznajmianie komend podczas odtwarzania i nagrywania dźwięku."
 
 #. Add-on summary, usually the user visible name of the addon.
@@ -215,5 +235,7 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
-msgstr "Dodatek zwiększający dostępność i użyteczność edytora dźwięku Goldwave."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
+msgstr ""
+"Dodatek zwiększający dostępność i użyteczność edytora dźwięku Goldwave."

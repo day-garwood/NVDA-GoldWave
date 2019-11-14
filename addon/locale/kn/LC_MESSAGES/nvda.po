@@ -9,13 +9,19 @@ msgstr ""
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2015-06-19 07:00+1000\n"
 "PO-Revision-Date: 2015-08-10 14:33+0530\n"
+"Last-Translator: siddalingeshwar ingalagi <ingalagisiddu@gmail.com>\n"
+"Language-Team: kannada <ingalagisiddu@gmail.com>\n"
 "Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: siddalingeshwar ingalagi <ingalagisiddu@gmail.com>\n"
-"Language-Team: kannada <ingalagisiddu@gmail.com>\n"
 "X-Generator: Poedit 1.7.1\n"
+
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -152,14 +158,19 @@ msgid "Announces the current audio position in seconds."
 msgstr "ಪ್ರಸ್ತುತದ ಧ್ವನಿ ಸ್ಥಿತಿಯನ್ನು ಸೆಕೆಂಡ್ಸ್ನಲ್ಲಿ ಹೇಳುತ್ತದೆ."
 
 #. Translators: Presented when there is no audio selection summary available.
-msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
+msgid ""
+"Unable to obtain audio selection summary. Please close and reopen the audio "
+"track."
 msgstr ""
-"ಧ್ವನಿಯ ಆಯ್ಕೆಯ ಸಾರಾಂಶವನ್ನು ಪಡೆದುಕೊಳ್ಳಲು ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಹಾಡನ್ನು ಮುಚ್ಚಿರಿ ಮತ್ತು ಮತ್ತೊಮ್ಮೆ ತೆರೆಯಿರಿ,"
+"ಧ್ವನಿಯ ಆಯ್ಕೆಯ ಸಾರಾಂಶವನ್ನು ಪಡೆದುಕೊಳ್ಳಲು ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಹಾಡನ್ನು ಮುಚ್ಚಿರಿ ಮತ್ತು "
+"ಮತ್ತೊಮ್ಮೆ ತೆರೆಯಿರಿ,"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
-msgstr "{audioSelectionStart} ಇಂದ {audioSelectionEnd} ವರೆಗೆ {audioSelectionLength} ಇದೆ"
+msgstr ""
+"{audioSelectionStart} ಇಂದ {audioSelectionEnd} ವರೆಗೆ {audioSelectionLength} "
+"ಇದೆ"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
@@ -212,7 +223,9 @@ msgid "command announcement off"
 msgstr "ಆಜ್ಞೆಗಳನ್ನು ಹೇಳಬೇಡ"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
-msgid "Toggles whether NVDA announces editing commands during audio recording or playback."
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
 msgstr "ಧ್ವನಿಯನ್ನು ದಾಖಲಿಸುವಾಗ  ಅಥವಾ ಹಾಡುವಾಗ ಸಂಪಾದನೆಯ ಆದೇಶಗಳನ್ನು nvda ಹೇಳುತ್ತದೆ"
 
 #. Add-on summary, usually the user visible name of the addon.
@@ -222,7 +235,8 @@ msgstr "ಗೋಲ್ಡ್ ವೇವ್"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
-"ಇದು ಒಂದು ಹೆಚ್ಚುವರಿ ತಂತ್ರಾಂಶವಾಗಿದ್ದು ಧ್ವನಿ ಕಡತಗಳನ್ನು ಸಂಪಾದಿಸುವ / ತಿದ್ದುಪಡಿಗೊಳಿಸುವ ಸವಲತ್ತುಗಳನ್ನು "
-"ಹೊಂದಿದೆ."
+"ಇದು ಒಂದು ಹೆಚ್ಚುವರಿ ತಂತ್ರಾಂಶವಾಗಿದ್ದು ಧ್ವನಿ ಕಡತಗಳನ್ನು ಸಂಪಾದಿಸುವ / ತಿದ್ದುಪಡಿಗೊಳಿಸುವ "
+"ಸವಲತ್ತುಗಳನ್ನು ಹೊಂದಿದೆ."

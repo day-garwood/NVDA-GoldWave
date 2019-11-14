@@ -3,10 +3,9 @@
 * Autori: Joseph Lee, vari collaboratori di NVDA.
 * Scarica la [versione stabile][1]
 * Scarica la [versione in sviluppo][2]
-* Compatibilità con NVDA: dalla 2017.3 alla 2019.2
+* NVDA compatibility: 2019.1 to 2019.2
 
-Questo componente aggiuntivo migliora l'utilizzo e l'accessibilità per
-l'editor audio GoldWave 
+This app module enhances access and usage of GoldWave audio editor.
 
 ## Comandi rapidi: ##
 
@@ -20,18 +19,29 @@ l'editor audio GoldWave
 * Control+NvDA+3: legge alcune informazioni sull'audio  selezionato.
 * Control+NVDA+4: legge il livello zoom.
 
-Per maggiori informazioni su  Goldwave ed i comandi rapidi, consultare il
-Manuale del programma.
+For more information about GoldWave and keyboard commands, refer to GoldWave
+Manual.
 
-Nota: GoldWave 6 richiede la versione a 64-bit di windows 7 o superiori. E'
-necessario NVDA 2014.1 o superiore per la versione 2.0 del componente
-aggiuntivo.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
+add-on, NVDA 2019.1 or later is required.
+
+## Version 19.11
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant
+  add-on is installed).
+
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when
+  performing certain GoldWave commands with command announcement set to off
+  (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
 
 ## Version 18.07
 
-* Risolto un problema per cui gli zeri iniziali non dovrebbero essere
-  visualizzati quando si tenta di ottenere il tempo rimanente in una
-  traccia. 
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a trakc.
 
 ## Version 17.05
 

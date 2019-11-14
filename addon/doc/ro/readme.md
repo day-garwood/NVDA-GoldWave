@@ -3,9 +3,9 @@
 * Autori: Joseph Lee împreună cu contributorii NVDA.
 * Descarcă [Versiunea Stabilă][1]
 * Descarcă [Versiunea În Dezvoltare][2]
-* Compatibilitate NVDA: 2017.3 - 2019.2
+* NVDA compatibility: 2019.1 to 2019.2
 
-Acest AppModule face mai ușoară utilizarea audio editor-ului Goldwave.
+This app module enhances access and usage of GoldWave audio editor.
 
 ## Scurtături ##
 
@@ -18,16 +18,29 @@ Acest AppModule face mai ușoară utilizarea audio editor-ului Goldwave.
 * Control+NVDA+3: Anunță informații referitor la selecțiunea audio.
 * Control+NVDA+4: Anunță nivelul zoom.
 
-Pentru mai multe informații despre Goldwave și comenzile de tastatură,
-vizitează manualul Goldwave.
+For more information about GoldWave and keyboard commands, refer to GoldWave
+Manual.
 
-Notă: Goldwave 6 are nevoie de o versiune Windows 7 sau mai nouă cu 64 biți
-și cu NVDA 2014.1 sau mai nou.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
+add-on, NVDA 2019.1 or later is required.
+
+## Version 19.11
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant
+  add-on is installed).
+
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when
+  performing certain GoldWave commands with command announcement set to off
+  (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
 
 ## Versiunea 18.07
 
-* A fost rezolvată o problemă în care nu s-ar afișa zerouri de conducere
-  atunci când se încearcă să se obțină timpul rămas pentru o piesă.
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a trakc.
 
 ## Versiunea 17.05
 

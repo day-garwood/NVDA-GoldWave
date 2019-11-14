@@ -9,13 +9,19 @@ msgstr ""
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-02-03 07:05+1000\n"
 "PO-Revision-Date: 2017-03-08 10:50+0700\n"
+"Last-Translator: Dang Manh Cuong <cuong@trungtamsaomai.org>\n"
+"Language-Team: \n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Dang Manh Cuong <cuong@trungtamsaomai.org>\n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.12\n"
+
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -230,7 +236,8 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Một add-on nhằm tăng tính tiếp cận và sử dụng trình biên tập âm thanh "
 "Goldwave."

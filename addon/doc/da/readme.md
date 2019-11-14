@@ -3,11 +3,9 @@
 * Forfattere: Joseph Lee, NVDA bidragydere.
 * Download [stabil version][1]
 * Download [udviklingsversion][2]
-* NVDA-kompatibilitet: 2017.3 til 2019.2
+* NVDA compatibility: 2019.1 to 2019.2
 
-Dette app-modul forbedrer adgangen til og brugen af lydredigeringsprogrammet
-Goldwave. Bemærk: GoldWave-programmet har ikke en dansk sprogpakke
-tilgængelig. Derfor er tilføjelsen på nuværende tidspunkt ikke oversat.
+This app module enhances access and usage of GoldWave audio editor.
 
 ## Genveje ##
 
@@ -21,16 +19,29 @@ tilgængelig. Derfor er tilføjelsen på nuværende tidspunkt ikke oversat.
   lydfilen, du har valgt.
 * NVDA+Ctrl+4: Annoncere det aktuelle niveau for zoom.
 
-For yderligere oplysninger om Goldwave og tastatur kommandoer, læs
-brugervejledningen til Goldwave.
+For more information about GoldWave and keyboard commands, refer to GoldWave
+Manual.
 
-Bemærk: GoldWave 6 kræver 64-bit version af Windows 7 eller senere. NVDA
-2014.1 eller nyere kræves for at anvende tilføjelse 2.0.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
+add-on, NVDA 2019.1 or later is required.
+
+## Version 19.11
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant
+  add-on is installed).
+
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when
+  performing certain GoldWave commands with command announcement set to off
+  (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
 
 ## Version 18.07
 
-* Løst et problem, hvor ledende nul ikke ville blive vist, når man forsøgte
-  at opnå resterende tid for et spor.
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a trakc.
 
 ## Version 17.05
 

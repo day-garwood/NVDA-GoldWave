@@ -3,7 +3,7 @@
 * Autores: Joseph Lee, colaboradores de NVDA.
 * Descargar [Versión estable][1]
 * Descargar [versión de desarrollo][2]
-* Compatibilidad con NVDA: de 2017.3 a 2019.2
+* Compatibilidad con NVDA: de 2019.1 a 2019.2
 
 Este módulo de aplicación mejora el acceso y el uso del editor  de audio
 Goldwave.
@@ -25,12 +25,25 @@ Para obtener más información acerca de Goldwave y de las órdenes de teclado,
 remítete al manual de Goldwave.
 
 Nota: GoldWave 6 requiere la versión de 64 bits de Windows 7 o posterior. Se
-requiere NVDA 2014.1 o posterior para utilizar el complemento 2.0.
+requiere NVDA 2019.1 o posterior para usar este complemento.
+
+## Versión 19.11
+
+* Son necesarios Windows 7 SP1, GoldWave 6.x, y NVDA 2019.1 o posterior.
+* Se ha añadido un mensaje de ayuda para la ventana de sonido (accesible si
+  está instalado Control Usage Assistant).
+
+## Versión 18.12
+
+* NVDA ya no parecerá no hacer nada o reproducirá tonos de error al realizar
+  ciertas órdenes de GoldWave con el anuncio de órdenes desactivado (podría
+  causar un comportamiento defectuoso en ciertos casos).
+* Cambios internos para dar soporte a versiones futuras de NVDA.
 
 ## Versión 18.07
 
 * Solucionado un error por el que los ceros a la izquierda no se mostraban
-  al obtener el tiempo restante para una pista.
+  al intentar obtener el tiempo restante para una pista.
 
 ## Versión 17.05
 

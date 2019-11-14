@@ -3,10 +3,9 @@
 * Készítők: Joseph Lee, NVDA közreműködők
 * [Stabil verzió][1]
 * [Fejlesztői verzió][2]
-* NVDA compatibility: 2017.3 to 2019.2
+* NVDA compatibility: 2019.1 to 2019.2
 
-Ez a kiegészítő javítja a Goldvawe hangszerkesztő hozzáférhetőségét, és
-használatát.
+This app module enhances access and usage of GoldWave audio editor.
 
 ## Gyorsbillentyűk ##
 
@@ -18,17 +17,29 @@ használatát.
 * Control+NvDA+3: A kijelölt hang tulajdonságainak bemondása.
 * Control+NVDA+4: A nagyítási szint bemondása.
 
-Bővebb információt a programról és a hozzátartozó billentyűparancsokról a
-Goldwave súgójában talál.
+For more information about GoldWave and keyboard commands, refer to GoldWave
+Manual.
 
-Megjegyzés: A GoldWave 6 futtatásához 64-bites Windows 7 vagy újabb verzió
-szükséges. A kiegészítő 2.0 verziójának használatához NVDA 2014.1 vagy újabb
-kiadás szükséges.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
+add-on, NVDA 2019.1 or later is required.
+
+## Version 19.11
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant
+  add-on is installed).
+
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when
+  performing certain GoldWave commands with command announcement set to off
+  (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
 
 ## Version 18.07
 
 * Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a track.
+  obtain remaining time for a trakc.
 
 ## Version 17.05
 

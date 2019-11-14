@@ -10,12 +10,18 @@ msgstr ""
 "POT-Creation-Date: 2015-06-19 07:00+1000\n"
 "PO-Revision-Date: 2016-07-11 00:10+0800\n"
 "Last-Translator: \n"
+"Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.8\n"
-"Language-Team: \n"
+
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -74,10 +80,12 @@ msgid "All channels selected"
 msgstr "所有聲道已選取"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "開始: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "結束: {finishMarkerPos}"
 
@@ -156,6 +164,7 @@ msgid ""
 msgstr "無法獲取選取音軌的摘要，請關閉後重新開啟。"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr ""
 "從 {audioSelectionStart} 到 {audioSelectionEnd} 總長度 {audioSelectionLength}"
@@ -168,6 +177,7 @@ msgstr "讀出選取區段的摘要資訊（例如，音軌長度。）"
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "音軌總長度 無法使用，請關閉音軌後重新開啟。"
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "音軌總長度: {trackLength}"
 
@@ -180,6 +190,7 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "無法讀出目前音軌的剩餘時間，"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "選擇的聲到: {audioChannel}"
 
@@ -188,6 +199,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "讀出目前編輯的聲道"
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "縮放: {zoomLevel}"
 
@@ -220,5 +232,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "一個增強Goldwave聲音編輯軟體使用親和力的附加元件"

@@ -3,10 +3,9 @@
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
-* Yhteensopivuus: NVDA 2017.3-2019.2
+* NVDA compatibility: 2019.1 to 2019.2
 
-Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
-käytettävyyttä.
+This app module enhances access and usage of GoldWave audio editor.
 
 ## Pikanäppäimet ##
 
@@ -19,17 +18,29 @@ käytettävyyttä.
 * Control+NVDA+3: Kertoo ääniraidan valitun kohdan yhteenvedon.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
-Katso GoldWaven käsikirjasta lisätietoja ohjelmasta sekä sen
-näppäinkomennoista.
+For more information about GoldWave and keyboard commands, refer to GoldWave
+Manual.
 
-Huomaa, että GoldWave 6 tarvitsee Windows 7:n 64-bittisen version tai
-uudemman. Lisäosan 2.0-version käyttämiseen tarvitaan NVDA 2014.1 tai
-uudempi.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
+add-on, NVDA 2019.1 or later is required.
+
+## Version 19.11
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant
+  add-on is installed).
+
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when
+  performing certain GoldWave commands with command announcement set to off
+  (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
 
 ## Versio 18.07
 
-* Korjattu ongelma, jossa etunollia ei näytetty yritettäessä hakea raidan
-  jäljellä olevaa aikaa.
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a trakc.
 
 ## Versio 17.05
 

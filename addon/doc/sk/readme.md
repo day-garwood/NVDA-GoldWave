@@ -3,10 +3,9 @@
 * Autori: Joseph Lee, tím NVDA.
 * Stiahnuť [stabilnú verziu][1]
 * Stiahnuť [vývojovú verziu][2]
-* NVDA compatibility: 2017.3 to 2019.2
+* NVDA compatibility: 2019.1 to 2019.2
 
-Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru
-goldwave.
+This app module enhances access and usage of GoldWave audio editor.
 
 ## Klávesové skratky ##
 
@@ -18,17 +17,29 @@ goldwave.
 * Control+NVDA+3: Oznámy informácie o aktuálnom výbere.
 * Control+NVDA+4: oznamuje úroveň priblíženia.
 
-pre viac informácii o klávesových skratkách programu Goldwave si prečítajte
-návod k programu Goldwave.
+For more information about GoldWave and keyboard commands, refer to GoldWave
+Manual.
 
-Pozor! Goldwave vo verzii 6 vyžaduje 64-bitovú verziu Windows 7 alebo
-novší. Ak chcete používať doplnok pre goldwave od verzie 2.0, musíte mať
-NVDA od verzie 2014.1
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
+add-on, NVDA 2019.1 or later is required.
+
+## Version 19.11
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant
+  add-on is installed).
+
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when
+  performing certain GoldWave commands with command announcement set to off
+  (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
 
 ## Version 18.07
 
 * Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a track.
+  obtain remaining time for a trakc.
 
 ## Version 17.05
 

@@ -10,13 +10,20 @@ msgstr ""
 "POT-Creation-Date: 2017-02-03 07:05+1000\n"
 "PO-Revision-Date: 2017-12-05 18:54+0000\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
-"Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; rui.fontes@tiflotecnia.com>\n"
+"Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
+"rui.fontes@tiflotecnia.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 2.0.1\n"
+
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -153,8 +160,12 @@ msgid "Announces the current audio position in seconds."
 msgstr "Anuncia a posição actual de áudio em segundos."
 
 #. Translators: Presented when there is no audio selection summary available.
-msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
-msgstr "Não é possível obter o resumo da seleção de áudio. Por favor, feche e reabra a faixa de áudio."
+msgid ""
+"Unable to obtain audio selection summary. Please close and reopen the audio "
+"track."
+msgstr ""
+"Não é possível obter o resumo da seleção de áudio. Por favor, feche e reabra "
+"a faixa de áudio."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
@@ -163,11 +174,15 @@ msgstr "{audioSelectionStart} para {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
-msgstr "Faz um resumo das informações da selecção de áudio, tal como a duração da selecção, etc ."
+msgstr ""
+"Faz um resumo das informações da selecção de áudio, tal como a duração da "
+"selecção, etc ."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr "O comprimento da pista não está disponível. Por favor, feche e reabra a pista de áudio."
+msgstr ""
+"O comprimento da pista não está disponível. Por favor, feche e reabra a "
+"pista de áudio."
 
 #, python-brace-format
 msgid "Track length: {trackLength}"
@@ -212,8 +227,12 @@ msgid "command announcement off"
 msgstr "Anúncio de comando desligado"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
-msgid "Toggles whether NVDA announces editing commands during audio recording or playback."
-msgstr "Alterna entre anunciar ou não se o NVDA indica comandos de edição durante a gravação ou reprodução de áudio."
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr ""
+"Alterna entre anunciar ou não se o NVDA indica comandos de edição durante a "
+"gravação ou reprodução de áudio."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.
@@ -222,5 +241,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "Um extra para melhorar o acesso e o uso do editor de áudio Goldwave."

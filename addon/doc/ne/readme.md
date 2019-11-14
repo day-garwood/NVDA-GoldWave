@@ -3,10 +3,9 @@
 * लेखकहरू: जोसेफ ली, नेत्रवाणी योगदान कर्ताहरू
 * Download [stable version][1]
 * Download [development version][2]
-* NVDA compatibility: 2017.3 to 2019.2
+* NVDA compatibility: 2019.1 to 2019.2
 
-यो उपकरणले गोल्डवेभ नामक ध्वनी सम्पादकको पहुँच र प्रयोगमा सहजता सिर्जना
-गर्ने छ । .
+This app module enhances access and usage of GoldWave audio editor.
 
 ## द्रुतमार्ग ##
 
@@ -18,16 +17,29 @@
 * Control+नेत्रवाणी+3: ध्वनि चयनको शारांश बताउने छ ।
 * Control+नेत्रवाणी+4: अभिवर्धनको स्तर बताउने छ ।
 
-गोल्डवेभ र कुञ्जीपाटी आदेश बारे थप जानकारि लिन   गोल्डवेभ सम्बन्धित
-कागजातहरू हेर्नु होला । 
+For more information about GoldWave and keyboard commands, refer to GoldWave
+Manual.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
+add-on, NVDA 2019.1 or later is required.
+
+## Version 19.11
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant
+  add-on is installed).
+
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when
+  performing certain GoldWave commands with command announcement set to off
+  (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
 
 ## Version 18.07
 
 * Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a track.
+  obtain remaining time for a trakc.
 
 ## Version 17.05
 

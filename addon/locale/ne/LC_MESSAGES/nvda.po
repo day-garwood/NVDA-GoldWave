@@ -17,6 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
 
+#. Translators: general help message for GoldWave sound window.
+msgid ""
+"This is GoldWave's sound window. You can use GoldWave commands to listen to "
+"and edit sound files. See GoldWave help for details."
+msgstr ""
+
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
 msgstr "धुन सूचना उपलब्ध छैन ।"
@@ -74,10 +80,12 @@ msgid "All channels selected"
 msgstr "सबै च्यानेलहरु चयनित"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "थालनी: {startMarkerPos}"
 
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "समाप्त : {finishMarkerPos}"
 
@@ -157,6 +165,7 @@ msgstr ""
 "चयनित श्रवण सारांस प्राप्त गर्न सकिएन ।. कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} देखि {audioSelectionEnd} {audioSelectionLength}"
 
@@ -168,6 +177,7 @@ msgstr "श्रवण चयन शारांस सम्बन्धी �
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "धुनको लम्बाई उपलब्ध छैन । कृपया श्रवण धुनलाई बन्द गरेर फेरी खोल्नु होस् ।"
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "ट्याक लम्बाई : {trackLength}"
 
@@ -180,6 +190,7 @@ msgid "Cannot tell you remaining time for the current track"
 msgstr "चालू धुनको बाकि समय बताउन सकिदेन ।"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "चयनित मार्ग : {audioChannel}"
 
@@ -188,6 +199,7 @@ msgid "Announces the audio channel you are editing."
 msgstr "तपाइले सम्पादन गर्दै गरेको श्रवण मार्ग बताउने छ ।."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "अभिवर्धन स्तर : {zoomLevel}"
 
@@ -221,5 +233,6 @@ msgstr "गोल्डवेभ"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-msgid "An add-on for enhancing access and usage of the Goldwave audio editor."
+#, fuzzy
+msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "गोल्टवेभ नामक ध्वनी सम्पादकको पहुँच र प्रयोगमा सरलता ल्याउने उपकर्मी ।"
