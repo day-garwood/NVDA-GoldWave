@@ -1,22 +1,24 @@
 # Goldwave #
 
 * Autori: Joseph Lee, NVDA doprinositelji.
-* Preuzmite [stabilnu inačicu][1]
-* Preuzmite [razvojnu inačicu][2]
+* Preuzmi [stabilnu verziju][1]
+* Preuzmi [razvojnu verziju][2]
 * NVDA compatibility: 2019.1 to 2019.2
 
 This app module enhances access and usage of GoldWave audio editor.
 
-## prečaci ##
+## Prečaci ##
 
-* NvDA+Shift+C: uključuje /isključuje izgovor komandi prilikom uređivanja
-  zvuka.
-* Control+Shift+P: izvještava trenutnu poziciju u zapisu.
-* NVDA+Shift+R: Izgovara preostalo vrijeme zapisa koji se trenutno uređuje.
-* Control+NVDA+1: Izgovara kanal kojeg uređujete.
-* Control+NVDA+2: Izgovara cjelokupnu dužinu zvučne datoteke.
-* Control+NvDA+3: izgovara sadržaj audio označavanja.
-* Control+NVDA+4: Izvještava o razini povećanja.
+* NvDA+Shift+C: Uključuje ili isključuje najavljivanje naredbi prilikom
+  uređivanja audio trake.
+* Control+Shift+P: Najavljuje trenutačnu poziciju audio trake.
+* NVDA+Shift+R: Najavljuje preostalo vrijeme trake koja se trenutačno
+  uređuje.
+* Control+NVDA+1: Najavljuje kanal koji se uređuje.
+* Control+NVDA+2: Najavljuje cjelokupno trajanje audio datoteke.
+* Control+NvDA+3: Najavljuje sažete informacije o odabranom dijelu audio
+  trake.
+* Control+NVDA+4: Najavljuje razinu zumiranja.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
 Manual.
@@ -37,73 +39,73 @@ add-on, NVDA 2019.1 or later is required.
   (this may result in odd behaviors in some cases).
 * Internal changes to support future NVDA releases.
 
-## Version 18.07
+## Verzija 18.07
 
 * Fixed an issue where leading zeroes would not be displayed when trying to
   obtain remaining time for a trakc.
 
-## Inačica 17.05
+## Verzija 17.05
 
-* Dodana mogućnost slanja informacija o greškama kad je NVDA pokrenut i
-  omogućen otkrivač grešaka (NVDA inačica 2017.1 ili novija).
-* Updated translations.
+* Dodana je mogućnost slanja informacija o greškama kad je NVDA pokrenut s
+  uključenim otkrivačem grešaka (NVDA verzija 2017.1 ili novija).
+* Aktualizirani prijevodi.
 
-## Inačica 16.12
+## Verzija 16.12
 
-* Shema inačice je sada godina.mjesec umjesto glavna.minimalna.
+* Shema verzije je sada godina.mjesec umjesto glavna.sporedna.
 
-## Changes for 4.0
+## Promjene u verziji 4.0
 
 * Repozitorij dodatka je premješten na GitHub (sada je dostupan na
   https://github.com/josephsl/goldwave).
-* Poboljšanja pri pregledavanju informacija kao što su ime kanala i druge
-  statusne informacije.
+* Poboljšana performanca za pretraživanje informacija, kao što su ime kanala
+  i druge informacije o stanju.
 
-## Changes for 3.0
+## Promjene u verziji 3.0
 
-* Dodana naredba za izgovaranje preostalog vremena trenutnog zapisa
+* Dodana je naredba za najavljivanje preostalog vremena trenutačne trake
   (NVDA+Shift+R).
-* Manja poboljšanja pri izgovoru statusnih informacija kao što je
-  informacija o kanalu.
+* Manja poboljšanja pri najavljivanju informacija o stanju, kao što su
+  informacije o kanalu.
 
-## Izmjene u inačici 2.0
+## Promjene u verziji 2.0
 
-* Podrška za Gold Wave 6, uključujući 64 bitnu inačicu goldwavea (pogledajte
+* Podrška za GoldWave 6, uključujući 64-bitnu verziju GoldWavea (pogledajte
   napomenu iznad).
-* Pomoći dodatka sada se može pristupiti iz upravitelja dodataka (NVDA
-  2014.3 i noviji).
-* NVDA sada izgovara označeni kanal kada pritisnete prečace za označavanje
-  kanala poput Control+Shift+L za lijevi kanal.
-* razni problemi sa numeričkim poljima za uređivanje, kao što su to polje
-  censor i označivać vremena u dijaloškom okviru za miksanje su ispravljene,
-  uključujući označavanje teksta, osvježavanje vrijednosti i tako dalje.
-* Obavještavanje o izgovoru prečaca su izgovorena kad se prebacujete na
+* Pomoć dodatka je sada dostupna u upravljaču dodataka (NVDA 2014.3 i
+  noviji).
+* NVDA sada najavljuje odabrani kanal tijekom pritiskanja prečaca za biranje
+  kanala, kao što je Control+Shift+L za lijevi kanal.
+* Ispravljeni su razni problemi s numeričkim poljima za uređivanje, kao što
+  su polje censor i označivač vremena u dijaloškom okviru za miksanje,
+  uključujući označavanje teksta, aktualiziranje vrijednosti i tako dalje.
+* Postavke za najavljivanje prečaca će se zapamtiti prilikom prelaženja na
   druge programe.
 
-## Promjene u inačici 1.2
+## Promjene u verziji 1.2
 
-* Ispravljene greške označavanja i izgovaranja polja za uređivanje u nekim
-  situacijama.
-* novi i osvježeni prijevodi.
-* Imajte na umu da zbog zadnjih promjena u NVDA, prečaci za označavanje
-  zvuka i ostali prečaci neće možda raditi onako kako se to očekuje na nekim
-  sustavima.
+* Ispravljena je greška, gdje je NVDA imao poteškoće najaviti neka polja za
+  uređivanje.
+* Novi i aktualizirani prijevodi.
+* Napomena: zbog nedavnih promjena u NVDA čitaču, prečaci za biranje audio
+  snimke i ostali prečaci za stanja, na nekim sustavima možda neće raditi
+  onako kako se to očekuje.
 
-## Promjene u inačici 1.1
+## Promjene u verziji 1.1
 
-* Podrška prikaz poruka na brajičnom pismu.
-* Sadržaj označenog zvuka je prezentiran i na drugim jezicima osim
-  engleskog.
-* Dodane nove obavjesti o prečacima uključujući cue poziciju kretanja i
-  brisanje / trimming operacije.
-* Ispravljena greška u numeričkim poljima za uređivanje kao što su to razni
-  dijaloški okviri efekata gdje jje oznaka polja čitana polovično ili j
-  nema.
-* novi i osvježeni prijevodi.
+* Podrška za najavljivanje poruka u brajici.
+* Sažetak o odabranom dijelu audio trake se prikazuje i na drugim jezicima
+  osim na engleskom.
+* Dodana su nova najavljivanja za prečace, uključujući prečac za pomicanje
+  pozicije signala te operacije za brisanje i kraćenje.
+* Ispravljena je greška u numeričkim poljima za uređivanje kao što su razni
+  dijaloški okviri efekata, gdje se ništa nije čitalo ili se čitalo krivo
+  polje.
+* Novi i aktualizirani prijevodi.
 
-## promjene u inačici 1.0
+## Promjene u verziji 1.0
 
-* Prva inačica.
+* Prva verzija.
 
 [[!tag dev stable]]
 

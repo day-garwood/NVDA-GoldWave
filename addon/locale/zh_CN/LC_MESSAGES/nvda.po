@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 18.03\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-02-08 16:54+0100\n"
-"PO-Revision-Date: 2019-01-09 07:50+0800\n"
+"PO-Revision-Date: 2019-11-15 07:28+0800\n"
 "Last-Translator: dingpengyu <dingpengyu06@gmail.com>\n"
 "Language-Team: NVDASimplified Chinese team All volunteers <Copyright (C) "
 "2010-2019>\n"
@@ -16,13 +16,15 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #. Translators: general help message for GoldWave sound window.
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"这是GoldWave的声音窗口。您可以使用GoldWave命令来收听和编辑声音文件。有关详细"
+"信息，请参见GoldWave帮助。"
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -156,7 +158,7 @@ msgstr "录音"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
-msgstr "以秒未单位朗读当前音频位置"
+msgstr "以秒为单位朗读当前音频位置。"
 
 #. Translators: Presented when there is no audio selection summary available.
 msgid ""
@@ -210,7 +212,7 @@ msgstr "朗读音频的放大等级。"
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
-msgstr "您必须处于声音窗口才能进行命令朗读切换。"
+msgstr "您必须处于声音窗口才能进行命令朗读切换"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
@@ -233,6 +235,5 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "一个提高音频编辑器 Goldwave 的可访问性和提供小贴士的插件。"

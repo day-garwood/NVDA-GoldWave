@@ -8,20 +8,23 @@ msgstr ""
 "Project-Id-Version: goldwave 3.3\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2016-02-12 07:00+1000\n"
-"PO-Revision-Date: 2017-03-05 17:45+0200\n"
+"PO-Revision-Date: 2019-11-16 14:41+0200\n"
 "Last-Translator: Florian Ionașcu <florianionascu@hotmail.com>\n"
 "Language-Team: \n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #. Translators: general help message for GoldWave sound window.
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"Aceasta este fereastra de sunet a GoldWave. Puteți utiliza comenzile "
+"GoldWave pentru a a asculta și a edita fișiere de audio. Consultați "
+"documentația GoldWave pentru mai multe informații."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -29,7 +32,7 @@ msgstr "Poziția nu este valabilă"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "Informațiia canalului nu este valabilă."
+msgstr "Informațiia canalului nu este valabilă"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
@@ -49,7 +52,7 @@ msgstr "dreapta"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr "Centru"
+msgstr "centru"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
@@ -73,11 +76,11 @@ msgstr "dreapta laterală"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr "Au fost selectate mai multe canale."
+msgstr "Canale multiple selectate"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr "Toate canalele au fost selectate."
+msgstr "Toate canalele selectate"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
@@ -91,7 +94,7 @@ msgstr "Finalizare: {finishMarkerPos}"
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
-msgstr "redă selecțiunea"
+msgstr "Redă selecțiunea"
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
@@ -131,7 +134,7 @@ msgstr "șters"
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
-msgstr "Redă"
+msgstr "redă"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
@@ -151,7 +154,7 @@ msgstr "stop"
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
-msgstr "Înregistrează"
+msgstr "înregistrează"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -190,7 +193,7 @@ msgstr "Anunță durata totală a pistei audio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr "Nu îți pot spune timpul rămas pentru pista audio curentă."
+msgstr "Nu îți pot spune timpul rămas pentru pista audio curentă"
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
@@ -213,15 +216,15 @@ msgstr "Anunță nivelul măririi audio."
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
 msgstr ""
-"Trebuie să fii în fereastra de sunet pentru a comuta anunțarea de comandă."
+"Trebuie să fii în fereastra de sunet pentru a comuta anunțarea de comandă"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
-msgstr "Anunțarea de comandă spre"
+msgstr "anunț comandă activat"
 
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
-msgstr "Anunțarea de comandă a fost dezactivată."
+msgstr "anunț comandă dezactivat"
 
 #. Translators: Input help mode message for command announcement command in Goldwave.
 msgid ""
@@ -236,7 +239,7 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
-"Un supliment pentru a îmbunătăți și ușura utilizarea programului GoldWave."
+"Un supliment care îmbunătățește accesul și utilizarea editorului audio "
+"Goldwave."

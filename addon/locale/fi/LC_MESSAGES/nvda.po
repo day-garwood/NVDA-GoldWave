@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: GoldWave\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2018-06-29 23:13+0200\n"
-"Last-Translator: Jani Kinnunen <jani.kinnunen@wippies.fi>\n"
+"PO-Revision-Date: 2019-11-15 14:51+0200\n"
+"Last-Translator: Jani Kinnunen <janikinnunen340@gmail.com>\n"
 "Language-Team: Finnish <jani.kinnunen@wippies.fi>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -23,6 +23,9 @@ msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"Tämä on GoldWaven ääni-ikkuna. Voit käyttää GoldWave-komentoja "
+"äänitiedostojen kuunteluun ja muokkaamiseen. Katso tietoja GoldWaven "
+"ohjeesta."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -241,7 +244,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Lisäosa Goldwave-äänimuokkaimen saavutettavuuden ja käytettävyyden "

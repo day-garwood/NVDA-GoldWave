@@ -8,20 +8,22 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2016-02-26 02:46-0800\n"
+"PO-Revision-Date: 2019-11-17 10:51+0530\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
-"Language: Tamil\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #. Translators: general help message for GoldWave sound window.
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"இது Goldwave ஒலிச் சாளரம். ஒலிக் கோப்புகளைக் கேட்கவும், தொகுக்கவும், Goldwave "
+"கட்டளைகளைப் பயன்படுத்தலாம். விவரங்களுக்கு Goldwave உதவியைக் காணவும். "
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -237,7 +239,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Goldwave ஒலித் தொகுப்பு மென்பொருளை  அணுகுவதிலும், பயன்படுத்துவதிலும் "
