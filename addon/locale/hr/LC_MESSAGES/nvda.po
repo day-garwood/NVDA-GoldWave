@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: goldwave 2.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-05 07:00+1000\n"
-"PO-Revision-Date: 2019-11-15 23:30+0100\n"
+"PO-Revision-Date: 2019-11-21 23:16+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
@@ -25,6 +25,9 @@ msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"Ovo je zvučni prozor GoldWave-a. Za slušanje i uređivanje zvučnih datoteka "
+"je moguće koristiti GoldWave naredbe. Pojedinosti potraži u pomoći za "
+"GoldWave."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -216,7 +219,7 @@ msgstr "Najavljuje razinu zumiranja na audio traku."
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
 msgstr ""
-"Za uključivanje i isključivanje najavljivanja naredbi, moraš se nalaziti u "
+"Za uključivanje i isključivanje najavljivanja naredbi moraš se nalaziti u "
 "prozoru zvuka"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
@@ -242,8 +245,5 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
-msgstr ""
-"Ovaj modul aplikacije unapređuje pristup uređivaču zvuka Goldwave, kao i "
-"njegovo korištenje."
+msgstr "Dodatak za poboljšani pristup i upotrebu uređivača zvuka Goldwave."

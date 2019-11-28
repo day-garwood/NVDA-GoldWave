@@ -3,9 +3,10 @@
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
-* NVDA compatibility: 2019.1 to 2019.2
+* Yhteensopivuus: NVDA 2019.1-2019.2
 
-This app module enhances access and usage of GoldWave audio editor.
+Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
+käytettävyyttä.
 
 ## Pikanäppäimet ##
 
@@ -18,29 +19,29 @@ This app module enhances access and usage of GoldWave audio editor.
 * Control+NVDA+3: Kertoo ääniraidan valitun kohdan yhteenvedon.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
+käsikirjassa.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.1 or later is required.
+Huom: GoldWave 6 vaatii Windows 7:n 64-bittisen version tai uudemman. Tämän
+lisäosan käyttämiseen tarvitaan NVDA 2019.1 tai uudempi.
 
-## Version 19.11
+## Versio 19.11
 
-* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
-* Added help message for sound window (accessible if Control Usage Assistant
-  add-on is installed).
+* Windows 7 SP1, GoldWave 6.x ja NVDA 2019.1 tai uudempi vaaditaan.
+* Lisätty ohjeviesti ääni-ikkunalle (käytettävissä, mikäli Säätimen
+  käyttöapu -lisäosa on asennettuna).
 
-## Version 18.12
+## Versio 18.12
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
-* Internal changes to support future NVDA releases.
+* NVDA ei enää näytä olevan tekemättä mitään tai toista virheääniä tiettyjä
+  GoldWave-komentoja suoritettaessa, kun komentojen puhuminen on poistettu
+  käytöstä (tämä voi johtaa joissakin tapauksissa outoon käyttäytymiseen).
+* Sisäisiä muutoksia tulevien NVDA-versioiden tukemiseksi.
 
 ## Versio 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Korjattu ongelma, jossa etunollia ei näytetty yritettäessä hakea raidan
+  jäljellä olevaa aikaa.
 
 ## Versio 17.05
 
