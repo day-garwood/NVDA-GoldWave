@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2016-02-26 01:57-0800\n"
-"Last-Translator: Juan C. Buño <quetzatl@eresmas.net>\n"
+"PO-Revision-Date: 2019-11-30 19:23+0100\n"
+"Last-Translator: Iván Novegil Cancelas <ivan.novegil.cancelas@gmail.com>\n"
 "Language-Team: NVDA add-ons translation team <LL@li.org>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 2.2.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -24,6 +24,9 @@ msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"Ésta é a xanela de son de GoldWave. Podes utilizar as ordes de GoldWave para "
+"escoitar e editar arquivos de son. Mira a axuda de GoldWave para máis "
+"detalles."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -55,11 +58,11 @@ msgstr "central"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr "Baixa frecuencia"
+msgstr "baixa frecuencia"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back left"
-msgstr "Esquerdo traseiro"
+msgstr "esquerdo traseiro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back right"
@@ -67,11 +70,11 @@ msgstr "dereito traseiro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side left"
-msgstr "Lado esquerdo"
+msgstr "lado esquerdo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side right"
-msgstr "Lado dereito"
+msgstr "lado dereito"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
@@ -109,7 +112,7 @@ msgstr "Soltouse un sinal no marcador de comezo"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "soltouse un sinal no marcador de remate"
+msgstr "Soltouse un sinal no marcador de remate"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
@@ -141,7 +144,7 @@ msgstr "rebobinar"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
-msgstr "Avance rápido"
+msgstr "avance rápido"
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
@@ -241,7 +244,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
-"Un complemento para mellorar o acceso eo uso do editor de son Goldwave."
+"Un complemento para mellorar o acceso e o uso do editor de son GoldWave."

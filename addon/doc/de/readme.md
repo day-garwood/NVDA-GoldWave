@@ -1,26 +1,27 @@
 # Goldwave #
 
-* Autoren: Joseph Lee, NVDA-Entwicklergemeinde
+* Autoren: Joseph Lee, NVDA-Entwicklergemeinde.
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
 * NVDA compatibility: 2019.1 to 2019.2
 
-This app module enhances access and usage of GoldWave audio editor.
+Dieses Anwendungsmodul verbessert die Zugänglichkeit des Audio-Editors
+Goldwave
 
 ## Tastenkürzel ##
 
 * NVDA+Umschalt+C: Schaltet die ansage von Befehlen während der
   Audiobearbeitung ein oder aus.
-* strg+Umschalt+P: gibt die aktuelle Audio-Position an.
+* Strg+Umschalt+P: gibt die aktuelle Audio-Position an.
 * NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
   aus.
-* strg+NVDA+1: Gibt die Audiokanäle an, die Sie momentan bearbeiten
-* strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an
-* strg+NvDA+3: gibt eine Zusammenfassung zur Audio-Auswahl an
-* strg+NVDA+4: Gibt die aktuelle Zoom-Stufe an.
+* Strg+NVDA+1: Gibt die Audiokanäle an, die Sie momentan bearbeiten
+* Strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an
+* Strg+NvDA+3: gibt eine Zusammenfassung zur Audio-Auswahl an
+* Strg+NVDA+4: Gibt die aktuelle Zoom-Stufe an.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+Weitere Informationen über Goldwave und seine Tastenkombinationen finden Sie
+im Benutzerhandbuch von Goldwave.
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
 add-on, NVDA 2019.1 or later is required.
@@ -72,9 +73,9 @@ add-on, NVDA 2019.1 or later is required.
   (siehe Anmerkung oben).
 * Die Hilfe zur Erweiterung ist nun über den Erweiterungs-Manager
   verfügbar. (Ab NVDA 2014.3 und neuer.)
-* beim Auswählen eines Kanals mit Befehlen wie strg+Umschalt+L wird der
+* Beim Auswählen eines Kanals mit Befehlen wie strg+Umschalt+L wird der
   gewählte Kanal angezeigt
-* Verbesserungen bei numerischen Eingabefeldern 
+* Verbesserungen bei numerischen Eingabefeldern.
 * Die Einstellungen zur Ansage von Befehlen werden gespeichert, wenn sich
   der Fokus außerhalb von Goldwave befindet.
 
@@ -99,7 +100,7 @@ add-on, NVDA 2019.1 or later is required.
 
 ## Änderungen in 1.0
 
-* anfängliche Version
+* Erstveröffentlichung.
 
 [[!tag dev stable]]
 

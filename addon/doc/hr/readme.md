@@ -9,7 +9,7 @@ This app module enhances access and usage of GoldWave audio editor.
 
 ## Prečaci ##
 
-* NvDA+Shift+C: Uključuje ili isključuje najavljivanje naredbi prilikom
+* NvDA+Shift+C: Uključuje ili isključuje izgovaranje naredbi prilikom
   uređivanja audio trake.
 * Control+Shift+P: Najavljuje trenutačnu poziciju audio trake.
 * NVDA+Shift+R: Najavljuje preostalo vrijeme trake koja se trenutačno
