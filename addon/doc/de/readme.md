@@ -3,10 +3,10 @@
 * Autoren: Joseph Lee, NVDA-Entwicklergemeinde.
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
-* NVDA compatibility: 2019.1 to 2019.2
+* NVDA-Kompatibilität: 2019.1 bis 2019.2
 
 Dieses Anwendungsmodul verbessert die Zugänglichkeit des Audio-Editors
-Goldwave
+Goldwave.
 
 ## Tastenkürzel ##
 
@@ -15,34 +15,38 @@ Goldwave
 * Strg+Umschalt+P: gibt die aktuelle Audio-Position an.
 * NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
   aus.
-* Strg+NVDA+1: Gibt die Audiokanäle an, die Sie momentan bearbeiten
-* Strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an
-* Strg+NvDA+3: gibt eine Zusammenfassung zur Audio-Auswahl an
+* Strg+NVDA+1: Gibt den Audiokanal an, den Sie momentan bearbeiten.
+* Strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an.
+* Strg+NvDA+3: gibt eine Zusammenfassung zur Audio-Auswahl aus.
 * Strg+NVDA+4: Gibt die aktuelle Zoom-Stufe an.
 
 Weitere Informationen über Goldwave und seine Tastenkombinationen finden Sie
 im Benutzerhandbuch von Goldwave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.1 or later is required.
+Bitte beachten Sie: GoldWave 6 benötigt die 64-bit-Version von Windows 7
+oder neuer. NVDA 2019.1 oder höher ist erforderlich, um diese Erweiterung
+einzusetzen.
 
 ## Version 19.11
 
-* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
-* Added help message for sound window (accessible if Control Usage Assistant
-  add-on is installed).
+* Windows 7 SP1, GoldWave 6.x und NVDA 2019.1 oder höher ist erforderlich.
+* Hilfemeldungen für das Sound-Fenster hinzugefügt. (Diese sind verfügbar,
+  falls die Erweiterung "Hilfe zur Verwendung von Steuerelementen"
+  installiert ist).
 
 ## Version 18.12
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
-* Internal changes to support future NVDA releases.
+* NVDA wird nun nicht mehr einfrieren oder Fehlertöne erzeugen, wenn Sie
+  bestimmte GoldWave-Befehle auslösen, während die Ansage der
+  Funktionstasten deaktiviert ist. (Dies kann u. U. zu komischem verhalten
+  Führen).
+* Interne Änderungen zur Unterstützung zukünftiger NVDA-Versionen.
 
 ## Version 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Es wurde ein Problem behoben, bei dem führende Nullen nicht angezeigt
+  wurden, wenn versucht wurde, die verbleibende Zeit für einen Track zu
+  erhalten.
 
 ## Version 17.05
 
@@ -73,8 +77,8 @@ add-on, NVDA 2019.1 or later is required.
   (siehe Anmerkung oben).
 * Die Hilfe zur Erweiterung ist nun über den Erweiterungs-Manager
   verfügbar. (Ab NVDA 2014.3 und neuer.)
-* Beim Auswählen eines Kanals mit Befehlen wie strg+Umschalt+L wird der
-  gewählte Kanal angezeigt
+* Wenn sie einen Befehl zur Kanalauswahl auslösen, sagt NVDA nun den
+  ausgewählten Kanal an. Beispiel: STRG+Umschalt+L für den linken Kanal.
 * Verbesserungen bei numerischen Eingabefeldern.
 * Die Einstellungen zur Ansage von Befehlen werden gespeichert, wenn sich
   der Fokus außerhalb von Goldwave befindet.
