@@ -418,8 +418,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
 		# Custom NVDA overlay objects for sound window and edit fields:
-		if obj.windowClassName in ("TWaveView", "TSoundForm"):
-			# TWaveView = 5.x, TSoundForm = 6.x.
+		if obj.windowClassName == "TSoundForm":
 			clsList.insert(0, SoundWindow)
 		elif obj.windowClassName in ("TNumEdit", "TTimeEdit"):
 			try:
