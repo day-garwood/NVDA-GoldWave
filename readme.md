@@ -3,7 +3,7 @@
 * Authors: Joseph Lee, NVDA contributors.
 * Download [stable version][1]
 * Download [development version][2]
-* NVDA compatibility: 2019.1 to 2019.2
+* NVDA compatibility: 2019.3 and beyond
 
 This app module enhances access and usage of GoldWave audio editor.
 
@@ -19,7 +19,11 @@ This app module enhances access and usage of GoldWave audio editor.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave Manual.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-on, NVDA 2019.1 or later is required.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-on, NVDA 2019.3 or later is required.
+
+## Version 20.01
+
+* Requires NVDA 2019.3 or later.
 
 ## Version 19.11
 
