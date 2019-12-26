@@ -3,9 +3,11 @@
 * Autori: Joseph Lee, NVDA doprinositelji.
 * Preuzmi [stabilnu verziju][1]
 * Preuzmi [razvojnu verziju][2]
-* NVDA compatibility: 2019.1 to 2019.2
+* NVDA compatibility: 2019.3 and beyond
+* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
-This app module enhances access and usage of GoldWave audio editor.
+Ovaj modul aplikacije unapređuje pristup uređivaču zvuka GoldWave, kao i
+njegovo korištenje.
 
 ## Prečaci ##
 
@@ -20,29 +22,34 @@ This app module enhances access and usage of GoldWave audio editor.
   trake.
 * Control+NVDA+4: Najavljuje razinu zumiranja.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+Daljnje informacije o GoldWaveu i tipkovničkim prečacima je moguće naći u
+priručniku za GoldWave.
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.1 or later is required.
+add-on, NVDA 2019.3 or later is required.
 
-## Version 19.11
+## Version 20.01
 
-* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
-* Added help message for sound window (accessible if Control Usage Assistant
-  add-on is installed).
+* Requires NVDA 2019.3 or later.
 
-## Version 18.12
+## Verzija 19.11
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
-* Internal changes to support future NVDA releases.
+* Potrebni su Windows 7 SP1, GoldWave 6.x i NVDA 2019.1 ili noviji.
+* Dodana je poruka pomoći za zvučni prozor (dostupno, ako je instaliran
+  dodatak „Pomoćnik za primjenu kontrola”).
+
+## Verzija 18.12
+
+* NVDA više neće izgledati kao da ništa ne radi ili svirati zvukove za
+  greške pri izvršavanju određenih GoldWave naredbi s isključenim
+  najavljivanjem naredbi (u nekim slučajevima to može prouzročiti čudna
+  ponašanja).
+* Unutarnje promjene, kako bi se podržala buduća NVDA izdanja.
 
 ## Verzija 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Ispravljena je greška, gdje se prednje nule nisu prikazivale pri dobivanju
+  preostalog vremena zvučnog zapisa.
 
 ## Verzija 17.05
 
@@ -112,3 +119,5 @@ add-on, NVDA 2019.1 or later is required.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
+
+[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019
