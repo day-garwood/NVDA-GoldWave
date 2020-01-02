@@ -3,8 +3,8 @@
 * Autorzy: Joseph Lee, współpracownicy NVDA.
 * Pobierz [wersja stabilna][1]
 * Pobierz [wersja rozwojowa][2]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* Zgodność z wersjami NVDA: 2019.3 i nowsze
+* Pobierz [Starszą wersję][3] zgodną z NVDA 2019.2.1 lub starszej
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
@@ -21,12 +21,12 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 Więcej informacji o Goldwave i jego klawiszach skrótów, znajduje się w
 podręczniku Goldwave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. Aby używać
+tego dodatku, potrzebna jest wersja NVDA 2019.3 lub nowsza.
 
-## Version 20.01
+## Wersja 20.01
 
-* Requires NVDA 2019.3 or later.
+* Wymaga wersji NVDA 2019.3 lub nowszej.
 
 ## Wersja 19.11
 
@@ -36,9 +36,9 @@ add-on, NVDA 2019.3 or later is required.
 
 ## wersja 18.12
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
+* NVDA już nie będzie odtwarzała dźwięk tonu lub robiła nic gdy niektóre
+  polecenia goldwawe są wypełniane z wyłączonym wymawianiem poleceń (może to
+  w niektórych sytuacjach dźiwnie działać).
 * Zmiany wewnętrzne dla wsparcia nowych wersji NVDA.
 
 ## Wersja 18.07

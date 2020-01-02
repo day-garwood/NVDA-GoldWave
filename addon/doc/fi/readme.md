@@ -3,8 +3,9 @@
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* Yhteensopivuus: NVDA 2019.3 ja uudemmat
+* Lataa [vanhempi versio,][3] joka on yhteensopiva NVDA 2019.2.1:n ja sitä
+  vanhempien kanssa
 
 Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.
@@ -23,12 +24,12 @@ käytettävyyttä.
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
 käsikirjassa.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Huom: GoldWave 6 vaatii Windows 7:n 64-bittisen version tai uudemman. Tämän
+lisäosan käyttämiseen tarvitaan NVDA 2019.3 tai uudempi.
 
-## Version 20.01
+## Versio 20.01
 
-* Requires NVDA 2019.3 or later.
+* Vaatii NVDA 2019.3:n tai uudemman.
 
 ## Versio 19.11
 
