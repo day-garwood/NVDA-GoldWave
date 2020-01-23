@@ -3,8 +3,9 @@
 * Автори: Joseph Lee, други сътрудници на NVDA.
 * Изтегляне на [стабилна версия][1]
 * Изтегляне на [тестова версия][2]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* Съвместимост с NVDA: 2019.3 и по-нови версии
+* Изтегляне на [по-стара версия][3] съвместима с NVDA 2019.2.1 и по-стари
+  версии
 
 Тази добавка за NVDA подобрява достъпността и ползваемостта на звуковия
 редактор GoldWave.
@@ -24,12 +25,12 @@
 За повече информация относно GoldWave и клавишните му команди, обърнете се
 към ръководството за работа с GoldWave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Забележка: GoldWave 6 изисква 64-битова версия на Windows 7 или по-нова. За
+да използвате тази добавка, се изисква NVDA 2019.3 или по-нова.
 
-## Version 20.01
+## Версия 20.01
 
-* Requires NVDA 2019.3 or later.
+* Изисква се NVDA 2019.3 или по-нова версия.
 
 ## Версия 19.11
 
