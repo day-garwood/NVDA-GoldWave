@@ -3,72 +3,70 @@
 * Autori: Joseph Lee, tím NVDA.
 * Stiahnuť [stabilnú verziu][1]
 * Stiahnuť [vývojovú verziu][2]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* Funguje s NVDA od verzie 2019.3
+* Stiahnuť [staršiu verziu][3] Pre NVDA do verzie 2019.2.1
 
-This app module enhances access and usage of GoldWave audio editor.
+Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru
+goldwave.
 
 ## Klávesové skratky ##
 
 * NVDA+Shift+C: prepína oznamovanie príkazov NVDA počas strihania.
 * ctrl+Shift+P: Oznámy pozíciu v aktuálnej stope.
-* NVDA+Shift+R: Announces remaining time for the currently editing track.
-* Control+NVDA+1: oznámy kanál, ktorý upravujete.
-* Control+NVDA+2: Oznámy celkovú dĺžku audio súboru.
-* Control+NVDA+3: Oznámy informácie o aktuálnom výbere.
-* Control+NVDA+4: oznamuje úroveň priblíženia.
+* Nvda+shift+R: oznámuje zostávajúci čas otvoreného súboru.
+* Ctrl+NVDA+1: oznámy kanál, ktorý upravujete.
+* Ctrl+NVDA+2: Oznámy celkovú dĺžku audio súboru.
+* Ctrl+NVDA+3: Oznámy informácie o aktuálnom výbere.
+* Ctrl+NVDA+4: oznamuje úroveň priblíženia.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+pre viac informácii o klávesových skratkách programu Goldwave si prečítajte
+návod k programu Goldwave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Pozor! Goldwave vo verzii 6 vyžaduje 64-bitovú verziu Windows 7 alebo
+novší. Ak chcete používať doplnok pre goldwave, potrebujete tiež NVDA od
+verzie 2019.3.
 
-## Version 20.01
+## Verzia 20.01
 
-* Requires NVDA 2019.3 or later.
+* Funguje s NVDA od verzie 2019.3.
 
-## Version 19.11
+## Verzia 19.11
 
-* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
-* Added help message for sound window (accessible if Control Usage Assistant
-  add-on is installed).
+* Vyžaduje sa Windows 7 SP1, GoldWave 6.x, a NVDA 2019.1.
+* Pridaná pomocná správa pre okno so zvukom (funguje ak sa používa doplnok
+  Pomoc na práci s prvkami).
 
-## Version 18.12
+## Verzia 18.12
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
-* Internal changes to support future NVDA releases.
+* NVDA viac nehlási chybu pri opužití skratiek a súčasnom vypnutí
+  výrečnosti.
+* Interné zmeny ako príprava na budúce verzie NVDA.
 
-## Version 18.07
+## Verzia 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Odteraz sa zobrazujú nuly, ak sú na začiatku ostávajúceho času súboru.
 
-## Version 17.05
+## Verzia 17.05
 
-* Added ability to provide debug information when NVDA is running with debug
-  logging enabled (NVDA 2017.1 or later).
-* Updated translations.
+* Od verzie NVDA 2017.1 sa informácie o činosti doplnku zapisujú do logu
+  NVDA ak je nastavené zaznamenávanie na debug.
+* Nové a aktualizované preklady.
 
-## Version 16.12
+## Verzia 16.12
 
-* Version scheme is now year.month instead of major.minor.
+* Verzie číslujeme ako rok.mesiac.
 
-## Changes for 4.0
+## Zmeny vo verzii 4.0
 
-* Add-on repository has moved to GitHub (now located at
-  https://github.com/josephsl/goldwave).
-* Performance improvements when looking up information such as channel name
-  and other status information.
+* Repozitár dopnku presunutý na GitHub
+  (https://github.com/josephsl/goldwave).
+* Zrýchlená odozva pri zisťovaní informácie o kanáloch a iných stavových
+  údajoch.
 
-## Changes for 3.0
+## Zmeny vo verzii 3.0
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
-* Slight improvements when announcing status information such as channel
-  information.
+* Pridaná skratka nvda+shift+r, ktorá oznamuje ostávajúci čas.
+* Mierne upravené oznamovanie stavových informácií.
 
 ## Zmeny vo verzii 2.0
 
@@ -85,7 +83,7 @@ add-on, NVDA 2019.3 or later is required.
 ## Zmeny pre verziu 1.2
 
 * opravená chyba, pri ktorej NVDA neoznamovalo správne niektoré editačné
-  polia
+  polia.
 * Nové a aktualizované preklady.
 * Berte prosím na vedomie, že vvzhľadom na posledné zmeny v NVDA, niektoré
   príkazy na označovanie audia nemusia fungovať korektne.
