@@ -445,6 +445,10 @@ class AppModule(appModuleHandler.AppModule):
 	# Announcement of commands is enabled by default.
 	commandAnnouncement = True
 
+	@scriptHandler.script(
+		# Translators: Input help mode message for command announcement command in Goldwave.
+		description=_("Toggles whether NVDA announces editing commands during audio recording or playback."),
+		gesture="kb:nvda+shift+c")
 	def script_toggleCommandAnnouncement(self, gesture):
 		focus = api.getFocusObject()
 		if focus.windowClassName not in ("TWaveView", "TSoundForm"):
@@ -459,9 +463,3 @@ class AppModule(appModuleHandler.AppModule):
 			else:
 				# Translators: Presented when command announcement messages are turned off in Goldwave.
 				ui.message(_("command announcement off"))
-	# Translators: Input help mode message for command announcement command in Goldwave.
-	script_toggleCommandAnnouncement.__doc__=_("Toggles whether NVDA announces editing commands during audio recording or playback.")
-
-	__gestures={
-		"kb:nvda+shift+c":"toggleCommandAnnouncement",
-	}
