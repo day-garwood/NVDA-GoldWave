@@ -286,12 +286,18 @@ class SoundWindow(IAccessible):
 
 	# Audio position scripts: markers, selection duration.
 
+	@scriptHandler.script(
+		# Translators: Input help mode message for a Goldwave command.
+		description=_("Announces the current audio position in seconds."),
+		gesture="kb:control+shift+p")
 	def script_announceAudioPosition(self, gesture):
 		# Shouldn't say anything unless in audio editing view.
 		self.message(self.getAudioPos())
-	# Translators: Input help mode message for a Goldwave command.
-	script_announceAudioPosition.__doc__=_("Announces the current audio position in seconds.")
 
+	@scriptHandler.script(
+		# Translators: Input help mode message for a Goldwave command.
+		description=_("Announces a summary on audio selection info such as selection duration."),
+		gesture="kb:control+nvda+3")
 	def script_announceAudioSelection(self, gesture):
 		try:
 			# Parse this string to get individual info such as marker positions.
@@ -304,9 +310,11 @@ class SoundWindow(IAccessible):
 				self.message(_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(audioSelectionStart = audioSelectionParsed[0], audioSelectionEnd = audioSelectionParsed[2], audioSelectionLength = audioSelectionParsed[3]))
 		except:
 			pass
-	# Translators: Input help mode message for a Goldwave command.
-	script_announceAudioSelection.__doc__=_("Announces a summary on audio selection info such as selection duration.")
 
+	@scriptHandler.script(
+		# Translators: Input help mode message for a Goldwave command.
+		description=_("Announces total length of the audio track."),
+		gesture="kb:control+nvda+2")
 	def script_announceTrackLength(self, gesture):
 		trackLengthSTR = self.getTrackLength()
 		if not trackLengthSTR:
@@ -314,9 +322,8 @@ class SoundWindow(IAccessible):
 			self.message(_("Track length is unavailable. Please close and reopen the audio track."))
 		else:
 			self.message(_("Track length: {trackLength}").format(trackLength = trackLengthSTR))
-	# Translators: Input help mode message for a Goldwave command.
-	script_announceTrackLength.__doc__=_("Announces total length of the audio track.")
 
+	@scriptHandler.script(gesture="kb:NVDA+shift+r")
 	def script_announceRemainingTime(self, gesture):
 		audioPos = self.getAudioPos(raw=True)
 		if not audioPos or " " in audioPos or not self.getTrackLength():
@@ -332,6 +339,10 @@ class SoundWindow(IAccessible):
 
 	# Audio channels and zoom level.
 
+	@scriptHandler.script(
+		# Translators: Input help mode message for a Goldwave command.
+		description=_("Announces the audio channel you are editing."),
+		gesture="kb:control+nvda+1")
 	def script_announceAudioChannels(self, gesture):
 		channelSTR = self.getAudioChannels()
 		if channelSTR in ["Multiple", "All"]:
@@ -340,8 +351,6 @@ class SoundWindow(IAccessible):
 		else:
 			# Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 			self.message(_("Selected channel: {audioChannel}").format(audioChannel = self.audioChannelValues[channelSTR]))
-	# Translators: Input help mode message for a Goldwave command.
-	script_announceAudioChannels.__doc__=_("Announces the audio channel you are editing.")
 
 	# Change and announce audio channels.
 	@scriptHandler.script(gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a", "kb:control+shift+b"])
@@ -350,11 +359,13 @@ class SoundWindow(IAccessible):
 		if (gesture.displayName == "ctrl+shift+a" and self.appModule.productVersion.startswith("5")) or (gesture.displayName == "ctrl+shift+b" and self.appModule.productVersion.startswith("6")): return
 		else: self.script_announceAudioChannels(gesture)
 
+	@scriptHandler.script(
+		# Translators: Input help mode message for a Goldwave command.
+		description=_("Announces audio zoom level."),
+		gesture="kb:control+nvda+4")
 	def script_announceZoomLevel(self, gesture):
 		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 		self.message(_("Zoom level: {zoomLevel}").format(zoomLevel = self.getZoomLevel()))
-	# Translators: Input help mode message for a Goldwave command.
-	script_announceZoomLevel.__doc__=_("Announces audio zoom level.")
 
 	# Change and announce zoom levels.
 	# All of them involve pressing the shift key, so just use a creative list comprehension.
