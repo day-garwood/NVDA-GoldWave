@@ -391,31 +391,6 @@ class SoundWindow(IAccessible):
 		gesture.send()
 		self.script_announceZoomLevel(gesture)
 
-	__gestures={
-		"KB:[":"dropStartMarker",
-		"KB:]":"dropFinishMarker",
-		"KB:control+a":"selectAll",
-		"kB:control+[":"playSelection",
-		"kb:control+q":"dropCue",
-		"KB:q":"dropCueAtStartMarker",
-		"KB:shift+q":"dropCueAtFinishMarker",
-		"kb:control+j":"moveStartMarkerToNextCuePos",
-		"kb:control+shift+j":"moveStartMarkerToPrevCuePos",
-		"kb:alt+j":"moveFinishMarkerToNextCuePos",
-		"kb:alt+shift+j":"moveFinishMarkerToPrevCuePos",
-		"kb:delete":"deleteSelection",
-		"kb:control+t":"trimSelection",
-		"kb:f5":"rewind",
-		"kb:f6":"forward",
-		"kb:control+f9":"startRecord",
-		"kb:control+shift+p":"announceAudioPosition",
-		"kb:NVDA+shift+r":"announceRemainingTime",
-		"kb:control+nvda+3":"announceAudioSelection",
-		"kb:control+nvda+2":"announceTrackLength",
-		"kb:control+nvda+1":"announceAudioChannels",
-		"kb:control+nvda+4":"announceZoomLevel",
-	}
-
 
 class AppModule(appModuleHandler.AppModule):
 
