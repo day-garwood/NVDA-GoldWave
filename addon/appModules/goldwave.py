@@ -179,6 +179,7 @@ class SoundWindow(IAccessible):
 
 	# Audio editing scripts:
 
+	@scriptHandler.script(gesture="KB:[")
 	def script_dropStartMarker(self, gesture):
 		try:
 			gesture.send()
@@ -187,6 +188,7 @@ class SoundWindow(IAccessible):
 		except:
 			pass
 
+	@scriptHandler.script(gesture="KB:]")
 	def script_dropFinishMarker(self, gesture):
 		try:
 			gesture.send()
@@ -195,56 +197,67 @@ class SoundWindow(IAccessible):
 		except:
 			pass
 
+	@scriptHandler.script(gesture="kB:control+[")
 	def script_playSelection(self, gesture):
 		gesture.send()
 		# Translators: Presented when selected audio is playing.
 		self.message(_("Play selection"))
 
+	@scriptHandler.script(gesture="KB:control+a")
 	def script_selectAll(self, gesture):
 		gesture.send()
 		# Translators: Presented when all parts of the audio track is selected.
 		self.message(_("Select All"))
 
+	@scriptHandler.script(gesture="kb:control+q")
 	def script_dropCue(self, gesture):
 		gesture.send()
 		# Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 		self.message(_("Cue"))
 
+	@scriptHandler.script(gesture="KB:q")
 	def script_dropCueAtStartMarker(self, gesture):
 		gesture.send()
 		# Translators: Presented when audio cue is dropped at the start marker position.
 		self.message(_("Cue dropped at start marker"))
 
+	@scriptHandler.script(gesture="KB:shift+q")
 	def script_dropCueAtFinishMarker(self, gesture):
 		gesture.send()
 		# Translators: Presented when an audio cue is dropped at the finish marker position.
 		self.message(_("Cue dropped at finish marker"))
 
+	@scriptHandler.script(gesture="kb:control+j")
 	def script_moveStartMarkerToNextCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Start marker at next cue"))
 
+	@scriptHandler.script(gesture="kb:control+shift+j")
 	def script_moveStartMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Start marker at previous cue"))
 
+	@scriptHandler.script(gesture="kb:alt+j")
 	def script_moveFinishMarkerToNextCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the finish marker is moved to the next cue position.
 		self.message(_("Finish marker at next cue"))
 
+	@scriptHandler.script(gesture="kb:alt+shift+j")
 	def script_moveFinishMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Finish marker at previous cue"))
 
+	@scriptHandler.script(gesture="kb:delete")
 	def script_deleteSelection(self, gesture):
 		gesture.send()
 		# Translators: Presented when audio selection is deleted.
 		self.message(_("deleted"))
 
+	@scriptHandler.script(gesture="kb:control+t")
 	def script_trimSelection(self, gesture):
 		# Cannot just assign function objects to another, so a workaround for this problem.
 		self.script_deleteSelection(gesture)
@@ -257,11 +270,13 @@ class SoundWindow(IAccessible):
 		# Translators: Presented when a track is playing in Goldwave.
 		self.message(_("play"))
 
+	@scriptHandler.script(gesture="kb:f5")
 	def script_rewind(self, gesture):
 		gesture.send()
 		# Translators: Presented when a track is rewinding in Goldwave.
 		self.message(_("rewind"))
 
+	@scriptHandler.script(gesture="kb:f6")
 	def script_forward(self, gesture):
 		gesture.send()
 		# Translators: Presented when fast forwarding a track in Goldwave.
@@ -279,6 +294,7 @@ class SoundWindow(IAccessible):
 		# Translators: Presented when stopping a track in in Goldwave.
 		self.message(_("stop"))
 
+	@scriptHandler.script(gesture="kb:control+f9")
 	def script_startRecord(self, gesture):
 		gesture.send()
 		# Translators: Presented when starting recording in Goldwave.
