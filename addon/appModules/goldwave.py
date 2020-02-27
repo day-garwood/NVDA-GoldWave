@@ -339,7 +339,10 @@ class SoundWindow(IAccessible):
 		else:
 			self.message(_("Track length: {trackLength}").format(trackLength = trackLengthSTR))
 
-	@scriptHandler.script(gesture="kb:NVDA+shift+r")
+	@scriptHandler.script(
+		# Translators: Input help mode message for a Goldwave command.
+		description=_("Announces remaining length of the audio track."),
+		gesture="kb:NVDA+shift+r")
 	def script_announceRemainingTime(self, gesture):
 		audioPos = self.getAudioPos(raw=True)
 		if not audioPos or " " in audioPos or not self.getTrackLength():
