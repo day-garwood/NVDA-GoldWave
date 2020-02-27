@@ -450,7 +450,8 @@ class AppModule(appModuleHandler.AppModule):
 	@scriptHandler.script(
 		# Translators: Input help mode message for command announcement command in Goldwave.
 		description=_("Toggles whether NVDA announces editing commands during audio recording or playback."),
-		gesture="kb:nvda+shift+c")
+		gesture="kb:nvda+shift+c",
+		category="GoldWave")
 	def script_toggleCommandAnnouncement(self, gesture):
 		focus = api.getFocusObject()
 		if focus.windowClassName not in ("TWaveView", "TSoundForm"):
