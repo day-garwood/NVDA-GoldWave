@@ -3,10 +3,12 @@
 * Autores: Joseph Lee, colaboradores do NVDA.
 * Baixe a [versão estável][1]
 * Baixe a [versão em desenvolvimento][2]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* Compatibilidade com NVDA: 2019.3 e além
+* Baixe a [versão mais antiga][3] compatível com o NVDA 2019.2.1 e
+  anteriores
 
-This app module enhances access and usage of GoldWave audio editor.
+Este módulo de aplicativo melhora o acesso e o uso do editor de áudio
+GoldWave.
 
 ## Atalhos: ##
 
@@ -18,33 +20,33 @@ This app module enhances access and usage of GoldWave audio editor.
 * Control+NVDA+3: Anuncia um resumo com informações da seleção de áudio.
 * Control+NVDA+4: Anuncia o nível de zum.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+Para mais informações sobre o GoldWave e os comandos de teclado, consulte o
+Manual do GoldWave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Nota: O GoldWave 6 requer a versão de 64 bit do Windows 7 ou posterior. Para
+usar este complemento, é necessário o NVDA 2019.3 ou posterior.
 
-## Version 20.01
+## Versão 20.01
 
-* Requires NVDA 2019.3 or later.
+* Requer NVDA 2019.3 ou posterior.
 
-## Version 19.11
+## Versão 19.11
 
-* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
-* Added help message for sound window (accessible if Control Usage Assistant
-  add-on is installed).
+* É necessário o Windows 7 SP1, GoldWave 6.x, e NVDA 2019.1 ou posterior.
+* Adicionada mensagem de ajuda para a janela de som (acessível se o
+  complemento Assistente para Uso de Controles estiver instalado).
 
-## Version 18.12
+## Versão 18.12
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
-* Internal changes to support future NVDA releases.
+* O NVDA não parece mais fazer nada ou reproduzir sons de erro ao executar
+  determinados comandos GoldWave com o aviso de comando desativado (isso
+  pode resultar em comportamentos estranhos em alguns casos).
+* Alterações internas para dar suporte a versões futuras do NVDA.
 
 ## Versão 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Corrigido um problema em que os zeros iniciais não eram exibidos ao tentar
+  obter o tempo restante para uma faixa.
 
 ## Versão 17.05
 
