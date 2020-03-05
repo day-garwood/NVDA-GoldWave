@@ -1,23 +1,21 @@
-# Goldwave #
+# GoldWave #
 
 * Autores: Joseph Lee, colaboradores do NVDA.
 * Baixe a [versão estável][1]
 * Baixe a [versão em desenvolvimento][2]
 * Compatibilidade com NVDA: 2019.3 e além
-* Baixe a [versão mais antiga][3] compatível com o NVDA 2019.2.1 e
-  anteriores
 
 Este módulo de aplicativo melhora o acesso e o uso do editor de áudio
 GoldWave.
 
-## Atalhos: ##
+## Atalhos ##
 
 * NVDA+Shift+C: Alterna a fala de comandos durante a edição de áudio.
 * Control+Shift+P: Anuncia a posição na faixa atual.
 * NVDA+Shift+R: Anuncia o tempo restante da faixa atualmente em edição.
 * Control+NVDA+1: Anuncia o canal que se está editando.
 * Control+NVDA+2: Anuncia o comprimento total do arquivo de áudio.
-* Control+NVDA+3: Anuncia um resumo com informações da seleção de áudio.
+* Control+NVDA+3: anuncia um resumo das informações de seleção de áudio.
 * Control+NVDA+4: Anuncia o nível de zum.
 
 Para mais informações sobre o GoldWave e os comandos de teclado, consulte o
@@ -68,7 +66,7 @@ usar este complemento, é necessário o NVDA 2019.3 ou posterior.
 
 ## Mudanças na 3.0
 
-* Adicionado comando para anunciar o tempo restante da faixa atual
+* Adicionado um comando para anunciar o tempo restante da faixa atual
   (NVDA+Shift+R).
 * Ligeira melhoria ao anunciar informações de status, tais como informações
   de canal.
@@ -85,7 +83,7 @@ usar este complemento, é necessário o NVDA 2019.3 ou posterior.
   campo de censor e o seletor de tempo no diálogo de mixagem, incluindo
   selecionar texto, atualizar valores e outros.
 * As definições de anúncio de comando serão lembradas ao trocar para outros
-  programas
+  programas.
 
 ## Mudanças na 1.2
 
@@ -116,5 +114,3 @@ usar este complemento, é necessário o NVDA 2019.3 ou posterior.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

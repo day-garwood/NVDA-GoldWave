@@ -1,25 +1,21 @@
-# Goldwave #
+# GoldWave #
 
 * Автори: Joseph Lee, други сътрудници на NVDA.
 * Изтегляне на [стабилна версия][1]
 * Изтегляне на [тестова версия][2]
 * Съвместимост с NVDA: 2019.3 и по-нови версии
-* Изтегляне на [по-стара версия][3] съвместима с NVDA 2019.2.1 и по-стари
-  версии
 
 Тази добавка за NVDA подобрява достъпността и ползваемостта на звуковия
 редактор GoldWave.
 
 ## Клавишни комбинации ##
 
-* NVDA+Shift+C: Превключва съобщаването на командите по време на редактиране
-  на звуковия файл.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Съобщава позицията в текущата писта.
 * NVDA+Shift+R: Съобщава оставащото време за текущо редактирания запис.
 * Control+NVDA+1: Съобщава текущо редактирания канал.
 * Control+NVDA+2: Съобщава общото времетраене на звуковия файл.
-* Control+NVDA+3: Съобщава обобщена информация за избраната част от
-  звуковата писта.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Съобщава нивото на мащаба.
 
 За повече информация относно GoldWave и клавишните му команди, обърнете се
@@ -72,7 +68,7 @@
 
 ## Промени във версия 3.0
 
-* Добавена е команда за съобщаване на оставащото време за текущия запис
+* Added a command to announce remaining time for the current track
   (NVDA+Shift+R).
 * Незначителни подобрения при съобщаването на информацията за състоянието,
   като например информация за канала.
@@ -121,5 +117,3 @@
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

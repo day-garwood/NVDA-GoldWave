@@ -1,31 +1,29 @@
-# Goldwave 音频支持插件 #
+# GoldWave #
 
 * 作者: Joseph Lee, NVDA contributors.
 * 下载[稳定版][1]
 * 下载[开发板][2]
-* NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
+* NVDA兼容版本:2019.3 以上
 
 此插件可增强GoldWave音频编辑器的无障碍体验性。
 
 ## 快捷键 ##
 
-* NvDA+Shift+C: 在音频编辑过程中切换命令。
+* NVDA+Shift+C: 在音频编辑过程中切换命令。
 * Control+Shift+P: 报告当前的轨道位置。
 * NVDA+Shift+R: 报告当前编辑曲目的剩余时间。
 * Control+NVDA+1: 报告您正在编辑的通道。
 * Control+NVDA+2: 报告音频文件的总长度。
-* Control+NvDA+3: 报告关于音频选择信息的摘要。
+* Control+NVDA+3: 报告关于音频选择信息的摘要。
 * Control+NVDA+4: 报告缩放级别。
 
 有关GoldWave和键盘命令的更多信息，请参阅GoldWave手册。
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+注意：现在GoldWave 6需要Windows 7或更高版本的系统。另外要使用此插件，还需要NVDA 2019.3或更高版本。
 
-## Version 20.01
+## 版本20.01
 
-* Requires NVDA 2019.3 or later.
+* 需要NVDA 2019.3或更高版本。
 
 ## 版本19.11
 
@@ -57,7 +55,7 @@ add-on, NVDA 2019.3 or later is required.
 
 ## 版本3.0
 
-* 增加了一条命令来报告当前曲目的剩余时间（NvDA + Shift + R）。
+* 增加了一条命令来报告当前曲目的剩余时间（NVDA+Shift+R）。
 * 报告通道信息等状态信息时略有改进。
 
 ## 版本2.0
@@ -91,5 +89,3 @@ add-on, NVDA 2019.3 or later is required.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

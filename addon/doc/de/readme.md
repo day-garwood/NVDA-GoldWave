@@ -1,24 +1,22 @@
-# Goldwave #
+# GoldWave #
 
 * Autoren: Joseph Lee, NVDA-Entwicklergemeinde.
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
 * NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 Dieses Anwendungsmodul verbessert die Zugänglichkeit des Audio-Editors
 Goldwave.
 
 ## Tastenkürzel ##
 
-* NVDA+Umschalt+C: Schaltet die ansage von Befehlen während der
-  Audiobearbeitung ein oder aus.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Strg+Umschalt+P: gibt die aktuelle Audio-Position an.
 * NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
   aus.
 * Strg+NVDA+1: Gibt den Audiokanal an, den Sie momentan bearbeiten.
 * Strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an.
-* Strg+NvDA+3: gibt eine Zusammenfassung zur Audio-Auswahl aus.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Strg+NVDA+4: Gibt die aktuelle Zoom-Stufe an.
 
 Weitere Informationen über Goldwave und seine Tastenkombinationen finden Sie
@@ -70,8 +68,8 @@ add-on, NVDA 2019.3 or later is required.
 
 ## Änderungen in 3.0
 
-* Befehl zur Ausgabe der Restzeit des aktuellen Titels hinzugefügt ( NVDA +
-  Umschalt + R).
+* Added a command to announce remaining time for the current track
+  (NVDA+Shift+R).
 * Leichte Verbesserungen bei der Ansage von Statusinformationen wie
   Senderinformationen.
 
@@ -115,5 +113,3 @@ add-on, NVDA 2019.3 or later is required.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

@@ -1,11 +1,9 @@
-# Goldwave #
+# GoldWave #
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
 * Yhteensopivuus: NVDA 2019.3 ja uudemmat
-* Lataa [vanhempi versio,][3] joka on yhteensopiva NVDA 2019.2.1:n ja sitä
-  vanhempien kanssa
 
 Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.
@@ -18,7 +16,7 @@ käytettävyyttä.
 * NVDA+Vaihto+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
 * Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
-* Control+NVDA+3: Kertoo ääniraidan valitun kohdan yhteenvedon.
+* Control+NVDA+3: Kertoo yhteenvedon raidan valitun kohdan tiedoista.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
@@ -114,5 +112,3 @@ lisäosan käyttämiseen tarvitaan NVDA 2019.3 tai uudempi.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

@@ -1,22 +1,20 @@
-# Goldwave #
+# GoldWave #
 
 * Autori: Joseph Lee, NVDA saradnici.
 * Preuzmi[stabilnu verziju][1]
 * Preuzmi[razvojnu verziju][2]
 * NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 This app module enhances access and usage of GoldWave audio editor.
 
 ## Prečice ##
 
-* NvDA+šift+C: uključuje i isključuje izgovor komandi u toku uređivanja
-  zvuka.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Kontrol+Šift+P: Izgovara trenutnu poziciju zapisa.
 * NVDA+Šift+R: Izgovara preostalo vreme za zapis koji se trenutno uređuje.
 * Kontrol+NVDA+1: Izgovara kanal koji uređujete.
 * Kontrol+NVDA+2: Izgovara ukupno trajanje zapisa koji se uređuje.
-* Kontrol+NVDA+3: Izgovara kratak pregled informacija o izboru.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Kontrol+NVDA+4: Izgovara nivo zumiranja.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -66,7 +64,8 @@ add-on, NVDA 2019.3 or later is required.
 
 ## Promene u 3.0
 
-* Dodata komanda za izgovor preostalog vremena zapisa(NvDA+Šift+R).
+* Added a command to announce remaining time for the current track
+  (NVDA+Shift+R).
 * Manja poboljšanja u izgovoru statusnih informacija kao što su ime kanala
 
 ## Promene u 2.0
@@ -108,5 +107,3 @@ add-on, NVDA 2019.3 or later is required.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

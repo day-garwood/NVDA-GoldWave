@@ -157,6 +157,12 @@ msgstr "запись"
 msgid "Announces the current audio position in seconds."
 msgstr "Объявляет текущую позицию аудио в секундах."
 
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces a summary on audio selection info such as selection duration."
+msgstr ""
+"сводное объявление выделеной звуковой информации, такой как длительность "
+"выделенного фрагмента."
+
 #. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
@@ -171,10 +177,8 @@ msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "от {audioSelectionStart} до {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-msgid "Announces a summary on audio selection info such as selection duration."
-msgstr ""
-"сводное объявление выделеной звуковой информации, такой как длительность "
-"выделенного фрагмента."
+msgid "Announces total length of the audio track."
+msgstr "Объявляет общую длину звуковой дорожки."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
@@ -187,12 +191,17 @@ msgid "Track length: {trackLength}"
 msgstr "Длина дорожки: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-msgid "Announces total length of the audio track."
+#, fuzzy
+msgid "Announces remaining length of the audio track."
 msgstr "Объявляет общую длину звуковой дорожки."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
 msgstr "Невозможно сообщить оставшееся время текущей дорожки"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces the audio channel you are editing."
+msgstr "Объявляет канал, который вы редактируете."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
@@ -200,17 +209,21 @@ msgid "Selected channel: {audioChannel}"
 msgstr "Выбран канал: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
-msgid "Announces the audio channel you are editing."
-msgstr "Объявляет канал, который вы редактируете."
+msgid "Announces audio zoom level."
+msgstr "Объявляет уровень зума."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 #, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Уровень зума: {zoomLevel}"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Announces audio zoom level."
-msgstr "Объявляет уровень зума."
+#. Translators: Input help mode message for command announcement command in Goldwave.
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr ""
+"Переключает объявление команд редактирования NVDA во время записи или "
+"воспроизведения аудио."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
@@ -224,14 +237,6 @@ msgstr "объявление команд включено"
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
 msgstr "объявление команд отключено"
-
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"Переключает объявление команд редактирования NVDA во время записи или "
-"воспроизведения аудио."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

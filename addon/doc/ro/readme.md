@@ -1,23 +1,21 @@
-# Goldwave #
+# GoldWave #
 
 * Autori: Joseph Lee împreună cu contributorii NVDA.
 * Descarcă [Versiunea Stabilă][1]
 * Descarcă [Versiunea În Dezvoltare][2]
 * NVDA compatibility: 2019.3 and beyond
-* Descărcați [versiunea mai veche][3] compatibilă cu NVDA 2019.2.1 și mai
-  timpuriu
 
 This app module enhances access and usage of GoldWave audio editor.
 
 ## Scurtături ##
 
-* NVDA+Shift+C: Comută vorbirea comenzilor în timpul editării audio.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Anunță poziția curentă a melodiei.
 * NVDA+Shift+R: Anunță timpul rămas pentru melodia care este în curs de
   editare.
 * Control+NVDA+1: Anunță canalul în care editezi.
 * Control+NVDA+2: Anunță durata totală a fișierului audio.
-* Control+NVDA+3: Anunță informații referitor la selecțiunea audio.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Anunță nivelul zoom.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -68,7 +66,7 @@ NVDA 2014.1 sau mai nou.
 
 ## Modificări aduse în versiunea 3.0
 
-* S-a adăugat o comandă pentru a anunța timpul rămas pentru melodia curentă
+* Added a command to announce remaining time for the current track
   (NVDA+Shift+R).
 * Ceva îmbunătățiri referitor la primirea informațiilor de stare cum ar fi
   informații despre canal.
@@ -116,5 +114,3 @@ NVDA 2014.1 sau mai nou.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

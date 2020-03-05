@@ -157,6 +157,11 @@ msgstr "Thu"
 msgid "Announces the current audio position in seconds."
 msgstr "Thông báo vị trí hiện tại của âm thanh bằng giây."
 
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces a summary on audio selection info such as selection duration."
+msgstr ""
+"Thông báo tóm tắt thông tin về vùng chọn âm thanh như lựa chọn thời gian."
+
 #. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
@@ -171,9 +176,8 @@ msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} đến {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-msgid "Announces a summary on audio selection info such as selection duration."
-msgstr ""
-"Thông báo tóm tắt thông tin về vùng chọn âm thanh như lựa chọn thời gian."
+msgid "Announces total length of the audio track."
+msgstr "Thông báo tổng độ dài của track audio."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
@@ -184,12 +188,17 @@ msgid "Track length: {trackLength}"
 msgstr "Độ dài track: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-msgid "Announces total length of the audio track."
+#, fuzzy
+msgid "Announces remaining length of the audio track."
 msgstr "Thông báo tổng độ dài của track audio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
 msgstr "Không thể thông báo thời gian còn lại của track hiện tại"
+
+#. Translators: Input help mode message for a Goldwave command.
+msgid "Announces the audio channel you are editing."
+msgstr "Thông báo kênh audio bạn đang chỉnh sửa."
 
 #. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
 #, python-brace-format
@@ -197,17 +206,21 @@ msgid "Selected channel: {audioChannel}"
 msgstr "Kênh đã chọn: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
-msgid "Announces the audio channel you are editing."
-msgstr "Thông báo kênh audio bạn đang chỉnh sửa."
+msgid "Announces audio zoom level."
+msgstr "Thông báo cấp độ phóng to của Audio."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 #, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Cấp độ phóng to: {zoomLevel}"
 
-#. Translators: Input help mode message for a Goldwave command.
-msgid "Announces audio zoom level."
-msgstr "Thông báo cấp độ phóng to của Audio."
+#. Translators: Input help mode message for command announcement command in Goldwave.
+msgid ""
+"Toggles whether NVDA announces editing commands during audio recording or "
+"playback."
+msgstr ""
+"Bật tắt thông báo của NVDA  về các phím lệnh liên quan đến biên tập trong "
+"khi phát hay thu âm."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"
@@ -220,14 +233,6 @@ msgstr "Bật đọc phím lệnh"
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
 msgstr "Tắt đọc phím lệnh"
-
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"Bật tắt thông báo của NVDA  về các phím lệnh liên quan đến biên tập trong "
-"khi phát hay thu âm."
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on to be shown on installation and add-on information.

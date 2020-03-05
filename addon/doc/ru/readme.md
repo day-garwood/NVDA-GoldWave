@@ -1,23 +1,21 @@
-# Goldwave #
+# GoldWave #
 
 * Авторы: Joseph Lee, участники сообщества NVDA.
 * Загрузить [стабильную версию][1]
 * Загрузить [разрабатываемую версию][2]
 * NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 This app module enhances access and usage of GoldWave audio editor.
 
 ## Горячие клавиши ##
 
-* NVDA+Shift+C: Переключение проговаривания команд во время редактирования
-  аудио.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Объявить текущую позицию дорожки.
 * NVDA+Shift+R: Объявляет оставшееся время для текущего редактируемого
   трека.
 * Control+NVDA+1: Объявляет канал, который вы редактируете.
 * Control+NVDA+2: Объявляет общую длину аудиофайла.
-* Control+NVDA+3: сводное объявление выделеной звуковой информации.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Объявляет уровень.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -67,7 +65,7 @@ add-on, NVDA 2019.3 or later is required.
 
 ## Изменения для версии 3.0
 
-* Добавлена команда объявления оставшегося времени для текущего трека
+* Added a command to announce remaining time for the current track
   (NVDA+Shift+R).
 * Незначительные улучшения объявлений информации о состоянии, например,
   информацию о канале.
@@ -115,5 +113,3 @@ add-on, NVDA 2019.3 or later is required.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

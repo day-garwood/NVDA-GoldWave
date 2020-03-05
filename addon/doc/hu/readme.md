@@ -1,21 +1,20 @@
-# Goldwave #
+# GoldWave #
 
 * Készítők: Joseph Lee, NVDA közreműködők
 * [Stabil verzió][1]
 * [Fejlesztői verzió][2]
 * NVDA compatibility: 2019.3 and beyond
-* Download [older version][3] compatible with NVDA 2019.2.1 and earlier
 
 This app module enhances access and usage of GoldWave audio editor.
 
 ## Gyorsbillentyűk ##
 
-* NvDA+Shift+C: Hangszerkesztés közben átvált a parancsok bemondására.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Az aktuális sávpozíció bemondása.
 * NVDA+Shift+R: Bemondja a szerkesztés alatt lévő sávból hátra lévő időt.
 * Control+NVDA+1: A szerkesztés alatt álló csatorna bemondása.
 * Control+NVDA+2: A hangfájl teljes hosszának bemondása.
-* Control+NvDA+3: A kijelölt hang tulajdonságainak bemondása.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: A nagyítási szint bemondása.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -65,8 +64,8 @@ add-on, NVDA 2019.3 or later is required.
 
 ## A 3.0 verzió változásai
 
-* Billentyűparancs került hozzáadásra az aktuális sáv hátralévő idejének
-  lekérésére (NVDA+Shift+r)
+* Added a command to announce remaining time for the current track
+  (NVDA+Shift+R).
 * Kissebb javítások történtek az állapot információk bemondásában, úgy mint
   csatorna információk.
 
@@ -113,5 +112,3 @@ add-on, NVDA 2019.3 or later is required.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019

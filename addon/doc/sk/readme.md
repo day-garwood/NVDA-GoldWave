@@ -1,17 +1,16 @@
-# Goldwave #
+# GoldWave #
 
 * Autori: Joseph Lee, tím NVDA.
 * Stiahnuť [stabilnú verziu][1]
 * Stiahnuť [vývojovú verziu][2]
 * Funguje s NVDA od verzie 2019.3
-* Stiahnuť [staršiu verziu][3] Pre NVDA do verzie 2019.2.1
 
 Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru
 goldwave.
 
 ## Klávesové skratky ##
 
-* NVDA+Shift+C: prepína oznamovanie príkazov NVDA počas strihania.
+* NVDA+Shift+C: prepína oznamovanie príkazov počas strihania.
 * ctrl+Shift+P: Oznámy pozíciu v aktuálnej stope.
 * Nvda+shift+R: oznámuje zostávajúci čas otvoreného súboru.
 * Ctrl+NVDA+1: oznámy kanál, ktorý upravujete.
@@ -107,5 +106,3 @@ verzie 2019.3.
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
 [2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
-
-[3]: https://addons.nvda-project.org/files/get.php?file=gwv-2019
