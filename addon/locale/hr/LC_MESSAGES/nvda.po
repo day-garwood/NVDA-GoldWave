@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: goldwave 2.1\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-12-05 07:00+1000\n"
-"PO-Revision-Date: 2019-11-21 23:16+0100\n"
+"PO-Revision-Date: 2020-03-06 11:46+0100\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: hr <LL@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 1.6.10\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
@@ -31,7 +31,7 @@ msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "Pozicija trake nije dostupna"
+msgstr "Pozicija zvučnog zapisa nije dostupna"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
@@ -161,12 +161,12 @@ msgstr "snimi"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
-msgstr "Najavljuje trenutačnu poziciju audio trake u sekundama."
+msgstr "Najavljuje trenutačnu poziciju zvučnog zapisa u sekundama."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
-"Najavljuje sažete informacije o odabranom dijelu audio trake, kao što je "
+"Najavljuje sažete informacije o odabranom dijelu zvučnog zapisa, kao što je "
 "npr. trajanje odabranog dijela."
 
 #. Translators: Presented when there is no audio selection summary available.
@@ -174,8 +174,8 @@ msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
 msgstr ""
-"Nije moguće dobiti sažetak o odabranom dijelu audio trake. Zatvori i ponovo "
-"otvori audio traku."
+"Nije moguće dobiti sažetak o odabranom dijelu zvučnog zapisa. Zatvori i "
+"ponovo otvori audio traku."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
@@ -184,24 +184,24 @@ msgstr "{audioSelectionStart} do {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "Najavljuje ukupno trajanje audio trake."
+msgstr "Najavljuje ukupno trajanje zvučnog zapisa."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr "Trajanje trake nije dostupno. Zatvori i ponovo otvori audio traku."
+msgstr ""
+"Trajanje zvučnog zapisa nije dostupno. Zatvori i ponovo otvori audio traku."
 
 #, python-brace-format
 msgid "Track length: {trackLength}"
-msgstr "Trajanje trake: {trackLength}"
+msgstr "Trajanje zvučnog zapisa: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Announces remaining length of the audio track."
-msgstr "Najavljuje ukupno trajanje audio trake."
+msgstr "Izgovara trenutno vrijeme audio zapisa."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr "Nije moguće reći preostalo vrijeme trenutačne trake"
+msgstr "Nije moguće izgovoriti preostalo vrijeme trenutačnog zvučnog zapisa"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
@@ -214,7 +214,7 @@ msgstr "Odabrani kanal: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces audio zoom level."
-msgstr "Najavljuje razinu zumiranja na audio traku."
+msgstr "Najavljuje razinu zumiranja na zvučni zapis."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 #, python-brace-format
@@ -227,7 +227,7 @@ msgid ""
 "playback."
 msgstr ""
 "Uključuje ili isključuje najavljivanje naredbi za uređivanje, tijekom "
-"snimanja ili sviranja audio trake."
+"snimanja ili sviranja zvučnog zapisa."
 
 #. Translators: Presented when command announcement toggle is unavailable.
 msgid "You need to be in sound window to toggle command announcement"

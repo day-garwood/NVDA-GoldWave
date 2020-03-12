@@ -3,31 +3,33 @@
 * Autori: Joseph Lee, NVDA doprinositelji.
 * Preuzmi [stabilnu verziju][1]
 * Preuzmi [razvojnu verziju][2]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA kompatibilnost: 2019.3 i novija
 
 Ovaj modul aplikacije unapređuje pristup uređivaču zvuka GoldWave, kao i
 njegovo korištenje.
 
 ## Prečaci ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
-* Control+Shift+P: Najavljuje trenutačnu poziciju audio trake.
-* NVDA+Shift+R: Najavljuje preostalo vrijeme trake koja se trenutačno
+* NVDA+šift+C: Uključuje ili isključuje izgovaranje naredbi prilikom
+  uređivanja audio trake.
+* Kontrol+šift+P: Najavljuje trenutačnu poziciju audio trake.
+* NVDA+šift+R: Najavljuje preostalo vrijeme trake koja se trenutačno
   uređuje.
-* Control+NVDA+1: Najavljuje kanal koji se uređuje.
-* Control+NVDA+2: Najavljuje cjelokupno trajanje audio datoteke.
-* Control+NVDA+3: announces a summary on audio selection information.
-* Control+NVDA+4: Najavljuje razinu zumiranja.
+* Kontrol+NVDA+1: Najavljuje kanal koji se uređuje.
+* Kontrol+NVDA+2: Najavljuje cjelokupno trajanje audio datoteke.
+* Kontrol+NVDA+3: Najavljuje sažete informacije o odabranom dijelu audio
+  trake.
+* Kontrol+NVDA+4: Najavljuje razinu zumiranja.
 
 Daljnje informacije o GoldWaveu i tipkovničkim prečacima je moguće naći u
 priručniku za GoldWave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Napomena: GoldWave 6 zahtijeva 64-bitnu verziju Windowsa 7 ili novijeg
+sustava. Za pokretanje ovog dodatka potreban je NVDA 2019.3 ili noviji.
 
-## Version 20.01
+## Verzija 20.01
 
-* Requires NVDA 2019.3 or later.
+* Zahtijeva NVDA 2019.3 ili noviju verziju.
 
 ## Verzija 19.11
 
@@ -67,8 +69,8 @@ add-on, NVDA 2019.3 or later is required.
 
 ## Promjene u verziji 3.0
 
-* Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
+* Dodana je naredba za najavljivanje preostalog vremena trenutačne trake
+  (NVDA+šift+R).
 * Manja poboljšanja pri najavljivanju informacija o stanju, kao što su
   informacije o kanalu.
 
@@ -79,7 +81,7 @@ add-on, NVDA 2019.3 or later is required.
 * Pomoć dodatka je sada dostupna u upravljaču dodataka (NVDA 2014.3 i
   noviji).
 * NVDA sada najavljuje odabrani kanal tijekom pritiskanja prečaca za biranje
-  kanala, kao što je Control+Shift+L za lijevi kanal.
+  kanala, kao što je Kontrol+šift+L za lijevi kanal.
 * Ispravljeni su razni problemi s numeričkim poljima za uređivanje, kao što
   su polje censor i označivač vremena u dijaloškom okviru za miksanje,
   uključujući označavanje teksta, aktualiziranje vrijednosti i tako dalje.
@@ -98,8 +100,8 @@ add-on, NVDA 2019.3 or later is required.
 ## Promjene u verziji 1.1
 
 * Podrška za najavljivanje poruka u brajici.
-* Sažetak o odabranom dijelu audio trake se prikazuje i na drugim jezicima
-  osim na engleskom.
+* Sažetak o odabranom dijelu audio trake prikazuje se i na drugim jezicima
+  osim engleskog.
 * Dodana su nova najavljivanja za prečace, uključujući prečac za pomicanje
   pozicije signala te operacije za brisanje i kraćenje.
 * Ispravljena je greška u numeričkim poljima za uređivanje kao što su razni

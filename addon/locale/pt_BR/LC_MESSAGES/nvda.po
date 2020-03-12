@@ -1,17 +1,18 @@
-# Brazilian Portuguese translation of goldwave.
+# Brazilian Portuguese translation of GoldWave add-on.
 # Copyright (C) 2013-2020 NVDA Contributors.
 # This file is distributed under the same license as the NVDA package.
 # Cleverson Casarin Uliana <clever97@gmail.com>, 2013-2015.
 # Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2020.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: goldwave\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
+"Project-Id-Version: GoldWave\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2020-02-14 23:50-0300\n"
+"PO-Revision-Date: 2020-03-06 21:24-0300\n"
 "Last-Translator: Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>\n"
-"Language-Team: Equipe de tradução do NVDA para Português Brasileiro "
-"<clcaul@live.com>\n"
+"Language-Team: NVDA Brazilian Portuguese translation team (Equipe de "
+"tradução do NVDA para Português Brasileiro) <clever97@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,19 +64,19 @@ msgstr "baixa freqüência"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back left"
-msgstr "esquerdo a frente"
+msgstr "esquerdo traseiro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back right"
-msgstr "direito atrás"
+msgstr "direito traseiro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side left"
-msgstr "esquerdo ao lado"
+msgstr "lado esquerdo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side right"
-msgstr "direito ao lado"
+msgstr "lado direito"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
@@ -93,7 +94,7 @@ msgstr "Início: {startMarkerPos}"
 #. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
-msgstr "fim: {finishMarkerPos}"
+msgstr "Fim: {finishMarkerPos}"
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
@@ -105,31 +106,31 @@ msgstr "Selecionar tudo"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 msgid "Cue"
-msgstr "Divisão"
+msgstr "Ponto de referência"
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "Divisão colocada na marca de início"
+msgstr "Ponto de referência colocado no marcador de início"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "Divisão colocada na marca de fim"
+msgstr "Ponto de referência colocado no marcador de fim"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "Marca de início na próxima divisão"
+msgstr "Iniciar marcador no próximo ponto de referência"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "Marca de início na divisão anterior"
+msgstr "Iniciar marcador no ponto de referência anterior"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "Marca de fim na próxima divisão"
+msgstr "Finalizar marcador no próximo ponto de referência"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "Marca de fim na divisão anterior"
+msgstr "Finalizar marcador no ponto de referência anterior"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
@@ -196,9 +197,8 @@ msgid "Track length: {trackLength}"
 msgstr "Comprimento da faixa: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Announces remaining length of the audio track."
-msgstr "Anuncia o comprimento total da faixa de áudio."
+msgstr "Anuncia o comprimento restante da faixa de áudio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
