@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 16.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2017-02-03 07:05+1000\n"
-"PO-Revision-Date: 2017-12-05 18:54+0000\n"
+"PO-Revision-Date: 2020-03-16 21:55+0000\n"
 "Last-Translator: Ângelo Miguel Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -24,6 +24,9 @@ msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"Esta é a janela de som do GoldWave. Ppode usar os comandos do GoldWave para "
+"ouvir e editar ficheiros de som. Consulte a ajuda do GoldWave para obter "
+"mais detalhes."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -193,9 +196,8 @@ msgid "Track length: {trackLength}"
 msgstr "Comprimento da pista: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Announces remaining length of the audio track."
-msgstr "Indica o comprimento total das pistas de áudio."
+msgstr "Anuncia o comprimento restante da pista de áudio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
@@ -246,6 +248,5 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "Um extra para melhorar o acesso e o uso do editor de áudio Goldwave."
