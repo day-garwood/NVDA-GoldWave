@@ -3,7 +3,7 @@
 * Authors: Joseph Lee, NVDA contributors.
 * Download [stable version][1]
 * Download [development version][2]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA compatibility: 2019.3 to 2020.1
 
 This app module enhances access and usage of GoldWave audio editor.
 
@@ -20,6 +20,11 @@ This app module enhances access and usage of GoldWave audio editor.
 For more information about GoldWave and keyboard commands, refer to GoldWave Manual.
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-on, NVDA 2019.3 or later is required.
+
+## Version 20.04
+
+* Added input help messages for remainig time command (NVDA+Shift+R).
+* Toggle command announcement command (NVDA+Shift+C) will now show up under "GoldWave" category in NVDA's input gestures dialog.
 
 ## Version 20.01
 
