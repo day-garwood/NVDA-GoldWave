@@ -3,14 +3,14 @@
 * Autori: Joseph Lee, tím NVDA.
 * Stiahnuť [stabilnú verziu][1]
 * Stiahnuť [vývojovú verziu][2]
-* Funguje s NVDA od verzie 2019.3
+* Funguje s NVDA 2019.3 a 2020.1
 
 Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru
 goldwave.
 
 ## Klávesové skratky ##
 
-* NVDA+Shift+C: prepína oznamovanie príkazov počas strihania.
+* NVDA+Shift+C: prepína oznamovanie príkazov počas úpravy zvuku.
 * ctrl+Shift+P: Oznámy pozíciu v aktuálnej stope.
 * Nvda+shift+R: oznámuje zostávajúci čas otvoreného súboru.
 * Ctrl+NVDA+1: oznámy kanál, ktorý upravujete.
@@ -24,6 +24,13 @@ návod k programu Goldwave.
 Pozor! Goldwave vo verzii 6 vyžaduje 64-bitovú verziu Windows 7 alebo
 novší. Ak chcete používať doplnok pre goldwave, potrebujete tiež NVDA od
 verzie 2019.3.
+
+## Verzia 20.04
+
+* Pridaný popis skratky na zisťovanie ostávajúceho času do nápovedy vstupu
+  (skratka nvda+shift+r).
+* Skratka na nastavenie hlásení (nvda+shift+c) sa odteraz dá upravovať v
+  dialógu klávesové skratky, vetva Goldwave.
 
 ## Verzia 20.01
 
@@ -64,7 +71,7 @@ verzie 2019.3.
 
 ## Zmeny vo verzii 3.0
 
-* Pridaná skratka nvda+shift+r, ktorá oznamuje ostávajúci čas.
+* Pridaná skratka, ktorá oznamuje ostávajúci čas ( nvda+shift+r).
 * Mierne upravené oznamovanie stavových informácií.
 
 ## Zmeny vo verzii 2.0

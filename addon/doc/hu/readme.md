@@ -3,18 +3,18 @@
 * Készítők: Joseph Lee, NVDA közreműködők
 * [Stabil verzió][1]
 * [Fejlesztői verzió][2]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA compatibility: 2019.3 to 2020.1
 
 This app module enhances access and usage of GoldWave audio editor.
 
 ## Gyorsbillentyűk ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+* NvDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Az aktuális sávpozíció bemondása.
 * NVDA+Shift+R: Bemondja a szerkesztés alatt lévő sávból hátra lévő időt.
 * Control+NVDA+1: A szerkesztés alatt álló csatorna bemondása.
 * Control+NVDA+2: A hangfájl teljes hosszának bemondása.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Control+NvDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: A nagyítási szint bemondása.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -22,6 +22,12 @@ Manual.
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
 add-on, NVDA 2019.3 or later is required.
+
+## Version 20.04
+
+* Added input help messages for remainig time command (NVDA+Shift+R).
+* Toggle command announcement command (NVDA+Shift+C) will now show up under
+  "GoldWave" category in NVDA's input gestures dialog.
 
 ## Version 20.01
 
@@ -65,7 +71,7 @@ add-on, NVDA 2019.3 or later is required.
 ## A 3.0 verzió változásai
 
 * Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
+  (NvDA+Shift+R).
 * Kissebb javítások történtek az állapot információk bemondásában, úgy mint
   csatorna információk.
 

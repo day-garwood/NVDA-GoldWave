@@ -3,7 +3,7 @@
 * Autores: Joseph Lee, colaboradores do NVDA.
 * Baixe a [versão estável][1]
 * Baixe a [versão em desenvolvimento][2]
-* Compatibilidade com NVDA: 2019.3 e além
+* Compatibilidade com NVDA: 2019.3 a 2020.1
 
 Este módulo de aplicativo melhora o acesso e o uso do editor de áudio
 GoldWave.
@@ -23,6 +23,13 @@ Manual do GoldWave.
 
 Nota: O GoldWave 6 requer a versão de 64 bit do Windows 7 ou posterior. Para
 usar este complemento, é necessário o NVDA 2019.3 ou posterior.
+
+## Versão 20.04
+
+* Adicionadas mensagens de ajuda de entrada para o comando de tempo restante
+  (NVDA+Shift+R).
+* O comando de alternância de anúncio de comando (NVDA+Shift+C) será exibido
+  na categoria "GoldWave" no diálogo Definir comandos do NVDA.
 
 ## Versão 20.01
 

@@ -3,14 +3,14 @@
 * Autori: Joseph Lee, NVDA doprinositelji.
 * Preuzmi [stabilnu verziju][1]
 * Preuzmi [razvojnu verziju][2]
-* NVDA kompatibilnost: 2019.3 i novija
+* NVDA kompatibilnost: 2019.3 do 2020.1
 
 Ovaj modul aplikacije unapređuje pristup uređivaču zvuka GoldWave, kao i
 njegovo korištenje.
 
 ## Prečaci ##
 
-* NVDA+šift+C: Uključuje ili isključuje izgovaranje naredbi prilikom
+* NVDA+šift+C: Uključuje ili isključuje izgovaranje prečaca prilikom
   uređivanja audio trake.
 * Kontrol+šift+P: Najavljuje trenutačnu poziciju audio trake.
 * NVDA+šift+R: Najavljuje preostalo vrijeme trake koja se trenutačno
@@ -26,6 +26,14 @@ priručniku za GoldWave.
 
 Napomena: GoldWave 6 zahtijeva 64-bitnu verziju Windowsa 7 ili novijeg
 sustava. Za pokretanje ovog dodatka potreban je NVDA 2019.3 ili noviji.
+
+## Verzija 20.04
+
+* Dodane su poruke pomoći pri unosu prečaca za preostalo vrijeme
+  (NVDA+šift+R).
+* Prečac za uključivanje ili isključivanje najvljivanja prečaca
+  (NVDA+šift+C) sada će se prikazati u kategoriji „GoldWave” u dijaloškom
+  okviru za ulazne geste.
 
 ## Verzija 20.01
 

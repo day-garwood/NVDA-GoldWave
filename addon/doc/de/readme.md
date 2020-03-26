@@ -1,37 +1,43 @@
 # GoldWave #
 
-* Autoren: Joseph Lee, NVDA-Entwicklergemeinde.
+* Autoren: Joseph Lee und die NVDA-Entwicklergemeinde.
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA compatibility: 2019.3 to 2020.1
 
-Dieses Anwendungsmodul verbessert die Zugänglichkeit des Audio-Editors
-Goldwave.
+Diese Erweiterung verbessert die Zugänglichkeit des Audio-Editors GoldWave.
 
-## Tastenkürzel ##
+## Tastenkombinationen ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
-* Strg+Umschalt+P: gibt die aktuelle Audio-Position an.
+* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* Strg+Umschalt+P: Gibt die aktuelle Audio-Position an.
 * NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
   aus.
-* Strg+NVDA+1: Gibt den Audiokanal an, den Sie momentan bearbeiten.
-* Strg+NVDA+2: Gibt die Gesamtlänge der Audiospur an.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Strg+NVDA+1: Gibt den Audio-Kanal an, den Sie momentan bearbeiten.
+* Strg+NVDA+2: Gibt die Gesamtlänge der Audio-Spur an.
+* Control+NvDA+3: announces a summary on audio selection information.
 * Strg+NVDA+4: Gibt die aktuelle Zoom-Stufe an.
 
-Weitere Informationen über Goldwave und seine Tastenkombinationen finden Sie
-im Benutzerhandbuch von Goldwave.
+Weitere Informationen über GoldWave und die Tastenkombinationen finden Sie
+im GoldWave-Benutzerhandbuch.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Bitte beachten Sie: GoldWave 6 benötigt die 64-Bit-Version von Windows 7
+oder neuer. NVDA 2019.3 oder neuer ist erforderlich, um diese Erweiterung
+einzusetzen.
+
+## Version 20.04
+
+* Added input help messages for remainig time command (NVDA+Shift+R).
+* Toggle command announcement command (NVDA+Shift+C) will now show up under
+  "GoldWave" category in NVDA's input gestures dialog.
 
 ## Version 20.01
 
-* Requires NVDA 2019.3 or later.
+* Benötigt NVDA 2019.3 oder neuer.
 
 ## Version 19.11
 
-* Windows 7 SP1, GoldWave 6.x und NVDA 2019.1 oder höher ist erforderlich.
+* Windows 7 SP1, GoldWave 6.x und NVDA 2019.1 oder höher wwird benötigt.
 * Hilfemeldungen für das Sound-Fenster hinzugefügt. (Diese sind verfügbar,
   falls die Erweiterung "Hilfe zur Verwendung von Steuerelementen"
   installiert ist).
@@ -69,7 +75,7 @@ add-on, NVDA 2019.3 or later is required.
 ## Änderungen in 3.0
 
 * Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
+  (NvDA+Shift+R).
 * Leichte Verbesserungen bei der Ansage von Statusinformationen wie
   Senderinformationen.
 

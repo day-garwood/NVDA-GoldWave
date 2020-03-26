@@ -3,19 +3,19 @@
 * Авторы: Joseph Lee, участники сообщества NVDA.
 * Загрузить [стабильную версию][1]
 * Загрузить [разрабатываемую версию][2]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA compatibility: 2019.3 to 2020.1
 
 This app module enhances access and usage of GoldWave audio editor.
 
 ## Горячие клавиши ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+* NvDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Объявить текущую позицию дорожки.
 * NVDA+Shift+R: Объявляет оставшееся время для текущего редактируемого
   трека.
 * Control+NVDA+1: Объявляет канал, который вы редактируете.
 * Control+NVDA+2: Объявляет общую длину аудиофайла.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Control+NvDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Объявляет уровень.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -23,6 +23,12 @@ Manual.
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
 add-on, NVDA 2019.3 or later is required.
+
+## Version 20.04
+
+* Added input help messages for remainig time command (NVDA+Shift+R).
+* Toggle command announcement command (NVDA+Shift+C) will now show up under
+  "GoldWave" category in NVDA's input gestures dialog.
 
 ## Version 20.01
 
@@ -66,7 +72,7 @@ add-on, NVDA 2019.3 or later is required.
 ## Изменения для версии 3.0
 
 * Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
+  (NvDA+Shift+R).
 * Незначительные улучшения объявлений информации о состоянии, например,
   информацию о канале.
 

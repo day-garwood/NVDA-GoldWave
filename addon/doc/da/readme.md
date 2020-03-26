@@ -3,19 +3,19 @@
 * Forfattere: Joseph Lee, NVDA bidragydere.
 * Download [stabil version][1]
 * Download [udviklingsversion][2]
-* NVDA compatibility: 2019.3 and beyond
+* NVDA compatibility: 2019.3 to 2020.1
 
 This app module enhances access and usage of GoldWave audio editor.
 
 ## Genveje ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+* NvDA+Shift+C: Toggles speaking of commands during audio editing.
 * Ctrl+Skift+P: Annoncerer aktuelle sporposition.
 * NVDA+Skift+R: Annoncerer resterende tid for det spor du er i færd med at
   redigere.
 * NVDA+Ctrl+1: Annoncerer kanalen du redigere.
 * NVDA+Ctrl+2: Annoncerer den fulde længde af lydfilen.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Control+NvDA+3: announces a summary on audio selection information.
 * NVDA+Ctrl+4: Annoncere det aktuelle niveau for zoom.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -23,6 +23,12 @@ Manual.
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
 add-on, NVDA 2019.3 or later is required.
+
+## Version 20.04
+
+* Added input help messages for remainig time command (NVDA+Shift+R).
+* Toggle command announcement command (NVDA+Shift+C) will now show up under
+  "GoldWave" category in NVDA's input gestures dialog.
 
 ## Version 20.01
 
@@ -66,7 +72,7 @@ add-on, NVDA 2019.3 or later is required.
 ## Ændringer i 3.0
 
 * Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
+  (NvDA+Shift+R).
 * Små forbedringer når NVDA annoncerer statusoplysninger såsom
   kanaloplysninger.
 
