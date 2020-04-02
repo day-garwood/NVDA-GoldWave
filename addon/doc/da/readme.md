@@ -1,56 +1,62 @@
-# GoldWave #
+# GoldWave (tilføjelse ikke oversat) #
 
 * Forfattere: Joseph Lee, NVDA bidragydere.
 * Download [stabil version][1]
 * Download [udviklingsversion][2]
-* NVDA compatibility: 2019.3 to 2020.1
+* NVDA-kompatibilitet: 2019.3 til 2020.1
 
-This app module enhances access and usage of GoldWave audio editor.
+Dette app-modul forbedrer adgangen til og brugen af lydredigeringsprogrammet
+Goldwave. Bemærk: GoldWave-programmet har ikke en dansk sprogpakke
+tilgængelig. Derfor er tilføjelsen på nuværende tidspunkt ikke oversat.
 
 ## Genveje ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Skift+C: Slår udtale af kommandoer til og fra under lydredigering.
 * Ctrl+Skift+P: Annoncerer aktuelle sporposition.
 * NVDA+Skift+R: Annoncerer resterende tid for det spor du er i færd med at
   redigere.
 * NVDA+Ctrl+1: Annoncerer kanalen du redigere.
 * NVDA+Ctrl+2: Annoncerer den fulde længde af lydfilen.
-* Control+NvDA+3: announces a summary on audio selection information.
+* Ctrl+NVDA+3: Annoncerer en opsummering af markeringen for den del af
+  lydfilen, du har valgt.
 * NVDA+Ctrl+4: Annoncere det aktuelle niveau for zoom.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+For yderligere oplysninger om GoldWave og tastatur kommandoer, læs
+brugervejledningen til GoldWave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Bemærk: GoldWave 6 kræver 64-bit version af Windows 7 eller nyere. For at
+bruge denne tilføjelse kræves NVDA 2019.3 eller nyere.
 
 ## Version 20.04
 
-* Added input help messages for remainig time command (NVDA+Shift+R).
-* Toggle command announcement command (NVDA+Shift+C) will now show up under
-  "GoldWave" category in NVDA's input gestures dialog.
+* Tilføjet inputhjælpsmeddelelser til kommandoen til resterende tid (NVDA
+  +Shift+R).
+* Kommandoen til at at aktivere og deaktivere udtale af meddelelser, når
+  kommandoer udføres (NVDA+Shift+C) vises nu under kategorien "GoldWave" i
+  NVDA's dialogboks med inputbevægelser.
 
 ## Version 20.01
 
-* Requires NVDA 2019.3 or later.
+* Kræver NVDA 2019.3 eller nyere.
 
-## Version 19.11
+## Version 19.09
 
-* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
-* Added help message for sound window (accessible if Control Usage Assistant
-  add-on is installed).
+* Windows 7 SP1, GoldWave 6.x og NVDA 2019.1 eller nyere er påkrævet.
+* Tilføjet hjælpemeddelelse til lydvindue (tilgængelig, hvis tilføjelsen
+  Brugsassistent til kontroller er installeret).
 
 ## Version 18.12
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
-* Internal changes to support future NVDA releases.
+* NVDA vil ikke længere gør ingenting eller afspill fejletoner, når du
+  udfører visse GoldWave-kommandoer med kommando-meddelelse slået til (dette
+  kan medføre underlig adfærd i nogle tilfælde).
+* Interne ændringer for at bedre kunne understøtte fremtidige versioner af
+  NVDA.
 
 ## Version 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Løst et problem, hvor ledende nul ikke ville blive vist, når man forsøgte
+  at opnå resterende tid for et spor.
 
 ## Version 17.05
 
@@ -71,8 +77,8 @@ add-on, NVDA 2019.3 or later is required.
 
 ## Ændringer i 3.0
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
+* Tilføjet en kommando til at annoncere resterende tid for det aktuelle spor
+  (NvDA+Skift+R).
 * Små forbedringer når NVDA annoncerer statusoplysninger såsom
   kanaloplysninger.
 

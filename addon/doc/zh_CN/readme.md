@@ -23,9 +23,8 @@
 
 ## Version 20.04
 
-* Added input help messages for remainig time command (NVDA+Shift+R).
-* Toggle command announcement command (NVDA+Shift+C) will now show up under
-  "GoldWave" category in NVDA's input gestures dialog.
+* 添加了有关restig time命令（NVDA + Shift + R）的输入帮助消息。
+* 切换命令 （NVDA_Shift_C） 现在显示在 NVDA 的输入手势对话框中的"GoldWave"分类下。
 
 ## 版本20.01
 
