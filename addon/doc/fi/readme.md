@@ -3,19 +3,20 @@
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
-* NVDA compatibility: 2019.3 to 2020.1
+* Yhteensopivuus: NVDA 2019.3-2020.1
 
 Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.
 
 ## Pikanäppäimet ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Vaihto+C: Ottaa käyttöön tai poistaa käytöstä äänenmuokkauskomentojen
+  puhumisen.
 * Control+Vaihto+P: Ilmoittaa nykyisen kohdan raidalla.
 * NVDA+Vaihto+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
 * Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
-* Control+NvDA+3: announces a summary on audio selection information.
+* Ctrl+NVDA+3: Kertoo yhteenvedon raidan valitun kohdan tiedoista.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
@@ -24,11 +25,13 @@ käsikirjassa.
 Huom: GoldWave 6 vaatii Windows 7:n 64-bittisen version tai uudemman. Tämän
 lisäosan käyttämiseen tarvitaan NVDA 2019.3 tai uudempi.
 
-## Version 20.04
+## Versio 20.04
 
-* Added input help messages for remainig time command (NVDA+Shift+R).
-* Toggle command announcement command (NVDA+Shift+C) will now show up under
-  "GoldWave" category in NVDA's input gestures dialog.
+* Lisätty syöteohjeviestit jäljellä olevan ajan ilmoittavalle komennolle
+  (NVDA+Vaihto+R).
+* Komentojen puhumisen käyttöön ottava tai käytöstä poistava komento
+  (NVDA+Vaihto+C) näkyy nyt GoldWave-kategorian alla NVDA:n
+  Syötekomennot-valintaikkunassa.
 
 ## Versio 20.01
 
@@ -71,8 +74,8 @@ lisäosan käyttämiseen tarvitaan NVDA 2019.3 tai uudempi.
 
 ## Muutokset versiossa 3.0
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
+* Lisätty nykyisen raidan jäljellä olevan ajan ilmoittava komento
+  (NVDA+Vaihto+R).
 * Pieniä parannuksia tilatietoja, kuten kanavaa ilmoitettaessa.
 
 ## Muutokset versiossa 2.0
