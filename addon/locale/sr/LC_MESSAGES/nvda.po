@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
 "POT-Creation-Date: 2014-11-14 07:00+1000\n"
-"PO-Revision-Date: 2019-12-15 19:01+0100\n"
+"PO-Revision-Date: 2020-04-17 16:52+0100\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: serbian <wwenikola123@gmail.com>\n"
 "Language: sr\n"
@@ -193,9 +193,8 @@ msgid "Track length: {trackLength}"
 msgstr "Trajanje snimka: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Announces remaining length of the audio track."
-msgstr "Izgovara ukupno trajanje audio zapisa."
+msgstr "Izgovara preostalo trajanje zapisa"
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
