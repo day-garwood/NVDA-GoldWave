@@ -400,7 +400,7 @@ class AppModule(appModuleHandler.AppModule):
 	def __init__(self, *args, **kwargs):
 		super(AppModule, self).__init__(*args, **kwargs)
 		global multiInstance
-		multiInstance+=1
+		multiInstance += 1
 
 	# Presets and control windows: Work with buttons with custom window class names.
 
@@ -444,7 +444,7 @@ class AppModule(appModuleHandler.AppModule):
 				if child.role == ROLE_STATUSBAR:
 					if not child.displayText: child.redraw()
 					self.statusBarCache[index] = child
-					index+=1
+					index += 1
 		return self.statusBarCache[statBarIndex]
 
 	# Announcement of commands is enabled by default.
