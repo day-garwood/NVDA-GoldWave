@@ -33,7 +33,8 @@ class SoundWindow(IAccessible):
 	commandAnnouncement = True
 
 	def message(self, text):
-		import speech, braille
+		import speech
+		import braille
 		braille.handler.message(text)
 		if self.appModule.commandAnnouncement:
 			speech.speakMessage(text)
