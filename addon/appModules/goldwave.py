@@ -43,7 +43,7 @@ class SoundWindow(IAccessible):
 	def getStatusInfo(self, statBarIndex, childIndex):
 		if globalVars.appArgs.debugLogging:
 			log.debug("GWV: Status bar object fetcher")
-			log.debug("GWV: Status %s, child index %s"%(statBarIndex, childIndex))
+			log.debug(f"GWV: Status {statBarIndex}, child index {childIndex}")
 		fgChild = self.appModule._get_statusBars(statBarIndex)
 		if globalVars.appArgs.debugLogging:
 			log.debug("GWV: Status bar found" if fgChild.role == ROLE_STATUSBAR else "Status bar not found")
@@ -75,7 +75,7 @@ class SoundWindow(IAccessible):
 		audioSelection = self.getStatusInfo(0, 2)
 		if multiInstance > 1: audioSelection = self.getStatusInfo(0, 2)
 		if globalVars.appArgs.debugLogging:
-			log.debug("GWV: status bar length: %s"%len(audioSelection))
+			log.debug(f"GWV: status bar length: {len(audioSelection)}")
 		return audioSelection
 
 	def getAudioSelectionParsed(self):
@@ -83,7 +83,7 @@ class SoundWindow(IAccessible):
 		# Return the list of substrings to be handled by individual scripts.
 		audioSelectionParsed = self.getAudioSelection().split()
 		if globalVars.appArgs.debugLogging:
-			log.debug("GWV: parsed status bar length: %s"%len(audioSelectionParsed))
+			log.debug(f"GWV: parsed status bar length: {len(audioSelectionParsed)}")
 		return audioSelectionParsed
 
 	# Get channel information. But first, a few constants (to help translators):
@@ -387,7 +387,7 @@ class SoundWindow(IAccessible):
 
 	# Change and announce zoom levels.
 	# All of them involve pressing the shift key, so just use a creative list comprehension.
-	@scriptHandler.script(gestures=["kb:shift+%s"%(command) for command in
+	@scriptHandler.script(gestures=[f"kb:shift+{command}" for command in
 		["upArrow", "downArrow", "0", "1", "2", "3", "4", "5", "6", "a"]])
 	def script_changeZoomLevel(self, gesture):
 		gesture.send()
