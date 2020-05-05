@@ -7,7 +7,7 @@ import appModuleHandler
 import api
 import globalVars
 import scriptHandler
-from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING, ROLE_STATUSBAR
+from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_STATUSBAR
 from NVDAObjects.IAccessible import IAccessible
 from NVDAObjects.window import Window, DisplayModelEditableText, edit  # Various buttons and numeric edit fields.
 from logHandler import log
