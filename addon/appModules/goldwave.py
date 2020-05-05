@@ -88,33 +88,33 @@ class SoundWindow(IAccessible):
 		return audioSelectionParsed
 
 	# Get channel information. But first, a few constants (to help translators):
-	audioChannelValues={
+	audioChannelValues = {
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"":_("Channel information unavailable"),
+		"": _("Channel information unavailable"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Mono":_("mono"),
+		"Mono": _("mono"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Stereo":_("stereo"),
+		"Stereo": _("stereo"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Left":_("left"),
+		"Left": _("left"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Right":_("right"),
+		"Right": _("right"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Center":_("center"),
+		"Center": _("center"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"w frequenc":_("low frequency"),
+		"w frequenc": _("low frequency"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Back left":_("back left"),
+		"Back left": _("back left"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Back right":_("back right"),
+		"Back right": _("back right"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Side left":_("side left"),
+		"Side left": _("side left"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
-		"Side right":_("side right"),
+		"Side right": _("side right"),
 		# Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
-		"Multiple":_("Multiple channels selected"),
+		"Multiple": _("Multiple channels selected"),
 		# Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
-		"All":_("All channels selected")
+		"All": _("All channels selected")
 	}
 
 	def getAudioChannels(self):
