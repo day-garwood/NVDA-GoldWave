@@ -388,8 +388,9 @@ class SoundWindow(IAccessible):
 
 	# Change and announce zoom levels.
 	# All of them involve pressing the shift key, so just use a creative list comprehension.
-	@scriptHandler.script(gestures=[f"kb:shift+{command}" for command in
-		["upArrow", "downArrow", "0", "1", "2", "3", "4", "5", "6", "a"]])
+	@scriptHandler.script(gestures=[f"kb:shift+{command}" for command in [
+		"upArrow", "downArrow", "0", "1", "2", "3", "4", "5", "6", "a"
+	]])
 	def script_changeZoomLevel(self, gesture):
 		gesture.send()
 		self.script_announceZoomLevel(gesture)
