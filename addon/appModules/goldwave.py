@@ -183,7 +183,7 @@ class SoundWindow(IAccessible):
 		try:
 			gesture.send()
 			# Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
-			self.message(_("Start: {startMarkerPos}").format(startMarkerPos = self.getAudioSelectionParsed()[0]))
+			self.message(_("Start: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0]))
 		except:
 			pass
 
@@ -192,7 +192,7 @@ class SoundWindow(IAccessible):
 		try:
 			gesture.send()
 			# Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
-			self.message(_("Finish: {finishMarkerPos}").format(finishMarkerPos = self.getAudioSelectionParsed()[2]))
+			self.message(_("Finish: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2]))
 		except:
 			pass
 
@@ -322,7 +322,7 @@ class SoundWindow(IAccessible):
 				self.message(_("Unable to obtain audio selection summary. Please close and reopen the audio track."))
 			else:
 				# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-				self.message(_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(audioSelectionStart = audioSelectionParsed[0], audioSelectionEnd = audioSelectionParsed[2], audioSelectionLength = audioSelectionParsed[3]))
+				self.message(_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(audioSelectionStart=audioSelectionParsed[0], audioSelectionEnd=audioSelectionParsed[2], audioSelectionLength=audioSelectionParsed[3]))
 		except:
 			pass
 
@@ -336,7 +336,7 @@ class SoundWindow(IAccessible):
 			# Translators: Presented when there is no track length information.
 			self.message(_("Track length is unavailable. Please close and reopen the audio track."))
 		else:
-			self.message(_("Track length: {trackLength}").format(trackLength = trackLengthSTR))
+			self.message(_("Track length: {trackLength}").format(trackLength=trackLengthSTR))
 
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
@@ -368,7 +368,7 @@ class SoundWindow(IAccessible):
 			self.message(self.audioChannelValues[channelSTR])
 		else:
 			# Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-			self.message(_("Selected channel: {audioChannel}").format(audioChannel = self.audioChannelValues[channelSTR]))
+			self.message(_("Selected channel: {audioChannel}").format(audioChannel=self.audioChannelValues[channelSTR]))
 
 	# Change and announce audio channels.
 	@scriptHandler.script(gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a", "kb:control+shift+b"])
@@ -383,7 +383,7 @@ class SoundWindow(IAccessible):
 		gesture="kb:control+nvda+4")
 	def script_announceZoomLevel(self, gesture):
 		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-		self.message(_("Zoom level: {zoomLevel}").format(zoomLevel = self.getZoomLevel()))
+		self.message(_("Zoom level: {zoomLevel}").format(zoomLevel=self.getZoomLevel()))
 
 	# Change and announce zoom levels.
 	# All of them involve pressing the shift key, so just use a creative list comprehension.
