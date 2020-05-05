@@ -9,7 +9,7 @@ import globalVars
 import scriptHandler
 from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_GROUPING, ROLE_STATUSBAR
 from NVDAObjects.IAccessible import IAccessible
-from NVDAObjects.window import Window, DisplayModelEditableText, edit # Various buttons and numeric edit fields.
+from NVDAObjects.window import Window, DisplayModelEditableText, edit  # Various buttons and numeric edit fields.
 from logHandler import log
 import ui
 import addonHandler
@@ -18,7 +18,6 @@ addonHandler.initTranslation()
 # Detect multiple instances of GoldWave.
 multiInstance = 0
 
-# A number of NVDA objects for GoldWave:
 
 class SoundWindow(IAccessible):
 	"""The GoldWave's sound window. Here one can play, record and edit audio files.
