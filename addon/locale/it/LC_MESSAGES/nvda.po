@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2019-11-15 10:14+0100\n"
+"PO-Revision-Date: 2020-05-07 08:41+0200\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: It <simone.dalmaso@gmail.con>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.3\n"
 
 #. Translators: general help message for GoldWave sound window.
 msgid ""
@@ -28,11 +28,11 @@ msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "Posizione traccia non disponibile."
+msgstr "Posizione traccia non disponibile"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "Informazioni canale non disponibili."
+msgstr "Informazioni sul canale non disponibili"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
@@ -52,19 +52,19 @@ msgstr "destro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
-msgstr "Centro"
+msgstr "centro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr "Bassa frequenza"
+msgstr "bassa frequenza"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back left"
-msgstr "Dietro a sinistra"
+msgstr "dietro a sinistra"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back right"
-msgstr "Dietro a destra"
+msgstr "dietro a destra"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side left"
@@ -72,7 +72,7 @@ msgstr "lato sinistro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side right"
-msgstr "Lato destro"
+msgstr "lato destro"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
@@ -130,31 +130,31 @@ msgstr "Marker finale al cue point precedente"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
-msgstr "Cancellato"
+msgstr "cancellato"
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
-msgstr "Play"
+msgstr "play"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
-msgstr "Indietro"
+msgstr "indietro"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
-msgstr "Avanti veloce"
+msgstr "avanti veloce"
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
-msgstr "Pausa"
+msgstr "pausa"
 
 #. Translators: Presented when stopping a track in in Goldwave.
 msgid "stop"
-msgstr "Stop"
+msgstr "stop"
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
-msgstr "Registrazione"
+msgstr "registrazione"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -163,7 +163,7 @@ msgstr "Legge la posizione audio corrente in secondi."
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
-"Legge un riepilogo delle informazioni della selezione audio, come la durata"
+"Legge un riepilogo delle informazioni della selezione audio, come la durata."
 
 #. Translators: Presented when there is no audio selection summary available.
 msgid ""
@@ -193,9 +193,8 @@ msgid "Track length: {trackLength}"
 msgstr "Lunghezza traccia: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Announces remaining length of the audio track."
-msgstr "Legge la lunghezza totale della traccia audio."
+msgstr "Legge la lunghezza restante della traccia audio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
