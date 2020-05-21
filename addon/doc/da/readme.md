@@ -27,6 +27,10 @@ brugervejledningen til GoldWave.
 Bemærk: GoldWave 6 kræver 64-bit version af Windows 7 eller nyere. For at
 bruge denne tilføjelse kræves NVDA 2019.3 eller nyere.
 
+## Version 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
 ## Version 20.04
 
 * Tilføjet inputhjælpsmeddelelser til kommandoen til resterende tid (NVDA

@@ -27,6 +27,10 @@ priručniku za GoldWave.
 Napomena: GoldWave 6 zahtijeva 64-bitnu verziju Windowsa 7 ili novijeg
 sustava. Za pokretanje ovog dodatka potreban je NVDA 2019.3 ili noviji.
 
+## Version 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
 ## Verzija 20.04
 
 * Dodane su poruke pomoći pri unosu prečaca za preostalo vrijeme

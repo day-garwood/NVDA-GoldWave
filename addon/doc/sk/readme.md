@@ -27,6 +27,10 @@ verzie 2019.3.
 
 ## Verzia 20.04
 
+* Opravené drobné chyby v kóde.
+
+## Verzia 20.04
+
 * Pridaný popis skratky na zisťovanie ostávajúceho času do nápovedy vstupu
   (skratka nvda+shift+r).
 * Skratka na nastavenie hlásení (nvda+shift+c) sa odteraz dá upravovať v

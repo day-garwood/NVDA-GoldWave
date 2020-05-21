@@ -21,6 +21,10 @@
 
 注意：现在GoldWave 6需要Windows 7或更高版本的系统。另外要使用此插件，还需要NVDA 2019.3或更高版本。
 
+## Version 20.06
+
+* 使用 Flake8 解决了许多编码样式问题和潜在错误。
+
 ## Version 20.04
 
 * 添加了有关restig time命令（NVDA + Shift + R）的输入帮助消息。

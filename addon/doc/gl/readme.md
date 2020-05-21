@@ -26,9 +26,14 @@ Nota: GoldWave 6 require da versión de 64 bits de Windows 7 ou
 posterior. Requírese do NVDA 2019.3 ou posterior para utilizar o
 complemento.
 
+## Versión 20.06
+
+* Resoltas varias incidencias de estilo do código e erros potenciais con
+  Flake8.
+
 ## Versión 20.04
 
-* Engadido mensaxe de axuda para o atallo de tempo restante (NVDA+Shift+R) 
+* Engadida mensaxe de axuda para o atallo de tempo restante (NVDA+Shift+R).
 * O atallo conmutar anunciado de ordes (NVDA+Shift+C) amosarase na categoría
   "GoldWave" no diálogo Xestos de entrada de NVDA.
 

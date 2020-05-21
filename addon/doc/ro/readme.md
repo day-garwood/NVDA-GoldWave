@@ -24,6 +24,10 @@ Manual.
 Notă: Goldwave 6 necesită o versiune Windows 7 sau mai nouă cu 64 biți și cu
 NVDA 2014.1 sau mai nou.
 
+## Version 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
 ## Version 20.04
 
 * Added input help messages for remainig time command (NVDA+Shift+R).

@@ -23,6 +23,10 @@ podręczniku Goldwave.
 Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. Aby używać
 tego dodatku, potrzebna jest wersja NVDA 2019.3 lub nowsza.
 
+## Version 20.06
+
+* Resolved many coding style issues and potential bugs with Flake8.
+
 ## Version 20.04
 
 * Added input help messages for remainig time command (NVDA+Shift+R).

@@ -24,6 +24,11 @@ Manual do GoldWave.
 Nota: O GoldWave 6 requer a versão de 64 bit do Windows 7 ou posterior. Para
 usar este complemento, é necessário o NVDA 2019.3 ou posterior.
 
+## Versão 20.06
+
+* Foram resolvidos muitos problemas de estilo de codificação e possíveis
+  erros com o Flake8.
+
 ## Versão 20.04
 
 * Adicionadas mensagens de ajuda de entrada para o comando de tempo restante
