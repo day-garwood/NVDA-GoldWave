@@ -3,7 +3,7 @@
 * Forfattere: Joseph Lee, NVDA bidragydere.
 * Download [stabil version][1]
 * Download [udviklingsversion][2]
-* NVDA compatibility: 2019.3 to 2020.2
+* NVDA-kompatibilitet: 2019.3 til 2020.2
 
 Dette app-modul forbedrer adgangen til og brugen af lydredigeringsprogrammet
 Goldwave. Bemærk: GoldWave-programmet har ikke en dansk sprogpakke
@@ -29,7 +29,7 @@ bruge denne tilføjelse kræves NVDA 2019.3 eller nyere.
 
 ## Version 20.06
 
-* Resolved many coding style issues and potential bugs with Flake8.
+* Løst mange problemer med kodningstil og potentielle fejl med Flake8.
 
 ## Version 20.04
 
