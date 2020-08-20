@@ -64,9 +64,11 @@ class SoundWindow(IAccessible):
 		global multiInstance
 		# Have to definitely call the info getter twice.
 		audioPos = self.getStatusInfo(0, 3)
-		if multiInstance > 1: audioPos = self.getStatusInfo(0, 3)
+		if multiInstance > 1:
+			audioPos = self.getStatusInfo(0, 3)
 		# Raw means return just the raw text, used in remaining time and other position scripts.
-		if raw: return audioPos
+		if raw:
+			return audioPos
 		# Translators: Presented when audio track position information can not be located.
 		return _("Track position not available") if not audioPos or " " in audioPos else audioPos
 
@@ -74,7 +76,8 @@ class SoundWindow(IAccessible):
 		# Call the info getter twice to obtain audio selection (relies on display text).
 		global multiInstance
 		audioSelection = self.getStatusInfo(0, 2)
-		if multiInstance > 1: audioSelection = self.getStatusInfo(0, 2)
+		if multiInstance > 1:
+			audioSelection = self.getStatusInfo(0, 2)
 		if globalVars.appArgs.debugLogging:
 			log.debug(f"GWV: status bar length: {len(audioSelection)}")
 		return audioSelection
@@ -127,7 +130,8 @@ class SoundWindow(IAccessible):
 	def getTrackLength(self):
 		fgChild = self.appModule._get_statusBars(0)
 		try:
-			if not fgChild.displayText: fgChild.redraw()
+			if not fgChild.displayText:
+				fgChild.redraw()
 		except AttributeError:
 			fgChild = self.appModule._get_statusBars(0)
 		return fgChild.getChild(1).displayText
@@ -375,8 +379,10 @@ class SoundWindow(IAccessible):
 	@scriptHandler.script(gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a", "kb:control+shift+b"])
 	def script_selectChannel(self, gesture):
 		gesture.send()
-		if (gesture.displayName == "ctrl+shift+a" and self.appModule.productVersion.startswith("5")) or (gesture.displayName == "ctrl+shift+b" and self.appModule.productVersion.startswith("6")): return
-		else: self.script_announceAudioChannels(gesture)
+		if (gesture.displayName == "ctrl+shift+a" and self.appModule.productVersion.startswith("5")) or (gesture.displayName == "ctrl+shift+b" and self.appModule.productVersion.startswith("6")):
+			return
+		else:
+			self.script_announceAudioChannels(gesture)
 
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
@@ -443,7 +449,8 @@ class AppModule(appModuleHandler.AppModule):
 		if refill or multiInstance > 1 or not len(self.statusBarCache):
 			for child in api.getForegroundObject().children:
 				if child.role == ROLE_STATUSBAR:
-					if not child.displayText: child.redraw()
+					if not child.displayText:
+						child.redraw()
 					self.statusBarCache[index] = child
 					index += 1
 		return self.statusBarCache[statBarIndex]
