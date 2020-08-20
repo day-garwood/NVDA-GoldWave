@@ -9,23 +9,23 @@
 
 ## 快捷键 ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: 切换在音频编辑过程中是否朗读命令。
 * Control+Shift+P: 报告当前的轨道位置。
 * NVDA+Shift+R: 报告当前编辑曲目的剩余时间。
 * Control+NVDA+1: 报告您正在编辑的通道。
 * Control+NVDA+2: 报告音频文件的总长度。
-* Control+NvDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: 报告关于音频选择信息的摘要。
 * Control+NVDA+4: 报告缩放级别。
 
 有关GoldWave和键盘命令的更多信息，请参阅GoldWave手册。
 
 注意：现在GoldWave 6需要Windows 7或更高版本的系统。另外要使用此插件，还需要NVDA 2019.3或更高版本。
 
-## Version 20.06
+## 版本20.06
 
 * 使用 Flake8 解决了许多编码样式问题和潜在错误。
 
-## Version 20.04
+## 版本20.04
 
 * 添加了有关restig time命令（NVDA + Shift + R）的输入帮助消息。
 * 切换命令 （NVDA_Shift_C） 现在显示在 NVDA 的输入手势对话框中的"GoldWave"分类下。
@@ -64,8 +64,7 @@
 
 ## 版本3.0
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
+* 增加了一条命令来报告当前曲目的剩余时间（NVDA+Shift+R）。
 * 报告通道信息等状态信息时略有改进。
 
 ## 版本2.0
