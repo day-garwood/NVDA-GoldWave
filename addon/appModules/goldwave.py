@@ -140,11 +140,11 @@ class SoundWindow(IAccessible):
 			if len(time) == 1:
 				timeList.append(float(time[0]))
 			elif len(time) == 2:
-				min = float(time[0])*60.0
-				timeList.append(min+float(time[1]))
+				min = float(time[0]) * 60.0
+				timeList.append(min + float(time[1]))
 			else:
-				hour, min = float(time[0])*3600.0, float(time[1])*60.0
-				timeList.append(hour+min+float(time[2]))
+				hour, min = float(time[0]) * 3600.0, float(time[1]) * 60.0
+				timeList.append(hour + min + float(time[2]))
 		return timeList
 
 	def getRemainingTime(self, audioPos):
@@ -154,7 +154,7 @@ class SoundWindow(IAccessible):
 		# That is, subtract the last elements, and if audio pos is greater than track length for that particular cell, move to the left.
 		# However, a simpler solution is to convert the time value to seconds, subtract then format it back to hh:mm:ss format.
 		timesec = self.convertTime2Sec(audioPosParsed, trackLengthParsed)
-		remainingTimeSec = timesec[1]-timesec[0]
+		remainingTimeSec = timesec[1] - timesec[0]
 		# Now convert the seconds back to hh:mm:ss format.
 		if remainingTimeSec < 60.0:
 			return str(remainingTimeSec)
