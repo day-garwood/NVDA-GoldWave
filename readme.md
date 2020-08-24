@@ -9,12 +9,12 @@ This app module enhances access and usage of GoldWave audio editor.
 
 ## Shortcuts ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Announces current track position.
 * NVDA+Shift+R: Announces remaining time for the currently editing track.
 * Control+NVDA+1: Announces the channel you are editing.
 * Control+NVDA+2: Announces the total length of the audio file.
-* Control+NvDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Announces the zoom level.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave Manual.
@@ -64,7 +64,7 @@ Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-
 
 ## Changes for 3.0
 
-* Added a command to announce remaining time for the current track (NvDA+Shift+R).
+* Added a command to announce remaining time for the current track (NVDA+Shift+R).
 * Slight improvements when announcing status information such as channel information.
 
 ## Changes for 2.0
