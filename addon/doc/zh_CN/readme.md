@@ -9,12 +9,12 @@
 
 ## 快捷键 ##
 
-* NVDA+Shift+C: 切换在音频编辑过程中是否朗读命令。
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: 报告当前的轨道位置。
 * NVDA+Shift+R: 报告当前编辑曲目的剩余时间。
 * Control+NVDA+1: 报告您正在编辑的通道。
 * Control+NVDA+2: 报告音频文件的总长度。
-* Control+NVDA+3: 报告关于音频选择信息的摘要。
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: 报告缩放级别。
 
 有关GoldWave和键盘命令的更多信息，请参阅GoldWave手册。
@@ -64,7 +64,8 @@
 
 ## 版本3.0
 
-* 增加了一条命令来报告当前曲目的剩余时间（NVDA+Shift+R）。
+* Added a command to announce remaining time for the current track
+  (NVDA+Shift+R).
 * 报告通道信息等状态信息时略有改进。
 
 ## 版本2.0

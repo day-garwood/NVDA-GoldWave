@@ -10,12 +10,12 @@ goldwave.
 
 ## Klávesové skratky ##
 
-* NVDA+Shift+C: prepína oznamovanie príkazov počas úpravy zvuku.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * ctrl+Shift+P: Oznámy pozíciu v aktuálnej stope.
 * Nvda+shift+R: oznámuje zostávajúci čas otvoreného súboru.
 * Ctrl+NVDA+1: oznámy kanál, ktorý upravujete.
 * Ctrl+NVDA+2: Oznámy celkovú dĺžku audio súboru.
-* Ctrl+NVDA+3: Oznámy informácie o aktuálnom výbere.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Ctrl+NVDA+4: oznamuje úroveň priblíženia.
 
 pre viac informácii o klávesových skratkách programu Goldwave si prečítajte
@@ -75,7 +75,8 @@ verzie 2019.3.
 
 ## Zmeny vo verzii 3.0
 
-* Pridaná skratka, ktorá oznamuje ostávajúci čas ( nvda+shift+r).
+* Added a command to announce remaining time for the current track
+  (NVDA+Shift+R).
 * Mierne upravené oznamovanie stavových informácií.
 
 ## Zmeny vo verzii 2.0

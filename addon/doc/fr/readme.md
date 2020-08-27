@@ -9,13 +9,13 @@ This app module enhances access and usage of GoldWave audio editor.
 
 ## Raccourcis ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Contrôle+Maj+P : Annonce la position actuelle de la piste.
 * NVDA+Maj+R: Annonce le temps restant de la piste que vous êtes
   actuellement en train de modifier.
 * Contrôle+NVDA+1 : Annonce le canal que vous êtes en train de modifier.
 * Contrôle+NVDA+2 : Annonce la longueur totale du fichier audio.
-* Control+NvDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Contrôle+NVDA+4 : Annonce le niveau de zoom.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -77,7 +77,7 @@ add-on, NVDA 2019.3 or later is required.
 ## Changements pour la version 3.0
 
 * Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
+  (NVDA+Shift+R).
 * Légère amélioration dans l'annonce d'informations de statut  telles que
   les informations du canal.
 

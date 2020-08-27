@@ -10,12 +10,12 @@ GoldWave.
 
 ## Atalhos ##
 
-* NVDA+Shift+C: Alterna a fala de comandos durante a edição de áudio.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Anuncia a posição na faixa atual.
 * NVDA+Shift+R: Anuncia o tempo restante da faixa atualmente em edição.
 * Control+NVDA+1: Anuncia o canal que se está editando.
 * Control+NVDA+2: Anuncia o comprimento total do arquivo de áudio.
-* Control+NVDA+3: anuncia um resumo das informações de seleção de áudio.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Anuncia o nível de zum.
 
 Para mais informações sobre o GoldWave e os comandos de teclado, consulte o
@@ -78,7 +78,7 @@ usar este complemento, é necessário o NVDA 2019.3 ou posterior.
 
 ## Mudanças na 3.0
 
-* Adicionado um comando para anunciar o tempo restante da faixa atual
+* Added a command to announce remaining time for the current track
   (NVDA+Shift+R).
 * Ligeira melhoria ao anunciar informações de status, tais como informações
   de canal.

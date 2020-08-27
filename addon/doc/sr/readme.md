@@ -9,12 +9,12 @@ This app module enhances access and usage of GoldWave audio editor.
 
 ## Prečice ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Kontrol+Šift+P: Izgovara trenutnu poziciju zapisa.
 * NVDA+Šift+R: Izgovara preostalo vreme za zapis koji se trenutno uređuje.
 * Kontrol+NVDA+1: Izgovara kanal koji uređujete.
 * Kontrol+NVDA+2: Izgovara ukupno trajanje zapisa koji se uređuje.
-* Control+NvDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Kontrol+NVDA+4: Izgovara nivo zumiranja.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -75,7 +75,7 @@ add-on, NVDA 2019.3 or later is required.
 ## Promene u 3.0
 
 * Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
+  (NVDA+Shift+R).
 * Manja poboljšanja u izgovoru statusnih informacija kao što su ime kanala
 
 ## Promene u 2.0

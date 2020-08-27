@@ -9,12 +9,12 @@ This app module enhances access and usage of GoldWave audio editor.
 
 ## Gyorsbillentyűk ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Az aktuális sávpozíció bemondása.
 * NVDA+Shift+R: Bemondja a szerkesztés alatt lévő sávból hátra lévő időt.
 * Control+NVDA+1: A szerkesztés alatt álló csatorna bemondása.
 * Control+NVDA+2: A hangfájl teljes hosszának bemondása.
-* Control+NvDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: A nagyítási szint bemondása.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -75,7 +75,7 @@ add-on, NVDA 2019.3 or later is required.
 ## A 3.0 verzió változásai
 
 * Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
+  (NVDA+Shift+R).
 * Kissebb javítások történtek az állapot információk bemondásában, úgy mint
   csatorna információk.
 

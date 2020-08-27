@@ -80,7 +80,7 @@ complemento.
 
 ## Cambios para 3.0
 
-* Engadida unha orden para anunciar o tempo restante para a pista actual
+* Engadida unha orde para anunciar o tempo restante para a pista actual
   (NVDA+Shift+R).
 * Lixeiras melloras ó anunciar información de estado como a información da
   canle.

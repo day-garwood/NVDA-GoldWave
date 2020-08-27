@@ -9,13 +9,13 @@ This app module enhances access and usage of GoldWave audio editor.
 
 ## Горячие клавиши ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Shift+P: Объявить текущую позицию дорожки.
 * NVDA+Shift+R: Объявляет оставшееся время для текущего редактируемого
   трека.
 * Control+NVDA+1: Объявляет канал, который вы редактируете.
 * Control+NVDA+2: Объявляет общую длину аудиофайла.
-* Control+NvDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Объявляет уровень.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave
@@ -76,7 +76,7 @@ add-on, NVDA 2019.3 or later is required.
 ## Изменения для версии 3.0
 
 * Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
+  (NVDA+Shift+R).
 * Незначительные улучшения объявлений информации о состоянии, например,
   информацию о канале.
 

@@ -10,13 +10,12 @@ käytettävyyttä.
 
 ## Pikanäppäimet ##
 
-* NVDA+Vaihto+C: Ottaa käyttöön tai poistaa käytöstä äänenmuokkauskomentojen
-  puhumisen.
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * Control+Vaihto+P: Ilmoittaa nykyisen kohdan raidalla.
 * NVDA+Vaihto+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
 * Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
-* Ctrl+NVDA+3: Kertoo yhteenvedon raidan valitun kohdan tiedoista.
+* Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
@@ -79,8 +78,8 @@ lisäosan käyttämiseen tarvitaan NVDA 2019.3 tai uudempi.
 
 ## Muutokset versiossa 3.0
 
-* Lisätty nykyisen raidan jäljellä olevan ajan ilmoittava komento
-  (NVDA+Vaihto+R).
+* Added a command to announce remaining time for the current track
+  (NVDA+Shift+R).
 * Pieniä parannuksia tilatietoja, kuten kanavaa ilmoitettaessa.
 
 ## Muutokset versiossa 2.0

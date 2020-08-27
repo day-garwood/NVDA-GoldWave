@@ -3,19 +3,21 @@
 * Autoren: Joseph Lee und die NVDA-Entwicklergemeinde.
 * [Stabile Version herunterladen][1]
 * [Entwicklerversion herunterladen][2]
-* NVDA compatibility: 2019.3 to 2020.2
+* NVDA-Kompatibilität: 2019.3 bis 2020.2
 
 Diese Erweiterung verbessert die Zugänglichkeit des Audio-Editors GoldWave.
 
 ## Tastenkombinationen ##
 
-* NvDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Umschalt+C: Schaltet die Ansage beim Drücken der Tastenkombinationen
+  während der Audio-Bearbeitung um.
 * Strg+Umschalt+P: Gibt die aktuelle Audio-Position an.
 * NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
   aus.
 * Strg+NVDA+1: Gibt den Audio-Kanal an, den Sie momentan bearbeiten.
 * Strg+NVDA+2: Gibt die Gesamtlänge der Audio-Spur an.
-* Control+NvDA+3: announces a summary on audio selection information.
+* Strg+NVDA+3: Meldet eine Zusammenfassung der Informationen zur
+  Audio-Auswahl an.
 * Strg+NVDA+4: Gibt die aktuelle Zoom-Stufe an.
 
 Weitere Informationen über GoldWave und die Tastenkombinationen finden Sie
@@ -27,13 +29,15 @@ einzusetzen.
 
 ## Version 20.06
 
-* Resolved many coding style issues and potential bugs with Flake8.
+* Mit Flake8 wurden viele Code-Probleme und potenzielle Fehler behoben.
 
 ## Version 20.04
 
-* Added input help messages for remainig time command (NVDA+Shift+R).
-* Toggle command announcement command (NVDA+Shift+C) will now show up under
-  "GoldWave" category in NVDA's input gestures dialog.
+* Meldungen bei der Eingabehilfe für für die Tastenkombination zur Ansage
+  der Restlaufzeit (NVDA+Umschalt+R) hinzugefügt.
+* Der Befehl zur Ansage zum Umschalten des Befehls (NVDA+Umschalt+C) wird
+  nun unter der Kategorie "GoldWave" unter "Tastenbefehle" von NVDA
+  angezeigt.
 
 ## Version 20.01
 
@@ -78,8 +82,8 @@ einzusetzen.
 
 ## Änderungen in 3.0
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
+* Ein Befehl zur Ankündigung der verbleibenden Zeit für den aktuellen Titel
+  (NVDA+Umschalt+R) wurde hinzugefügt.
 * Leichte Verbesserungen bei der Ansage von Statusinformationen wie
   Senderinformationen.
 
