@@ -3,7 +3,7 @@
 * 作者: Joseph Lee, NVDA contributors.
 * 下载[稳定版][1]
 * 下载[开发板][2]
-* NVDA兼容版本:2019.3 至 2020.2
+* NVDA compatibility: 2019.3 to 2020.3
 
 此插件可增强GoldWave音频编辑器的无障碍体验性。
 
