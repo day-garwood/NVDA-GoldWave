@@ -1,35 +1,38 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDREss>, YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@freelists.org'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2016-02-25 23:30-0800\n"
-"Last-Translator: Bernd Dorer <bdorer@mailbox.org>\n"
+"PO-Revision-Date: 2020-03-22 12:32+0100\n"
+"Last-Translator: Robert Hänggi <aarjay.robert@gmail.com>\n"
 "Language-Team: \n"
 "Language: de_CH\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 2.3\n"
 
 #. Translators: general help message for GoldWave sound window.
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"Dies ist das Sound-Fenster von GoldWave. Sie können GoldWave-Befehle "
+"verwenden, um Sounddateien anzuhören und zu bearbeiten. Weitere "
+"Informationen finden Sie in der GoldWave-Hilfe."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "Track-Position nicht verfügbar."
+msgstr "Track-Position nicht verfügbar"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "Kanalinformationen nicht verfügbar."
+msgstr "Informationen zum Kanal nicht verfügbar"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
@@ -41,11 +44,11 @@ msgstr "Stereo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "left"
-msgstr "links"
+msgstr "Links"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "right"
-msgstr "rechts"
+msgstr "Rechts"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
@@ -53,31 +56,31 @@ msgstr "Mitte"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr "Niedrige Frequenzen"
+msgstr "Niedrige Frequenz"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back left"
-msgstr "hinten links"
+msgstr "Hinten links"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back right"
-msgstr "hinten rechts"
+msgstr "Hinten rechts"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side left"
-msgstr "links (seitlich)"
+msgstr "Linke Seite"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side right"
-msgstr "rechts (seitlich)"
+msgstr "Rechte Seite"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
-msgstr "mehrere Kanäle ausgewählt"
+msgstr "Mehrere Kanäle ausgewählt"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 msgid "All channels selected"
-msgstr "alle Kanäle ausgewählt"
+msgstr "Alle Kanäle ausgewählt"
 
 #. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
 #, python-brace-format
@@ -103,27 +106,27 @@ msgstr "Signal"
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
 msgid "Cue dropped at start marker"
-msgstr "Signal auf Startposition gesetzt."
+msgstr "Signal auf Startposition gesetzt"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
 msgid "Cue dropped at finish marker"
-msgstr "Signal auf Endmarke gesetzt."
+msgstr "Signal auf Endmarke gesetzt"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "Startet die Markierung auf die nächste Position."
+msgstr "Startet die Markierung auf die nächste Position"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "Startet die Markierung auf die vorherige Position."
+msgstr "Startet die Markierung auf die vorherige Position"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "Beendet die Markierung auf die nächste Position."
+msgstr "Beendet die Markierung auf die nächste Position"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "Beendet die Markierung auf die vorherige Position."
+msgstr "Beendet die Markierung auf die vorherige Position"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
@@ -155,7 +158,7 @@ msgstr "Aufnahme"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
-msgstr "Gibt die aktuelle Audioposition in Sekunden aus."
+msgstr "Gibt die aktuelle Audio-Position in Sekunden aus."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
@@ -178,12 +181,12 @@ msgstr "{audioSelectionStart} bis {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "Gibt die Gesamtlänge der Audiospur aus."
+msgstr "Gibt die Gesamtlänge der Audio-Spur aus."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr ""
-"Die Länge der Audiospur konnte nicht abgerufen werden. Bitte schliessen Sie "
+"Die Länge der Audio-Spur konnte nicht abgerufen werden. Bitte schliessen Sie "
 "diese und öffnen Sie sie erneut."
 
 #, python-brace-format
@@ -191,13 +194,12 @@ msgid "Track length: {trackLength}"
 msgstr "Track-Länge: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Announces remaining length of the audio track."
-msgstr "Gibt die Gesamtlänge der Audiospur aus."
+msgstr "Gibt die verbliebene Länge der Audio-Spur aus."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr "Kann die Restzeit des aktuellen Titels nicht ausgeben."
+msgstr "Kann die Restzeit des aktuellen Titels nicht ausgeben"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
@@ -210,7 +212,7 @@ msgstr "Ausgewählter Kanal: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces audio zoom level."
-msgstr "Gibt die Zoom-Stufe der Audiospur aus."
+msgstr "Gibt die Zoom-Stufe der Audio-Spur aus."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 #, python-brace-format
@@ -229,7 +231,7 @@ msgstr ""
 msgid "You need to be in sound window to toggle command announcement"
 msgstr ""
 "Sie müssen sich im Hauptfenster befinden, wenn Sie die Ansage von Befehlen "
-"ein-/ausschalten wollen."
+"ein-/ausschalten wollen"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
@@ -246,6 +248,5 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "Eine Erweiterung zur Verbesserung der Zugänglichkeit von GoldWave."
