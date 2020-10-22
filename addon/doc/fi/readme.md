@@ -3,19 +3,20 @@
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
 * Lataa [kehitysversio][2]
-* NVDA compatibility: 2019.3 to 2020.3
+* Yhteensopivuus: NVDA 2019.3-2020.3
 
 Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.
 
 ## Pikanäppäimet ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Vaihto+C: Ottaa käyttöön tai poistaa käytöstä komentojen puhumisen
+  äänenmuokkauksen aikana.
 * Control+Vaihto+P: Ilmoittaa nykyisen kohdan raidalla.
 * NVDA+Vaihto+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
 * Control+NVDA+2: Ilmoittaa äänitiedoston kokonaiskeston.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Ctrl+NVDA+3: Antaa yhteenvedon raidan valitun kohdan tiedoista.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
@@ -78,8 +79,8 @@ lisäosan käyttämiseen tarvitaan NVDA 2019.3 tai uudempi.
 
 ## Muutokset versiossa 3.0
 
-* Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
+* Lisätty nykyisen raidan jäljellä olevan ajan ilmoittava komento
+  (NVDA+Vaihto+R).
 * Pieniä parannuksia tilatietoja, kuten kanavaa ilmoitettaessa.
 
 ## Muutokset versiossa 2.0
