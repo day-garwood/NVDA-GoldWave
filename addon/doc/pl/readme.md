@@ -3,18 +3,19 @@
 * Autorzy: Joseph Lee, współpracownicy NVDA.
 * Pobierz [wersja stabilna][1]
 * Pobierz [wersja rozwojowa][2]
-* NVDA compatibility: 2019.3 to 2020.3
+* Zgodność z wersjami NVDA: 2019.3 do 2020.3
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
 ## Skróty ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: przełącza wypowiadanie komend podczas edycji audio.
 * Control+Shift+P: odczytuje aktualną pozycję ścieżki.
 * NVDA+Shift+R: Oznajmia pozostały czas dla aktualnie edytowanego utworu.
 * Control+NVDA+1: wypowiada aktualnie edytowany kanał.
 * Control+NVDA+2: wypowiada całkowitą długość pliku dźwiękowego.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: Wymawia podsumowanie informacji o zaznaczonym fragmencie
+  dźwięku.
 * Control+NVDA+4: wypowiada aktualny poziom powiększenia.
 
 Więcej informacji o Goldwave i jego klawiszach skrótów, znajduje się w
@@ -23,15 +24,17 @@ podręczniku Goldwave.
 Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. Aby używać
 tego dodatku, potrzebna jest wersja NVDA 2019.3 lub nowsza.
 
-## Version 20.06
+## Wersja 20.06
 
-* Resolved many coding style issues and potential bugs with Flake8.
+* Naprawiono mnóstwo błędów w kodzie oraz potencjalne błędy związane z
+  Flake8.
 
-## Version 20.04
+## Wersja 20.04
 
-* Added input help messages for remainig time command (NVDA+Shift+R).
-* Toggle command announcement command (NVDA+Shift+C) will now show up under
-  "GoldWave" category in NVDA's input gestures dialog.
+* Dodany komunikat pomocy klawiatury dla polecenia (NVDA+Shift+R).
+* Polecenie służące do włączania oraz wyłączania wymowy zdarzeń naciśniętych
+  poleceń  (NVDA+Shift+C) od teraz będzie się pojawiało w
+  kategorii"GoldWave" w dialogu Zdarzeń wejścia NVDA.
 
 ## Wersja 20.01
 
@@ -75,8 +78,8 @@ tego dodatku, potrzebna jest wersja NVDA 2019.3 lub nowsza.
 
 ## Zmiany dla wersji 3.0
 
-* Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
+* Dodano komendę do ogłaszania aktualnego czasu aktualnego
+  utworu(NVDA+Shift+R).
 * Trochę większe ulepszenia czytania informacji stanu takich jak informacji
   o kanale.
 
