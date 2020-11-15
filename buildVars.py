@@ -43,8 +43,6 @@ addon_info = {
 }
 
 
-import os.path  # NOQA
-
 # Define the python files that are the sources of your add-on.
 # You can either list every file (using ""/") as a path separator,
 # or use glob expressions.
@@ -53,7 +51,7 @@ import os.path  # NOQA
 # pythonSources = ["addon/globalPlugins/*.py"]
 # For more information on SCons Glob expressions please take a look at:
 # https://scons.org/doc/production/HTML/scons-user/apd.html
-pythonSources = [os.path.join("addon", "appModules", "*.py"),]
+pythonSources = ["addon/appModules/*.py"]
 
 # Files that contain strings for translation. Usually your python sources
 i18nSources = pythonSources + ["buildVars.py"]
