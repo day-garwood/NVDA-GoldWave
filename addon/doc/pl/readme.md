@@ -3,7 +3,7 @@
 * Autorzy: Joseph Lee, współpracownicy NVDA.
 * Pobierz [wersja stabilna][1]
 * Pobierz [wersja rozwojowa][2]
-* Zgodność z wersjami NVDA: 2019.3 do 2020.3
+* NVDA compatibility: 2019.3 to 2020.4
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 

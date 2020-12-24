@@ -3,7 +3,7 @@
 * Autores: Joseph Lee, colaboradores do NVDA.
 * Descarga [versión estable][1]
 * Descarga [versión de desenvolvemento][2]
-* Compatibilidade con NVDA: da 2019.3 á 2020.3
+* Compatibilidade con NVDA: da 2019.3 á 2020.4
 
 Este módulo de aplicación mellora o acceso e o uso do editor de audio
 GoldWave.
