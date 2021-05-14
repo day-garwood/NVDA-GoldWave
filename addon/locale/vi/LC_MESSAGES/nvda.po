@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: goldwave 16.12\n"
-"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-02-03 07:05+1000\n"
 "PO-Revision-Date: 2017-03-08 10:50+0700\n"
 "Last-Translator: Dang Manh Cuong <cuong@trungtamsaomai.org>\n"
