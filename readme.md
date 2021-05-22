@@ -2,8 +2,9 @@
 
 * Authors: Joseph Lee, NVDA contributors.
 * Download [stable version][1]
-* Download [development version][2]
-* NVDA compatibility: 2019.3 to 2020.4
+* NVDA compatibility: 2019.3 and beyond
+
+Note: I (Joseph Lee) am looking for people who will maintain GoldWave add-on from August 1, 2021 onwards.
 
 This app module enhances access and usage of GoldWave audio editor.
 
@@ -93,6 +94,4 @@ Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-
 
 * Initial version.
 
-[1]: http://addons.nvda-project.org/files/get.php?file=gwv
-
-[2]: http://addons.nvda-project.org/files/get.php?file=gwv-dev
+[1]: https://addons.nvda-project.org/files/get.php?file=gwv
