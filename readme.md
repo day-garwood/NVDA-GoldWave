@@ -22,6 +22,10 @@ For more information about GoldWave and keyboard commands, refer to GoldWave Man
 
 Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this add-on, NVDA 2019.3 or later is required.
 
+## Version 21.06
+
+* Resolved additional coding style issues and potential bugs with Flake8.
+
 ## Version 20.06
 
 * Resolved many coding style issues and potential bugs with Flake8.
