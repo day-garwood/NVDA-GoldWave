@@ -9,7 +9,8 @@ import globalVars
 import scriptHandler
 from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_STATUSBAR
 from NVDAObjects.IAccessible import IAccessible
-from NVDAObjects.window import Window, DisplayModelEditableText, edit  # Various buttons and numeric edit fields.
+# Various buttons and numeric edit fields.
+from NVDAObjects.window import Window, DisplayModelEditableText, edit
 from logHandler import log
 import ui
 import addonHandler
@@ -27,7 +28,11 @@ class SoundWindow(IAccessible):
 
 	def _get_helpText(self):
 		# Translators: general help message for GoldWave sound window.
-		return _("This is GoldWave's sound window. You can use GoldWave commands to listen to and edit sound files. See GoldWave help for details.")
+		return _(
+			"This is GoldWave's sound window. "
+			"You can use GoldWave commands to listen to and edit sound files. "
+			"See GoldWave help for details."
+		)
 
 	# Announcement of commands is enabled by default.
 	commandAnnouncement = True
@@ -155,8 +160,10 @@ class SoundWindow(IAccessible):
 		trackLengthParsed = self.getTrackLength().split(":")
 		audioPosParsed = audioPos.split(":")
 		# An obvious solution is to use recursive subtraction.
-		# That is, subtract the last elements, and if audio pos is greater than track length for that particular cell, move to the left.
-		# However, a simpler solution is to convert the time value to seconds, subtract then format it back to hh:mm:ss format.
+		# That is, subtract the last elements,
+		# and if audio pos is greater than track length for that particular cell, move to the left.
+		# However, a simpler solution is to convert the time value to seconds,
+		# subtract then format it back to hh:mm:ss format.
 		timesec = self.convertTime2Sec(audioPosParsed, trackLengthParsed)
 		remainingTimeSec = timesec[1] - timesec[0]
 		# Now convert the seconds back to hh:mm:ss format.
@@ -187,7 +194,8 @@ class SoundWindow(IAccessible):
 	def script_dropStartMarker(self, gesture):
 		try:
 			gesture.send()
-			# Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+			# Translators: The start marker position for selecting parts of the audio track
+			# (example output: "Start: 0.00").
 			self.message(_("Start: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0]))
 		except:
 			pass
@@ -196,7 +204,8 @@ class SoundWindow(IAccessible):
 	def script_dropFinishMarker(self, gesture):
 		try:
 			gesture.send()
-			# Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+			# Translators: The finish marker position for selecting parts of the audio track
+			# (example output: "Finish: 5.00").
 			self.message(_("Finish: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2]))
 		except:
 			pass
@@ -326,8 +335,14 @@ class SoundWindow(IAccessible):
 				# Translators: Presented when there is no audio selection summary available.
 				self.message(_("Unable to obtain audio selection summary. Please close and reopen the audio track."))
 			else:
-				# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
-				self.message(_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(audioSelectionStart=audioSelectionParsed[0], audioSelectionEnd=audioSelectionParsed[2], audioSelectionLength=audioSelectionParsed[3]))
+				self.message(
+					# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+					_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(
+						audioSelectionStart=audioSelectionParsed[0],
+						audioSelectionEnd=audioSelectionParsed[2],
+						audioSelectionLength=audioSelectionParsed[3]
+					)
+				)
 		except:
 			pass
 
@@ -369,17 +384,26 @@ class SoundWindow(IAccessible):
 	def script_announceAudioChannels(self, gesture):
 		channelSTR = self.getAudioChannels()
 		if channelSTR in ["Multiple", "All"]:
-			# Translators: Presented when all or multiple channels (in 3.1, 5.1 or 7.1 channels) are selected (GoldWave 6 and higher).
+			# Translators: Presented when all or multiple channels (in 3.1, 5.1 or 7.1 channels) are selected
+			# (GoldWave 6 and higher).
 			self.message(self.audioChannelValues[channelSTR])
 		else:
-			# Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
-			self.message(_("Selected channel: {audioChannel}").format(audioChannel=self.audioChannelValues[channelSTR]))
+			self.message(
+				# Translators: Presented to indicate the selected channel for the track
+				# (example output: "Selected channel: mono").
+				_("Selected channel: {audioChannel}").format(audioChannel=self.audioChannelValues[channelSTR])
+			)
 
 	# Change and announce audio channels.
-	@scriptHandler.script(gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a", "kb:control+shift+b"])
+	@scriptHandler.script(
+		gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a", "kb:control+shift+b"]
+	)
 	def script_selectChannel(self, gesture):
 		gesture.send()
-		if (gesture.displayName == "ctrl+shift+a" and self.appModule.productVersion.startswith("5")) or (gesture.displayName == "ctrl+shift+b" and self.appModule.productVersion.startswith("6")):
+		if (
+			(gesture.displayName == "ctrl+shift+a" and self.appModule.productVersion.startswith("5"))
+			or (gesture.displayName == "ctrl+shift+b" and self.appModule.productVersion.startswith("6"))
+		):
 			return
 		else:
 			self.script_announceAudioChannels(gesture)
@@ -418,8 +442,13 @@ class AppModule(appModuleHandler.AppModule):
 			if obj.windowClassName == "TBitton" or obj.windowClassName == "TImageButton":
 				obj.role = ROLE_BUTTON
 			# For windows which NVDA should recognize as dialogs.
-			elif "Form" in obj.windowClassName and "MainForm" not in obj.windowClassName or obj.windowClassName == "TEffectWrapper":
-				# In GoldWave 6, the sound window has the window class name of "tSoundForm" and should not be recognized as a dialog.
+			elif (
+				"Form" in obj.windowClassName
+				and "MainForm" not in obj.windowClassName
+				or obj.windowClassName == "TEffectWrapper"
+			):
+				# In GoldWave 6, the sound window has the window class name of "tSoundForm"
+				# and should not be recognized as a dialog.
 				if obj.windowClassName != "TSoundForm":
 					obj.role = ROLE_DIALOG
 		if obj.windowClassName == 'TNumEdit' and self.productVersion.startswith("5"):
