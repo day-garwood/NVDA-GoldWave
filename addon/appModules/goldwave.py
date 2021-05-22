@@ -197,7 +197,7 @@ class SoundWindow(IAccessible):
 			# Translators: The start marker position for selecting parts of the audio track
 			# (example output: "Start: 0.00").
 			self.message(_("Start: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0]))
-		except:
+		except Exception:
 			pass
 
 	@scriptHandler.script(gesture="KB:]")
@@ -207,7 +207,7 @@ class SoundWindow(IAccessible):
 			# Translators: The finish marker position for selecting parts of the audio track
 			# (example output: "Finish: 5.00").
 			self.message(_("Finish: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2]))
-		except:
+		except Exception:
 			pass
 
 	@scriptHandler.script(gesture="kB:control+[")
@@ -343,7 +343,7 @@ class SoundWindow(IAccessible):
 						audioSelectionLength=audioSelectionParsed[3]
 					)
 				)
-		except:
+		except Exception:
 			pass
 
 	@scriptHandler.script(
