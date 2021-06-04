@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2014-11-14 07:00+1000\n"
-"PO-Revision-Date: 2019-11-15 17:45+0330\n"
+"PO-Revision-Date: 2021-06-02 00:39+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation team <nvda-translations@groups.io>\n"
 "Language: fa\n"
@@ -192,9 +192,8 @@ msgid "Track length: {trackLength}"
 msgstr "مدت‌زمانِ تِرَک: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Announces remaining length of the audio track."
-msgstr "مدت‌زمانِ کلیِ تِرَکِ صوتی را اعلام میکند"
+msgstr "طولِ باقیمانده‌ی تِرَکِ صوتی را اعلام میکند."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"

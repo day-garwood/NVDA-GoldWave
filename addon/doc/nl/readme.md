@@ -1,42 +1,96 @@
-# Goldwave #
+# GoldWave #
 
 * Auteurs: Joseph Lee, NVDA contributors.
-* Download [stable version][1]
-* Download [development version][2]
+* Download [stabiele versie][1]
+* Download [ontwikkelversie][2]
+* NVDA compatibility: 2019.3 to 2020.4
 
-Deze module verbetert de toegang tot en het gebruik van het
-geluidsbewerkingsprogramma Goldwave.
+This app module enhances access and usage of GoldWave audio editor.
 
 ## Sneltoetsen ##
 
+* NVDA+Shift+C: Toggles speaking of commands during audio editing.
 * NVDA+Shift+P: Kondigt de positie aan in het huidige bestand.
-* Control+NvDA+3: kondigt een samenvatting aan van gekozen
-  geluidsinformatie.
-* Control+NVDA+2: Kondigt de totale lengte aan van het geluidsbestand.
+* NVDA+Shift+R: Announces remaining time for the currently editing track.
 * Control+NVDA+1: Kondigt het kanaal aan dat u aan het bewerken bent.
-* NvDA+Shift+C: Schakelt het uitspreken van commando's aan en uit tijdens
-  het bewerken van geluid.
+* Control+NVDA+2: Kondigt de totale lengte aan van het geluidsbestand.
+* Control+NVDA+3: announces a summary on audio selection information.
 * NVDA+Shift+Z: Kondigt het zoomniveau aan.
 
-Voor meer informatie over Goldwave en de sneltoetsen verwijzen we naar de
-handleiding van Goldwave.
+For more information about GoldWave and keyboard commands, refer to GoldWave
+Manual.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
+add-on, NVDA 2019.3 or later is required.
 
-## Changes for 2.0
+## Version 20.06
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* Resolved many coding style issues and potential bugs with Flake8.
+
+## Version 20.04
+
+* Added input help messages for remainig time command (NVDA+Shift+R).
+* Toggle command announcement command (NVDA+Shift+C) will now show up under
+  "GoldWave" category in NVDA's input gestures dialog.
+
+## Version 20.01
+
+* Requires NVDA 2019.3 or later.
+
+## Version 19.11
+
+* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
+* Added help message for sound window (accessible if Control Usage Assistant
+  add-on is installed).
+
+## Version 18.12
+
+* NVDA will no longer appear to do nothing or play error tones when
+  performing certain GoldWave commands with command announcement set to off
+  (this may result in odd behaviors in some cases).
+* Internal changes to support future NVDA releases.
+
+## Version 18.07
+
+* Fixed an issue where leading zeroes would not be displayed when trying to
+  obtain remaining time for a trakc.
+
+## Version 17.05
+
+* Added ability to provide debug information when NVDA is running with debug
+  logging enabled (NVDA 2017.1 or later).
+* Updated translations.
+
+## Version 16.12
+
+* Version scheme is now year.month instead of major.minor.
+
+## Changes for 4.0
+
+* Add-on repository has moved to GitHub (now located at
+  https://github.com/josephsl/goldwave).
+* Performance improvements when looking up information such as channel name
+  and other status information.
+
+## Changes for 3.0
+
+* Added a command to announce remaining time for the current track
+  (NVDA+Shift+R).
+* Slight improvements when announcing status information such as channel
+  information.
+
+## Veranderingen voor 2.0
+
+* Ondersteuning voor GoldWave 6, inclusief 64-bit versie van GoldWave (zie
+  opmerking hierboven).
+* Add-onhelp kan nu geopend worden vanuit Add-ons beheren (NVDA 2014.3 en
+  nieuwer).
+* NVDA meldt nu het geselecteerde kanaal bij het gebruik van commando's voor
+  kanaalselectie, zoals Control+Shift+L voor het linker kanaal.
+* Verschillende problemen in numerieke invoervelden met betrekking tot
+  selecteren en het veranderen van waarden opgelost.
+* De instelling voor het aankondigen van commando's wordt nu onthouden bij
+  het schakelen naar andere programma's.
 
 ## Veranderingen voor 1.2
 
@@ -47,22 +101,23 @@ or later is required to use add-on 2.0.
   audioselectie en andere statuscommando's misschien niet werken zoals
   verwacht.
 
-## Veranderingen voor 1.1 ##
+## Veranderingen voor 1.1
 
 * Ondersteuning voor berichtaankondigingen in braille.
 * Audio selection summary wordt weergegeven in andere talen dan Engels.
 * Meer aankondigingen van commando's toegevoegd inclusief cue position
   movement en delete/trim operations.
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+* Een probleem opgelost in numerieke invoervelden zoals in verschillende
+  dialoogvensters met effecten waarbij geen of verkeerde veldnamen werden
+  aangekondigd.
 * Nieuwe en bijgewerkte vertalingen.
 
-## Veranderingen voor 1.0 ##
+## Veranderingen voor 1.0
 
 * Eerste versie.
 
 [[!tag dev stable]]
 
-[1]: http://addons.nvda-project.org/files/get.php?file=gwv
+[1]: https://addons.nvda-project.org/files/get.php?file=gwv
 
-[2]: http://addons.nvda-project.org/files/get.php?file=gwv-dev
+[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
