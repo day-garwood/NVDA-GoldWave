@@ -1,60 +1,66 @@
-# GoldWave #
+# Goldwave #
 
 * Auteurs : Joseph Lee, contributeurs de NVDA.
 * Télécharger [version stable][1]
 * Télécharger [version de développement][2]
-* NVDA compatibility: 2019.3 to 2020.4
+* Compatibilité NVDA: 2019.3 à 2020.4
 
-This app module enhances access and usage of GoldWave audio editor.
+Cette extension améliore l'accès et l'utilisation de l'éditeur audio
+Goldwave.
 
 ## Raccourcis ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
-* Contrôle+Maj+P : Annonce la position actuelle de la piste.
-* NVDA+Maj+R: Annonce le temps restant de la piste que vous êtes
-  actuellement en train de modifier.
-* Contrôle+NVDA+1 : Annonce le canal que vous êtes en train de modifier.
+* NVDA+Maj+C : Bascule l'annonce des commandes lors de l'édition audio.
+* Contrôle+Maj+P : Annonce la position courante de la piste.
+* NVDA+Maj+R: Annonce le temps restant pour la piste en cours d'édition.
+* Contrôle+NVDA+1 : Annonce le canal en cours d'édition
 * Contrôle+NVDA+2 : Annonce la longueur totale du fichier audio.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Contrôle+NVDA+3 : annonce un résumé des informations relatives à la
+  sélection audio.
 * Contrôle+NVDA+4 : Annonce le niveau de zoom.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+Pour plus d'informations sur Goldwave et les commandes clavier,
+reportez-vous au manuel de Goldwave.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. To use this
-add-on, NVDA 2019.3 or later is required.
+Note : GoldWave 6 requiert la version 64 bits de Windows 7 ou version
+ultérieure. NVDA 2019.3 ou version ultérieure est requis pour utiliser cette
+extension;
 
 ## Version 20.06
 
-* Resolved many coding style issues and potential bugs with Flake8.
+* Résolution de nombreux problèmes d'encodage et de bugs potentiels avec
+  Flake8
 
 ## Version 20.04
 
-* Added input help messages for remainig time command (NVDA+Shift+R).
-* Toggle command announcement command (NVDA+Shift+C) will now show up under
-  "GoldWave" category in NVDA's input gestures dialog.
+* Ajout de messages d'aide pour la commande de temps restant (NVDA+Shift+R).
+* La commande permettant de de basculer  l'annonce des commandes
+  ((NVDA+Shift+C) se trouve désormais dans les gestes de commande de NVDA
+  sous la catégorie Goldwave
 
 ## Version 20.01
 
-* Requires NVDA 2019.3 or later.
+* Nécessite NVDA 2019.3 et supérieures.
 
 ## Version 19.11
 
-* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
-* Added help message for sound window (accessible if Control Usage Assistant
-  add-on is installed).
+* Windows 7 SP1, Goldwave 6.x et NVDA 2019.3 ou supérieures sont requis
+* Ajout d'un message d'aide pour la fenêtre son, (seulement accessible si
+  l'extension Control Usage Assistant est installée)
 
 ## Version 18.12
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
-* Internal changes to support future NVDA releases.
+* NVDA ne semblera plus ne rien faire ou n'émettra plus des sons d'erreur
+  lors de l'exécution de certaines commandes GoldWave avec l'annonce de la
+  commande désactivée (cela peut entraîner des comportements étranges dans
+  certains cas).
+* Changements internes permettant la prise en charge de futures versions de
+  NVDA
 
 ## Version 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Correction d'un problème où les zéros initiaux ne s'affichaient pas
+  lorsque vous essayiez d'obtenir le temps restant pour une piste.
 
 ## Version 17.05
 
@@ -65,19 +71,20 @@ add-on, NVDA 2019.3 or later is required.
 
 ## Version 16.12
 
-* La version système est maintenant year.month au lieu de major.minor.
+* La nomenclature de version est désormais année.mois au lieu de
+  majeure.mineure.
 
 ## Changements pour la version 4.0
 
-* Le référentiel de l'extension a été déplacé à GitHub (maintenant localisé
-  à https://github.com/josephsl/goldwave).
+* Le dépôt pour l'extension a été déplacé sur GitHub (se trouve désormais
+  sur https://github.com/josephsl/goldwave).
 * Amélioration des performances lorsque vous cherchez des informations comme
-  le nom du canal et d'autres informations du statut.
+  le nom du canal et d'autres informations de statut.
 
 ## Changements pour la version 3.0
 
-* Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
+* Ajout d'une commande pour annoncer le temps restant sur la piste courante
+  (NVDA+Maj+R).
 * Légère amélioration dans l'annonce d'informations de statut  telles que
   les informations du canal.
 
