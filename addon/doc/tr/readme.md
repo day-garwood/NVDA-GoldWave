@@ -1,9 +1,9 @@
-# Goldwave #
+# GoldWave #
 
-* Yazarlar: Joseph Lee, NVDA katkıda bulunanlar.
-* Download [stable version][1]
-* Download [development version][2]
-* NVDA compatibility: 2017.3 to 2019.2
+* Yazarlar: Joseph Lee, NVDA'ya katkıda bulunanlar.
+* İndir [kararlı sürüm][1]
+* İndir [geliştirme sürümü][2]
+* NVDA uyumluluğu: 2019.3-2020.4
 
 Bu uygulama modülü GoldWave ses editörünün erişilebilirliğini ve kullanımını
 geliştirir.
@@ -13,7 +13,7 @@ geliştirir.
 * NvDA+Shift+C: Düzenlerken komutların seslendirilmesiyle ilgili ayarı açıp
   kapatır.
 * Control+Shift+P: Geçerli parçadaki pozisyonu söyler.
-* NVDA+Shift+R: Announces remaining time for the currently editing track.
+* NVDA+Shift+r: şu anda düzenlenen dosyada kalan süreyi söyler
 * Control+NVDA+1: Düzenlediğiniz kanalı söyler.
 * Control+NVDA+2: Ses dosyasının toplam uzunluğunu söyler.
 * Control+NvDA+3: ses seçimiyle ilgili özet bilgi verir.
@@ -22,67 +22,98 @@ geliştirir.
 GoldWave ve klavye komutları hakkında daha fazla bilgi için, GoldWave
 kılavuzuna bakın.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1
-or later is required to use add-on 2.0.
+Not: GoldWave 6 windows 7 veya daha yeni işletim sisteminin 64-bit sürümünü
+gerektirir. Eklentiyi kullanabilmek için NVDA 2019.3 veya daha yeni sürümü
+gerekir.
 
-## Version 18.07
+## Versiyon 20.06
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a track.
+* Flake 8 ile ilgili bir çok kodlama biçimi sorunları ve potansiyel hatalar
+  düzeltildi.
 
-## Version 17.05
+## Sürüm 20.04
 
-* Added ability to provide debug information when NVDA is running with debug
-  logging enabled (NVDA 2017.1 or later).
-* Updated translations.
+* Kalan zaman komutu için (NVDA+Shift+R) girdi yardım mesajları eklendi.
+* Komut bildirimini açıp kapatma komutu (NVDA+Shift+C) NVDA'nın girdi
+  hareketleri iletişim kutusunun "GoldWave" kategorisinde görünecek.
 
-## Version 16.12
+## Versiyon 20.01
 
-* Version scheme is now year.month instead of major.minor.
+* NVDA 2019.3 veya daha üst sürümünü gerektirir.
 
-## Changes for 4.0
+## Versiyon 19.11
 
-* Add-on repository has moved to GitHub (now located at
-  https://github.com/josephsl/goldwave).
-* Performance improvements when looking up information such as channel name
-  and other status information.
+* Windows 7 SP1, GoldWave 6.x ve NVDA 2019.1 veya daha üst sürümü gerekir.
+* Ses penceresi için yardım mesajı eklendi (kontrol kullanım asistanı
+  eklentisi kuruluysa kullanılabilir).
 
-## Changes for 3.0
+## Versiyon 18.12
 
-* Added a command to announce remaining time for the current track
-  (NvDA+Shift+R).
-* Slight improvements when announcing status information such as channel
-  information.
+* NVDA, komut bildirimi kapalıyken bazı GoldWave komutları kullanıldığında
+  hiçbir şey yapmıyormuş gibi görünmeyecek veya hata sesi çalmayacak (bazı
+  durumlarda garip davranışlara sebep olabilir).
+* Gelecek NVDA versiyonlarını desteklemek için iç değişiklikler.
 
-## Changes for 2.0
+## Sürüm 18.07
 
-* Support for GoldWave 6, including 64-bit version of GoldWave (see note
-  above).
-* Add-on help can now be accessed from add-ons manager (NVDA 2014.3 and
-  later).
-* NVDA now announces selected channel if you press channel selection
-  commands such as Control+Shift+L for the left channel.
-* Various issues with numeric edit fields such as censor field and time
-  selector in mix dialog has been fixed, including selecting text, updating
-  values and so on.
-* Command announcement setting will be remembered when switching to other
-  programs.
+* Parçanın kalan zamanını söylerken öndeki sıfırların söylenmemesi sorunu
+  düzeltildi.
 
-## Changes for 1.2
+## Versiyon 17.05
 
-* Fixed an issue where NVDA had difficulty announcing some edit fields.
+* NVDA tamir günlük tutma seviyesinde çalışırken tamir bilgisi verme
+  özelliği eklendi (NVDA 2017.1 veya daha üst sürümü).
 * Yeni ve güncel çeviriler.
-* Please note that due to recent changes in NVDA, audio selection and other
-  status commands may not work as expected in some systems.
+
+## Versiyon 16.12
+
+* Versiyon düzeni büyük versiyon.küçük versiyon yerine yıl.ay olarak
+  ayarlandı.
+
+## 4.0 için değişiklikler
+
+* Eklenti deposu GitHub'a taşındı (https://github.com/josephsl/goldwave
+  adresinde bulunabilir).
+* Kanal adı ve diğer durum bilgilerini edinme konusunda performans
+  geliştirmeleri.
+
+## 3.0 için değişiklikler
+
+* Üzerinde bulunulan parçada kalan zamanı söyleme komutu eklendi
+  (NVDA+Shift+R).
+* Kanal bilgisi gibi durum bilgilerini söyleme konusunda küçük
+  geliştirmeler.
+
+## 2.0 için değişiklikler
+
+* GoldWave'in 64-bit sürümü dahil olmak üzere GoldWave 6 desteği (yukarıdaki
+  nota bakın).
+* Artık eklenti yardımına eklenti yöneticisinden erişilebilir (NVDA 2014.3
+  ve daha üst sürümü).
+* Sol kanalı seçmek için Control+Shift+L gibi kanal seçme komutları
+  kullanıldığında, NVDA seçilen kanalı söylüyor.
+* Sansür alanı ve mixleme iletişim kutusundaki zaman seçimi alanı gibi sayı
+  içeren yazı alanlarındaki çeşitli sorunlar giderildi. Giderilen sorunlar
+  arasında metin seçimi ve değerlerin güncellenmesi gibi sorunlar var.
+* Diğer programlara geçiş yapıldığında komut bildirimi ayarı
+  sıfırlanmayacak.
+
+## 1.2 için değişiklikler
+
+* NVDA'nın bazı yazı alanlarını tam olarak bildirememe sorunu düzeltildi.
+* Yeni ve güncel çeviriler.
+* NVDA'da yapılan bazı değişiklikler nedeniyle, bazı sistemlerde ses seçimi
+  ve diğer durum komutlarının beklenen şekilde çalışmayacağını unutmayın.
 
 ## 1.1 için değişiklikler
 
 * Mesaj bildirimi için braille desteği.
 * Ses seçimi özeti İngilizce dışındaki dillerde de sunuluyor.
 * İşaret noktaları, silme ve kırpma gibi işlemler için daha fazla komut
-  bildirimi eklendi
-* Fixed an issue in numeric edit fields such as various effects dialogs
-  where nothing or wrong field name was announced.
+  bildirimi eklendi.
+* Çeşitli efekt alanlarındaki değerlerin seslendirilmemesi ya da yanlış
+  alanların seslendirilmesi gibi sayısal düzenleme alanlarındaki sorunlar
+  giderildi.
 * Yeni ve güncel çeviriler.
 
 ## 1.0 için değişiklikler
