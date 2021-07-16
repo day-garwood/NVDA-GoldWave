@@ -3,19 +3,19 @@
 * Autores: Joseph Lee, colaboradores do NVDA.
 * Baixe a [versão estável][1]
 * Baixe a [versão em desenvolvimento][2]
-* NVDA compatibility: 2019.3 to 2020.4
+* Compatibilidade com NVDA: 2019.3 a 2021.1
 
 Este módulo de aplicativo melhora o acesso e o uso do editor de áudio
 GoldWave.
 
 ## Atalhos ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: Alterna a fala de comandos durante a edição de áudio.
 * Control+Shift+P: Anuncia a posição na faixa atual.
 * NVDA+Shift+R: Anuncia o tempo restante da faixa atualmente em edição.
 * Control+NVDA+1: Anuncia o canal que se está editando.
 * Control+NVDA+2: Anuncia o comprimento total do arquivo de áudio.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: anuncia um resumo das informações de seleção de áudio.
 * Control+NVDA+4: Anuncia o nível de zum.
 
 Para mais informações sobre o GoldWave e os comandos de teclado, consulte o
@@ -78,7 +78,7 @@ usar este complemento, é necessário o NVDA 2019.3 ou posterior.
 
 ## Mudanças na 3.0
 
-* Added a command to announce remaining time for the current track
+* Adicionado um comando para anunciar o tempo restante da faixa atual
   (NVDA+Shift+R).
 * Ligeira melhoria ao anunciar informações de status, tais como informações
   de canal.
