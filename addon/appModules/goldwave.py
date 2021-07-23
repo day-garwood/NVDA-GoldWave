@@ -7,7 +7,7 @@ import appModuleHandler
 import api
 import globalVars
 import scriptHandler
-from controlTypes import ROLE_BUTTON, ROLE_DIALOG, ROLE_PANE, ROLE_STATUSBAR
+import controlTypes
 from NVDAObjects.IAccessible import IAccessible
 # Various buttons and numeric edit fields.
 from NVDAObjects.window import Window, DisplayModelEditableText, edit
@@ -52,7 +52,9 @@ class SoundWindow(IAccessible):
 			log.debug(f"GWV: Status {statBarIndex}, child index {childIndex}")
 		fgChild = self.appModule._get_statusBars(statBarIndex)
 		if globalVars.appArgs.debugLogging:
-			log.debug("GWV: Status bar found" if fgChild.role == ROLE_STATUSBAR else "Status bar not found")
+			log.debug(
+				"GWV: Status bar found" if fgChild.role == controlTypes.Role.STATUSBAR else "Status bar not found"
+			)
 		if not fgChild.displayText:
 			fgChild.redraw()
 		try:
@@ -440,7 +442,7 @@ class AppModule(appModuleHandler.AppModule):
 		if isinstance(obj, Window):
 			# For working with buttons such as presets window and control window.
 			if obj.windowClassName == "TBitton" or obj.windowClassName == "TImageButton":
-				obj.role = ROLE_BUTTON
+				obj.role = controlTypes.Role.BUTTON
 			# For windows which NVDA should recognize as dialogs.
 			elif (
 				"Form" in obj.windowClassName
@@ -450,11 +452,11 @@ class AppModule(appModuleHandler.AppModule):
 				# In GoldWave 6, the sound window has the window class name of "tSoundForm"
 				# and should not be recognized as a dialog.
 				if obj.windowClassName != "TSoundForm":
-					obj.role = ROLE_DIALOG
+					obj.role = controlTypes.Role.DIALOG
 		if obj.windowClassName == 'TNumEdit' and self.productVersion.startswith("5"):
 			# Get the correct edit field name in GoldWave 5.x.
 			fieldNameObj = obj.parent.parent
-			if fieldNameObj.role == ROLE_PANE and fieldNameObj.name:
+			if fieldNameObj.role == controlTypes.Role.PANE and fieldNameObj.name:
 				obj.name = fieldNameObj.name if not obj.name else fieldNameObj.name + " " + obj.name
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
@@ -477,7 +479,7 @@ class AppModule(appModuleHandler.AppModule):
 		index = 0
 		if refill or multiInstance > 1 or not len(self.statusBarCache):
 			for child in api.getForegroundObject().children:
-				if child.role == ROLE_STATUSBAR:
+				if child.role == controlTypes.Role.STATUSBAR:
 					if not child.displayText:
 						child.redraw()
 					self.statusBarCache[index] = child
