@@ -2,8 +2,7 @@
 
 * Yazarlar: Joseph Lee, NVDA'ya katkıda bulunanlar.
 * İndir [kararlı sürüm][1]
-* İndir [geliştirme sürümü][2]
-* NVDA uyumluluğu: 2019.3-2021.1
+* NVDA compatibility: 2021.2 and beyond
 
 Bu uygulama modülü GoldWave ses editörünün erişilebilirliğini ve kullanımını
 geliştirir.
@@ -22,9 +21,16 @@ geliştirir.
 GoldWave ve klavye komutları hakkında daha fazla bilgi için, GoldWave
 kılavuzuna bakın.
 
-Not: GoldWave 6 windows 7 veya daha yeni işletim sisteminin 64-bit sürümünü
-gerektirir. Eklentiyi kullanabilmek için NVDA 2019.3 veya daha yeni sürümü
-gerekir.
+Note: GoldWave 6 or later is required.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
+
+## Version 21.06
+
+* Resolved additional coding style issues and potential bugs with Flake8.
 
 ## Versiyon 20.06
 
@@ -120,8 +126,7 @@ gerekir.
 
 * İlk sürüm.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
-
-[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev

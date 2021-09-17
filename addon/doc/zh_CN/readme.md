@@ -2,8 +2,7 @@
 
 * 作者: Joseph Lee, NVDA contributors.
 * 下载[稳定版][1]
-* 下载[开发板][2]
-* NVDA兼容版本:2019.3 到 2021.1
+* NVDA compatibility: 2021.2 and beyond
 
 此插件可增强GoldWave音频编辑器的无障碍体验性。
 
@@ -19,7 +18,16 @@
 
 有关GoldWave和键盘命令的更多信息，请参阅GoldWave手册。
 
-注意：现在GoldWave 6需要Windows 7或更高版本的系统。另外要使用此插件，还需要NVDA 2019.3或更高版本。
+Note: GoldWave 6 or later is required.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
+
+## Version 21.06
+
+* Resolved additional coding style issues and potential bugs with Flake8.
 
 ## 版本20.06
 
@@ -93,8 +101,7 @@
 
 * 发布初始版本。
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
-
-[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev

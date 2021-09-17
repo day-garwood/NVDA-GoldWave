@@ -2,8 +2,7 @@
 
 * Forfattere: Joseph Lee, NVDA bidragydere.
 * Download [stabil version][1]
-* Download [udviklingsversion][2]
-* NVDA compatibility: 2019.3 to 2021.1
+* NVDA compatibility: 2021.2 and beyond
 
 Dette app-modul forbedrer adgangen til og brugen af lydredigeringsprogrammet
 Goldwave. Bemærk: GoldWave-programmet har ikke en dansk sprogpakke
@@ -23,8 +22,16 @@ tilgængelig. Derfor er tilføjelsen på nuværende tidspunkt ikke oversat.
 For yderligere oplysninger om GoldWave og tastatur kommandoer, læs
 brugervejledningen til GoldWave.
 
-Bemærk: GoldWave 6 kræver 64-bit version af Windows 7 eller nyere. For at
-bruge denne tilføjelse kræves NVDA 2019.3 eller nyere.
+Note: GoldWave 6 or later is required.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
+
+## Version 21.06
+
+* Resolved additional coding style issues and potential bugs with Flake8.
 
 ## Version 20.06
 
@@ -123,8 +130,7 @@ bruge denne tilføjelse kræves NVDA 2019.3 eller nyere.
 
 * Første version.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
-
-[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev

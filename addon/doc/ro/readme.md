@@ -2,8 +2,7 @@
 
 * Autori: Joseph Lee împreună cu contributorii NVDA.
 * Descarcă [Versiunea Stabilă][1]
-* Descarcă [Versiunea În Dezvoltare][2]
-* NVDA compatibility: 2019.3 to 2021.1
+* NVDA compatibility: 2021.2 and beyond
 
 This app module enhances access and usage of GoldWave audio editor.
 
@@ -21,8 +20,16 @@ This app module enhances access and usage of GoldWave audio editor.
 For more information about GoldWave and keyboard commands, refer to GoldWave
 Manual.
 
-Notă: Goldwave 6 necesită o versiune Windows 7 sau mai nouă cu 64 biți și cu
-NVDA 2014.1 sau mai nou.
+Note: GoldWave 6 or later is required.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
+
+## Version 21.06
+
+* Resolved additional coding style issues and potential bugs with Flake8.
 
 ## Version 20.06
 
@@ -119,8 +126,7 @@ NVDA 2014.1 sau mai nou.
 
 * Lansarea oficială.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
-
-[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev

@@ -2,8 +2,7 @@
 
 * Autorzy: Joseph Lee, współpracownicy NVDA.
 * Pobierz [wersja stabilna][1]
-* Pobierz [wersja rozwojowa][2]
-* NVDA compatibility: 2019.3 to 2021.1
+* NVDA compatibility: 2021.2 and beyond
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
@@ -21,8 +20,16 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 Więcej informacji o Goldwave i jego klawiszach skrótów, znajduje się w
 podręczniku Goldwave.
 
-Uwaga: GoldWave 6 wymaga 64-bitowej wersji Windows 7 lub nowszej. Aby używać
-tego dodatku, potrzebna jest wersja NVDA 2019.3 lub nowsza.
+Note: GoldWave 6 or later is required.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
+
+## Version 21.06
+
+* Resolved additional coding style issues and potential bugs with Flake8.
 
 ## Wersja 20.06
 
@@ -120,8 +127,7 @@ tego dodatku, potrzebna jest wersja NVDA 2019.3 lub nowsza.
 
 * Początkowa wersja.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
-
-[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev

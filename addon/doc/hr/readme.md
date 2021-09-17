@@ -2,8 +2,7 @@
 
 * Autori: Joseph Lee, NVDA doprinositelji.
 * Preuzmi [stabilnu verziju][1]
-* Preuzmi [razvojnu verziju][2]
-* NVDA compatibility: 2019.3 to 2021.1
+* NVDA compatibility: 2021.2 and beyond
 
 Ovaj modul aplikacije unapređuje pristup uređivaču zvuka GoldWave, kao i
 njegovo korištenje.
@@ -24,8 +23,16 @@ njegovo korištenje.
 Daljnje informacije o GoldWaveu i tipkovničkim prečacima je moguće naći u
 priručniku za GoldWave.
 
-Napomena: GoldWave 6 zahtijeva 64-bitnu verziju Windowsa 7 ili novijeg
-sustava. Za pokretanje ovog dodatka potreban je NVDA 2019.3 ili noviji.
+Note: GoldWave 6 or later is required.
+
+## Version 21.10
+
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this
+  add-on.
+
+## Version 21.06
+
+* Resolved additional coding style issues and potential bugs with Flake8.
 
 ## Verzija 20.06
 
@@ -126,8 +133,7 @@ sustava. Za pokretanje ovog dodatka potreban je NVDA 2019.3 ili noviji.
 
 * Prva verzija.
 
+
 [[!tag dev stable]]
 
 [1]: https://addons.nvda-project.org/files/get.php?file=gwv
-
-[2]: https://addons.nvda-project.org/files/get.php?file=gwv-dev
