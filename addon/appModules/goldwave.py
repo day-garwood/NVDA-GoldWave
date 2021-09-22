@@ -26,6 +26,9 @@ class SoundWindow(IAccessible):
 
 	scriptCategory = "GoldWave"
 
+	# GoldWave 6.57 raises name change event whenever play/rewind/stop keys are pressed.
+	event_nameChange = None
+
 	def _get_helpText(self):
 		# Translators: general help message for GoldWave sound window.
 		return _(
