@@ -2,7 +2,7 @@
 
 * Autoren: Joseph Lee und die NVDA-Entwicklergemeinde.
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2021.2 and beyond
+* NVDA-Kompatibilität: 2021.2 und neuer
 
 Diese Erweiterung verbessert die Zugänglichkeit des Audio-Editors GoldWave.
 
@@ -22,16 +22,19 @@ Diese Erweiterung verbessert die Zugänglichkeit des Audio-Editors GoldWave.
 Weitere Informationen über GoldWave und die Tastenkombinationen finden Sie
 im GoldWave-Benutzerhandbuch.
 
-Note: GoldWave 6 or later is required.
+Hinweis: GoldWave 6 oder neuer ist erforderlich.
 
 ## Version 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* NVDA 2021.2 oder neuer ist auf Grund von Änderungen in NVDA erforderlich,
+  die diese Erweiterung betreffen.
+* In GoldWave 6.57 und neuer wiederholt NVDA den Namen der geladenen Datei
+  nicht mehr, wenn die Wiedergabe-/Rücklauf-/Stopp-Tasten gedrückt werden.
 
 ## Version 21.06
 
-* Resolved additional coding style issues and potential bugs with Flake8.
+* Zusätzliche Probleme mit dem Codierungsstil und potenzielle Fehler mit
+  Flake8 behoben.
 
 ## Version 20.06
 

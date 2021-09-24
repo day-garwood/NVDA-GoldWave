@@ -29,6 +29,8 @@ Nota: se requiere GoldWave 6 o posterior.
 
 * Se requiere NVDA 2021.2 o posterior a causa de cambios en NVDA que afectan
   a este complemento.
+* En GoldWave 6.57 y posterior, NVDA ya no repetirá el nombre del archivo
+  cargado al pulsar las teclas de reproducir/pausar/rebobinar.
 
 ## Versión 21.06
 

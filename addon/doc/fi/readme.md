@@ -2,7 +2,7 @@
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
-* NVDA compatibility: 2021.2 and beyond
+* Yhteensopivuus: NVDA 2021.2 ja uudemmat
 
 Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.
@@ -21,16 +21,19 @@ käytettävyyttä.
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
 käsikirjassa.
 
-Note: GoldWave 6 or later is required.
+Huom: GoldWave 6 tai uudempi vaaditaan.
 
-## Version 21.10
+## Versio 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
+* NVDA 2021.2 tai uudempi vaaditaan tähän lisäosaan vaikuttavien
+  NVDA-muutosten takia.
+* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
+  loaded file when pressing play/rewind/stop keys.
 
-## Version 21.06
+## Versio 21.06
 
-* Resolved additional coding style issues and potential bugs with Flake8.
+* Ratkaistu lisää koodaustyylin ongelmia sekä mahdollisia bugeja Flake8:n
+  kanssa.
 
 ## Versio 20.06
 

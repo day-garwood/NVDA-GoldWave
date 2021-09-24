@@ -24,6 +24,8 @@ Note: GoldWave 6 or later is required.
 
 * NVDA 2021.2 or later is required due to changes to NVDA that affects this
   add-on.
+* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
+  loaded file when pressing play/rewind/stop keys.
 
 ## Version 21.06
 
