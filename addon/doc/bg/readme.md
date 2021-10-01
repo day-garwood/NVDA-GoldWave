@@ -2,7 +2,7 @@
 
 * Автори: Joseph Lee, други сътрудници на NVDA.
 * Изтегляне на [стабилна версия][1]
-* NVDA compatibility: 2021.2 and beyond
+* Съвместимост с NVDA: от 2021.2 и по-нови версии
 
 Тази добавка за NVDA подобрява достъпността и ползваемостта на звуковия
 редактор GoldWave.
@@ -22,18 +22,19 @@
 За повече информация относно GoldWave и клавишните му команди, обърнете се
 към ръководството за работа с GoldWave.
 
-Note: GoldWave 6 or later is required.
+Забележка: Изисква се GoldWave версия 6 или по -нова.
 
-## Version 21.10
+## Версия 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* Поради промени в NVDA, които засягат тази добавка, се изисква NVDA 2021.2
+  или по-нова версия.
+* В GoldWave 6.57 и по -нови версии NVDA вече няма да повтаря името на
+  заредения файл при натискане на клавишите за
+  възпроизвеждане/превъртане/спиране.
 
-## Version 21.06
+## Версия 21.06
 
-* Resolved additional coding style issues and potential bugs with Flake8.
+* Оправени са още проблеми със стила на кода и потенциални грешки с Flake8.
 
 ## Версия 20.06
 
