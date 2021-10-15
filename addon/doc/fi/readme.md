@@ -27,8 +27,8 @@ Huom: GoldWave 6 tai uudempi vaaditaan.
 
 * NVDA 2021.2 tai uudempi vaaditaan tähän lisäosaan vaikuttavien
   NVDA-muutosten takia.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* NVDA ei enää toista GoldWave 6.57:ssä ja uudemmissa avatun tiedoston nimeä
+  toisto/kelaa taaksepäin/pysäytä -näppäimiä painettaessa.
 
 ## Versio 21.06
 
