@@ -27,8 +27,8 @@ Nota: Requírese GoldWave 6 ou posterior.
 
 * Requírese NVDA 2021.2 ou posterior debido a cambios en NVDA que afectan a
   este complemento.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* En GoldWave 6.57 e posterior, NVDA xa non repetirá o nome do arquivo
+  cargado ó premer as teclas de reproducir/rebobinar/deter.
 
 ## Versión 21.06
 
