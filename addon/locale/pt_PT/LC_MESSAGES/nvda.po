@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 16.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-02-03 07:05+1000\n"
-"PO-Revision-Date: 2021-10-30 22:14+0100\n"
+"PO-Revision-Date: 2021-11-18 23:13+0000\n"
 "Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -96,7 +96,7 @@ msgstr "Terminar: {finishMarkerPos}"
 
 #. Translators: Presented when selected audio is playing.
 msgid "Play selection"
-msgstr "tocar a selecção:"
+msgstr "tocar a selecção"
 
 #. Translators: Presented when all parts of the audio track is selected.
 msgid "Select All"
