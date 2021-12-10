@@ -2,7 +2,7 @@
 
 * Autores: Joseph Lee e colaboradores do NVDA.
 * Baixar [versão estável][1]
-* Compatibilidade com NVDA: 2021.2 e superiores
+* NVDA compatibility: 2021.2 and later
 
 Este módulo de aplicação melhora o acesso e a utilização do editor de áudio
 GoldWave.
