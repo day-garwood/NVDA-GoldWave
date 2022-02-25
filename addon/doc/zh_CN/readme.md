@@ -2,7 +2,7 @@
 
 * 作者: Joseph Lee, NVDA contributors.
 * 下载[稳定版][1]
-* NVDA compatibility: 2021.2 and later
+* NVDA compatibility: 2021.3 and later
 
 此插件可增强GoldWave音频编辑器的无障碍体验性。
 

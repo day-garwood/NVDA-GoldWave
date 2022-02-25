@@ -2,7 +2,7 @@
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
-* Yhteensopivuus: NVDA 2021.2 ja uudemmat
+* Yhteensopivuus: NVDA 2021.3 ja uudemmat
 
 Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.

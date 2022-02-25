@@ -2,7 +2,7 @@
 
 * Yazarlar: Joseph Lee, NVDA'ya katkıda bulunanlar.
 * [kararlı sürümü][1] indir
-* NVDA uyumluluğu: 2021.2 ve üstü
+* NVDA compatibility: 2021.3 and later
 
 Bu uygulama modülü GoldWave ses editörünün erişilebilirliğini ve kullanımını
 geliştirir.

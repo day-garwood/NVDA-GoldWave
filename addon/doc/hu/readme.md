@@ -2,7 +2,7 @@
 
 * Készítők: Joseph Lee, NVDA közreműködők
 * [Stabil verzió][1]
-* NVDA compatibility: 2021.2 and later
+* NVDA compatibility: 2021.3 and later
 
 This app module enhances access and usage of GoldWave audio editor.
 
