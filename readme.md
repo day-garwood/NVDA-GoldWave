@@ -22,6 +22,11 @@ For more information about GoldWave and keyboard commands, refer to GoldWave Man
 
 Note: GoldWave 6 or later is required.
 
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* To improve security, add-on commands cannot be performed while using GoldWave if NVDA is running in secure mode.
+
 ## Version 21.10
 
 * NVDA 2021.2 or later is required due to changes to NVDA that affects this add-on.
