@@ -431,6 +431,12 @@ class SoundWindow(IAccessible):
 		self.script_announceZoomLevel(gesture)
 
 
+# Security: disable the app module altogether in secure mode.
+def disableInSecureMode(cls):
+	return appModuleHandler.AppModule if globalVars.appArgs.secure else cls
+
+
+@disableInSecureMode
 class AppModule(appModuleHandler.AppModule):
 
 	def __init__(self, *args, **kwargs):
