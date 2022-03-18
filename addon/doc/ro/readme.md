@@ -22,6 +22,12 @@ Manual.
 
 Note: GoldWave 6 or later is required.
 
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
+
 ## Version 21.10
 
 * NVDA 2021.2 or later is required due to changes to NVDA that affects this
@@ -127,7 +133,6 @@ Note: GoldWave 6 or later is required.
 ## Modificări aduse în 1.0
 
 * Lansarea oficială.
-
 
 [[!tag dev stable]]
 

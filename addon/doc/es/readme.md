@@ -25,6 +25,12 @@ remítete al manual de Goldwave.
 
 Nota: se requiere GoldWave 6 o posterior.
 
+## Versión 22.03
+
+* Se requiere NVDA 2021.3 o posterior.
+* Se mostrará un mensaje de aviso al intentar instalar el complemento en
+  Windows 7, 8 y 8.1.
+
 ## Versión 21.10
 
 * Se requiere NVDA 2021.2 o posterior a causa de cambios en NVDA que afectan
@@ -136,7 +142,6 @@ Nota: se requiere GoldWave 6 o posterior.
 ## Cambios para 1.0
 
 * Versión inicial.
-
 
 [[!tag dev stable]]
 

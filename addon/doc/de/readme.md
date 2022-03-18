@@ -24,6 +24,12 @@ im GoldWave-Benutzerhandbuch.
 
 Hinweis: GoldWave 6 oder neuer ist erforderlich.
 
+## Version 22.03
+
+* NVDA 2021.3 oder neuer wird benötigt.
+* Beim Versuch, die Erweiterung unter Windows 7 und 8/8.1 zu installieren,
+  wird eine Warnung angezeigt.
+
 ## Version 21.10
 
 * NVDA 2021.2 oder neuer ist auf Grund von Änderungen in NVDA erforderlich,
@@ -130,7 +136,6 @@ Hinweis: GoldWave 6 oder neuer ist erforderlich.
 ## Änderungen in 1.0
 
 * Erstveröffentlichung.
-
 
 [[!tag dev stable]]
 

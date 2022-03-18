@@ -23,6 +23,12 @@ kılavuzuna bakın.
 
 Not: GoldWave 6 veya üstü gerekli.
 
+## Version 22.03
+
+* NVDA 2021.3 or later is required.
+* A warning message will be displayed when attempting to install the add-on
+  on Windows 7, 8, and 8.1.
+
 ## Sürüm 21.10
 
 * NVDA'da yapılan ve bu eklentiyi etkileyen değişiklikler nedeniyle NVDA
@@ -127,7 +133,6 @@ Not: GoldWave 6 veya üstü gerekli.
 ## 1.0 için değişiklikler
 
 * İlk sürüm.
-
 
 [[!tag dev stable]]
 

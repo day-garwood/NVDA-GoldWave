@@ -2,7 +2,7 @@
 
 * Auteurs : Joseph Lee, contributeurs de NVDA.
 * Télécharger [version stable][1]
-* NVDA compatibility: 2021.3 and later
+* Compatibilité NVDA : 2021.3 et versions ultérieures
 
 Cette extension améliore l'accès et l'utilisation de l'éditeur audio
 Goldwave.
@@ -12,7 +12,7 @@ Goldwave.
 * NVDA+Maj+C : Bascule l'annonce des commandes lors de l'édition audio.
 * Contrôle+Maj+P : Annonce la position courante de la piste.
 * NVDA+Maj+R: Annonce le temps restant pour la piste en cours d'édition.
-* Contrôle+NVDA+1 : Annonce le canal en cours d'édition
+* Contrôle+NVDA+1 : Annonce le canal en cours d'édition.
 * Contrôle+NVDA+2 : Annonce la longueur totale du fichier audio.
 * Contrôle+NVDA+3 : annonce un résumé des informations relatives à la
   sélection audio.
@@ -21,30 +21,38 @@ Goldwave.
 Pour plus d'informations sur Goldwave et les commandes clavier,
 reportez-vous au manuel de Goldwave.
 
-Note: GoldWave 6 or later is required.
+Remarque : Nécessite GoldWave 6 ou version ultérieure.
+
+## Version 22.03
+
+* Nécessite 3 ou ultérieur.
+* Un message d'avertissement s'affichera si vous installez l'extension sur
+  Windows 7, 8 et 8.1.
 
 ## Version 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* NVDA 2021.2 ou version ultérieure est requis en raison des modifications
+  apportées à NVDA qui affectent cette extension.
+* Dans GoldWave 6.57 et versions ultérieures, NVDA ne répétera plus le nom
+  du fichier chargé lors de l'appui sur les touches lecture/retour
+  arrière/arrêt.
 
 ## Version 21.06
 
-* Resolved additional coding style issues and potential bugs with Flake8.
+* Résolution de problèmes de style de code supplémentaires et de bugs
+  potentiels avec Flake8.
 
 ## Version 20.06
 
-* Résolution de nombreux problèmes d'encodage et de bugs potentiels avec
-  Flake8
+* Résolution de nombreux problèmes de style de code et de bugs potentiels
+  avec Flake8.
 
 ## Version 20.04
 
-* Ajout de messages d'aide pour la commande de temps restant (NVDA+Shift+R).
-* La commande permettant de de basculer  l'annonce des commandes
-  ((NVDA+Shift+C) se trouve désormais dans les gestes de commande de NVDA
-  sous la catégorie Goldwave
+* Ajout de messages d'aide pour la commande de temps restant (NVDA+Maj+R).
+* La commande permettant de basculer l'annonce des commandes ((NVDA+Maj+C)
+  se trouve désormais dans les gestes de commande de NVDA sous la catégorie
+  Goldwave.
 
 ## Version 20.01
 
@@ -52,7 +60,7 @@ Note: GoldWave 6 or later is required.
 
 ## Version 19.11
 
-* Windows 7 SP1, Goldwave 6.x et NVDA 2019.3 ou supérieures sont requis
+* Windows 7 SP1, Goldwave 6.x et NVDA 2019.1 ou supérieures sont requis.
 * Ajout d'un message d'aide pour la fenêtre son, (seulement accessible si
   l'extension Control Usage Assistant est installée)
 
@@ -63,7 +71,7 @@ Note: GoldWave 6 or later is required.
   commande désactivée (cela peut entraîner des comportements étranges dans
   certains cas).
 * Changements internes permettant la prise en charge de futures versions de
-  NVDA
+  NVDA.
 
 ## Version 18.07
 
@@ -122,8 +130,8 @@ Note: GoldWave 6 or later is required.
 
 ## Changements pour la version 1.1
 
-* prise en charge des annonces de message en braille.
-* le résumé de la Sélection audio est présentée dans des langues autres que
+* Prise en charge des annonces de message en braille.
+* Le résumé de la Sélection audio est présentée dans les langues autres que
   l'anglais.
 * Autres annonces de commande ajoutés y compris le mouvement de la position
   du point de repère et les opérations supprimer/couper.
@@ -135,7 +143,6 @@ Note: GoldWave 6 or later is required.
 ## Changements pour la version 1.0
 
 * Première version.
-
 
 [[!tag dev stable]]
 
