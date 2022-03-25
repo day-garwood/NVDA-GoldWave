@@ -20,7 +20,7 @@ This app module enhances access and usage of GoldWave audio editor.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave Manual.
 
-Note: GoldWave 6 or later is required.
+Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Version 22.03
 
