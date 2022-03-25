@@ -400,18 +400,10 @@ class SoundWindow(IAccessible):
 			)
 
 	# Change and announce audio channels.
-	@scriptHandler.script(
-		gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a", "kb:control+shift+b"]
-	)
+	@scriptHandler.script(gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a"])
 	def script_selectChannel(self, gesture):
 		gesture.send()
-		if (
-			(gesture.displayName == "ctrl+shift+a" and self.appModule.productVersion.startswith("5"))
-			or (gesture.displayName == "ctrl+shift+b" and self.appModule.productVersion.startswith("6"))
-		):
-			return
-		else:
-			self.script_announceAudioChannels(gesture)
+		self.script_announceAudioChannels(gesture)
 
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
