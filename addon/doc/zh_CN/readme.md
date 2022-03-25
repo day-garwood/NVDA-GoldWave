@@ -2,7 +2,7 @@
 
 * 作者: Joseph Lee, NVDA contributors.
 * 下载[稳定版][1]
-* NVDA compatibility: 2021.3 and later
+* NVDA兼容版本:2021.3 及更高
 
 此插件可增强GoldWave音频编辑器的无障碍体验性。
 
@@ -18,24 +18,21 @@
 
 有关GoldWave和键盘命令的更多信息，请参阅GoldWave手册。
 
-Note: GoldWave 6 or later is required.
+注意：现在需要 GoldWave 6或更高版本。
 
-## Version 22.03
+## 版本22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* 需要NVDA 2021.3或更高版本。
+* 当试图在 Windows 7、8和8.1上安装插件时，将显示一条警告消息。
 
-## Version 21.10
+## 版本21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* NVDA 2021.2或更高版本是必需的，因为 NVDA 的更改会影响此插件。
+* 在 GoldWave 6.57及更高版本中，按下播放/回放/停止键时，NVDA 将不再重复加载文件的名称。
 
-## Version 21.06
+## 版本21.06
 
-* Resolved additional coding style issues and potential bugs with Flake8.
+* 使用 Flake8 解决了许多编码样式问题和潜在错误。
 
 ## 版本20.06
 

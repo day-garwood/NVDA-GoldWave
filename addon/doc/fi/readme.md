@@ -23,11 +23,11 @@ käsikirjassa.
 
 Huom: GoldWave 6 tai uudempi vaaditaan.
 
-## Version 22.03
+## Versio 22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* Edellyttää NVDA 2021.3:ea tai uudempaa.
+* Varoitus näytetään yritettäessä asentaa lisäosaa Windows 7:ään, 8:aan tai
+  8.1:een.
 
 ## Versio 21.10
 
