@@ -17,7 +17,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#. Translators: general help message for GoldWave sound window.
+#. Translators: Dialog text shown when trying to install the add-on on an older version of Windows.
+msgid ""
+"You are using an older version of Windows. This add-on requires Windows 10 "
+"or later."
+msgstr ""
+
+#. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
+msgid "Old Windows version"
+msgstr ""
+
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
@@ -82,12 +91,14 @@ msgstr "Вибрано кілька каналів"
 msgid "All channels selected"
 msgstr "Вибрано всі канали"
 
-#. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#. Translators: The start marker position for selecting parts of the audio track
+#. (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Початок: {startMarkerPos}"
 
-#. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#. Translators: The finish marker position for selecting parts of the audio track
+#. (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Закінчення: {finishMarkerPos}"
@@ -204,7 +215,8 @@ msgstr "Неможливо оголосити решту часу для пот�
 msgid "Announces the audio channel you are editing."
 msgstr "Оголошує звуковий канал, який ви редагуєте."
 
-#. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#. Translators: Presented to indicate the selected channel for the track
+#. (example output: "Selected channel: mono").
 #, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Вибраний канал: {audioChannel}"
@@ -240,7 +252,8 @@ msgid "command announcement off"
 msgstr "оголошення команд вимкнено"
 
 #. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information.
 msgid "GoldWave"
 msgstr "GoldWave"
 

@@ -17,7 +17,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
 
-#. Translators: general help message for GoldWave sound window.
+#. Translators: Dialog text shown when trying to install the add-on on an older version of Windows.
+msgid ""
+"You are using an older version of Windows. This add-on requires Windows 10 "
+"or later."
+msgstr ""
+
+#. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
+msgid "Old Windows version"
+msgstr ""
+
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
@@ -79,12 +88,14 @@ msgstr "다중 체널 선택됨"
 msgid "All channels selected"
 msgstr "모든 체널 선택됨"
 
-#. Translators: The start marker position for selecting parts of the audio track (example output: "Start: 0.00").
+#. Translators: The start marker position for selecting parts of the audio track
+#. (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "시작 마크: {startMarkerPos}"
 
-#. Translators: The finish marker position for selecting parts of the audio track (example output: "Finish: 5.00").
+#. Translators: The finish marker position for selecting parts of the audio track
+#. (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "끝 마크: {finishMarkerPos}"
@@ -198,7 +209,8 @@ msgstr "트랙 남은 시간 정보 없음"
 msgid "Announces the audio channel you are editing."
 msgstr "편집중인 오디오 체널을 알려줍니다."
 
-#. Translators: Presented to indicate the selected channel for the track (example output: "Selected channel: mono").
+#. Translators: Presented to indicate the selected channel for the track
+#. (example output: "Selected channel: mono").
 #, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "선택된 체널: {audioChannel}"
@@ -231,7 +243,8 @@ msgid "command announcement off"
 msgstr "명령 메시지 중지"
 
 #. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation and add-on information.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information.
 msgid "GoldWave"
 msgstr "골드웨이브"
 
