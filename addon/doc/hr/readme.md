@@ -2,7 +2,7 @@
 
 * Autori: Joseph Lee, NVDA doprinositelji.
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2021.3 and later
+* NVDA kompatibilnost: 2021.3 i novije verzije
 
 Ovaj modul aplikacije unapređuje pristup uređivaču zvuka GoldWave, kao i
 njegovo korištenje.
@@ -23,24 +23,26 @@ njegovo korištenje.
 Daljnje informacije o GoldWaveu i tipkovničkim prečacima je moguće naći u
 priručniku za GoldWave.
 
-Note: GoldWave 6 or later is required.
+Napomena: Zahtijeva GoldWave 6 ili noviji verziju.
 
-## Version 22.03
+## Verzija 22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* Zahtijeva NVDA 2021.3 ili noviju verziju.
+* Prikazat će se poruka upozorenja kad pokušaš instalirati dodatak na
+  Windows 7, 8 i 8.1.
 
-## Version 21.10
+## Verzija 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* NVDA 2021.2 ili novija verzija je potrebna zbog promjena NVDA čitača koje
+  utječu na ovaj dodatak.
+* U GoldWave 6.57 i novijim verzijama, NVDA više neće ponavljati naziv
+  učitane datoteke kad se pritisnu tipke za reprodukciju/premotavanje
+  unatrag/prekidanje.
 
-## Version 21.06
+## Verzija 21.06
 
-* Resolved additional coding style issues and potential bugs with Flake8.
+* Riješeni su dodatni problemi sa stilom kodiranja i potencijalne greške s
+  Flake8.
 
 ## Verzija 20.06
 
