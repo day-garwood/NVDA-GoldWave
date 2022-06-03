@@ -2,7 +2,7 @@
 
 * Autorzy: Joseph Lee, współpracownicy NVDA.
 * Pobierz [wersja stabilna][1]
-* NVDA compatibility: 2021.3 and later
+* Zgodność z NVDA: 2021.3 i nowsze
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
@@ -20,24 +20,26 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 Więcej informacji o Goldwave i jego klawiszach skrótów, znajduje się w
 podręczniku Goldwave.
 
-Note: GoldWave 6 or later is required.
+Uwaga: Wymagana jest wersja GoldWave 6 lub nowsza.
 
-## Version 22.03
+## Wersja 22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* Wymagana jest nvda 2021.3 lub nowsza.
+* Podczas próby zainstalowania dodatku w systemie Windows 7, 8 i 8.1
+  zostanie wyświetlony komunikat ostrzegawczy.
 
-## Version 21.10
+## Wersja 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* NVDA 2021.2 lub nowsza jest wymagana ze względu na zmiany w NVDA, które
+  mają wpływ na ten dodatek.
+* W GoldWave 6.57 i nowszych wersjach NVDA nie będzie już powtarzać nazwy
+  załadowanego pliku po naciśnięciu odtwarzania/przewijania do
+  tyłu/zatrzymania.
 
-## Version 21.06
+## Wersja 21.06
 
-* Resolved additional coding style issues and potential bugs with Flake8.
+* Rozwiązano dodatkowe problemy ze stylem kodowania i potencjalne błędy w
+  Flake8.
 
 ## Wersja 20.06
 
@@ -61,7 +63,7 @@ Note: GoldWave 6 or later is required.
 * Dodano wiadomość kontekstową doa okna dźwięku (dostępne jeśli dodatek
   Control usage assistant jest zainstalowany).
 
-## wersja 18.12
+## Wersja 18.12
 
 * NVDA już nie będzie odtwarzała dźwięk tonu lub robiła nic gdy niektóre
   polecenia goldwawe są wypełniane z wyłączonym wymawianiem poleceń (może to
@@ -77,7 +79,7 @@ Note: GoldWave 6 or later is required.
 
 * Dodano możliwość dostarczania informacji o debugowaniu po uruchomieniu
   NVDA w trybie debugowania (NVDA w wersji 2017.1 lub nowszej).
-* Aktualizacja tłumaczeń
+* Zaktualizowane tłumaczenia.
 
 ## Wersja 16.12
 

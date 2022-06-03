@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2022-04-02 14:26+0200\n"
+"PO-Revision-Date: 2022-05-29 11:04+0200\n"
 "Last-Translator: Piotr Rakowski <piter.9521@wp.pl>\n"
 "Language-Team: Polish <killer@tyflonet.com>\n"
 "Language: pl\n"
@@ -39,11 +39,11 @@ msgstr ""
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "Informacja o pozycji ścieżki niedostępna."
+msgstr "Informacja o pozycji ścieżki niedostępna"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "Informacja o konfiguracji kanałów niedostępna."
+msgstr "Informacja o konfiguracji kanałów niedostępna"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
@@ -59,7 +59,7 @@ msgstr "lewy"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "right"
-msgstr "Prawy"
+msgstr "prawy"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "center"
@@ -67,7 +67,7 @@ msgstr "środek"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "low frequency"
-msgstr "Subwoofer"
+msgstr "subwoofer"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "back left"
@@ -79,11 +79,11 @@ msgstr "tylni Prawy"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side left"
-msgstr "Boczny lewy"
+msgstr "boczny lewy"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "side right"
-msgstr "Boczny prawy"
+msgstr "boczny prawy"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 msgid "Multiple channels selected"
@@ -131,7 +131,7 @@ msgstr "Marker początkowy w następnym punkcie CUE"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "marker rozpoczęcia w poprzednim punkcie CUE"
+msgstr "Marker rozpoczęcia w poprzednim punkcie CUE"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
@@ -143,7 +143,7 @@ msgstr "Znacznik końca w poprzednim punkcie CUE"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
-msgstr "Usunięte"
+msgstr "usunięte"
 
 #. Translators: Presented when a track is playing in Goldwave.
 msgid "play"
@@ -151,11 +151,11 @@ msgstr "odtwórz"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
 msgid "rewind"
-msgstr "Przewiń do tyłu"
+msgstr "przewiń do tyłu"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
 msgid "fast forward"
-msgstr "Przewiń do przodu."
+msgstr "przewiń do przodu"
 
 #. Translators: Presented when pausing a track in Goldwave.
 msgid "pause"
@@ -167,7 +167,7 @@ msgstr "stop"
 
 #. Translators: Presented when starting recording in Goldwave.
 msgid "record"
-msgstr "Nagraj"
+msgstr "nagraj"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
@@ -243,11 +243,11 @@ msgstr "Musisz być w oknie dźwięku aby przełączyć oznajmianie komend"
 
 #. Translators: Presented when command announcement messages are turned on in Goldwave.
 msgid "command announcement on"
-msgstr "Oznajmianie komend Tak"
+msgstr "oznajmianie poleceń Tak"
 
 #. Translators: Presented when command announcement messages are turned off in Goldwave.
 msgid "command announcement off"
-msgstr "Oznajmianie komend nie"
+msgstr "oznajmianie poleceń nie"
 
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on

@@ -51,8 +51,8 @@ Huom: GoldWave 6 tai uudempi vaaditaan.
 * Lisätty syöteohjeviestit jäljellä olevan ajan ilmoittavalle komennolle
   (NVDA+Vaihto+R).
 * Komentojen puhumisen käyttöön ottava tai käytöstä poistava komento
-  (NVDA+Vaihto+C) näkyy nyt GoldWave-kategorian alla NVDA:n
-  Syötekomennot-valintaikkunassa.
+  (NVDA+Vaihto+C) näkyy nyt GoldWave-kategoriassa NVDA:n
+  Näppäinkomennot-valintaikkunassa.
 
 ## Versio 20.01
 
