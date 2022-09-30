@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: 'goldwave 1.1-dev'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2019-03-02 10:25+0100\n"
+"PO-Revision-Date: 2022-09-24 01:11+0200\n"
 "Last-Translator: Michel Such <michel.such@free.fr>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 1.8.13\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -24,15 +24,20 @@ msgid ""
 "You are using an older version of Windows. This add-on requires Windows 10 "
 "or later."
 msgstr ""
+"Vous utilisez une ancienne version de Windows. Cette extension requiert "
+"Windows 10 ou plus récente."
 
 #. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
 msgid "Old Windows version"
-msgstr ""
+msgstr "Ancienne version de Windows"
 
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
 msgstr ""
+"Ceci est la fenêtre audio de Goldwave. Vous pouvez utiliser les commandes de "
+"GoldWave pour écouter et éditer des fichiers audio. Consultez l'aide de "
+"GoldWave."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -204,9 +209,8 @@ msgid "Track length: {trackLength}"
 msgstr "Longueur de la piste : {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
-#, fuzzy
 msgid "Announces remaining length of the audio track."
-msgstr "Annonce la longueur totale de la piste audio."
+msgstr "annonce la longueur totale de la piste audio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
@@ -260,7 +264,6 @@ msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
-#, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Une extension pour améliorer l'accès et l'utilisation de l'éditeur audio "
