@@ -5,7 +5,6 @@
 
 import appModuleHandler
 import api
-import globalVars
 import scriptHandler
 import controlTypes
 from NVDAObjects.IAccessible import IAccessible
