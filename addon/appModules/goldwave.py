@@ -50,21 +50,18 @@ class SoundWindow(IAccessible):
 	# A master function to obtain needed info from status bars.
 	# #17.05: because this is prone to failure, insert debug messages if asked.
 	def getStatusInfo(self, statBarIndex, childIndex):
-		if globalVars.appArgs.debugLogging:
-			log.debug("GWV: Status bar object fetcher")
-			log.debug(f"GWV: Status {statBarIndex}, child index {childIndex}")
+		log.debug("GWV: Status bar object fetcher")
+		log.debug(f"GWV: Status {statBarIndex}, child index {childIndex}")
 		fgChild = self.appModule._get_statusBars(statBarIndex)
-		if globalVars.appArgs.debugLogging:
-			log.debug(
-				"GWV: Status bar found" if fgChild.role == controlTypes.Role.STATUSBAR else "Status bar not found"
-			)
+		log.debug(
+			"GWV: Status bar found" if fgChild.role == controlTypes.Role.STATUSBAR else "Status bar not found"
+		)
 		if not fgChild.displayText:
 			fgChild.redraw()
 		try:
 			info = fgChild.getChild(childIndex).displayText
 		except IndexError:
-			if globalVars.appArgs.debugLogging:
-				log.debug("GWV: Object cannot be located")
+			log.debug("GWV: Object cannot be located")
 			return ""
 		return info
 
@@ -88,16 +85,14 @@ class SoundWindow(IAccessible):
 		audioSelection = self.getStatusInfo(0, 2)
 		if multiInstance > 1:
 			audioSelection = self.getStatusInfo(0, 2)
-		if globalVars.appArgs.debugLogging:
-			log.debug(f"GWV: status bar length: {len(audioSelection)}")
+		log.debug(f"GWV: status bar length: {len(audioSelection)}")
 		return audioSelection
 
 	def getAudioSelectionParsed(self):
 		# Get marker positions and selection duration.
 		# Return the list of substrings to be handled by individual scripts.
 		audioSelectionParsed = self.getAudioSelection().split()
-		if globalVars.appArgs.debugLogging:
-			log.debug(f"GWV: parsed status bar length: {len(audioSelectionParsed)}")
+		log.debug(f"GWV: parsed status bar length: {len(audioSelectionParsed)}")
 		return audioSelectionParsed
 
 	# Get channel information. But first, a few constants (to help translators):
