@@ -2,7 +2,7 @@
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 * Lataa [vakaa versio][1]
-* Yhteensopivuus: NVDA 2021.3 ja uudemmat
+* Yhteensopivuus: NVDA 2022.3 ja uudemmat
 
 Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.
@@ -22,6 +22,12 @@ Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
 käsikirjassa.
 
 Huom: GoldWave 6 tai uudempi vaaditaan.
+
+## Versio 23.01
+
+* Edellyttää NVDA 2022.3:ea tai uudempaa.
+* Windows 10 tai uudempi vaaditaan, koska Microsoft ei enää tue Windows
+  7:ää, 8:aa tai 8.1:tä tammikuusta 2023 alkaen.
 
 ## Versio 22.03
 

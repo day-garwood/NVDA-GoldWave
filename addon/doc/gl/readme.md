@@ -2,7 +2,7 @@
 
 * Autores: Joseph Lee, colaboradores do NVDA.
 * Descarga [versión estable][1]
-* Compatibilidade con NVDA: 2021.3 en diante
+* NVDA compatibility: 2022.3 and later
 
 Este módulo de aplicación mellora o acceso e o uso do editor de audio
 GoldWave.
@@ -22,6 +22,12 @@ Para obter máis información acerca do GoldWave e das ordes do teclado,
 consulta o Manual do GoldWave.
 
 Nota: Requírese GoldWave 6 ou posterior.
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
 
 ## Version 22.03
 

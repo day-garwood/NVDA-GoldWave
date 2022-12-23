@@ -2,7 +2,7 @@
 
 * 作者: Joseph Lee, NVDA contributors.
 * 下载[稳定版][1]
-* NVDA兼容版本:2021.3 及更高
+* NVDA compatibility: 2022.3 and later
 
 此插件可增强GoldWave音频编辑器的无障碍体验性。
 
@@ -19,6 +19,12 @@
 有关GoldWave和键盘命令的更多信息，请参阅GoldWave手册。
 
 注意：现在需要 GoldWave 6或更高版本。
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
 
 ## 版本22.03
 

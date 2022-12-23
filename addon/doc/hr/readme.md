@@ -2,7 +2,7 @@
 
 * Autori: Joseph Lee, NVDA doprinositelji.
 * Preuzmi [stabilnu verziju][1]
-* NVDA kompatibilnost: 2021.3 i novije verzije
+* NVDA compatibility: 2022.3 and later
 
 Ovaj modul aplikacije unapređuje pristup uređivaču zvuka GoldWave, kao i
 njegovo korištenje.
@@ -24,6 +24,12 @@ Daljnje informacije o GoldWaveu i tipkovničkim prečacima je moguće naći u
 priručniku za GoldWave.
 
 Napomena: Zahtijeva GoldWave 6 ili noviji verziju.
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
 
 ## Verzija 22.03
 

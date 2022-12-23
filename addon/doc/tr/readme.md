@@ -2,7 +2,7 @@
 
 * Yazarlar: Joseph Lee, NVDA'ya katkıda bulunanlar.
 * [kararlı sürümü][1] indir
-* NVDA uyumluluğu: 2021.3 ve sonrası
+* NVDA compatibility: 2022.3 and later
 
 Bu uygulama modülü GoldWave ses editörünün erişilebilirliğini ve kullanımını
 geliştirir.
@@ -22,6 +22,12 @@ GoldWave ve klavye komutları hakkında daha fazla bilgi için, GoldWave
 kılavuzuna bakın.
 
 Not: GoldWave 6 veya üstü gerekli.
+
+## Version 23.01
+
+* NVDA 2022.3 or later is required.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
+  supported by Microsoft as of January 2023.
 
 ## Sürüm 22.03
 
