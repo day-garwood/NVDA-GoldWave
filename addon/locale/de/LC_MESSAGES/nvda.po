@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2022-04-12 22:48+0200\n"
+"PO-Revision-Date: 2023-01-08 07:37-0800\n"
 "Last-Translator: Bernd Dorer <mail@bdorer.de>\n"
 "Language-Team: \n"
 "Language: de\n"
@@ -21,7 +21,7 @@ msgstr ""
 #. Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
 #. Unsupported systems include Windows versions earlier than 10 and unsupported feature updates.
 msgid "Unsupported Windows release"
-msgstr ""
+msgstr "Nicht unterstützte Windows-Version"
 
 #. Translators: Dialog text shown when trying to install the add-on on
 #. releases earlier than minimum supported release.
@@ -31,6 +31,10 @@ msgid ""
 "this add-on.\n"
 "This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
 msgstr ""
+"Sie verwenden {releaseName} ({build}), eine Windows-Version, die von dieser "
+"Erweiterung nicht unterstützt wird.\n"
+"Diese Erweiterung erfordert {supportedReleaseName} ({supportedBuild}) oder "
+"neuer."
 
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
@@ -268,13 +272,3 @@ msgstr "GoldWave"
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "Eine Erweiterung zur Verbesserung der Zugänglichkeit von GoldWave."
-
-#~ msgid ""
-#~ "You are using an older version of Windows. This add-on requires Windows "
-#~ "10 or later."
-#~ msgstr ""
-#~ "Sie verwenden eine ältere Version von Windows. Diese Erweiterung "
-#~ "erfordert Windows 10 oder höher."
-
-#~ msgid "Old Windows version"
-#~ msgstr "Alte Windows-Version"
