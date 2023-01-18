@@ -430,7 +430,7 @@ class AppModule(appModuleHandler.AppModule):
 		# Provide standardized control roles for the following objects.
 		if isinstance(obj, Window):
 			# For working with buttons such as presets window and control window.
-			if obj.windowClassName == "TBitton" or obj.windowClassName == "TImageButton":
+			if obj.windowClassName in ("TBitton", "TImageButton"):
 				obj.role = controlTypes.Role.BUTTON
 			# For windows which NVDA should recognize as dialogs.
 			elif (
