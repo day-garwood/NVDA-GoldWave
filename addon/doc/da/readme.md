@@ -2,7 +2,7 @@
 
 * Forfattere: Joseph Lee, NVDA bidragydere.
 * Download [stabil version][1]
-* NVDA compatibility: 2022.3 and later
+* NVDA compatibility: 2022.4 and later
 
 Dette app-modul forbedrer adgangen til og brugen af lydredigeringsprogrammet
 Goldwave. Bemærk: GoldWave-programmet har ikke en dansk sprogpakke

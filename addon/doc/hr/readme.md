@@ -2,7 +2,7 @@
 
 * Autori: Joseph Lee, NVDA doprinositelji.
 * Preuzmi [stabilnu verziju][1]
-* NVDA compatibility: 2022.3 and later
+* NVDA compatibility: 2022.4 and later
 
 Ovaj modul aplikacije unapređuje pristup uređivaču zvuka GoldWave, kao i
 njegovo korištenje.

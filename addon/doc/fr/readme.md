@@ -2,7 +2,7 @@
 
 * Auteurs : Joseph Lee, contributeurs de NVDA.
 * Télécharger [version stable][1]
-* NVDA compatibility: 2022.3 and later
+* NVDA compatibility: 2022.4 and later
 
 Cette extension améliore l'accès et l'utilisation de l'éditeur audio
 Goldwave.
