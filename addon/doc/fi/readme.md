@@ -23,6 +23,12 @@ käsikirjassa.
 
 Huom: GoldWave 6 tai uudempi vaaditaan.
 
+## Versio 23.02
+
+* Edellyttää NVDA 2022.4:ää tai uudempaa.
+* EWindows 10 21H2 (marraskuun 2021 päivitys/koontiversio 19044) tai uudempi
+  vaaditaan.
+
 ## Versio 23.01
 
 * Edellyttää NVDA 2022.3:ea tai uudempaa.

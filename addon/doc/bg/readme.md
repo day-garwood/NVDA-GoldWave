@@ -24,6 +24,11 @@
 
 Забележка: Изисква се GoldWave версия 6 или по -нова.
 
+## Version 23.02
+
+* NVDA 2022.4 or later is required.
+* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+
 ## Версия 23.01
 
 * Изисква се NVDA 2022.3 или по-нова версия.
