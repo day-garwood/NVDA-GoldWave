@@ -28,7 +28,7 @@ class SoundWindow(IAccessible):
 	# GoldWave 6.57 raises name change event whenever play/rewind/stop keys are pressed.
 	event_nameChange = None
 
-	def _get_helpText(self):
+	def _get_helpText(self) -> str:
 		# Translators: general help message for GoldWave sound window.
 		return _(
 			"This is GoldWave's sound window. "
@@ -39,7 +39,7 @@ class SoundWindow(IAccessible):
 	# Announcement of commands is enabled by default.
 	commandAnnouncement = True
 
-	def message(self, text):
+	def message(self, text: str) -> None:
 		import speech
 		import braille
 		braille.handler.message(text)
@@ -48,7 +48,7 @@ class SoundWindow(IAccessible):
 
 	# A master function to obtain needed info from status bars.
 	# #17.05: because this is prone to failure, insert debug messages if asked.
-	def getStatusInfo(self, statBarIndex, childIndex):
+	def getStatusInfo(self, statBarIndex: int, childIndex: int) -> str:
 		log.debug("GWV: Status bar object fetcher")
 		log.debug(f"GWV: Status {statBarIndex}, child index {childIndex}")
 		fgChild = self.appModule._get_statusBars(statBarIndex)
@@ -65,7 +65,7 @@ class SoundWindow(IAccessible):
 		return info
 
 	# Get audio positions.
-	def getAudioPos(self, raw=False):
+	def getAudioPos(self, raw: bool = False) -> str:
 		# Above the status bar is the audio position and selection info bar. See if this control can be fetched.
 		global multiInstance
 		# Have to definitely call the info getter twice.
@@ -78,7 +78,7 @@ class SoundWindow(IAccessible):
 		# Translators: Presented when audio track position information can not be located.
 		return _("Track position not available") if not audioPos or " " in audioPos else audioPos
 
-	def getAudioSelection(self):
+	def getAudioSelection(self) -> str:
 		# Call the info getter twice to obtain audio selection (relies on display text).
 		global multiInstance
 		audioSelection = self.getStatusInfo(0, 2)
@@ -124,14 +124,14 @@ class SoundWindow(IAccessible):
 		"All": _("All channels selected")
 	}
 
-	def getAudioChannels(self):
+	def getAudioChannels(self) -> str:
 		# Based on the constants above and the return value below, get channel information.
 		audioChannels = self.getStatusInfo(0, 0)
 		if audioChannels not in self.audioChannelValues:
 			audioChannels = self.getStatusInfo(0, 0)
 		return audioChannels
 
-	def getTrackLength(self):
+	def getTrackLength(self) -> str:
 		fgChild = self.appModule._get_statusBars(0)
 		try:
 			if not fgChild.displayText:
@@ -155,7 +155,7 @@ class SoundWindow(IAccessible):
 				timeList.append(hour + min + float(time[2]))
 		return timeList
 
-	def getRemainingTime(self, audioPos):
+	def getRemainingTime(self, audioPos: str) -> str:
 		trackLengthParsed = self.getTrackLength().split(":")
 		audioPosParsed = audioPos.split(":")
 		# An obvious solution is to use recursive subtraction.
@@ -180,7 +180,7 @@ class SoundWindow(IAccessible):
 			hh, mm, ss = int(hour), int(min), int(sec)
 			return "{0:02d}:{1:02d}:{2:02d}.{3}".format(hh, mm, ss, ms)
 
-	def getZoomLevel(self):
+	def getZoomLevel(self) -> str:
 		try:
 			zoomLevel = self.getStatusInfo(1, 1)
 		except IndexError:
