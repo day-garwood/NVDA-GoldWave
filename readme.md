@@ -118,4 +118,4 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 
 * Initial version.
 
-[1]: https://addons.nvda-project.org/files/get.php?file=gwv
+[1]: https://addons.nvda-project.org/files/get.php?file=goldwave
