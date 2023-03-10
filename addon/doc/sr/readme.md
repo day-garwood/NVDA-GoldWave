@@ -140,4 +140,4 @@ Note: GoldWave 6 or later is required.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=gwv
+[1]: https://addons.nvda-project.org/files/get.php?file=goldwave

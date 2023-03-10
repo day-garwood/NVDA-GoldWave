@@ -2,7 +2,7 @@
 
 * Автори: Joseph Lee, други сътрудници на NVDA.
 * Изтегляне на [стабилна версия][1]
-* NVDA compatibility: 2022.4 and later
+* Съвместимост с NVDA: от 2022.4 и по-нови версии
 
 Тази добавка за NVDA подобрява достъпността и ползваемостта на звуковия
 редактор GoldWave.
@@ -24,10 +24,11 @@
 
 Забележка: Изисква се GoldWave версия 6 или по -нова.
 
-## Version 23.02
+## Версия 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* Изисква се NVDA 2022.4 или по-нова версия.
+* Изисква се Windows 10 21H2 (актуализация от месец ноември 2021
+  г./компилация 19044) или по-нова версия.
 
 ## Версия 23.01
 
@@ -156,4 +157,4 @@
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=gwv
+[1]: https://addons.nvda-project.org/files/get.php?file=goldwave
