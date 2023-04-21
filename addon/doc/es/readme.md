@@ -157,4 +157,4 @@ Nota: se requiere GoldWave 6 o posterior.
 
 [[!tag dev stable]]
 
-[1]: https://addons.nvda-project.org/files/get.php?file=goldwave
+[1]: https://www.nvaccess.org/addonStore/legacy?file=goldwave
