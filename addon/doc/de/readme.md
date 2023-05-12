@@ -2,7 +2,7 @@
 
 * Autoren: Joseph Lee und die NVDA-Entwicklergemeinde.
 * [Stabile Version herunterladen][1]
-* NVDA compatibility: 2022.4 and later
+* NVDA-Kompatibilität: 2022.4 oder neuer
 
 Diese Erweiterung verbessert die Zugänglichkeit des Audio-Editors GoldWave.
 
@@ -26,8 +26,9 @@ Hinweis: GoldWave 6 oder neuer ist erforderlich.
 
 ## Version 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* NVDA 2022.4 oder neuer wird benötigt.
+* Windows 10 Version 21H2 (November 2021 Update bzw. Build 19044) oder neuer
+  wird benötigt.
 
 ## Version 23.01
 
