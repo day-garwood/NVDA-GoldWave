@@ -2,7 +2,7 @@
 
 * Yazarlar: Joseph Lee, NVDA'ya katkıda bulunanlar.
 * [kararlı sürümü][1] indir
-* NVDA compatibility: 2022.4 and later
+* NVDA uyumluluğu: 2022.4 ve sonrası
 
 Bu uygulama modülü GoldWave ses editörünün erişilebilirliğini ve kullanımını
 geliştirir.
@@ -12,7 +12,7 @@ geliştirir.
 * NvDA+Shift+C: Düzenlerken komutların seslendirilmesiyle ilgili ayarı açıp
   kapatır.
 * Control+Shift+P: Geçerli parçadaki pozisyonu söyler.
-* NVDA+Shift+r: şu anda düzenlenen dosyada kalan süreyi söyler
+* NVDA+Shift+r: şu anda düzenlenen dosyada kalan süreyi söyler.
 * Control+NVDA+1: Düzenlediğiniz kanalı söyler.
 * Control+NVDA+2: Ses dosyasının toplam uzunluğunu söyler.
 * Control+NvDA+3: ses seçimiyle ilgili özet bilgi verir.
@@ -23,16 +23,17 @@ kılavuzuna bakın.
 
 Not: GoldWave 6 veya üstü gerekli.
 
-## Version 23.02
+## Versiyon 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* NVDA 2022.4 veya üstü gereklidir.
+* Windows 10 21H2 (Kasım 2021 Güncellemesi/derlemesi 19044) veya üstü
+  gereklidir.
 
-## Version 23.01
+## Versiyon 23.01
 
-* NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
-  supported by Microsoft as of January 2023.
+* NVDA 2022.3 veya üstü gereklidir.
+* Ocak 2023 itibariyle Windows 7, 8 ve 8.1 artık Microsoft tarafından
+  desteklenmediğinden Windows 10 veya sonraki sürümleri gereklidir.
 
 ## Sürüm 22.03
 
