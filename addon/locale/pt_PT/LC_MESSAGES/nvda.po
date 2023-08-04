@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 16.12\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2017-02-03 07:05+1000\n"
-"PO-Revision-Date: 2023-04-17 22:07+0100\n"
+"PO-Revision-Date: 2023-07-28 14:38+0100\n"
 "Last-Translator: Ângelo Abrantes <ampa4374@gmail.com>\n"
 "Language-Team: Equipa Portuguesa do NVDA <angelomiguelabrantes@gmail.com; "
 "rui.fontes@tiflotecnia.com>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. GoldWave add-on requires Windows 10 or later.
 #. Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
