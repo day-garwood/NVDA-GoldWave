@@ -8,23 +8,28 @@ msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2020-03-06 11:51+0100\n"
+"PO-Revision-Date: 2024-05-03 13:31+0500\n"
 "Last-Translator: Denis Shishkin <outsidepro@rambler.ru>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#. Translators: Dialog text shown when trying to install the add-on on an older version of Windows.
-msgid ""
-"You are using an older version of Windows. This add-on requires Windows 10 "
-"or later."
+#. GoldWave add-on requires Windows 10 21H2 or later.
+#. Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
+#. Unsupported systems include Windows versions earlier than 10 and unsupported feature updates.
+msgid "Unsupported Windows release"
 msgstr ""
 
-#. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
-msgid "Old Windows version"
+#. Translators: Dialog text shown when trying to install the add-on on
+#. releases earlier than minimum supported release.
+#, python-brace-format
+msgid ""
+"You are using {releaseName} ({build}), a Windows release not supported by "
+"this add-on.\n"
+"This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
 msgstr ""
 
 msgid ""
@@ -125,19 +130,19 @@ msgstr "Метка создана на конечном маркере"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at next cue"
-msgstr "начальный маркер следующей Метки"
+msgstr "Начальный маркер следующей Метки"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Start marker at previous cue"
-msgstr "начальный маркер предыдущей Метки"
+msgstr "Начальный маркер предыдущей Метки"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
 msgid "Finish marker at next cue"
-msgstr "конечный маркер следующей Метки"
+msgstr "Конечный маркер следующей Метки"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
 msgid "Finish marker at previous cue"
-msgstr "конечный маркер предыдущей Метки"
+msgstr "Конечный маркер предыдущей Метки"
 
 #. Translators: Presented when audio selection is deleted.
 msgid "deleted"
@@ -174,7 +179,7 @@ msgstr "Объявляет текущую позицию аудио в секу�
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
-"сводное объявление выделеной звуковой информации, такой как длительность "
+"Сводное объявление выделеной звуковой информации, такой как длительность "
 "выделенного фрагмента."
 
 #. Translators: Presented when there is no audio selection summary available.
@@ -263,3 +268,13 @@ msgstr "GoldWave"
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Дополнение для расширения доступа при использовании аудио редактора GoldWave."
+
+#~ msgid ""
+#~ "You are using an older version of Windows. This add-on requires Windows "
+#~ "10 or later."
+#~ msgstr ""
+#~ "Вы используете более старую версию Windows. Для этого дополнения "
+#~ "требуется Windows 10 или более поздняя версия."
+
+#~ msgid "Old Windows version"
+#~ msgstr "Старая версия Windows"

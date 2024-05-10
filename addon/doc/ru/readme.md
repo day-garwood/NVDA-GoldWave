@@ -17,67 +17,67 @@ This app module enhances access and usage of GoldWave audio editor.
 * Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Объявляет уровень.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+Дополнительные сведения о Goldwave и командах клавиатуры, см. в руководстве
+пользователя GoldWave.
 
 Note: GoldWave 6 or later is required.
 
-## Version 23.02
+## Версия 23.02
 
 * NVDA 2022.4 or later is required.
 * Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
 
-## Version 23.01
+## Версия 23.01
 
 * NVDA 2022.3 or later is required.
 * Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
   supported by Microsoft as of January 2023.
 
-## Version 22.03
+## Версия 22.03
 
 * NVDA 2021.3 or later is required.
 * A warning message will be displayed when attempting to install the add-on
   on Windows 7, 8, and 8.1.
 
-## Version 21.10
+## Версия 21.10
 
 * NVDA 2021.2 or later is required due to changes to NVDA that affects this
   add-on.
 * In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
   loaded file when pressing play/rewind/stop keys.
 
-## Version 21.06
+## Версия 21.06
 
 * Resolved additional coding style issues and potential bugs with Flake8.
 
-## Version 20.06
+## Версия 20.06
 
 * Resolved many coding style issues and potential bugs with Flake8.
 
-## Version 20.04
+## Версия 20.04
 
 * Added input help messages for remainig time command (NVDA+Shift+R).
 * Toggle command announcement command (NVDA+Shift+C) will now show up under
   "GoldWave" category in NVDA's input gestures dialog.
 
-## Version 20.01
+## Версия 20.01
 
 * Requires NVDA 2019.3 or later.
 
-## Version 19.11
+## Версия 19.11
 
 * Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
 * Added help message for sound window (accessible if Control Usage Assistant
   add-on is installed).
 
-## Version 18.12
+## Версия 18.12
 
 * NVDA will no longer appear to do nothing or play error tones when
   performing certain GoldWave commands with command announcement set to off
   (this may result in odd behaviors in some cases).
 * Internal changes to support future NVDA releases.
 
-## Version 18.07
+## Версия 18.07
 
 * Fixed an issue where leading zeroes would not be displayed when trying to
   obtain remaining time for a trakc.
