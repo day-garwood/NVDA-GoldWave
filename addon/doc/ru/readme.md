@@ -2,90 +2,99 @@
 
 * Авторы: Joseph Lee, участники сообщества NVDA.
 * Загрузить [стабильную версию][1]
-* NVDA compatibility: 2022.4 and later
+* Совместимость с NVDA: 2022.4 и позднее
 
-This app module enhances access and usage of GoldWave audio editor.
+Этот модуль приложения улучшает доступность и использование звукового
+редактора GoldWave.
 
 ## Горячие клавиши ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+* NVDA+Shift+C: Переключает проговаривание команд во время редактирования
+  аудио.
 * Control+Shift+P: Объявить текущую позицию дорожки.
 * NVDA+Shift+R: Объявляет оставшееся время для текущего редактируемого
   трека.
 * Control+NVDA+1: Объявляет канал, который вы редактируете.
 * Control+NVDA+2: Объявляет общую длину аудиофайла.
-* Control+NVDA+3: announces a summary on audio selection information.
+* Control+NVDA+3: Сводное объявление выделеной звуковой информации.
 * Control+NVDA+4: Объявляет уровень.
 
 Дополнительные сведения о Goldwave и командах клавиатуры, см. в руководстве
 пользователя GoldWave.
 
-Note: GoldWave 6 or later is required.
+Примечание: требуется GoldWave 6 или позднее.
 
 ## Версия 23.02
 
-* NVDA 2022.4 or later is required.
-* Windows 10 21H2 (November 2021 Update/build 19044) or later is required.
+* Требуется NVDA 2022.4 или позднее.
+* Требуется Windows 10 21H2 (обновление от ноября 2021 года/сборка 19044)
+  или позднее.
 
 ## Версия 23.01
 
-* NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
-  supported by Microsoft as of January 2023.
+* Требуется NVDA 2022.3 или позднее.
+* Требуется Windows 10 или позднее, поскольку Windows 7, 8 и 8.1 больше не
+  поддерживаются Корпорацией Майкрософт с января 2023 года.
 
 ## Версия 22.03
 
-* NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* Требуется NVDA 2021.3 или позднее.
+* При попытке установить дополнение в Windows 7, 8 и 8.1 будет выведено
+  предупреждающее сообщение.
 
 ## Версия 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* Требуется NVDA 2021.2 или позднее из-за изменений в NVDA, которые влияют
+  на это дополнение.
+* В GoldWave 6.57 и позднее NVDA больше не будет повторять название
+  загруженного файла при нажатии клавиш воспроизведения/перемотки
+  назад/остановки.
 
 ## Версия 21.06
 
-* Resolved additional coding style issues and potential bugs with Flake8.
+* Устранены дополнительные проблемы со стилем кодирования и потенциальные
+  ошибки в Flake8.
 
 ## Версия 20.06
 
-* Resolved many coding style issues and potential bugs with Flake8.
+* Устранены многие проблемы со стилем кодирования и потенциальные ошибки с
+  помощью Flake8.
 
 ## Версия 20.04
 
-* Added input help messages for remainig time command (NVDA+Shift+R).
-* Toggle command announcement command (NVDA+Shift+C) will now show up under
-  "GoldWave" category in NVDA's input gestures dialog.
+* Добавлены справочные сообщения для ввода команды оставшегося времени
+  (NVDA+Shift+R).
+* Команда объявления о переключении команд (NVDA+Shift+C) теперь будет
+  отображаться в категории "GoldWave" в диалоге жестов ввода NVDA.
 
 ## Версия 20.01
 
-* Requires NVDA 2019.3 or later.
+* Требуется NVDA 2019.3 или позднее.
 
 ## Версия 19.11
 
-* Windows 7 SP1, GoldWave 6.x, and NVDA 2019.1 or later is required.
-* Added help message for sound window (accessible if Control Usage Assistant
-  add-on is installed).
+* Требуется Windows 7 с пакетом обновления 1, GoldWave 6.x и NVDA 2019.1 или
+  позднее.
+* Добавлено справочное сообщение для звукового окна (доступно, если
+  установлено дополнение Control Usage Assistant).
 
 ## Версия 18.12
 
-* NVDA will no longer appear to do nothing or play error tones when
-  performing certain GoldWave commands with command announcement set to off
-  (this may result in odd behaviors in some cases).
-* Internal changes to support future NVDA releases.
+* NVDA больше не будет отображать бездействие или воспроизводить сигналы об
+  ошибках при выполнении определенных команд GoldWave с отключенным
+  объявлением команды (в некоторых случаях это может привести к странному
+  поведению).
+* Внутренние изменения для поддержки будущих выпусков NVDA.
 
 ## Версия 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Исправлена ошибка, из-за которой начальные нули не отображались при
+  попытке узнать оставшееся время для трека.
 
 ## Версия 17.05
 
-* Added ability to provide debug information when NVDA is running with debug
-  logging enabled (NVDA 2017.1 or later).
+* Добавлена возможность предоставления отладочной информации при запуске
+  NVDA с включенным журналированием отладки (NVDA 2017.1 или позднее).
 * Обновлены переводы.
 
 ## Версия 16.12
@@ -101,7 +110,7 @@ Note: GoldWave 6 or later is required.
 
 ## Изменения для версии 3.0
 
-* Added a command to announce remaining time for the current track
+* Добавлена команда объявления оставшегося времени для текущего трека
   (NVDA+Shift+R).
 * Незначительные улучшения объявлений информации о состоянии, например,
   информацию о канале.
@@ -131,7 +140,7 @@ Note: GoldWave 6 or later is required.
 ## Изменения для версии 1.1
 
 * Поддержка объявлений сообщений по брайлю.
-* сводное объявление выделеной звуковой информации предоставляется на
+* Сводное объявление выделеной звуковой информации предоставляется на
   языках, отличных от английского.
 * Добавлено больше команд объявлений, включая перемещение положения метки и
   операций удаления/обрезки.
