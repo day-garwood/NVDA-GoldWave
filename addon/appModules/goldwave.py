@@ -9,12 +9,14 @@ import api
 import scriptHandler
 import controlTypes
 from NVDAObjects.IAccessible import IAccessible
+
 # Various buttons and numeric edit fields.
 from NVDAObjects.window import Window, DisplayModelEditableText, edit
 import NVDAObjects
 from logHandler import log
 import ui
 import addonHandler
+
 addonHandler.initTranslation()
 
 # Detect multiple instances of GoldWave.
@@ -22,8 +24,7 @@ multiInstance = 0
 
 
 class SoundWindow(IAccessible):
-	"""The GoldWave's sound window. Here one can play, record and edit audio files.
-	"""
+	"""The GoldWave's sound window. Here one can play, record and edit audio files."""
 
 	scriptCategory = "GoldWave"
 
@@ -44,6 +45,7 @@ class SoundWindow(IAccessible):
 	def message(self, text: str) -> None:
 		import speech
 		import braille
+
 		braille.handler.message(text)
 		if self.appModule.commandAnnouncement:
 			speech.speakMessage(text)
@@ -123,7 +125,7 @@ class SoundWindow(IAccessible):
 		# Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 		"Multiple": _("Multiple channels selected"),
 		# Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
-		"All": _("All channels selected")
+		"All": _("All channels selected"),
 	}
 
 	def getAudioChannels(self) -> str:
@@ -199,7 +201,9 @@ class SoundWindow(IAccessible):
 			gesture.send()
 			# Translators: The start marker position for selecting parts of the audio track
 			# (example output: "Start: 0.00").
-			self.message(_("Start: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0]))
+			self.message(
+				_("Start: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0])
+			)
 		except Exception:
 			pass
 
@@ -209,7 +213,9 @@ class SoundWindow(IAccessible):
 			gesture.send()
 			# Translators: The finish marker position for selecting parts of the audio track
 			# (example output: "Finish: 5.00").
-			self.message(_("Finish: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2]))
+			self.message(
+				_("Finish: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2])
+			)
 		except Exception:
 			pass
 
@@ -321,7 +327,8 @@ class SoundWindow(IAccessible):
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces the current audio position in seconds."),
-		gesture="kb:control+shift+p")
+		gesture="kb:control+shift+p",
+	)
 	def script_announceAudioPosition(self, gesture):
 		# Shouldn't say anything unless in audio editing view.
 		self.message(self.getAudioPos())
@@ -329,21 +336,24 @@ class SoundWindow(IAccessible):
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces a summary on audio selection info such as selection duration."),
-		gesture="kb:control+nvda+3")
+		gesture="kb:control+nvda+3",
+	)
 	def script_announceAudioSelection(self, gesture):
 		try:
 			# Parse this string to get individual info such as marker positions.
 			audioSelectionParsed = self.getAudioSelectionParsed()
 			if not audioSelectionParsed:
 				# Translators: Presented when there is no audio selection summary available.
-				self.message(_("Unable to obtain audio selection summary. Please close and reopen the audio track."))
+				self.message(
+					_("Unable to obtain audio selection summary. Please close and reopen the audio track.")
+				)
 			else:
 				self.message(
 					# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 					_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(
 						audioSelectionStart=audioSelectionParsed[0],
 						audioSelectionEnd=audioSelectionParsed[2],
-						audioSelectionLength=audioSelectionParsed[3]
+						audioSelectionLength=audioSelectionParsed[3],
 					)
 				)
 		except Exception:
@@ -352,7 +362,8 @@ class SoundWindow(IAccessible):
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces total length of the audio track."),
-		gesture="kb:control+nvda+2")
+		gesture="kb:control+nvda+2",
+	)
 	def script_announceTrackLength(self, gesture):
 		trackLengthSTR = self.getTrackLength()
 		if not trackLengthSTR:
@@ -364,7 +375,8 @@ class SoundWindow(IAccessible):
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces remaining length of the audio track."),
-		gesture="kb:NVDA+shift+r")
+		gesture="kb:NVDA+shift+r",
+	)
 	def script_announceRemainingTime(self, gesture):
 		audioPos = self.getAudioPos(raw=True)
 		if not audioPos or " " in audioPos or not self.getTrackLength():
@@ -383,7 +395,8 @@ class SoundWindow(IAccessible):
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces the audio channel you are editing."),
-		gesture="kb:control+nvda+1")
+		gesture="kb:control+nvda+1",
+	)
 	def script_announceAudioChannels(self, gesture):
 		channelSTR = self.getAudioChannels()
 		if channelSTR in ["Multiple", "All"]:
@@ -406,23 +419,26 @@ class SoundWindow(IAccessible):
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces audio zoom level."),
-		gesture="kb:control+nvda+4")
+		gesture="kb:control+nvda+4",
+	)
 	def script_announceZoomLevel(self, gesture):
 		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 		self.message(_("Zoom level: {zoomLevel}").format(zoomLevel=self.getZoomLevel()))
 
 	# Change and announce zoom levels.
 	# All of them involve pressing the shift key, so just use a creative list comprehension.
-	@scriptHandler.script(gestures=[f"kb:shift+{command}" for command in [
-		"upArrow", "downArrow", "0", "1", "2", "3", "4", "5", "6", "a"
-	]])
+	@scriptHandler.script(
+		gestures=[
+			f"kb:shift+{command}"
+			for command in ["upArrow", "downArrow", "0", "1", "2", "3", "4", "5", "6", "a"]
+		]
+	)
 	def script_changeZoomLevel(self, gesture):
 		gesture.send()
 		self.script_announceZoomLevel(gesture)
 
 
 class AppModule(appModuleHandler.AppModule):
-
 	def __init__(self, *args, **kwargs):
 		super(AppModule, self).__init__(*args, **kwargs)
 		global multiInstance
@@ -481,7 +497,8 @@ class AppModule(appModuleHandler.AppModule):
 		# Translators: Input help mode message for command announcement command in Goldwave.
 		description=_("Toggles whether NVDA announces editing commands during audio recording or playback."),
 		gesture="kb:nvda+shift+c",
-		category="GoldWave")
+		category="GoldWave",
+	)
 	def script_toggleCommandAnnouncement(self, gesture):
 		focus = api.getFocusObject()
 		if focus.windowClassName not in ("TWaveView", "TSoundForm"):

@@ -8,6 +8,7 @@
 import addonHandler
 import gui
 import winVersion
+
 addonHandler.initTranslation()
 
 
@@ -26,9 +27,9 @@ def onInstall():
 				releaseName=currentWinVer.releaseName,
 				build=currentWinVer.build,
 				supportedReleaseName=minimumWinVer.releaseName,
-				supportedBuild=minimumWinVer.build
+				supportedBuild=minimumWinVer.build,
 			),
 			# Translators: dialog title shown when trying to install the add-on in unsupported systems.
-			_("Unsupported Windows release")
+			_("Unsupported Windows release"),
 		)
 		raise RuntimeError("Attempting to install GoldWave add-on on Windows releases earlier than 10")
