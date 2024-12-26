@@ -14,12 +14,8 @@ def onInstall():
 	import wx
 	import winVersion
 	import globalVars
-	# Do not present dialogs if minimal mode is set.
 	currentWinVer = winVersion.getWinVer()
 	# GoldWave add-on requires Windows 10 21H2 or later.
-	# Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
-	# Unsupported systems include Windows versions earlier than 10 and unsupported feature updates.
-	unsupportedWindowsReleaseTitle = _("Unsupported Windows release")
 	minimumWinVer = winVersion.WIN10_21H2
 	if currentWinVer < minimumWinVer:
 		if not globalVars.appArgs.minimal:
@@ -34,6 +30,8 @@ def onInstall():
 					build=currentWinVer.build,
 					supportedReleaseName=minimumWinVer.releaseName,
 					supportedBuild=minimumWinVer.build
-				), unsupportedWindowsReleaseTitle, wx.OK | wx.ICON_ERROR
+				),
+				# Translators: dialog title shown when trying to install the add-on in unsupported systems.
+				_("Unsupported Windows release")
 			)
 		raise RuntimeError("Attempting to install GoldWave add-on on Windows releases earlier than 10")
