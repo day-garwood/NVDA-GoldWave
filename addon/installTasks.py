@@ -6,14 +6,12 @@
 # Partly based on other add-ons, particularly Place Markers by Noelia Martinez (thanks add-on authors).
 
 import addonHandler
+import gui
+import winVersion
 addonHandler.initTranslation()
 
 
 def onInstall():
-	import gui
-	import wx
-	import winVersion
-	import globalVars
 	currentWinVer = winVersion.getWinVer()
 	# GoldWave add-on requires Windows 10 21H2 or later.
 	minimumWinVer = winVersion.WIN10_21H2
