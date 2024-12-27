@@ -3,32 +3,36 @@
 # This file is distributed under the same license as the NVDA package.
 # Cleverson Casarin Uliana <clever97@gmail.com>, 2013-2015.
 # Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2020.
+# Josevan Barbosa Fernandes <josevanfernandes@yahoo.com.br>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: GoldWave\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2020-03-06 21:24-0300\n"
-"Last-Translator: Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>\n"
+"PO-Revision-Date: 2024-12-26 15:14-0300\n"
+"Last-Translator: Josevan Fernandes <josevanfernandes@yahoo.com.br>\n"
 "Language-Team: NVDA Brazilian Portuguese translation team (Equipe de "
 "tradução do NVDA para Português Brasileiro) <clever97@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.11\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
-#. Translators: Dialog text shown when trying to install the add-on on an older version of Windows.
+#. Translators: Dialog text shown when trying to install the add-on on
+#. releases earlier than minimum supported release.
+#, python-brace-format
 msgid ""
-"You are using an older version of Windows. This add-on requires Windows 10 "
-"or later."
+"You are using {releaseName} ({build}), a Windows release not supported by "
+"this add-on.\n"
+"This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
 msgstr ""
 
-#. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
-msgid "Old Windows version"
+#. Translators: dialog title shown when trying to install the add-on in unsupported systems.
+msgid "Unsupported Windows release"
 msgstr ""
 
 msgid ""
@@ -95,14 +99,10 @@ msgstr "Vários canais selecionados"
 msgid "All channels selected"
 msgstr "Todos os canais selecionados"
 
-#. Translators: The start marker position for selecting parts of the audio track
-#. (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Início: {startMarkerPos}"
 
-#. Translators: The finish marker position for selecting parts of the audio track
-#. (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Fim: {finishMarkerPos}"
@@ -181,7 +181,6 @@ msgstr ""
 "Anuncia um resumo de informações da seleção, por exemplo a duração da "
 "seleção."
 
-#. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
@@ -267,3 +266,13 @@ msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Um complemento que aprimora o acesso e a usabilidade do editor de áudio "
 "GoldWave."
+
+#~ msgid ""
+#~ "You are using an older version of Windows. This add-on requires Windows "
+#~ "10 or later."
+#~ msgstr ""
+#~ "Você está usando uma versão mais antiga do Windows. Esse complemento "
+#~ "requer o Windows 10 ou posterior."
+
+#~ msgid "Old Windows version"
+#~ msgstr "Versão antiga do Windows"
