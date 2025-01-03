@@ -1,8 +1,6 @@
 # GoldWave #
 
 * Автори: Joseph Lee, други сътрудници на NVDA.
-* Изтегляне на [стабилна версия][1]
-* Съвместимост с NVDA: от 2022.4 и по-нови версии
 
 Тази добавка за NVDA подобрява достъпността и ползваемостта на звуковия
 редактор GoldWave.
@@ -23,6 +21,16 @@
 към ръководството за работа с GoldWave.
 
 Забележка: Изисква се GoldWave версия 6 или по -нова.
+
+## Version 25.01
+
+* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
 
 ## Версия 23.02
 

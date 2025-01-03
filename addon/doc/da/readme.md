@@ -1,8 +1,6 @@
 # GoldWave (tilføjelse ikke oversat) #
 
 * Forfattere: Joseph Lee, NVDA bidragydere.
-* Download [stabil version][1]
-* NVDA compatibility: 2022.4 and later
 
 Dette app-modul forbedrer adgangen til og brugen af lydredigeringsprogrammet
 Goldwave. Bemærk: GoldWave-programmet har ikke en dansk sprogpakke
@@ -23,6 +21,16 @@ For yderligere oplysninger om GoldWave og tastatur kommandoer, læs
 brugervejledningen til GoldWave.
 
 Note: GoldWave 6 or later is required.
+
+## Version 25.01
+
+* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
 
 ## Version 23.02
 

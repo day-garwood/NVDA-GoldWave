@@ -1,8 +1,6 @@
 # GoldWave #
 
 * Autores: Joseph Lee e colaboradores do NVDA.
-* Baixar [versão estável][1]
-* NVDA compatibility: 2022.4 and later
 
 Este módulo de aplicação melhora o acesso e a utilização do editor de áudio
 GoldWave.
@@ -22,6 +20,16 @@ Para mais informações sobre o GoldWave e seus comandos de teclado, consultar
 o Manual do GoldWave.
 
 Nota: O GoldWave 6 ou posterior é necessário.
+
+## Version 25.01
+
+* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
 
 ## Version 23.02
 

@@ -1,8 +1,6 @@
 # GoldWave #
 
 * Yazarlar: Joseph Lee, NVDA'ya katkıda bulunanlar.
-* [kararlı sürümü][1] indir
-* NVDA uyumluluğu: 2022.4 ve sonrası
 
 Bu uygulama modülü GoldWave ses editörünün erişilebilirliğini ve kullanımını
 geliştirir.
@@ -23,13 +21,24 @@ kılavuzuna bakın.
 
 Not: GoldWave 6 veya üstü gerekli.
 
-## Versiyon 23.02
+## Sürüm 25.01
+
+* GoldWave 7 desteği (64 bit Windows 10 veya sonrası sürümleri gerektirir.).
+* Eklenti sürümlerinin indirme bağlantıları artık eklenti belgelerine dahil
+  edilmemektedir. Eklentiyi NV Access eklenti mağazasından indirebilirsiniz.
+* Linting aracı Flake8'den Ruff'a değiştirildi ve NVDA kodlama
+  standartlarıyla daha iyi uyum sağlamak için eklenti modülleri yeniden
+  biçimlendirildi.
+* Eklenti Güncelleyici eklentisinden otomatik eklenti güncellemeleri
+  özelliği desteği kaldırıldı.
+
+## Sürüm 23.02
 
 * NVDA 2022.4 veya üstü gereklidir.
 * Windows 10 21H2 (Kasım 2021 Güncellemesi/derlemesi 19044) veya üstü
   gereklidir.
 
-## Versiyon 23.01
+## Sürüm 23.01
 
 * NVDA 2022.3 veya üstü gereklidir.
 * Ocak 2023 itibariyle Windows 7, 8 ve 8.1 artık Microsoft tarafından
@@ -52,7 +61,7 @@ Not: GoldWave 6 veya üstü gerekli.
 
 * Flake8 ile ek kodlama stili sorunları ve olası hatalar çözüldü.
 
-## Versiyon 20.06
+## Sürüm 20.06
 
 * Flake 8 ile ilgili bir çok kodlama biçimi sorunları ve potansiyel hatalar
   düzeltildi.
@@ -63,17 +72,17 @@ Not: GoldWave 6 veya üstü gerekli.
 * Komut bildirimini açıp kapatma komutu (NVDA+Shift+C) NVDA'nın girdi
   hareketleri iletişim kutusunun "GoldWave" kategorisinde görünecek.
 
-## Versiyon 20.01
+## Sürüm 20.01
 
 * NVDA 2019.3 veya daha üst sürümünü gerektirir.
 
-## Versiyon 19.11
+## Sürüm 19.11
 
 * Windows 7 SP1, GoldWave 6.x ve NVDA 2019.1 veya daha üst sürümü gerekir.
 * Ses penceresi için yardım mesajı eklendi (kontrol kullanım asistanı
   eklentisi kuruluysa kullanılabilir).
 
-## Versiyon 18.12
+## Sürüm 18.12
 
 * NVDA, komut bildirimi kapalıyken bazı GoldWave komutları kullanıldığında
   hiçbir şey yapmıyormuş gibi görünmeyecek veya hata sesi çalmayacak (bazı
@@ -85,16 +94,15 @@ Not: GoldWave 6 veya üstü gerekli.
 * Parçanın kalan zamanını söylerken öndeki sıfırların söylenmemesi sorunu
   düzeltildi.
 
-## Versiyon 17.05
+## Sürüm 17.05
 
 * NVDA tamir günlük tutma seviyesinde çalışırken tamir bilgisi verme
   özelliği eklendi (NVDA 2017.1 veya daha üst sürümü).
 * Yeni ve güncel çeviriler.
 
-## Versiyon 16.12
+## Sürüm 16.12
 
-* Versiyon düzeni büyük versiyon.küçük versiyon yerine yıl.ay olarak
-  ayarlandı.
+* Sürüm düzeni büyük sürüm.küçük sürüm yerine yıl.ay olarak ayarlandı.
 
 ## 4.0 için değişiklikler
 

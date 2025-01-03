@@ -1,8 +1,6 @@
 # GoldWave 支持插件 #
 
 * 作者: Joseph Lee, NVDA contributors.
-* 下载[稳定版][1]
-* NVDA compatibility: 2022.4 and later
 
 此插件可增强GoldWave音频编辑器的无障碍体验性。
 
@@ -19,6 +17,16 @@
 有关GoldWave和键盘命令的更多信息，请参阅GoldWave手册。
 
 注意：现在需要 GoldWave 6或更高版本。
+
+## Version 25.01
+
+* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
 
 ## Version 23.02
 

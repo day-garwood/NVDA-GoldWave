@@ -1,8 +1,6 @@
 # GoldWave #
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
-* Lataa [vakaa versio][1]
-* Yhteensopivuus: NVDA 2022.4 ja uudemmat
 
 Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
 käytettävyyttä.
@@ -22,6 +20,16 @@ Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
 käsikirjassa.
 
 Huom: GoldWave 6 tai uudempi vaaditaan.
+
+## Version 25.01
+
+* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
 
 ## Versio 23.02
 

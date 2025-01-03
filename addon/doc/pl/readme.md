@@ -1,8 +1,6 @@
 # GoldWave #
 
 * Autorzy: Joseph Lee, współpracownicy NVDA.
-* Pobierz [wersja stabilna][1]
-* Zgodność z NVDA: 2022.4 i nowsze
 
 Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
@@ -21,6 +19,16 @@ Więcej informacji o Goldwave i jego klawiszach skrótów, znajduje się w
 podręczniku Goldwave.
 
 Uwaga: Wymagana jest wersja GoldWave 6 lub nowsza.
+
+## Version 25.01
+
+* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
 
 ## Wersja 23.02
 

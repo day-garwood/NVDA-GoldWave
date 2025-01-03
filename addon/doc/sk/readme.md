@@ -1,8 +1,6 @@
 # GoldWave #
 
 * Autori: Joseph Lee, tím NVDA.
-* Stiahnuť [stabilnú verziu][1]
-* NVDA compatibility: 2022.4 and later
 
 Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru
 goldwave.
@@ -21,6 +19,16 @@ pre viac informácii o klávesových skratkách programu Goldwave si prečítajt
 návod k programu Goldwave.
 
 Note: GoldWave 6 or later is required.
+
+## Version 25.01
+
+* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
+* Download links for add-on releases are no longer included in add-on
+  documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
+  to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater
+  add-on.
 
 ## Version 23.02
 
