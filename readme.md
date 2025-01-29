@@ -23,6 +23,7 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 25.02
 
 * NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 
