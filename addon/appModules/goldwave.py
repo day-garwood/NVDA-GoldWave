@@ -4,7 +4,6 @@
 # Functionality is based on JFW scripts for Goldwave by Jim Grimsby, Jr.
 
 import appModuleHandler
-from typing import List, Dict
 import api
 import scriptHandler
 import controlTypes
@@ -91,7 +90,7 @@ class SoundWindow(IAccessible):
 		log.debug(f"GWV: status bar length: {len(audioSelection)}")
 		return audioSelection
 
-	def getAudioSelectionParsed(self) -> List[str]:
+	def getAudioSelectionParsed(self) -> list[str]:
 		# Get marker positions and selection duration.
 		# Return the list of substrings to be handled by individual scripts.
 		audioSelectionParsed = self.getAudioSelection().split()
@@ -146,7 +145,7 @@ class SoundWindow(IAccessible):
 
 	# Convert time to seconds: Convert hh:mm:ss to seconds.
 	# Needed in various functions.
-	def convertTime2Sec(self, *times) -> List[float]:
+	def convertTime2Sec(self, *times) -> list[float]:
 		timeList = []
 		for time in times:
 			if len(time) == 1:
@@ -475,7 +474,7 @@ class AppModule(appModuleHandler.AppModule):
 				pass
 
 	# Cache the needed status bar objects.
-	statusBarCache: Dict[int, NVDAObjects.NVDAObject] = {}
+	statusBarCache: dict[int, NVDAObjects.NVDAObject] = {}
 
 	def _get_statusBars(self, statBarIndex, refill=False):
 		global multiInstance
