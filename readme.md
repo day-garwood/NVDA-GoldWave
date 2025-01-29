@@ -20,6 +20,10 @@ For more information about GoldWave and keyboard commands, refer to GoldWave Man
 
 Note: GoldWave 6 or later and Windows 10 or later is required.
 
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+
 ## Version 25.01
 
 * Support for GoldWave 7 (requires 64-bit Windows 10 or later).
