@@ -17,16 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.12\n"
 
-#. Translators: Dialog text shown when trying to install the add-on on an older version of Windows.
-msgid ""
-"You are using an older version of Windows. This add-on requires Windows 10 "
-"or later."
-msgstr ""
-
-#. Translators: title of the dialog shown when trying to install the add-on on an old version of Windows.
-msgid "Old Windows version"
-msgstr ""
-
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
 "and edit sound files. See GoldWave help for details."
@@ -88,14 +78,10 @@ msgstr "Đã chọn nhiều kênh"
 msgid "All channels selected"
 msgstr "Đã chọn tất cả kênh"
 
-#. Translators: The start marker position for selecting parts of the audio track
-#. (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Bắt đầu: {startMarkerPos}"
 
-#. Translators: The finish marker position for selecting parts of the audio track
-#. (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Kết thúc: {finishMarkerPos}"
@@ -173,7 +159,6 @@ msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
 "Thông báo tóm tắt thông tin về vùng chọn âm thanh như lựa chọn thời gian."
 
-#. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
