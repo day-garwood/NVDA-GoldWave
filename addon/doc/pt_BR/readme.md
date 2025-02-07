@@ -20,15 +20,17 @@ Manual do GoldWave.
 
 Nota: GoldWave 6 ou posterior é necessário.
 
-## Version 25.01
+## Versão 25.01
 
-* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+* Suporte para GoldWave 7 (requer Windows 10 de 64 bits ou posterior).
+* Os links de download para versões de complemento não estão mais incluídos
+  na documentação do complemento. Você pode fazer o download do complemento
+  na loja de complementos da NV Access.
+* Mudança da ferramenta de linting do Flake8 para o Ruff e reformatação dos
+  módulos complementares para melhor alinhamento com os padrões de
+  codificação do NVDA.
+* Removido o suporte ao recurso de atualizações automáticas de complementos
+  do complemento Add-on Updater.
 
 ## Versão 23.02
 
