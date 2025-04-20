@@ -323,6 +323,7 @@ class SoundWindow(IAccessible):
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces the current audio position in seconds."),
 		gesture="kb:control+shift+p",
+		speakOnDemand=True,
 	)
 	def script_announceAudioPosition(self, gesture):
 		# Shouldn't say anything unless in audio editing view.
@@ -332,6 +333,7 @@ class SoundWindow(IAccessible):
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces a summary on audio selection info such as selection duration."),
 		gesture="kb:control+nvda+3",
+		speakOnDemand=True,
 	)
 	def script_announceAudioSelection(self, gesture):
 		try:
@@ -358,6 +360,7 @@ class SoundWindow(IAccessible):
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces total length of the audio track."),
 		gesture="kb:control+nvda+2",
+		speakOnDemand=True,
 	)
 	def script_announceTrackLength(self, gesture):
 		trackLengthSTR = self.getTrackLength()
@@ -371,6 +374,7 @@ class SoundWindow(IAccessible):
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces remaining length of the audio track."),
 		gesture="kb:NVDA+shift+r",
+		speakOnDemand=True,
 	)
 	def script_announceRemainingTime(self, gesture):
 		audioPos = self.getAudioPos(raw=True)
@@ -391,6 +395,7 @@ class SoundWindow(IAccessible):
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces the audio channel you are editing."),
 		gesture="kb:control+nvda+1",
+		speakOnDemand=True,
 	)
 	def script_announceAudioChannels(self, gesture):
 		channelSTR = self.getAudioChannels()
@@ -415,6 +420,7 @@ class SoundWindow(IAccessible):
 		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces audio zoom level."),
 		gesture="kb:control+nvda+4",
+		speakOnDemand=True,
 	)
 	def script_announceZoomLevel(self, gesture):
 		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
