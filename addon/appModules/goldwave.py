@@ -38,17 +38,6 @@ class SoundWindow(IAccessible):
 			"See GoldWave help for details."
 		)
 
-	# Announcement of commands is enabled by default.
-	commandAnnouncement = True
-
-	def message(self, text: str) -> None:
-		import speech
-		import braille
-
-		braille.handler.message(text)
-		if self.appModule.commandAnnouncement:
-			speech.speakMessage(text)
-
 	# A master function to obtain needed info from status bars.
 	# #17.05: because this is prone to failure, insert debug messages if asked.
 	def getStatusInfo(self, statBarIndex: int, childIndex: int) -> str:
