@@ -200,7 +200,7 @@ class SoundWindow(IAccessible):
 			gesture.send()
 			# Translators: The start marker position for selecting parts of the audio track
 			# (example output: "Start: 0.00").
-			self.message(
+			ui.message(
 				_("Start: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0])
 			)
 		except Exception:
@@ -212,7 +212,7 @@ class SoundWindow(IAccessible):
 			gesture.send()
 			# Translators: The finish marker position for selecting parts of the audio track
 			# (example output: "Finish: 5.00").
-			self.message(
+			ui.message(
 				_("Finish: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2])
 			)
 		except Exception:
@@ -222,62 +222,62 @@ class SoundWindow(IAccessible):
 	def script_playSelection(self, gesture):
 		gesture.send()
 		# Translators: Presented when selected audio is playing.
-		self.message(_("Play selection"))
+		ui.message(_("Play selection"))
 
 	@scriptHandler.script(gesture="KB:control+a")
 	def script_selectAll(self, gesture):
 		gesture.send()
 		# Translators: Presented when all parts of the audio track is selected.
-		self.message(_("Select All"))
+		ui.message(_("Select All"))
 
 	@scriptHandler.script(gesture="kb:control+q")
 	def script_dropCue(self, gesture):
 		gesture.send()
 		# Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
-		self.message(_("Cue"))
+		ui.message(_("Cue"))
 
 	@scriptHandler.script(gesture="KB:q")
 	def script_dropCueAtStartMarker(self, gesture):
 		gesture.send()
 		# Translators: Presented when audio cue is dropped at the start marker position.
-		self.message(_("Cue dropped at start marker"))
+		ui.message(_("Cue dropped at start marker"))
 
 	@scriptHandler.script(gesture="KB:shift+q")
 	def script_dropCueAtFinishMarker(self, gesture):
 		gesture.send()
 		# Translators: Presented when an audio cue is dropped at the finish marker position.
-		self.message(_("Cue dropped at finish marker"))
+		ui.message(_("Cue dropped at finish marker"))
 
 	@scriptHandler.script(gesture="kb:control+j")
 	def script_moveStartMarkerToNextCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
-		self.message(_("Start marker at next cue"))
+		ui.message(_("Start marker at next cue"))
 
 	@scriptHandler.script(gesture="kb:control+shift+j")
 	def script_moveStartMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
-		self.message(_("Start marker at previous cue"))
+		ui.message(_("Start marker at previous cue"))
 
 	@scriptHandler.script(gesture="kb:alt+j")
 	def script_moveFinishMarkerToNextCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the finish marker is moved to the next cue position.
-		self.message(_("Finish marker at next cue"))
+		ui.message(_("Finish marker at next cue"))
 
 	@scriptHandler.script(gesture="kb:alt+shift+j")
 	def script_moveFinishMarkerToPrevCuePos(self, gesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
-		self.message(_("Finish marker at previous cue"))
+		ui.message(_("Finish marker at previous cue"))
 
 	# Handle both delete and trim.
 	@scriptHandler.script(gestures=["kb:delete", "kb:control+t"])
 	def script_deleteSelection(self, gesture):
 		gesture.send()
 		# Translators: Presented when audio selection is deleted.
-		self.message(_("deleted"))
+		ui.message(_("deleted"))
 
 	# Playback and recording:
 
@@ -285,37 +285,37 @@ class SoundWindow(IAccessible):
 	def script_play(self, gesture):
 		gesture.send()
 		# Translators: Presented when a track is playing in Goldwave.
-		self.message(_("play"))
+		ui.message(_("play"))
 
 	@scriptHandler.script(gesture="kb:f5")
 	def script_rewind(self, gesture):
 		gesture.send()
 		# Translators: Presented when a track is rewinding in Goldwave.
-		self.message(_("rewind"))
+		ui.message(_("rewind"))
 
 	@scriptHandler.script(gesture="kb:f6")
 	def script_forward(self, gesture):
 		gesture.send()
 		# Translators: Presented when fast forwarding a track in Goldwave.
-		self.message(_("fast forward"))
+		ui.message(_("fast forward"))
 
 	@scriptHandler.script(gestures=["kb:f7", "kb:control+f7"])
 	def script_pause(self, gesture):
 		gesture.send()
 		# Translators: Presented when pausing a track in Goldwave.
-		self.message(_("pause"))
+		ui.message(_("pause"))
 
 	@scriptHandler.script(gestures=["kb:f8", "kb:control+f8"])
 	def script_stop(self, gesture):
 		gesture.send()
 		# Translators: Presented when stopping a track in in Goldwave.
-		self.message(_("stop"))
+		ui.message(_("stop"))
 
 	@scriptHandler.script(gesture="kb:control+f9")
 	def script_startRecord(self, gesture):
 		gesture.send()
 		# Translators: Presented when starting recording in Goldwave.
-		self.message(_("record"))
+		ui.message(_("record"))
 
 	# Audio position scripts: markers, selection duration.
 
@@ -326,7 +326,7 @@ class SoundWindow(IAccessible):
 	)
 	def script_announceAudioPosition(self, gesture):
 		# Shouldn't say anything unless in audio editing view.
-		self.message(self.getAudioPos())
+		ui.message(self.getAudioPos())
 
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
@@ -339,11 +339,11 @@ class SoundWindow(IAccessible):
 			audioSelectionParsed = self.getAudioSelectionParsed()
 			if not audioSelectionParsed:
 				# Translators: Presented when there is no audio selection summary available.
-				self.message(
+				ui.message(
 					_("Unable to obtain audio selection summary. Please close and reopen the audio track.")
 				)
 			else:
-				self.message(
+				ui.message(
 					# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 					_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(
 						audioSelectionStart=audioSelectionParsed[0],
@@ -363,9 +363,9 @@ class SoundWindow(IAccessible):
 		trackLengthSTR = self.getTrackLength()
 		if not trackLengthSTR:
 			# Translators: Presented when there is no track length information.
-			self.message(_("Track length is unavailable. Please close and reopen the audio track."))
+			ui.message(_("Track length is unavailable. Please close and reopen the audio track."))
 		else:
-			self.message(_("Track length: {trackLength}").format(trackLength=trackLengthSTR))
+			ui.message(_("Track length: {trackLength}").format(trackLength=trackLengthSTR))
 
 	@scriptHandler.script(
 		# Translators: Input help mode message for a Goldwave command.
@@ -397,9 +397,9 @@ class SoundWindow(IAccessible):
 		if channelSTR in ["Multiple", "All"]:
 			# Translators: Presented when all or multiple channels (in 3.1, 5.1 or 7.1 channels) are selected
 			# (GoldWave 6 and higher).
-			self.message(self.audioChannelValues[channelSTR])
+			ui.message(self.audioChannelValues[channelSTR])
 		else:
-			self.message(
+			ui.message(
 				# Translators: Presented to indicate the selected channel for the track
 				# (example output: "Selected channel: mono").
 				_("Selected channel: {audioChannel}").format(audioChannel=self.audioChannelValues[channelSTR])
@@ -418,7 +418,7 @@ class SoundWindow(IAccessible):
 	)
 	def script_announceZoomLevel(self, gesture):
 		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
-		self.message(_("Zoom level: {zoomLevel}").format(zoomLevel=self.getZoomLevel()))
+		ui.message(_("Zoom level: {zoomLevel}").format(zoomLevel=self.getZoomLevel()))
 
 	# Change and announce zoom levels.
 	# All of them involve pressing the shift key, so just use a creative list comprehension.
