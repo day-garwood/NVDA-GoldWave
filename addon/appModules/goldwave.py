@@ -272,16 +272,12 @@ class SoundWindow(IAccessible):
 		# Translators: Presented when the start marker is moved to the next cue position.
 		self.message(_("Finish marker at previous cue"))
 
-	@scriptHandler.script(gesture="kb:delete")
+	# Handle both delete and trim.
+	@scriptHandler.script(gestures=["kb:delete", "kb:control+t"])
 	def script_deleteSelection(self, gesture):
 		gesture.send()
 		# Translators: Presented when audio selection is deleted.
 		self.message(_("deleted"))
-
-	@scriptHandler.script(gesture="kb:control+t")
-	def script_trimSelection(self, gesture):
-		# Cannot just assign function objects to another, so a workaround for this problem.
-		self.script_deleteSelection(gesture)
 
 	# Playback and recording:
 
