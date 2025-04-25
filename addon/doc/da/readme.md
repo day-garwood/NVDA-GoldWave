@@ -8,7 +8,8 @@ tilgængelig. Derfor er tilføjelsen på nuværende tidspunkt ikke oversat.
 
 ## Genveje ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+All commands support speech on demand mode.
+
 * Ctrl+Skift+P: Annoncerer aktuelle sporposition.
 * NVDA+Skift+R: Annoncerer resterende tid for det spor du er i færd med at
   redigere.
@@ -20,7 +21,19 @@ tilgængelig. Derfor er tilføjelsen på nuværende tidspunkt ikke oversat.
 For yderligere oplysninger om GoldWave og tastatur kommandoer, læs
 brugervejledningen til GoldWave.
 
-Note: GoldWave 6 or later is required.
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 

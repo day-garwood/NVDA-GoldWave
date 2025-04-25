@@ -7,8 +7,8 @@ geliştirir.
 
 ## Kısayollar ##
 
-* NvDA+Shift+C: Düzenlerken komutların seslendirilmesiyle ilgili ayarı açıp
-  kapatır.
+Tüm komutlar isteğe bağlı konuşma modunu destekler.
+
 * Control+Shift+P: Geçerli parçadaki pozisyonu söyler.
 * NVDA+Shift+r: şu anda düzenlenen dosyada kalan süreyi söyler.
 * Control+NVDA+1: Düzenlediğiniz kanalı söyler.
@@ -19,7 +19,20 @@ geliştirir.
 GoldWave ve klavye komutları hakkında daha fazla bilgi için, GoldWave
 kılavuzuna bakın.
 
-Not: GoldWave 6 veya üstü gerekli.
+Not: GoldWave 6 veya sonrası ile Windows 10 veya sonrası sürümler
+gereklidir.
+
+## Sürüm 25.04
+
+* Komut duyuru modu kaldırıldı, isteğe bağlı konuşma moduyla
+  değiştirildi. İsteğe bağlı konuşma modunda, GoldWave'e özgü komutlar,
+  başlangıç işaretçisini ayarlama gibi sessiz kalırken, ses konumu gibi
+  bilgilendirici komutlar seslendirilir.
+
+## Sürüm 25.02
+
+* NVDA 2024.1 veya sonrası sürümler gereklidir.
+* Windows 8.1 için sınırlı destek geri yüklendi.
 
 ## Sürüm 25.01
 

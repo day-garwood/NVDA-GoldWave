@@ -6,7 +6,8 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 
 ## Skróty ##
 
-* NVDA+Shift+C: przełącza wypowiadanie komend podczas edycji audio.
+All commands support speech on demand mode.
+
 * Control+Shift+P: odczytuje aktualną pozycję ścieżki.
 * NVDA+Shift+R: Oznajmia pozostały czas dla aktualnie edytowanego utworu.
 * Control+NVDA+1: wypowiada aktualnie edytowany kanał.
@@ -18,7 +19,19 @@ Ten dodatek zwiększa dostępność i użyteczność edytora audio Goldwave.
 Więcej informacji o Goldwave i jego klawiszach skrótów, znajduje się w
 podręczniku Goldwave.
 
-Uwaga: Wymagana jest wersja GoldWave 6 lub nowsza.
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 

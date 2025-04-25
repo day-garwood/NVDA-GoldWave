@@ -7,8 +7,8 @@ käytettävyyttä.
 
 ## Pikanäppäimet ##
 
-* NVDA+Vaihto+C: Ottaa käyttöön tai poistaa käytöstä komentojen puhumisen
-  äänenmuokkauksen aikana.
+All commands support speech on demand mode.
+
 * Control+Vaihto+P: Ilmoittaa nykyisen kohdan raidalla.
 * NVDA+Vaihto+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
 * Control+NVDA+1: Ilmoittaa muokattavan kanavan.
@@ -19,7 +19,19 @@ käytettävyyttä.
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
 käsikirjassa.
 
-Huom: GoldWave 6 tai uudempi vaaditaan.
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 

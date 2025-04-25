@@ -6,7 +6,8 @@ This app module enhances access and usage of GoldWave audio editor.
 
 ## Scurtături ##
 
-* NVDA+Shift+C: Toggles speaking of commands during audio editing.
+All commands support speech on demand mode.
+
 * Control+Shift+P: Anunță poziția curentă a melodiei.
 * NVDA+Shift+R: Anunță timpul rămas pentru melodia care este în curs de
   editare.
@@ -18,7 +19,19 @@ This app module enhances access and usage of GoldWave audio editor.
 For more information about GoldWave and keyboard commands, refer to GoldWave
 Manual.
 
-Note: GoldWave 6 or later is required.
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 

@@ -6,7 +6,8 @@
 
 ## 快捷键 ##
 
-* NVDA+Shift+C： 在音频编辑过程中切换朗读命令。
+All commands support speech on demand mode.
+
 * Control+Shift+P: 报告当前的轨道位置。
 * NVDA+Shift+R: 报告当前编辑曲目的剩余时间。
 * Control+NVDA+1: 报告您正在编辑的通道。
@@ -16,7 +17,19 @@
 
 有关GoldWave和键盘命令的更多信息，请参阅GoldWave手册。
 
-注意：现在需要 GoldWave 6或更高版本。
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 

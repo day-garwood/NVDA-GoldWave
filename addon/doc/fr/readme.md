@@ -7,7 +7,8 @@ Goldwave.
 
 ## Raccourcis ##
 
-* NVDA+Maj+C : Bascule l'annonce des commandes lors de l'édition audio.
+All commands support speech on demand mode.
+
 * Contrôle+Maj+P : Annonce la position courante de la piste.
 * NVDA+Maj+R: Annonce le temps restant pour la piste en cours d'édition.
 * Contrôle+NVDA+1 : Annonce le canal en cours d'édition.
@@ -19,7 +20,19 @@ Goldwave.
 Pour plus d'informations sur Goldwave et les commandes clavier,
 reportez-vous au manuel de Goldwave.
 
-Remarque : Nécessite GoldWave 6 ou version ultérieure.
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 

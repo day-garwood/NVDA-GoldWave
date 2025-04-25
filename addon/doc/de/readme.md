@@ -6,8 +6,8 @@ Diese Erweiterung verbessert die Zugänglichkeit des Audio-Editors GoldWave.
 
 ## Tastenkombinationen ##
 
-* NVDA+Umschalt+C: Schaltet die Ansage beim Drücken der Tastenkombinationen
-  während der Audio-Bearbeitung um.
+All commands support speech on demand mode.
+
 * Strg+Umschalt+P: Gibt die aktuelle Audio-Position an.
 * NVDA+Umschalt+R: Gibt die verbleibende Zeit des gerade bearbeiteten Titels
   aus.
@@ -20,7 +20,19 @@ Diese Erweiterung verbessert die Zugänglichkeit des Audio-Editors GoldWave.
 Weitere Informationen über GoldWave und die Tastenkombinationen finden Sie
 im GoldWave-Benutzerhandbuch.
 
-Hinweis: GoldWave 6 oder neuer ist erforderlich.
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 

@@ -7,7 +7,8 @@ goldwave.
 
 ## Klávesové skratky ##
 
-* NVDA+Shift+C: prepína oznamovanie príkazov počas úpravy zvuku.
+All commands support speech on demand mode.
+
 * ctrl+Shift+P: Oznámy pozíciu v aktuálnej stope.
 * Nvda+shift+R: oznámuje zostávajúci čas otvoreného súboru.
 * Ctrl+NVDA+1: oznámy kanál, ktorý upravujete.
@@ -18,7 +19,19 @@ goldwave.
 pre viac informácii o klávesových skratkách programu Goldwave si prečítajte
 návod k programu Goldwave.
 
-Note: GoldWave 6 or later is required.
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 

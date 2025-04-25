@@ -7,8 +7,8 @@
 
 ## Клавишни комбинации ##
 
-* NVDA+Shift+C: Превключва съобщаването на командите по време на редактиране
-  на звуковия файл.
+All commands support speech on demand mode.
+
 * Control+Shift+P: Съобщава позицията в текущата писта.
 * NVDA+Shift+R: Съобщава оставащото време за текущо редактирания запис.
 * Control+NVDA+1: Съобщава текущо редактирания канал.
@@ -20,7 +20,19 @@
 За повече информация относно GoldWave и клавишните му команди, обърнете се
 към ръководството за работа с GoldWave.
 
-Забележка: Изисква се GoldWave версия 6 или по -нова.
+Note: GoldWave 6 or later and Windows 10 or later is required.
+
+## Version 25.04
+
+* Removed command announcement mode, replaced with speech on demand mode. In
+  speech on demand mode, GoldWave specific commands such as setting start
+  marker will stay silent while informational commands such as audio
+  position will be spoken.
+
+## Version 25.02
+
+* NVDA 2024.1 or later is required.
+* Restored limited support for Windows 8.1.
 
 ## Version 25.01
 
