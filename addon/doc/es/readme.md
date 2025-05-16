@@ -7,7 +7,7 @@ Goldwave.
 
 ## Atajos de teclado ##
 
-All commands support speech on demand mode.
+Todas las órdenes soportan el modo de voz a petición.
 
 * Control+Shift+P: Anuncia la posición de la pista actual.
 * NVDA+Shift+R: Anuncia el tiempo restante para la pista actualmente en
@@ -21,19 +21,20 @@ All commands support speech on demand mode.
 Para obtener más información acerca de Goldwave y de las órdenes de teclado,
 remítete al manual de Goldwave.
 
-Note: GoldWave 6 or later and Windows 10 or later is required.
+Nota: se requiere GoldWave 6 o posterior y Windows 10 o posterior.
 
-## Version 25.04
+## Versión 25.04
 
-* Removed command announcement mode, replaced with speech on demand mode. In
-  speech on demand mode, GoldWave specific commands such as setting start
-  marker will stay silent while informational commands such as audio
-  position will be spoken.
+* Se ha eliminado el modo de anuncio de órdenes, sustituido por el modo de
+  voz a petición. En el modo de voz a petición, las órdenes específicas de
+  GoldWave, como situar el marcador de inicio, permanecerán en silencio,
+  mientras que las órdenes informativas, como posición de audio, se
+  verbalizarán.
 
-## Version 25.02
+## Versión 25.02
 
-* NVDA 2024.1 or later is required.
-* Restored limited support for Windows 8.1.
+* Se requiere NVDA 2024.1 o posterior.
+* Se restaura un soporte limitado para Windows 8.1.
 
 ## Versión 25.01
 
@@ -176,7 +177,5 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Cambios para 1.0
 
 * Versión inicial.
-
-[[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=goldwave

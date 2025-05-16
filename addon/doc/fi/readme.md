@@ -7,7 +7,7 @@ käytettävyyttä.
 
 ## Pikanäppäimet ##
 
-All commands support speech on demand mode.
+Kaikki komennot tukevat "pyydettäessä"-puhetilaa.
 
 * Control+Vaihto+P: Ilmoittaa nykyisen kohdan raidalla.
 * NVDA+Vaihto+R: Ilmoittaa nykyisen raidan jäljellä olevan ajan.
@@ -19,29 +19,29 @@ All commands support speech on demand mode.
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
 käsikirjassa.
 
-Note: GoldWave 6 or later and Windows 10 or later is required.
+Huom: GoldWave 6 tai uudempi sekä Windows 10 tai uudempi vaaditaan.
 
-## Version 25.04
+## Versio 25.04
 
-* Removed command announcement mode, replaced with speech on demand mode. In
-  speech on demand mode, GoldWave specific commands such as setting start
-  marker will stay silent while informational commands such as audio
-  position will be spoken.
+* Komentojen ilmoitustila on korvattu "pyydettäessä"-puhetilalla. Tässä
+  tilassa GoldWaven komennoista, kuten aloitusmerkin määrittämisestä, ei
+  anneta puhepalautetta, mutta tietoa antavat komennot, kuten äänentoiston
+  sijainti, puhutaan.
 
-## Version 25.02
+## Versio 25.02
 
-* NVDA 2024.1 or later is required.
-* Restored limited support for Windows 8.1.
+* Edellyttää NVDA 2024.1:tä tai uudempaa.
+* Palautettu rajoitettu tuki Windows 8.1:lle.
 
-## Version 25.01
+## Versio 25.01
 
-* Support for GoldWave 7 (requires 64-bit Windows 10 or later).
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+* Tuki GoldWave 7:lle (edellyttää 64-bittistä Windows 10:tä tai uudempaa).
+* Latauslinkkiä ei enää sisällytetä lisäosan dokumentaatioon. Voit ladata
+  lisäosan NV Accessin lisäosakaupasta.
+* Virheidentarkistustyökalu vaihdettu Flake8:sta Ruff:iin ja lisäosamoduulit
+  muotoiltu uudelleen paremmin NVDA:n koodauskäytäntöjä vastaaviksi.
+* Poistettu tuki Lisäosien päivittäjä -lisäosan automaattiselle
+  päivitystoiminnolle.
 
 ## Versio 23.02
 
@@ -167,7 +167,5 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Muutokset versiossa 1.0
 
 * Ensimmäinen versio.
-
-[[!tag dev stable]]
 
 [1]: https://www.nvaccess.org/addonStore/legacy?file=goldwave

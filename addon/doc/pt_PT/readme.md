@@ -171,6 +171,4 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 
 * Versão inicial.
 
-[[!tag dev stable]]
-
 [1]: https://www.nvaccess.org/addonStore/legacy?file=goldwave
