@@ -7,35 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2023-01-08 06:20-0800\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-05-21 17:59-0600\n"
 "Last-Translator: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language-Team: DINAKAR T.D. <td.dinkar@gmail.com>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
-
-#. GoldWave add-on requires Windows 10 or later.
-#. Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
-#. Unsupported systems include Windows versions earlier than 10 and unsupported feature updates.
-msgid "Unsupported Windows release"
-msgstr "ஆதரிக்கப்படாத விண்டோஸ் வெளியீடு"
-
-#. Translators: Dialog text shown when trying to install the add-on on
-#. releases earlier than minimum supported release.
-msgid ""
-"You are using {releaseName} ({build}), a Windows release not supported by this add-on.\n"
-"This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
-msgstr ""
-"இக்கூட்டுக்கூறு ஆதரிக்காத {releaseName} ({build}) விண்டோஸ் வெளியீட்டை தாங்கள் பயன்படுத்துகிறீர்கள்.\n"
-"{supportedReleaseName} ({supportedBuild}), அல்லது அதற்கும் பிறகான வெளியீடு இக்கூட்டுக்கூறுக்குத் "
-"தேவைப்படுகிறது."
+"X-Generator: Poedit 3.6\n"
 
 msgid ""
-"This is GoldWave's sound window. You can use GoldWave commands to listen to and edit sound "
-"files. See GoldWave help for details."
+"This is GoldWave's sound window. You can use GoldWave commands to listen to and edit "
+"sound files. See GoldWave help for details."
 msgstr ""
 "இது Goldwave ஒலிச் சாளரம். ஒலிக் கோப்புகளைக் கேட்கவும், தொகுக்கவும், Goldwave கட்டளைகளைப் "
 "பயன்படுத்தலாம். விவரங்களுக்கு Goldwave உதவியைக் காணவும். "
@@ -96,13 +80,11 @@ msgstr "பல்வழித்தடம் தெரிவு செய்ய�
 msgid "All channels selected"
 msgstr "எல்லா வழித்தடங்களும் தெரிவு செய்யப்பட்டுள்ளது"
 
-#. Translators: The start marker position for selecting parts of the audio track
-#. (example output: "Start: 0.00").
+#, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "துவக்கம்: {startMarkerPos}"
 
-#. Translators: The finish marker position for selecting parts of the audio track
-#. (example output: "Finish: 5.00").
+#, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "முடிவு: {finishMarkerPos}"
 
@@ -179,11 +161,11 @@ msgid "Announces a summary on audio selection info such as selection duration."
 msgstr ""
 "தெரிவாகியிருக்கும் ஒலியின் கால அளவு போன்ற ஒலித் தெரிவிற்கான தகவலின் சிறுகுறிப்பை அறிவிக்கிறது."
 
-#. Translators: Presented when there is no audio selection summary available.
 msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
 msgstr "ஒலித் தெரிவின் சிறுகுறிப்பைப் பெற இயலவில்லை. ஒலித்தடத்தை மூடிவிட்டு, மீண்டும் திறக்கவும்."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} முதல் {audioSelectionEnd} வரை {audioSelectionLength}"
 
@@ -195,6 +177,7 @@ msgstr "ஒலித் தடத்தின் முழு நீளத்த
 msgid "Track length is unavailable. Please close and reopen the audio track."
 msgstr "தடத்தின் நீளம் கிடைப்பிலில்லை. ஒலித் தடத்தை மூடி, மீண்டும் திறக்கவும். "
 
+#, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "தடத்தின் நீளம்: {trackLength}"
 
@@ -212,6 +195,7 @@ msgstr "தாங்கள் தொகுக்கும் வழித்த�
 
 #. Translators: Presented to indicate the selected channel for the track
 #. (example output: "Selected channel: mono").
+#, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "தெரிவு செய்யப்பட்ட வழித்தடம்: {audioChannel}"
 
@@ -220,34 +204,18 @@ msgid "Announces audio zoom level."
 msgstr "ஒலியளவின் நிலையை அறிவிக்கிறது."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "ஒலியளவின் நிலை: {zoomLevel}"
 
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid "Toggles whether NVDA announces editing commands during audio recording or playback."
-msgstr ""
-"ஒலிப் பதிவு, அல்லது மீளொலிப்புத் தருணங்களில் தொகு கட்டளைகளை என்விடிஏ அறிவிப்பதை மாற்றியமைக்கிறது."
-
-#. Translators: Presented when command announcement toggle is unavailable.
-msgid "You need to be in sound window to toggle command announcement"
-msgstr "கட்டளை அறிவிப்பை மாற்றியமைக்க தாங்கள் ஒலிச் சாளரத்தில் இருக்க வேண்டும்"
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "கட்டளை அறிவிப்பு இயக்கப்பட்டது"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "கட்டளை அறிவிப்பு நிறுத்தப்பட்டது"
-
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
 msgid "GoldWave"
 msgstr "GoldWave"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Goldwave ஒலித் தொகுப்பு மென்பொருளை  அணுகுவதிலும், பயன்படுத்துவதிலும் மேம்பாட்டையளிக்கும் கூட்டுறுப்பு."

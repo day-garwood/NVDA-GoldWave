@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: goldwave 3.2\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2015-10-23 07:00+1000\n"
-"PO-Revision-Date: 2017-11-15 13:02+0200\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-05-21 18:00-0600\n"
 "Last-Translator: shmuel_naaman@yahoo.com\n"
 "Language-Team: \n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
 
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
@@ -210,32 +210,14 @@ msgstr "הקראת שיעור ההגדלה של השמע."
 msgid "Zoom level: {zoomLevel}"
 msgstr "שיעור ההגדלה: {zoomLevel}"
 
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr "קובע את קופן הקראת פקודות העריכה והנגינה על ידי NVDA."
-
-#. Translators: Presented when command announcement toggle is unavailable.
-msgid "You need to be in sound window to toggle command announcement"
-msgstr "מיתוג הקראת הפקודות יכולה להיעשות רק מתוך חלון הצליל"
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "הקראת הפקודות פעילה"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "הקראת הפקודות לא פעילה"
-
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
 msgid "GoldWave"
 msgstr "GoldWave"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
 #, fuzzy
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr "תוסף מיועד לשפר את הנגישות ואת השימוש בתוכנת עריכת האודיו GoldWave."

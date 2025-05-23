@@ -7,23 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: goldwave 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: 2014-11-14 07:00+1000\n"
-"PO-Revision-Date: 2021-06-02 00:39+0330\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-05-21 17:58-0600\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation team <nvda-translations@groups.io>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 3.6\n"
 
 msgid ""
-"This is GoldWave's sound window. You can use GoldWave commands to listen to "
-"and edit sound files. See GoldWave help for details."
+"This is GoldWave's sound window. You can use GoldWave commands to listen to and "
+"edit sound files. See GoldWave help for details."
 msgstr ""
 "این پنجره‌ی صدای GoldWave است. میتوانید برای شنیدن و ویرایشِ فایل‌های صوتی از "
-"فرمان‌های GoldWave استفاده کنید. برای جزئیاتِ بیشتر، راهنمای GoldWave را "
-"ببینید."
+"فرمان‌های GoldWave استفاده کنید. برای جزئیاتِ بیشتر، راهنمای GoldWave را ببینید."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
@@ -159,21 +158,18 @@ msgstr "موقعیتِ صدای فعلی را به ثانیه اعلام میک�
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
-msgstr ""
-"اطلاعاتی از خلاصه‌ی صدای انتخاب‌شده، مانند مدت‌زمانِ انتخاب‌شده از صدا میدهد."
+msgstr "اطلاعاتی از خلاصه‌ی صدای انتخاب‌شده، مانند مدت‌زمانِ انتخاب‌شده از صدا میدهد."
 
 msgid ""
-"Unable to obtain audio selection summary. Please close and reopen the audio "
-"track."
+"Unable to obtain audio selection summary. Please close and reopen the audio track."
 msgstr ""
-"نمیتوانم خلاصه‌ی اطلاعاتِ صدای انتخاب‌شده را به دست بیاورم. لطفا تِرَکِ صوتی را "
-"ببندید و دوباره باز کنید."
+"نمیتوانم خلاصه‌ی اطلاعاتِ صدای انتخاب‌شده را به دست بیاورم. لطفا تِرَکِ صوتی را ببندید و "
+"دوباره باز کنید."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 #, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
-msgstr ""
-"از {audioSelectionStart} تا {audioSelectionEnd} میشود {audioSelectionLength}"
+msgstr "از {audioSelectionStart} تا {audioSelectionEnd} میشود {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
@@ -214,36 +210,13 @@ msgstr "سطحِ درشت‌نماییِ صدا را اعلام میکند."
 msgid "Zoom level: {zoomLevel}"
 msgstr "سطحِ درشت‌نمایی: {zoomLevel}"
 
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"تنظیم میکند که فرمان‌ها هنگام ویرایشِ صدایی که پخش میکنید یا ضبط میکنید اعلام "
-"شوند یا نه."
-
-#. Translators: Presented when command announcement toggle is unavailable.
-msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
-"لازم است که در پنجره‌ی صدا باشید تا بتوانید اعلامِ فرمان‌ها را روشن یا خاموش "
-"کنید."
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "فرمان‌ها اعلام میشوند"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "فرمان‌ها اعلام نمیشوند"
-
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
 msgid "GoldWave"
 msgstr "GoldWave"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
-msgstr ""
-"افزونه ای برای آسان‌سازیِ دسترسی و استفاده از برنامه‌ی ویرایش‌گرِ صدای GoldWave"
+msgstr "افزونه ای برای آسان‌سازیِ دسترسی و استفاده از برنامه‌ی ویرایش‌گرِ صدای GoldWave"

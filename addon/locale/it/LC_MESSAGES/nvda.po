@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'goldwave' '1.0Beta1'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2023-05-29 15:50+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-05-21 18:01-0600\n"
 "Last-Translator: Simone Dal Maso <simone.dalmaso@gmail.com>\n"
 "Language-Team: It <simone.dalmaso@gmail.con>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 3.6\n"
 
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
@@ -214,47 +214,15 @@ msgstr "Legge il livello di zoom audio"
 msgid "Zoom level: {zoomLevel}"
 msgstr "Livello di zoom: {zoomLevel}"
 
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"Stabilisce se NVDA debba leggere o meno i comandidi modifica durante la "
-"registrazione o la riproduzione di una traccia audio."
-
-#. Translators: Presented when command announcement toggle is unavailable.
-msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
-"è necessario trovarsi nella finestra suono per attivare o disattivare la "
-"lettura comandi"
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "lettura comandi attiva"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "lettura comandi disattiva"
-
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
 msgid "GoldWave"
 msgstr "GoldWave"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Un componente aggiuntivo per migliorare l'accesso e l'utilizzo di Goldwave "
 "Audio Editor."
-
-#~ msgid ""
-#~ "You are using an older version of Windows. This add-on requires Windows "
-#~ "10 or later."
-#~ msgstr ""
-#~ "Stai utilizzando una versione precedente di Windows. Questo componente "
-#~ "aggiuntivo richiede Windows 10 o versioni successive."
-
-#~ msgid "Old Windows version"
-#~ msgstr "Vecchia versione di Windows"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'goldwave 1.1-dev'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2013-11-09 23:25-0800\n"
-"PO-Revision-Date: 2023-01-06 08:42+0100\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-05-21 17:58-0600\n"
 "Last-Translator: Michel Such <michelsuch93@gmail.com>\n"
 "Language-Team: Rémy Ruiz <remyruiz@gmail.com>\n"
 "Language: fr\n"
@@ -16,27 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-
-#. GoldWave add-on requires Windows 10 or later.
-#. Translators: title of the error dialog shown when trying to install the add-on in unsupported systems.
-#. Unsupported systems include Windows versions earlier than 10 and unsupported feature updates.
-msgid "Unsupported Windows release"
-msgstr "Version de Windows non prise en charge"
-
-#. Translators: Dialog text shown when trying to install the add-on on
-#. releases earlier than minimum supported release.
-#, python-brace-format
-msgid ""
-"You are using {releaseName} ({build}), a Windows release not supported by "
-"this add-on.\n"
-"This add-on requires {supportedReleaseName} ({supportedBuild}) or later."
-msgstr ""
-"Vous utilisez {releaseName} ({build}), une version de Windows non prise en "
-"charge par cette extension.\n"
-"Cette extension nécessite {supportedReleaseName} ({supportedBuild}) ou "
-"version ultérieure."
 
 msgid ""
 "This is GoldWave's sound window. You can use GoldWave commands to listen to "
@@ -102,14 +83,10 @@ msgstr "Plusieurs canaux sélectionnés"
 msgid "All channels selected"
 msgstr "Tous les canaux sélectionnés"
 
-#. Translators: The start marker position for selecting parts of the audio track
-#. (example output: "Start: 0.00").
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Début : {startMarkerPos}"
 
-#. Translators: The finish marker position for selecting parts of the audio track
-#. (example output: "Finish: 5.00").
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Fin : {finishMarkerPos}"
@@ -188,7 +165,6 @@ msgstr ""
 "Annonce un résumé des infos de sélection audio telles que la durée de la "
 "sélection."
 
-#. Translators: Presented when there is no audio selection summary available.
 msgid ""
 "Unable to obtain audio selection summary. Please close and reopen the audio "
 "track."
@@ -242,35 +218,14 @@ msgstr "Annonce le niveau de zoom audio."
 msgid "Zoom level: {zoomLevel}"
 msgstr "Niveau de zoom : {zoomLevel}"
 
-#. Translators: Input help mode message for command announcement command in Goldwave.
-msgid ""
-"Toggles whether NVDA announces editing commands during audio recording or "
-"playback."
-msgstr ""
-"Active ou désactive l'annonce des commandes d'édition durant la lecture ou "
-"l'enregistrement audio."
-
-#. Translators: Presented when command announcement toggle is unavailable.
-msgid "You need to be in sound window to toggle command announcement"
-msgstr ""
-"Vous devez être dans la fenêtre son pour basculer l'annonce de la commande"
-
-#. Translators: Presented when command announcement messages are turned on in Goldwave.
-msgid "command announcement on"
-msgstr "annonce de commande activée"
-
-#. Translators: Presented when command announcement messages are turned off in Goldwave.
-msgid "command announcement off"
-msgstr "annonce de commande désactivée"
-
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on
-#. to be shown on installation and add-on information.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
 msgid "GoldWave"
 msgstr "GoldWave"
 
 #. Add-on description
-#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
 msgstr ""
 "Une extension pour améliorer l'accès et l'utilisation de l'éditeur audio "
