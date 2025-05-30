@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: goldwave 2.0\n"
 "Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-05-21 17:58-0600\n"
+"PO-Revision-Date: 2025-05-27 23:54+0330\n"
 "Last-Translator: Mohammadreza Rashad <mohammadreza5712@gmail.com>\n"
 "Language-Team: NVDA Translation team <nvda-translations@groups.io>\n"
 "Language: fa\n"
@@ -18,19 +18,19 @@ msgstr ""
 "X-Generator: Poedit 3.6\n"
 
 msgid ""
-"This is GoldWave's sound window. You can use GoldWave commands to listen to and "
-"edit sound files. See GoldWave help for details."
+"This is GoldWave's sound window. You can use GoldWave commands to listen to and edit "
+"sound files. See GoldWave help for details."
 msgstr ""
-"این پنجره‌ی صدای GoldWave است. میتوانید برای شنیدن و ویرایشِ فایل‌های صوتی از "
-"فرمان‌های GoldWave استفاده کنید. برای جزئیاتِ بیشتر، راهنمای GoldWave را ببینید."
+"این پنجره‌ی صدای GoldWave است. میتوانید برای شنیدن و ویرایشِ فایل‌های صوتی از فرمان‌های "
+"GoldWave استفاده کنید. برای جزئیاتِ بیشتر، راهنمای GoldWave را ببینید."
 
 #. Translators: Presented when audio track position information can not be located.
 msgid "Track position not available"
-msgstr "موقعیتِ تِرَک در دسترس نیست."
+msgstr "موقعیتِ تِرَک در دسترس نیست"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "Channel information unavailable"
-msgstr "اطلاعاتِ کانال موجود نیست."
+msgstr "اطلاعاتِ کانال موجود نیست"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 msgid "mono"
@@ -154,14 +154,13 @@ msgstr "ضبط"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the current audio position in seconds."
-msgstr "موقعیتِ صدای فعلی را به ثانیه اعلام میکند"
+msgstr "موقعیتِ صدای فعلی را به ثانیه اعلام میکند."
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces a summary on audio selection info such as selection duration."
 msgstr "اطلاعاتی از خلاصه‌ی صدای انتخاب‌شده، مانند مدت‌زمانِ انتخاب‌شده از صدا میدهد."
 
-msgid ""
-"Unable to obtain audio selection summary. Please close and reopen the audio track."
+msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
 msgstr ""
 "نمیتوانم خلاصه‌ی اطلاعاتِ صدای انتخاب‌شده را به دست بیاورم. لطفا تِرَکِ صوتی را ببندید و "
 "دوباره باز کنید."
@@ -173,7 +172,7 @@ msgstr "از {audioSelectionStart} تا {audioSelectionEnd} میشود {audioSel
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces total length of the audio track."
-msgstr "مدت‌زمانِ کلیِ تِرَکِ صوتی را اعلام میکند"
+msgstr "مدت‌زمانِ کلیِ تِرَکِ صوتی را اعلام میکند."
 
 #. Translators: Presented when there is no track length information.
 msgid "Track length is unavailable. Please close and reopen the audio track."
@@ -189,11 +188,11 @@ msgstr "طولِ باقیمانده‌ی تِرَکِ صوتی را اعلام �
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 msgid "Cannot tell you remaining time for the current track"
-msgstr "نمیتوانم زمانِ باقی‌مانده از تِرَکِ فعلی را به شما بگویم."
+msgstr "نمیتوانم زمانِ باقی‌مانده از تِرَکِ فعلی را به شما بگویم"
 
 #. Translators: Input help mode message for a Goldwave command.
 msgid "Announces the audio channel you are editing."
-msgstr "کانالِ صوتی‌ای که دارید ویرایشش میکنید را اعلام میکند"
+msgstr "کانالِ صوتیِ در حالِ ویرایش را اعلام میکند."
 
 #. Translators: Presented to indicate the selected channel for the track
 #. (example output: "Selected channel: mono").
@@ -219,4 +218,4 @@ msgstr "GoldWave"
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
-msgstr "افزونه ای برای آسان‌سازیِ دسترسی و استفاده از برنامه‌ی ویرایش‌گرِ صدای GoldWave"
+msgstr "افزونه ای برای آسان‌سازیِ دسترسی و استفاده از برنامه‌ی ویرایش‌گرِ صدای GoldWave."
