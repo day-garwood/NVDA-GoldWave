@@ -78,9 +78,10 @@ class SoundWindow(IAccessible):
 		# Above the status bar is the audio position and selection info bar. See if this control can be fetched.
 		global multiInstance
 		# Have to definitely call the info getter twice.
-		audioPos = self.getStatusInfo(0, 3)
+		# Status bar position has changed in GoldWave 7 (last item across releases).
+		audioPos = self.getStatusInfo(0, -1)
 		if multiInstance > 1:
-			audioPos = self.getStatusInfo(0, 3)
+			audioPos = self.getStatusInfo(0, -1)
 		# Raw means return just the raw text, used in remaining time and other position scripts.
 		if raw:
 			return audioPos
