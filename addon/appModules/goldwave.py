@@ -56,6 +56,23 @@ class SoundWindow(IAccessible):
 			return ""
 		return info
 
+	# An alternative function to obtain needed info from status bars.
+	# Unlike the method above, this function will parse status bar display text (applies to GoldWave 7).
+	def getStatusInfoDisplayText(self, statBarIndex: int) -> str:
+		log.debug("GWV: Status bar display text fetcher")
+		log.debug(f"GWV: Status {statBarIndex}")
+		fgChild = self.appModule._get_statusBars(statBarIndex)
+		log.debug(
+			"GWV: Status bar found" if fgChild.role == controlTypes.Role.STATUSBAR else "Status bar not found"
+		)
+		if not fgChild.displayText:
+			fgChild.redraw()
+		try:
+			return fgChild.displayText
+		except IndexError:
+			log.debug("GWV: Object cannot be located")
+			return ""
+
 	# Get audio positions.
 	def getAudioPos(self, raw: bool = False) -> str:
 		# Above the status bar is the audio position and selection info bar. See if this control can be fetched.
