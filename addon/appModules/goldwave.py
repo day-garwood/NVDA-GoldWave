@@ -199,14 +199,14 @@ class SoundWindow(IAccessible):
 			mm = int(remainingTime[0])
 			sec, ms = str(remainingTime[1]).split(".")
 			ss = int(sec)
-			return "{0:02d}:{1:02d}.{2}".format(mm, ss, ms)
+			return f"{mm:02d}:{ss:02d}.{ms}"
 		else:
 			remainingTime = divmod(remainingTimeSec, 3600.0)
 			hh = int(remainingTime[0])
 			remainingTime = divmod(remainingTime[1], 60.0)
 			mm = int(remainingTime[0])
-			sec, ms = str(remainingTime[1]).split(".")
-			return "{0:02d}:{1:02d}:{2:02d}.{3}".format(hh, mm, ss, ms)
+			ss, ms = str(remainingTime[1]).split(".")
+			return f"{hh:02d}:{mm:02d}:{ss:02d}.{ms}"
 
 	def getZoomLevel(self) -> str:
 		try:
