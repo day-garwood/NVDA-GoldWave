@@ -213,6 +213,14 @@ class SoundWindow(IAccessible):
 			zoomLevel = self.getStatusInfo(1, 1)
 		except IndexError:
 			zoomLevel = self.getStatusInfo(1, 1)
+		print(zoomLevel)
+		# In GoldWave 7, zoom text element does not expose name correctly.
+		# Therefore, parse the second status bar display text.
+		if self.appModule.productVersion >= "7":
+			zoomDisplayText = self.getStatusInfoDisplayText(1)
+			# Zoom text is second element if the element text is present.
+			if zoomLevel in zoomDisplayText:
+				zoomLevel = zoomDisplayText.split()[1]
 		return zoomLevel
 
 	# Audio editing scripts:
