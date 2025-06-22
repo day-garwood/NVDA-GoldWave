@@ -21,6 +21,10 @@ For more information about GoldWave and keyboard commands, refer to GoldWave Man
 
 Note: GoldWave 6 or later and Windows 10 or later is required.
 
+## Version 25.07
+
+* Improved audio selection, zoom level, and track position announcements in GoldWave 7.
+
 ## Version 25.04
 
 * Removed command announcement mode, replaced with speech on demand mode. In speech on demand mode, GoldWave specific commands such as setting start marker will stay silent while informational commands such as audio position will be spoken.
