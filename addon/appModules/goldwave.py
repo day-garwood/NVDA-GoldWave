@@ -93,6 +93,16 @@ class SoundWindow(IAccessible):
 		audioSelection = self.getStatusInfo(0, 2)
 		if multiInstance > 1:
 			audioSelection = self.getStatusInfo(0, 2)
+		# In GoldWave 7, audio selection text is split over two or more elements with missing text.
+		# Therefore, join the partial string with the next item display text and fil in the missing text.
+		if self.appModule.productVersion >= "7":
+			audioSelectionDisplayText = self.getStatusInfoDisplayText(0)
+			displayTextStart = audioSelectionDisplayText.find(audioSelection)
+			audioSelection2 = self.getStatusInfo(0, 3)
+			displayTextEnd = audioSelectionDisplayText.rfind(audioSelection2[-1])
+			audioSelectionDisplayText= audioSelectionDisplayText[displayTextStart:displayTextEnd+1]
+			# Then remove extraneous text in the beginning.
+			audioSelection = audioSelectionDisplayText.partition(" ")[-1]
 		log.debug(f"GWV: status bar length: {len(audioSelection)}")
 		return audioSelection
 
@@ -140,14 +150,20 @@ class SoundWindow(IAccessible):
 			audioChannels = self.getStatusInfo(0, 0)
 		return audioChannels
 
-	def getTrackLength(self) -> str:
+	def getTrackLength(self, raw: bool = False) -> str:
 		fgChild = self.appModule._get_statusBars(0)
 		try:
 			if not fgChild.displayText:
 				fgChild.redraw()
 		except AttributeError:
 			fgChild = self.appModule._get_statusBars(0)
-		return fgChild.getChild(1).displayText
+		# In recent GoldWave releases, raw display text must be parsed
+		# as display text for individual components are incomplete.
+		if raw:
+			statusBarComponents = fgChild.displayText.split()
+			return statusBarComponents[1]
+		else:
+			return fgChild.getChild(1).displayText
 
 	# Convert time to seconds: Convert hh:mm:ss to seconds.
 	# Needed in various functions.
@@ -369,7 +385,7 @@ class SoundWindow(IAccessible):
 		speakOnDemand=True,
 	)
 	def script_announceTrackLength(self, gesture):
-		trackLengthSTR = self.getTrackLength()
+		trackLengthSTR = self.getTrackLength(raw=self.appModule.productVersion >= "7")
 		if not trackLengthSTR:
 			# Translators: Presented when there is no track length information.
 			ui.message(_("Track length is unavailable. Please close and reopen the audio track."))
@@ -391,7 +407,7 @@ class SoundWindow(IAccessible):
 			if ":" in audioPos:
 				ui.message(self.getRemainingTime(audioPos))
 			elif float(audioPos) == 0.0:
-				ui.message(self.getTrackLength())
+				ui.message(self.getTrackLength(raw=self.appModule.productVersion >= "7"))
 			else:
 				ui.message(self.getRemainingTime(audioPos))
 
