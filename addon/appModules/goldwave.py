@@ -11,7 +11,7 @@ from NVDAObjects.IAccessible import IAccessible
 
 # Various buttons and numeric edit fields.
 from NVDAObjects.window import Window, DisplayModelEditableText, edit
-import NVDAObjects
+from NVDAObjects import NVDAObject
 from logHandler import log
 import ui
 import addonHandler
@@ -478,7 +478,7 @@ class AppModule(appModuleHandler.AppModule):
 
 	# Presets and control windows: Work with buttons with custom window class names.
 
-	def event_NVDAObject_init(self, obj):
+	def event_NVDAObject_init(self, obj: NVDAObject):
 		# Provide standardized control roles for the following objects.
 		if isinstance(obj, Window):
 			# For working with buttons such as presets window and control window.
@@ -495,7 +495,7 @@ class AppModule(appModuleHandler.AppModule):
 				if obj.windowClassName != "TSoundForm":
 					obj.role = controlTypes.Role.DIALOG
 
-	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
+	def chooseNVDAObjectOverlayClasses(self, obj: NVDAObject, clsList: list[NVDAObject]) -> None:
 		# Custom NVDA overlay objects for sound window and edit fields:
 		if obj.windowClassName == "TSoundForm":
 			clsList.insert(0, SoundWindow)
@@ -507,7 +507,7 @@ class AppModule(appModuleHandler.AppModule):
 				pass
 
 	# Cache the needed status bar objects.
-	statusBarCache: dict[int, NVDAObjects.NVDAObject] = {}
+	statusBarCache: dict[int, NVDAObject] = {}
 
 	def _get_statusBars(self, statBarIndex, refill=False):
 		global multiInstance
