@@ -168,7 +168,7 @@ class SoundWindow(IAccessible):
 
 	# Convert time to seconds: Convert hh:mm:ss to seconds.
 	# Needed in various functions.
-	def convertTime2Sec(self, *times) -> list[float]:
+	def convertTime2Sec(self, times: list[list[str]]) -> list[float]:
 		timeList = []
 		for time in times:
 			if len(time) == 1:
@@ -189,7 +189,7 @@ class SoundWindow(IAccessible):
 		# and if audio pos is greater than track length for that particular cell, move to the left.
 		# However, a simpler solution is to convert the time value to seconds,
 		# subtract then format it back to hh:mm:ss format.
-		timesec = self.convertTime2Sec(audioPosParsed, trackLengthParsed)
+		timesec = self.convertTime2Sec([audioPosParsed, trackLengthParsed])
 		remainingTimeSec = timesec[1] - timesec[0]
 		# Now convert the seconds back to hh:mm:ss format.
 		if remainingTimeSec < 60.0:
