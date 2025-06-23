@@ -81,11 +81,11 @@ reportAttributeAccessIssue = true
 reportCallInDefaultInitializer = true
 reportCallIssue = true
 reportConstantRedefinition = true
+reportDeprecated = true
 reportDuplicateImport = true
 reportFunctionMemberAccess = true
 reportGeneralTypeIssues = true
 reportImplicitOverride = true
-reportImplicitStringConcatenation = true
 reportImportCycles = true
 reportIncompatibleMethodOverride = true
 reportIncompatibleVariableOverride = true
@@ -99,9 +99,7 @@ reportInvalidTypeArguments = true
 reportInvalidTypeForm = true
 reportInvalidTypeVarUse = true
 reportMatchNotExhaustive = true
-reportMissingImports = true
 reportMissingModuleSource = true
-reportMissingParameterType = true
 reportMissingSuperCall = true
 reportMissingTypeArgument = true
 reportNoOverloadImplementation = true
@@ -124,23 +122,16 @@ reportShadowedImports = true
 reportTypeCommentUsage = true
 reportTypedDictNotRequiredAccess = true
 reportUnboundVariable = true
-reportUndefinedVariable = true
 reportUnhashable = true
 reportUninitializedInstanceVariable = true
-reportUnknownArgumentType = true
 reportUnknownLambdaType = true
-reportUnknownMemberType = true
-reportUnknownParameterType = true
-reportUnknownVariableType = true
 reportUnnecessaryCast = true
 reportUnnecessaryComparison = true
 reportUnnecessaryContains = true
 reportUnnecessaryIsInstance = true
 reportUnnecessaryTypeIgnoreComment = true
 reportUnsupportedDunderAll = true
-reportUntypedBaseClass = true
 reportUntypedClassDecorator = true
-reportUntypedFunctionDecorator = true
 reportUntypedNamedTuple = true
 reportUnusedCallResult = true
 reportUnusedClass = true
@@ -152,10 +143,18 @@ reportUnusedImport = true
 reportUnusedVariable = true
 reportWildcardImportFromLibrary = true
 
-reportDeprecated = true
-
 # Can be enabled by generating type stubs for modules via pyright CLI
 reportMissingTypeStubs = false
 
 # Bad rules
 # These are sorted alphabetically and should be enabled and moved to compliant rules section when resolved.
+reportImplicitStringConcatenation = false  # Lenthy sound window help message split over separate lines
+reportMissingImports = false  # NVDA Core modules
+reportMissingParameterType = false  # 34 errors
+reportUndefinedVariable = false  # 46 errors
+reportUnknownArgumentType = false  # 13 errors
+reportUnknownMemberType = false  # 165 errors
+reportUnknownParameterType = false  # 34 errors
+reportUnknownVariableType = false  # 23 errors
+reportUntypedBaseClass = false  # Base classes come from NVDA Core
+reportUntypedFunctionDecorator = false  # 26 errors
