@@ -23,6 +23,7 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Version 25.07
 
+* Made the add-on code more robust with help from Pyright (a Python static type checker).
 * Improved audio selection, zoom level, and track position announcements in GoldWave 7.
 
 ## Version 25.04
