@@ -509,7 +509,7 @@ class AppModule(appModuleHandler.AppModule):
 	# Cache the needed status bar objects.
 	statusBarCache: dict[int, NVDAObject] = {}
 
-	def _get_statusBars(self, statBarIndex, refill=False):
+	def _get_statusBars(self, statBarIndex: int, refill: bool = False) -> NVDAObject:
 		global multiInstance
 		# In case multiple instances of GoldWave are running, flush the status bar cache.
 		index = 0
