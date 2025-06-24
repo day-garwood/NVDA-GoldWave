@@ -150,11 +150,11 @@ reportMissingTypeStubs = false
 # These are sorted alphabetically and should be enabled and moved to compliant rules section when resolved.
 reportImplicitStringConcatenation = false  # Lenthy sound window help message split over separate lines
 reportMissingImports = false  # NVDA Core modules
-reportMissingParameterType = false  # 34 errors
-reportUndefinedVariable = false  # 46 errors
-reportUnknownArgumentType = false  # 13 errors
-reportUnknownMemberType = false  # 165 errors
-reportUnknownParameterType = false  # 34 errors
-reportUnknownVariableType = false  # 23 errors
+reportMissingParameterType = false  # Script gestures
+reportUndefinedVariable = false  # _ = gettext.gettext function
+reportUnknownArgumentType = false  # Script gestures and other Python argument types
+reportUnknownMemberType = false  # NVDA Core attributes
+reportUnknownParameterType = false  # Script gestures, NVDA objects, Python args/kwargs
+reportUnknownVariableType = false  # NVDA Core types
 reportUntypedBaseClass = false  # Base classes come from NVDA Core
-reportUntypedFunctionDecorator = false  # 26 errors
+reportUntypedFunctionDecorator = false  # scriptHandler.script decorator
