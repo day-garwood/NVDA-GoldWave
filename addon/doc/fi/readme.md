@@ -21,6 +21,13 @@ käsikirjassa.
 
 Huom: GoldWave 6 tai uudempi sekä Windows 10 tai uudempi vaaditaan.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+* Improved audio selection, zoom level, and track position announcements in
+  GoldWave 7.
+
 ## Versio 25.04
 
 * Komentojen ilmoitustila on korvattu "pyydettäessä"-puhetilalla. Tässä

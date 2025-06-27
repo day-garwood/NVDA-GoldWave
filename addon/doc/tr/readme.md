@@ -22,6 +22,13 @@ kılavuzuna bakın.
 Not: GoldWave 6 veya sonrası ile Windows 10 veya sonrası sürümler
 gereklidir.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+* Improved audio selection, zoom level, and track position announcements in
+  GoldWave 7.
+
 ## Sürüm 25.04
 
 * Komut duyuru modu kaldırıldı, isteğe bağlı konuşma moduyla

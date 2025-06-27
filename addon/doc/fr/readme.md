@@ -23,6 +23,13 @@ reportez-vous au manuel de Goldwave.
 Remarque : Goldwave 6 ou version ultérieure et Windows 10 ou version
 ultérieure est requis.
 
+## Version 25.07
+
+* Made the add-on code more robust with help from Pyright (a Python static
+  type checker).
+* Improved audio selection, zoom level, and track position announcements in
+  GoldWave 7.
+
 ## Version 25.04
 
 * Suppression du mode d'annonce de commande, remplacé par le mode de parole
