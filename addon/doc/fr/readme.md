@@ -25,10 +25,10 @@ ultérieure est requis.
 
 ## Version 25.07
 
-* Made the add-on code more robust with help from Pyright (a Python static
-  type checker).
-* Improved audio selection, zoom level, and track position announcements in
-  GoldWave 7.
+* Rendu le code de l'extension plus robuste avec l'aide de Pyright (un
+  vérificateur de type statique Python).
+* Amélioration de la sélection audio, du niveau de zoom et des annonces de
+  la position de la piste dans GoldWave 7.
 
 ## Version 25.04
 

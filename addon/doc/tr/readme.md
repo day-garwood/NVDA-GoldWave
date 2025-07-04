@@ -22,12 +22,12 @@ kılavuzuna bakın.
 Not: GoldWave 6 veya sonrası ile Windows 10 veya sonrası sürümler
 gereklidir.
 
-## Version 25.07
+## Sürüm 25.07
 
-* Made the add-on code more robust with help from Pyright (a Python static
-  type checker).
-* Improved audio selection, zoom level, and track position announcements in
-  GoldWave 7.
+* Eklenti kodu Pyright'ın (Python statik tip denetleyicisi) yardımıyla daha
+  sağlam hale getirildi.
+* Goldwave 7'de gelişmiş ses seçimi, yakınlaştırma seviyesi ve iz pozisyonu
+  duyuruları.
 
 ## Sürüm 25.04
 
