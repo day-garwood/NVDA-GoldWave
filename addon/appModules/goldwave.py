@@ -96,14 +96,14 @@ class SoundWindow(IAccessible):
 			audioSelection = self.getStatusInfo(0, 2)
 		# In GoldWave 7, audio selection text is split over two or more elements with missing text.
 		# Therefore, join the partial string with the next item display text and fil in the missing text.
-		if self.appModule.productVersion >= "7":
-			audioSelectionDisplayText = self.getStatusInfoDisplayText(0)
-			displayTextStart = audioSelectionDisplayText.find(audioSelection)
-			audioSelection2 = self.getStatusInfo(0, 3)
-			displayTextEnd = audioSelectionDisplayText.rfind(audioSelection2[-1])
-			audioSelectionDisplayText= audioSelectionDisplayText[displayTextStart:displayTextEnd+1]
+		# if self.appModule.productVersion >= "7":
+			# audioSelectionDisplayText = self.getStatusInfoDisplayText(0)
+			# displayTextStart = audioSelectionDisplayText.find(audioSelection)
+			# audioSelection2 = self.getStatusInfo(0, 3)
+			# displayTextEnd = audioSelectionDisplayText.rfind(audioSelection2[-1])
+			# audioSelectionDisplayText= audioSelectionDisplayText[displayTextStart:displayTextEnd+1]
 			# Then remove extraneous text in the beginning.
-			audioSelection = audioSelectionDisplayText.partition(" ")[-1]
+			# audioSelection = audioSelectionDisplayText.partition(" ")[-1]
 		log.debug(f"GWV: status bar length: {len(audioSelection)}")
 		return audioSelection
 
