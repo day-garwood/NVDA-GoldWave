@@ -81,7 +81,7 @@ class SoundWindow(IAccessible):
 		# Status bar position has changed in GoldWave 7 (last item across releases).
 		audioPos = self.getStatusInfo(0, -1)
 		if multiInstance > 1:
-			audioPos = self.getStatusInfo(0, -1)
+			audioPos = self.getStatusInfo(0, -2)
 		# Raw means return just the raw text, used in remaining time and other position scripts.
 		if raw:
 			return audioPos
