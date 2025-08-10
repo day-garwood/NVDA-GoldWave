@@ -1,8 +1,6 @@
 # GoldWave #
 
-* Authors: Joseph Lee, NVDA contributors.
-
-Note: I (Joseph Lee) am looking for people who will maintain GoldWave add-on from April 1, 2022 onwards.
+* Authors: Joseph Lee, Day Garwood, NVDA contributors.
 
 This app module enhances access and usage of GoldWave audio editor.
 
