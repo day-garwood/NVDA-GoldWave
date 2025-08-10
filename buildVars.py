@@ -25,13 +25,13 @@ addon_info = {
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	"addon_description": _("An add-on for enhancing access and usage of the GoldWave audio editor."),
 	# version
-	"addon_version": "25.07",
+	"addon_version": "25.08.1",
 	# Author(s)
-	"addon_author": "Joseph Lee <joseph.lee22590@gmail.com>, David Parduhn <xkill85@gmx.net>",
+	"addon_author": "Joseph Lee <joseph.lee22590@gmail.com>, Day Garwood <day@garwood.day>, David Parduhn <xkill85@gmx.net>",
 	# URL for the add-on documentation support
-	"addon_url": "https://github.com/josephsl/goldwave",
+	"addon_url": "https://github.com/day-garwood/goldwave",
 	# URL for the add-on repository where the source code can be found
-	"addon_sourceURL": "https://github.com/josephsl/goldwave",
+	"addon_sourceURL": "https://github.com/day-garwood/goldwave",
 	# Documentation file name
 	"addon_docFileName": "readme.html",
 	# Minimum NVDA version supported (e.g. "2018.3.0", minor version is optional)
