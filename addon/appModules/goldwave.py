@@ -1,6 +1,6 @@
 # GoldWave App Module
 # An add-on for NVDA
-# Copyright 2013-2026 Joseph Lee and contributors, released under gPL.
+# Copyright 2013-2026 Joseph Lee and contributors, released under GPL.
 # Functionality is based on JFW scripts for Goldwave by Jim Grimsby, Jr.
 
 import appModuleHandler
@@ -8,13 +8,12 @@ import api
 import scriptHandler
 import controlTypes
 from NVDAObjects.IAccessible import IAccessible
-
-# Various buttons and numeric edit fields.
 from NVDAObjects.window import Window, DisplayModelEditableText, edit
 from NVDAObjects import NVDAObject
 from logHandler import log
 import ui
 import addonHandler
+import time
 
 addonHandler.initTranslation()
 
@@ -30,6 +29,9 @@ class SoundWindow(IAccessible):
 	# GoldWave 6.57 raises name change event whenever play/rewind/stop keys are pressed.
 	event_nameChange = None
 
+	# Track playback state for spacebar toggle
+	_isPlaying = False
+
 	def _get_helpText(self) -> str:
 		# Translators: general help message for GoldWave sound window.
 		return _(
@@ -39,7 +41,6 @@ class SoundWindow(IAccessible):
 		)
 
 	# A master function to obtain needed info from status bars.
-	# #17.05: because this is prone to failure, insert debug messages if asked.
 	def getStatusInfo(self, statBarIndex: int, childIndex: int) -> str:
 		log.debug("GWV: Status bar object fetcher")
 		log.debug(f"GWV: Status {statBarIndex}, child index {childIndex}")
@@ -57,7 +58,6 @@ class SoundWindow(IAccessible):
 		return info
 
 	# An alternative function to obtain needed info from status bars.
-	# Unlike the method above, this function will parse status bar display text (applies to GoldWave 7).
 	def getStatusInfoDisplayText(self, statBarIndex: int) -> str:
 		log.debug("GWV: Status bar display text fetcher")
 		log.debug(f"GWV: Status {statBarIndex}")
@@ -75,77 +75,46 @@ class SoundWindow(IAccessible):
 
 	# Get audio positions.
 	def getAudioPos(self, raw: bool = False) -> str:
-		# Above the status bar is the audio position and selection info bar. See if this control can be fetched.
 		global multiInstance
-		# Have to definitely call the info getter twice.
-		# Status bar position has changed in GoldWave 7 (last item across releases).
 		audioPos = self.getStatusInfo(0, -2)
 		if multiInstance > 1:
 			audioPos = self.getStatusInfo(0, -2)
-		# Raw means return just the raw text, used in remaining time and other position scripts.
 		if raw:
 			return audioPos
 		# Translators: Presented when audio track position information can not be located.
 		return _("Track position not available") if not audioPos or " " in audioPos else audioPos
 
 	def getAudioSelection(self) -> str:
-		# Call the info getter twice to obtain audio selection (relies on display text).
 		global multiInstance
 		audioSelection = self.getStatusInfo(0, 2)
 		if multiInstance > 1:
 			audioSelection = self.getStatusInfo(0, 2)
-		# In GoldWave 7, audio selection text is split over two or more elements with missing text.
-		# Therefore, join the partial string with the next item display text and fil in the missing text.
-		# if self.appModule.productVersion >= "7":
-			# audioSelectionDisplayText = self.getStatusInfoDisplayText(0)
-			# displayTextStart = audioSelectionDisplayText.find(audioSelection)
-			# audioSelection2 = self.getStatusInfo(0, 3)
-			# displayTextEnd = audioSelectionDisplayText.rfind(audioSelection2[-1])
-			# audioSelectionDisplayText= audioSelectionDisplayText[displayTextStart:displayTextEnd+1]
-			# Then remove extraneous text in the beginning.
-			# audioSelection = audioSelectionDisplayText.partition(" ")[-1]
 		log.debug(f"GWV: status bar length: {len(audioSelection)}")
 		return audioSelection
 
 	def getAudioSelectionParsed(self) -> list[str]:
-		# Get marker positions and selection duration.
-		# Return the list of substrings to be handled by individual scripts.
 		audioSelectionParsed = self.getAudioSelection().split()
 		log.debug(f"GWV: parsed status bar length: {len(audioSelectionParsed)}")
 		return audioSelectionParsed
 
-	# Get channel information. But first, a few constants (to help translators):
+	# Get channel information.
 	audioChannelValues = {
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"": _("Channel information unavailable"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Mono": _("mono"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Stereo": _("stereo"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Left": _("left"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Right": _("right"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Center": _("center"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
-		"w frequenc": _("low frequency"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
+		"Low frequency": _("low frequency"),
 		"Back left": _("back left"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Back right": _("back right"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Side left": _("side left"),
-		# Translators: One of the channel values when editing audio track in Goldwave.
 		"Side right": _("side right"),
-		# Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
 		"Multiple": _("Multiple channels selected"),
-		# Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
 		"All": _("All channels selected"),
 	}
 
 	def getAudioChannels(self) -> str:
-		# Based on the constants above and the return value below, get channel information.
 		audioChannels = self.getStatusInfo(0, 0)
 		if audioChannels not in self.audioChannelValues:
 			audioChannels = self.getStatusInfo(0, 0)
@@ -158,16 +127,23 @@ class SoundWindow(IAccessible):
 				fgChild.redraw()
 		except AttributeError:
 			fgChild = self.appModule._get_statusBars(0)
-		# In recent GoldWave releases, raw display text must be parsed
-		# as display text for individual components are incomplete.
 		if raw:
 			statusBarComponents = fgChild.displayText.split()
-			return statusBarComponents[1]
+			return statusBarComponents[1] if len(statusBarComponents) > 1 else ""
 		else:
-			return fgChild.getChild(1).displayText
+			try:
+				return fgChild.getChild(1).displayText
+			except:
+				return ""
 
-	# Convert time to seconds: Convert hh:mm:ss to seconds.
-	# Needed in various functions.
+	def isTrackLoaded(self) -> bool:
+		"""Check if a track is loaded"""
+		try:
+			trackLength = self.getTrackLength(raw=True)
+			return bool(trackLength and trackLength != "0.000")
+		except:
+			return False
+
 	def convertTime2Sec(self, times: list[list[str]]) -> list[float]:
 		timeList = []
 		for time in times:
@@ -184,14 +160,8 @@ class SoundWindow(IAccessible):
 	def getRemainingTime(self, audioPos: str) -> str:
 		trackLengthParsed = self.getTrackLength().split(":")
 		audioPosParsed = audioPos.split(":")
-		# An obvious solution is to use recursive subtraction.
-		# That is, subtract the last elements,
-		# and if audio pos is greater than track length for that particular cell, move to the left.
-		# However, a simpler solution is to convert the time value to seconds,
-		# subtract then format it back to hh:mm:ss format.
 		timesec = self.convertTime2Sec([audioPosParsed, trackLengthParsed])
 		remainingTimeSec = timesec[1] - timesec[0]
-		# Now convert the seconds back to hh:mm:ss format.
 		if remainingTimeSec < 60.0:
 			return str(remainingTimeSec)
 		elif 60.0 <= remainingTimeSec < 3600.0:
@@ -213,12 +183,8 @@ class SoundWindow(IAccessible):
 			zoomLevel = self.getStatusInfo(1, 1)
 		except IndexError:
 			zoomLevel = self.getStatusInfo(1, 1)
-		print(zoomLevel)
-		# In GoldWave 7, zoom text element does not expose name correctly.
-		# Therefore, parse the second status bar display text.
 		if self.appModule.productVersion >= "7":
 			zoomDisplayText = self.getStatusInfoDisplayText(1)
-			# Zoom text is second element if the element text is present.
 			if zoomLevel in zoomDisplayText:
 				zoomLevel = zoomDisplayText.split()[1]
 		return zoomLevel
@@ -227,24 +193,22 @@ class SoundWindow(IAccessible):
 
 	@scriptHandler.script(gesture="KB:[")
 	def script_dropStartMarker(self, gesture):
+		gesture.send()
+		time.sleep(0.1)
 		try:
-			gesture.send()
-			# Translators: The start marker position for selecting parts of the audio track
-			# (example output: "Start: 0.00").
 			ui.message(
-				_("Start: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0])
+				_("Start marker: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0])
 			)
 		except Exception:
 			pass
 
 	@scriptHandler.script(gesture="KB:]")
 	def script_dropFinishMarker(self, gesture):
+		gesture.send()
+		time.sleep(0.1)
 		try:
-			gesture.send()
-			# Translators: The finish marker position for selecting parts of the audio track
-			# (example output: "Finish: 5.00").
 			ui.message(
-				_("Finish: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2])
+				_("Finish marker: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2])
 			)
 		except Exception:
 			pass
@@ -252,132 +216,311 @@ class SoundWindow(IAccessible):
 	@scriptHandler.script(gesture="kB:control+[")
 	def script_playSelection(self, gesture):
 		gesture.send()
-		# Translators: Presented when selected audio is playing.
 		ui.message(_("Play selection"))
 
 	@scriptHandler.script(gesture="KB:control+a")
 	def script_selectAll(self, gesture):
 		gesture.send()
-		# Translators: Presented when all parts of the audio track is selected.
-		ui.message(_("Select All"))
+		ui.message(_("Select all"))
 
 	@scriptHandler.script(gesture="kb:control+q")
 	def script_dropCue(self, gesture):
 		gesture.send()
-		# Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 		ui.message(_("Cue"))
 
 	@scriptHandler.script(gesture="KB:q")
 	def script_dropCueAtStartMarker(self, gesture):
 		gesture.send()
-		# Translators: Presented when audio cue is dropped at the start marker position.
 		ui.message(_("Cue dropped at start marker"))
 
 	@scriptHandler.script(gesture="KB:shift+q")
 	def script_dropCueAtFinishMarker(self, gesture):
 		gesture.send()
-		# Translators: Presented when an audio cue is dropped at the finish marker position.
 		ui.message(_("Cue dropped at finish marker"))
 
 	@scriptHandler.script(gesture="kb:control+j")
 	def script_moveStartMarkerToNextCuePos(self, gesture):
 		gesture.send()
-		# Translators: Presented when the start marker is moved to the next cue position.
 		ui.message(_("Start marker at next cue"))
 
 	@scriptHandler.script(gesture="kb:control+shift+j")
 	def script_moveStartMarkerToPrevCuePos(self, gesture):
 		gesture.send()
-		# Translators: Presented when the start marker is moved to the next cue position.
 		ui.message(_("Start marker at previous cue"))
 
 	@scriptHandler.script(gesture="kb:alt+j")
 	def script_moveFinishMarkerToNextCuePos(self, gesture):
 		gesture.send()
-		# Translators: Presented when the finish marker is moved to the next cue position.
 		ui.message(_("Finish marker at next cue"))
 
 	@scriptHandler.script(gesture="kb:alt+shift+j")
 	def script_moveFinishMarkerToPrevCuePos(self, gesture):
 		gesture.send()
-		# Translators: Presented when the start marker is moved to the next cue position.
 		ui.message(_("Finish marker at previous cue"))
 
-	# Handle both delete and trim.
 	@scriptHandler.script(gestures=["kb:delete", "kb:control+t"])
 	def script_deleteSelection(self, gesture):
 		gesture.send()
-		# Translators: Presented when audio selection is deleted.
-		ui.message(_("deleted"))
+		ui.message(_("Deleted"))
+
+	# Copy, Cut, Paste, Undo, Redo operations
+
+	@scriptHandler.script(gesture="KB:control+c")
+	def script_copy(self, gesture):
+		gesture.send()
+		ui.message(_("Copied"))
+
+	@scriptHandler.script(gesture="KB:control+x")
+	def script_cut(self, gesture):
+		gesture.send()
+		ui.message(_("Cut"))
+
+	@scriptHandler.script(gesture="KB:control+v")
+	def script_paste(self, gesture):
+		gesture.send()
+		ui.message(_("Pasted"))
+
+	@scriptHandler.script(gesture="KB:control+b")
+	def script_pasteAtBeginning(self, gesture):
+		gesture.send()
+		ui.message(_("Pasted at beginning"))
+
+	@scriptHandler.script(gesture="KB:control+e")
+	def script_pasteAtEnd(self, gesture):
+		gesture.send()
+		ui.message(_("Pasted at end"))
+
+	@scriptHandler.script(gesture="KB:control+f")
+	def script_pasteAtFinishMarker(self, gesture):
+		gesture.send()
+		ui.message(_("Pasted at finish marker"))
+
+	@scriptHandler.script(gesture="KB:control+z")
+	def script_undo(self, gesture):
+		gesture.send()
+		ui.message(_("Undo"))
+
+	@scriptHandler.script(gesture="KB:control+y")
+	def script_redo(self, gesture):
+		gesture.send()
+		ui.message(_("Redo"))
 
 	# Playback and recording:
 
 	@scriptHandler.script(gestures=["KB:f2", "KB:f3", "kb:f4"])
 	def script_play(self, gesture):
 		gesture.send()
-		# Translators: Presented when a track is playing in Goldwave.
-		ui.message(_("play"))
+		self._isPlaying = True
+		ui.message(_("Play"))
 
 	@scriptHandler.script(gesture="kb:f5")
 	def script_rewind(self, gesture):
 		gesture.send()
-		# Translators: Presented when a track is rewinding in Goldwave.
-		ui.message(_("rewind"))
+		ui.message(_("Rewind"))
 
 	@scriptHandler.script(gesture="kb:f6")
 	def script_forward(self, gesture):
 		gesture.send()
-		# Translators: Presented when fast forwarding a track in Goldwave.
-		ui.message(_("fast forward"))
+		ui.message(_("Fast forward"))
 
 	@scriptHandler.script(gestures=["kb:f7", "kb:control+f7"])
 	def script_pause(self, gesture):
 		gesture.send()
-		# Translators: Presented when pausing a track in Goldwave.
-		ui.message(_("pause"))
+		ui.message(_("Pause"))
 
 	@scriptHandler.script(gestures=["kb:f8", "kb:control+f8"])
 	def script_stop(self, gesture):
 		gesture.send()
-		# Translators: Presented when stopping a track in in Goldwave.
-		ui.message(_("stop"))
+		self._isPlaying = False
+		ui.message(_("Stop"))
 
 	@scriptHandler.script(gesture="kb:control+f9")
 	def script_startRecord(self, gesture):
 		gesture.send()
-		# Translators: Presented when starting recording in Goldwave.
-		ui.message(_("record"))
+		ui.message(_("Record"))
 
-	# Audio position scripts: markers, selection duration.
+	@scriptHandler.script(gesture="KB:space")
+	def script_togglePlayStop(self, gesture):
+		if not self.isTrackLoaded():
+			ui.message(_("No track loaded"))
+			return
+		gesture.send()
+		self._isPlaying = not self._isPlaying
+		if self._isPlaying:
+			ui.message(_("Play"))
+		else:
+			ui.message(_("Pause"))
+
+	@scriptHandler.script(gesture="KB:control+home")
+	def script_goToBeginning(self, gesture):
+		gesture.send()
+		if not self.isTrackLoaded():
+			ui.message(_("No track loaded"))
+		else:
+			ui.message(_("Beginning: 0.000 seconds"))
+
+	# NEW: Alt+Shift gesture scripts for status bar information
 
 	@scriptHandler.script(
-		# Translators: Input help mode message for a Goldwave command.
-		description=_("Announces the current audio position in seconds."),
-		gesture="kb:control+shift+p",
+		description=_("Announces the current file title."),
+		gesture="kb:alt+shift+o",
+		speakOnDemand=True,
+	)
+	def script_announceFileTitle(self, gesture):
+		try:
+			fg = api.getForegroundObject()
+			windowTitle = fg.name
+			if " - " in windowTitle:
+				filename = windowTitle.split(" - ")[0]
+			else:
+				filename = windowTitle.split(".")[0] if "." in windowTitle else windowTitle
+			ui.message(_("File: {filename}").format(filename=filename))
+		except Exception:
+			ui.message(_("Filename unavailable"))
+
+	@scriptHandler.script(
+		description=_("Announces the file type and audio properties."),
+		gesture="kb:alt+shift+i",
+		speakOnDemand=True,
+	)
+	def script_announceFileType(self, gesture):
+		if not self.isTrackLoaded():
+			ui.message(_("No track loaded"))
+			return
+		try:
+			fg = api.getForegroundObject()
+			windowTitle = fg.name
+
+			if " - " in windowTitle and " Hz" in windowTitle:
+				properties = windowTitle.split(" - ", 1)[-1]
+				ui.message(properties)
+			elif "." in windowTitle:
+				extension = windowTitle.split(".")[-1].split()[0]
+				ui.message(_("File type: {fileType}").format(fileType=extension.upper()))
+			else:
+				ui.message(_("File type unavailable"))
+		except Exception:
+			ui.message(_("Error getting file type"))
+
+	@scriptHandler.script(
+		description=_("Announces start marker position."),
+		gesture="kb:alt+shift+s",
+		speakOnDemand=True,
+	)
+	def script_announceStartMarker(self, gesture):
+		try:
+			audioSelectionParsed = self.getAudioSelectionParsed()
+			if not audioSelectionParsed or len(audioSelectionParsed) < 1:
+				ui.message(_("Start marker position unavailable"))
+			else:
+				ui.message(_("Start marker: {position}").format(position=audioSelectionParsed[0]))
+		except Exception:
+			ui.message(_("Start marker position unavailable"))
+
+	@scriptHandler.script(
+		description=_("Announces finish marker position."),
+		gesture="kb:alt+shift+f",
+		speakOnDemand=True,
+	)
+	def script_announceFinishMarker(self, gesture):
+		try:
+			audioSelectionParsed = self.getAudioSelectionParsed()
+			if not audioSelectionParsed or len(audioSelectionParsed) < 3:
+				ui.message(_("Finish marker position unavailable"))
+			else:
+				ui.message(_("Finish marker: {position}").format(position=audioSelectionParsed[2]))
+		except Exception:
+			ui.message(_("Finish marker position unavailable"))
+
+	@scriptHandler.script(
+		description=_("Announces selected duration."),
+		gesture="kb:alt+shift+d",
+		speakOnDemand=True,
+	)
+	def script_announceSelectionDuration(self, gesture):
+		try:
+			audioSelectionParsed = self.getAudioSelectionParsed()
+			if not audioSelectionParsed or len(audioSelectionParsed) < 4:
+				ui.message(_("Selection duration unavailable"))
+			else:
+				ui.message(_("Selection duration: {duration}").format(duration=audioSelectionParsed[3]))
+		except Exception:
+			ui.message(_("Selection duration unavailable"))
+
+	@scriptHandler.script(
+		description=_("Announces the active control."),
+		gesture="kb:alt+shift+a",
+		speakOnDemand=True,
+	)
+	def script_announceActiveControl(self, gesture):
+		try:
+			focus = api.getFocusObject()
+			controlName = focus.name if focus.name else "Unnamed"
+			controlType = focus.role.displayString if hasattr(focus.role, 'displayString') else str(focus.role)
+			ui.message(f"{controlName} {controlType}")
+		except Exception:
+			ui.message(_("Active control unavailable"))
+
+	@scriptHandler.script(
+		description=_("Announces the cursor position in seconds."),
+		gesture="kb:alt+shift+u",
 		speakOnDemand=True,
 	)
 	def script_announceAudioPosition(self, gesture):
-		# Shouldn't say anything unless in audio editing view.
-		ui.message(self.getAudioPos())
+		if not self.isTrackLoaded():
+			ui.message(_("No track loaded"))
+		else:
+			ui.message(self.getAudioPos())
 
 	@scriptHandler.script(
-		# Translators: Input help mode message for a Goldwave command.
+		description=_("Announces elapsed time."),
+		gesture="kb:alt+shift+e",
+		speakOnDemand=True,
+	)
+	def script_announceElapsedTime(self, gesture):
+		if not self.isTrackLoaded():
+			ui.message(_("No track loaded"))
+		else:
+			audioPos = self.getAudioPos()
+			ui.message(_("Elapsed: {elapsed}").format(elapsed=audioPos))
+
+	@scriptHandler.script(
+		description=_("Announces remaining length of the audio track."),
+		gesture="kb:alt+shift+r",
+		speakOnDemand=True,
+	)
+	def script_announceRemainingTime(self, gesture):
+		if not self.isTrackLoaded():
+			ui.message(_("No track loaded"))
+			return
+		audioPos = self.getAudioPos(raw=True)
+		if not audioPos or " " in audioPos or not self.getTrackLength():
+			ui.message(_("Cannot tell you remaining time for the current track"))
+		else:
+			if ":" in audioPos:
+				remainingTime = self.getRemainingTime(audioPos)
+				ui.message(_("Remaining: {remaining}").format(remaining=remainingTime))
+			elif float(audioPos) == 0.0:
+				ui.message(_("Remaining: {remaining}").format(remaining=self.getTrackLength(raw=self.appModule.productVersion >= "7")))
+			else:
+				remainingTime = self.getRemainingTime(audioPos)
+				ui.message(_("Remaining: {remaining}").format(remaining=remainingTime))
+
+	# Audio selection summary
+	@scriptHandler.script(
 		description=_("Announces a summary on audio selection info such as selection duration."),
 		gesture="kb:control+nvda+3",
 		speakOnDemand=True,
 	)
 	def script_announceAudioSelection(self, gesture):
 		try:
-			# Parse this string to get individual info such as marker positions.
 			audioSelectionParsed = self.getAudioSelectionParsed()
-			if not audioSelectionParsed:
-				# Translators: Presented when there is no audio selection summary available.
+			if not audioSelectionParsed or len(audioSelectionParsed) < 4:
 				ui.message(
 					_("Unable to obtain audio selection summary. Please close and reopen the audio track.")
 				)
 			else:
 				ui.message(
-					# Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
 					_("{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}").format(
 						audioSelectionStart=audioSelectionParsed[0],
 						audioSelectionEnd=audioSelectionParsed[2],
@@ -387,43 +530,25 @@ class SoundWindow(IAccessible):
 		except Exception:
 			pass
 
+	# Track length
 	@scriptHandler.script(
-		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces total length of the audio track."),
 		gesture="kb:control+nvda+2",
 		speakOnDemand=True,
 	)
 	def script_announceTrackLength(self, gesture):
-		trackLengthSTR = self.getTrackLength(raw=self.appModule.productVersion >= "7")
-		if not trackLengthSTR:
-			# Translators: Presented when there is no track length information.
-			ui.message(_("Track length is unavailable. Please close and reopen the audio track."))
+		if not self.isTrackLoaded():
+			ui.message(_("No track loaded"))
 		else:
-			ui.message(_("Track length: {trackLength}").format(trackLength=trackLengthSTR))
-
-	@scriptHandler.script(
-		# Translators: Input help mode message for a Goldwave command.
-		description=_("Announces remaining length of the audio track."),
-		gesture="kb:NVDA+shift+r",
-		speakOnDemand=True,
-	)
-	def script_announceRemainingTime(self, gesture):
-		audioPos = self.getAudioPos(raw=True)
-		if not audioPos or " " in audioPos or not self.getTrackLength():
-			# Translators: An error message presented when remaining time cannot be anounced.
-			ui.message(_("Cannot tell you remaining time for the current track"))
-		else:
-			if ":" in audioPos:
-				ui.message(self.getRemainingTime(audioPos))
-			elif float(audioPos) == 0.0:
-				ui.message(self.getTrackLength(raw=self.appModule.productVersion >= "7"))
+			trackLengthSTR = self.getTrackLength(raw=self.appModule.productVersion >= "7")
+			if not trackLengthSTR:
+				ui.message(_("Track length is unavailable. Please close and reopen the audio track."))
 			else:
-				ui.message(self.getRemainingTime(audioPos))
+				ui.message(_("Track length: {trackLength}").format(trackLength=trackLengthSTR))
 
 	# Audio channels and zoom level.
 
 	@scriptHandler.script(
-		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces the audio channel you are editing."),
 		gesture="kb:control+nvda+1",
 		speakOnDemand=True,
@@ -431,34 +556,28 @@ class SoundWindow(IAccessible):
 	def script_announceAudioChannels(self, gesture):
 		channelSTR = self.getAudioChannels()
 		if channelSTR in ["Multiple", "All"]:
-			# Translators: Presented when all or multiple channels (in 3.1, 5.1 or 7.1 channels) are selected
-			# (GoldWave 6 and higher).
 			ui.message(self.audioChannelValues[channelSTR])
 		else:
 			ui.message(
-				# Translators: Presented to indicate the selected channel for the track
-				# (example output: "Selected channel: mono").
-				_("Selected channel: {audioChannel}").format(audioChannel=self.audioChannelValues[channelSTR])
+				_("Selected channel: {audioChannel}").format(
+					audioChannel=self.audioChannelValues.get(channelSTR, channelSTR)
+				)
 			)
 
-	# Change and announce audio channels.
 	@scriptHandler.script(gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a"])
 	def script_selectChannel(self, gesture):
 		gesture.send()
+		time.sleep(0.05)
 		self.script_announceAudioChannels(gesture)
 
 	@scriptHandler.script(
-		# Translators: Input help mode message for a Goldwave command.
 		description=_("Announces audio zoom level."),
 		gesture="kb:control+nvda+4",
 		speakOnDemand=True,
 	)
 	def script_announceZoomLevel(self, gesture):
-		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 		ui.message(_("Zoom level: {zoomLevel}").format(zoomLevel=self.getZoomLevel()))
 
-	# Change and announce zoom levels.
-	# All of them involve pressing the shift key, so just use a creative list comprehension.
 	@scriptHandler.script(
 		gestures=[
 			f"kb:shift+{command}"
@@ -467,6 +586,7 @@ class SoundWindow(IAccessible):
 	)
 	def script_changeZoomLevel(self, gesture):
 		gesture.send()
+		time.sleep(0.05)
 		self.script_announceZoomLevel(gesture)
 
 
@@ -476,27 +596,19 @@ class AppModule(appModuleHandler.AppModule):
 		global multiInstance
 		multiInstance += 1
 
-	# Presets and control windows: Work with buttons with custom window class names.
-
 	def event_NVDAObject_init(self, obj: NVDAObject):
-		# Provide standardized control roles for the following objects.
 		if isinstance(obj, Window):
-			# For working with buttons such as presets window and control window.
 			if obj.windowClassName in ("TBitton", "TImageButton"):
 				obj.role = controlTypes.Role.BUTTON
-			# For windows which NVDA should recognize as dialogs.
 			elif (
 				"Form" in obj.windowClassName
 				and "MainForm" not in obj.windowClassName
 				or obj.windowClassName == "TEffectWrapper"
 			):
-				# In GoldWave 6, the sound window has the window class name of "tSoundForm"
-				# and should not be recognized as a dialog.
 				if obj.windowClassName != "TSoundForm":
 					obj.role = controlTypes.Role.DIALOG
 
 	def chooseNVDAObjectOverlayClasses(self, obj: NVDAObject, clsList: list[NVDAObject]) -> None:
-		# Custom NVDA overlay objects for sound window and edit fields:
 		if obj.windowClassName == "TSoundForm":
 			clsList.insert(0, SoundWindow)
 		elif obj.windowClassName in ("TNumEdit", "TTimeEdit"):
@@ -506,12 +618,10 @@ class AppModule(appModuleHandler.AppModule):
 			except ValueError:
 				pass
 
-	# Cache the needed status bar objects.
 	statusBarCache: dict[int, NVDAObject] = {}
 
 	def _get_statusBars(self, statBarIndex: int, refill: bool = False) -> NVDAObject:
 		global multiInstance
-		# In case multiple instances of GoldWave are running, flush the status bar cache.
 		index = 0
 		if refill or multiInstance > 1 or not len(self.statusBarCache):
 			for child in api.getForegroundObject().children:
