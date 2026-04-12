@@ -1,10 +1,10 @@
-# GoldWave #
+# GoldWave
 
 * Authors: Joseph Lee, Day Garwood, NVDA contributors.
 
 This app module enhances access and usage of GoldWave audio editor.
 
-## Shortcuts ##
+## Shortcuts
 
 All commands support speech on demand mode.
 
