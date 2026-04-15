@@ -1,11 +1,10 @@
-# GoldWave #
+# GoldWave
 
 * Tekijät: Joseph Lee, NVDA:n tekijät.
 
-Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja
-käytettävyyttä.
+Tämä sovellusmoduuli parantaa GoldWave-äänimuokkaimen saavutettavuutta ja käytettävyyttä.
 
-## Pikanäppäimet ##
+## Pikanäppäimet
 
 Kaikki komennot tukevat "pyydettäessä"-puhetilaa.
 
@@ -16,24 +15,18 @@ Kaikki komennot tukevat "pyydettäessä"-puhetilaa.
 * Ctrl+NVDA+3: Antaa yhteenvedon raidan valitun kohdan tiedoista.
 * Control+NVDA+4: Ilmoittaa zoomauksen tason.
 
-Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman
-käsikirjassa.
+Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman käsikirjassa.
 
 Huom: GoldWave 6 tai uudempi sekä Windows 10 tai uudempi vaaditaan.
 
 ## Versio 25.07
 
-* Lisäosan koodin vakautta parannettu Pyrightin (Pythonin staattisen
-  tyypintarkistustyökalun) avulla.
-* Paranneltu äänen valinnan, zoomaustason ja raidan sijainnin ilmoituksia
-  GoldWave 7:ssä.
+* Lisäosan koodin vakautta parannettu Pyrightin (Pythonin staattisen tyypintarkistustyökalun) avulla.
+* Paranneltu äänen valinnan, zoomaustason ja raidan sijainnin ilmoituksia GoldWave 7:ssä.
 
 ## Versio 25.04
 
-* Komentojen ilmoitustila on korvattu "pyydettäessä"-puhetilalla. Tässä
-  tilassa GoldWaven komennoista, kuten aloitusmerkin määrittämisestä, ei
-  anneta puhepalautetta, mutta tietoa antavat komennot, kuten äänentoiston
-  sijainti, puhutaan.
+* Komentojen ilmoitustila on korvattu "pyydettäessä"-puhetilalla. Tässä tilassa GoldWaven komennoista, kuten aloitusmerkin määrittämisestä, ei anneta puhepalautetta, mutta tietoa antavat komennot, kuten äänentoiston sijainti, puhutaan.
 
 ## Versio 25.02
 
@@ -43,55 +36,42 @@ Huom: GoldWave 6 tai uudempi sekä Windows 10 tai uudempi vaaditaan.
 ## Versio 25.01
 
 * Tuki GoldWave 7:lle (edellyttää 64-bittistä Windows 10:tä tai uudempaa).
-* Latauslinkkiä ei enää sisällytetä lisäosan dokumentaatioon. Voit ladata
-  lisäosan NV Accessin lisäosakaupasta.
-* Virheidentarkistustyökalu vaihdettu Flake8:sta Ruff:iin ja lisäosamoduulit
-  muotoiltu uudelleen paremmin NVDA:n koodauskäytäntöjä vastaaviksi.
-* Poistettu tuki Lisäosien päivittäjä -lisäosan automaattiselle
-  päivitystoiminnolle.
+* Latauslinkkiä ei enää sisällytetä lisäosan dokumentaatioon. Voit ladata lisäosan NV Accessin lisäosakaupasta.
+* Virheidentarkistustyökalu vaihdettu Flake8:sta Ruff:iin ja lisäosamoduulit muotoiltu uudelleen paremmin NVDA:n koodauskäytäntöjä vastaaviksi.
+* Poistettu tuki Lisäosien päivittäjä -lisäosan automaattiselle päivitystoiminnolle.
 
 ## Versio 23.02
 
 * Edellyttää NVDA 2022.4:ää tai uudempaa.
-* EWindows 10 21H2 (marraskuun 2021 päivitys/koontiversio 19044) tai uudempi
-  vaaditaan.
+* EWindows 10 21H2 (marraskuun 2021 päivitys/koontiversio 19044) tai uudempi vaaditaan.
 
 ## Versio 23.01
 
 * Edellyttää NVDA 2022.3:ea tai uudempaa.
-* Windows 10 tai uudempi vaaditaan, koska Microsoft ei enää tue Windows
-  7:ää, 8:aa tai 8.1:tä tammikuusta 2023 alkaen.
+* Windows 10 tai uudempi vaaditaan, koska Microsoft ei enää tue Windows 7:ää, 8:aa tai 8.1:tä tammikuusta 2023 alkaen.
 
 ## Versio 22.03
 
 * Edellyttää NVDA 2021.3:ea tai uudempaa.
-* Varoitus näytetään yritettäessä asentaa lisäosaa Windows 7:ään, 8:aan tai
-  8.1:een.
+* Varoitus näytetään yritettäessä asentaa lisäosaa Windows 7:ään, 8:aan tai 8.1:een.
 
 ## Versio 21.10
 
-* NVDA 2021.2 tai uudempi vaaditaan tähän lisäosaan vaikuttavien
-  NVDA-muutosten takia.
-* NVDA ei enää toista GoldWave 6.57:ssä ja uudemmissa avatun tiedoston nimeä
-  toisto/kelaa taaksepäin/pysäytä -näppäimiä painettaessa.
+* NVDA 2021.2 tai uudempi vaaditaan tähän lisäosaan vaikuttavien NVDA-muutosten takia.
+* NVDA ei enää toista GoldWave 6.57:ssä ja uudemmissa avatun tiedoston nimeä toisto/kelaa taaksepäin/pysäytä -näppäimiä painettaessa.
 
 ## Versio 21.06
 
-* Ratkaistu lisää koodaustyylin ongelmia sekä mahdollisia bugeja Flake8:n
-  kanssa.
+* Ratkaistu lisää koodaustyylin ongelmia sekä mahdollisia bugeja Flake8:n kanssa.
 
 ## Versio 20.06
 
-* Ratkaistu useita koodaustyylin ongelmia sekä mahdollisia bugeja Flake8:n
-  kanssa.
+* Ratkaistu useita koodaustyylin ongelmia sekä mahdollisia bugeja Flake8:n kanssa.
 
 ## Versio 20.04
 
-* Lisätty syöteohjeviestit jäljellä olevan ajan ilmoittavalle komennolle
-  (NVDA+Vaihto+R).
-* Komentojen puhumisen käyttöön ottava tai käytöstä poistava komento
-  (NVDA+Vaihto+C) näkyy nyt GoldWave-kategoriassa NVDA:n
-  Näppäinkomennot-valintaikkunassa.
+* Lisätty syöteohjeviestit jäljellä olevan ajan ilmoittavalle komennolle (NVDA+Vaihto+R).
+* Komentojen puhumisen käyttöön ottava tai käytöstä poistava komento (NVDA+Vaihto+C) näkyy nyt GoldWave-kategoriassa NVDA:n Näppäinkomennot-valintaikkunassa.
 
 ## Versio 20.01
 
@@ -100,25 +80,20 @@ Huom: GoldWave 6 tai uudempi sekä Windows 10 tai uudempi vaaditaan.
 ## Versio 19.11
 
 * Windows 7 SP1, GoldWave 6.x ja NVDA 2019.1 tai uudempi vaaditaan.
-* Lisätty ohjeviesti ääni-ikkunalle (käytettävissä, mikäli Säätimen
-  käyttöapu -lisäosa on asennettuna).
+* Lisätty ohjeviesti ääni-ikkunalle (käytettävissä, mikäli Säätimen käyttöapu -lisäosa on asennettuna).
 
 ## Versio 18.12
 
-* NVDA ei enää näytä olevan tekemättä mitään tai toista virheääniä tiettyjä
-  GoldWave-komentoja suoritettaessa, kun komentojen puhuminen on poistettu
-  käytöstä (tämä voi johtaa joissakin tapauksissa outoon käyttäytymiseen).
+* NVDA ei enää näytä olevan tekemättä mitään tai toista virheääniä tiettyjä GoldWave-komentoja suoritettaessa, kun komentojen puhuminen on poistettu käytöstä (tämä voi johtaa joissakin tapauksissa outoon käyttäytymiseen).
 * Sisäisiä muutoksia tulevien NVDA-versioiden tukemiseksi.
 
 ## Versio 18.07
 
-* Korjattu ongelma, jossa etunollia ei näytetty yritettäessä hakea raidan
-  jäljellä olevaa aikaa.
+* Korjattu ongelma, jossa etunollia ei näytetty yritettäessä hakea raidan jäljellä olevaa aikaa.
 
 ## Versio 17.05
 
-* Lisätty mahdollisuus virheenkorjaustietojen tarjoamiseen, kun NVDA:ta
-  ajetaan virheenkorjaus-lokitasolla (NVDA 2017.1 tai uudempi).
+* Lisätty mahdollisuus virheenkorjaustietojen tarjoamiseen, kun NVDA:ta ajetaan virheenkorjaus-lokitasolla (NVDA 2017.1 tai uudempi).
 * Käännöksiä päivitetty.
 
 ## Versio 16.12
@@ -127,52 +102,36 @@ Huom: GoldWave 6 tai uudempi sekä Windows 10 tai uudempi vaaditaan.
 
 ## Muutokset versiossa 4.0
 
-* Lisäosan koodivarasto on muuttanut GitHubiin (sijaitsee nyt osoitteessa
-  https://github.com/josephsl/goldwave).
-* Suorituskykyä paranneltu tietoja, kuten kanavan nimeä ja muita
-  tilatietoja, haettaessa.
+* Lisäosan koodivarasto on muuttanut GitHubiin (sijaitsee nyt osoitteessa https://github.com/josephsl/goldwave).
+* Suorituskykyä paranneltu tietoja, kuten kanavan nimeä ja muita tilatietoja, haettaessa.
 
 ## Muutokset versiossa 3.0
 
-* Lisätty nykyisen raidan jäljellä olevan ajan ilmoittava komento
-  (NVDA+Vaihto+R).
+* Lisätty nykyisen raidan jäljellä olevan ajan ilmoittava komento (NVDA+Vaihto+R).
 * Pieniä parannuksia tilatietoja, kuten kanavaa ilmoitettaessa.
 
 ## Muutokset versiossa 2.0
 
-* Tuki GoldWave 6:lle, 64-bittinen versio mukaan lukien (katso huomautus
-  edeltä).
+* Tuki GoldWave 6:lle, 64-bittinen versio mukaan lukien (katso huomautus edeltä).
 * Ohje on käytettävissä Lisäosien hallinnasta (NVDA 2014.3 ja uudemmat).
-* NVDA ilmoittaa nyt valitun kanavan painaessasi kanavanvalitsemiskomentoa,
-  kuten Control+Shift+L, joka valitsee vasemman.
-* Erilaisia numeeristen muokkauskenttien, kuten Censor-äänitehosteen ja
-  Mix-valintaikkunan ajanvalitsimen, ongelmia on korjattu, mukaan lukien
-  tekstin valitseminen, arvojen päivittäminen jne.
+* NVDA ilmoittaa nyt valitun kanavan painaessasi kanavanvalitsemiskomentoa, kuten Control+Shift+L, joka valitsee vasemman.
+* Erilaisia numeeristen muokkauskenttien, kuten Censor-äänitehosteen ja Mix-valintaikkunan ajanvalitsimen, ongelmia on korjattu, mukaan lukien tekstin valitseminen, arvojen päivittäminen jne.
 * Komentojenpuhumisasetus säilyy muihin ohjelmiin siirryttäessä.
 
 ## Muutokset versiossa 1.2
 
-* Korjattu ongelma, jossa NVDA:lla oli vaikeuksia joidenkin muokkauskenttien
-  lukemisessa.
+* Korjattu ongelma, jossa NVDA:lla oli vaikeuksia joidenkin muokkauskenttien lukemisessa.
 * Uusia ja päivitettyjä käännöksiä.
-* Huomaa, että äänen valintaan käytettävät sekä muut tilakomennot eivät ehkä
-  toimi odotetusti joissakin järjestelmissä NVDA:han äskettäin tehtyjen
-  muutosten vuoksi.
+* Huomaa, että äänen valintaan käytettävät sekä muut tilakomennot eivät ehkä toimi odotetusti joissakin järjestelmissä NVDA:han äskettäin tehtyjen muutosten vuoksi.
 
 ## Muutokset versiossa 1.1
 
 * Tuki ilmoitusten näyttämiselle pistenäytöllä.
-* Ääniraidan valitun kohdan yhteenvetotiedot luetaan nyt muillakin kielillä
-  kuin englanniksi.
-* Lisää komentojen ilmoituksia, paikkamerkin sijainnin siirtäminen sekä
-  poisto/leikkaus mukaan lukien.
-* Korjattu numeeristen muokkauskenttien ongelma (esim. eri
-  äänitehostevalintaikkunoissa), joka aiheutti sen, että väärä kentän nimi
-  luettiin tai sitä ei luettu ollenkaan.
+* Ääniraidan valitun kohdan yhteenvetotiedot luetaan nyt muillakin kielillä kuin englanniksi.
+* Lisää komentojen ilmoituksia, paikkamerkin sijainnin siirtäminen sekä poisto/leikkaus mukaan lukien.
+* Korjattu numeeristen muokkauskenttien ongelma (esim. eri äänitehostevalintaikkunoissa), joka aiheutti sen, että väärä kentän nimi luettiin tai sitä ei luettu ollenkaan.
 * Uusia ja päivitettyjä käännöksiä.
 
 ## Muutokset versiossa 1.0
 
 * Ensimmäinen versio.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=goldwave

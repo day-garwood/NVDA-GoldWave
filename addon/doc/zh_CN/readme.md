@@ -1,10 +1,10 @@
-# GoldWave 支持插件 #
+# GoldWave 支持插件
 
 * 作者: Joseph Lee, NVDA contributors.
 
 此插件可增强GoldWave音频编辑器的无障碍体验性。
 
-## 快捷键 ##
+## 快捷键
 
 All commands support speech on demand mode.
 
@@ -21,17 +21,12 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Version 25.07
 
-* Made the add-on code more robust with help from Pyright (a Python static
-  type checker).
-* Improved audio selection, zoom level, and track position announcements in
-  GoldWave 7.
+* Made the add-on code more robust with help from Pyright (a Python static type checker).
+* Improved audio selection, zoom level, and track position announcements in GoldWave 7.
 
 ## Version 25.04
 
-* Removed command announcement mode, replaced with speech on demand mode. In
-  speech on demand mode, GoldWave specific commands such as setting start
-  marker will stay silent while informational commands such as audio
-  position will be spoken.
+* Removed command announcement mode, replaced with speech on demand mode. In speech on demand mode, GoldWave specific commands such as setting start marker will stay silent while informational commands such as audio position will be spoken.
 
 ## Version 25.02
 
@@ -41,12 +36,9 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 25.01
 
 * Support for GoldWave 7 (requires 64-bit Windows 10 or later).
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+* Download links for add-on releases are no longer included in add-on documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater add-on.
 
 ## Version 23.02
 
@@ -56,8 +48,7 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 23.01
 
 * NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
-  supported by Microsoft as of January 2023.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer supported by Microsoft as of January 2023.
 
 ## 版本22.03
 
@@ -144,5 +135,3 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## 版本1.0
 
 * 发布初始版本。
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=goldwave

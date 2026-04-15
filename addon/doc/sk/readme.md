@@ -1,11 +1,10 @@
-# GoldWave #
+# GoldWave
 
 * Autori: Joseph Lee, tím NVDA.
 
-Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru
-goldwave.
+Tento aplikačný modul zvyšuje prístupnosť a použiteľnosť zvukového editoru goldwave.
 
-## Klávesové skratky ##
+## Klávesové skratky
 
 All commands support speech on demand mode.
 
@@ -16,24 +15,18 @@ All commands support speech on demand mode.
 * Ctrl+NVDA+3: Oznámy informácie o aktuálnom výbere.
 * Ctrl+NVDA+4: oznamuje úroveň priblíženia.
 
-pre viac informácii o klávesových skratkách programu Goldwave si prečítajte
-návod k programu Goldwave.
+pre viac informácii o klávesových skratkách programu Goldwave si prečítajte návod k programu Goldwave.
 
 Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Version 25.07
 
-* Made the add-on code more robust with help from Pyright (a Python static
-  type checker).
-* Improved audio selection, zoom level, and track position announcements in
-  GoldWave 7.
+* Made the add-on code more robust with help from Pyright (a Python static type checker).
+* Improved audio selection, zoom level, and track position announcements in GoldWave 7.
 
 ## Version 25.04
 
-* Removed command announcement mode, replaced with speech on demand mode. In
-  speech on demand mode, GoldWave specific commands such as setting start
-  marker will stay silent while informational commands such as audio
-  position will be spoken.
+* Removed command announcement mode, replaced with speech on demand mode. In speech on demand mode, GoldWave specific commands such as setting start marker will stay silent while informational commands such as audio position will be spoken.
 
 ## Version 25.02
 
@@ -43,12 +36,9 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 25.01
 
 * Support for GoldWave 7 (requires 64-bit Windows 10 or later).
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+* Download links for add-on releases are no longer included in add-on documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater add-on.
 
 ## Version 23.02
 
@@ -58,21 +48,17 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 23.01
 
 * NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
-  supported by Microsoft as of January 2023.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer supported by Microsoft as of January 2023.
 
 ## Version 22.03
 
 * NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* A warning message will be displayed when attempting to install the add-on on Windows 7, 8, and 8.1.
 
 ## Version 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this add-on.
+* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the loaded file when pressing play/rewind/stop keys.
 
 ## Version 21.06
 
@@ -84,10 +70,8 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Verzia 20.04
 
-* Pridaný popis skratky na zisťovanie ostávajúceho času do nápovedy vstupu
-  (skratka nvda+shift+r).
-* Skratka na nastavenie hlásení (nvda+shift+c) sa odteraz dá upravovať v
-  dialógu klávesové skratky, vetva Goldwave.
+* Pridaný popis skratky na zisťovanie ostávajúceho času do nápovedy vstupu (skratka nvda+shift+r).
+* Skratka na nastavenie hlásení (nvda+shift+c) sa odteraz dá upravovať v dialógu klávesové skratky, vetva Goldwave.
 
 ## Verzia 20.01
 
@@ -96,13 +80,11 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Verzia 19.11
 
 * Vyžaduje sa Windows 7 SP1, GoldWave 6.x, a NVDA 2019.1.
-* Pridaná pomocná správa pre okno so zvukom (funguje ak sa používa doplnok
-  Pomoc na práci s prvkami).
+* Pridaná pomocná správa pre okno so zvukom (funguje ak sa používa doplnok Pomoc na práci s prvkami).
 
 ## Verzia 18.12
 
-* NVDA viac nehlási chybu pri opužití skratiek a súčasnom vypnutí
-  výrečnosti.
+* NVDA viac nehlási chybu pri opužití skratiek a súčasnom vypnutí výrečnosti.
 * Interné zmeny ako príprava na budúce verzie NVDA.
 
 ## Verzia 18.07
@@ -111,8 +93,7 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Verzia 17.05
 
-* Od verzie NVDA 2017.1 sa informácie o činosti doplnku zapisujú do logu
-  NVDA ak je nastavené zaznamenávanie na debug.
+* Od verzie NVDA 2017.1 sa informácie o činosti doplnku zapisujú do logu NVDA ak je nastavené zaznamenávanie na debug.
 * Nové a aktualizované preklady.
 
 ## Verzia 16.12
@@ -121,10 +102,8 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Zmeny vo verzii 4.0
 
-* Repozitár dopnku presunutý na GitHub
-  (https://github.com/josephsl/goldwave).
-* Zrýchlená odozva pri zisťovaní informácie o kanáloch a iných stavových
-  údajoch.
+* Repozitár dopnku presunutý na GitHub (https://github.com/josephsl/goldwave).
+* Zrýchlená odozva pri zisťovaní informácie o kanáloch a iných stavových údajoch.
 
 ## Zmeny vo verzii 3.0
 
@@ -134,35 +113,25 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Zmeny vo verzii 2.0
 
 * Podpora pre Goldwave 6 vrátane 64-bitovej verzie (pozrite poznámku vyššie)
-* Pomocník doplnku si môžete pozrieť priamo zo správcu doplnkov (od verzie
-  2014.3)
-* NVDA odteraz oznamuje vybratý kanál, ak na výber použijete skratky,a ko
-  napr ctrl+shift+l.
-* Vyriešené problémy s editačnými poliami v dialógu mix, takže správne
-  funguje výber textu a úprava údajov.
-* Oznamovanie funkcií si NVDA zapamätá aj po prechode do okna inej
-  aplikácie.
+* Pomocník doplnku si môžete pozrieť priamo zo správcu doplnkov (od verzie 2014.3)
+* NVDA odteraz oznamuje vybratý kanál, ak na výber použijete skratky,a ko napr ctrl+shift+l.
+* Vyriešené problémy s editačnými poliami v dialógu mix, takže správne funguje výber textu a úprava údajov.
+* Oznamovanie funkcií si NVDA zapamätá aj po prechode do okna inej aplikácie.
 
 ## Zmeny pre verziu 1.2
 
-* opravená chyba, pri ktorej NVDA neoznamovalo správne niektoré editačné
-  polia.
+* opravená chyba, pri ktorej NVDA neoznamovalo správne niektoré editačné polia.
 * Nové a aktualizované preklady.
-* Berte prosím na vedomie, že vvzhľadom na posledné zmeny v NVDA, niektoré
-  príkazy na označovanie audia nemusia fungovať korektne.
+* Berte prosím na vedomie, že vvzhľadom na posledné zmeny v NVDA, niektoré príkazy na označovanie audia nemusia fungovať korektne.
 
 ## Zmeny pre verziu 1.1
 
 * Podpora pre zobrazovanie správ na brailovských riadkoch.
 * Súhrn výberu je oznamovaný aj v iných jazykoch, nie len v angličtine.
-* Pridané oznamovanie odstránenia za označeným úsekom a oznamovanie
-  vkladania rozdeľovačov.
-* opravený problém, keď boli nesprávne oznamované popisy editačných polí v
-  dialógoch s efektami.
+* Pridané oznamovanie odstránenia za označeným úsekom a oznamovanie vkladania rozdeľovačov.
+* opravený problém, keď boli nesprávne oznamované popisy editačných polí v dialógoch s efektami.
 * Nové a aktualizované preklady.
 
 ## Zmeny pre verziu 1.0
 
 * prvé vydanie.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=goldwave

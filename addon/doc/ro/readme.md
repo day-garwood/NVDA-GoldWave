@@ -1,39 +1,32 @@
-# GoldWave #
+# GoldWave
 
 * Autori: Joseph Lee împreună cu contributorii NVDA.
 
 This app module enhances access and usage of GoldWave audio editor.
 
-## Scurtături ##
+## Scurtături
 
 All commands support speech on demand mode.
 
 * Control+Shift+P: Anunță poziția curentă a melodiei.
-* NVDA+Shift+R: Anunță timpul rămas pentru melodia care este în curs de
-  editare.
+* NVDA+Shift+R: Anunță timpul rămas pentru melodia care este în curs de editare.
 * Control+NVDA+1: Anunță canalul în care editezi.
 * Control+NVDA+2: Anunță durata totală a fișierului audio.
 * Control+NVDA+3: announces a summary on audio selection information.
 * Control+NVDA+4: Anunță nivelul zoom.
 
-For more information about GoldWave and keyboard commands, refer to GoldWave
-Manual.
+For more information about GoldWave and keyboard commands, refer to GoldWave Manual.
 
 Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Version 25.07
 
-* Made the add-on code more robust with help from Pyright (a Python static
-  type checker).
-* Improved audio selection, zoom level, and track position announcements in
-  GoldWave 7.
+* Made the add-on code more robust with help from Pyright (a Python static type checker).
+* Improved audio selection, zoom level, and track position announcements in GoldWave 7.
 
 ## Version 25.04
 
-* Removed command announcement mode, replaced with speech on demand mode. In
-  speech on demand mode, GoldWave specific commands such as setting start
-  marker will stay silent while informational commands such as audio
-  position will be spoken.
+* Removed command announcement mode, replaced with speech on demand mode. In speech on demand mode, GoldWave specific commands such as setting start marker will stay silent while informational commands such as audio position will be spoken.
 
 ## Version 25.02
 
@@ -43,12 +36,9 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 25.01
 
 * Support for GoldWave 7 (requires 64-bit Windows 10 or later).
-* Download links for add-on releases are no longer included in add-on
-  documentation. You can download the add-on from NV Access add-on store.
-* Switched linting tool from Flake8 to Ruff and reformatted add-on modules
-  to better align with NVDA coding standards.
-* Removed support for automatic add-on updates feature from Add-on Updater
-  add-on.
+* Download links for add-on releases are no longer included in add-on documentation. You can download the add-on from NV Access add-on store.
+* Switched linting tool from Flake8 to Ruff and reformatted add-on modules to better align with NVDA coding standards.
+* Removed support for automatic add-on updates feature from Add-on Updater add-on.
 
 ## Version 23.02
 
@@ -58,21 +48,17 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 23.01
 
 * NVDA 2022.3 or later is required.
-* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer
-  supported by Microsoft as of January 2023.
+* Windows 10 or later is required as Windows 7, 8, and 8.1 are no longer supported by Microsoft as of January 2023.
 
 ## Version 22.03
 
 * NVDA 2021.3 or later is required.
-* A warning message will be displayed when attempting to install the add-on
-  on Windows 7, 8, and 8.1.
+* A warning message will be displayed when attempting to install the add-on on Windows 7, 8, and 8.1.
 
 ## Version 21.10
 
-* NVDA 2021.2 or later is required due to changes to NVDA that affects this
-  add-on.
-* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the
-  loaded file when pressing play/rewind/stop keys.
+* NVDA 2021.2 or later is required due to changes to NVDA that affects this add-on.
+* In GoldWave 6.57 and later, NVDA will no longer repeat the name of the loaded file when pressing play/rewind/stop keys.
 
 ## Version 21.06
 
@@ -85,8 +71,7 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 20.04
 
 * Added input help messages for remainig time command (NVDA+Shift+R).
-* Toggle command announcement command (NVDA+Shift+C) will now show up under
-  "GoldWave" category in NVDA's input gestures dialog.
+* Toggle command announcement command (NVDA+Shift+C) will now show up under "GoldWave" category in NVDA's input gestures dialog.
 
 ## Version 20.01
 
@@ -95,26 +80,20 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 ## Version 19.11
 
 * Este necesar Windows 7 SP1, GoldWave 6.x, și NVDA 2019.1 sau mai nou.
-* A fost adăugat un mesaj de ajutor pentru fereastra sonoră (accesibil dacă
-  suplimentul Control Usage Assistant este i)
+* A fost adăugat un mesaj de ajutor pentru fereastra sonoră (accesibil dacă suplimentul Control Usage Assistant este i)
 
 ## Version 18.12
 
-* NVDA nu va mai afișa nici un mesaj sau reda vreun sunet de eroare atunci
-  când executați anumite comenzi GoldWave cu anunțul de comandă oprit
-  (aceasta ar putea avea ca rezultat un comportament nefiresc în unele
-  cazuri).
+* NVDA nu va mai afișa nici un mesaj sau reda vreun sunet de eroare atunci când executați anumite comenzi GoldWave cu anunțul de comandă oprit (aceasta ar putea avea ca rezultat un comportament nefiresc în unele cazuri).
 * Modificări interne în sprijinul  viitoarelor versiuni NVDA
 
 ## Versiunea 18.07
 
-* Fixed an issue where leading zeroes would not be displayed when trying to
-  obtain remaining time for a trakc.
+* Fixed an issue where leading zeroes would not be displayed when trying to obtain remaining time for a trakc.
 
 ## Versiunea 17.05
 
-* S-a adăugat abilitatea de furnizare a informațiilor diagnosticării atunci
-  când NVDA rulează cu diagnosticarea activată.
+* S-a adăugat abilitatea de furnizare a informațiilor diagnosticării atunci când NVDA rulează cu diagnosticarea activată.
 * Traduceri actualizate.
 
 ## Versiunea 16.12
@@ -123,54 +102,36 @@ Note: GoldWave 6 or later and Windows 10 or later is required.
 
 ## Modificări aduse în versiunea 4.0
 
-* Depozitul add-onului a fost mutat (Acum el este la
-  https://github.com/josephsl/goldwave).
-* Îmbunătățiri la performanță referitor la primirea informațiilor cum ar fi
-  numele canalului și alte informații de stare.
+* Depozitul add-onului a fost mutat (Acum el este la https://github.com/josephsl/goldwave).
+* Îmbunătățiri la performanță referitor la primirea informațiilor cum ar fi numele canalului și alte informații de stare.
 
 ## Modificări aduse în versiunea 3.0
 
-* Added a command to announce remaining time for the current track
-  (NVDA+Shift+R).
-* Ceva îmbunătățiri referitor la primirea informațiilor de stare cum ar fi
-  informații despre canal.
+* Added a command to announce remaining time for the current track (NVDA+Shift+R).
+* Ceva îmbunătățiri referitor la primirea informațiilor de stare cum ar fi informații despre canal.
 
 ## Modificări aduse în 2.0
 
-* Suport pentru Goldwave 6, inclusiv versiunea Goldwave pentru 64 biți
-  (citește nota de mai sus).
-* Ajutorul add-on-ului acum poate fi accesat din managerul de add-on-uri
-  (NVDA 2014.3 sau mai nou).
-* NVDA acum anunță canalul selectat dacă apeși comenzile de selecție a
-  canalului cum ar fi control+shift+L pentru canalul din stânga.
-* Rezolvări ale problemelor referitoare la câmpurile de editare cum ar fi
-  câmpul de cursor și selectorul de timp în dialogul de mix, inclusiv
-  selectarea textului, actualizarea valorilor și așa mai departe.
-* Setarea comenzii de anunțare va fi re-amintită când se comută la alte
-  programe.
+* Suport pentru Goldwave 6, inclusiv versiunea Goldwave pentru 64 biți (citește nota de mai sus).
+* Ajutorul add-on-ului acum poate fi accesat din managerul de add-on-uri (NVDA 2014.3 sau mai nou).
+* NVDA acum anunță canalul selectat dacă apeși comenzile de selecție a canalului cum ar fi control+shift+L pentru canalul din stânga.
+* Rezolvări ale problemelor referitoare la câmpurile de editare cum ar fi câmpul de cursor și selectorul de timp în dialogul de mix, inclusiv selectarea textului, actualizarea valorilor și așa mai departe.
+* Setarea comenzii de anunțare va fi re-amintită când se comută la alte programe.
 
 ## Modificări aduse în versiunea 1.2
 
-* S-a rezolvat o problemă datorită căreia  NVDA avea dificultăți anunțând
-  câteva câmpuri de editare.
+* S-a rezolvat o problemă datorită căreia  NVDA avea dificultăți anunțând câteva câmpuri de editare.
 * Traduceri noi și actualizate.
-* Te rugăm să reții! Din cauza schimbărilor recente în NVDA, selecția audio
-  și alte comenzi de status pot să nu funcționeze cum ar trebui la unele
-  dispozitive.
+* Te rugăm să reții! Din cauza schimbărilor recente în NVDA, selecția audio și alte comenzi de status pot să nu funcționeze cum ar trebui la unele dispozitive.
 
-## Modificări aduse în versiunea 1.11
+## Modificări aduse în versiunea 1.1
 
 * Suport pentru anunțări de mesaje în braille.
 * Rezumatul selecției audio este prezentat în mai multe limbi decât Engleza.
-* Mai multe comenzi de anunțare au fost adăugate incusiv mișcarea poziției
-  și ștergerea sau tăierea operațiunilor.
-* S-a rezolvat o problemă în câmpurile de editare numerice cum ar fi
-  dialoguri diverse de efecte unde nu se vorbea nimic sau se pronunța numele
-  incorect a câmpului de editare.
+* Mai multe comenzi de anunțare au fost adăugate incusiv mișcarea poziției și ștergerea sau tăierea operațiunilor.
+* S-a rezolvat o problemă în câmpurile de editare numerice cum ar fi dialoguri diverse de efecte unde nu se vorbea nimic sau se pronunța numele incorect a câmpului de editare.
 * Traduceri noi și actualizate.
 
 ## Modificări aduse în 1.0
 
 * Lansarea oficială.
-
-[1]: https://www.nvaccess.org/addonStore/legacy?file=goldwave
