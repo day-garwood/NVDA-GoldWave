@@ -17,7 +17,7 @@ All commands support speech on demand mode.
 
 For more information about GoldWave and keyboard commands, refer to GoldWave Manual.
 
-Note: GoldWave 6 or later and Windows 10 or later is required.
+Note: GoldWave 6 or later and Windows 10 or 11 are required.
 
 ## Version 25.08.1
 
