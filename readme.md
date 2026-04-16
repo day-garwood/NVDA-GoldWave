@@ -19,6 +19,10 @@ For more information about GoldWave and keyboard commands, refer to GoldWave Man
 
 Note: GoldWave 6 or later and Windows 10 or 11 are required.
 
+## Version 26.05
+
+* NVDA 2025.3.3 or later is required.
+
 ## Version 25.08.1
 
 * Fixed bugs regarding position and selection time announcements.
