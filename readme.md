@@ -18,3 +18,7 @@ All commands support speech on demand mode.
 For more information about GoldWave and keyboard commands, refer to GoldWave Manual.
 
 Note: GoldWave 6 or later and Windows 10 or 11 are required.
+
+For a list of changes made between each add-on releases, refer to [changelogs for add-on releases][1] document.
+
+[1]: https://github.com/day-garwood/NVDA-GoldWave/blob/main/changes.md
