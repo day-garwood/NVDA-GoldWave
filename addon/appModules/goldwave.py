@@ -472,8 +472,8 @@ class SoundWindow(IAccessible):
 
 
 class AppModule(appModuleHandler.AppModule):
-	def __init__(self, *args, **kwargs):
-		super().__init__(*args, **kwargs)
+	def __init__(self, processID: int, appName: str | None=None):
+		super().__init__(processID, appName)
 		global multiInstance
 		multiInstance += 1
 
