@@ -149,7 +149,7 @@ reportMissingTypeStubs = false
 # These are sorted alphabetically and should be enabled and moved to compliant rules section when resolved.
 reportImplicitStringConcatenation = false  # Lenthy sound window help message split over separate lines
 reportMissingImports = false  # NVDA Core modules
-reportMissingParameterType = false  # Script gestures
+reportMissingParameterType = false  # App module constructor
 reportUndefinedVariable = false  # _ = gettext.gettext function
 reportUnknownArgumentType = false  # Script gestures and other Python argument types
 reportUnknownMemberType = false  # NVDA Core attributes
