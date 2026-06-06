@@ -6,6 +6,7 @@
 import appModuleHandler
 import api
 import scriptHandler
+import inputCore
 import controlTypes
 from NVDAObjects.IAccessible import IAccessible
 
@@ -226,7 +227,7 @@ class SoundWindow(IAccessible):
 	# Audio editing scripts:
 
 	@scriptHandler.script(gesture="KB:[")
-	def script_dropStartMarker(self, gesture):
+	def script_dropStartMarker(self, gesture: inputCore.InputGesture):
 		try:
 			gesture.send()
 			# Translators: The start marker position for selecting parts of the audio track
@@ -238,7 +239,7 @@ class SoundWindow(IAccessible):
 			pass
 
 	@scriptHandler.script(gesture="KB:]")
-	def script_dropFinishMarker(self, gesture):
+	def script_dropFinishMarker(self, gesture: inputCore.InputGesture):
 		try:
 			gesture.send()
 			# Translators: The finish marker position for selecting parts of the audio track
@@ -250,62 +251,62 @@ class SoundWindow(IAccessible):
 			pass
 
 	@scriptHandler.script(gesture="kB:control+[")
-	def script_playSelection(self, gesture):
+	def script_playSelection(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when selected audio is playing.
 		ui.message(_("Play selection"))
 
 	@scriptHandler.script(gesture="KB:control+a")
-	def script_selectAll(self, gesture):
+	def script_selectAll(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when all parts of the audio track is selected.
 		ui.message(_("Select All"))
 
 	@scriptHandler.script(gesture="kb:control+q")
-	def script_dropCue(self, gesture):
+	def script_dropCue(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
 		ui.message(_("Cue"))
 
 	@scriptHandler.script(gesture="KB:q")
-	def script_dropCueAtStartMarker(self, gesture):
+	def script_dropCueAtStartMarker(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when audio cue is dropped at the start marker position.
 		ui.message(_("Cue dropped at start marker"))
 
 	@scriptHandler.script(gesture="KB:shift+q")
-	def script_dropCueAtFinishMarker(self, gesture):
+	def script_dropCueAtFinishMarker(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when an audio cue is dropped at the finish marker position.
 		ui.message(_("Cue dropped at finish marker"))
 
 	@scriptHandler.script(gesture="kb:control+j")
-	def script_moveStartMarkerToNextCuePos(self, gesture):
+	def script_moveStartMarkerToNextCuePos(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		ui.message(_("Start marker at next cue"))
 
 	@scriptHandler.script(gesture="kb:control+shift+j")
-	def script_moveStartMarkerToPrevCuePos(self, gesture):
+	def script_moveStartMarkerToPrevCuePos(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		ui.message(_("Start marker at previous cue"))
 
 	@scriptHandler.script(gesture="kb:alt+j")
-	def script_moveFinishMarkerToNextCuePos(self, gesture):
+	def script_moveFinishMarkerToNextCuePos(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when the finish marker is moved to the next cue position.
 		ui.message(_("Finish marker at next cue"))
 
 	@scriptHandler.script(gesture="kb:alt+shift+j")
-	def script_moveFinishMarkerToPrevCuePos(self, gesture):
+	def script_moveFinishMarkerToPrevCuePos(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when the start marker is moved to the next cue position.
 		ui.message(_("Finish marker at previous cue"))
 
 	# Handle both delete and trim.
 	@scriptHandler.script(gestures=["kb:delete", "kb:control+t"])
-	def script_deleteSelection(self, gesture):
+	def script_deleteSelection(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when audio selection is deleted.
 		ui.message(_("deleted"))
@@ -313,37 +314,37 @@ class SoundWindow(IAccessible):
 	# Playback and recording:
 
 	@scriptHandler.script(gestures=["KB:f2", "KB:f3", "kb:f4"])
-	def script_play(self, gesture):
+	def script_play(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when a track is playing in Goldwave.
 		ui.message(_("play"))
 
 	@scriptHandler.script(gesture="kb:f5")
-	def script_rewind(self, gesture):
+	def script_rewind(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when a track is rewinding in Goldwave.
 		ui.message(_("rewind"))
 
 	@scriptHandler.script(gesture="kb:f6")
-	def script_forward(self, gesture):
+	def script_forward(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when fast forwarding a track in Goldwave.
 		ui.message(_("fast forward"))
 
 	@scriptHandler.script(gestures=["kb:f7", "kb:control+f7"])
-	def script_pause(self, gesture):
+	def script_pause(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when pausing a track in Goldwave.
 		ui.message(_("pause"))
 
 	@scriptHandler.script(gestures=["kb:f8", "kb:control+f8"])
-	def script_stop(self, gesture):
+	def script_stop(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when stopping a track in in Goldwave.
 		ui.message(_("stop"))
 
 	@scriptHandler.script(gesture="kb:control+f9")
-	def script_startRecord(self, gesture):
+	def script_startRecord(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		# Translators: Presented when starting recording in Goldwave.
 		ui.message(_("record"))
@@ -356,7 +357,7 @@ class SoundWindow(IAccessible):
 		gesture="kb:control+shift+p",
 		speakOnDemand=True,
 	)
-	def script_announceAudioPosition(self, gesture):
+	def script_announceAudioPosition(self, gesture: inputCore.InputGesture):
 		# Shouldn't say anything unless in audio editing view.
 		ui.message(self.getAudioPos())
 
@@ -366,7 +367,7 @@ class SoundWindow(IAccessible):
 		gesture="kb:control+nvda+3",
 		speakOnDemand=True,
 	)
-	def script_announceAudioSelection(self, gesture):
+	def script_announceAudioSelection(self, gesture: inputCore.InputGesture):
 		try:
 			# Parse this string to get individual info such as marker positions.
 			audioSelectionParsed = self.getAudioSelectionParsed()
@@ -393,7 +394,7 @@ class SoundWindow(IAccessible):
 		gesture="kb:control+nvda+2",
 		speakOnDemand=True,
 	)
-	def script_announceTrackLength(self, gesture):
+	def script_announceTrackLength(self, gesture: inputCore.InputGesture):
 		trackLengthSTR = self.getTrackLength(raw=self.appModule.productVersion >= "7")
 		if not trackLengthSTR:
 			# Translators: Presented when there is no track length information.
@@ -407,7 +408,7 @@ class SoundWindow(IAccessible):
 		gesture="kb:NVDA+shift+r",
 		speakOnDemand=True,
 	)
-	def script_announceRemainingTime(self, gesture):
+	def script_announceRemainingTime(self, gesture: inputCore.InputGesture):
 		audioPos = self.getAudioPos(raw=True)
 		if not audioPos or " " in audioPos or not self.getTrackLength():
 			# Translators: An error message presented when remaining time cannot be anounced.
@@ -428,7 +429,7 @@ class SoundWindow(IAccessible):
 		gesture="kb:control+nvda+1",
 		speakOnDemand=True,
 	)
-	def script_announceAudioChannels(self, gesture):
+	def script_announceAudioChannels(self, gesture: inputCore.InputGesture):
 		channelSTR = self.getAudioChannels()
 		if channelSTR in ["Multiple", "All"]:
 			# Translators: Presented when all or multiple channels (in 3.1, 5.1 or 7.1 channels) are selected
@@ -443,7 +444,7 @@ class SoundWindow(IAccessible):
 
 	# Change and announce audio channels.
 	@scriptHandler.script(gestures=["kb:control+shift+l", "kb:control+shift+r", "kb:control+shift+a"])
-	def script_selectChannel(self, gesture):
+	def script_selectChannel(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		self.script_announceAudioChannels(gesture)
 
@@ -453,7 +454,7 @@ class SoundWindow(IAccessible):
 		gesture="kb:control+nvda+4",
 		speakOnDemand=True,
 	)
-	def script_announceZoomLevel(self, gesture):
+	def script_announceZoomLevel(self, gesture: inputCore.InputGesture):
 		# Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
 		ui.message(_("Zoom level: {zoomLevel}").format(zoomLevel=self.getZoomLevel()))
 
@@ -465,7 +466,7 @@ class SoundWindow(IAccessible):
 			for command in ["upArrow", "downArrow", "0", "1", "2", "3", "4", "5", "6", "a"]
 		]
 	)
-	def script_changeZoomLevel(self, gesture):
+	def script_changeZoomLevel(self, gesture: inputCore.InputGesture):
 		gesture.send()
 		self.script_announceZoomLevel(gesture)
 
