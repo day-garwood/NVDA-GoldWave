@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en">
+<file id="readme.md" original="https://raw.githubusercontent.com/day-garwood/NVDA-GoldWave/be7cdc00b591409df39852b48dd74167d52071bc/readme.md">
+<skeleton>
+# $(ID:1757977b-ae12-47dc-981a-f051e1b92412)
+
+* $(ID:8b8e4caf-5d20-48c4-9d8f-c2d0fc7e4442)
+
+$(ID:a0aaa0d8-b7bc-42cb-a8c9-13e9bc936a4f)
+
+## $(ID:87bcc57a-4963-49d1-bb28-76fe69363cd8)
+
+$(ID:62a73e7f-595c-47e2-bfdb-b43c24941a24)
+
+* $(ID:d2b61c62-bcc3-4ba7-84c2-1c7aff6cc017)
+* $(ID:09ab6954-0f14-45a1-a84a-887ab53f915b)
+* $(ID:714df0e7-364f-4809-91d0-17f6f0b3dc31)
+* $(ID:27e4b3b6-9915-469a-865a-3fefde650052)
+* $(ID:13ac6852-6417-4690-82ae-90865dd9bc8a)
+* $(ID:2b7204df-d759-4915-91d1-6a5e612c1adc)
+
+$(ID:0856bfcb-9fd8-470c-8435-db80afb87a3e)
+
+$(ID:6d2deafa-484b-4c37-b7e6-48dddf94c2d9)
+
+$(ID:4c30c718-0691-4c57-baa3-33f9d7147233)
+
+$(ID:03aa8054-c947-418c-b6bb-7af9917536fe)
+
+</skeleton>
+<unit id="1757977b-ae12-47dc-981a-f051e1b92412">
+<notes>
+<note appliesTo="source">line: 2</note>
+<note appliesTo="source">prefix: # </note>
+</notes>
+<segment>
+<source>GoldWave</source>
+</segment>
+</unit>
+<unit id="8b8e4caf-5d20-48c4-9d8f-c2d0fc7e4442">
+<notes>
+<note appliesTo="source">line: 4</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Authors: Joseph Lee, Day Garwood, NVDA contributors.</source>
+</segment>
+</unit>
+<unit id="a0aaa0d8-b7bc-42cb-a8c9-13e9bc936a4f">
+<notes>
+<note appliesTo="source">line: 6</note>
+</notes>
+<segment>
+<source>This app module enhances access and usage of GoldWave audio editor.</source>
+</segment>
+</unit>
+<unit id="87bcc57a-4963-49d1-bb28-76fe69363cd8">
+<notes>
+<note appliesTo="source">line: 8</note>
+<note appliesTo="source">prefix: ## </note>
+</notes>
+<segment>
+<source>Shortcuts</source>
+</segment>
+</unit>
+<unit id="62a73e7f-595c-47e2-bfdb-b43c24941a24">
+<notes>
+<note appliesTo="source">line: 10</note>
+</notes>
+<segment>
+<source>All commands support speech on demand mode.</source>
+</segment>
+</unit>
+<unit id="d2b61c62-bcc3-4ba7-84c2-1c7aff6cc017">
+<notes>
+<note appliesTo="source">line: 12</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Control+Shift+P: Announces current track position.</source>
+</segment>
+</unit>
+<unit id="09ab6954-0f14-45a1-a84a-887ab53f915b">
+<notes>
+<note appliesTo="source">line: 13</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>NVDA+Shift+R: Announces remaining time for the currently editing track.</source>
+</segment>
+</unit>
+<unit id="714df0e7-364f-4809-91d0-17f6f0b3dc31">
+<notes>
+<note appliesTo="source">line: 14</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Control+NVDA+1: Announces the channel you are editing.</source>
+</segment>
+</unit>
+<unit id="27e4b3b6-9915-469a-865a-3fefde650052">
+<notes>
+<note appliesTo="source">line: 15</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Control+NVDA+2: Announces the total length of the audio file.</source>
+</segment>
+</unit>
+<unit id="13ac6852-6417-4690-82ae-90865dd9bc8a">
+<notes>
+<note appliesTo="source">line: 16</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Control+NVDA+3: announces a summary on audio selection information.</source>
+</segment>
+</unit>
+<unit id="2b7204df-d759-4915-91d1-6a5e612c1adc">
+<notes>
+<note appliesTo="source">line: 17</note>
+<note appliesTo="source">prefix: * </note>
+</notes>
+<segment>
+<source>Control+NVDA+4: Announces the zoom level.</source>
+</segment>
+</unit>
+<unit id="0856bfcb-9fd8-470c-8435-db80afb87a3e">
+<notes>
+<note appliesTo="source">line: 19</note>
+</notes>
+<segment>
+<source>For more information about GoldWave and keyboard commands, refer to GoldWave Manual.</source>
+</segment>
+</unit>
+<unit id="6d2deafa-484b-4c37-b7e6-48dddf94c2d9">
+<notes>
+<note appliesTo="source">line: 21</note>
+</notes>
+<segment>
+<source>Note: GoldWave 6 or later and Windows 10 or 11 are required.</source>
+</segment>
+</unit>
+<unit id="4c30c718-0691-4c57-baa3-33f9d7147233">
+<notes>
+<note appliesTo="source">line: 23</note>
+</notes>
+<segment>
+<source>For a list of changes made between each add-on releases, refer to [changelogs for add-on releases][1] document.</source>
+</segment>
+</unit>
+<unit id="03aa8054-c947-418c-b6bb-7af9917536fe">
+<notes>
+<note appliesTo="source">line: 25</note>
+</notes>
+<segment>
+<source>[1]: https://github.com/day-garwood/NVDA-GoldWave/blob/main/changes.md</source>
+</segment>
+</unit>
+</file>
+</xliff>
