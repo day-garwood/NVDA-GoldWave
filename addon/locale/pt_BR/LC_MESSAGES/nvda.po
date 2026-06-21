@@ -1,221 +1,250 @@
-# Brazilian Portuguese translation of GoldWave add-on.
-# Copyright (C) 2013-2020 NVDA Contributors.
-# This file is distributed under the same license as the NVDA package.
-# Cleverson Casarin Uliana <clever97@gmail.com>, 2013-2015.
-# Tiago Melo Casal <tcasal@intervox.nce.ufrj.br>, 2020.
-# Josevan Barbosa Fernandes <josevanfernandes@yahoo.com.br>, 2024.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: GoldWave\n"
-"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-05-21 18:04-0600\n"
-"Last-Translator: Josevan Fernandes <josevanfernandes@yahoo.com.br>\n"
-"Language-Team: NVDA Brazilian Portuguese translation team (Equipe de "
-"tradução do NVDA para Português Brasileiro) <clever97@gmail.com>\n"
+"Project-Id-Version: nvdaaddons\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-06-21 04:23+0000\n"
+"PO-Revision-Date: 2026-06-21 04:25\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.6\n"
-"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: nvdaaddons\n"
+"X-Crowdin-Project-ID: 780748\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: goldwave.pot\n"
+"X-Crowdin-File-ID: 180\n"
 
-msgid ""
-"This is GoldWave's sound window. You can use GoldWave commands to listen to "
-"and edit sound files. See GoldWave help for details."
-msgstr ""
-"Essa é a janela de som do GoldWave. Você pode usar os comandos GoldWave para "
-"ouvir e editar arquivos de som. Consulte a ajuda do GoldWave para obter "
-"detalhes."
+#: addon\appModules\goldwave.py:37
+msgid "This is GoldWave's sound window. You can use GoldWave commands to listen to and edit sound files. See GoldWave help for details."
+msgstr "Essa é a janela de som do GoldWave. Você pode usar os comandos GoldWave para ouvir e editar arquivos de som. Consulte a ajuda do GoldWave para obter detalhes."
 
 #. Translators: Presented when audio track position information can not be located.
+#: addon\appModules\goldwave.py:90
 msgid "Track position not available"
 msgstr "Posição de faixa não disponível"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:121
 msgid "Channel information unavailable"
 msgstr "Informações de canal indisponíveis"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:123
 msgid "mono"
-msgstr "mono"
+msgstr ""
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:125
 msgid "stereo"
 msgstr "estéreo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:127
 msgid "left"
 msgstr "esquerdo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:129
 msgid "right"
 msgstr "direito"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:131
 msgid "center"
 msgstr "centro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:133
 msgid "low frequency"
 msgstr "baixa freqüência"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:135
 msgid "back left"
 msgstr "esquerdo traseiro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:137
 msgid "back right"
 msgstr "direito traseiro"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:139
 msgid "side left"
 msgstr "lado esquerdo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
+#: addon\appModules\goldwave.py:141
 msgid "side right"
 msgstr "lado direito"
 
 #. Translators: Presented when multiple channels are selected (GoldWave 6 and higher).
+#: addon\appModules\goldwave.py:143
 msgid "Multiple channels selected"
 msgstr "Vários canais selecionados"
 
 #. Translators: Presented when all channels (3.1, 5.1, 7.1) are selected (GoldWave 6 and higher).
+#: addon\appModules\goldwave.py:145
 msgid "All channels selected"
 msgstr "Todos os canais selecionados"
 
+#: addon\appModules\goldwave.py:236
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
 msgstr "Início: {startMarkerPos}"
 
+#: addon\appModules\goldwave.py:248
 #, python-brace-format
 msgid "Finish: {finishMarkerPos}"
 msgstr "Fim: {finishMarkerPos}"
 
 #. Translators: Presented when selected audio is playing.
+#: addon\appModules\goldwave.py:257
 msgid "Play selection"
 msgstr "Reprodução da seleção"
 
 #. Translators: Presented when all parts of the audio track is selected.
+#: addon\appModules\goldwave.py:263
 msgid "Select All"
 msgstr "Selecionar tudo"
 
 #. Translators: A message in GoldWave when an audio cue is dropped at the current audio position.
+#: addon\appModules\goldwave.py:269
 msgid "Cue"
 msgstr "Ponto de referência"
 
 #. Translators: Presented when audio cue is dropped at the start marker position.
+#: addon\appModules\goldwave.py:275
 msgid "Cue dropped at start marker"
 msgstr "Ponto de referência colocado no marcador de início"
 
 #. Translators: Presented when an audio cue is dropped at the finish marker position.
+#: addon\appModules\goldwave.py:281
 msgid "Cue dropped at finish marker"
 msgstr "Ponto de referência colocado no marcador de fim"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
+#: addon\appModules\goldwave.py:287
 msgid "Start marker at next cue"
 msgstr "Iniciar marcador no próximo ponto de referência"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
+#: addon\appModules\goldwave.py:293
 msgid "Start marker at previous cue"
 msgstr "Iniciar marcador no ponto de referência anterior"
 
 #. Translators: Presented when the finish marker is moved to the next cue position.
+#: addon\appModules\goldwave.py:299
 msgid "Finish marker at next cue"
 msgstr "Finalizar marcador no próximo ponto de referência"
 
 #. Translators: Presented when the start marker is moved to the next cue position.
+#: addon\appModules\goldwave.py:305
 msgid "Finish marker at previous cue"
 msgstr "Finalizar marcador no ponto de referência anterior"
 
 #. Translators: Presented when audio selection is deleted.
+#: addon\appModules\goldwave.py:312
 msgid "deleted"
 msgstr "apagado"
 
 #. Translators: Presented when a track is playing in Goldwave.
+#: addon\appModules\goldwave.py:320
 msgid "play"
 msgstr "reprodução"
 
 #. Translators: Presented when a track is rewinding in Goldwave.
+#: addon\appModules\goldwave.py:326
 msgid "rewind"
 msgstr "retroceder"
 
 #. Translators: Presented when fast forwarding a track in Goldwave.
+#: addon\appModules\goldwave.py:332
 msgid "fast forward"
 msgstr "avanço rápido"
 
 #. Translators: Presented when pausing a track in Goldwave.
+#: addon\appModules\goldwave.py:338
 msgid "pause"
 msgstr "pausa"
 
 #. Translators: Presented when stopping a track in in Goldwave.
+#: addon\appModules\goldwave.py:344
 msgid "stop"
 msgstr "pára"
 
 #. Translators: Presented when starting recording in Goldwave.
+#: addon\appModules\goldwave.py:350
 msgid "record"
 msgstr "grava"
 
 #. Translators: Input help mode message for a Goldwave command.
+#: addon\appModules\goldwave.py:356
 msgid "Announces the current audio position in seconds."
 msgstr "Anuncia a posição atual do áudio em segundos."
 
 #. Translators: Input help mode message for a Goldwave command.
+#: addon\appModules\goldwave.py:366
 msgid "Announces a summary on audio selection info such as selection duration."
-msgstr ""
-"Anuncia um resumo de informações da seleção, por exemplo a duração da "
-"seleção."
+msgstr "Anuncia um resumo de informações da seleção, por exemplo a duração da seleção."
 
-msgid ""
-"Unable to obtain audio selection summary. Please close and reopen the audio "
-"track."
-msgstr ""
-"Não consegui obter um resumo da seleção de áudio. Por favor feche e reabra a "
-"faixa de áudio."
+#: addon\appModules\goldwave.py:377
+msgid "Unable to obtain audio selection summary. Please close and reopen the audio track."
+msgstr "Não consegui obter um resumo da seleção de áudio. Por favor feche e reabra a faixa de áudio."
 
 #. Translators: The audio selection summary message (example output: "0.00 to 1.00 (1.00)").
+#: addon\appModules\goldwave.py:382
 #, python-brace-format
 msgid "{audioSelectionStart} to {audioSelectionEnd} {audioSelectionLength}"
 msgstr "{audioSelectionStart} até {audioSelectionEnd} {audioSelectionLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
+#: addon\appModules\goldwave.py:393
 msgid "Announces total length of the audio track."
 msgstr "Anuncia o comprimento total da faixa de áudio."
 
 #. Translators: Presented when there is no track length information.
+#: addon\appModules\goldwave.py:401
 msgid "Track length is unavailable. Please close and reopen the audio track."
-msgstr ""
-"Comprimento da faixa indisponível. Por favor feche e reabra a faixa de áudio."
+msgstr "Comprimento da faixa indisponível. Por favor feche e reabra a faixa de áudio."
 
+#: addon\appModules\goldwave.py:403
 #, python-brace-format
 msgid "Track length: {trackLength}"
 msgstr "Comprimento da faixa: {trackLength}"
 
 #. Translators: Input help mode message for a Goldwave command.
+#: addon\appModules\goldwave.py:407
 msgid "Announces remaining length of the audio track."
 msgstr "Anuncia o comprimento restante da faixa de áudio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
+#: addon\appModules\goldwave.py:415
 msgid "Cannot tell you remaining time for the current track"
 msgstr "Não é possível informar o tempo restante da faixa atual"
 
 #. Translators: Input help mode message for a Goldwave command.
+#: addon\appModules\goldwave.py:428
 msgid "Announces the audio channel you are editing."
 msgstr "Anuncia o canal de áudio sendo editado."
 
 #. Translators: Presented to indicate the selected channel for the track
 #. (example output: "Selected channel: mono").
+#: addon\appModules\goldwave.py:442
 #, python-brace-format
 msgid "Selected channel: {audioChannel}"
 msgstr "Canal selecionado: {audioChannel}"
 
 #. Translators: Input help mode message for a Goldwave command.
+#: addon\appModules\goldwave.py:453
 msgid "Announces audio zoom level."
 msgstr "Anuncia o nível de zum do áudio."
 
 #. Translators: Presented to indicate audio selection zoom level (example output: "Zoom level: 10.000").
+#: addon\appModules\goldwave.py:459
 #, python-brace-format
 msgid "Zoom level: {zoomLevel}"
 msgstr "Nível de zum: {zoomLevel}"
@@ -223,12 +252,19 @@ msgstr "Nível de zum: {zoomLevel}"
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
+#: buildVars.py:21
 msgid "GoldWave"
-msgstr "GoldWave"
+msgstr ""
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
+msgstr "Um complemento que aprimora o acesso e a usabilidade do editor de áudio GoldWave."
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:29
+msgid "* NVDA 2025.3.3 or later is required."
 msgstr ""
-"Um complemento que aprimora o acesso e a usabilidade do editor de áudio "
-"GoldWave."
+
