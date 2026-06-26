@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-06-21 04:23+0000\n"
-"PO-Revision-Date: 2026-06-22 00:30\n"
+"POT-Creation-Date: 2026-06-26 08:15+0000\n"
+"PO-Revision-Date: 2026-06-26 08:17\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: addon\appModules\goldwave.py:37
 msgid "This is GoldWave's sound window. You can use GoldWave commands to listen to and edit sound files. See GoldWave help for details."
-msgstr ""
+msgstr "Đây là cửa sổ âm thanh của GoldWave. Bạn có thể sử dụng lệnh GoldWave để nghe và chỉnh sửa các tệp âm thanh. Xem trợ giúp của GoldWave để biết chi tiết."
 
 #. Translators: Presented when audio track position information can not be located.
 #: addon\appModules\goldwave.py:90
@@ -34,12 +34,12 @@ msgstr "Thông tin kênh không sẵn sàng"
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #: addon\appModules\goldwave.py:123
 msgid "mono"
-msgstr ""
+msgstr "mono"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #: addon\appModules\goldwave.py:125
 msgid "stereo"
-msgstr ""
+msgstr "stereo"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #: addon\appModules\goldwave.py:127
@@ -219,7 +219,7 @@ msgstr "Độ dài track: {trackLength}"
 #. Translators: Input help mode message for a Goldwave command.
 #: addon\appModules\goldwave.py:407
 msgid "Announces remaining length of the audio track."
-msgstr ""
+msgstr "Thông báo độ dài còn lại của track audio."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 #: addon\appModules\goldwave.py:415
@@ -254,17 +254,17 @@ msgstr "Cấp độ phóng to: {zoomLevel}"
 #. to be shown on installation and add-on information found in add-on store
 #: buildVars.py:21
 msgid "GoldWave"
-msgstr ""
+msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
 #: buildVars.py:24
 msgid "An add-on for enhancing access and usage of the GoldWave audio editor."
-msgstr ""
+msgstr "Một tiện ích bổ sung để tăng cường quyền truy cập và sử dụng trình chỉnh sửa âm thanh GoldWave."
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* NVDA 2025.3.3 or later is required."
+msgid "* Removed add-on changelog from add-on help (readme) file."
 msgstr ""
 

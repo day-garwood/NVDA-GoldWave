@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-06-21 04:23+0000\n"
-"PO-Revision-Date: 2026-06-22 00:29\n"
+"POT-Creation-Date: 2026-06-26 08:15+0000\n"
+"PO-Revision-Date: 2026-06-26 08:17\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -265,6 +265,6 @@ msgstr "Дополнение для расширения доступа при �
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* NVDA 2025.3.3 or later is required."
+msgid "* Removed add-on changelog from add-on help (readme) file."
 msgstr ""
 
