@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2026-06-26 08:15+0000\n"
-"PO-Revision-Date: 2026-06-26 08:17\n"
+"PO-Revision-Date: 2026-07-02 10:28\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
@@ -266,5 +266,5 @@ msgstr "Một tiện ích bổ sung để tăng cường quyền truy cập và 
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
 msgid "* Removed add-on changelog from add-on help (readme) file."
-msgstr ""
+msgstr "* Đã xóa nhật ký thay đổi tiện ích bổ sung khỏi tệp trợ giúp tiện ích bổ sung (readme)."
 
