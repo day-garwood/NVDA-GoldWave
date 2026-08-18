@@ -18,3 +18,7 @@ Todas las órdenes soportan el modo de voz a petición.
 Para obtener más información acerca de Goldwave y de las órdenes de teclado, remítete al manual de Goldwave.
 
 Nota: se requiere GoldWave 6 o posterior y Windows 10 o posterior.
+
+For a list of changes made between each add-on releases, refer to [changelogs for add-on releases][1] document.
+
+[1]: https://github.com/day-garwood/NVDA-GoldWave/blob/main/changes.md

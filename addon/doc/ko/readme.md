@@ -6,13 +6,19 @@
 
 ## 단추키
 
-* ㄹontrol+Shift+P: 현 트랙 위치를 알려줍니다.
-* Control+NvDA+3: 선택된 오디오에 대한 정보를 알려줍니다.
-* Control+NVDA+2: 오디오 파일의 전체 재생 시간을 알려줍니다.
+All commands support speech on demand mode.
+
+* Control+Shift+P: 현 트랙 위치를 알려줍니다.
+* NVDA+Shift+R: Announces remaining time for the currently editing track.
 * Control+NVDA+1: 현재 편집중인 오디오 체널을 알려줍니다.
-* NvDA+Shift+C: 오디오 편집중 단추키 관련 출력 유무를 설정합니다.
+* Control+NVDA+2: 오디오 파일의 전체 재생 시간을 알려줍니다.
+* Control+NvDA+3: 선택된 오디오에 대한 정보를 알려줍니다.
 * Control+NVDA+4: 오디오 줌 레벨을 알려줍니다.
 
 골드웨이브에 대한 정보 및 단추키 목록에 대해서는 골드웨이브 사용설명서를 참고하세요.
 
-Note: GoldWave 6 requires 64-bit version of Windows 7 or later. NVDA 2014.1 or later is required to use add-on 2.0.
+Note: GoldWave 6 or later and Windows 10 or 11 are required.
+
+For a list of changes made between each add-on releases, refer to [changelogs for add-on releases][1] document.
+
+[1]: https://github.com/day-garwood/NVDA-GoldWave/blob/main/changes.md
