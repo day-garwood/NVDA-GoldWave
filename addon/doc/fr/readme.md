@@ -1,4 +1,4 @@
-# Goldwave
+# GoldWave
 
 * Auteurs : Joseph Lee, contributeurs de NVDA.
 
@@ -18,3 +18,7 @@ Toutes les commandes prennent en charge le mode de parole à la demande.
 Pour plus d'informations sur Goldwave et les commandes clavier, reportez-vous au manuel de Goldwave.
 
 Remarque : Goldwave 6 ou version ultérieure et Windows 10 ou version ultérieure est requis.
+
+For a list of changes made between each add-on releases, refer to [changelogs for add-on releases][1] document.
+
+[1]: https://github.com/day-garwood/NVDA-GoldWave/blob/main/changes.md

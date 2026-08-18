@@ -18,3 +18,7 @@ Kaikki komennot tukevat "pyydettäessä"-puhetilaa.
 Lisätietoja GoldWavesta sekä sen näppäinkomennoista on ohjelman käsikirjassa.
 
 Huom: GoldWave 6 tai uudempi sekä Windows 10 tai uudempi vaaditaan.
+
+For a list of changes made between each add-on releases, refer to [changelogs for add-on releases][1] document.
+
+[1]: https://github.com/day-garwood/NVDA-GoldWave/blob/main/changes.md
