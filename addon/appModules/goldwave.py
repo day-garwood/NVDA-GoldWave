@@ -228,6 +228,7 @@ class SoundWindow(IAccessible):
 
 	@scriptHandler.script(gesture="KB:[")
 	def script_dropStartMarker(self, gesture: inputCore.InputGesture):
+		# Index error may occur if display text parsing fails or is incomplete.
 		try:
 			gesture.send()
 			# Translators: The start marker position for selecting parts of the audio track
@@ -235,11 +236,12 @@ class SoundWindow(IAccessible):
 			ui.message(
 				_("Start: {startMarkerPos}").format(startMarkerPos=self.getAudioSelectionParsed()[0])
 			)
-		except Exception:
+		except IndexError:
 			pass
 
 	@scriptHandler.script(gesture="KB:]")
 	def script_dropFinishMarker(self, gesture: inputCore.InputGesture):
+		# Index error may occur if display text parsing fails or is incomplete.
 		try:
 			gesture.send()
 			# Translators: The finish marker position for selecting parts of the audio track
@@ -247,7 +249,7 @@ class SoundWindow(IAccessible):
 			ui.message(
 				_("Finish: {finishMarkerPos}").format(finishMarkerPos=self.getAudioSelectionParsed()[2])
 			)
-		except Exception:
+		except IndexError:
 			pass
 
 	@scriptHandler.script(gesture="kB:control+[")
@@ -370,6 +372,7 @@ class SoundWindow(IAccessible):
 	def script_announceAudioSelection(self, gesture: inputCore.InputGesture):
 		try:
 			# Parse this string to get individual info such as marker positions.
+			# Index error may occur if display text parsing fails or is incomplete.
 			audioSelectionParsed = self.getAudioSelectionParsed()
 			if not audioSelectionParsed:
 				# Translators: Presented when there is no audio selection summary available.
@@ -385,7 +388,7 @@ class SoundWindow(IAccessible):
 						audioSelectionLength=audioSelectionParsed[3],
 					)
 				)
-		except Exception:
+		except IndexError:
 			pass
 
 	@scriptHandler.script(
