@@ -491,12 +491,12 @@ class AppModule(appModuleHandler.AppModule):
 			elif (
 				"Form" in obj.windowClassName
 				and "MainForm" not in obj.windowClassName
-				or obj.windowClassName == "TEffectWrapper"
-			):
 				# In GoldWave 6, the sound window has the window class name of "tSoundForm"
 				# and should not be recognized as a dialog.
-				if obj.windowClassName != "TSoundForm":
-					obj.role = controlTypes.Role.DIALOG
+				and obj.windowClassName != "TSoundForm"
+				or obj.windowClassName == "TEffectWrapper"
+			):
+				obj.role = controlTypes.Role.DIALOG
 
 	def chooseNVDAObjectOverlayClasses(self, obj: NVDAObject, clsList: list[NVDAObject]) -> None:
 		# Custom NVDA overlay objects for sound window and edit fields:
