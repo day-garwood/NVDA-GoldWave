@@ -77,7 +77,6 @@ class SoundWindow(IAccessible):
 	# Get audio positions.
 	def getAudioPos(self, raw: bool = False) -> str:
 		# Above the status bar is the audio position and selection info bar. See if this control can be fetched.
-		global multiInstance
 		# Have to definitely call the info getter twice.
 		# Status bar position has changed in GoldWave 7 (last item across releases).
 		audioPos = self.getStatusInfo(0, -2)
@@ -91,7 +90,6 @@ class SoundWindow(IAccessible):
 
 	def getAudioSelection(self) -> str:
 		# Call the info getter twice to obtain audio selection (relies on display text).
-		global multiInstance
 		audioSelection = self.getStatusInfo(0, 2)
 		if multiInstance > 1:
 			audioSelection = self.getStatusInfo(0, 2)
@@ -514,7 +512,6 @@ class AppModule(appModuleHandler.AppModule):
 	statusBarCache: dict[int, NVDAObject] = {}
 
 	def _get_statusBars(self, statBarIndex: int, refill: bool = False) -> NVDAObject:
-		global multiInstance
 		# In case multiple instances of GoldWave are running, flush the status bar cache.
 		index = 0
 		if refill or multiInstance > 1 or not len(self.statusBarCache):
