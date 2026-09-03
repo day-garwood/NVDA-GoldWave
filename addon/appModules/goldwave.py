@@ -3,6 +3,7 @@
 # Copyright 2013-2026 Joseph Lee and contributors, released under gPL.
 # Functionality is based on JFW scripts for Goldwave by Jim Grimsby, Jr.
 
+from typing import ClassVar
 import appModuleHandler
 import api
 import scriptHandler
@@ -114,7 +115,7 @@ class SoundWindow(IAccessible):
 		return audioSelectionParsed
 
 	# Get channel information. But first, a few constants (to help translators):
-	audioChannelValues = {
+	audioChannelValues: ClassVar = {
 		# Translators: One of the channel values when editing audio track in Goldwave.
 		"": _("Channel information unavailable"),
 		# Translators: One of the channel values when editing audio track in Goldwave.
@@ -509,7 +510,7 @@ class AppModule(appModuleHandler.AppModule):
 				pass
 
 	# Cache the needed status bar objects.
-	statusBarCache: dict[int, NVDAObject] = {}
+	statusBarCache: ClassVar[dict[int, NVDAObject]] = {}
 
 	def _get_statusBars(self, statBarIndex: int, refill: bool = False) -> NVDAObject:
 		# In case multiple instances of GoldWave are running, flush the status bar cache.
