@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2026-09-04 11:58+0000\n"
-"PO-Revision-Date: 2026-09-04 12:00\n"
+"PO-Revision-Date: 2026-09-11 06:56\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -266,5 +266,5 @@ msgstr "GoldWave ses editörünün kullanımı ve erişilebilirliğinin artırı
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
 msgid "* NVDA 2026.1 (64-bit) or later is required."
-msgstr ""
+msgstr "* NVDA 2026.1 (64-bit) veya daha yeni bir sürüm gereklidir."
 
