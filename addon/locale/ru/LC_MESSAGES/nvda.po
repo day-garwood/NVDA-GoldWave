@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-04 11:58+0000\n"
-"PO-Revision-Date: 2026-09-18 12:08\n"
+"POT-Creation-Date: 2026-09-25 12:35+0000\n"
+"PO-Revision-Date: 2026-09-25 12:38\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -59,7 +59,7 @@ msgstr "центральный"
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #: addon\appModules\goldwave.py:132
 msgid "low frequency"
-msgstr "низкая частота"
+msgstr "низкочастотный"
 
 #. Translators: One of the channel values when editing audio track in Goldwave.
 #: addon\appModules\goldwave.py:134
@@ -219,7 +219,7 @@ msgstr "Длина дорожки: {trackLength}"
 #. Translators: Input help mode message for a Goldwave command.
 #: addon\appModules\goldwave.py:409
 msgid "Announces remaining length of the audio track."
-msgstr "Объявляет оставшуюся длину аудио дорожки."
+msgstr "Объявляет оставшуюся длину звуковой дорожки."
 
 #. Translators: An error message presented when remaining time cannot be anounced.
 #: addon\appModules\goldwave.py:417
@@ -266,5 +266,5 @@ msgstr "Дополнение для расширения доступа при �
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
 msgid "* NVDA 2026.1 (64-bit) or later is required."
-msgstr ""
+msgstr "* Требуется NVDA 2026.1 (64-бит) или выше."
 
