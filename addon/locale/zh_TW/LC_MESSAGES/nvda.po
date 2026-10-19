@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-09-25 12:35+0000\n"
-"PO-Revision-Date: 2026-10-07 03:11\n"
+"POT-Creation-Date: 2026-10-19 03:09+0000\n"
+"PO-Revision-Date: 2026-10-19 03:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
@@ -265,6 +265,6 @@ msgstr "一個用於強化 GoldWave 音訊編輯器存取及使用體驗的附�
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
 #: buildVars.py:29
-msgid "* NVDA 2026.1 (64-bit) or later is required."
+msgid "* NVDA 2026.3 or later is required."
 msgstr ""
 
