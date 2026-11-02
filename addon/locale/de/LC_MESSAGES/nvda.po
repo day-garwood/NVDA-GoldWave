@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: nvdaaddons\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
 "POT-Creation-Date: 2026-10-19 03:09+0000\n"
-"PO-Revision-Date: 2026-10-19 03:11\n"
+"PO-Revision-Date: 2026-11-01 10:42\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -94,7 +94,7 @@ msgstr "Alle Kanäle ausgewählt"
 #: addon\appModules\goldwave.py:236
 #, python-brace-format
 msgid "Start: {startMarkerPos}"
-msgstr ""
+msgstr "Start: {startMarkerPos}"
 
 #: addon\appModules\goldwave.py:249
 #, python-brace-format
@@ -254,7 +254,7 @@ msgstr "Zoom-Stufe: {zoomLevel}"
 #. to be shown on installation and add-on information found in add-on store
 #: buildVars.py:21
 msgid "GoldWave"
-msgstr ""
+msgstr "GoldWave"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
