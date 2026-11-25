@@ -2,6 +2,10 @@
 
 This page lists the complete changelog for GoldWave add-on releases.
 
+## Version 27.01
+
+* NVDA 2026.3.2 or later is required.
+
 ## Version 26.11
 
 * NVDA 2026.3 or later is required.
